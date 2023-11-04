@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions</title>
+    <link rel="stylesheet" href=".././styles.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Starts here -->
+    <header class="top-0 z-10 bg-blue-950 p-2 mb-5">
+        <div class="container mx-auto text-white">
+            <nav class="mt-2">
+                <i class="fas fa-envelope mr-2 hover:text-gray-200 text-gray-500"></i>
+                <a href="mailto:your.email@example.com"
+                    class="hover:text-gray-200 text-gray-400 mr-4">your.email@example.com</a>
+                <i class="fas fa-phone mr-2 text-gray-500 hover:text-gray-200"></i>
+                <a href="tel:+1234567890" class="text-gray-400 hover:text-gray-200">123-456-7890</a>
+
+                <a href="../index.html" class="text-gray-400 hover:text-gray-200 pl-80 ml-72 mr-4">Home</a>
+                <a href="../tenders.html" class="text-gray-400 hover:text-gray-200 mr-4">Tenders</a>
+
+                <a href="https://www.nitgoa.ac.in/gian/" class="text-gray-400 hover:text-gray-200 mr-4">G.I.A.N</a>
+                <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-400 hover:text-gray-200 mr-4">Login</a>
+            </nav>
+        </div>
+    </header>
+    <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
+        <div class="flex justify-center">
+            <img class="w-33 h-22" src=".././static/logo_color.png" alt="" />
+        </div>
+
+        <div class="text-center border mb-10">
+            <nav class="mt-2 justify-center items-center">
+                <div class="container_B font-semibold text-gray-700 ml-16">
+                    <div class="dropdown">
+                        <a href="../index.html">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Administration</button>
+                        <div class="dropdown-content">
+                            <a href="../administration/Board_of_Governors.html">Board Of Governors</a>
+                            <a href="../administration/director_message.html">Director</a>
+                            <a href="../administration/registrar.html">Registrar</a>
+                            <a href="../administration/senate.html">Senate</a>
+                            <a href="../administration/dean.html">Deans</a>
+                            <a href="../administration/Committees.html">Committees</a>
+                            <a href="../administration/finance_committee.html">Finance Committee</a>
+                            <a href="../administration/work_committee.html">Building and Works Committee</a>
+                            <a href="../administration/hod.html">Heads of Departments </a>
+                            <a href="https://www.nitgoa.ac.in/uploaded_files/Org_Chart.pdf" target="_blank">Organizing
+                                Structure</a>
+                            <a href="../administration/reports.html">Reports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Academics</button>
+                        <div class="dropdown-content">
+                            <a href="../academics/academic_calendar.html">Calendar</a>
+                            <a href="../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                            <a href="../academics/departments.html">Departments</a>
+                            <a href="../academics/DissertionFormat.html">Dissertion Formats</a>
+                            <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                            <a href="../academics/library.html">Library</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Admissions</button>
+                        <div class="dropdown-content">
+                            <a href="../admissions/btech.html">B.tech</a>
+                            <a href="../admissions/mtech.html">M.tech</a>
+                            <a href="../admissions/phd.html">Ph.D</a>
+                            <a href="../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                            <a href="../admissions/hostels.html">Hostels</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Training & Placement</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                            <a href="#">Company Login</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">People</button>
+                        <div class="dropdown-content">
+                            <a href=".././People/frontend/people_faculty.html">Faculty</a>
+                            <a href=".././People/frontend/technical_cse.html">Technical Staff</a>
+                            <a href=".././People/frontend/administrative.html">Administrative Staff</a>
+                            <a href="../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="../research/R&DProjects.html">R & D Projects</a>
+                            <a href=".././static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../outreach_activities.html">Outreach Activities</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../nirf.html">NIRF</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee
+                            Payment</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!--Main Section Starts Here-->
+    <div class="m-10">
+        <div class="col-md-9 col-xs-12">
+            <div>
+                <div class="">
+                    <h1 class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 text-center">
+                        M.Tech. Programme
+                    </h1>
+                    <p>&nbsp;</p>
+                    <p>
+                        <strong style="
+                  color: #222222;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: small;
+                  font-style: normal;
+                  font-variant-ligatures: normal;
+                  font-variant-caps: normal;
+                  letter-spacing: normal;
+                  orphans: 2;
+                  text-align: start;
+                  text-indent: 0px;
+                  text-transform: none;
+                  widows: 2;
+                  word-spacing: 0px;
+                  white-space: normal;
+                  background-color: #ffffff;
+                  text-decoration-thickness: initial;
+                  text-decoration-style: initial;
+                  text-decoration-color: initial;
+                "><a class="mt-8 text-blue-700 hover:text-blue-300 text-xl" href="mtech_spot.html" target="_blank">M.Tech (Non-Gate) and SPOT
+                                Round</a><img src="images/system/new_blink.gif"
+                            alt="" />
+                    </p>
+                    <p>
+                        <a class="mt-8 text-blue-700 hover:text-blue-300 text-xl" href=".././static/fee_structure_mtech_23-24_25july2023.pdf" target="_blank">Fees
+                                Structure for the students admitted in 2023-24</a>
+                    </p>
+                    <p>
+                        <a class="mt-8 text-blue-700 hover:text-blue-300 text-xl" href=".././static/Placementbrochure_8august2023.pdf" target="_blank">Placement
+                                Brochure -2023</a>
+                    </p>
+                    <p>
+                        <a class="mt-8 text-blue-700 hover:text-blue-300 text-xl" href="../static/M.Tech._Physical_Reporting_CCMT_10august2023.pdf"
+                                target="_blank">M.Tech physical Report through CCMT2023</a>
+                    </p>
+                    <p>
+                        <!--<a href="uploaded_files/Guidelines_MTech2018.pdf" _mce_href="uploaded_files/Guidelines_MTech2018.pdf" target="_blank">Guidelines for students taking admission in NIT Goa for M.Tech. programme</a></p>
+-->
+                    </p>
+                    <h3 class="text-xl font-serif font-semibold text-gray-800 border-gray-200 text-center mt-10 mb-10">
+                        <span>NIT Goa is offering the following three M.Tech Programmes</span>
+                    </h3>
+                    <div class="justify-center items-center">
+                        <table >
+                            <thead>
+                                <tr>
+                                    <th class="bg-blue-400 border m-6 text-center p-6 text-l">Name of the Department
+                                    </th>
+                                    <th class="bg-blue-400 border m-6 text-center p-6 text-l">Programme Name </th>
+                                    <th class="bg-blue-400 border m-6 text-center p-6 text-l">No. of Seats</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-b-4 m-6 p-5 text-center">Computer Science and Engineering
+                                        (CSE)</td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">Computer Science and Engineering
+                                    </td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">23 + 2*</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-b-4 m-6 p-5 text-center">Electronics and Communication
+                                        Engineering (ECE)</td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">VLSI</td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">23 + 2*</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-b-4 m-6 p-5 text-center">Electrical and Electronics
+                                        Engineering (EEE)</td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">Power Electronics and Power
+                                        Systems</td>
+                                    <td class="border border-b-4 m-6 p-5 text-center">22 + 2*</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-b-4 m-6 p-5 text-center" colspan="3">
+                                        *2 seats are meant for the sponsored candidates.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <h3 class="text-xl font-serif font-semibold text-gray-800 border-gray-200 text-center mt-10 mb-10">
+                        Objective of the programmes
+                    </h3>
+                    <ol>
+                        <li class="mt-5 pt-4">
+                            <span style="color: #3366ff; ">Computer Science and Engineering
+                            </span>
+                            <p>
+                                The M. Tech. programme in Computer Science and Engineering is
+                                aimed at preparing Computer professionals for research,
+                                academics, design and development in hardware, software and
+                                co-design technologies. The purpose of the programme is to
+                                generate human resource capable of supporting Research and
+                                Development activities in critical areas of computer science
+                                and engineering. The programme focuses on practical
+                                implementations of the ideas by means of research oriented
+                                projects and courses in collaboration with the industries to
+                                bring in acclaimed professionals to share their knowledge and
+                                experience. The Post graduate programme offers an opportunity
+                                to work on latest research topics in Computer Science and
+                                Engineering
+                            </p>
+                            <ul>
+                                <li class="mt-5 pt-4">
+                                    To provide students with a strong foundation in Computer
+                                    Science &amp; Engineering to formulate, solve and analyze
+                                    engineering problems and to prepare them for graduate
+                                    studies, R&amp;D and consultancy.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    Students will establish themselves as effective
+                                    professionals by solving real problems through the use of
+                                    computer science knowledge.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    To provide exposure to emerging cutting edge technologies,
+                                    adequate training &amp; opportunities to work as teams on
+                                    multidisciplinary projects with effective communication
+                                    skills and leadership qualities.
+                                </li>
+                            </ul>
+                            &nbsp;&gt;&gt;
+                            <span style="color: #00ff00"><a class="link"
+                                    href="uploaded_files/PG_Academic_Handbook_M._Tech_(CSE).pdf">CLICK HERE TO DOWNLOAD
+                                    CSE SYLLABUS</a></span>
+                        </li>
+                    </ol>
+                    <ol>
+                        <li class="mt-5 pt-4">
+                            <span style="color: #3366ff; ">VLSI</span>
+                            <p>
+                                Semiconductor industry has been witnessing tremendous growth
+                                over the past few years with rising demand for electronic
+                                products. India has a well-developed semiconductor design
+                                industry with more than 120 design units. Various global
+                                semiconductor companies have established their design centres
+                                in the country with design revenues comparable with developed
+                                countries. India Semiconductor Association (ISA) estimated
+                                that semiconductor and electronics driven products will drive
+                                the US$ 400 billion to Indian electronics market by 2020.
+                                These advances demand for the skilled engineers. Productivity
+                                of the Workforce is the main challenge faced by the
+                                semiconductor industry. Companies still have to spend a huge
+                                amount of time/money in training fresh B.Tech graduates. The
+                                hiring trend for VLSI related jobs require a deeper level of
+                                expertise, preferably Masters and Ph. D in VLSI domain. Thus
+                                academic institutions like NIT GOA can play a key role in
+                                developing quality human resource through domain specific
+                                M.Tech and Ph. D programmes.
+                            </p>
+                            <p>
+                                Important objectives of the VLSI programme are as follows:
+                            </p>
+                            <ul>
+                                <li class="mt-5 pt-4">
+                                    To provide hands-on design capabilities for Analog, Digital,
+                                    and Mixed signal IC design in low power Nanometric
+                                    Technology.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    To provide exposure in terms of Design, Model, Simulate and
+                                    Implementation methodologies using EDA and TCAD Tools.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    To introduce with new emerging Technologies in VLSI/ULSI for
+                                    ultra-low-power applications.
+                                </li>
+                            </ul>
+                            &nbsp;&gt;&gt;
+                            <span style="color: #00ff00"><a class="link"
+                                    href="uploaded_files/MTech_Curriculum_Final__on_23-04-14.pdf">CLICK HERE TO DOWNLOAD
+                                    VLSI SYLLABUS</a></span>
+                        </li>
+                        <li class="mt-5 pt-4">
+                            <span style="color: #3366ff; ">Power Electronics and Power Systems
+                            </span>
+                            <p>
+                                Power Electronics is the application of solid-state
+                                electronics for the control and conversion of electric power.
+                                It refers to a subject of research in Electrical and
+                                Electronics Engineering which deals with design, control,
+                                computation and integration of nonlinear, time varying energy
+                                processing electronic systems with fast dynamics.
+                            </p>
+                            <ul>
+                                <li class="mt-5 pt-4">
+                                    To train graduate engineers in the field of Power
+                                    Electronics and Power Systems.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    To make them versatile in new emerging Technologies for high
+                                    power applications.
+                                </li>
+                                <li class="mt-5 pt-4">
+                                    To train competent engineers and professionals, who can meet
+                                    the demands of the industries as well as academia in the
+                                    fields of power electronics and power systems.
+                                </li>
+                            </ul>
+                            <p>
+                                &gt;&gt;
+                                <span style="color: #00ff00"><a class="link"
+                                        href="uploaded_files/PG_M.Tech_(PEPS)_EEE_Syllabus.pdf">CLICK HERE TO DOWNLOAD
+                                        EEE SYLLABUS</a></span>
+                            </p>
+                        </li>
+                    </ol>
+                    <h3 class="text-xl font-serif font-semibold text-gray-800 border-gray-200 text-center mt-10 mb-10">
+                        Hostel Facilities
+                    </h3>
+                    <p>  
+                        NOTE: NIT Goa is not offering hostel facility to
+                        M.Tech students (Male). However, accommodation is available on
+                        rent at affordable cost within 2-4 km radius from the Institute.
+                    </p>
+                    <h3><span>Admission Procedure</span></h3>
+                    <p>
+                        Admission to M.Tech programmes in all National Institutes of
+                        Technology (NITs) will be through Centralized Counselling for
+                        M.Tech. (CCMT-2023) is being organized by NIT Kurukshetra.
+                    </p>
+                    <p>
+                        For further details, please visit the following website:<br />
+                    </p>
+                    <p>
+                        <span style="font-size: small"><a href="https://ccmt.admissions.nic.in/"
+                                    target="_blank">CCMT-2023</a></span>
+                    </p>
+                    <div class="bg-white shadow-md m-10">
+                        <div class="p-16">
+
+                    <h3><span>Contact Information</span></h3>
+                    <p>
+                        Dr. C. Vyjayanthi&nbsp;<br />
+                        Dean(Academics),In-Charge, Admissions<br />
+                        National Institute of Technology Goa<br />
+                        Farmagudi, Ponda, Goa 403 401<br />
+                        E-Mail: pgadmissions@nitgoa.ac.in<br />
+                        Ph. No. : 0832-2404207
+                    </p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Main Section Ends Here-->
+<!--Footer Starts Here -->
+<footer class="site-footer mt-4" style="background-color: rgb(7, 60, 104)">
+    <div class="container">
+      <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div>
+          <h6 class="text-lg font-semibold mb-2">Quick Links</h6>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+            <ul class="footer-links">
+              <li>
+                <a href="../index.html"
+                  ><span class="hover:text-white">Home</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  ><span class="hover:text-white">Syllabus</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/privacy-policy/"
+                  ><span class="hover:text-white">Results</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">RTI</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Login</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Contact Us</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Feedback</span></a
+                >
+              </li>
+            </ul>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/about/"
+                  ><span class="hover:text-white">e-Downloads</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/contact/"
+                  ><span class="hover:text-white">Students</span></a
+                >
+              </li>
+              <li>
+                <a href="academics/academic_calendar.html/"
+                  ><span class="hover:text-white">Academic Calendar</span></a
+                >
+              </li>
+              <li>
+                <a href="academics/rules_and_regulations.html"
+                  ><span class="hover:text-white"
+                    >Regulations and Curriculum</span
+                  ></a
+                >
+              </li>
+              <li>
+                <a href="academics/DissertionFormat.html"
+                  ><span class="hover:text-white"
+                    >Dissertation Formats</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <h6 class="text-lg font-semibold mb-2">Informations</h6>
+          <ul class="footer-links">
+            <li>
+              <a href="http://scanfcode.com/category/c-language/"
+                ><span class="hover:text-white">Faculty</span></a
+              >
+            </li>
+            <li>
+              <a href="http://scanfcode.com/category/front-end-development/"
+                ><span class="hover:text-white">Staff</span></a
+              >
+            </li>
+            <li>
+              <a href="http://scanfcode.com/category/back-end-development/"
+                ><span class="hover:text-white">JEE</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="http://scanfcode.com/category/java-programming-language/"
+                ><span class="hover:text-white">Facilities</span></a
+              >
+            </li>
+            <li>
+              <a href="./static/fee_structure_23-24_25july2023.pdf"
+                ><span class="hover:text-white">Fee Structure</span></a
+              >
+            </li>
+            <li>
+              <a href="http://scanfcode.com/category/templates/"
+                ><span class="hover:text-white">NIRF</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+          <ul class="footer-links">
+            <div className="border-b-2 border-white mt-2">
+              <a href="http://scanfcode.com/contact/"
+                ><span class="hover:text-white"
+                  >National Institute of Technology Goa Farmagudi, Ponda , Goa
+                  - 403401</span
+                ></a
+              >
+            </div>
+            <div className="border-b-2 border-white mt-2">
+              <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                ><span class="hover:text-white"
+                  >Website: www.nitgoa.ac.in</span
+                ></a
+              >
+            </div>
+            <div className="border-b-2 border-white mt-2">
+              <a href="http://scanfcode.com/privacy-podivcy/"
+                ><span class="hover:text-white"
+                  >span> Phone: [0832] 2404200 (PA to Director)</span
+                ></a
+              >
+            </div>
+            <div className="border-b-2 border-white mt-2">
+              <a href="http://scanfcode.com/sitemap/"
+                ><span class="hover:text-white">Fax: [0832] 2404202</span></a
+              >
+            </div>
+          </ul>
+        </div>
+      </div>
+      <br />
+    </div>
+    <div class="counter-container ml-16 mr-4">
+      <!-- Container for the counter -->
+      <!-- hitwebcounter Code START -->
+      <p>Visitor counter</p>
+      <a href="https://www.hitwebcounter.com" target="_blank">
+        <img
+          src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+          title="Counter Widget"
+          alt="Visit counter For Websites"
+          border="0"
+          width="150"
+          height="100"
+        />
+      </a>
+    </div>
+  </footer>
+  <!--Footer Ends Here -->
+
+</body>
+
+</html>

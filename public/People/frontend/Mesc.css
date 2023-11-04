@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: noto sans;
+}
+.top{
+    height: 50px;
+    width: 100%;
+    background-color:#4361EE ;
+    display: flex;
+    font-family:noto sans;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+.lang{
+    flex-basis: 60%;
+    display: flex;
+    margin: auto;
+    
+}
+.lang img{
+    height: 20px;
+    width: 20px;
+    margin: 15px 2px 15px 15px;
+    cursor: pointer;
+}
+
+.lang div{
+    margin-top: 18px;
+    cursor: pointer;
+    color: white;
+    
+    /* font-size: 15px; */
+}
+
+
+
+.top-right{
+    flex-basis: 40%;
+    display: flex;
+    margin: auto;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.page{
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: sticky;
+    background: #FFF;
+    box-shadow: 0px 1px 1px 0px rgba(32, 32, 32, 0.30);
+}
+
+.ham {
+    padding-left: 5px;
+}
+
+.search {
+    padding-right: 5px;
+
+}
+
+.text{
+    color: #000;
+    font-family: Noto Sans;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 22px;
+    font-variant: small-caps;
+    margin: 10% 10% 0% 10%;
+}
+
+
+.mescfee{
+    text-align: center;
+}
+
+.form{
+    justify-content: center;
+    margin: 17% 5%;
+}
+.btn{
+    display:flex;
+    justify-content: space-around;
+    margin: 10% 0%;
+}
+.btn button{
+    background-color:#FFF;
+    border: 2px solid #CAC4D0;
+    color: #4F4F4F;
+    border-radius: 8px;
+    padding: 4% 10%;
+    font-weight: 800;
+    font-size: large;
+}
+
+input[type="text"],
+select{
+    width: 100%;
+    padding: 14px 20px;
+    border: 1px solid #CAC4D0;
+    border-radius: 4px;
+    margin: 2% 0%;
+}
+
+.submit{
+    background-color: #5D94FF;
+    color: white;
+    font-weight: 800;
+    width: 100%;
+    padding: 4% 10%;
+    border-radius: 7px;
+    border: 0px;
+    margin: 10% 0% 0% 0%;
+    cursor: pointer;
+}
+
+.homepg{
+    background-color: #5D94FF;
+    color: white;
+    padding: 2% 3%;
+    border-radius:50%;
+    border: 2px solid #4F4F4F;
+}
+.sumbt{
+    display:flex;
+    justify-content: right;
+    margin: 5% 7%;
+}
+
+.select-box{
+    /* border: none; */
+    appearance: none;
+    width: 100%;
+    color: #000;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+
+/* footer */
+
+.footer{
+    /* margin-top: 100%; */
+    width: 100%;
+    margin: auto;
+    background-color: #262626;
+    padding-top: 40px;
+
+    
+}
+
+.drop-down{
+    padding-bottom: 20px;
+
+}
+
+.drop-downs{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 12px;
+    background-color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+
+.drop-downs h3{
+    padding-top: 5px;
+}
+
+.drop-downs button{
+    border: none;
+    appearance:none;
+    width: 40px;
+    height: 40px;
+}
+
+.data{
+    width: 90%;
+    margin-top:30px;
+    display: flex;
+    color: whitesmoke;
+    justify-content: space-evenly;
+    margin: auto;
+
+}
+
+.foot-data{
+    width: 20%;
+    /* border: 1px solid white; */
+    padding: 10px 0px 20px 0px;
+
+}
+
+.foot-data h2{
+    text-align: center;
+    margin-bottom: 5px;
+    color: blue;
+}
+.foot-data h4{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.foot-data hr{
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+
+.foot-end {
+    margin-top: 5%;
+    width: 100%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.foot-end ul {
+    /* display: flex; */
+    list-style-type: none;
+    justify-content: space-evenly;
+    /* margin: auto; */
+}
+
+.foot-end li {
+    margin: 10px;
+    font-size: small;
+    /* padding: 10px; */
+
+}
+
+.abovetab {
+    display: none;
+}
+
+.mobile {
+    list-style-type: none;
+
+
+}
+
+.mobile li {
+    font-size: xx-small;
+    text-align: center;
+}
+
+.mobile_flex {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+
+}
+
+.mobile_flex li {
+    font-size: xx-small;
+    text-align: center;
+
+}
+
+

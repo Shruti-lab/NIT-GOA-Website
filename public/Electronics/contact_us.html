@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department of Electronics and Communication Engineering</title>
+    <link rel="stylesheet" href=".././styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+
+  </head>
+  <body>
+    <!-- Header Starts here -->
+    <header
+      id="main-header"
+      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
+    >
+      <div class="flex justify-center">
+        <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
+  
+      </div>
+
+      <div class="text-center border mb-10">
+        <nav class="mt-2 justify-center items-center">
+          <div class="container_B font-semibold text-gray-700 ml-16">
+
+            <!--Home-->
+<div class="dropdown">
+              <a href="../index.html">Home</a>
+            </div>
+
+            <!--People-->
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../Electronics/people/departmental_committees.html">Departmental Committees</a>
+              </div>
+            </div>
+
+            <!--Research Group-->
+            <div class="dropdown">
+              <button class="dropbtn">Research Group</button>
+              <div class="dropdown-content">
+                <a href="../Electronics/research_group/research_scholar.html">Research Scholar</a>
+                <a href="../Electronics/research_group/communication.html">Communication Research Group</a>
+                <a href="../Electronics/research_group/signals.html"
+                  >Signals and Systems Research Group</a
+                >
+                <a href="../Electronics/research_group/vlsi.html"
+                >VLSI Research Group</a
+              >
+              </div>
+            </div>
+
+            <!--Research Projects-->
+            <div class="dropdown">
+                <button class="dropbtn">Research Projects</button>
+                <div class="dropdown-content">
+                  <a href="../Electronics/research_projects/smdp.html">SMDP-C2SD</a>
+                  <a href="../Electronics/research_projects/btech.html">BTECH Projects</a>
+                  <a href="../static/M.tech_2015_batch_projects.pdf">MTECH Projects</a>
+
+                </div>
+              </div>
+         
+
+            <!--Lab Facilities-->
+              <div class="dropdown">
+                <a href="../Electronics/lab_facilities.html">Lab Facilities</a>
+              </div>
+
+            <!--Events-->
+              <div class="dropdown">
+                <a href="../Electronics/events.html">Events</a>
+              </div>
+
+            <!--Publications-->
+              <div class="dropdown">
+                <a href="../Electronics/publications.html">Publications</a>
+              </div>
+
+            <!--Contact Us-->
+              <div class="dropdown">
+                <a href="../Electronics/contact_us.html">Contact Us</a>
+              </div>
+
+            <!--Gallery-->
+              <div class="dropdown">
+                <a href="../Electronics/gallery.html">Gallery</a>
+              </div>
+            
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+
+  <!-- Hero Section -->
+  <section class=" bg-center bg-cover bg-white mb-48 pb-20">
+
+    <!-- slideshow image-->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src=".././static/slideshow1.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src=".././static/slideshow2.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src=".././static/slideshow3.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div style="text-align:center;">
+
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+
+      </div>
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="showSlides()">&#10095;</a>
+  </div>
+
+  <script type="text/javascript">
+  var timeOut = 2000;
+      var slideIndex = 0;
+      var autoOn = true;
+
+      autoSlides();
+
+      function autoSlides() {
+          timeOut = timeOut - 20;
+
+          if (autoOn == true && timeOut < 0) {
+              showSlides();
+          }
+          setTimeout(autoSlides, 20);
+      }
+
+      function prevSlide() {
+
+          timeOut = 2000;
+
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slideIndex--;
+
+          if (slideIndex > slides.length) {
+              slideIndex = 1
+          }
+          if (slideIndex == 0) {
+              slideIndex = 3
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+
+      function showSlides() {
+
+          timeOut = 2000;
+
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slideIndex++;
+
+          if (slideIndex > slides.length) {
+              slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+  </script>
+
+
+  </section>
+    <!--Main Section starts here-->
+    <div class=" shadow-lg bg-white rounded-lg border border-gray-200  padding ">
+      <div class="">
+        <h2><span>Contact Us </span></h2>
+<div class="">
+<p><span><strong>Department of Electronics and Communication Engineering</strong></span></p>
+<p><span><strong>National Institute of Technology Goa</strong></span></p>
+<p><span><strong>Farmagudi, Ponda , Goa - 403 401</strong></span></p>
+<p><span><strong>Ph.No. : [0832] 2404220</strong></span></p>
+<p><span><strong>Fax No. : [0832] 2404202</strong></span></p>
+</div>
+    
+</div>
+
+ <!-- Main Section Ends Here -->
+
+</body>
+
+</html>

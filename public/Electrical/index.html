@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Department of Electrical and Electrical Engineering</title>
+        <link rel="stylesheet" href=".././styles.css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+    
+            body {
+                font-family: Verdana, sans-serif;
+            }
+    
+            .mySlides {
+                display: none;
+            }
+    
+            img {
+                vertical-align: middle;
+            }
+    
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 1000px;
+                position: relative;
+                margin: auto;
+            }
+    
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+    
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+    
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+    
+            .active {
+                background-color: #717171;
+            }
+    
+            /* Fading animation */
+            .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+    
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+    
+                to {
+                    opacity: 1
+                }
+            }
+    
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .text {
+                    font-size: 11px
+                }
+            }
+    
+            .centered-text {
+                text-align: center;
+                margin-left: 0;
+                margin-right: 0;
+            }
+    
+            header {
+                z-index: 2;
+            }
+    
+            /* Position the Previous and Next buttons */
+            .prev,
+            .next {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: 16px;
+                cursor: pointer;
+                font-size: 20px;
+                background: rgba(0, 0, 0, 0.3);
+                color: white;
+                border: none;
+                border-radius: 5px;
+            }
+    
+            .prev {
+                left: 10px;
+                /* Adjust the left position as needed */
+            }
+    
+            .next {
+                right: 10px;
+                /* Adjust the right position as needed */
+            }
+    
+            .prev:hover,
+            .next:hover {
+                background: rgba(0, 0, 0, 0.6);
+            }
+        </style>
+    </head>
+    <body>
+        <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
+            <div class="flex justify-center">
+                <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
+    
+            </div>
+    
+            <div class="text-center border mb-10">
+                <nav class="mt-2 justify-center items-center">
+                    <div class="container_B font-semibold text-gray-700 ml-16">
+    
+                        <!--Home-->
+                        <div class="dropdown">
+                            <a href="../Electrical/index.html">Home</a>
+                        </div>
+    
+                        <!--Academic Handbook-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Academics</button>
+                            <div class="dropdown-content">
+                                <a href="">academic handbook</a>
+                                <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">calendar</a>
+                                <a href="../academics/rules_and_regulations.html">regulation and Curriculum</a>
+                            </div>
+    
+                        </div>
+
+                        <!--Students-->
+                        <div class="dropdown">
+                            <button class="dropbtn">Students</button>
+                            <div class="dropdown-content">
+                                <a href="../Electrical/Students/btech.html">B.tech</a>
+                                <a href="../Electrical/Students/mtech.html">M.tech</a>
+                                <a href="../Electrical/Students/phd.html">PH.D.</a>
+                            </div>
+
+                        </div>
+                       <!--Faculty-->
+                       <div class="dropdown">
+                        <a href="../Electrical/faculty.html">Faculty</a>
+                        
+                    </div>
+                    <!--staff-->
+                    <div class="dropdown">
+                        <a href="../Electrical/staff.html">Staff</a>
+                        
+                    </div>
+                    <!--reseach-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="">journals</a>
+                            <a href="../Electrical/Research/Proceedings.html">proceedings</a>
+                            <a href="../Electrical/Research/Book_Book_chapters.html">book / book chapters</a>
+                            <a href="../Electrical/Research/Research_projects.html">Research projects</a>
+                        </div>
+
+                    </div>
+                    <!--Events-->
+                    <div class="dropdown">
+                        <a href="../Electrical/Events/event.html">Events</a>
+                        
+                    </div>
+                       <!--Gallery-->
+                       <div class="dropdown">
+                        <a href="../Electrical/Gallery/Photo.html">Gallery</a>
+                        
+                    </div>
+
+                    <!--E-Downloads-->
+                    <div class="dropdown">
+                        <button class="dropbtn">E-Downloads</button>
+                        <div class="dropdown-content">
+                            <a href="">Facualty and staff</a>
+                            <a href="">Student</a>
+                            <a href="">Dissertion Format</a>
+                        </div>
+
+                    </div>
+ 
+                        <!--Contact Us-->
+                        <div class="dropdown">
+                            <a href="../Electrical/contact_us.html">Contact Us</a>
+                            
+                        </div>
+    
+                    </div>
+            </div>
+            </nav>
+            </div>
+        </header>
+        <div class="container pl-16">
+        <p style="text-align: center;"><strong>Welcome to Electrical &amp; Electrical Engineering</strong></p>
+        <p style="text-align: justify;">The department of Electrical and Electrical Engineering was established during the inception of&nbsp;the institute in 2010. It offers undergraduate (B. Tech.), postgraduate (M. Tech in Power<span>&nbsp;Electrical</span>&nbsp;and Power <span>Systems</span>), and research programmes in the various fields of Electrical and&nbsp;Electrical Engineering. The faculty members are committed to provide the finest possible&nbsp;education for both graduate and undergraduate students. The major areas of faculty expertise&nbsp;include Power Systems, Power Electrical, Power Electronic Drives, HVDC Transmission,&nbsp;FACTS Controllers, Electrical Machines, Control Systems, Smart Grid, Signal Processing,&nbsp;Energy Management, Fuzzy Logic, Neural Networks, and Application of Signal Processing in&nbsp;Power Systems and Power Electrical. The Faculty members are actively engaged in various&nbsp;research areas ranging from practical implementation to theoretical investigations. Their research&nbsp;is being published in leading international journals and conferences. The lab facilities and the&nbsp;infrastructure are regularly upgraded and are well supported by the institute and the industry.&nbsp;Department has MoU with Power Research and Development Consultancy, Bangalore to carry&nbsp;out the collaborative projects.</p>
+        <p style="text-align: justify;"><span style="color: #0000ff;"><strong>Current Research Project Areas:</strong></span></p>
+        <ul>
+        <li>Smart Electric Grid</li>
+        <li>Electric Vehicles</li>
+        <li>Grid Connected / Stand Alone PV System</li>
+        <li>Wireless power Transfer</li>
+        <li>Renewable Energy System</li>
+        <li>Power Quality Issues &amp; applications of Soft Computing techniques</li>
+        <li>Multilevel Inverters</li>
+        <li>Open-end Winding Induction Motor Drives</li>
+        <li>Power Electrical</li>
+        <li>Degital Signal/Image Processing&nbsp;</li>
+        <li>Design of Wavelets&nbsp;</li>
+        <li>FPGA based Hardware Accelerators</li>
+        <li>Design of Neural Networks</li>
+        <li>Biometrics</li>
+        <li>Control System</li>
+        <li>Restructured Power System</li>
+        <li>Planning,Operation &amp; Control of Power System</li>
+        <li>Electric Arc Furnace operation</li>
+        <li>FACTS,AC/DC Microgrids</li>
+        <li>Multilevel Converter</li>
+        <li>Pulsewidth Modulation</li>
+        <li>Switched Reluctance Motor &amp; Drives</li>
+        </ul>
+        <p><span style="color: #0000ff;"><strong>Programs Offering:</strong></span></p>
+        <p><span style="color: #0000ff;"><strong>UG Program: From 2010:</strong></span></p>
+        <ul>
+        <li>B.Tech In Electrical &amp; Electrical Engineering (4 years)</li>
+        <li>UG Strength -44 (JoSSA/CSAB-38, DASA-06)</li>
+        </ul>
+        <ul>
+        </ul>
+        <p style="text-align: justify;"><span style="color: #0000ff;"><strong>PG Program: From 2014:</strong></span></p>
+        <ul>
+        <li>Power Electrical &amp; Power System (PEPS) (2 years)</li>
+        <li>PG Strength - 24 (CCMT-22 , Sponsorship-02)</li>
+        </ul>
+        <p><span style="color: #0000ff;"><strong>Doctoral Program: From 2014:</strong></span></p>
+        <p><span style="color: #0000ff;"><strong>Ph.D. :-</strong></span></p>
+        <ul>
+        <li>Power Electrical and drives,</li>
+        <li>Renewable Energy Systems, </li>
+        <li>Power Systems, </li>
+        <li>Smart Grids, </li>
+        <li>Electric Vehicles, </li>
+        <li>Control System,</li>
+        <li>Digital Signal / Image Processing,</li>
+        <li>FPGA Accelerators,</li>
+        <li>Wavelets,</li>
+        <li>Artificial Intelligence.</li>
+        </ul>
+        <p>&nbsp;</p>
+        <ul>
+        </ul>
+            </div>
+            <footer class="site-footer mt-4">
+                <div class="container">
+                  <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div>
+                      <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
+                      
+                      <ul class="footer-links">
+                        <li><a href="index.html"><span class="hover:text-white">Home</span></a></li>
+                        <li><a  href="http://scanfcode.com/contribute-at-scanfcode/"><span class="hover:text-white">Syllabus</span></a></li>
+                        <li><a href="http://scanfcode.com/privacy-policy/"><span class="hover:text-white">Results</span></a></li>
+                        <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">RTI</span></a></li>
+                        <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Login</span></a></li>
+                        <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Contact Us</span></a></li>
+                        <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Feedback</span></a></li>
+                      </ul>
+                      <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/about/"><span class="hover:text-white">e-Downloads</span></a></li>
+                        <li><a href="http://scanfcode.com/contact/"><span class="hover:text-white">Students</span></a></li>
+                        <li><a href="academics/academic_calendar.html/"><span class="hover:text-white">Academic Calendar</span></a></li>
+                        <li><a href="academics/rules_and_regulations.html"><span class="hover:text-white">Regulations and Curriculum</span></a></li>
+                        <li><a href="academics/DissertionFormat.html"><span class="hover:text-white">Dissertation Formats</span></a></li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+              
+                    <div>
+                      <h6 class="text-lg font-semibold mb-2">Informations</h6>
+                      <ul class="footer-links">
+                        <li><a href="http://scanfcode.com/category/c-language/"><span class="hover:text-white">Faculty</span></a></li>
+                        <li><a href="http://scanfcode.com/category/front-end-development/"><span class="hover:text-white">Staff</span></a></li>
+                        <li><a href="http://scanfcode.com/category/back-end-development/"><span class="hover:text-white">JEE</span></a></li>
+                        <li><a href="http://scanfcode.com/category/java-programming-language/"><span class="hover:text-white">Facilities</span></a></li>
+                        <li><a href="./static/fee_structure_23-24_25july2023.pdf"><span class="hover:text-white">Fee Structure</span></a></li>
+                        <li><a href="http://scanfcode.com/category/templates/"><span class="hover:text-white">NIRF</span></a></li>
+                      </ul>
+                    </div>
+              
+                    <div>
+                      <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+                      <ul class="footer-links">
+                        <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/contact/"><span class="hover:text-white">National Institute of Technology Goa
+                          Farmagudi, Ponda , Goa - 403401</span></a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/contribute-at-scanfcode/"><span class="hover:text-white">Website: www.nitgoa.ac.in</span></a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/privacy-podivcy/"><span class="hover:text-white">span>  Phone: [0832] 2404200 (PA to Director)</span></a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Fax: [0832] 2404202</span></a></div>
+                      </ul>
+                    </div> 
+                  </div>
+                  <br/>
+                </div>
+                <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+                  <!-- hitwebcounter Code START -->
+                  <p>Visitor counter</p>
+                  <a href="https://www.hitwebcounter.com" target="_blank">
+                    <img src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+                  </a>
+                </div>
+            
+            
+                
+              </footer>
+        
+    </body>

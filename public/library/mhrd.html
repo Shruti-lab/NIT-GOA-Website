@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library NIT Goa</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Starts here -->
+    <header
+      id="main-header"
+      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
+    >
+      <div class="flex justify-center">
+        <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
+      </div>
+
+      <div class="text-center border mb-10">
+        <nav class="mt-2 justify-center items-center">
+          <div class="container_B font-semibold text-gray-700 ml-16">
+            <!--Home-->
+            <div class="dropdown">
+              <a href="../../index.html">Home</a>
+            </div>
+
+            <!--About-->
+            <div class="dropdown">
+              <button class="dropbtn">About</button>
+              <div class="dropdown-content">
+                <a href="../library/about/guidelines.html">Guidelines</a>
+                <a href="../library/about/membership.html">Membership</a>
+                <a href="../library/about/eresource.html"
+                  >E-Resource Uses Policy</a
+                >
+                <a
+                  href="https://drive.google.com/drive/folders/17-3asXzksIkuyJvc5OWxUwFuvlcOiBp8auAFze7aTx0"
+                  >Library Events</a
+                >
+              </div>
+            </div>
+
+            <!--Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">Collection</button>
+              <div class="dropdown-content">
+                <a href="../library/collection/books.html">Books</a>
+                <a href="../library/collection/periodicals.html">Periodicals</a>
+                <a href="../library/collection/thesis.html"
+                  >Thesis and Dissertations</a
+                >
+              </div>
+            </div>
+
+            <!--E-Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">E-Collection</button>
+              <div class="dropdown-content">
+                <a href="https://dl.acm.org/" target="_blank"
+                  >ACM Digital Library</a
+                >
+                <a href="../library/ecollection/ieee.html">IEEE SWEBOK</a>
+                <a href="https://ieeexplore.ieee.org/Xplore/home.jsp"
+                  >IEEE Explore</a
+                >
+                <a href="../library/ecollection/science_e_books.html"
+                  >ScienceDirect E-books</a
+                >
+                <a
+                  href="https://www.sciencedirect.com/browse/journals-and-books"
+                  >ScienceDirect e-Journals</a
+                >
+                <a href="../library/ecollection/elseiver.html"
+                  >Back File e-Collection</a
+                >
+                <a href="https://link.springer.com/">SpringerLink e-Journals</a>
+              </div>
+            </div>
+
+            <!--ESS Resources-->
+            <div class="dropdown">
+              <button class="dropbtn">ESS Resources</button>
+              <div class="dropdown-content">
+                <a href="http://community.worldlibrary.in/"
+                  >World e-Book Library</a
+                >
+                <a href="http://community.worldlibrary.in/"
+                  >World Heritage Encyclopedia</a
+                >
+              </div>
+            </div>
+
+            <!--MHRD Digital Initiatives-->
+
+            <div class="dropdown">
+              <a href="../library/mhrd.html">MHRD Digital Initiatives</a>
+            </div>
+
+            <!--Learning and Research Support-->
+            <div class="dropdown">
+              <button class="dropbtn">Learning and Research Support</button>
+              <div class="dropdown-content">
+                <a href="../library/learning/plagiarism.html"
+                  >Plagiarism Check</a
+                >
+                <a href="../library/learning/learning.html"
+                  >Learning and Research Tools</a
+                >
+                <a href="../library/learning/open.html"
+                  >Open Knowledge Portal</a
+                >
+                <a href="../library/learning/shodh.html"> ShodhGantori </a>
+              </div>
+            </div>
+
+            <!--Services-->
+            <div class="dropdown">
+              <button class="dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a href="#">Books Borrowing</a>
+                <a href="#">Borrow / Renew / Request</a>
+                <a href="#">Library Cards</a>
+                <a href="#">Email Alert</a>
+                <a href="#">Purchase Recommendation</a>
+                <a href="#">Information Services</a>
+                <a href="#">Guide for New Students</a>
+                <a href="#">Current Awareness Services</a>
+                <a href="#">Demo / Training / Workshop</a>
+                <a href="#">Loss / Damage and Recovery</a>
+                <a href="#">Ask a Librarian</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="https://libcloud.mastersofterp.in/OPAC_V3/?library=National%20Institute%20of%20Technology%20Goa"
+                >Library Catalogue</a
+              >
+            </div>
+
+            <!--Contact Us-->
+            <div class="dropdown">
+              <a href="../library/contact_us/contact.html">Contact Us</a>
+
+              <button class="dropbtn mt-3"></button>
+              <div class="dropdown-content">
+                <a href="../library/contact_us/team.html"></a>
+                <a href="../library/contact_us/staff.html">Staff</a>
+              </div>
+            </div>
+
+            <!--NIT GOA IRINS-->
+            <div class="dropdown">
+              <a href="https://nitgoa.irins.org/">NIT GOA IRINS</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!--Main Section starts here-->
+    <div class="p-8 shadow-lg bg-white rounded-lg border border-gray-200">
+      <div class="about-us">
+        <h2 class="text-3xl font-awesome font-semibold">
+          <span class="border-b-4 border-red-600"
+            >MHRD, Government of India, DIGITAL INITIATIVES FOR HIGHER
+            EDUCATION</span
+          >
+        </h2>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>SWAYAM</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >SWAYAM is a programme initiated by the Government of India and
+              designed to achieve the three cardinal principles of Education
+              Policy viz., access, equity and quality. The objective of this
+              effort is to take the best teaching-learning resources to all,
+              including the most disadvantaged. SWAYAM seeks to bridge the
+              digital divide for students who have hitherto remained untouched
+              by the digital revolution and have not been able to join the
+              mainstream of the knowledge economy.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="https://swayam.gov.in/"
+                target="_blank"
+                >Click Here</a
+              >&nbsp;</span
+            >
+          </p>
+          <p>
+            <span><br /></span>
+          </p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>SWAYAM Prabha DTH channels</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >The SWAYAM PRABHA is a group of 32 DTH channels devoted to
+              telecasting of high-quality educational programmes on 24X7 basis
+              using the GSAT-15 satellite. Every day, there will be new content
+              for at least (4) hours which would be repeated 5 more times in a
+              day, allowing the students to choose the time of their
+              convenience. The channels are uplinked from BISAG, Gandhinagar.
+              The contents are provided by NPTEL, IITs, UGC, CEC, IGNOU, NCERT
+              and NIOS. The INFLIBNET Centre maintains the web portal.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="https://www.swayamprabha.gov.in/index.php/"
+                target="_blank"
+                >Click Here&nbsp;</a
+              ></span
+            >
+          </p>
+          <p>
+            <span><br /></span>
+          </p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>National Digital Library</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >Ministry of Human Resource Development under its National Mission
+              on Education through Information and Communication Technology has
+              initiated the National Digital Library of India (NDL India) pilot
+              project to develop a framework of a virtual repository of learning
+              resources with a single-window search facility. Filtered and
+              federated searching is employed to facilitate focused searching so
+              that learners can find out the right resource with least effort
+              and in minimum time. NDL India is designed to hold the content of
+              any language and provides interface support for leading Indian
+              languages (currently Hindi and Bengali). &nbsp;The pilot project
+              is devising a framework that is being scaled up with respect to
+              content volume and diversity to serve all levels and disciplines
+              of learners. It is being developed at IIT Kharagpur.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="https://ndl.iitkgp.ac.in/"
+                target="_blank"
+                >Click Here&nbsp;</a
+              ></span
+            >
+          </p>
+          <p>
+            <span><br /></span>
+          </p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>National Academic Depository</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >National Academic Depository (NAD)&nbsp;is an initiative of
+              Government of India, facilitated by MHRD. NAD is a national
+              database set up to hold academic awards issued by Academic
+              Institutions (AI) in an electronic form.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="https://cvl.nad.co.in/NAD/home.action?activePage=home"
+                target="_blank"
+                >Click Here&nbsp;</a
+              ></span
+            >
+          </p>
+          <p>
+            <span><br /></span>
+          </p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>NPTEL India</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >NPTEL is an acronym for National Programme on Technology Enhanced
+              Learning which is an initiative by seven Indian Institutes of
+              Technology (IIT Bombay, Delhi, Guwahati, Kanpur, Kharagpur,
+              Madras, and Roorkee) and Indian Institute of Science (IISc) for
+              creating course contents in engineering and science. NPTEL as a
+              project originated from many deliberations between IITs, Indian
+              Institutes of Management (IIMs) and Carnegie Mellon University
+              (CMU) during the years 1999-2003. A proposal was jointly put
+              forward by five IITs (Bombay, Delhi, Kanpur, Kharagpur, and
+              Madras) and IISc for creating contents for 100 courses as
+              web-based supplements and 100 complete video courses, for forty
+              hours of duration per course.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="http://nptel.ac.in/"
+                target="_blank"
+                >Click Here&nbsp;</a
+              ></span
+            >
+          </p>
+          <p>
+            <span><br /></span>
+          </p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>e-shodhSindhu</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >Based on the recommendation of an Expert Committee, the MHRD has
+              formed e-ShodhSindhu merging three consortia initiatives, namely
+              UGC-INFONET Digital Library Consortium, NLIST, and INDEST-AICTE
+              Consortium. The e-ShodhSindhu will continue to provide current as
+              well as archival access to more than 15,000 core and peer-reviewed
+              journals and a number of bibliographic, citation and factual
+              databases in different disciplines from a large number of
+              publishers and aggregators to its member institutions including
+              centrally-funded technical institutions, universities and colleges
+              that are covered under 12(B) and 2(f) Sections of the UGC
+              Act.</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:&nbsp;<a
+                class="text-blue-600"
+                href="https://www.inflibnet.ac.in/ess/index.php"
+                target="_blank"
+                >Click Here&nbsp;</a
+              ></span
+            >
+          </p>
+          <p>&nbsp;</p>
+        </div>
+        <h2
+          class="bg-blue-400 border m-6 text-center p-6 text-xl font-semibold text-white"
+        >
+          <span>e-PGPathshala</span>
+        </h2>
+        <div class="border border-b-4 m-6 p-5 text-center">
+          <p>
+            <span
+              >e-PG Pathshala is an initiative of the MHRD under its National
+              Mission on Education through ICT (NME-ICT) being executed by the
+              UGC. The content and its quality being the key component of
+              education system, high quality, curriculum-based, interactive
+              e-content in 70 subjects across all disciplines of social
+              sciences, arts, fine arts and humanities, natural &amp;
+              mathematical sciences, linguistics and languages have been
+              developed by the subject experts working in Indian universities
+              and other R &amp; D institutes across the country.&nbsp;</span
+            >
+          </p>
+          <p>
+            <span
+              >For more information:
+              <a href="https://epgp.inflibnet.ac.in/" target="_blank"
+                >Click Here</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Section Ends Here -->
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer mt-4" style="background-color: rgb(7, 60, 104)">
+      <div class="container">
+        <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Quick Links</h6>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><span class="hover:text-white">Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                    ><span class="hover:text-white">Syllabus</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/privacy-policy/"
+                    ><span class="hover:text-white">Results</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">RTI</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Login</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Contact Us</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Feedback</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-links">
+                <li>
+                  <a href="http://scanfcode.com/about/"
+                    ><span class="hover:text-white">e-Downloads</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contact/"
+                    ><span class="hover:text-white">Students</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/academic_calendar.html/"
+                    ><span class="hover:text-white">Academic Calendar</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/rules_and_regulations.html"
+                    ><span class="hover:text-white"
+                      >Regulations and Curriculum</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/DissertionFormat.html"
+                    ><span class="hover:text-white"
+                      >Dissertation Formats</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Informations</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  ><span class="hover:text-white">Faculty</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  ><span class="hover:text-white">Staff</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  ><span class="hover:text-white">JEE</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  ><span class="hover:text-white">Facilities</span></a
+                >
+              </li>
+              <li>
+                <a href="./static/fee_structure_23-24_25july2023.pdf"
+                  ><span class="hover:text-white">Fee Structure</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/"
+                  ><span class="hover:text-white">NIRF</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+            <ul class="footer-links">
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contact/"
+                  ><span class="hover:text-white"
+                    >National Institute of Technology Goa Farmagudi, Ponda , Goa
+                    - 403401</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  ><span class="hover:text-white"
+                    >Website: www.nitgoa.ac.in</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/privacy-podivcy/"
+                  ><span class="hover:text-white"
+                    >span> Phone: [0832] 2404200 (PA to Director)</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Fax: [0832] 2404202</span></a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="counter-container ml-16 mr-4">
+        <!-- Container for the counter -->
+        <!-- hitwebcounter Code START -->
+        <p>Visitor counter</p>
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+            title="Counter Widget"
+            alt="Visit counter For Websites"
+            border="0"
+            width="150"
+            height="100"
+          />
+        </a>
+      </div>
+    </footer>
+    <!--Footer Ends Here -->
+  </body>
+</html>

@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library NIT Goa</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Starts here -->
+    <header
+      id="main-header"
+      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
+    >
+      <div class="flex justify-center">
+        <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
+      </div>
+
+      <div class="text-center border mb-10">
+        <nav class="mt-2 justify-center items-center">
+          <div class="container_B font-semibold text-gray-700 ml-16">
+            <!--Home-->
+            <div class="dropdown">
+              <a href="../../index.html">Home</a>
+            </div>
+
+            <!--About-->
+            <div class="dropdown">
+              <button class="dropbtn">About</button>
+              <div class="dropdown-content">
+                <a href="../../library/about/guidelines.html">Guidelines</a>
+                <a href="../../library/about/membership.html">Membership</a>
+                <a href="../../library/about/eresource.html"
+                  >E-Resource Uses Policy</a
+                >
+                <a
+                  href="https://drive.google.com/drive/folders/17-3asXzksIkuyJvc5OWxUwFuvlcOiBp8auAFze7aTx0"
+                  >Library Events</a
+                >
+              </div>
+            </div>
+
+            <!--Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">Collection</button>
+              <div class="dropdown-content">
+                <a href="../../library/collection/books.html">Books</a>
+                <a href="../../library/collection/periodicals.html"
+                  >Periodicals</a
+                >
+                <a href="../../library/collection/thesis.html"
+                  >Thesis and Dissertations</a
+                >
+              </div>
+            </div>
+
+            <!--E-Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">E-Collection</button>
+              <div class="dropdown-content">
+                <a href="https://dl.acm.org/" target="_blank"
+                  >ACM Digital Library</a
+                >
+                <a href="../../library/ecollection/ieee.html">IEEE SWEBOK</a>
+                <a href="https://ieeexplore.ieee.org/Xplore/home.jsp"
+                  >IEEE Explore</a
+                >
+                <a href="../../library/ecollection/science_e_books.html"
+                  >ScienceDirect E-books</a
+                >
+                <a
+                  href="https://www.sciencedirect.com/browse/journals-and-books"
+                  >ScienceDirect e-Journals</a
+                >
+                <a href="../../library/ecollection/elseiver.html"
+                  >Back File e-Collection</a
+                >
+                <a href="https://link.springer.com/">SpringerLink e-Journals</a>
+              </div>
+            </div>
+
+            <!--ESS Resources-->
+            <div class="dropdown">
+              <button class="dropbtn">ESS Resources</button>
+              <div class="dropdown-content">
+                <a href="http://community.worldlibrary.in/"
+                  >World e-Book Library</a
+                >
+                <a href="http://community.worldlibrary.in/"
+                  >World Heritage Encyclopedia</a
+                >
+              </div>
+            </div>
+
+            <!--MHRD Digital Initiatives-->
+
+            <div class="dropdown">
+              <a href="../../library/mhrd.html">MHRD Digital Initiatives</a>
+            </div>
+
+            <!--Learning and Research Support-->
+            <div class="dropdown">
+              <button class="dropbtn">Learning and Research Support</button>
+              <div class="dropdown-content">
+                <a href="../../library/learning/plagiarism.html"
+                  >Plagiarism Check</a
+                >
+                <a href="../../library/learning/learning.html"
+                  >Learning and Research Tools</a
+                >
+                <a href="../../library/learning/open.html"
+                  >Open Knowledge Portal</a
+                >
+                <a href="../../library/learning/shodh.html"> ShodhGantori </a>
+              </div>
+            </div>
+
+            <!--Services-->
+            <div class="dropdown">
+              <button class="dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a href="#">Books Borrowing</a>
+                <a href="#">Borrow / Renew / Request</a>
+                <a href="#">Library Cards</a>
+                <a href="#">Email Alert</a>
+                <a href="#">Purchase Recommendation</a>
+                <a href="#">Information Services</a>
+                <a href="#">Guide for New Students</a>
+                <a href="#">Current Awareness Services</a>
+                <a href="#">Demo / Training / Workshop</a>
+                <a href="#">Loss / Damage and Recovery</a>
+                <a href="#">Ask a Librarian</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="https://libcloud.mastersofterp.in/OPAC_V3/?library=National%20Institute%20of%20Technology%20Goa"
+                >Library Catalogue</a
+              >
+            </div>
+
+            <!--Contact Us-->
+            <div class="dropdown">
+              <a href="../../library/contact_us/contact.html">Contact Us</a>
+              <button class="dropbtn mt-3"></button>
+
+              <div class="dropdown-content">
+                <a href="../../library/contact_us/team.html"
+                  >Library Committee
+                </a>
+                <a href="../../library/contact_us/staff.html">STAFF</a>
+              </div>
+            </div>
+
+            <!--NIT GOA IRINS-->
+            <div class="dropdown">
+              <a href="https://nitgoa.irins.org/">NIT GOA IRINS</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!--Main Section starts here-->
+    <div class="p-8 shadow-lg bg-white rounded-lg border border-gray-200">
+      <h2 class="text-3xl font-bold mb-10 text-gray-800">
+        <span class="border-red-400 border-b-4"
+          >ELSEVIER ENGINEERING SUBJECT BACKFILE COLLECTION</span
+        >
+      </h2>
+
+      <div>
+        <table class="">
+          <tbody>
+            <tr>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                ISSN
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Full Title
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Change History
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Year Range
+              </th>
+            </tr>
+            <tr>
+              <td
+                class="border border-b-4 m-6 p-5 text-center"
+                class="border border-b-4 m-6 p-5 text-center"
+              >
+                00945765
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00945765"
+                  target="_blank"
+                  >Acta Astronautica</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1974-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">10657355</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/10657355"
+                  target="_blank"
+                  >Advanced Cement Based Materials</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Cement and Concrete Research
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1993-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                09659978
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09659978"
+                  target="_blank"
+                  >Advances in Engineering Software</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Advances in Engineering Software and
+                Workstations; Incorporating Computing Systems in Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1992-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01411195</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09613552"
+                  target="_blank"
+                  >Advances in Engineering Software (1978)</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Advances in Engineering Software and Workstations
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1978-1990</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                09613552
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09613552"
+                  target="_blank"
+                  >Advances in Engineering Software and Workstations</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Advances in Engineering Software (1978);
+                Continued as Advances in Engineering Software
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0003682X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0003682X"
+                  target="_blank"
+                  >Applied Acoustics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00036870</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00036870"
+                  target="_blank"
+                  >Applied Ergonomics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1970-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01411187</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01411187"
+                  target="_blank"
+                  >Applied Ocean Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00043702</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00043702"
+                  target="_blank"
+                  >Artificial Intelligence</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1970-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09541810</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09541810"
+                  target="_blank"
+                  >Artificial Intelligence in Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Advanced Engineering Informatics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1986-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00051098</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00051098"
+                  target="_blank"
+                  >Automatica</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1963-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09265805</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09265805"
+                  target="_blank"
+                  >Automation in Construction</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1992-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03601323</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09265805"
+                  target="_blank"
+                  >Building and Environment</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Building Science
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1976-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00073628</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00073628"
+                  target="_blank"
+                  >Building Science</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Building and Environment
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1965-1975</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                09589465
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09589465"
+                  target="_blank"
+                  >Cement and Concrete Composites</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as International Journal of Cement Composites and
+                Lightweight Concrete
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00088846</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00088846"
+                  target="_blank"
+                  >Cement and Concrete Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Advanced Cement Based Materials
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1971-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00078506</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00078506"
+                  target="_blank"
+                  >CIRP Annals - Manufacturing Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03783839</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03783839"
+                  target="_blank"
+                  >Coastal Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1977-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02638223</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a href="http://www.sciencedirect.com/science/journal/02638223"
+                  >Composite Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02663538</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02663538"
+                  target="_blank"
+                  >Composites Science and Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Fibre Science and Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00104485</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00104485"
+                  target="_blank"
+                  >Computer-Aided Design</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00457825</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00457825"
+                  target="_blank"
+                  >Computer Methods in Applied Mechanics and Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1972-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00104809</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00104809"
+                  target="_blank"
+                  >Computers and Biomedical Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Journal of Biomedical Informatics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1967-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00457906</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00457906"
+                  target="_blank"
+                  >Computers &amp; Electrical Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1973-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00457930</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00457930/30"
+                  target="_blank"
+                  >Computers &amp; Fluids</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1973-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0266352X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0266352X"
+                  target="_blank"
+                  >Computers and Geotechnics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03608352</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03608352"
+                  target="_blank"
+                  >Computers &amp; Industrial Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1976-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01663615</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01663615"
+                  target="_blank"
+                  >Computers in Industry</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00457949</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00457949"
+                  target="_blank"
+                  >Computers &amp; Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1971-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09500618</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09500618"
+                  target="_blank"
+                  >Construction and Building Materials</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09670661</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09670661"
+                  target="_blank"
+                  >Control Engineering Practice</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1993-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0169023X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0169023X"
+                  target="_blank"
+                  >Data &amp; Knowledge Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0142694X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0142694X"
+                  target="_blank"
+                  >Design Studies</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">10512004</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/10512004"
+                  target="_blank"
+                  >Digital Signal Processing</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01419382</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01419382"
+                  target="_blank"
+                  >Displays</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09258574</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09258574"
+                  target="_blank"
+                  >Ecological Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1992-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03787796</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03787796"
+                  target="_blank"
+                  >Electric Power Systems Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1977-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03787788</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03787788"
+                  target="_blank"
+                  >Energy and Buildings</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1977-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0264682X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0264682X"
+                  target="_blank"
+                  >Engineering Analysis</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Engineering Analysis with Boundary Elements
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1988</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09557997</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09557997"
+                  target="_blank"
+                  >Engineering Analysis with Boundary Elements</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Engineering Analysis
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1989-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09521976</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09521976"
+                  target="_blank"
+                  >Engineering Applications of Artificial Intelligence</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                0167188X
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0167188X"
+                  target="_blank"
+                  >Engineering Costs and Production Economics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Engineering and Process Economics; Continued
+                as International Journal of Production Economics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1991</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">13506307</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/13506307"
+                  target="_blank"
+                  >Engineering Failure Analysis</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00137944</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00137944"
+                  target="_blank"
+                  >Engineering Fracture Mechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00137952</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00137952"
+                  target="_blank"
+                  >Engineering Geology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Mining Science and Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1965-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01675419</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01675419"
+                  target="_blank"
+                  >Engineering Management International</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Journal of Engineering and Technology Management
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1981-1988</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0377841X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0377841X"
+                  target="_blank"
+                  >Engineering and Process Economics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Engineering Costs and Production Economics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1976-1979</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01410296</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01410296"
+                  target="_blank"
+                  >Engineering Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1978-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09593527</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09593527"
+                  target="_blank"
+                  >Euro III-Vs Review</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as III-Vs Review
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1990</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08941777</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08941777"
+                  target="_blank"
+                  >Experimental Thermal and Fluid Science</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09574174</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09574174"
+                  target="_blank"
+                  >Expert Systems with Applications</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00150568</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00150568"
+                  target="_blank"
+                  >Fibre Science and Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Composites Science and Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1984</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0168874X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0168874X"
+                  target="_blank"
+                  >Finite Elements in Analysis and Design</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03797112</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03797112"
+                  target="_blank"
+                  >Fire Safety Journal</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1977-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09555986</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09555986"
+                  target="_blank"
+                  >Flow Measurement and Instrumentation</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1989-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09203796</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09203796"
+                  target="_blank"
+                  >Fusion Engineering and Design</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Nuclear Engineering and Design. Fusion
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02661144</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02661144"
+                  target="_blank"
+                  >Geotextiles and Geomembranes</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03756505</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03756505"
+                  target="_blank"
+                  >Geothermics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1972-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                08904332
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08904332"
+                  target="_blank"
+                  >Heat Recovery Systems and CHP</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Journal of Heat Recovery Systems; Continued as
+                Applied Thermal Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09611290</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09611290"
+                  target="_blank"
+                  >III-Vs Review</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Euro III-Vs Review; Title discontinued as of
+                2007
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08998248</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08998248"
+                  target="_blank"
+                  >IMPACT of Computing in Science and Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Title discontinued as of 1994
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1989-1993</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09215956</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09215956"
+                  target="_blank"
+                  >Industrial Metrology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Measurement
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1992</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01679260</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01679260"
+                  target="_blank"
+                  >Integration, the VLSI Journal</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">07351933</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/07351933"
+                  target="_blank"
+                  >International Communications in Heat and Mass Transfer</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Letters in Heat and Mass Transfer
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01437496</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01437496"
+                  target="_blank"
+                  >International Journal of Adhesion and Adhesives</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02625075</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02625075"
+                  target="_blank"
+                  >International Journal of Cement Composites and Lightweight
+                  Concrete</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Cement and Concrete Composites
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1989</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01420615</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01420615"
+                  target="_blank"
+                  >International Journal of Electrical Power &amp; Energy
+                  Systems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00207225</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00207225"
+                  target="_blank"
+                  >International Journal of Engineering Science</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1963-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01421123</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01421123"
+                  target="_blank"
+                  >International Journal of Fatigue</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0142727X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0142727X"
+                  target="_blank"
+                  >International Journal of Heat and Fluid Flow</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00179310</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00179310"
+                  target="_blank"
+                  >International Journal of Heat and Mass Transfer</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1960-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0734743X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0734743X"
+                  target="_blank"
+                  >International Journal of Impact Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01698141</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01698141"
+                  target="_blank"
+                  >International Journal of Industrial Ergonomics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1986-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00207357</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00207357"
+                  target="_blank"
+                  >International Journal of Machine Tool Design and Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as International Journal of Machine Tools and
+                Manufacture
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1961-1986</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08906955</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08906955"
+                  target="_blank"
+                  >International Journal of Machine Tools and Manufacture</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as International Journal of Machine Tool Design
+                and Research
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00207403</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00207403"
+                  target="_blank"
+                  >International Journal of Mechanical Sciences</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1960-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03019322</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03019322"
+                  target="_blank"
+                  >International Journal of Multiphase Flow</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1973-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00207462</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00207462"
+                  target="_blank"
+                  >International Journal of Non-Linear Mechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1966-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">07496419</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/07496419"
+                  target="_blank"
+                  >International Journal of Plasticity</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03080161</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03080161"
+                  target="_blank"
+                  >International Journal of Pressure Vessels and Piping</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1973-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09255273</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09255273"
+                  target="_blank"
+                  >International Journal of Production Economics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Engineering Costs and Production Economics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01407007</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01407007"
+                  target="_blank"
+                  >International Journal of Refrigeration</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1978-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                01489062
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00945765"
+                  target="_blank"
+                  >International Journal of Rock Mechanics and Mining Sciences
+                  &amp; Geomechanics Abstracts</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as International Journal of Rock Mechanics and Mining
+                Sciences
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1964-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02617277</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02617277"
+                  target="_blank"
+                  >International Journal of Soil Dynamics and Earthquake
+                  Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Soil Dynamics and Earthquake Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1982-1985</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00207683</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00207683"
+                  target="_blank"
+                  >International Journal of Solids and Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1965-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00190578</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00190578"
+                  target="_blank"
+                  >ISA Transactions</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1989-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00218634</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a href="http://www.sciencedirect.com/science/journal/00218634"
+                  >Journal of Agricultural Engineering Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Biosystems Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1965-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00218928</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00218928"
+                  target="_blank"
+                  >Journal of Applied Mathematics and Mechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1958-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01415425</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01415425"
+                  target="_blank"
+                  >Journal of Biomedical Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Medical Engineering &amp; Physics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1993</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0143974X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0143974X"
+                  target="_blank"
+                  >Journal of Constructional Steel Research</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03043886</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03043886"
+                  target="_blank"
+                  >Journal of Electrostatics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1975-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09234748</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09234748"
+                  target="_blank"
+                  >Journal of Engineering and Technology Management</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Engineering Management International
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1989-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08899746</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08899746"
+                  target="_blank"
+                  >Journal of Fluids and Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00160032</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00160032"
+                  target="_blank"
+                  >Journal of the Franklin Institute</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1826-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01987593</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01987593"
+                  target="_blank"
+                  >Journal of Heat Recovery Systems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Heat Recovery Systems and CHP
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1981-1986</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02786125</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02786125"
+                  target="_blank"
+                  >Journal of Manufacturing Systems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1982-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09240136</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09240136"
+                  target="_blank"
+                  >Journal of Materials Processing Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Journal of Mechanical Working Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03783804</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03783804"
+                  target="_blank"
+                  >Journal of Mechanical Working Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Journal of Materials Processing Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1977-1989</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00225096</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00225096"
+                  target="_blank"
+                  >Journal of the Mechanics and Physics of Solids</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1952-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00222569</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00222569"
+                  target="_blank"
+                  >Journal of Mechanisms</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Mechanism and Machine Theory
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1966-1971</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00223115</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00223115"
+                  target="_blank"
+                  >Journal of Nuclear Materials</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1959-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">07437315</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/07437315"
+                  target="_blank"
+                  >Journal of Parallel and Distributed Computing</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09591524</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09591524"
+                  target="_blank"
+                  >Journal of Process Control</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00224898</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00224898"
+                  target="_blank"
+                  >Journal of Terramechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1964-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01676105</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01676105"
+                  target="_blank"
+                  >Journal of Wind Engineering and Industrial Aerodynamics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1975-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03894304</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03894304"
+                  target="_blank"
+                  >JSAE Review</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Transferred to the Society of Automotive Engineers of Japan as
+                of 2004
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09507051</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09507051"
+                  target="_blank"
+                  >Knowledge-Based Systems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00944548</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00944548"
+                  target="_blank"
+                  >Letters in Heat and Mass Transfer</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as International Communications in Heat and Mass
+                Transfer
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1974-1982</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09518339</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09518339"
+                  target="_blank"
+                  >Marine Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09215107</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09215107"
+                  target="_blank"
+                  >Materials Science and Engineering: B</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly part of Materials Science and Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02632241</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02632241"
+                  target="_blank"
+                  >Measurement</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Industrial Metrology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08883270</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08883270"
+                  target="_blank"
+                  >Mechanical Systems and Signal Processing</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1987-1992</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01676636</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01676636"
+                  target="_blank"
+                  >Mechanics of Materials</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1982-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00936413</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00936413"
+                  target="_blank"
+                  >Mechanics Research Communications</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1974-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0094114X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0094114X"
+                  target="_blank"
+                  >Mechanism and Machine Theory</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Journal of Mechanisms
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1972-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09574158</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09574158"
+                  target="_blank"
+                  >Mechatronics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">13504533</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.medengphys.com/issue/S1350-4533%2816%29X0008-2"
+                  target="_blank"
+                  >Medical Engineering &amp; Physics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Journal of Biomedical Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09582118</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09582118"
+                  target="_blank"
+                  >Membrane Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01679317</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01679317"
+                  target="_blank"
+                  >Microelectronic Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00262692</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00262692"
+                  target="_blank"
+                  >Microelectronics Journal</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00262714</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00262714"
+                  target="_blank"
+                  >Microelectronics Reliability</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1962-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03085953</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03085953"
+                  target="_blank"
+                  >Microprocessors</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Microprocessors and Microsystems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1976-1978</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01419331</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01419331"
+                  target="_blank"
+                  >Microprocessors and Microsystems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Microprocessors
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08926875</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.journals.elsevier.com/minerals-engineering"
+                  target="_blank"
+                  >Minerals Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09638695</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09638695"
+                  target="_blank"
+                  >NDT &amp; E International</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as NDT International
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03089126</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03089126"
+                  target="_blank"
+                  >NDT International</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Non-Destructive Testing; Continued as NDT
+                &amp; E International
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1976-1990</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00291021</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00291021"
+                  target="_blank"
+                  >Non-Destructive Testing</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as NDT International
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1967-1976</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00295493</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00295493"
+                  target="_blank"
+                  >Nuclear Engineering and Design</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Nuclear Structural Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1966-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0167899X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0167899X"
+                  target="_blank"
+                  >Nuclear Engineering and Design. Fusion</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Fusion Engineering and Design
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1987</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03695816</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03695816"
+                  target="_blank"
+                  >Nuclear Structural Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Nuclear Engineering and Design
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1965</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00298018</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00298018"
+                  target="_blank"
+                  >Ocean Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00304018</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00304018"
+                  target="_blank"
+                  >Optics Communications</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1969-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00303992</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00303992"
+                  target="_blank"
+                  >Optics &amp; Laser Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Optics Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1971-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01438166</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01438166"
+                  target="_blank"
+                  >Optics and Lasers in Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03743926</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03743926"
+                  target="_blank"
+                  >Optics Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Optics &amp; Laser Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1970</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01416359</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01416359"
+                  target="_blank"
+                  >Precision Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02668920</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02668920"
+                  target="_blank"
+                  >Probabilistic Engineering Mechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1986-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">10622888</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/10622888"
+                  target="_blank"
+                  >Proceedings of the Symposium on Combustion</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Symposium on Combustion and Flame, and Explosion
+                Phenomena
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1948</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03760421</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03760421"
+                  target="_blank"
+                  >Progress in Aerospace Sciences</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1961-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01438174</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01438174"
+                  target="_blank"
+                  >Reliability Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Reliability Engineering &amp; System Safety
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1980-1987</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09518320</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09518320"
+                  target="_blank"
+                  >Reliability Engineering &amp; System Safety</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Reliability Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09601481</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09601481"
+                  target="_blank"
+                  >Renewable Energy</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Solar &amp; Wind Technology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1991-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01678493</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01678493"
+                  target="_blank"
+                  >Robotics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Robotics and Autonomous Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1987</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09218890</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09218890"
+                  target="_blank"
+                  >Robotics and Autonomous Systems</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Robotics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">07365845</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/07365845"
+                  target="_blank"
+                  >Robotics and Computer-Integrated Manufacturing</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Computer Integrated Manufacturing Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">13504789</td>
+              <td class="border border-b-4 m-6 p-5 text-center" width="401">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/13504789"
+                  target="_blank"
+                  >Sealing Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center" width="401">
+                &nbsp;
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09244247</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09244247"
+                  target="_blank"
+                  >Sensors and Actuators A: Physical</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly part of Sensors and Actuators
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1990-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                02677261
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02677261"
+                  target="_blank"
+                  >Soil Dynamics and Earthquake Engineering</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as International Journal of Soil Dynamics and
+                Earthquake Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1986-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09333630</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09333630"
+                  target="_blank"
+                  >Soil Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Soil and Tillage Research
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1988-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">03796787</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/03796787"
+                  target="_blank"
+                  >Solar Cells</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Solar Energy Materials and Solar Cells
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1991</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01651633</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01651633"
+                  target="_blank"
+                  >Solar Energy Materials</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Solar Energy Materials and Solar Cells
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1991</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">09270248</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/09270248"
+                  target="_blank"
+                  >Solar Energy Materials and Solar Cells</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporating Solar Cells and Solar Energy Materials
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1992-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0741983X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0741983X"
+                  target="_blank"
+                  >Solar &amp; Wind Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Incorporated into Renewable Energy
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1990</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00381101</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00381101"
+                  target="_blank"
+                  >Solid-State Electronics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1960-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02659646</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02659646"
+                  target="_blank"
+                  >Space Policy</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1985-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01674730</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01674730"
+                  target="_blank"
+                  >Structural Safety</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1982-1994</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                10622896
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/10622896"
+                  target="_blank"
+                  >Symposium on Combustion and Flame, and Explosion Phenomena</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Proceedings of the Symposium on Combustion;
+                Continued as Symposium (International) on Combustion
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1949</td>
+            </tr>
+            <tr height="27">
+              <td class="border border-b-4 m-6 p-5 text-center" height="27">
+                00820784
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00820784"
+                  target="_blank"
+                  >Symposium (International) on Combustion</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Symposium on Combustion and Flame, and
+                Explosion Phenomena; Continued as Proceedings of the Combustion
+                Institute
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1953-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01676911</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01676911"
+                  target="_blank"
+                  >Systems &amp; Control Letters</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1981-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00993964</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00993964"
+                  target="_blank"
+                  >Technological Forecasting</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Technological Forecasting and Social Change
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1969-1970</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00401625</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00401625"
+                  target="_blank"
+                  >Technological Forecasting and Social Change</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Technological Forecasting
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1970-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01664972</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01664972"
+                  target="_blank"
+                  >Technovation</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1981-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01678442</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01678442"
+                  target="_blank"
+                  >Theoretical and Applied Fracture Mechanics</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1984-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">02638231</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/02638231"
+                  target="_blank"
+                  >Thin-Walled Structures</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1983-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01912615</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01912615"
+                  target="_blank"
+                  >Transportation Research Part B: Methodological</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly part of Transportation Research
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0968090X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0968090X"
+                  target="_blank"
+                  >Transportation Research Part C: Emerging Technologies</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1993-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00412678</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00412678"
+                  target="_blank"
+                  >Tribology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Continued as Tribology International
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1968-1974</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">0301679X</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/0301679X"
+                  target="_blank"
+                  >Tribology International</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Formerly known as Tribology
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">1975-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">08867798</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/08867798"
+                  target="_blank"
+                  >Tunnelling and Underground Space Technology</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1986-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">01652125</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/01652125"
+                  target="_blank"
+                  >Wave Motion</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1979-1994</td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">00431648</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  href="http://www.sciencedirect.com/science/journal/00431648"
+                  target="_blank"
+                  >Wear</a
+                >
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">&nbsp;</td>
+              <td class="border border-b-4 m-6 p-5 text-center">1957-1994</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Main Section Ends Here -->
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer mt-4" style="background-color: rgb(7, 60, 104)">
+      <div class="container">
+        <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Quick Links</h6>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><span class="hover:text-white">Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                    ><span class="hover:text-white">Syllabus</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/privacy-policy/"
+                    ><span class="hover:text-white">Results</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">RTI</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Login</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Contact Us</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Feedback</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-links">
+                <li>
+                  <a href="http://scanfcode.com/about/"
+                    ><span class="hover:text-white">e-Downloads</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contact/"
+                    ><span class="hover:text-white">Students</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/academic_calendar.html/"
+                    ><span class="hover:text-white">Academic Calendar</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/rules_and_regulations.html"
+                    ><span class="hover:text-white"
+                      >Regulations and Curriculum</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/DissertionFormat.html"
+                    ><span class="hover:text-white"
+                      >Dissertation Formats</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Informations</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  ><span class="hover:text-white">Faculty</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  ><span class="hover:text-white">Staff</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  ><span class="hover:text-white">JEE</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  ><span class="hover:text-white">Facilities</span></a
+                >
+              </li>
+              <li>
+                <a href="./static/fee_structure_23-24_25july2023.pdf"
+                  ><span class="hover:text-white">Fee Structure</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/"
+                  ><span class="hover:text-white">NIRF</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+            <ul class="footer-links">
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contact/"
+                  ><span class="hover:text-white"
+                    >National Institute of Technology Goa Farmagudi, Ponda , Goa
+                    - 403401</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  ><span class="hover:text-white"
+                    >Website: www.nitgoa.ac.in</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/privacy-podivcy/"
+                  ><span class="hover:text-white"
+                    >span> Phone: [0832] 2404200 (PA to Director)</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Fax: [0832] 2404202</span></a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="counter-container ml-16 mr-4">
+        <!-- Container for the counter -->
+        <!-- hitwebcounter Code START -->
+        <p>Visitor counter</p>
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+            title="Counter Widget"
+            alt="Visit counter For Websites"
+            border="0"
+            width="150"
+            height="100"
+          />
+        </a>
+      </div>
+    </footer>
+    <!--Footer Ends Here -->
+  </body>
+</html>

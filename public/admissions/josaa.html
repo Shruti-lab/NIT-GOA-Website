@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admissions</title>
+    <link rel="stylesheet" href=".././styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Starts here -->
+    <header class="top-0 z-10 bg-blue-950 p-2 mb-5">
+      <div class="container mx-auto text-white">
+        <nav class="mt-2">
+          <i class="fas fa-envelope mr-2 hover:text-gray-200 text-gray-500"></i>
+          <a
+            href="mailto:your.email@example.com"
+            class="hover:text-gray-200 text-gray-400 mr-4"
+            >your.email@example.com</a
+          >
+          <i class="fas fa-phone mr-2 text-gray-500 hover:text-gray-200"></i>
+          <a href="tel:+1234567890" class="text-gray-400 hover:text-gray-200"
+            >123-456-7890</a
+          >
+
+          <a
+            href="../index.html"
+            class="text-gray-400 hover:text-gray-200 pl-80 ml-72 mr-4"
+            >Home</a
+          >
+          <a
+            href="../tenders.html"
+            class="text-gray-400 hover:text-gray-200 mr-4"
+            >Tenders</a
+          >
+
+          <a
+            href="https://www.nitgoa.ac.in/gian/"
+            class="text-gray-400 hover:text-gray-200 mr-4"
+            >G.I.A.N</a
+          >
+          <a
+            href="https://www.nitgoa.ac.in/login.aspx"
+            class="text-gray-400 hover:text-gray-200 mr-4"
+            >Login</a
+          >
+        </nav>
+      </div>
+    </header>
+    <header
+      id="main-header"
+      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
+    >
+      <div class="flex justify-center">
+        <img class="w-33 h-22" src=".././static/logo_color.png" alt="" />
+      </div>
+
+      <div class="text-center border mb-10">
+        <nav class="mt-2 justify-center items-center">
+          <div class="container_B font-semibold text-gray-700 ml-16">
+            <div class="dropdown">
+              <a href="../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../administration/Board_of_Governors.html"
+                  >Board Of Governors</a
+                >
+                <a href="../administration/director_message.html">Director</a>
+                <a href="../administration/registrar.html">Registrar</a>
+                <a href="../administration/senate.html">Senate</a>
+                <a href="../administration/dean.html">Deans</a>
+                <a href="../administration/Committees.html">Committees</a>
+                <a href="../administration/finance_committee.html"
+                  >Finance Committee</a
+                >
+                <a href="../administration/work_committee.html"
+                  >Building and Works Committee</a
+                >
+                <a href="../administration/hod.html">Heads of Departments </a>
+                <a href="../static/Org_Chart.pdf" target="_blank"
+                  >Organizing Structure</a
+                >
+                <a href="../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../academics/academic_calendar.html">Calendar</a>
+                <a href="../academics/rules_and_regulations.html"
+                  >Regulations and Curriculum</a
+                >
+                <a href="../academics/departments.html">Departments</a>
+                <a href="../academics/DissertionFormat.html"
+                  >Dissertion Formats</a
+                >
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx"
+                  >Results</a
+                >
+                <a href="../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <a href="../admissions/btech.html">B.tech</a>
+                <a href="../admissions/mtech.html">M.tech</a>
+                <a href="../admissions/phd.html">Ph.D</a>
+                <a href="../static/fee_structure_23-24_25july2023.pdf"
+                  >Fee Structure</a
+                >
+                <a href="../admissions/hostels.html">Hostels</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href=".././People/frontend/people_faculty.html">Faculty</a>
+                <a href=".././People/frontend/technical_cse.html"
+                  >Technical Staff</a
+                >
+                <a href=".././People/frontend/administrative.html"
+                  >Administrative Staff</a
+                >
+                <a href="../static/Directory_03july2023.pdf"
+                  >Faculty & Staff Directory</a
+                >
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../research/R&DProjects.html">R & D Projects</a>
+                <a href=".././static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html"
+                >Alumni</a
+              >
+            </div>
+            <div class="dropdown">
+              <a
+                href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx"
+                >Fee Payment</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!--Main Section Starts Here-->
+    <div>
+      <div class="m-10">
+        <h1
+        class="text-2xl font-serif font-semibold text-gray-800 border-gray-200">
+       JoSAA/CSAB:
+        </h1>
+        <h1
+        class="text-2xl font-serif font-semibold text-gray-800 border-gray-200">
+       ADMISSION PROCEDURE
+        </h3>
+        <p>
+          <strong>1. Joint Entrance Examination (Main)-2023</strong><br />
+          Admission to Undergraduate Engineering Programs for the candidates
+          from India at NITs, IIITs, Other centrally funded Technical
+          Institutions shall include the performance in the class 12/other
+          Qualifying Examination and in the Joint Entrance Examination, JEE
+          (Main).
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="DisplayPage.aspx?page=eacoa&amp;ItemID=50"
+            target="_blank"
+            ><strong>Strengths of NIT Goa</strong></a
+          >
+        </p>
+        <p>
+          <strong
+            >For further details, please visit the following websites regularly
+            for the latest updates in changes in the rules and
+            regulations:</strong
+          >
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="http://josaa.nic.in/webinfocms/public/view.aspx?page=46"
+            target="_blank"
+            ><strong>http://josaa.nic.in</strong></a
+          >
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="http://csab.nic.in/WebInfo/home.aspx"
+            target="_blank"
+            ><strong>http://csab.nic.in</strong></a
+          >
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="http://jeemain.nic.in/webinfo/Public/Home.aspx"
+            target="_blank"
+            ><strong>http://jeemain.nic.in</strong></a
+          >
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          <strong>List of B. Tech. Courses :<br /></strong>
+        </p>
+        <p>
+          <span
+            ><strong
+              ><a
+                class="text-blue-700"
+                href="Deptindex.aspx?page=a&amp;ItemID=15&amp;nDeptID=5"
+                >Computer Science &amp; Engineering</a
+              ></strong
+            ></span
+          >
+        </p>
+        <p>
+          <span
+            ><strong
+              ><a
+                class="text-blue-700"
+                href="Deptindex.aspx?page=a&amp;ItemID=16&amp;nDeptID=6"
+                >Electrical &amp; Electronics Engineering</a
+              ></strong
+            ></span
+          >
+        </p>
+        <p>
+          <span
+            ><strong
+              ><a
+                class="text-blue-700"
+                href="Deptindex.aspx?page=a&amp;ItemID=17&amp;nDeptID=7"
+                >Electronics &amp; Communication Engineering</a
+              ></strong
+            ></span
+          >
+        </p>
+        <p>
+          <span
+            ><strong
+              ><strong
+                ><a
+                  class="link"
+                  href="Deptindex.aspx?page=a&amp;ItemID=20113&amp;nDeptID=31"
+                  target="_blank"
+                  >Civil Engineering</a
+                ></strong
+              ></strong
+            ></span
+          >
+        </p>
+        <p>
+          <span
+            ><strong
+              ><strong
+                ><a
+                  class="link"
+                  href="Deptindex.aspx?page=a&amp;ItemID=20114&amp;nDeptID=19"
+                  target="_blank"
+                  >Mechanical Engineering</a
+                ></strong
+              ></strong
+            ></span
+          >
+        </p>
+        <p>&nbsp;</p>
+        <p>
+          <strong
+            ><span style="color: #0000ff"
+              ><strong
+                ><span style="color: #000000">Important Links :</span></strong
+              ></span
+            ></strong
+          >
+        </p>
+        <p>
+          <span
+            ><a
+              class="text-blue-700"
+              href="../static/B.Tech._Physical_Reporting_26july2023.pdf"
+              target="_blank"
+              ><strong
+                >B.Tech. Physical Reporting of the candidates Admitted through
+                JoSAA/CSAB 2023</strong
+              ></a
+            ></span
+          ><a
+            class="text-blue-700"
+            href="../static/B.Tech._Physical_Reporting_26july2023.pdf"
+            target="_blank"
+            ><img
+              id="ctl00_ContentPlaceHolder_Main_Repeater_News_ctl01_Image_NewNews"
+              style="border-width: 0px"
+              src="../new_blink.gif"
+              alt=""
+          /></a>
+        </p>
+        <p>
+          <span
+            ><strong
+              ><a
+                class="text-blue-700"
+                href="../static/JoSAA_2023_Online_Reporting_Schedule_25june2023.pdf"
+                target="_blank"
+                >JoSAA 2023 Online Reporting Schedule</a
+              ><a
+                class="text-blue-700"
+                href="../static/JoSAA_2023_Online_Reporting_Schedule_25june2023.pdf"
+                target="_blank"
+                ><br /></a></strong
+          ></span>
+        </p>
+        <p>
+          <span
+            ><strong
+              ><a
+                class="text-blue-700"
+                href="../static/JoSAA_2023_Business_Rules_25june2023.pdf"
+                target="_blank"
+                >JoSAA 2023 Business Rules</a
+              ><a
+                class="text-blue-700"
+                href="../static/JoSAA_2023_Business_Rules_25june2023.pdf"
+                target="_blank"
+                ><br /></a></strong
+          ></span>
+        </p>
+        <p>
+          <span>
+            <strong
+              ><a
+                class="text-blue-700"
+                href="../static/JoSAA_2023Seat_Matrix_25june2023.pdf"
+                target="_blank"
+                >JoSAA 2023 - Seat Matrix of NIT Goa</a
+              ></strong
+            ></span
+          >
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="../static/Opening_and_Closing_Ranks_of_NIT_Goa_B.Tech_Programme_for_A.Y.__2022-2023_after_CSAB_Special_Round-II_21april2023.pdf"
+            target="_blank"
+            ><span style="font-size: small"
+              ><strong
+                >Opening and Closing Ranks of NIT Goa B.Tech Programme for
+                A.Y.&nbsp; 2022-2023 after CSAB Special Round-II</strong
+              ></span
+            ></a
+          >
+        </p>
+        <p>
+          <a
+            class="text-blue-700"
+            href="../static/Opening_and_Closing_Ranks_of_NIT_Goa_B.Tech_Programme_for_A.Y._2022-2023_after_JoSAA_Round-6_21april2023.pdf"
+            target="_blank"
+            ><span style="font-size: small"
+              ><strong
+                >Opening and Closing Ranks of NIT Goa B.Tech Programme for A.Y.
+                2022-2023 after JoSAA Round-6</strong
+              ></span
+            ></a
+          >
+        </p>
+        <p>&nbsp;</p>
+        <p><strong>Contact Information :</strong></p>
+        <p><strong>Dr.Suresh Mikkili</strong></p>
+        <p>
+          <strong>In-Charge, UG Admissions(JoSAA)</strong><br />
+          National Institute of Technology Goa<br />
+          Farmagudi, Ponda, Goa 403 401<br />
+          <strong>E-Mail:</strong>&nbsp;ugadmissions@nitgoa.ac.in<br />
+          <strong>Phone no. : 7588133009 / 9404715466</strong>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

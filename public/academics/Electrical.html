@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Department of Electrical and Electrical Engineering</title>
+    <link rel="stylesheet" href=".././styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+ 
+
+    .title {
+      font-size: 30px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align:center;
+      
+    }
+
+    .stats-holder {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .stat {
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    .stat-title {
+      font-size: 25px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .stat-value {
+      font-size: 25px;
+      font-weight: bold;
+      color: #ffffff;
+
+    }
+     .holder{
+      z-index: 1;
+        font-family: Arial, sans-serif;
+        background-image: url('https://vnit.ac.in/wp-content/uploads/2021/04/statistics.jpg');/* Replace with your image file path */
+        background-size: cover; /* This scales the image to cover the entire background */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-attachment: fixed; /* Keeps the image fixed in place */
+      } 
+      
+      
+
+      /*Vision Mission */
+      .btn-group button {
+    background-color: #FFFFFF;
+    border: 1px solid whitesmoke;
+    color: black;
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'font-sans', sans-serif;
+  }
+
+  .container1 {
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    border-radius: 0px;
+    box-shadow: 0px 0px 10px #808080;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 6xl;
+    font-family: 'font-sans', sans-serif;
+    display: flex;
+    margin-top: 5;
+  }
+
+  .btn-group {
+    text-align: right; /* Align buttons to the right */
+    flex: 2; /* Take up the right half of the container1 */
+  }
+
+  .image {
+    flex: 1; /* Take up the left half of the container1 */
+  }
+
+  .btn-group button:not(:last-child) {
+    border-right: none;
+  }
+
+  /* Clear floats (clearfix hack) */
+  .btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Add a background color on hover */
+  .btn-group button:hover {
+    background-color: #808080;
+  }
+
+  .para {
+    border: #808080;
+  }
+
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  img {
+    max-width: 100%; /* Ensure the image covers the right half */
+    max-height: 100%; /* Ensure the image covers the right half */
+  }
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+  /* Vision ends*/
+
+   .mySlides {
+    display: none;
+}
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    height: 20%;
+    max-height: 40vh;
+    margin: 0 auto;
+    padding-bottom: 20%;
+}
+/* The dots/bullets/indicators */
+.dot {
+
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+    /*Visitor Counter*/
+    /* Container styling */
+    .counter-container {
+      background-color: rgb(71, 71, 94);
+      display: inline-block; /* Inline-block to size the container to the content */
+      padding: 10px; /* Add some padding for spacing */
+      border-radius: 5px; /* Rounded corners */
+    
+    }
+    
+    /* Text color inside the container */
+    .counter-container p {
+      color: white;
+    }
+
+    /* To prevent from overlapping over navigation bar*/
+    header {
+  z-index: 2;
+}
+  </style>
+  </head>
+  <body>
+    <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
+      <div class="flex justify-center">
+          <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
+
+      </div>
+
+      <div class="text-center border mb-10">
+          <nav class="mt-2 justify-center items-center">
+              <div class="container_B font-semibold text-gray-700 ml-16">
+
+                  <!--Home-->
+                  <div class="dropdown">
+                      <a href="../index.html">Home</a>
+                  </div>
+
+                  <!--Academic Handbook-->
+                  <div class="dropdown">
+                      <button class="dropbtn">Academics</button>
+                      <div class="dropdown-content">
+                          <a href="">academic handbook</a>
+                          <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">calendar</a>
+                          <a href="../academics/rules_and_regulations.html">regulation and Curriculum</a>
+                      </div>
+
+                  </div>
+
+                  <!--Students-->
+                  <div class="dropdown">
+                      <button class="dropbtn">Students</button>
+                      <div class="dropdown-content">
+                          <a href="../Electrical/Students/btech.html">B.tech</a>
+                          <a href="../Electrical/Students/mtech.html">M.tech</a>
+                          <a href="../Electrical/Students/phd.html">PH.D.</a>
+                      </div>
+
+                  </div>
+                 <!--Faculty-->
+                 <div class="dropdown">
+                  <a href="../Electrical/faculty.html">Faculty</a>
+                  
+              </div>
+              <!--staff-->
+              <div class="dropdown">
+                  <a href="../Electrical/staff.html">Staff</a>
+                  
+              </div>
+              <!--reseach-->
+              <div class="dropdown">
+                  <button class="dropbtn">Research</button>
+                  <div class="dropdown-content">
+                      <a href="">journals</a>
+                      <a href="../Electrical/Research/Proceedings.html">proceedings</a>
+                      <a href="../Electrical/Research/Book_Book_chapters.html">book / book chapters</a>
+                      <a href="../Electrical/Research/Research_projects.html">Research projects</a>
+                  </div>
+
+              </div>
+              <!--Events-->
+              <div class="dropdown">
+                  <a href="../Electrical/Events/event.html">Events</a>
+                  
+              </div>
+                 <!--Gallery-->
+                 <div class="dropdown">
+                  <a href="../Electrical/Gallery/Photo.html">Gallery</a>
+                  
+              </div>
+
+              <!--E-Downloads-->
+              <div class="dropdown">
+                  <button class="dropbtn">E-Downloads</button>
+                  <div class="dropdown-content">
+                      <a href="">Facualty and staff</a>
+                      <a href="">Student</a>
+                      <a href="">Dissertion Format</a>
+                  </div>
+
+              </div>
+
+                  <!--Contact Us-->
+                  <div class="dropdown">
+                      <a href="../Electrical/contact_us.html">Contact Us</a>
+                      
+                  </div>
+
+              </div>
+      </div>
+      </nav>
+      </div>
+  </header>
+
+
+  <!-- Hero Section -->
+  <section class=" bg-center bg-cover bg-white mb-48 pb-20">
+
+    <!-- slideshow image-->
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+          <img src=".././static/slideshow1.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src=".././static/slideshow2.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div class="mySlides fade">
+
+          <img src=".././static/slideshow3.jpg" style="width: 100vw;height: 60vh">
+
+      </div>
+      <div style="text-align:center;">
+
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+
+      </div>
+      <a class="prev" onclick="prevSlide()">&#10094;</a>
+      <a class="next" onclick="showSlides()">&#10095;</a>
+  </div>
+
+  <script type="text/javascript">
+  var timeOut = 2000;
+      var slideIndex = 0;
+      var autoOn = true;
+
+      autoSlides();
+
+      function autoSlides() {
+          timeOut = timeOut - 20;
+
+          if (autoOn == true && timeOut < 0) {
+              showSlides();
+          }
+          setTimeout(autoSlides, 20);
+      }
+
+      function prevSlide() {
+
+          timeOut = 2000;
+
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slideIndex--;
+
+          if (slideIndex > slides.length) {
+              slideIndex = 1
+          }
+          if (slideIndex == 0) {
+              slideIndex = 3
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+
+      function showSlides() {
+
+          timeOut = 2000;
+
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slideIndex++;
+
+          if (slideIndex > slides.length) {
+              slideIndex = 1
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+      }
+  </script>
+
+
+  </section>
+    <!--Main Section starts here-->
+    <div class="container">
+      <h1
+      class="text-2xl font-serif font-semibold text-gray-800 mb-4 ml-12">
+     Welcome To Electrical Department </h1> 
+        <p class="mb-5" >The department of Electrical and Electrical Engineering was established during the inception of&nbsp;the institute in 2010. It offers undergraduate (B. Tech.), postgraduate (M. Tech in Power<span>&nbsp;Electrical</span>&nbsp;and Power <span>Systems</span>), and research programmes in the various fields of Electrical and&nbsp;Electrical Engineering. The faculty members are committed to provide the finest possible&nbsp;education for both graduate and undergraduate students. The major areas of faculty expertise&nbsp;include Power Systems, Power Electrical, Power Electronic Drives, HVDC Transmission,&nbsp;FACTS Controllers, Electrical Machines, Control Systems, Smart Grid, Signal Processing,&nbsp;Energy Management, Fuzzy Logic, Neural Networks, and Application of Signal Processing in&nbsp;Power Systems and Power Electrical. The Faculty members are actively engaged in various&nbsp;research areas ranging from practical implementation to theoretical investigations. Their research&nbsp;is being published in leading international journals and conferences. The lab facilities and the&nbsp;infrastructure are regularly upgraded and are well supported by the institute and the industry.&nbsp;Department has MoU with Power Research and Development Consultancy, Bangalore to carry&nbsp;out the collaborative projects.</p>
+        <p class="mb-5" ><span style="color: #0000ff;">Current Research Project Areas:</span></p>
+        <ul class="mb-5">
+        <li>Smart Electric Grid</li>
+        <li>Electric Vehicles</li>
+        <li>Grid Connected / Stand Alone PV System</li>
+        <li>Wireless power Transfer</li>
+        <li>Renewable Energy System</li>
+        <li>Power Quality Issues &amp; applications of Soft Computing techniques</li>
+        <li>Multilevel Inverters</li>
+        <li>Open-end Winding Induction Motor Drives</li>
+        <li>Power Electrical</li>
+        <li>Degital Signal/Image Processing&nbsp;</li>
+        <li>Design of Wavelets&nbsp;</li>
+        <li>FPGA based Hardware Accelerators</li>
+        <li>Design of Neural Networks</li>
+        <li>Biometrics</li>
+        <li>Control System</li>
+        <li>Restructured Power System</li>
+        <li>Planning,Operation &amp; Control of Power System</li>
+        <li>Electric Arc Furnace operation</li>
+        <li>FACTS,AC/DC Microgrids</li>
+        <li>Multilevel Converter</li>
+        <li>Pulsewidth Modulation</li>
+        <li>Switched Reluctance Motor &amp; Drives</li>
+        </ul>
+        <p><span style="color: #0000ff;">Programs Offering:</span></p>
+        <p><span style="color: #0000ff;">UG Program: From 2010:</span></p>
+        <ul class="mb-5">
+        <li>B.Tech In Electrical &amp; Electrical Engineering (4 years)</li>
+        <li>UG Strength -44 (JoSSA/CSAB-38, DASA-06)</li>
+        </ul>
+        <ul class="mb-5">
+        </ul>
+        <p class="mb-5" ><span style="color: #0000ff;">PG Program: From 2014:</span></p>
+        <ul class="mb-5">
+        <li>Power Electrical &amp; Power System (PEPS) (2 years)</li>
+        <li>PG Strength - 24 (CCMT-22 , Sponsorship-02)</li>
+        </ul>
+        <p><span style="color: #0000ff;">Doctoral Program: From 2014:</span></p>
+        <p><span style="color: #0000ff;">Ph.D. :-</span></p>
+        <ul class="mb-5">
+        <li>Power Electrical and drives,</li>
+        <li>Renewable Energy Systems, </li>
+        <li>Power Systems, </li>
+        <li>Smart Grids, </li>
+        <li>Electric Vehicles, </li>
+        <li>Control System,</li>
+        <li>Digital Signal / Image Processing,</li>
+        <li>FPGA Accelerators,</li>
+        <li>Wavelets,</li>
+        <li>Artificial Intelligence.</li>
+        </ul>
+        <p>&nbsp;</p>
+        <ul class="mb-5">
+        </ul>
+            </div>
+ <!-- Main Section Ends Here -->
+
+</body>
+
+</html>

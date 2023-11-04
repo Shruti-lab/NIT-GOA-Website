@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library NIT Goa</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Starts here -->
+    <header
+      id="main-header"
+      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
+    >
+      <div class="flex justify-center">
+        <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
+      </div>
+
+      <div class="text-center border mb-10">
+        <nav class="mt-2 justify-center items-center">
+          <div class="container_B font-semibold text-gray-700 ml-16">
+            <!--Home-->
+            <div class="dropdown">
+              <a href="../../index.html">Home</a>
+            </div>
+
+            <!--About-->
+            <div class="dropdown">
+              <button class="dropbtn">About</button>
+              <div class="dropdown-content">
+                <a href="../../library/about/guidelines.html">Guidelines</a>
+                <a href="../../library/about/membership.html">Membership</a>
+                <a href="../../library/about/eresource.html"
+                  >E-Resource Uses Policy</a
+                >
+                <a
+                  href="https://drive.google.com/drive/folders/17-3asXzksIkuyJvc5OWxUwFuvlcOiBp8auAFze7aTx0"
+                  >Library Events</a
+                >
+              </div>
+            </div>
+
+            <!--Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">Collection</button>
+              <div class="dropdown-content">
+                <a href="../../library/collection/books.html">Books</a>
+                <a href="../../library/collection/periodicals.html"
+                  >Periodicals</a
+                >
+                <a href="../../library/collection/thesis.html"
+                  >Thesis and Dissertations</a
+                >
+              </div>
+            </div>
+
+            <!--E-Collection-->
+            <div class="dropdown">
+              <button class="dropbtn">E-Collection</button>
+              <div class="dropdown-content">
+                <a href="https://dl.acm.org/" target="_blank"
+                  >ACM Digital Library</a
+                >
+                <a href="../../library/ecollection/ieee.html">IEEE SWEBOK</a>
+                <a href="https://ieeexplore.ieee.org/Xplore/home.jsp"
+                  >IEEE Explore</a
+                >
+                <a href="../../library/ecollection/science_e_books.html"
+                  >ScienceDirect E-books</a
+                >
+                <a
+                  href="https://www.sciencedirect.com/browse/journals-and-books"
+                  >ScienceDirect e-Journals</a
+                >
+                <a href="../../library/ecollection/elseiver.html"
+                  >Back File e-Collection</a
+                >
+                <a href="https://link.springer.com/">SpringerLink e-Journals</a>
+              </div>
+            </div>
+
+            <!--ESS Resources-->
+            <div class="dropdown">
+              <button class="dropbtn">ESS Resources</button>
+              <div class="dropdown-content">
+                <a href="http://community.worldlibrary.in/"
+                  >World e-Book Library</a
+                >
+                <a href="http://community.worldlibrary.in/"
+                  >World Heritage Encyclopedia</a
+                >
+              </div>
+            </div>
+
+            <!--MHRD Digital Initiatives-->
+
+            <div class="dropdown">
+              <a href="../../library/mhrd.html">MHRD Digital Initiatives</a>
+            </div>
+
+            <!--Learning and Research Support-->
+            <div class="dropdown">
+              <button class="dropbtn">Learning and Research Support</button>
+              <div class="dropdown-content">
+                <a href="../../library/learning/plagiarism.html"
+                  >Plagiarism Check</a
+                >
+                <a href="../../library/learning/learning.html"
+                  >Learning and Research Tools</a
+                >
+                <a href="../../library/learning/open.html"
+                  >Open Knowledge Portal</a
+                >
+                <a href="../../library/learning/shodh.html"> ShodhGantori </a>
+              </div>
+            </div>
+
+            <!--Services-->
+            <div class="dropdown">
+              <button class="dropbtn">Services</button>
+              <div class="dropdown-content">
+                <a href="#">Books Borrowing</a>
+                <a href="#">Borrow / Renew / Request</a>
+                <a href="#">Library Cards</a>
+                <a href="#">Email Alert</a>
+                <a href="#">Purchase Recommendation</a>
+                <a href="#">Information Services</a>
+                <a href="#">Guide for New Students</a>
+                <a href="#">Current Awareness Services</a>
+                <a href="#">Demo / Training / Workshop</a>
+                <a href="#">Loss / Damage and Recovery</a>
+                <a href="#">Ask a Librarian</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <a
+                href="https://libcloud.mastersofterp.in/OPAC_V3/?library=National%20Institute%20of%20Technology%20Goa"
+                >Library Catalogue</a
+              >
+            </div>
+
+            <!--Contact Us-->
+            <div class="dropdown">
+              <a href="../../library/contact_us/contact.html">Contact Us</a>
+              <button class="dropbtn mt-3"></button>
+              <div class="dropdown-content">
+                <a href="../../library/contact_us/team.html"
+                  >Library Committee
+                </a>
+                <a href="../../library/contact_us/staff.html">STAFF</a>
+              </div>
+            </div>
+
+            <!--NIT GOA IRINS-->
+            <div class="dropdown">
+              <a href="https://nitgoa.irins.org/">NIT GOA IRINS</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <!--Main Section starts here-->
+    <div class="p-8 shadow-lg bg-white rounded-lg border border-gray-200">
+      <div class="about-us">
+        <h2></h2>
+        <h2 class="text-3xl font-bold mb-10 text-gray-800">
+          <span class="border-red-400 border-b-4">E-Books</span>
+        </h2>
+
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Sr. No.
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Title
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                ISBN
+              </th>
+              <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                Link
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">1</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Active Power Line Conditioners
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128032169
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128032169"
+                  >http://www.sciencedirect.com/science/book/9780128032169</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">2</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Advances in Batteries for Medium and Large-Scale Energy Storage
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781782420132
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781782420132"
+                  >http://www.sciencedirect.com/science/book/9781782420132</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">3</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Advances in battery technologies for electric vehicles
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781782423775
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781782423775"
+                  >http://www.sciencedirect.com/science/book/9781782423775</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">4</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Alternative Energy in Power Electronics
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124167148
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124167148"
+                  >http://www.sciencedirect.com/science/book/9780124167148</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">5</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Clean Electricity Through Advanced Coal Technologies
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781437778151
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781437778151"
+                  >http://www.sciencedirect.com/science/book/9781437778151</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">6</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Competitive Electricity Markets
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780080471723
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780080471723"
+                  >http://www.sciencedirect.com/science/book/9780080471723</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">7</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Control System Design Guide
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123859204
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123859204"
+                  >http://www.sciencedirect.com/science/book/9780123859204</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">8</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Digital Signal Processing
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124158931
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124158931"
+                  >http://www.sciencedirect.com/science/book/9780124158931</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">9</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electric Motors and Drives
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780080983325
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780080983325"
+                  >http://www.sciencedirect.com/science/book/9780080983325</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">10</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electric Renewable Energy Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128044483
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128044483"
+                  >http://www.sciencedirect.com/science/book/9780128044483</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">11</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electrical Drives for Direct Drive Renewable Energy Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781845697839
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781845697839"
+                  >http://www.sciencedirect.com/science/book/9781845697839</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">12</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electrical Load Forecasting
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123815439
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123815439"
+                  >http://www.sciencedirect.com/science/book/9780123815439</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">13</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electrical Motor Products
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780857090775
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780857090775"
+                  >http://www.sciencedirect.com/science/book/9780857090775</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">14</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Electricity Transmission&nbsp; Distribution and Storage Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781845697846
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781845697846"
+                  >http://www.sciencedirect.com/science/book/9781845697846</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">15</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Energy Management Principles
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128025062
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128025062"
+                  >http://www.sciencedirect.com/science/book/9780128025062</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">16</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Energy Storage
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128034408
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128034408"
+                  >http://www.sciencedirect.com/science/book/9780128034408</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">17</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Energy Storage for Smart Grids
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124104914
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124104914"
+                  >http://www.sciencedirect.com/science/book/9780124104914</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">18</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Energy Storage for Sustainable Microgrid
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128033746
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128033746"
+                  >http://www.sciencedirect.com/science/book/9780128033746</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">19</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Feature Extraction &amp; Image Processing for Computer Vision
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123965493
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123965493"
+                  >http://www.sciencedirect.com/science/book/9780123965493</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">20</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Group Theory for Chemists
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780857092403
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780857092403"
+                  >http://www.sciencedirect.com/science/book/9780857092403</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">21</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Handbook of Energy
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124170131
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124170131"
+                  >http://www.sciencedirect.com/science/book/9780124170131</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">22</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                High-temperature Solid Oxide Fuel Cells for the 21st Century
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124104532
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124104532"
+                  >http://www.sciencedirect.com/science/book/9780124104532</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">23</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Industrial Applications of Batteries
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780444521606
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780444521606"
+                  >http://www.sciencedirect.com/science/book/9780444521606</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">24</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Inorganic Chemistry
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123851109
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123851109"
+                  >http://www.sciencedirect.com/science/book/9780123851109</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">25</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Integration of Distributed Energy Resources in Power Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128032121
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128032121"
+                  >http://www.sciencedirect.com/science/book/9780128032121</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">26</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Large-Scale Wind Power Grid Integration
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128498958
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128498958"
+                  >http://www.sciencedirect.com/science/book/9780128498958</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">27</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Materials for Energy Conversion Devices
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781855739321
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781855739321"
+                  >http://www.sciencedirect.com/science/book/9781855739321</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">28</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Medical Image Recognition&nbsp; Segmentation and Parsing
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128025819
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128025819"
+                  >http://www.sciencedirect.com/science/book/9780128025819</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">29</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Microgrid Technology and Engineering Application
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128035986
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128035986"
+                  >http://www.sciencedirect.com/science/book/9780128035986</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">30</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Modeling and Analysis of Doubly Fed Induction Generator Wind
+                Energy Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128029695
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128029695"
+                  >http://www.sciencedirect.com/science/book/9780128029695</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">31</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Multidimensional Signal, Image, and Video Processing and Coding
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123814203
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123814203"
+                  >http://www.sciencedirect.com/science/book/9780123814203</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">32</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                POWER ELECTRONICS HANDBOOK
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123820365
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123820365"
+                  >http://www.sciencedirect.com/science/book/9780123820365</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">33</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Pattern Recognition and Signal Analysis in Medical Imaging
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124095458
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124095458"
+                  >http://www.sciencedirect.com/science/book/9780124095458</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">34</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Converters with Digital Filter Feedback Control
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128042984
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128042984"
+                  >http://www.sciencedirect.com/science/book/9780128042984</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">35</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Electronics Applied to Industrial Systems and Transports,
+                Volume 1
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781785480003
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781785480003"
+                  >http://www.sciencedirect.com/science/book/9781785480003</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">36</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Electronics Applied to Industrial Systems and Transports,
+                Volume 2
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781785480010
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781785480010"
+                  >http://www.sciencedirect.com/science/book/9781785480010</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">37</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Electronics Applied to Industrial Systems and Transports,
+                Volume 3
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781785480027
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781785480027"
+                  >http://www.sciencedirect.com/science/book/9781785480027</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">38</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Electronics Applied to Industrial Systems and Transports,
+                Volume 4
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781785480034
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781785480034"
+                  >http://www.sciencedirect.com/science/book/9781785480034</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">39</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Power Quality in Power Systems and Electrical Machines
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128007822
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128007822"
+                  >http://www.sciencedirect.com/science/book/9780128007822</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">40</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Renewable Energy Conversion, Transmission, and Storage
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123742629
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123742629"
+                  >http://www.sciencedirect.com/science/book/9780123742629</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">41</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Renewable Energy Integration
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124079106
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124079106"
+                  >http://www.sciencedirect.com/science/book/9780124079106</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">42</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Renewable Energy System Design
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123749918
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123749918"
+                  >http://www.sciencedirect.com/science/book/9780123749918</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">43</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Renewable Energy Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124104235
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124104235"
+                  >http://www.sciencedirect.com/science/book/9780124104235</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">44</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Signal&nbsp; Image and Video Processing Methods and Techniques
+                used in Fire Detection
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128023990
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128023990"
+                  >http://www.sciencedirect.com/science/book/9780128023990</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">45</td>
+              <td class="border border-b-4 m-6 p-5 text-center">Small Wind</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123859990
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123859990"
+                  >http://www.sciencedirect.com/science/book/9780123859990</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">46</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Small and Micro Combined Heat and Power (CHP) Systems
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781845697952
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781845697952"
+                  >http://www.sciencedirect.com/science/book/9781845697952</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">47</td>
+              <td class="border border-b-4 m-6 p-5 text-center">Smart Grid</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123864529
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123864529"
+                  >http://www.sciencedirect.com/science/book/9780123864529</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">48</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Solar Energy Forecasting and Resource Assessment
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123971777
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123971777"
+                  >http://www.sciencedirect.com/science/book/9780123971777</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">49</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Solar Energy Markets
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780123971746
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780123971746"
+                  >http://www.sciencedirect.com/science/book/9780123971746</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">50</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Solar Energy Storage
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124095403
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124095403"
+                  >http://www.sciencedirect.com/science/book/9780124095403</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">51</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Solar Energy in Buildings
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124105140
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124105140"
+                  >http://www.sciencedirect.com/science/book/9780124105140</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">52</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Solar Photovoltaic Cells
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128023297
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128023297"
+                  >http://www.sciencedirect.com/science/book/9780128023297</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">53</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Superconductors In The Power Grid
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781782420293
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781782420293"
+                  >http://www.sciencedirect.com/science/book/9781782420293</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">54</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                The IGBT Device
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781455731435
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781455731435"
+                  >http://www.sciencedirect.com/science/book/9781455731435</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">55</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                The Second Law of Life
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780815515371
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780815515371"
+                  >http://www.sciencedirect.com/science/book/9780815515371</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">56</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Thermal Energy Storage Technologies for Sustainability
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780124172913
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780124172913"
+                  >http://www.sciencedirect.com/science/book/9780124172913</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">57</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Towards Nearly Zero Energy
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780081007358
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780081007358"
+                  >http://www.sciencedirect.com/science/book/9780081007358</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">58</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Transmission and Distribution Electrical Engineering
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780080969121
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780080969121"
+                  >http://www.sciencedirect.com/science/book/9780080969121</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">59</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Ultra-high Voltage AC/DC Grids
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128021613
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128021613"
+                  >http://www.sciencedirect.com/science/book/9780128021613</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">60</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Waste Electrical and Electronic Equipment (WEEE) Handbook
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780857090898
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780857090898"
+                  >http://www.sciencedirect.com/science/book/9780857090898</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">61</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Waste-to-Energy
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9781437778717
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9781437778717"
+                  >http://www.sciencedirect.com/science/book/9781437778717</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td class="border border-b-4 m-6 p-5 text-center">62</td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                Wind Power Generation
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                9780128040386
+              </td>
+              <td class="border border-b-4 m-6 p-5 text-center">
+                <a
+                  class="text-blue-300"
+                  href="http://www.sciencedirect.com/science/book/9780128040386"
+                  >http://www.sciencedirect.com/science/book/9780128040386</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Note: Listed books can be accessed within the campus using institute
+          internet.&nbsp;
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Section Ends Here -->
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer mt-4" style="background-color: rgb(7, 60, 104)">
+      <div class="container">
+        <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Quick Links</h6>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+              <ul class="footer-links">
+                <li>
+                  <a href="index.html"
+                    ><span class="hover:text-white">Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                    ><span class="hover:text-white">Syllabus</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/privacy-policy/"
+                    ><span class="hover:text-white">Results</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">RTI</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Login</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Contact Us</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/sitemap/"
+                    ><span class="hover:text-white">Feedback</span></a
+                  >
+                </li>
+              </ul>
+              <ul class="footer-links">
+                <li>
+                  <a href="http://scanfcode.com/about/"
+                    ><span class="hover:text-white">e-Downloads</span></a
+                  >
+                </li>
+                <li>
+                  <a href="http://scanfcode.com/contact/"
+                    ><span class="hover:text-white">Students</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/academic_calendar.html/"
+                    ><span class="hover:text-white">Academic Calendar</span></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/rules_and_regulations.html"
+                    ><span class="hover:text-white"
+                      >Regulations and Curriculum</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a href="academics/DissertionFormat.html"
+                    ><span class="hover:text-white"
+                      >Dissertation Formats</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Informations</h6>
+            <ul class="footer-links">
+              <li>
+                <a href="http://scanfcode.com/category/c-language/"
+                  ><span class="hover:text-white">Faculty</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/front-end-development/"
+                  ><span class="hover:text-white">Staff</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/back-end-development/"
+                  ><span class="hover:text-white">JEE</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="http://scanfcode.com/category/java-programming-language/"
+                  ><span class="hover:text-white">Facilities</span></a
+                >
+              </li>
+              <li>
+                <a href="./static/fee_structure_23-24_25july2023.pdf"
+                  ><span class="hover:text-white">Fee Structure</span></a
+                >
+              </li>
+              <li>
+                <a href="http://scanfcode.com/category/templates/"
+                  ><span class="hover:text-white">NIRF</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+            <ul class="footer-links">
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contact/"
+                  ><span class="hover:text-white"
+                    >National Institute of Technology Goa Farmagudi, Ponda , Goa
+                    - 403401</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/contribute-at-scanfcode/"
+                  ><span class="hover:text-white"
+                    >Website: www.nitgoa.ac.in</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/privacy-podivcy/"
+                  ><span class="hover:text-white"
+                    >span> Phone: [0832] 2404200 (PA to Director)</span
+                  ></a
+                >
+              </div>
+              <div className="border-b-2 border-white mt-2">
+                <a href="http://scanfcode.com/sitemap/"
+                  ><span class="hover:text-white">Fax: [0832] 2404202</span></a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+        <br />
+      </div>
+      <div class="counter-container ml-16 mr-4">
+        <!-- Container for the counter -->
+        <!-- hitwebcounter Code START -->
+        <p>Visitor counter</p>
+        <a href="https://www.hitwebcounter.com" target="_blank">
+          <img
+            src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+            title="Counter Widget"
+            alt="Visit counter For Websites"
+            border="0"
+            width="150"
+            height="100"
+          />
+        </a>
+      </div>
+    </footer>
+    <!--Footer Ends Here -->
+  </body>
+</html>
