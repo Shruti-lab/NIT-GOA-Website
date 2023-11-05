@@ -192,10 +192,9 @@
     /* Slideshow container */
     .slideshow-container {
       width: 100%;
-      height: 20%;
-      max-height: 40vh;
+      max-height: 60vh;
       margin: 0 auto;
-      padding-bottom: 20%;
+    background-color: #1f2937;
     }
 
     /* The dots/bullets/indicators */
@@ -218,7 +217,7 @@
     /* Fading animation */
     .fade {
       -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
+      -webkit-animation-duration: 1.9s;
       animation-name: fade;
       animation-duration: 1.5s;
     }
@@ -483,11 +482,11 @@
 
 
   <!-- Hero Section -->
-  <section class=" bg-center bg-cover bg-gray-800  mb-48 md:mb-32">
+  <section class=" bg-center bg-cover bg-gray-800">
 
     <!-- slideshow image-->
     <div class="slideshow-container">
-      <div class="mySlides fade">
+      <div class="mySlides fade bg-gray-800">
         <img src="./static/Slideshow1.jpg" style="width: 100vw;height: 60vh">
 
       </div>
@@ -508,6 +507,7 @@
         <span class="dot"></span>
 
       </div>
+      
       <a class="prev" onclick="prevSlide()">&#10094;</a>
       <a class="next" onclick="showSlides()">&#10095;</a>
     </div>
@@ -572,22 +572,21 @@
       }
     </script>
 
+        <!--Announcement -->
+        <div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
+          <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
+          <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
+          <span class="border-r-2"></span>
+          <marquee class="bg-gray-800 text-blue-100"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
+        </div>
 
   </section>
 
+  <section class="">
 
-  <section class="pt-6">
-
-    <!--Announcement -->
-    <div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
-      <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
-      <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
-      <span class="border-r-2"></span>
-      <marquee class="bg-gray-800 text-blue-100"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
-    </div>
-
+ 
    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-4 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4  mb-10">
       <!-- News and Events-->
      
       <!-- Card start -->

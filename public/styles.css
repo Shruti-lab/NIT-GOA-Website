@@ -1811,6 +1811,9 @@ body {
    background-color: #fff;
    font-size: 10px;
 }
+.dropedown .dropbtn a{
+  font-size: 2px;
+}
 .dropdown {
   float: left;
   overflow: hidden;
