@@ -1165,25 +1165,27 @@
             </div>
         </div>
       </div>
-    
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mt-4 mb-10 bg-white">
+    <div class="bg-white p-4 pt-10">
+      <span class="text-3xl font-semibold font-serif text-blue-900">Placement and Higher Studies</span>
+ <p class="font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
+</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mb-10 bg-white">
 
       <div class="pr-92 ">
 
         <!--Statistics-->
 
-        <span class="text-3xl font-semibold font-serif text-blue-900">Statistics</span>
         <span>
-          <p class="mt-2 font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
+          <div id="chart_div" style=" width: 550px;"></div>
+         
         </span>
        
         <!--Statistics Chart-->
-        <div id="chart_div" style=" width: 550px;"></div>
+        
        
         </div>
         <div id="bar-chart" class="justify-center items-center">
-          <canvas id="myChart" style="width:100%; height:380px"></canvas>
+          <canvas id="myChart" style="width:100%; height:350px"></canvas>
       </div>
       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
@@ -1213,7 +1215,7 @@
           options: {
             title: {
               display: true,
-              text: "Graphical Representation of NIT Goa Placements Sector-Wise (2023)",
+              text: "NIT Goa Placements Sector-Wise (2023)",
               fontColor : textColor
             }
           }
