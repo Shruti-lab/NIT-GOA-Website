@@ -96,9 +96,9 @@
 
     /*Vision Mission */
     .btn-group button {
-      background-color: #5a8be5;
+      background-color: #2853d6;
       border: 1px solid whitesmoke;
-      color: black;
+      color: white;
       padding: 20px 30px;
       cursor: pointer;
       font-size: 18px;
@@ -150,7 +150,7 @@
 
     /* Add a background color on hover */
     .btn-group button:hover {
-      background-color: #89CFF0;
+      background-color: #5a8be5;
     }
 
     .para {
@@ -192,10 +192,9 @@
     /* Slideshow container */
     .slideshow-container {
       width: 100%;
-      height: 20%;
-      max-height: 40vh;
+      max-height: 60vh;
       margin: 0 auto;
-      padding-bottom: 20%;
+    background-color: #1f2937;
     }
 
     /* The dots/bullets/indicators */
@@ -218,7 +217,7 @@
     /* Fading animation */
     .fade {
       -webkit-animation-name: fade;
-      -webkit-animation-duration: 1.5s;
+      -webkit-animation-duration: 1.9s;
       animation-name: fade;
       animation-duration: 1.5s;
     }
@@ -328,20 +327,20 @@
 <body class="bg-gray-100">
 
   <!-- Header Starts here -->
-  <header class="bg-gray-800 margin-top">
-    <div class="container mx-auto text-white">
+  <header class="bg-gray-900 margin-top">
+    <div class="container mx-auto text-white justify-center p-4">
       <nav class="">
         <i class="fas fa-envelope mr-2 hover:text-gray-200 text-gray-500"></i>
         <a href="mailto:your.email@example.com"
-          class="hover:text-gray-200 text-white mr-4">your.email@example.com</a>
+          class="hover:text-gray-200 text-gray-400 mr-4">your.email@example.com</a>
         <i class="fas fa-phone mr-2 text-gray-500 hover:text-gray-200"></i>
-        <a href="tel:+1234567890" class="text-white hover:text-gray-200">123-456-7890</a>
+        <a href="tel:+1234567890" class="text-gray-400 hover:text-gray-200">123-456-7890</a>
 
-        <a href="index.html" class="text-white hover:text-gray-200 pl-80 ml-72 mr-4">Home</a>
-        <a href="tenders.html" class="text-white hover:text-gray-200 mr-4">Tenders</a>
+        <a href="index.html" class="text-gray-400 hover:text-gray-200 pl-80 ml-72 mr-4">Home</a>
+        <a href="tenders.html" class="text-gray-400 hover:text-gray-200 mr-4">Tenders</a>
 
-        <a href="https://www.nitgoa.ac.in/gian/" class="text-white hover:text-gray-200 mr-4">G.I.A.N</a>
-        <a href="https://www.nitgoa.ac.in/login.aspx" class="text-white hover:text-gray-200 mr-4">Login</a>
+        <a href="https://www.nitgoa.ac.in/gian/" class="text-gray-400 hover:text-gray-200 mr-4">G.I.A.N</a>
+        <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-400 hover:text-gray-200 mr-4">Login</a>
       </nav>
     </div>
   </header>
@@ -373,7 +372,7 @@
 
     </div>
 
-      <div class="text-center border-black border">
+      <div class="text-center">
         <nav class=" justify-center items-center text-wh bg-white">
           <div class="container_B font-semibold text-black ml-16 ">
             <div class="dropdown">
@@ -483,12 +482,11 @@
 
 
   <!-- Hero Section -->
-  <section class=" bg-center bg-cover bg-gray-800  mb-48 md:mb-32">
+  <section class=" bg-center bg-cover bg-gray-800">
 
     <!-- slideshow image-->
     <div class="slideshow-container">
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <div class="mySlides fade">
+      <div class="mySlides fade bg-gray-800">
         <img src="./static/Slideshow1.jpg" style="width: 100vw;height: 60vh">
 
       </div>
@@ -510,6 +508,7 @@
         <span class="dot"></span>
 
       </div>
+      
       <a class="prev" onclick="prevSlide()">&#10094;</a>
       <a class="next" onclick="showSlides()">&#10095;</a>
     </div>
@@ -574,22 +573,21 @@
       }
     </script>
 
+        <!--Announcement -->
+        <div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
+          <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
+          <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
+          <span class="border-r-2"></span>
+          <marquee class="bg-gray-800 text-blue-100"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
+        </div>
 
   </section>
 
+  <section class="">
 
-  <section class="pt-6">
-
-    <!--Announcement -->
-    <div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
-      <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
-      <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
-      <span class="border-r-2"></span>
-      <marquee class="bg-gray-800 text-blue-100"> 9th Convocation| Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
-    </div>
-
+ 
    
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 mt-4 mb-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4  mb-10">
       <!-- News and Events-->
      
       <!-- Card start -->
@@ -1171,23 +1169,62 @@
             </div>
         </div>
       </div>
-    
-
-    <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 p-4 mt-4 mb-10 bg-white">
+    <div class="bg-white p-4 pt-10">
+      <span class="text-3xl font-semibold font-serif text-blue-900">Placement and Higher Studies</span>
+ <p class="font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
+</div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mb-10 bg-white">
 
       <div class="pr-92 ">
 
         <!--Statistics-->
 
-        <span class="text-3xl font-semibold font-serif text-blue-900">Statistics</span>
         <span>
-          <p class="mt-2 font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
+          <div id="chart_div" style=" width: 550px;"></div>
+         
         </span>
        
         <!--Statistics Chart-->
-        <div id="chart_div"></div>
+        
        
         </div>
+        <div id="bar-chart" class="justify-center items-center">
+          <canvas id="myChart" style="width:100%; height:350px"></canvas>
+      </div>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+      </script>
+      <script>
+        var xValues = ["CSE", "ECE", "EEE", "ME", "CVE","Others"];
+        var yValues = [16,6, 3, 7, 5, 4];
+        var barColors = [
+          "#b91d47",
+          "#00aba9",
+          "#2b5797",
+          "#e8c3b9",
+          "#1e7145",
+          "#007D7D"
+        ];
+        
+        var textColor= "#1f398a";
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "NIT Goa Placements Sector-Wise (2023)",
+              fontColor : textColor
+            }
+          }
+        });
+        </script>
        
         <!--Tweets-->
         <div class="items-center justify-content">
@@ -1253,7 +1290,7 @@
     <div class="text text-al">
       <button id="vision1">Vision</button>
       <button id="vision2">Mission</button>
-      <button id="vision3">History</button>
+      <button id="vision3">About</button>
     </div>
     <div class="para">
       <div class="p-4 pb-12" id="demo"><p>National Institute of Technology Goa shall emerge as one of the nation's pre-eminent
