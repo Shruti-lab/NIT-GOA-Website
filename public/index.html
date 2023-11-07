@@ -588,9 +588,20 @@
           <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
           <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
           <span class="border-r-2"></span>
-          <marquee class="bg-gray-800 text-blue-100"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
+          <marquee class="bg-gray-800 text-blue-100" onmouseover="stopMarquee()" onmouseout="startMarquee()"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
         </div>
+<script>
+  function stopMarquee() {
+    const marquee = document.querySelector('marquee');
+    marquee.stop();
+}
 
+function startMarquee() {
+    const marquee = document.querySelector('marquee');
+    marquee.start();
+}
+
+</script>
 
 
   <section class="">
@@ -1446,6 +1457,7 @@
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
+
     google.charts.load('current', { packages: ['corechart', 'bar'] });
     google.charts.setOnLoadCallback(drawColColors);
 
