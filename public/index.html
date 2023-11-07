@@ -588,9 +588,20 @@
           <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
           <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
           <span class="border-r-2"></span>
-          <marquee class="bg-gray-800 text-blue-100"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
+          <marquee class="bg-gray-800 text-blue-100" onmouseover="stopMarquee()" onmouseout="startMarquee()"> <a class="text-blue-600" href="" target="_blank">9th Convocation</a> | Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
         </div>
+<script>
+  function stopMarquee() {
+    const marquee = document.querySelector('marquee');
+    marquee.stop();
+}
 
+function startMarquee() {
+    const marquee = document.querySelector('marquee');
+    marquee.start();
+}
+
+</script>
 
 
   <section class="">
@@ -1334,6 +1345,42 @@
   </div>
 </section>
 
+<footer class="bg-gray-800 text-white py-8">
+  <div class="container mr-auto ml-16 flex">
+    <div class="w-2/3 mb-5">                
+      <span class="text-xl font-semibold text-white font-serif ">National Portal </span>
+      <span>
+        <p class="mt-2 font-bold text-gray-600 border-t-4 sm:w-2/5 w-1/5  border-white"></p>
+      </span>
+    </div>
+    <div class="w-1/3 pr-16 ml-5 ">
+      <span class="text-2xl sm:text-xl font-semibold text-white">आज का शब्द</span>
+      <span>
+        <p class="mt-2 w-3/5  sm:w-4/5 font-bold text-gray-600 border-t-4  border-white"></p>
+      </span>
+     </div>
+  </div>
+  <div class="container mr-auto ml-16 flex">
+      <div class="w-2/3 flex">
+          <div class="w-1/3 pr-4">
+              <a href="https://www.education.gov.in/" target="_blank"><img src="./static/moe.png" alt="Image 1" class="mb-4"></a>
+              <a href="https://www.makeinindia.com/" target="_blank"><img src="./static/mii.png" alt="Image 2"></a>
+          </div>
+          <div class="w-1/3 pr-4">
+              <a href="https://digitalindia.gov.in/" target="_blank"><img src="./static/dii.png" alt="Image 3" class="mb-4"></a>
+              <a href="https://nad.digilocker.gov.in/students" target="_blank"><img src="./static/digilocker_nad.png" alt="Image 4"></a>
+          </div>
+          <div class="w-1/3 pr-4">
+            <a href="https://fitindia.gov.in/" target="_blank"><img src="./static/fit_india.png" alt="Image 3" class="mb-4"></a>
+            <a href="https://swachhbharat.mygov.in/" target="_blank"><img src="./static/swach_bharath.png" alt="Image 4"></a>
+    </div>
+  </div>
+    <div class="w-1/3 pr-16 sm:ml-10">
+<p class="text-2xl">"सहिष्णुता (sahishnuta) - Tolerance"</p>
+  </div>
+</footer>
+
+
   <!--Footer Starts Here -->
   <footer class="site-footer">
     <div class="container">
@@ -1410,6 +1457,7 @@
 
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
+
     google.charts.load('current', { packages: ['corechart', 'bar'] });
     google.charts.setOnLoadCallback(drawColColors);
 
