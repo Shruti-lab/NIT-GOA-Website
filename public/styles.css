@@ -1932,43 +1932,6 @@ background-color: #ddd;
   display: block;
 }
 
-.head-testimonials{
-  background-color: #1f398a;
-  width: 100%;
-}
-
-.testimonials {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #1f398a;
-  color: #fff;
-  width: 100%;
-  
-}
-
-.card-testimonials{
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  border-radius: 10%;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  transition: 0.5s ease;
-}
-
-.card-testimonials:hover {
-  box-shadow: 0 0 20px rgba(255,255,255,0.4), 0 0 50px rgba(255,255,255,0.4);
-}
-
-.testimonials img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-}
-
 #bar-chart {
   width: 100%;
 }
