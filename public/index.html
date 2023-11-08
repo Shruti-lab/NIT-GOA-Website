@@ -335,26 +335,28 @@
 
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 max-width">
 
   <!-- Header Starts here -->
-  <header class="bg-gray-900 margin-top">
-    <div class="container mx-auto text-white justify-center p-4">
-      <nav class="">
-        <i class="fas fa-envelope mr-2 hover:text-gray-200 text-gray-500"></i>
-        <a href="mailto:your.email@example.com"
-          class="hover:text-gray-200 text-gray-400 mr-4">your.email@example.com</a>
-        <i class="fas fa-phone mr-2 text-gray-500 hover:text-gray-200"></i>
-        <a href="tel:+1234567890" class="text-gray-400 hover:text-gray-200">123-456-7890</a>
-
-        <a href="index.html" class="text-gray-400 hover:text-gray-200 pl-80 ml-72 mr-4">Home</a>
-        <a href="tenders.html" class="text-gray-400 hover:text-gray-200 mr-4">Tenders</a>
-
-        <a href="https://www.nitgoa.ac.in/gian/" class="text-gray-400 hover:text-gray-200 mr-4">G.I.A.N</a>
-        <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-400 hover:text-gray-200 mr-4">Login</a>
-      </nav>
+  <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center">
+    <div class="flex items-center text-gray-300">
+      <div class="mr-4 ml-6 ">
+        <i class="fas fa-envelope "></i> your@email.com
+      </div>
+      <div>
+        <i class="fas fa-phone "></i> +1234567890
+      </div>
     </div>
-  </header>
+    <div class="flex items-center">
+      <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-500">Home</a>
+      <a href="tenders.html" class="mr-4 text-gray-300 hover:text-blue-500">Tenders</a>
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500">Login</a>
+    </div>
+  </div>
+  
+
+
   <header id="main-header" class=" bg-white z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
     <div class="flex justify-center">
       <div class="headerBar ">
@@ -426,6 +428,7 @@
               <button class="dropbtn">Admissions</button>
               <div class="dropdown-content">
                 <a href="admissions/btech.html">B.tech</a>
+                
                 <a href="admissions/mtech.html">M.tech</a>
                 <a href="admissions/phd.html">Ph.D</a>
                 <a
@@ -1349,7 +1352,7 @@ function startMarquee() {
   <div class="container ml-auto mr-2 flex">
     <div class="w-1/3 pr-16"></div>
     <div class="w-2/3 mb-5">                
-      <span class="text-xl font-semibold text-white font-serif ">National Portal </span>
+      <span class="text-xl font-semibold text-white font-serif ">National Portals</span>
       <span>
         <p class="mt-2 font-bold text-gray-600 border-t-4 w-1/5  border-white"></p>
       </span>
@@ -1360,16 +1363,16 @@ function startMarquee() {
       </div>
       <div class="w-2/3 flex">
           <div class="w-1/3 pr-4">
-              <img src="./static/moe.png" alt="Image 1" class="mb-4">
-              <img src="./static/mii.png" alt="Image 2">
+              <a href="https://www.education.gov.in/" target="_blank"><img src="./static/moe.png" alt="Image 1" class="mb-4"></a>
+              <a href="https://www.makeinindia.com/" target="_blank"><img src="./static/mii.png" alt="Image 2"></a>
           </div>
           <div class="w-1/3 pr-4">
-              <img src="./static/dii.png" alt="Image 3" class="mb-4">
-              <img src="./static/digilocker_nad.png" alt="Image 4">
+              <a href="https://digitalindia.gov.in/" target="_blank"><img src="./static/dii.png" alt="Image 3" class="mb-4"></a>
+              <a href="https://nad.digilocker.gov.in/students" target="_blank"><img src="./static/digilocker_nad.png" alt="Image 4"></a>
           </div>
           <div class="w-1/3 pr-4">
-            <img src="./static/fit_india.png" alt="Image 3" class="mb-4">
-            <img src="./static/swach_bharath.png" alt="Image 4">
+            <a href="https://fitindia.gov.in/" target="_blank"><img src="./static/fit_india.png" alt="Image 3" class="mb-4"></a>
+            <a href="https://swachhbharat.mygov.in/" target="_blank"><img src="./static/swach_bharath.png" alt="Image 4"></a>
     </div>
   </div>
 </footer>
@@ -1390,7 +1393,7 @@ function startMarquee() {
               <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
               <li><a href="../public/RTI.html"><span class="">RTI</span></a></li>
               <li><a href=""><span class="">Login</span></a></li>
-              <li><a href=""><span class="">Contact Us</span></a></li>
+              <li><a href="../public/contact us.html"><span class="">Contact Us</span></a></li>
               <li><a href=""><span class="">Feedback</span></a></li>
             </ul>
             <ul class="footer-links">
