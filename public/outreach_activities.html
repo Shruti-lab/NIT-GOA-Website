@@ -59,12 +59,11 @@
  
       </div>
 
-      <div class="text-center border mb-10">
-        <nav class="mt-2 justify-center items-center">
-          <div class="container_B font-semibold text-gray-700 ml-16">
-            <div class="dropdown">
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10">
+            <div class="dropdown ">
              <a href="index.html">Home</a>
-
             </div>
             <div class="dropdown">
               <button class="dropbtn">Administration</button>
@@ -96,14 +95,25 @@
                 <a href="academics/departments.html">Departments</a>
                 <a href="academics/DissertionFormat.html">Dissertion Formats</a>
                 <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="academics/departments.html">Departments</a>
                 <a href="academics/library.html">Library</a>
               </div>
             </div>
             <div class="dropdown">
               <button class="dropbtn">Admissions</button>
               <div class="dropdown-content">
-                <a href="admissions/btech.html">B.tech</a>
-                <a href="admissions/mtech.html">M.tech</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="admissions/josaa.html" target="_blank">JoSAA/CSAB</a>
+                    <a href="admissions/dasa.html" target="_blank">DASA</a>
+                    <a href="admissions/facilities.html" target="_blank">Facilities</a>
+                    <a href="admissions/strengths.html" target="_blank">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="admissions/mtech.html">M.Tech</a>
                 <a href="admissions/phd.html">Ph.D</a>
                 <a
                   href="static/fee_structure_23-24_25july2023.pdf"
@@ -124,8 +134,8 @@
               <button class="dropbtn">People</button>
               <div class="dropdown-content">
                 <a href="./People/frontend/people_faculty.html">Faculty</a>
-                <a href="#">Technical Staff</a>
-                <a href="#">Administrative Staff</a>
+                <a href="./People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="./People/frontend/administrative.html">Administrative Staff</a>
                 <a
                   href="static/Directory_03july2023.pdf"
                   >Faculty & Staff Directory</a
@@ -143,7 +153,7 @@
               </div>
             </div>
             <div class="dropdown">
-              <a href="">Outreach Activities</a>
+              <a href="outreach_activities.html">Outreach Activities</a>
             </div>
             <div class="dropdown">
               <a href="nirf.html">NIRF</a>
@@ -160,8 +170,15 @@
               >
             </div>
           </div>
-        </nav>
-      </div>
+
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
     </header>
 
     <!-- Header ends here -->
