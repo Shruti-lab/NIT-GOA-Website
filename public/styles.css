@@ -1969,7 +1969,7 @@ body {
   position: absolute;
   background-color: #ddd;
   left: 100%;
-  top: -4%;
+  top: 6%;
   min-width: 100px;
   z-index: 2;
 }
