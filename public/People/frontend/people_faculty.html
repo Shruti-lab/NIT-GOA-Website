@@ -19,6 +19,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <script src="../../script.js"></script>
   </head>
   <body>
         <!-- Header Starts here -->
@@ -39,141 +40,137 @@
           </div>
         </div>
         <!-- Header Ends Here -->
-    <header
-      id="main-header"
-      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
-    >
-      <div class="flex justify-center">
-        <img class="w-33 h-22" src="../.././static/logo_color.png" alt="" />
- 
-      </div>
-
-       <div class="text-center">
-        <nav class=" justify-center items-center bg-white">
-          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10">
-            <div class="dropdown ">
-             <a href="../../index.html">Home</a>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Administration</button>
-              <div class="dropdown-content">
-                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
-                <a href="../../administration/director_message.html">Director</a>
-                <a href="../../administration/registrar.html">Registrar</a>
-                <a href="../../administration/senate.html">Senate</a>
-                <a href="../../administration/dean.html">Deans</a>
-                <a href="../../administration/Committees.html">Committees</a>
-                <a href="../../administration/finance_committee.html">Finance Committee</a>
-                <a href="../../administration/work_committee.html">Building and Works Committee</a>
-                <a href="../../administration/hod.html">Heads of Departments </a>
-                <a
-                  href="../../static/Org_Chart.pdf"
-                  target="_blank"
-                  >Organizing Structure</a
-                >
-                <a href="../../administration/reports.html">Reports</a>
+        <header id="main-header" class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+          <div class="flex justify-center">
+            <div class="headerBar ">
+              <div class="logo-container flex flex-col justify-center items-center">
+                  <img src="../../static/logo_color.png" class="logo" id="logo_img">
               </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Academics</button>
-              <div class="dropdown-content">
-                <a href="../../academics/academic_calendar.html">Calendar</a>
-                <a href="../../academics/rules_and_regulations.html"
-                  >Regulations and Curriculum</a
-                >
-                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
-                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
-                <a href="../../academics/departments.html">Departments</a>
-                <a href="../../academics/library.html">Library</a>
               </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Admissions</button>
-              <div class="dropdown-content">
-                <div class="sub-dropdown">
-                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
-                  <!--BTECH Start-->
-                  <div class="sub-dropdown-content">
-                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
-                    <a href="../../admissions/dasa.html">DASA</a>
-                    <a href="../../admissions/facilities.html">Facilities</a>
-                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
-                  </div>
-                  <!--End-->
-                </div>
-                <a href="../../admissions/mtech.html">M.Tech</a>
-                <a href="../../admissions/phd.html">Ph.D</a>
-                <a
-                  href="../../static/fee_structure_23-24_25july2023.pdf"
-                  >Fee Structure</a
-                >
-                                <div class="sub-dropdown">
-                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
-                  <!--BTECH Start-->
-                  <div class="sub-dropdown-content">
-                      <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
-                        >B.Tech Students</a
-                      >
-                      <a href="../.././static/Rules_mtech_hostel_20june16.pdf"
-                        >M.Tech Students</a
-                      >
-                  </div>
-                  <!--End-->
-                </div>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="dropbtn">Training & Placement</button>
-              <div class="dropdown-content">
-                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
-                <a href="#">Company Login</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">People</button>
-              <div class="dropdown-content">
-                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
-                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
-                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
-                <a
-                  href="../../static/Directory_03july2023.pdf"
-                  >Faculty & Staff Directory</a
-                >
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Research</button>
-              <div class="dropdown-content">
-                <a href="../../research/R&DProjects.html">R & D Projects</a>
-                <a
-                  href="../../static/NIT_Goa_IPR_10Nov2015.pdf"
-                  >IPR Policy</a
-                >
-              </div>
-            </div>
-            <div class="dropdown">
-              <a href="../../outreach_activities.html">Outreach Activities</a>
-            </div>
-            <div class="dropdown">
-              <a href="../../nirf.html">NIRF</a>
-            </div>
-            <div class="dropdown">
-              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html"
-                >Alumni</a
-              >
-            </div>
-            <div class="dropdown">
-              <a
-                href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx"
-                >Fee Payment</a
-              >
-            </div>
+        
           </div>
-        </div>
-      </nav>
-    </div>
-    </header>
+        
+            <div class="text-center">
+              <nav class=" justify-center items-center bg-white">
+                <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+                  <div class="dropdown ">
+                   <a href="../../index.html">Home</a>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Administration</button>
+                    <div class="dropdown-content">
+                      <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                      <a href="../../administration/director_message.html">Director</a>
+                      <a href="../../administration/registrar.html">Registrar</a>
+                      <a href="../../administration/senate.html">Senate</a>
+                      <a href="../../administration/dean.html">Deans</a>
+                      <a href="../../administration/Committees.html">Committees</a>
+                      <a href="../../administration/finance_committee.html">Finance Committee</a>
+                      <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                      <a href="../../administration/hod.html">Heads of Departments </a>
+                      <a
+                        href="../../static/Org_Chart.pdf"
+                        target="_blank"
+                        >Organizing Structure</a
+                      >
+                      <a href="../../administration/reports.html">Reports</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Academics</button>
+                    <div class="dropdown-content">
+                      <a href="../../academics/academic_calendar.html">Calendar</a>
+                      <a href="../../academics/rules_and_regulations.html"
+                        >Regulations and Curriculum</a
+                      >
+                      <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                      <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                      <a href="../../academics/departments.html">Departments</a>
+                      <a href="../../academics/library.html">Library</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Admissions</button>
+                    <div class="dropdown-content">
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                          <a href="../../admissions/josaa.html" target="_blank">JoSAA/CSAB</a>
+                          <a href="../../admissions/dasa.html" target="_blank">DASA</a>
+                          <a href="../../admissions/facilities.html" target="_blank">Facilities</a>
+                          <a href="../../admissions/strengths.html" target="_blank">Strengths of NIT Goa</a>
+                        </div>
+                        <!--End-->
+                      </div>
+                      <a href="../../admissions/mtech.html">M.Tech</a>
+                      <a href="../../admissions/phd.html">Ph.D</a>
+                      <a
+                        href="../../static/fee_structure_23-24_25july2023.pdf"
+                        >Fee Structure</a
+                      >
+                      <a href="../../admissions/hostels.html">Hostels</a>
+                    </div>
+                  </div>
+        
+                  <div class="dropdown">
+                    <button class="dropbtn">Training & Placement</button>
+                    <div class="dropdown-content">
+                      <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                      <a href="#">Company Login</a>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">People</button>
+                    <div class="dropdown-content">
+                      <a href="../../People/frontend/people_faculty.html">Faculty</a>
+                      <a href="../../People/frontend/technical_cse.html">Technical Staff</a>
+                      <a href="../../People/frontend/administrative.html">Administrative Staff</a>
+                      <a
+                        href="../../static/Directory_03july2023.pdf"
+                        >Faculty & Staff Directory</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="dropbtn">Research</button>
+                    <div class="dropdown-content">
+                      <a href="../../research/R&DProjects.html">R & D Projects</a>
+                      <a
+                        href="../../static/NIT_Goa_IPR_10Nov2015.pdf"
+                        >IPR Policy</a
+                      >
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <a href="../../outreach_activities.html">Outreach Activities</a>
+                  </div>
+                  <div class="dropdown">
+                    <a href="../../nirf.html">NIRF</a>
+                  </div>
+                  <div class="dropdown">
+                    <a href="https://www.nitgoa.ac.in/nitgalumni/index.html"
+                      >Alumni</a
+                    >
+                  </div>
+                  <div class="dropdown">
+                    <a
+                      href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx"
+                      >Fee Payment</a
+                    >
+                  </div>
+                </div>
+        
+                <div class="menu-toggle" onclick="togglemenu(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+        
+              </div>
+            </nav>
+          </div>
+        </header>
 
     <!-- Header ends here -->
             <div class="dept">
@@ -194,7 +191,7 @@
         <div class="card">
           <div class="card-top">
             <img src="Dr. Damodar Reddy Edla.png" alt="" />
-            <h3><a href="#">Dr. Damodar Reddy Edla</a></h3>
+            <h3><a href="">Dr. Damodar Reddy Edla</a></h3>
             <hr />
           </div>
           <div class="card-bottom">
@@ -215,7 +212,7 @@
         <div class="card">
           <div class="card-top">
             <img src="Dr. Veena Thenkanidiyoor.png" alt="" />
-            <h3><a href="#">Dr Veena Thenkanidiyoor</a></h3>
+            <h3><a href="">Dr Veena Thenkanidiyoor</a></h3>
             <hr />
           </div>
           <div class="card-bottom">
@@ -236,7 +233,7 @@
         <div class="card">
           <div class="card-top">
             <img src="Dr. Purushothama B.R" alt="" />
-            <h3><a href="#">Dr. Purushothama B.R</a></h3>
+            <h3><a href="">Dr. Purushothama B.R</a></h3>
             <hr />
           </div>
           <div class="card-bottom">
@@ -256,7 +253,7 @@
         <div class="card">
           <div class="card-top">
             <img src="Dr. Keshavamurthy B.N..png" alt="" />
-            <h3><a href="#">Dr. Keshavamurthy B.N.</a></h3>
+            <h3><a href="">Dr. Keshavamurthy B.N.</a></h3>
             <hr />
           </div>
           <div class="card-bottom">
@@ -276,7 +273,7 @@
         <div class="card">
           <div class="card-top">
             <img src="Dr. S. Mini.png" alt="" />
-            <h3><a href="#">Dr. S. Mini</a></h3>
+            <h3><a href="">Dr. S. Mini</a></h3>
             <hr />
           </div>
           <div class="card-bottom">
@@ -296,7 +293,7 @@
       <div class="card">
         <div class="card-top">
           <img src="paravati_cse.png" alt="" />
-          <h3><a href="#">Dr. Pravati Swain</a></h3>
+          <h3><a href="">Dr. Pravati Swain</a></h3>
           <hr />
         </div>
         <div class="card-bottom">
@@ -319,7 +316,7 @@
       <div class="card">
         <div class="card-top">
           <img src="Dr. Venkatanareshbabu Kuppili.png" alt="" />
-          <h3><a href="#">Dr. Venkatanareshbabu Kuppili</a></h3>
+          <h3><a href="">Dr. Venkatanareshbabu Kuppili</a></h3>
           <hr />
         </div>
         <div class="card-bottom">
@@ -340,7 +337,7 @@
       <div class="card">
         <div class="card-top">
           <img src="Dr. Modi Chirag Navinchandra.png" alt="" />
-          <h3><a href="#">Dr. Modi Chirag Navinchandra</a></h3>
+          <h3><a href="">Dr. Modi Chirag Navinchandra</a></h3>
           <hr />
         </div>
         <div class="card-bottom">
@@ -360,7 +357,7 @@
       <div class="card">
         <div class="card-top">
           <img src="Mrs. PRATIMA CHATTERJEE.png" alt="" />
-          <h3><a href="#">Mrs. PRATIMA CHATTERJEE</a></h3>
+          <h3><a href="">Mrs. PRATIMA CHATTERJEE</a></h3>
           <hr />
         </div>
         <div class="card-bottom">
@@ -546,6 +543,5 @@
         </div>
       </footer>
       <!--Footer Ends Here -->
-
   </body>
 </html>
