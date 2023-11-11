@@ -9,7 +9,11 @@ function scrollFunction() {
 }
 
 function togglemenu(x) {
-  x.classList.toggle("change");
+  if (document.getElementById("Nav").style.left == "-80%") {
+    document.getElementById("Nav").style.left = "0%";
+  } else {
+    document.getElementById("Nav").style.left= "-80%";
+  }
 }
 
 $(document).ready(function () {
