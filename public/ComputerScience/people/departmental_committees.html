@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Department of Computer Science and Engineering</title>
     <link rel="stylesheet" href="../../styles.css" />
+    <script src="../../script.js"></script>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -30,12 +31,18 @@
       class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
     >
       <div class="flex justify-center">
-        <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
+        <div class="headerBar">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img" />
+          </div>
+        </div>
       </div>
 
       <div class="text-center border mb-10">
         <nav class="mt-2 justify-center items-center">
-          <div class="container_B font-semibold text-gray-700 ml-16">
+          <div
+            class="container_B font-semibold text-gray-900 flex justify-center mx-16"
+          >
             <!--Home-->
             <div class="dropdown">
               <a href="../../index.html">Home</a>
@@ -101,10 +108,12 @@
     <!-- Header ends here -->
 
     <!--Main Section starts here-->
-    <div class="p-8 shadow-lg bg-white rounded-lg border border-gray-200">
+    <div
+      class="p-8 shadow-lg bg-white rounded-lg border border-gray-200 justify-center flex"
+    >
       <div>
         <h1
-          class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4"
+          class="text-center text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4"
         >
           Departmental Committee
         </h1>
