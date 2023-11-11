@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -47,12 +48,11 @@
  
       </div>
 
-      <div class="text-center border mb-10">
-        <nav class="mt-2 justify-center items-center">
-          <div class="container_B font-semibold text-gray-700 ml-16">
-            <div class="dropdown">
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10">
+            <div class="dropdown ">
              <a href="index.html">Home</a>
-
             </div>
             <div class="dropdown">
               <button class="dropbtn">Administration</button>
@@ -84,20 +84,43 @@
                 <a href="academics/departments.html">Departments</a>
                 <a href="academics/DissertionFormat.html">Dissertion Formats</a>
                 <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="academics/departments.html">Departments</a>
                 <a href="academics/library.html">Library</a>
               </div>
             </div>
             <div class="dropdown">
               <button class="dropbtn">Admissions</button>
               <div class="dropdown-content">
-                <a href="admissions/btech.html">B.tech</a>
-                <a href="admissions/mtech.html">M.tech</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="admissions/dasa.html" >DASA</a>
+                    <a href="admissions/facilities.html" >Facilities</a>
+                    <a href="admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="admissions/mtech.html">M.Tech</a>
                 <a href="admissions/phd.html">Ph.D</a>
                 <a
                   href="static/fee_structure_23-24_25july2023.pdf"
                   >Fee Structure</a
                 >
-                <a href="admissions/hostels.html">Hostels</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                      <a href="./static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
+                        >B.TECH Students</a
+                      >
+                      <a href="./static/Rules_mtech_hostel_20june16.pdf"
+                        >M.Tech Students</a
+                      >
+                  </div>
+                  <!--End-->
+                </div>
               </div>
             </div>
 
@@ -148,8 +171,15 @@
               >
             </div>
           </div>
-        </nav>
-      </div>
+
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </nav>
+    </div>
     </header>
 
     <!-- Header ends here -->
@@ -163,18 +193,18 @@
         <ul class="ml-2 ">
             <h2 class="text-2xl text-blue-800 font-serif text-center border-b-2">NIRF Forms</h2>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2023</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2023</a></li>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2022</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2022</a></li>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2021</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2021</a></li>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2020</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2020</a></li>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2019</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2019</a></li>
             <li class="text-blue-600 font-semibold m-3"><a
-               class="hover:text-blue-700 " href="">NIRF FORMS-2018</a></li>
-            <li class="text-blue-600 font-semibold ml-3 "><a class="hover:text-blue-700 " href="">NIRF FORMS-2017</a></li>
+               class="hover:text-blue-700 " href="./static/">NIRF FORMS-2018</a></li>
+            <li class="text-blue-600 font-semibold ml-3 "><a class="hover:text-blue-700 " href="./static/">NIRF FORMS-2017</a></li>
             
         </ul>
         

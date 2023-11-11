@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admissions</title>
+    <script src="../script.js"></script>
     <link rel="stylesheet" href=".././styles.css" />
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
@@ -58,7 +59,11 @@
       class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
     >
       <div class="flex justify-center">
-        <img class="w-33 h-22" src=".././static/logo_color.png" alt="" />
+        <div class="headerBar">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src=".././static/logo_color.png" class="logo" id="logo_img" />
+          </div>
+        </div>
       </div>
 
       <div class="text-center border mb-10">
@@ -119,7 +124,21 @@
                 <a href="../static/fee_structure_23-24_25july2023.pdf"
                   >Fee Structure</a
                 >
-                <a href="../admissions/hostels.html">Hostels</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">
+                    Hostels <span class="font-bold text-xl">&rsaquo;</span>
+                  </button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href=".././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
+                      >B.TECH Students</a
+                    >
+                    <a href=".././static/Rules_mtech_hostel_20june16.pdf"
+                      >M.Tech Students</a
+                    >
+                  </div>
+                  <!--End-->
+                </div>
               </div>
             </div>
 

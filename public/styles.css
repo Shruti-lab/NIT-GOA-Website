@@ -1696,6 +1696,7 @@ video {
   float: right;
   margin: 15px;
   cursor: pointer;
+  left:1vh;
 }
 
 .bar1, .bar2, .bar3 {
@@ -1703,17 +1704,6 @@ video {
   height: 5px;
   background-color: #333;
   margin: 6px 0;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
 }
 
 @media (max-width:991px)
@@ -1725,6 +1715,41 @@ video {
 }
 @media (max-width:767px)
 {
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    left: 42vw;
+  }
+
+  #Nav {
+    flex-direction: column;
+    margin-left: 0;
+    position: absolute;
+    top:0;
+    z-index:9;
+    width: 50%;
+    height: 100vh;
+    left: -80%;
+    transition: .4s ease;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
+
+  .dropdown {
+    overflow: auto;
+  }
+
+  .sub-dropdown-content {
+    top: 100% !important;
+    left: 40% !important;
+    z-index: 11;
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+  }
+
+  .container_B {
+    overflow: auto;
+  }
+
   .site-footer
   {
     padding-bottom:0
