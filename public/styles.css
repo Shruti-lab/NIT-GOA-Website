@@ -1696,6 +1696,7 @@ video {
   float: right;
   margin: 15px;
   cursor: pointer;
+  left:1vh;
 }
 
 .bar1, .bar2, .bar3 {
