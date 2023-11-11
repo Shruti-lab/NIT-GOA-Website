@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Board Of Governors</title>
     <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href=".././styles.css" />
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -21,20 +23,36 @@
   </head>
   <body>
     <!-- Header Starts here -->
-    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center">
+    <div
+      class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center"
+    >
       <div class="flex items-center text-gray-300">
-        <div class="mr-4 ml-6 ">
-          <i class="fas fa-envelope "></i> your@email.com
+        <div class="mr-4 ml-6">
+          <i class="fas fa-envelope"></i> your@email.com
         </div>
-        <div>
-          <i class="fas fa-phone "></i> +1234567890
-        </div>
+        <div><i class="fas fa-phone"></i> +1234567890</div>
       </div>
       <div class="flex items-center">
-        <a href="../index.html" class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500">Home</a>
-        <a href="../tenders.html" class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500">Tenders</a>
-        <a href="https://www.nitgoa.ac.in/gian/" class=" sm:text-sm mr-4 text-gray-300 hover:text-blue-500">G.I.A.N</a>
-        <a href="https://www.nitgoa.ac.in/login.aspx" class="sm:text-sm text-gray-300 hover:text-blue-500">Login</a>
+        <a
+          href="../index.html"
+          class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+          >Home</a
+        >
+        <a
+          href="../tenders.html"
+          class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+          >Tenders</a
+        >
+        <a
+          href="https://www.nitgoa.ac.in/gian/"
+          class="sm:text-sm mr-4 text-gray-300 hover:text-blue-500"
+          >G.I.A.N</a
+        >
+        <a
+          href="https://www.nitgoa.ac.in/login.aspx"
+          class="sm:text-sm text-gray-300 hover:text-blue-500"
+          >Login</a
+        >
       </div>
     </div>
     <!--Header Ends Here-->
@@ -44,7 +62,19 @@
       class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
     >
       <div class="flex justify-center">
-        <img class="w-33 h-22" src=".././static/logo_color.png" alt="" />
+        <div class="flex justify-center">
+          <div class="headerBar">
+            <div
+              class="logo-container flex flex-col justify-center items-center"
+            >
+              <img
+                src=".././static/logo_color.png"
+                class="logo"
+                id="logo_img"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="text-center border mb-10">

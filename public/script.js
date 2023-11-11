@@ -1,3 +1,17 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    document.getElementById("logo_img").style.width= "30rem";
+  } else {
+    document.getElementById("logo_img").style.width= "100%";
+  }
+}
+
+function togglemenu(x) {
+  x.classList.toggle("change");
+}
+
 $(document).ready(function () {
     $(".dropdown").each(function (_, dropdown) {
       const dropdownMenu = $(dropdown).find("> .dropdown-menu")[0];
@@ -39,4 +53,11 @@ $(document).ready(function () {
     });
   });
   
-
+  function cleaner(el) {
+    if (el.innerHTML === '&nbsp;' || el.innerHTML === '') {
+      el.parentNode.removeChild(el);
+    }
+  }
+  
+const elements = document.querySelectorAll('a');
+elements.forEach(cleaner);
