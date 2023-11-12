@@ -1691,6 +1691,14 @@ video {
   transition: .2s ease-in-out;
 }
 
+#stat-holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
 .menu-toggle {
   display: none;
   float: right;
@@ -1720,6 +1728,16 @@ video {
     display: block;
     position: relative;
     left: 42vw;
+  }
+
+  #stat-holder {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
   }
 
   #Nav {
