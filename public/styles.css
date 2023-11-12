@@ -1746,7 +1746,7 @@ video {
     position: absolute;
     top:0;
     z-index:9;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     left: -80%;
     transition: .4s ease;
@@ -1759,7 +1759,7 @@ video {
 
   .sub-dropdown-content {
     top: 100% !important;
-    left: 40% !important;
+    left: 20% !important;
     z-index: 11;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
   }
