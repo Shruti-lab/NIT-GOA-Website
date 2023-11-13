@@ -33,41 +33,31 @@
 
   <body>
     <!-- Header Starts here -->
-    <header class="top-0 z-10 bg-gray-900 p-2 mb-5">
-      <div class="container mx-auto text-white">
-        <nav class="mt-2">
-          <i class="fas fa-envelope mr-2 hover:text-gray-200 text-gray-500"></i>
-          <a
-            href="mailto:your.email@example.com"
-            class="hover:text-gray-200 text-gray-400 mr-4"
-            >your.email@example.com</a
-          >
-          <i class="fas fa-phone mr-2 text-gray-500 hover:text-gray-200"></i>
-          <a href="tel:+1234567890" class="text-gray-400 hover:text-gray-200"
-            >123-456-7890</a
-          >
-
-          <a
-            href="index.html"
-            class="text-gray-400 hover:text-gray-200 pl-80 ml-72 mr-4"
-            >Home</a
-          >
-          <a href="tenders.html" class="text-gray-400 hover:text-gray-200 mr-4"
-            >Tenders</a
-          >
-
-          <a
-            href="https://www.nitgoa.ac.in/gian/"
-            class="text-gray-400 hover:text-gray-200 mr-4"
-            >G.I.A.N</a
-          >
-          <a
-            href="https://www.nitgoa.ac.in/login.aspx"
-            class="text-gray-400 hover:text-gray-200 mr-4"
-            >Login</a
-          >
-        </nav>
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com</span>
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890</span>
+          </div>
       </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
     </header>
     <header
       id="main-header"
