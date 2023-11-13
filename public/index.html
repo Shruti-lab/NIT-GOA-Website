@@ -5,6 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <link href="styles.css" rel="stylesheet" />
+
+
+
+
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -80,7 +84,7 @@
 
  justify-content: center;
  align-items: center;
-  width: 400px; /* Adjust the width as needed */
+  width: 20rem; /* Adjust the width as needed */
   height: 400px;
   background-color: #ffffff; /* Optional: Set a background color */
   border: 1px solid #ddd; /* Optional: Add a border */
@@ -382,16 +386,20 @@
 <body class="bg-gray-100 max-width">
 
   <!-- Header Starts here -->
-  <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center">
+  <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
     <div class="flex items-center text-gray-300">
-      <div class="mr-4 ml-6 ">
-        <i class="fas fa-envelope "></i> your@email.com
-      </div>
-      <div>
-        <i class="fas fa-phone "></i> +1234567890
-      </div>
+      <div class="flex items-center gap-4" id="header-favicon">
+        <div>
+          <i class="fas fa-envelope"></i> 
+          <span>your@email.com</span>
+        </div>
+        <div>
+          <i class="fas fa-phone "></i> 
+          <span>+1234567890</span>
+        </div>
     </div>
-    <div class="flex items-center">
+    </div>
+    <div class="flex items-center justify-center" id="header-items">
       <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-500">Home</a>
       <a href="tenders.html" class="mr-4 text-gray-300 hover:text-blue-500">Tenders</a>
       <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500">G.I.A.N</a>
@@ -1246,7 +1254,7 @@ function startMarquee() {
         <!--Statistics-->
 
         <span>
-          <div id="chart_div" style="width: 50vh; margin: auto;"></div>
+          <div id="chart_div" style="margin: auto;"></div>
          
         </span>
        
@@ -1471,7 +1479,7 @@ function startMarquee() {
   <!--Footer Starts Here -->
   <footer class="site-footer">
     <div class="container">
-      <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div>
           <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">

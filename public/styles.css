@@ -1753,6 +1753,22 @@ video {
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
   }
 
+  #header {
+    justify-content: space-evenly;
+  }
+
+  #header-favicon {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #header-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin: 1rem;
+  }
+
   .dropdown {
     overflow: auto;
   }
