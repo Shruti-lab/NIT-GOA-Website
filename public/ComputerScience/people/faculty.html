@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Department of Computer Science and Engineering</title>
     <link rel="stylesheet" href="../../styles.css" />
+    <script src="../../script.js"></script>
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -17,6 +18,11 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
       rel="stylesheet"
     />
+    <style>
+      header {
+        z-index: 2;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Starts here -->
@@ -34,7 +40,9 @@
 
       <div class="text-center border mb-10">
         <nav class="mt-2 justify-center items-center">
-          <div class="container_B font-semibold text-gray-900 flex justify-center mx-16">
+          <div
+            class="container_B font-semibold text-gray-900 flex justify-center mx-16"
+          >
             <!--Home-->
             <div class="dropdown">
               <a href="../../index.html">Home</a>
