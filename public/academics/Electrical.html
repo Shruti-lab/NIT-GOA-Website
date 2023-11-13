@@ -19,250 +19,239 @@
       rel="stylesheet"
     />
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-    }
-
- 
-
-    .title {
-      font-size: 30px;
-      font-weight: bold;
-      color: #ffffff;
-      text-align:center;
-      
-    }
-
-    .stats-holder {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .stat {
-      text-align: center;
-      padding: 20px;
-      border-radius: 5px;
-    }
-
-    .stat-title {
-      font-size: 25px;
-      font-weight: bold;
-      color: #ffffff;
-    }
-
-    .stat-value {
-      font-size: 25px;
-      font-weight: bold;
-      color: #ffffff;
-
-    }
-     .holder{
-      z-index: 1;
+    <style>
+      body {
         font-family: Arial, sans-serif;
-        background-image: url('https://vnit.ac.in/wp-content/uploads/2021/04/statistics.jpg');/* Replace with your image file path */
+        background-color: #f7f7f7;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .stats-holder {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .stat {
+        text-align: center;
+        padding: 20px;
+        border-radius: 5px;
+      }
+
+      .stat-title {
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+
+      .stat-value {
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+      }
+      .holder {
+        z-index: 1;
+        font-family: Arial, sans-serif;
+        background-image: url("https://vnit.ac.in/wp-content/uploads/2021/04/statistics.jpg"); /* Replace with your image file path */
         background-size: cover; /* This scales the image to cover the entire background */
         background-repeat: no-repeat; /* Prevents the image from repeating */
         background-attachment: fixed; /* Keeps the image fixed in place */
-      } 
-      
-      
+      }
 
       /*Vision Mission */
       .btn-group button {
-    background-color: #FFFFFF;
-    border: 1px solid whitesmoke;
-    color: black;
-    padding: 20px 30px;
-    cursor: pointer;
-    font-size: 18px;
-    border-radius: 10px;
-    font-family: 'font-sans', sans-serif;
-  }
+        background-color: #2853d6;
+        border: 1px solid whitesmoke;
+        color: black;
+        padding: 20px 30px;
+        cursor: pointer;
+        font-size: 18px;
+        border-radius: 10px;
+        font-family: "font-sans", sans-serif;
+      }
 
-  .container1 {
-    background-color: #FFFFFF;
-    border: 1px solid #808080;
-    border-radius: 0px;
-    box-shadow: 0px 0px 10px #808080;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px;
-    font-size: 6xl;
-    font-family: 'font-sans', sans-serif;
-    display: flex;
-    margin-top: 5;
-  }
+      .container1 {
+        background-color: #ffffff;
+        border: 1px solid #808080;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px #808080;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        font-size: 6xl;
+        font-family: "font-sans", sans-serif;
+        display: flex;
+        margin-top: 5;
+      }
 
-  .btn-group {
-    text-align: right; /* Align buttons to the right */
-    flex: 2; /* Take up the right half of the container1 */
-  }
+      .btn-group {
+        text-align: right; /* Align buttons to the right */
+        flex: 2; /* Take up the right half of the container1 */
+      }
 
-  .image {
-    flex: 1; /* Take up the left half of the container1 */
-  }
+      .image {
+        flex: 1; /* Take up the left half of the container1 */
+      }
 
-  .btn-group button:not(:last-child) {
-    border-right: none;
-  }
+      .btn-group button:not(:last-child) {
+        border-right: none;
+      }
 
-  /* Clear floats (clearfix hack) */
-  .btn-group:after {
-    content: "";
-    clear: both;
-    display: table;
-  }
+      /* Clear floats (clearfix hack) */
+      .btn-group:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
 
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color: #808080;
-  }
+      /* Add a background color on hover */
+      .btn-group button:hover {
+        background-color: #5a8be5;
+      }
 
-  .para {
-    border: #808080;
-  }
+      .para {
+        border: #808080;
+      }
 
-  .text {
-    font-size: 20px;
-    padding-left: 20px;
-  }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
 
-  img {
-    max-width: 100%; /* Ensure the image covers the right half */
-    max-height: 100%; /* Ensure the image covers the right half */
-  }
+      img {
+        max-width: 100%; /* Ensure the image covers the right half */
+        max-height: 100%; /* Ensure the image covers the right half */
+      }
 
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
-  /* Vision ends*/
+      @media screen and (max-width: 500px) {
+        .navbar a {
+          float: none;
+          display: block;
+        }
+      }
+      /* Vision ends*/
 
-   .mySlides {
-    display: none;
-}
-/* Slideshow container */
-.slideshow-container {
-    width: 100%;
-    height: 20%;
-    max-height: 40vh;
-    margin: 0 auto;
-    padding-bottom: 20%;
-}
-/* The dots/bullets/indicators */
-.dot {
+      .mySlides {
+        display: none;
+      }
+      /* Slideshow container */
+      .slideshow-container {
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+        /* padding-bottom:40vh; */
+        background-color: #1f2937;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #195bac;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
 
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
+      .active {
+        background-color: #c0fdfe;
+      }
 
-}
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
 
-.active {
-    background-color: #717171;
-}
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
 
-/* Fading animation */
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
+        to {
+          opacity: 1;
+        }
+      }
 
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
 
-    to {
-        opacity: 1
-    }
-}
+        to {
+          opacity: 1;
+        }
+      }
 
-@keyframes fade {
-    from {
-        opacity: .4
-    }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px;
+        }
+      }
 
-    to {
-        opacity: 1
-    }
-}
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+      }
 
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
+      /*Visitor Counter*/
+      /* Container styling */
+      .counter-container {
+        background-color: rgb(71, 71, 94);
+        display: inline-block; /* Inline-block to size the container to the content */
+        padding: 10px; /* Add some padding for spacing */
+        border-radius: 5px; /* Rounded corners */
+      }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-.prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-  }
+      /* Text color inside the container */
+      .counter-container p {
+        color: white;
+      }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-
-    /*Visitor Counter*/
-    /* Container styling */
-    .counter-container {
-      background-color: rgb(71, 71, 94);
-      display: inline-block; /* Inline-block to size the container to the content */
-      padding: 10px; /* Add some padding for spacing */
-      border-radius: 5px; /* Rounded corners */
-    
-    }
-    
-    /* Text color inside the container */
-    .counter-container p {
-      color: white;
-    }
-
-    /* To prevent from overlapping over navigation bar*/
-    header {
-  z-index: 2;
-}
-  </style>
+      /* To prevent from overlapping over navigation bar*/
+      header {
+        z-index: 2;
+      }
+    </style>
   </head>
   <body>
     <!-- Header Starts here -->
@@ -306,7 +295,7 @@
 
       </div>
 
-      <div class="text-center border mb-10">
+      <div class="text-center border">
           <nav class="mt-2 justify-center items-center">
               <div class="container_B font-semibold text-gray-900 justify-center flex">
 
@@ -393,7 +382,7 @@
 
 
   <!-- Hero Section -->
-  <section class=" bg-center bg-cover bg-white mb-48 pb-20">
+  <section class=" bg-center bg-cover ">
 
     <!-- slideshow image-->
     <div class="slideshow-container">
@@ -403,12 +392,12 @@
       </div>
       <div class="mySlides fade">
 
-          <img src=".././static/slideshow2.jpg" style="width: 100vw;height: 60vh">
+          <img src=".././static/77.jpeg" style="width: 100vw;height: 60vh">
 
       </div>
       <div class="mySlides fade">
 
-          <img src=".././static/slideshow3.jpg" style="width: 100vw;height: 60vh">
+          <img src=".././static/4196.png" style="width: 100vw;height: 60vh">
 
       </div>
       <div style="text-align:center;">
@@ -487,11 +476,11 @@
     <!--Main Section starts here-->
     <div class="container">
       <h1
-      class="text-2xl font-serif font-semibold text-gray-800 mb-4 ml-12">
+      class="text-2xl font-serif font-semibold text-gray-800 mb-4 ml-12 text-center">
      Welcome To Electrical Department </h1> 
-        <p class="mb-5" >The department of Electrical and Electrical Engineering was established during the inception of&nbsp;the institute in 2010. It offers undergraduate (B. Tech.), postgraduate (M. Tech in Power<span>&nbsp;Electrical</span>&nbsp;and Power <span>Systems</span>), and research programmes in the various fields of Electrical and&nbsp;Electrical Engineering. The faculty members are committed to provide the finest possible&nbsp;education for both graduate and undergraduate students. The major areas of faculty expertise&nbsp;include Power Systems, Power Electrical, Power Electronic Drives, HVDC Transmission,&nbsp;FACTS Controllers, Electrical Machines, Control Systems, Smart Grid, Signal Processing,&nbsp;Energy Management, Fuzzy Logic, Neural Networks, and Application of Signal Processing in&nbsp;Power Systems and Power Electrical. The Faculty members are actively engaged in various&nbsp;research areas ranging from practical implementation to theoretical investigations. Their research&nbsp;is being published in leading international journals and conferences. The lab facilities and the&nbsp;infrastructure are regularly upgraded and are well supported by the institute and the industry.&nbsp;Department has MoU with Power Research and Development Consultancy, Bangalore to carry&nbsp;out the collaborative projects.</p>
-        <p class="mb-5" ><span style="color: #0000ff;">Current Research Project Areas:</span></p>
-        <ul class="mb-5">
+        <p class="mb-5 ml-2 " >The department of Electrical and Electrical Engineering was established during the inception of&nbsp;the institute in 2010. It offers undergraduate (B. Tech.), postgraduate (M. Tech in Power<span>&nbsp;Electrical</span>&nbsp;and Power <span>Systems</span>), and research programmes in the various fields of Electrical and&nbsp;Electrical Engineering. The faculty members are committed to provide the finest possible&nbsp;education for both graduate and undergraduate students. The major areas of faculty expertise&nbsp;include Power Systems, Power Electrical, Power Electronic Drives, HVDC Transmission,&nbsp;FACTS Controllers, Electrical Machines, Control Systems, Smart Grid, Signal Processing,&nbsp;Energy Management, Fuzzy Logic, Neural Networks, and Application of Signal Processing in&nbsp;Power Systems and Power Electrical. The Faculty members are actively engaged in various&nbsp;research areas ranging from practical implementation to theoretical investigations. Their research&nbsp;is being published in leading international journals and conferences. The lab facilities and the&nbsp;infrastructure are regularly upgraded and are well supported by the institute and the industry.&nbsp;Department has MoU with Power Research and Development Consultancy, Bangalore to carry&nbsp;out the collaborative projects.</p>
+        <p class="mb-5 ml-2" ><span style="color: #0000ff;">Current Research Project Areas:</span></p>
+        <ul class="mb-5 ml-2">
         <li>Smart Electric Grid</li>
         <li>Electric Vehicles</li>
         <li>Grid Connected / Stand Alone PV System</li>
@@ -515,22 +504,22 @@
         <li>Pulsewidth Modulation</li>
         <li>Switched Reluctance Motor &amp; Drives</li>
         </ul>
-        <p><span style="color: #0000ff;">Programs Offering:</span></p>
-        <p><span style="color: #0000ff;">UG Program: From 2010:</span></p>
-        <ul class="mb-5">
+        <p class="ml-2"><span style="color: #0000ff;">Programs Offering:</span></p>
+        <p class="ml-2"><span style="color: #0000ff;">UG Program: From 2010:</span></p>
+        <ul class="mb-5 ml-2">
         <li>B.Tech In Electrical &amp; Electrical Engineering (4 years)</li>
         <li>UG Strength -44 (JoSSA/CSAB-38, DASA-06)</li>
         </ul>
-        <ul class="mb-5">
+        <ul class="mb-5 ml-2">
         </ul>
-        <p class="mb-5" ><span style="color: #0000ff;">PG Program: From 2014:</span></p>
-        <ul class="mb-5">
+        <p class="mb-5 ml-2" ><span style="color: #0000ff;">PG Program: From 2014:</span></p>
+        <ul class="mb-5 ml-2">
         <li>Power Electrical &amp; Power System (PEPS) (2 years)</li>
         <li>PG Strength - 24 (CCMT-22 , Sponsorship-02)</li>
         </ul>
-        <p><span style="color: #0000ff;">Doctoral Program: From 2014:</span></p>
-        <p><span style="color: #0000ff;">Ph.D. :-</span></p>
-        <ul class="mb-5">
+        <p class="ml-2"><span style="color: #0000ff;">Doctoral Program: From 2014:</span></p>
+        <p class="ml-2"><span style="color: #0000ff;">Ph.D. :-</span></p>
+        <ul class="mb-5 ml-2">
         <li>Power Electrical and drives,</li>
         <li>Renewable Energy Systems, </li>
         <li>Power Systems, </li>
@@ -543,7 +532,7 @@
         <li>Artificial Intelligence.</li>
         </ul>
         <p>&nbsp;</p>
-        <ul class="mb-5">
+        <ul class="mb-5 ml-2">
         </ul>
             </div>
  <!-- Main Section Ends Here -->
