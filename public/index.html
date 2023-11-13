@@ -362,6 +362,21 @@
 
     /*Social handle style ends*/
 
+
+ /* Bullet Style*/
+	li {
+		list-style: none;
+		position: relative;
+		padding: 0 0 0 20px;
+
+	}
+  li::before {
+    content: "\25C8";
+    color: #E06900;
+  }
+  
+
+
     /* CSS for footer links */
 .footer-links a {
   color: white; /* Default text color */
@@ -1475,17 +1490,17 @@ function startMarquee() {
         <div>
           <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
-
-            <ul class="footer-links">
+            <ul class="footer-links" style="list-style-type: disc;">
               <li><a href="index.html"><span class="">Home</span></a></li>
               <li><a href="../public/syllabus.html"><span
                     class="">Syllabus</span></a></li>
               <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
               <li><a href="../public/RTI.html"><span class="">RTI</span></a></li>
-              <li><a href="#"><span class="">Login</span></a></li>
+              <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
               <li><a href="../public/contact us.html"><span class="">Contact Us</span></a></li>
               <li><a href="#"><span class="">Feedback</span></a></li>
             </ul>
+            
             <ul class="footer-links">
               <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
               <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
