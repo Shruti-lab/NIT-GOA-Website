@@ -1,214 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Department of Electrical Engineering</title>
+        <script src="../../script.js"></script>
+        <link rel="stylesheet" href="../.././styles.css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    </head>
     <title>Welcome to NIT goa</title>
     <body>
-        <div class="about-us">
-            <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
-                <div class="flex justify-center">
-                    <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
-        
+        <!-- Header Starts here -->
+    <div
+    class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center"
+  >
+    <div class="flex items-center text-gray-300">
+      <div class="mr-4 ml-6">
+        <i class="fas fa-envelope"></i> your@email.com
+      </div>
+      <div><i class="fas fa-phone"></i> +1234567890</div>
+    </div>
+    <div class="flex items-center">
+      <a
+        href="../../index.html"
+        class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+        >Home</a
+      >
+      <a
+        href="../../tenders.html"
+        class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+        >Tenders</a
+      >
+      <a
+        href="https://www.nitgoa.ac.in/gian/"
+        class="sm:text-sm mr-4 text-gray-300 hover:text-blue-500"
+        >G.I.A.N</a
+      >
+      <a
+        href="https://www.nitgoa.ac.in/login.aspx"
+        class="sm:text-sm text-gray-300 hover:text-blue-500"
+        >Login</a
+      >
+    </div>
+  </div>
+  <!--Header Ends Here-->
+  
+  <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
+    <div class="flex justify-center">
+        <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
+
+    </div>
+
+    <div class="text-center border">
+        <nav class="mt-2 justify-center items-center">
+            <div class="container_B font-semibold text-gray-900 justify-center flex">
+
+                <!--Home-->
+                <div class="dropdown">
+                    <a href="../../index.html">Home</a>
                 </div>
-        
-                <div class="text-center border mb-10">
-                    <nav class="mt-2 justify-center items-center">
-                        <div class="container_B font-semibold text-gray-900 flex justify-center mx-16">
-        
-                            <!--Home-->
-                            <div class="dropdown">
-                                <a href="../Electrical/index.html">Home</a>
-                            </div>
-        
-                            <!--Academic Handbook-->
-                            <div class="dropdown">
-                                <button class="dropbtn">Academics</button>
-                                <div class="dropdown-content">
-                                    <a href="#">academic handbook</a>
-                                    <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">calendar</a>
-                                    <a href="../academics/rules_and_regulations.html">regulation and Curriculum</a>
-                                </div>
-        
-                            </div>
-    
-                            <!--Students-->
-                            <div class="dropdown">
-                                <button class="dropbtn">Students</button>
-                                <div class="dropdown-content">
-                                    <a href="../Electrical/Students/btech.html">B.Tech</a>
-                                    <a href="../Electrical/Students/mtech.html">M.Tech</a>
-                                    <a href="../Electrical/Students/phd.html">Ph.D.</a>
-                                </div>
-    
-                            </div>
-                           <!--Faculty-->
-                           <div class="dropdown">
-                            <a href="../Electrical/faculty.html">Faculty</a>
-                            
+
+                <!--Academic Handbook-->
+                <div class="dropdown">
+                    <button class="dropbtn">Academics</button>
+                    <div class="dropdown-content">
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">Academic Handbook <span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/UG EEE_FINAL_ACADEMIC_HANDBOOK_NIT_GOA_Revised-1.pdf"
+                              >UG Handbook</a
+                            >
+                            <a href="../../static/PG M.Tech (PEPS)_EEE_Syllabus.pdf"
+                              >PG Handbook</a
+                            >
                         </div>
-                        <!--staff-->
-                        <div class="dropdown">
-                            <a href="../Electrical/staff.html">Staff</a>
-                            
-                        </div>
-                        <!--reseach-->
-                        <div class="dropdown">
-                            <button class="dropbtn">Research</button>
-                            <div class="dropdown-content">
-                                <a href="#">journals</a>
-                                <a href="../Electrical/Research/Proceedings.html">proceedings</a>
-                                <a href="../Electrical/Research/Book_Book_chapters.html">book / book chapters</a>
-                                <a href="../Electrical/Research/Research_projects.html">Research projects</a>
-                            </div>
-    
-                        </div>
-                        <!--Events-->
-                        <div class="dropdown">
-                            <a href="../Electrical/Events/event.html">Events</a>
-                            
-                        </div>
-                           <!--Gallery-->
-                           <div class="dropdown">
-                            <a href="../Electrical/Gallery/Photo.html">Gallery</a>
-                            
-                        </div>
-    
-                        <!--E-Downloads-->
-                        <div class="dropdown">
-                            <button class="dropbtn">E-Downloads</button>
-                            <div class="dropdown-content">
-                                <a href="#">Facualty and staff</a>
-                                <a href="#">Student</a>
-                                <a href="#">Dissertion Format</a>
-                            </div>
-    
-                        </div>
-     
-                            <!--Contact Us-->
-                            <div class="dropdown">
-                                <a href="../Electrical/contact_us.html">Contact Us</a>
-                                
-                            </div>
-        
-                        </div>
+                        <!--End-->
+                      </div>
+                        <a href="../../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">Calendar</a>
+                        <a href="../../academics/rules_and_regulations.html">Regulation and Curriculum</a>
+                    </div>
+
                 </div>
-                </nav>
+
+                <!--Students-->
+                <div class="dropdown">
+                    <button class="dropbtn">Students</button>
+                    <div class="dropdown-content">
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/B.tech_4year_EEE-2022.pdf"
+                              >Batch 2018-22</a
+                            >
+                        </div>
+                        <!--End-->
+                      </div>
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">M.Tech<span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/MTech-II_Batch_2020-22.png"
+                              >Batch 2020-22</a
+                            >
+                            <a href="../../static/MTech-I_Batch_2021-23.png"
+                              >Batch 2021-23</a
+                            >
+                        </div>
+                        <!--End-->
+                      </div>
+                        <a href="../../static/Ph D Regular 2022.png">Ph.D.</a>
+                    </div>
+
                 </div>
-            </header>
-            <h1
-            class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4">
-           Proceedings:</h1>
-<ol> </ol>
-<p style="padding-left: 30px;">&nbsp;</p>
-<ul style="list-style-type: square;">
-<li>Madhu G M, C. Vyjayanthi and C N Modi, &ldquo;Change in Power based P&amp;O Algorithm for Maximum Power Extraction in Solar Energy Conversion System,&rdquo; 2021 International Conference on Power Systems (ICPS), Kharagpur, India, 16-18 December, 2021. DEC 2021</li>
-<li>Nivedita N Naik and C.Vyjayanthi, &ldquo;Research on Electric Vehicle Charging System: Key Technologies, Communication Techniques, Control Strategies and Standards&rdquo;, IEEE International Conference on Electrical Power and Energy Systems (ICEPES-2021), 10-11 December 2021, MNIT Jaipur. DEC 2021</li>
-<li>Mayank Arora and C Vyjayanthi, &ldquo;Optimized Solar PV grid connection for EV charging application&rdquo;, IEEE Bombay Section Signature Conference IBSSC-2021, themed - Frontiers of Technologies: Fuelling Prosperity of the Planet and People, 18-20 November 2021, IIIT Gwalior. NOV 2021</li>
-<li>Nivedita N Naik and C.Vyjayanthi, &ldquo;Optimization of Vehicle-to-Grid (V2G) Services for Development of Smart Electric Grid: A Review&rdquo;, International Conference on Smart Generation Computing, Communication and Networking - A Hybrid Conference (SMARTGENCON 2021), 29-30 October 2021. OCT 2021</li>
-<li>V C Chavan, Suresh Mikkili, and Praveen Kumar B, 'Novel Shade Dispersion Method to Extract Maximum Power under partial shading condition', in proceedings of 47th Annual Conference of the IEEE Industrial Electronics Society IEEE IECON 2021, 13th to 16th October 2021, Toronto, Canada OCT 2021</li>
-<li>Mayank Arora and C. Vyjayanthi, &ldquo;K Factor-based MPPT Technique for Reducing Steady-State power oscillations&rdquo;, The IEEE International Conference on Intelligent Technologies (CONIT 2021)&rdquo; Hubballi, Karnataka, India, 25-27, June 2021. JUN 2021</li>
-<li>Mayank Arora and C.Vyjayanthi, &ldquo;Modified Hysteresis Current Control Implementation for Three Phase Grid Connected Inverter&rdquo;, 2nd Electric Power And Renewable Energy Conference (EPREC-2021), 28th - 30th May 2021, NIT Jamshedpur, Springer. MAY 2021</li>
-<li>Remote Triggered Laboratory for Boost Converter Using LabVIEW, Advances in Automation, Signal Processing, Instrumentation, and Control pp 2027-2035 MAR 2021</li>
-<li>Jayesh Priolkar, E.S. Sreeraj, and Govind Kunkolienkar "Clustering based Consumer Baseline Estimation for Demand Response Implementation," Proc. of 21st National Power Systems Conference, Gandhinagar, Dec. 17-19, 2020. DEC 2020</li>
-<li>Ajit Muzumdar, Chirag Modi, Madhu G M, C Vyjayanthi, An Efficient Regional Short-Term Load Forecasting Model for Smart Grid Energy Management, IEEE, IECON 2020, Singapore, October 2020. OCT 2020</li>
-<li>&nbsp;Nitin Singh, C. Vyjayanthi, Multi-step Short-term Electric Load Forecasting Using 2D Convolutional Neural Networks, IEEE - Hydcon, September 2020. SEPT 2020</li>
-<li>V. R. Reddy and Sreeraj E. S, "Unipolar Modulated Voltage Sensor-less One-Cycle Controlled Inverter for Grid Connected PV System," 2020 IEEE First International Conference on Smart Technologies for Power, Energy and Control (STPEC), Nagpur, 2020, pp. 1-6, doi: 10.1109/STPEC49749.2020.9297742. SEPT 2020</li>
-<li>Aswini K. Samantaray and Amol D. Rahulkar, "Lifting Scheme Based Image Retrieval in Medical CT and MRI Databases", 2020 IEEE International Symposium on Sustainable Energy, Signal Processing and Cyber Security (iSSSC), 2020, pp. 1-6, doi: 10.1109/iSSSC50941.2020.9358908. SEPT 2020</li>
-<li>Aditi Atul Desai and Suresh Mikkili, &ldquo;&ldquo;Novel Hybrid PV Array Configurations for extracting maximum Power by reducing number of peaks and mitigating mismatching power loss&rdquo;in proceedings of 46thAnnual Conference of the IEEE Industrial Electronics Society (IECON -2020),18<sup>th</sup>&nbsp;to 21<sup>st</sup>&nbsp;October2020, Singapore &ndash;Accepted for presentation</li>
-<li>M J Jeffin, Madhu G M, Akshayata Rao, Gurpreet Singh and C. Vyjayanthi, &ldquo;Internet of Things Enabled Power Theft Detection and Smart Meter Monitoring System&rdquo; 9th International Conference on Communication and Signal Processing (ICCSP), Chennai, India, April 2020. APRIL 2020</li>
-<li>Jayesh Priolkar, ES Sreeraj, Anita Thakur, "Analysis of Consumer Baseline for Demand Response Implementation: A Case Study", Proceedings of 7th International Conference on Signal Processing and Integrated Networks (SPIN 2020) FEB 2020</li>
-<li>B Parate, RS Kumar, K Thakur, Sreeraj ES, R Krishnan, &ldquo;Design and Modelling of SRC Based Capacitor Charging Power Supply for High Power Klystron Modulator Using MULTISIM&rdquo;, National Power Electronics Conference (NPEC), 2019 DEC 2019</li>
-<li>L Sreekumar, Sreeraj ES, &ldquo;Double Frequency Pulse Width Modulation for Type-1 Common-ground Transformerless Inverter&rdquo;, National Power Electronics Conference (NPEC), 2019 DEC 2019</li>
-<li>VR Reddy, ES Sreeraj, &ldquo;A Feedback Based Hybrid Islanding Detection Method and Voltage Ride-Through of One Cycle Controlled PV Inverter&rsquo;, National Power Electronics Conference (NPEC), 2019. DEC 2019</li>
-<li>Abhilash R Sakhare, C. Vyjayanthi, "Cost Based Analysis Considering Power Trading in a Hybrid Power System", 16th IEEE India Council International Conference (INDICON 2019), IEEE Gujarat Section, 13 &ndash; 15 December 2019, Marwadi University, Rajkot, Gujarat. DEC 2019</li>
-<li>Ashwini R Patil, Amol D. Rahulkar and Chirag N Modi, "Designing an Efficient Fingerprint Recognition System for Infants and Toddlers," 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-7, doi: 10.1109/ICCCNT45670.2019.8944342 DEC 2019</li>
-<li>Aswini K. Samantaray and Amol D. Rahulkar, "Comparison of Similarity Measurement Metrics on Medical Image Data", 0th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-5, doi: 10.1109/ICCCNT45670.2019.8944781. DEC 2019</li>
-<li>Anudevi Samuel., V.N.Shet, &ldquo;Fuzzy Adaptive Relay Settings for Distribution Network with DG&rdquo; - Proceedings of the National Power Electronics Conference (NPEC)-2019, December 13-15, NIT Tiruchirappalli, India, IEEE Digital Xplore, 978-1-7281-4428-3/19, <a href="https://doi.org/10.1109/NPEC47332.2019.9034762%20DEC%202019">https://doi.org/10.1109/NPEC47332.2019.9034762 DEC 2019</a></li>
-<li>Madhu G M, C. Vyjayanthi, "Design and Development of a Novel IoT based Smart Meter for Power Quality Monitoring in Smart Grid Infrastructure", TENCON, 17-20 October 2019, IEEE Kerala Section, Cochin. - <a href="https://ieeexplore.ieee.org/document/8929689%20OCT%202019">https://ieeexplore.ieee.org/document/8929689 OCT 2019</a></li>
-<li>R. V. S. E. Shravan, C. Vyjayanthi, "Emulation of AC and DC subgrids using Power Converters for Islanded Hybrid Microgrid Applications", TENCON, 17-20 October 2019, IEEE Kerala Section, Cochin. <a href="https://ieeexplore.ieee.org/document/8929641%20OCT%202019">https://ieeexplore.ieee.org/document/8929641 OCT 2019</a></li>
-<li>Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Configurations for Reducing the Multiple-Peak Power Points in I-V and P-V characteristics under Partial Shading Conditions", in Proceedings of 39th Annual International IEEE Region- 10 conference (TENCON-2019), 17th to 20th October 2019, Kochi, Kerala OCT 2019</li>
-<li>Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Con?gurations for Mitigating the Mismatching Power loss and Number of Peaks in the Output Characteristics under various PSCs", in proceedings of 45th Annual Conference of the IEEE Industrial Electronics Society (IECON - 2019), 14th to 17th October 2019, Lisbon, Portugal. OCT 2019</li>
-<li>Madhu G M, C Vyjayanthi, Kolakaluri Vinay Kumar, "A Hybrid PV-Battery Topology to Extract Maximum Power at Partial Shading Conditions for Rural Remote Area Applications", International Conference on Computing, Power and Communication Technologies, GUCON 2019, Galgotias University, September 27-29 2019, New Delhi. <a href="https://ieeexplore.ieee.org/document/8940557%20SEPT%202019">https://ieeexplore.ieee.org/document/8940557 SEPT 2019</a></li>
-<li>Sandip Jangir, Alok Jaiswal, Sheetal Chandel, Ajit Muzumdar, Chirag Modi and C Vyjayanthi, "A Novel Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and Smart Contracts", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
-<li>Ajit Muzumdar, Chirag Modi, Madhu G M, C Vyjayanthi, "Analyzing the Feasibility of Different Machine Learning Techniques for Energy Imbalance Classification in Smart Grid", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
-<li>Madhu G M, C Vyjayanthi, Chirag Modi, " A Novel Framework for Monitoring Solar PV based Electric Vehicle Community Charging Station and Grid Frequency Regulation using Blockchain", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
-<li>A. Muzumdar, C. N. Modi, G. M. Madhu and C. Vyjayanthi, Analyzing the Feasibility of Different Machine Learning Techniques for Energy Imbalance Classification in Smart Grid, 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Kanpur, India, July 2019, pp. 1-6. JULY 2019</li>
-<li>S. Jangir, A. Muzumdar, A. Jaiswal, C. N. Modi, S. Chandel and C. Vyjayanthi, A Novel Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and Smart Contracts, 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Kanpur, India, July 2019, pp. 1-7. JULY 2019</li>
-<li>Suneel Raju Pendem and Suresh Mikkili, &ldquo;Mitigation of Cross-coupling effects in PV D-MPPT systems with T-C-T configuration of String-Integrated-Converters using INC Algorithm&rdquo;, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019. JULY 2019</li>
-<li>Praveen Kumar B and Suresh Mikkili, &ldquo;Performance analysis of Closed loop controlled Single-Phase Unipolar Inverter with Fixed Switching Frequency Sliding Mode Control&rdquo;, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019 JULY 2019</li>
-<li>Rupesh Thombre, C.Vyjayanthi, "Implementation of a Resistive Superconducting Fault Current Limiter in a VSC-HVDC System", International Conference on Recent Developments in Electrical and Power Engineering (ICRDEPE),19th June 2019, Nagpur, India. JUN 2019</li>
-<li>Product Design Using Virtual Reality, International Conference on Computer Networks and Inventive Communication Technologies,927-935, Springer MAY 2019</li>
-<li>Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, &ldquo; PV Distributed-MPP Tracking: Total-Cross-Tied configuration of MICs to extract the Maximum Power under Partial Shading conditions&rdquo;, 8th biennial IEEE International Conference on Power Electronics, Drives and Energy Systems, 18th &ndash; 21st Dec. 2018 (PEDES-2018). DEC 2018</li>
-<li>Buck-Boost Inverter Functionality of Two-Phase Semi-Z-Source Converter, 2018 IEEE International Conference on Power Electronics, Drives and Energy Systems (PEDES) DEC 2018</li>
-<li>Suneel Raju Pendem, Suresh Mikkili, and Vikash Varma K, &ldquo; Total-Cross-Tied Configuration of MICs for Enhancing the Performance of PV D-MPPT systems under various PSCs using P&amp;O Algorithm&rdquo;, 15th Annual IEEE India Council International Conference, 16th &ndash; 18th Dec. 2018 (INDICON-2018). DEC 2018</li>
-<li>Gomathi Ramalingam, Ajay K Choudhary and Suresh Mikkili, &ldquo;Modeling and Analysis of PV-based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality&rdquo;, 15th Annual IEEE India Council International Conference (INDICON-2018), 16th to 18th December, 2018. DEC 2018</li>
-<li>Priyanka Yussuf, and Sreeraj E. S., "An ZVS DC-DC Synchronous Buck Regulator With Mode Changing Control Strategy For Low Voltage Applications," in Proc. of IEEE Int. Conf. Power Electronics, Drives, Energy Systems, Chennai, India. DEC 2018</li>
-<li>Kandukuri Surendra and C. Vyjayanthi, "Short Circuit Studies on a Distribution System Integrated with Various Distributed Generations", IEEE sponsored 8th Power India International Conference PIICON-2018, December 10-12, 2018, NIT Kurukshetra. DEC 2018</li>
-<li>Madhu G M and C. Vyjayanthi, "Implementation of Cost Effective Smart Home Controller with Android Application using Node MCU and Internet of Things (IOT)", IEEE sponsored 2nd International Conference on Energy, Power &amp; Environment (ICEPE 2018), Shillong, Meghalaya, India, June 1-2, 2018. JUN 2018</li>
-<li>Kandukuri Surendra and C. Vyjayanthi, "Fault Level Analysis in Modern Electrical Distribution System Considering Various Distributed Generations", IEEE sponsored International Conference on Power, Energy, Control and Transmission Systems, 22-23 February 2018, Chennai. FEB 2018</li>
-<li>K. Vinay Kumar and C. Vyjayanthi, "Direct Energy Transfer Technique based DC-DC Converter with Distributed MPPT for PV Charging Applications", IEEE sponsored International Conference on Power, Energy, Control and Transmission Systems, 22-23 February 2018, Chennai. FEB 2018</li>
-<li>G. Krishna Reddy and Suresh Mikkili, &ldquo;Grid Integration of Solar Photovoltaic system with Storage under Partial Shading Conditions using Distributed MPPT Technique&rdquo;, in proc. of International Conference on Computing of Power, Energy, Information &amp; Communication, 28th to 29th Feb, 2018. FEB 2018</li>
-<li>Shiham and C. Vyjayanthi, "Droop Control of A Single Phase AC-DC Hybrid Microgrids With Energy Storage", 2018 IEEE sponsored Biennial International Conference on Power and Energy systems: Towards Sustainable Energy (PESTSE), 18th-20th January 2018, Bangalore. JAN 2018</li>
-<li>Priyanandini Das, Pranose Edavoor, Sithara R., Sunil Rathore and Amol Rahulkar, "Design and Implementation of PID Controller based on Orthogonal wavelet filter-banks in FPGA", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India DEC 2017</li>
-<li>Pranose Edavoor, Sithara R. and Amol Rahulkar, "Implementation of adaptive image compression algorithm using varying bit-length Daubechies wavelet coefficient with three-level encryption on Zynq 7000", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India DEC 2017</li>
-<li>Suneel Raju Pendem and Suresh Mikkili, &ldquo;Performance Evaluation of Series, Series-Parallel and Honey Comb PV Array Configurations under Partial Shading Conditions&rdquo;, in Proceedings of 7th Biennial International Conference on Power Systems (ICPS), 21st- 23rd Dec. 2017. DEC 2017</li>
-<li>Suneel Raju Pendem and Suresh Mikkili, &ldquo;Analysis of Series, Series-Parallel and Total-Cross-Tied PV Array Configurations to Grid-connected and Stand-alone PV systems under Illumination Transition Conditions&rdquo;, in Proceedings of 6th Biennial International Conference on Advances in Energy Research (ICAER), 12th &ndash; 14th Dec. 2017, IIT-Bombay. DEC 2017</li>
-<li>Priyanandini Das, Pranose Edavoor, Sithara Raveendran, Amol Rahulkar, &ldquo;Design and Implementation of computationally efficient architecture of PID based speed controller for Robotic land navigation system in FPGA&rdquo;, Accepted in conference on Information and Communication Technology, at Indian Institute of Technology and Management, Gwalior, during Nov 3-5, 2017. NOV 2017</li>
-<li>VR Reddy, ES Sreeraj, "Integration of ripple correlation MPPT technique with one-cycle-controlled transformerless inverter for single-phase single-stage photovoltaic systems," in Proc. 43rd Annu. Conf. IEEE Ind. Electron. Soc., Beijing, China, Oct. 25-28, pp. 2552-2557. OCT 2017</li>
-<li>R.V.S.E. Sravan and C. Vyjayanthi, "Vector control of the interlinking converter for Droop controlled power flow in AC/DC hybrid microgrids", 1st International Conference on Large -Scale Grid Integration of Renewable Energy in India, 6-8 September 2017, New Delhi, Under Ministry of New and Renewable Energy, Ministry of Power. SEPT 2017</li>
-<li>Amita Shinde, Amol Rahulkar and C. Y Patil, &ldquo;Local Neighbouring Binary Pattern: A New Feature Descriptor for Biomedial Image Indexing and Retrievel&rdquo;, Proc. in 2nd International conference on Signal and Image Processing (ICSIP 2017), pp. 154-159, August 4-6, 2017, Singapore (Received Best Presentation Award) 2017</li>
-<li>Rushikesh Babu and C.Vyjayanthi, &ldquo;Implementation of Net Zero Energy Building (NZEB) Prototype with Renewable Energy Integration&rdquo;, IEEE TENSYMP 2017, Spring Conference, July 14-16, 2017, Cochin. IEEE Publication. JULY 2017</li>
-<li>P.V. Subrahmanyam and C. Vyjayanthi, &ldquo;Integration of PV and Battery System to the Grid with Power Quality Improvement Features using Bidirectional AC-DC Converter&rdquo;, International Conference on Electrical Power and Energy Systems (ICPES), MNIT Bhopal, 14-16 Dec, 2016. DEC 2016</li>
-<li>E Satish, L K Gupta and Suresh Mikkili, &ldquo;PI and FLC (Triangular and Gaussian MF) based SHAF under Load Variation Using SRF Method&rdquo;, in proc. of EEE 7th Bi-Annual India International Conference on Power Electronics &ndash; (IICPE), Nov. 17-19, 2016, Thapar University, Patiala (Punjab). NOV 2016</li>
-<li>B. Ravi Teja, Suresh Mikkili, &ldquo;Deployment of Fuzzy based MRAS and IRFOC strategy with fast tracking for the sensorless speed control of SPIM&rdquo;, in proc. of 6th IEEE Annual International Conference on Power Systems (ICPS), March 2016, IIT Delhi. MAR 2016</li>
-<li>Baluguri Ravi Teja and C. Vyjayanthi, &ldquo;The PMU-Based System Observability for Fault Detection and Isolation for a Distribution Network&rdquo;, International Conference and Exhibition on Smart Grids and Smart cities, March 2016. MAR 2016</li>
-<li>Pradeep Vejju, Arun George, Amol Rahulkar, "Comparative Study on the Computation of State Transition Matrix Using Lagrange Interpolation Technique and Cayley-Hamilton Theorem", Proc. of 10th International Conference on Intelligent Systems and Control (ISCO-2016), pp.235-239. JAN 2016</li>
-<li>Transformerless Dynamic Voltage Restorer for voltage sag mitigation, 2016 Biennial International Conference on Power and Energy Systems: Towards Sustainable Energy (PESTSE), IEEE JAN 2016</li>
-<li>&nbsp;R Satish, Ch LS Srinivas, and E S Sreeraj, "A maximum power point tracking technique based on ripple correlation control for single-phase single-stage grid connected photovoltaic system,"in Proc. 7th Nat. Power Electron. Conf., Mumbai, India. DEC 2015</li>
-<li>Matam Manjunath, B. Venugopal Reddy and G Avinash Reddy, "Optimized reconfigurable solar PV battery charger using relay switch matrix", National Power Electronics Conference(NPEC-2015), IIT Bombay, 21-23 . DEC 2015</li>
-<li>Swathi.R, Arpitha Raju.B and C Vyjayanthi, &ldquo;Optimal Placement of FACTS Devices for Voltage Stability Enhancement in a Typical Power System&rdquo;, International conference on Electrical, Electronics and Computer science (ICEECS), Nagpur, June 2014. JUN 2014</li>
-<li>Swathi.R, Arpitha Raju.B and C Vyjayanthi, &ldquo;Optimal Placement of FACTS Devices for Voltage Stability Enhancement in a Typical Power System&rdquo;, International conference on Electrical, Electronics and Computer science (ICEECS), Nagpur, June 2014. JUN 2014</li>
-<li>Swathi.R, C Vyjayanthi and Arpitha Raju.B, &ldquo;Optimal Placement of Thyristor-Controlled Series Capacitor in a Typical Power System&rdquo;, Wireless Control and Communication Technologies (NCWCT &ndash; 2014), April 2014. APRIL 2014</li>
-<li>Swathi.R, C Vyjayanthi and Arpitha Raju.B, &ldquo;Optimal Placement of Thyristor-Controlled Series Capacitor in a Typical Power System&rdquo;, Wireless Control and Communication Technologies (NCWCT &ndash; 2014), April 2014. APRIL 2014</li>
-<li>A.Sathya,Anudevi Samuel,MS Sheeba,"Robust Fuzzy C-Means based Minimal Spinning tree method For Segmentation of Breast MRI",International Conference on Mathematical Science,2014 MAR 2014</li>
-<li>Performance study of high frequency link AC-AC converter, 2014 International Conference on Advances in Energy Conversion Technologies (ICAECT) JAN 2014</li>
-<li>Matam Manjunath,Anudevi Samuel,Vighnesh Birodkar,"A Novel proposal for Electrical Load Online Census(ELOC)",Annual IEEE India Conference(INDICON),2013 NOV 2013</li>
-<li>R. Patel, A.K.Panda and Suresh. Mikkili &ldquo;PI and fuzzy logic controller based 3-phase 4-wire interleaved buck active power filter for mitigation of harmonics with the Id-Iq control strategy&rdquo; IECON 2013 - 39th Annual Conference on IEEE Industrial Electronics Society , pp. 2145 &ndash; 2150, 10-13 Nov. 2013, Vienna, Austria. NOV 2013</li>
-<li>Suresh. Mikkili and A.K.Panda, &ldquo;Type-1 and Type-2 FLC based Shunt active filter Id-Iq control strategy for mitigation of harmonics with Triangular MF," IEEE PEDES Dec. 16-19, 2012, CPRI/IISC-Bangalore. DEC 2012</li>
-<li>A.Sathya,S.Senthil,Anudevi Samuel,"Segmentation of Breast MRI Using Effective Fuzzy C-means Method based Support Vector Machine",World Congress on Information and Communication Technologies,2012 NOV 2012</li>
-<li>Suresh Mikkili and Anup Kumar Panda, "Real-time implementation of power theory using FLC based shunt active filter with different fuzzy M.F.s ,&rdquo; IECON 2012 - 38th Annual Conference on IEEE Industrial Electronics Society , pp. 702 &ndash; 707, DOI : 10.1109/IECON.2012.6388666., 25-28 Oct. 2012, Montreal, QC, Canada. OCT 2012</li>
-<li>Sreeraj E.S., Prejith E.K., and K. Chatterjee, &ldquo;One Cycle Controlled Active Harmonic Filter,&rdquo; in Proc. 38th Annu. Conf. IEEE Ind. Electron. Soc., Montreal, Canada, pp.621-626. OCT 2012</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;Mitigation of Harmonics using Fuzzy Logic Controlled Shunt Active Power Filter with Different Membership Functions By Instantaneous Power Theory,&rdquo; IEEE SCES, DOI: 10.1109/SCES.2012.619910316-18 March 2012, MNNIT-ALLAHABAD. MAR 2012</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;Simulation and RTDS Hardware implementation of SHAF for current harmonics cancellation using Id-Iq control strategy with PI and fuzzy controllers,&rdquo; IEEE ICPS, pp. 1-6, DOI: 10.1109/ICPES.2011.6156669, 22-24, Dec. 2011, IIT MADRAS. DEC 2011</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;Id-Iq control strategy for mitigation of current harmonics with PI and fuzzy controllers,&rdquo; IEEE ICPS, pp. 1-6, DOI:10.1109/ICPES. 2011.6156668, 22-24, Dec. 2011, IIT MADRAS. DEC 2011</li>
-<li>Suresh. Mikkili, A.K. Panda, PI controller based shunt active filter for mitigation of current harmonics with p-q control strategy using simulation and RTDS hardware,&rdquo; IEEE INDICON, pp. 1-6, DOI: 10.1109/INDCON.2011.6139547, 16-18, Dec. 2011, BITS-PILANI HYD . DEC 2011</li>
-<li>Suresh. Mikkili, A.K. Panda,, Fuzzy logic controller based SHAF for current harmonics compensation with p-q control strategy using simulation and RTDS hardware," IEEE INDICON- 2011, pp. 1-6, DOI: 10.1109/INDCON.2011.6139546, 16-18, Dec. 2011, BITS-PILANI HYD . DEC 2011</li>
-<li>Suresh. Mikkili and A.K.Panda, &ldquo;Fuzzy logic controller based 3-ph 4-wire SHAF for current harmonics compensation with id-iq control strategy using simulation and RTDS hardware," IEEE PEDS, pp. 430-435, DOI: 10.1109/PEDS.2011.6147284, Dec 2011, Singapore. DEC 2011</li>
-<li>Sreeraj E.S. and K. Chatterjee, &ldquo;One Cycle Controlled Single Stage Inverters for grid connected Photovoltaic systems,&rdquo; in Proc. 5th Nat. Power Electron. Conf., Howrah, India, pp. 135-140. DEC 2011</li>
-<li>Soumitra Das and G. Narayanan, &ldquo;Space vector based analysis and comparison of sinusoidal pulsewidth modulation schemes for a three-level inverter,&rdquo; in proc. of the 5th National Power Electronic Conference, BESUS, West Bengal, India. DEC 2011</li>
-<li>K. S. Gopalakrishanan, Soumitra Das and G. Narayanan, &ldquo;Analytical Expression for RMS DC Link Capacitor Current in a Three-Level Inverter&rdquo; in proc. of the Centenary Conference of Electrical Sciences, 2011, IISc, Bangalore. DEC 2011</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;PI and fuzzy controller based 3-ph 4-wire SHAF for current harmonics compensation using p-q control strategy,&rdquo; IET-SEISCON 2011, pp. 299 &ndash; 303, DOI : 10.1049/cp.2011.0378, 20-22 July 2011, MADRAS. JULY 2011</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;SHAF for mitigation of Current harmonics with p-q and Id-Iq control strategies using both PI and Fuzzy Controllers,&rdquo; IET-SEISCON 2011, pp. 358-362, DOI:10.1049/cp.2011.0389, 22 July 2011, MADRAS. JULY 2011</li>
-<li>Anudevi.S, "Application of Hybrid GA-PS method to solve Economic Load Dispatch",National Conference on Electronic Technologies,2011 APRIL 2011</li>
-<li>Mikkili Suresh, A. K. Panda, S. S. Patnaik, S. Yellasiri, &ldquo; Comparison of two compensation control strategies for shunt active power filter in three-phase four-wire system,&rdquo; IEEE PES Innovative Smart Grid Technologies (ISGT), pp.1-6, DOI:10.1109/ISGT.2011.5759126., Jan. 2011, Hilton Anaheim, CA, USA. JAN 2011</li>
-<li>D. Thukaram and C. Vyjayanthi, Identification of Power System Expansion Locations to Meet Growing Loads, Sixteenth National Power Systems Conference (NPSC-2010), December 15-17, 2010, Osmania University, Hyderabad, India. DEC 2010</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Total Transfer Capacity &ndash; A Case study, IEEE International Conference on Power Electronics, Drives and Energy Systems for Industrial Growth-2010, during December 21-23, 2010, New Delhi, INDIA DEC 2010</li>
-<li>Soumitra Das and G. Narayanan, &ldquo;Novel switching sequences for a space-vector-modulated three-level inverter,&rdquo; in proc. of the 4th National Power Electronic Conference, IIT Roorkee, Delhi, India. JUN 2010</li>
-<li>Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;Sizing of Isolated Renewable Hybrid Systems&rdquo;, in Proc. 2nd Int. Conf. Nuclear Renewable Energy Resources, Ankara, Turkiye, pp. 465-471. 2010</li>
-<li>D. Thukaram and C. Vyjayanthi, Optimal Placement of Distributed Generation for a Projected Load Increase Using Relative Electrical Distance Approach, International Conference on Power Systems (ICPS-2009), December 27-29, 2009, IIT Kharagpur, India. DEC 2009</li>
-<li>D. Thukaram and C. Vyjayanthi, Estimation of Most Economic Bilateral Contract using Relative Electrical Distance Concept in a Deregulated Environment, Fifteenth National Power Systems Conference (NPSC-2008), December 2008. DEC 2008</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation of Charges for Power Transmission and Losses in Bilateral Power Contracts, TENCON 2008, November 20th &ndash; 23rd, 2008, Hyderabad, India. NOV 2008</li>
-<li>D. Thukaram and C. Vyjayanthi,Ranking of Prospective New Generator Location based on Relative Electrical Distance Method in a Deregulated Environment, POWERCON-2008, October 12th - 15th, 2008, New Delhi, India. OCT 2008</li>
-<li>D.V. Ghodke, Sreeraj E. S., K. Chatterjee, and B. G. Fernandes, &ldquo; One cycle controlled bi-directional AC to DC Converter having constant power factor operation,&rdquo; in Proc. Power Electron. Specialists Conf. pp. 685 &ndash; 691. 2008</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation of Charges for Bilateral Power Contracts based on Relative Electrical Distance Concept in a Deregulated Power System, Managing Complexity in a Distributed World (MCDES-2008), 27th May - 31st May 2008, Indian Institute of Science, Bangalore, India. MAY 2008</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Reactive Power Dispatch in Deregulated Transmission Networks, International Conference on Power Systems, 12th -14th Dec. 2007, Central Power Research Institute, Bangalore, INDIA. DEC 2007</li>
-<li>D. Thukaram, G. Yesuratnam and C. Vyjayanthi, Optimal Reactive Power Dispatch based on Voltage Stability Criteria in a Large Power System with AC/DC and FACTS Devices, IEEE International Conference on Power Electronics, Drives and Energy Systems for Industrial Growth-2006, during December 13th - 15th , 2006, New Delhi, INDIA. DEC 2006</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Real and Reactive power Flows in Deregulated Transmission Networks, Fourteenth National Power Systems Conference (NPSC-2006), December 26th - 29th, IIT Roorkee, India. DEC 2006</li>
-<li>D. Thukaram and C. Vyjayanthi, Improved Allocation of Reactive Power Dispatch Incorporating FACTS Devices in Deregulated Power Systems, IEEE Bangalore section 15th Annual Symposium -2006, 24th - 25th November 2006, Central Power Research Institute (CPRI), Bangalore. NOV 2006</li>
-<li>Sreeraj E.S. and K. Chatterjee, &ldquo;Power Factor Improvement in One Cycle Controlled Converter&rdquo;, in Proc. IEEE Int. Symp. Ind. Electron., July 2006, Montreal, Canada, pp. 1454-1460. 2006</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation of Reactive Power Sharing in a deregulated Environment-a case study, pp-219-230 has been published at an international conference proceeding held at Bananas Hindu University, March 2006. MAR 2006</li>
-<li>Soumitra Das, Susen Bala and Mainak Sengupta,&ldquo;Design, Performance and Finite Element Analysis of a 1 kW Switched Reluctance Motor for Electric Vehicle&rdquo; in proc. of the 2nd National Power Electronic Conference, IIT Kharagpur, India. DEC 2005</li>
-<li>Bijoy K. Mukherjee, Mainak Sengupta, Soumitra Das and Aparajita Sengupta &ldquo;Design, Fabrication, Testing and Finite Element Analysis of a Lab-scale LIM,&rdquo; in proc. of the IEEE India Conference, Indicon 2004, IIT Kharagpur, India, pp. 586-589. DEC 2004</li>
-</ul>
+               <!--Faculty-->
+               <div class="dropdown">
+                <a href="../../Electrical/faculty.html">Faculty</a>
+                
+            </div>
+            <!--staff-->
+            <div class="dropdown">
+                <a href="../../Electrical/staff.html">Staff</a>
+                
+            </div>
+            <!--reseach-->
+            <div class="dropdown">
+                <button class="dropbtn">Research</button>
+                <div class="dropdown-content">
+                    <a href="../../Electrical/Research/journals.html">Journals</a>
+                    <a href="../../Electrical/Research/Proceedings.html">Proceedings</a>
+                    <a href="../../Electrical/Research/Book_Book_chapters.html">Book / Book Chapters</a>
+                    <a href="../../Electrical/Research/Research_projects.html">Research Projects</a>
+                </div>
+
+            </div>
+            <!--Events-->
+            <div class="dropdown">
+                <a href="../../Electrical/Events/event.html">Events</a>
+                
+            </div>
+               <!--Gallery-->
+               <div class="dropdown">
+                <a href="../../Electrical/Gallery/Photo.html">Gallery</a>
+                
+            </div>
+<!--Alumni-->
+<div class="dropdown">
+<button class="dropbtn">Alumni</button>
+<div class="dropdown-content">
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content text-sm">
+        <a href="../../static/Btech_EEE_2010_14.pdf"
+          >Graduate-2014</a
+        >
+        <a href="../../static/Btech_EEE_2011_15.pdf"
+          >Graduate-2015</a
+        >
+        <a href="../../static/Btech_EEE_2012_16.pdf"
+          >Graduate-2016</a
+        >
+        <a href="../../static/Btech_EEE_2013_17.pdf"
+          >Graduate-2017</a
+        >
+        <a href="../../static/Btech_EEE_2014_18.pdf"
+          >Graduate-2018</a
+        >
+        <a href="../../static/eee_btech_2015batch_23sept2016 (1).pdf"
+          >Graduate-2019</a
+        >
+        <a href="../../static/Btech_2016-2020.pdf"
+          >Graduate-2020</a
+        >
+        <a href="../../static/Graduate_(B.Tech)-2021.pdf"
+          >Graduate-2021</a
+        >
+
+    </div>
+    <!--End-->
+  </div>
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">M.Tech<span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content">
+      <a href="../../static/MTech_EEE_students_list_10oct14.pdf"
+      >Graduate-2016</a
+    >
+    <a href="../../static/EEE_mtech_std_details_22sept2016 (1).pdf"
+      >Graduate-2017</a
+    >
+    <a href="../../static/M_TECH_STUDENT_DETAILS_2016-2018.pdf""
+      >Graduate-2018</a
+    >
+    <a href="../../static/M_TECH_STUDENT_LIST_2017-2019.pdf"
+      >Graduate-2019</a
+    >
+    <a href="../../static/M_TECH_STUDENT_LIST_2018-2020.pdf"
+      >Graduate-2020</a
+    >
+    <a href="../../static/Graduate_(M.Tech.)_-_2021.png"
+      >Graduate-2021</a
+    >
+    </div>
+    <!--End-->
+  </div>
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">PhD<span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content">
+
+    <a href="#"
+      >Graduate-2018</a
+    >
+
+    <a href="../../static/Graduate_(Ph._D.)_-_2021.png"
+      >Graduate-2021</a
+    >
+    </div>
+    <!--End-->
+  </div>
+</div>
+
+</div>
+            <!--E-Downloads-->
+            <div class="dropdown">
+                <button class="dropbtn">E-Downloads</button>
+                <div class="dropdown-content">
+                    <a href="../../Electrical/edownloads/facualty_staff.html">Faculty and staff</a>
+                    <a href="../../Electrical/edownloads/student.html">Student</a>
+                    <a href="../../academics/DissertionFormat.html">Dissertion Format</a>
+                </div>
+
+            </div>
+
+                <!--Contact Us-->
+                <div class="dropdown">
+                    <a href="../../Electrical/contact_us.html">Contact Us</a>
+                    
+                </div>
+
+            </div>
+    </div>
+    </nav>
+    </div>
+</header>
+<div class="p-4">         
+    <h1
+                class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4">
+               Proceedings:</h1>
+    <p style="padding-left: 30px;">&nbsp;</p>
+    <ul style="list-style-type: square;">
+    <li class="mx-2 my-4">Madhu G M, C. Vyjayanthi and C N Modi, &ldquo;Change in Power based P&amp;O Algorithm for Maximum Power Extraction in Solar Energy Conversion System,&rdquo; 2021 International Conference on Power Systems (ICPS), Kharagpur, India, 16-18 December, 2021. DEC 2021</li>
+    <li class="mx-2 my-4">Nivedita N Naik and C.Vyjayanthi, &ldquo;Research on Electric Vehicle Charging System: Key Technologies, Communication Techniques, Control Strategies and Standards&rdquo;, IEEE International Conference on Electrical Power and Energy Systems (ICEPES-2021), 10-11 December 2021, MNIT Jaipur. DEC 2021</li>
+    <li class="mx-2 my-4">Mayank Arora and C Vyjayanthi, &ldquo;Optimized Solar PV grid connection for EV charging application&rdquo;, IEEE Bombay Section Signature Conference IBSSC-2021, themed - Frontiers of Technologies: Fuelling Prosperity of the Planet and People, 18-20 November 2021, IIIT Gwalior. NOV 2021</li>
+    <li class="mx-2 my-4">Nivedita N Naik and C.Vyjayanthi, &ldquo;Optimization of Vehicle-to-Grid (V2G) Services for Development of Smart Electric Grid: A Review&rdquo;, International Conference on Smart Generation Computing, Communication and Networking - A Hybrid Conference (SMARTGENCON 2021), 29-30 October 2021. OCT 2021</li>
+    <li class="mx-2 my-4">V C Chavan, Suresh Mikkili, and Praveen Kumar B, 'Novel Shade Dispersion Method to Extract Maximum Power under partial shading condition', in proceedings of 47th Annual Conference of the IEEE Industrial Electronics Society IEEE IECON 2021, 13th to 16th October 2021, Toronto, Canada OCT 2021</li>
+    <li class="mx-2 my-4">Mayank Arora and C. Vyjayanthi, &ldquo;K Factor-based MPPT Technique for Reducing Steady-State power oscillations&rdquo;, The IEEE International Conference on Intelligent Technologies (CONIT 2021)&rdquo; Hubballi, Karnataka, India, 25-27, June 2021. JUN 2021</li>
+    <li class="mx-2 my-4">Mayank Arora and C.Vyjayanthi, &ldquo;Modified Hysteresis Current Control Implementation for Three Phase Grid Connected Inverter&rdquo;, 2nd Electric Power And Renewable Energy Conference (EPREC-2021), 28th - 30th May 2021, NIT Jamshedpur, Springer. MAY 2021</li>
+    <li class="mx-2 my-4">Remote Triggered Laboratory for Boost Converter Using LabVIEW, Advances in Automation, Signal Processing, Instrumentation, and Control pp 2027-2035 MAR 2021</li>
+    <li class="mx-2 my-4">Jayesh Priolkar, E.S. Sreeraj, and Govind Kunkolienkar "Clustering based Consumer Baseline Estimation for Demand Response Implementation," Proc. of 21st National Power Systems Conference, Gandhinagar, Dec. 17-19, 2020. DEC 2020</li>
+    <li class="mx-2 my-4">Ajit Muzumdar, Chirag Modi, Madhu G M, C Vyjayanthi, An Efficient Regional Short-Term Load Forecasting Model for Smart Grid Energy Management, IEEE, IECON 2020, Singapore, October 2020. OCT 2020</li>
+    <li class="mx-2 my-4">&nbsp;Nitin Singh, C. Vyjayanthi, Multi-step Short-term Electric Load Forecasting Using 2D Convolutional Neural Networks, IEEE - Hydcon, September 2020. SEPT 2020</li>
+    <li class="mx-2 my-4">V. R. Reddy and Sreeraj E. S, "Unipolar Modulated Voltage Sensor-less One-Cycle Controlled Inverter for Grid Connected PV System," 2020 IEEE First International Conference on Smart Technologies for Power, Energy and Control (STPEC), Nagpur, 2020, pp. 1-6, doi: 10.1109/STPEC49749.2020.9297742. SEPT 2020</li>
+    <li class="mx-2 my-4">Aswini K. Samantaray and Amol D. Rahulkar, "Lifting Scheme Based Image Retrieval in Medical CT and MRI Databases", 2020 IEEE International Symposium on Sustainable Energy, Signal Processing and Cyber Security (iSSSC), 2020, pp. 1-6, doi: 10.1109/iSSSC50941.2020.9358908. SEPT 2020</li>
+    <li class="mx-2 my-4">Aditi Atul Desai and Suresh Mikkili, &ldquo;&ldquo;Novel Hybrid PV Array Configurations for extracting maximum Power by reducing number of peaks and mitigating mismatching power loss&rdquo;in proceedings of 46thAnnual Conference of the IEEE Industrial Electronics Society (IECON -2020),18<sup>th</sup>&nbsp;to 21<sup>st</sup>&nbsp;October2020, Singapore &ndash;Accepted for presentation</li>
+    <li class="mx-2 my-4">M J Jeffin, Madhu G M, Akshayata Rao, Gurpreet Singh and C. Vyjayanthi, &ldquo;Internet of Things Enabled Power Theft Detection and Smart Meter Monitoring System&rdquo; 9th International Conference on Communication and Signal Processing (ICCSP), Chennai, India, April 2020. APRIL 2020</li>
+    <li class="mx-2 my-4">Jayesh Priolkar, ES Sreeraj, Anita Thakur, "Analysis of Consumer Baseline for Demand Response Implementation: A Case Study", Proceedings of 7th International Conference on Signal Processing and Integrated Networks (SPIN 2020) FEB 2020</li>
+    <li class="mx-2 my-4">B Parate, RS Kumar, K Thakur, Sreeraj ES, R Krishnan, &ldquo;Design and Modelling of SRC Based Capacitor Charging Power Supply for High Power Klystron Modulator Using MULTISIM&rdquo;, National Power Electronics Conference (NPEC), 2019 DEC 2019</li>
+    <li class="mx-2 my-4">L Sreekumar, Sreeraj ES, &ldquo;Double Frequency Pulse Width Modulation for Type-1 Common-ground Transformerless Inverter&rdquo;, National Power Electronics Conference (NPEC), 2019 DEC 2019</li>
+    <li class="mx-2 my-4">VR Reddy, ES Sreeraj, &ldquo;A Feedback Based Hybrid Islanding Detection Method and Voltage Ride-Through of One Cycle Controlled PV Inverter&rsquo;, National Power Electronics Conference (NPEC), 2019. DEC 2019</li>
+    <li class="mx-2 my-4">Abhilash R Sakhare, C. Vyjayanthi, "Cost Based Analysis Considering Power Trading in a Hybrid Power System", 16th IEEE India Council International Conference (INDICON 2019), IEEE Gujarat Section, 13 &ndash; 15 December 2019, Marwadi University, Rajkot, Gujarat. DEC 2019</li>
+    <li class="mx-2 my-4">Ashwini R Patil, Amol D. Rahulkar and Chirag N Modi, "Designing an Efficient Fingerprint Recognition System for Infants and Toddlers," 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-7, doi: 10.1109/ICCCNT45670.2019.8944342 DEC 2019</li>
+    <li class="mx-2 my-4">Aswini K. Samantaray and Amol D. Rahulkar, "Comparison of Similarity Measurement Metrics on Medical Image Data", 0th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-5, doi: 10.1109/ICCCNT45670.2019.8944781. DEC 2019</li>
+    <li class="mx-2 my-4">Anudevi Samuel., V.N.Shet, &ldquo;Fuzzy Adaptive Relay Settings for Distribution Network with DG&rdquo; - Proceedings of the National Power Electronics Conference (NPEC)-2019, December 13-15, NIT Tiruchirappalli, India, IEEE Digital Xplore, 978-1-7281-4428-3/19, <a href="https://doi.org/10.1109/NPEC47332.2019.9034762%20DEC%202019">https://doi.org/10.1109/NPEC47332.2019.9034762 DEC 2019</a></li>
+    <li class="mx-2 my-4">Madhu G M, C. Vyjayanthi, "Design and Development of a Novel IoT based Smart Meter for Power Quality Monitoring in Smart Grid Infrastructure", TENCON, 17-20 October 2019, IEEE Kerala Section, Cochin. - <a href="https://ieeexplore.ieee.org/document/8929689%20OCT%202019">https://ieeexplore.ieee.org/document/8929689 OCT 2019</a></li>
+    <li class="mx-2 my-4">R. V. S. E. Shravan, C. Vyjayanthi, "Emulation of AC and DC subgrids using Power Converters for Islanded Hybrid Microgrid Applications", TENCON, 17-20 October 2019, IEEE Kerala Section, Cochin. <a href="https://ieeexplore.ieee.org/document/8929641%20OCT%202019">https://ieeexplore.ieee.org/document/8929641 OCT 2019</a></li>
+    <li class="mx-2 my-4">Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Configurations for Reducing the Multiple-Peak Power Points in I-V and P-V characteristics under Partial Shading Conditions", in Proceedings of 39th Annual International IEEE Region- 10 conference (TENCON-2019), 17th to 20th October 2019, Kochi, Kerala OCT 2019</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Con?gurations for Mitigating the Mismatching Power loss and Number of Peaks in the Output Characteristics under various PSCs", in proceedings of 45th Annual Conference of the IEEE Industrial Electronics Society (IECON - 2019), 14th to 17th October 2019, Lisbon, Portugal. OCT 2019</li>
+    <li class="mx-2 my-4">Madhu G M, C Vyjayanthi, Kolakaluri Vinay Kumar, "A Hybrid PV-Battery Topology to Extract Maximum Power at Partial Shading Conditions for Rural Remote Area Applications", International Conference on Computing, Power and Communication Technologies, GUCON 2019, Galgotias University, September 27-29 2019, New Delhi. <a href="https://ieeexplore.ieee.org/document/8940557%20SEPT%202019">https://ieeexplore.ieee.org/document/8940557 SEPT 2019</a></li>
+    <li class="mx-2 my-4">Sandip Jangir, Alok Jaiswal, Sheetal Chandel, Ajit Muzumdar, Chirag Modi and C Vyjayanthi, "A Novel Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and Smart Contracts", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
+    <li class="mx-2 my-4">Ajit Muzumdar, Chirag Modi, Madhu G M, C Vyjayanthi, "Analyzing the Feasibility of Different Machine Learning Techniques for Energy Imbalance Classification in Smart Grid", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
+    <li class="mx-2 my-4">Madhu G M, C Vyjayanthi, Chirag Modi, " A Novel Framework for Monitoring Solar PV based Electric Vehicle Community Charging Station and Grid Frequency Regulation using Blockchain", 10th International Conference On Computing, Communication And Networking Technologies (ICCCNT), 6-8 July 2019, IIT Kanpur, India. JULY 2019</li>
+    <li class="mx-2 my-4">A. Muzumdar, C. N. Modi, G. M. Madhu and C. Vyjayanthi, Analyzing the Feasibility of Different Machine Learning Techniques for Energy Imbalance Classification in Smart Grid, 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Kanpur, India, July 2019, pp. 1-6. JULY 2019</li>
+    <li class="mx-2 my-4">S. Jangir, A. Muzumdar, A. Jaiswal, C. N. Modi, S. Chandel and C. Vyjayanthi, A Novel Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and Smart Contracts, 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Kanpur, India, July 2019, pp. 1-7. JULY 2019</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem and Suresh Mikkili, &ldquo;Mitigation of Cross-coupling effects in PV D-MPPT systems with T-C-T configuration of String-Integrated-Converters using INC Algorithm&rdquo;, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019. JULY 2019</li>
+    <li class="mx-2 my-4">Praveen Kumar B and Suresh Mikkili, &ldquo;Performance analysis of Closed loop controlled Single-Phase Unipolar Inverter with Fixed Switching Frequency Sliding Mode Control&rdquo;, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019 JULY 2019</li>
+    <li class="mx-2 my-4">Rupesh Thombre, C.Vyjayanthi, "Implementation of a Resistive Superconducting Fault Current Limiter in a VSC-HVDC System", International Conference on Recent Developments in Electrical and Power Engineering (ICRDEPE),19th June 2019, Nagpur, India. JUN 2019</li>
+    <li class="mx-2 my-4">Product Design Using Virtual Reality, International Conference on Computer Networks and Inventive Communication Technologies,927-935, Springer MAY 2019</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, &ldquo; PV Distributed-MPP Tracking: Total-Cross-Tied configuration of MICs to extract the Maximum Power under Partial Shading conditions&rdquo;, 8th biennial IEEE International Conference on Power Electronics, Drives and Energy Systems, 18th &ndash; 21st Dec. 2018 (PEDES-2018). DEC 2018</li>
+    <li class="mx-2 my-4">Buck-Boost Inverter Functionality of Two-Phase Semi-Z-Source Converter, 2018 IEEE International Conference on Power Electronics, Drives and Energy Systems (PEDES) DEC 2018</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem, Suresh Mikkili, and Vikash Varma K, &ldquo; Total-Cross-Tied Configuration of MICs for Enhancing the Performance of PV D-MPPT systems under various PSCs using P&amp;O Algorithm&rdquo;, 15th Annual IEEE India Council International Conference, 16th &ndash; 18th Dec. 2018 (INDICON-2018). DEC 2018</li>
+    <li class="mx-2 my-4">Gomathi Ramalingam, Ajay K Choudhary and Suresh Mikkili, &ldquo;Modeling and Analysis of PV-based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality&rdquo;, 15th Annual IEEE India Council International Conference (INDICON-2018), 16th to 18th December, 2018. DEC 2018</li>
+    <li class="mx-2 my-4">Priyanka Yussuf, and Sreeraj E. S., "An ZVS DC-DC Synchronous Buck Regulator With Mode Changing Control Strategy For Low Voltage Applications," in Proc. of IEEE Int. Conf. Power Electronics, Drives, Energy Systems, Chennai, India. DEC 2018</li>
+    <li class="mx-2 my-4">Kandukuri Surendra and C. Vyjayanthi, "Short Circuit Studies on a Distribution System Integrated with Various Distributed Generations", IEEE sponsored 8th Power India International Conference PIICON-2018, December 10-12, 2018, NIT Kurukshetra. DEC 2018</li>
+    <li class="mx-2 my-4">Madhu G M and C. Vyjayanthi, "Implementation of Cost Effective Smart Home Controller with Android Application using Node MCU and Internet of Things (IOT)", IEEE sponsored 2nd International Conference on Energy, Power &amp; Environment (ICEPE 2018), Shillong, Meghalaya, India, June 1-2, 2018. JUN 2018</li>
+    <li class="mx-2 my-4">Kandukuri Surendra and C. Vyjayanthi, "Fault Level Analysis in Modern Electrical Distribution System Considering Various Distributed Generations", IEEE sponsored International Conference on Power, Energy, Control and Transmission Systems, 22-23 February 2018, Chennai. FEB 2018</li>
+    <li class="mx-2 my-4">K. Vinay Kumar and C. Vyjayanthi, "Direct Energy Transfer Technique based DC-DC Converter with Distributed MPPT for PV Charging Applications", IEEE sponsored International Conference on Power, Energy, Control and Transmission Systems, 22-23 February 2018, Chennai. FEB 2018</li>
+    <li class="mx-2 my-4">G. Krishna Reddy and Suresh Mikkili, &ldquo;Grid Integration of Solar Photovoltaic system with Storage under Partial Shading Conditions using Distributed MPPT Technique&rdquo;, in proc. of International Conference on Computing of Power, Energy, Information &amp; Communication, 28th to 29th Feb, 2018. FEB 2018</li>
+    <li class="mx-2 my-4">Shiham and C. Vyjayanthi, "Droop Control of A Single Phase AC-DC Hybrid Microgrids With Energy Storage", 2018 IEEE sponsored Biennial International Conference on Power and Energy systems: Towards Sustainable Energy (PESTSE), 18th-20th January 2018, Bangalore. JAN 2018</li>
+    <li class="mx-2 my-4">Priyanandini Das, Pranose Edavoor, Sithara R., Sunil Rathore and Amol Rahulkar, "Design and Implementation of PID Controller based on Orthogonal wavelet filter-banks in FPGA", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India DEC 2017</li>
+    <li class="mx-2 my-4">Pranose Edavoor, Sithara R. and Amol Rahulkar, "Implementation of adaptive image compression algorithm using varying bit-length Daubechies wavelet coefficient with three-level encryption on Zynq 7000", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India DEC 2017</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem and Suresh Mikkili, &ldquo;Performance Evaluation of Series, Series-Parallel and Honey Comb PV Array Configurations under Partial Shading Conditions&rdquo;, in Proceedings of 7th Biennial International Conference on Power Systems (ICPS), 21st- 23rd Dec. 2017. DEC 2017</li>
+    <li class="mx-2 my-4">Suneel Raju Pendem and Suresh Mikkili, &ldquo;Analysis of Series, Series-Parallel and Total-Cross-Tied PV Array Configurations to Grid-connected and Stand-alone PV systems under Illumination Transition Conditions&rdquo;, in Proceedings of 6th Biennial International Conference on Advances in Energy Research (ICAER), 12th &ndash; 14th Dec. 2017, IIT-Bombay. DEC 2017</li>
+    <li class="mx-2 my-4">Priyanandini Das, Pranose Edavoor, Sithara Raveendran, Amol Rahulkar, &ldquo;Design and Implementation of computationally efficient architecture of PID based speed controller for Robotic land navigation system in FPGA&rdquo;, Accepted in conference on Information and Communication Technology, at Indian Institute of Technology and Management, Gwalior, during Nov 3-5, 2017. NOV 2017</li>
+    <li class="mx-2 my-4">VR Reddy, ES Sreeraj, "Integration of ripple correlation MPPT technique with one-cycle-controlled transformerless inverter for single-phase single-stage photovoltaic systems," in Proc. 43rd Annu. Conf. IEEE Ind. Electron. Soc., Beijing, China, Oct. 25-28, pp. 2552-2557. OCT 2017</li>
+    <li class="mx-2 my-4">R.V.S.E. Sravan and C. Vyjayanthi, "Vector control of the interlinking converter for Droop controlled power flow in AC/DC hybrid microgrids", 1st International Conference on Large -Scale Grid Integration of Renewable Energy in India, 6-8 September 2017, New Delhi, Under Ministry of New and Renewable Energy, Ministry of Power. SEPT 2017</li>
+    <li class="mx-2 my-4">Amita Shinde, Amol Rahulkar and C. Y Patil, &ldquo;Local Neighbouring Binary Pattern: A New Feature Descriptor for Biomedial Image Indexing and Retrievel&rdquo;, Proc. in 2nd International conference on Signal and Image Processing (ICSIP 2017), pp. 154-159, August 4-6, 2017, Singapore (Received Best Presentation Award) 2017</li>
+    <li class="mx-2 my-4">Rushikesh Babu and C.Vyjayanthi, &ldquo;Implementation of Net Zero Energy Building (NZEB) Prototype with Renewable Energy Integration&rdquo;, IEEE TENSYMP 2017, Spring Conference, July 14-16, 2017, Cochin. IEEE Publication. JULY 2017</li>
+    <li class="mx-2 my-4">P.V. Subrahmanyam and C. Vyjayanthi, &ldquo;Integration of PV and Battery System to the Grid with Power Quality Improvement Features using Bidirectional AC-DC Converter&rdquo;, International Conference on Electrical Power and Energy Systems (ICPES), MNIT Bhopal, 14-16 Dec, 2016. DEC 2016</li>
+    <li class="mx-2 my-4">E Satish, L K Gupta and Suresh Mikkili, &ldquo;PI and FLC (Triangular and Gaussian MF) based SHAF under Load Variation Using SRF Method&rdquo;, in proc. of EEE 7th Bi-Annual India International Conference on Power Electronics &ndash; (IICPE), Nov. 17-19, 2016, Thapar University, Patiala (Punjab). NOV 2016</li>
+    <li class="mx-2 my-4">B. Ravi Teja, Suresh Mikkili, &ldquo;Deployment of Fuzzy based MRAS and IRFOC strategy with fast tracking for the sensorless speed control of SPIM&rdquo;, in proc. of 6th IEEE Annual International Conference on Power Systems (ICPS), March 2016, IIT Delhi. MAR 2016</li>
+    <li class="mx-2 my-4">Baluguri Ravi Teja and C. Vyjayanthi, &ldquo;The PMU-Based System Observability for Fault Detection and Isolation for a Distribution Network&rdquo;, International Conference and Exhibition on Smart Grids and Smart cities, March 2016. MAR 2016</li>
+    <li class="mx-2 my-4">Pradeep Vejju, Arun George, Amol Rahulkar, "Comparative Study on the Computation of State Transition Matrix Using Lagrange Interpolation Technique and Cayley-Hamilton Theorem", Proc. of 10th International Conference on Intelligent Systems and Control (ISCO-2016), pp.235-239. JAN 2016</li>
+    <li class="mx-2 my-4">Transformerless Dynamic Voltage Restorer for voltage sag mitigation, 2016 Biennial International Conference on Power and Energy Systems: Towards Sustainable Energy (PESTSE), IEEE JAN 2016</li>
+    <li class="mx-2 my-4">&nbsp;R Satish, Ch LS Srinivas, and E S Sreeraj, "A maximum power point tracking technique based on ripple correlation control for single-phase single-stage grid connected photovoltaic system,"in Proc. 7th Nat. Power Electron. Conf., Mumbai, India. DEC 2015</li>
+    <li class="mx-2 my-4">Matam Manjunath, B. Venugopal Reddy and G Avinash Reddy, "Optimized reconfigurable solar PV battery charger using relay switch matrix", National Power Electronics Conference(NPEC-2015), IIT Bombay, 21-23 . DEC 2015</li>
+    <li class="mx-2 my-4">Swathi.R, Arpitha Raju.B and C Vyjayanthi, &ldquo;Optimal Placement of FACTS Devices for Voltage Stability Enhancement in a Typical Power System&rdquo;, International conference on Electrical, Electronics and Computer science (ICEECS), Nagpur, June 2014. JUN 2014</li>
+    <li class="mx-2 my-4">Swathi.R, Arpitha Raju.B and C Vyjayanthi, &ldquo;Optimal Placement of FACTS Devices for Voltage Stability Enhancement in a Typical Power System&rdquo;, International conference on Electrical, Electronics and Computer science (ICEECS), Nagpur, June 2014. JUN 2014</li>
+    <li class="mx-2 my-4">Swathi.R, C Vyjayanthi and Arpitha Raju.B, &ldquo;Optimal Placement of Thyristor-Controlled Series Capacitor in a Typical Power System&rdquo;, Wireless Control and Communication Technologies (NCWCT &ndash; 2014), April 2014. APRIL 2014</li>
+    <li class="mx-2 my-4">Swathi.R, C Vyjayanthi and Arpitha Raju.B, &ldquo;Optimal Placement of Thyristor-Controlled Series Capacitor in a Typical Power System&rdquo;, Wireless Control and Communication Technologies (NCWCT &ndash; 2014), April 2014. APRIL 2014</li>
+    <li class="mx-2 my-4">A.Sathya,Anudevi Samuel,MS Sheeba,"Robust Fuzzy C-Means based Minimal Spinning tree method For Segmentation of Breast MRI",International Conference on Mathematical Science,2014 MAR 2014</li>
+    <li class="mx-2 my-4">Performance study of high frequency link AC-AC converter, 2014 International Conference on Advances in Energy Conversion Technologies (ICAECT) JAN 2014</li>
+    <li class="mx-2 my-4">Matam Manjunath,Anudevi Samuel,Vighnesh Birodkar,"A Novel proposal for Electrical Load Online Census(ELOC)",Annual IEEE India Conference(INDICON),2013 NOV 2013</li>
+    <li class="mx-2 my-4">R. Patel, A.K.Panda and Suresh. Mikkili &ldquo;PI and fuzzy logic controller based 3-phase 4-wire interleaved buck active power filter for mitigation of harmonics with the Id-Iq control strategy&rdquo; IECON 2013 - 39th Annual Conference on IEEE Industrial Electronics Society , pp. 2145 &ndash; 2150, 10-13 Nov. 2013, Vienna, Austria. NOV 2013</li>
+    <li class="mx-2 my-4">Suresh. Mikkili and A.K.Panda, &ldquo;Type-1 and Type-2 FLC based Shunt active filter Id-Iq control strategy for mitigation of harmonics with Triangular MF," IEEE PEDES Dec. 16-19, 2012, CPRI/IISC-Bangalore. DEC 2012</li>
+    <li class="mx-2 my-4">A.Sathya,S.Senthil,Anudevi Samuel,"Segmentation of Breast MRI Using Effective Fuzzy C-means Method based Support Vector Machine",World Congress on Information and Communication Technologies,2012 NOV 2012</li>
+    <li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, "Real-time implementation of power theory using FLC based shunt active filter with different fuzzy M.F.s ,&rdquo; IECON 2012 - 38th Annual Conference on IEEE Industrial Electronics Society , pp. 702 &ndash; 707, DOI : 10.1109/IECON.2012.6388666., 25-28 Oct. 2012, Montreal, QC, Canada. OCT 2012</li>
+    <li class="mx-2 my-4">Sreeraj E.S., Prejith E.K., and K. Chatterjee, &ldquo;One Cycle Controlled Active Harmonic Filter,&rdquo; in Proc. 38th Annu. Conf. IEEE Ind. Electron. Soc., Montreal, Canada, pp.621-626. OCT 2012</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;Mitigation of Harmonics using Fuzzy Logic Controlled Shunt Active Power Filter with Different Membership Functions By Instantaneous Power Theory,&rdquo; IEEE SCES, DOI: 10.1109/SCES.2012.619910316-18 March 2012, MNNIT-ALLAHABAD. MAR 2012</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;Simulation and RTDS Hardware implementation of SHAF for current harmonics cancellation using Id-Iq control strategy with PI and fuzzy controllers,&rdquo; IEEE ICPS, pp. 1-6, DOI: 10.1109/ICPES.2011.6156669, 22-24, Dec. 2011, IIT MADRAS. DEC 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;Id-Iq control strategy for mitigation of current harmonics with PI and fuzzy controllers,&rdquo; IEEE ICPS, pp. 1-6, DOI:10.1109/ICPES. 2011.6156668, 22-24, Dec. 2011, IIT MADRAS. DEC 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, PI controller based shunt active filter for mitigation of current harmonics with p-q control strategy using simulation and RTDS hardware,&rdquo; IEEE INDICON, pp. 1-6, DOI: 10.1109/INDCON.2011.6139547, 16-18, Dec. 2011, BITS-PILANI HYD . DEC 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda,, Fuzzy logic controller based SHAF for current harmonics compensation with p-q control strategy using simulation and RTDS hardware," IEEE INDICON- 2011, pp. 1-6, DOI: 10.1109/INDCON.2011.6139546, 16-18, Dec. 2011, BITS-PILANI HYD . DEC 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili and A.K.Panda, &ldquo;Fuzzy logic controller based 3-ph 4-wire SHAF for current harmonics compensation with id-iq control strategy using simulation and RTDS hardware," IEEE PEDS, pp. 430-435, DOI: 10.1109/PEDS.2011.6147284, Dec 2011, Singapore. DEC 2011</li>
+    <li class="mx-2 my-4">Sreeraj E.S. and K. Chatterjee, &ldquo;One Cycle Controlled Single Stage Inverters for grid connected Photovoltaic systems,&rdquo; in Proc. 5th Nat. Power Electron. Conf., Howrah, India, pp. 135-140. DEC 2011</li>
+    <li class="mx-2 my-4">Soumitra Das and G. Narayanan, &ldquo;Space vector based analysis and comparison of sinusoidal pulsewidth modulation schemes for a three-level inverter,&rdquo; in proc. of the 5th National Power Electronic Conference, BESUS, West Bengal, India. DEC 2011</li>
+    <li class="mx-2 my-4">K. S. Gopalakrishanan, Soumitra Das and G. Narayanan, &ldquo;Analytical Expression for RMS DC Link Capacitor Current in a Three-Level Inverter&rdquo; in proc. of the Centenary Conference of Electrical Sciences, 2011, IISc, Bangalore. DEC 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;PI and fuzzy controller based 3-ph 4-wire SHAF for current harmonics compensation using p-q control strategy,&rdquo; IET-SEISCON 2011, pp. 299 &ndash; 303, DOI : 10.1049/cp.2011.0378, 20-22 July 2011, MADRAS. JULY 2011</li>
+    <li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;SHAF for mitigation of Current harmonics with p-q and Id-Iq control strategies using both PI and Fuzzy Controllers,&rdquo; IET-SEISCON 2011, pp. 358-362, DOI:10.1049/cp.2011.0389, 22 July 2011, MADRAS. JULY 2011</li>
+    <li class="mx-2 my-4">Anudevi.S, "Application of Hybrid GA-PS method to solve Economic Load Dispatch",National Conference on Electronic Technologies,2011 APRIL 2011</li>
+    <li class="mx-2 my-4">Mikkili Suresh, A. K. Panda, S. S. Patnaik, S. Yellasiri, &ldquo; Comparison of two compensation control strategies for shunt active power filter in three-phase four-wire system,&rdquo; IEEE PES Innovative Smart Grid Technologies (ISGT), pp.1-6, DOI:10.1109/ISGT.2011.5759126., Jan. 2011, Hilton Anaheim, CA, USA. JAN 2011</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Identification of Power System Expansion Locations to Meet Growing Loads, Sixteenth National Power Systems Conference (NPSC-2010), December 15-17, 2010, Osmania University, Hyderabad, India. DEC 2010</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Total Transfer Capacity &ndash; A Case study, IEEE International Conference on Power Electronics, Drives and Energy Systems for Industrial Growth-2010, during December 21-23, 2010, New Delhi, INDIA DEC 2010</li>
+    <li class="mx-2 my-4">Soumitra Das and G. Narayanan, &ldquo;Novel switching sequences for a space-vector-modulated three-level inverter,&rdquo; in proc. of the 4th National Power Electronic Conference, IIT Roorkee, Delhi, India. JUN 2010</li>
+    <li class="mx-2 my-4">Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;Sizing of Isolated Renewable Hybrid Systems&rdquo;, in Proc. 2nd Int. Conf. Nuclear Renewable Energy Resources, Ankara, Turkiye, pp. 465-471. 2010</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Optimal Placement of Distributed Generation for a Projected Load Increase Using Relative Electrical Distance Approach, International Conference on Power Systems (ICPS-2009), December 27-29, 2009, IIT Kharagpur, India. DEC 2009</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Estimation of Most Economic Bilateral Contract using Relative Electrical Distance Concept in a Deregulated Environment, Fifteenth National Power Systems Conference (NPSC-2008), December 2008. DEC 2008</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation of Charges for Power Transmission and Losses in Bilateral Power Contracts, TENCON 2008, November 20th &ndash; 23rd, 2008, Hyderabad, India. NOV 2008</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi,Ranking of Prospective New Generator Location based on Relative Electrical Distance Method in a Deregulated Environment, POWERCON-2008, October 12th - 15th, 2008, New Delhi, India. OCT 2008</li>
+    <li class="mx-2 my-4">D.V. Ghodke, Sreeraj E. S., K. Chatterjee, and B. G. Fernandes, &ldquo; One cycle controlled bi-directional AC to DC Converter having constant power factor operation,&rdquo; in Proc. Power Electron. Specialists Conf. pp. 685 &ndash; 691. 2008</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation of Charges for Bilateral Power Contracts based on Relative Electrical Distance Concept in a Deregulated Power System, Managing Complexity in a Distributed World (MCDES-2008), 27th May - 31st May 2008, Indian Institute of Science, Bangalore, India. MAY 2008</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Reactive Power Dispatch in Deregulated Transmission Networks, International Conference on Power Systems, 12th -14th Dec. 2007, Central Power Research Institute, Bangalore, INDIA. DEC 2007</li>
+    <li class="mx-2 my-4">D. Thukaram, G. Yesuratnam and C. Vyjayanthi, Optimal Reactive Power Dispatch based on Voltage Stability Criteria in a Large Power System with AC/DC and FACTS Devices, IEEE International Conference on Power Electronics, Drives and Energy Systems for Industrial Growth-2006, during December 13th - 15th , 2006, New Delhi, INDIA. DEC 2006</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Real and Reactive power Flows in Deregulated Transmission Networks, Fourteenth National Power Systems Conference (NPSC-2006), December 26th - 29th, IIT Roorkee, India. DEC 2006</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Improved Allocation of Reactive Power Dispatch Incorporating FACTS Devices in Deregulated Power Systems, IEEE Bangalore section 15th Annual Symposium -2006, 24th - 25th November 2006, Central Power Research Institute (CPRI), Bangalore. NOV 2006</li>
+    <li class="mx-2 my-4">Sreeraj E.S. and K. Chatterjee, &ldquo;Power Factor Improvement in One Cycle Controlled Converter&rdquo;, in Proc. IEEE Int. Symp. Ind. Electron., July 2006, Montreal, Canada, pp. 1454-1460. 2006</li>
+    <li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation of Reactive Power Sharing in a deregulated Environment-a case study, pp-219-230 has been published at an international conference proceeding held at Bananas Hindu University, March 2006. MAR 2006</li>
+    <li class="mx-2 my-4">Soumitra Das, Susen Bala and Mainak Sengupta,&ldquo;Design, Performance and Finite Element Analysis of a 1 kW Switched Reluctance Motor for Electric Vehicle&rdquo; in proc. of the 2nd National Power Electronic Conference, IIT Kharagpur, India. DEC 2005</li>
+    <li class="mx-2 my-4">Bijoy K. Mukherjee, Mainak Sengupta, Soumitra Das and Aparajita Sengupta &ldquo;Design, Fabrication, Testing and Finite Element Analysis of a Lab-scale LIM,&rdquo; in proc. of the IEEE India Conference, Indicon 2004, IIT Kharagpur, India, pp. 586-589. DEC 2004</li>
+    </ul>
+            
         </div>
-        </body>
+    </body>
 </html>
