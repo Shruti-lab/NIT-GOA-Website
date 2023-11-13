@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
      <link href="styles.css" rel="stylesheet" />
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
@@ -15,6 +16,19 @@
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
+=======
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+>>>>>>> 2c09be97528a201547cb0eb91232cc80fd95fe93
   <script src="script.js"></script>
 
   <title>Welcome To NIT Goa</title>
@@ -78,21 +92,24 @@
 
     .tweet-section {
 
- justify-content: center;
- align-items: center;
-  width: 400px; /* Adjust the width as needed */
-  height: 400px;
-  background-color: #ffffff; /* Optional: Set a background color */
-  border: 1px solid #ddd; /* Optional: Add a border */
-  margin-top: 0;
-  overflow: auto;
-}
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      /* Adjust the width as needed */
+      height: 400px;
+      background-color: #ffffff;
+      /* Optional: Set a background color */
+      border: 1px solid #ddd;
+      /* Optional: Add a border */
+      margin-top: 0;
+      overflow: auto;
+    }
 
-/* Optional: Adjust the tweet blockquote styles */
-.tweet-section blockquote.twitter-tweet {
-  margin: 0;
-  padding: 0;
-}
+    /* Optional: Adjust the tweet blockquote styles */
+    .tweet-section blockquote.twitter-tweet {
+      margin: 0;
+      padding: 0;
+    }
 
 
     /*Vision Mission */
@@ -100,18 +117,18 @@
       background-color: #2853d6;
       border: 1px solid whitesmoke;
       color: white;
-      padding: 0.8rem;
+      padding: 20px 30px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 18px;
       border-radius: 10px;
       font-family: 'font-sans', sans-serif;
     }
 
     .container1 {
       background-color: #FFFFFF;
-      
+
       border: 1px solid #808080;
-      
+
       box-shadow: 0px 0px 10px #808080;
       max-width: 100%;
       padding: 10px;
@@ -121,10 +138,12 @@
       justify-content: center;
       text-align: center;
     }
-    .container1 img{
+
+    .container1 img {
       border-radius: 30px;
     }
-    /* Here is a comment */
+
+
     .btn-group {
       text-align: left;
       /* Align buttons to the left */
@@ -195,7 +214,7 @@
       max-height: 60vh;
       margin: 0 auto;
       position: relative;
-    background-color: #1f2937;
+      background-color: #1f2937;
     }
 
     /* The dots/bullets/indicators */
@@ -314,7 +333,7 @@
 
     /* Background color for footer*/
     .site-footer {
-      background-color: rgb(7, 60, 104);
+      background-color: #073c68;
       /* Add any other styles you want for the footer here */
     }
 
@@ -363,17 +382,63 @@
     /*Social handle style ends*/
 
     /* CSS for footer links */
-.footer-links a {
-  color: white; /* Default text color */
+    .footer-links a {
+      color: white;
+      /* Default text color */
 
-}
+    }
 
-.footer-links a:hover {
-  color: rgb(33, 150, 243); /* Text color on hover */
-}
+    .footer-links a:hover {
+      color: rgb(33, 150, 243);
+      /* Text color on hover */
+    }
 
- 
+    /*Bullets*/
 
+    
+    /*Social handle style*/
+
+    .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      margin: 5px 2px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .fa-hover {
+      opacity: 0.7;
+      color: #E06900;
+    }
+
+    .fa-facebook {
+      background: #073c68;
+      color: #3B5998;
+    }
+
+    .fa-twitter {
+      background: #073c68;
+      color: #55ACEE;
+    }
+
+    .fa-linkedin {
+      background: #073c68;
+      color: #007bb5;
+    }
+
+    .fa-youtube-play {
+      background: #073c68;
+      color: red;
+    }
+
+    .fa-instagram {
+      background: #073c68;
+      color: #125688;
+    }
+
+    /*Social handle style ends*/
   </style>
 
 
@@ -398,19 +463,20 @@
       <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500">Login</a>
     </div>
   </div>
-  
 
 
-  <header id="main-header" class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+
+  <header id="main-header"
+    class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
     <div class="flex justify-center">
       <div class="headerBar ">
         <div class="logo-container flex flex-col justify-center items-center">
-            <img src="./static/logo_color.png" class="logo" id="logo_img">
+          <img src="./static/logo_color.png" class="logo" id="logo_img">
         </div>
-        </div>
+      </div>
 
-  
-<!--javascript for Google Translator Starts Here-->
+
+      <!--javascript for Google Translator Starts Here-->
       <script type="text/javascript">
         function googleTranslateElementInit() {
           new google.translate.TranslateElement({
@@ -421,145 +487,121 @@
         }
       </script>
 
-<script type="text/javascript"
-src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!--javascript for Google Translator Ends Here-->
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <!--javascript for Google Translator Ends Here-->
 
 
     </div>
 
-      <div class="text-center">
-        <nav class=" justify-center items-center bg-white">
-          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
-            <div class="dropdown ">
-             <a href="index.html">Home</a>
+    <div class="text-center">
+      <nav class=" justify-center items-center bg-white">
+        <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+          <div class="dropdown ">
+            <a href="index.html">Home</a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Administration</button>
+            <div class="dropdown-content">
+              <a href="administration/Board_of_Governors.html">Board Of Governors</a>
+              <a href="administration/director_message.html">Director</a>
+              <a href="administration/registrar.html">Registrar</a>
+              <a href="administration/senate.html">Senate</a>
+              <a href="administration/dean.html">Deans</a>
+              <a href="administration/Committees.html">Committees</a>
+              <a href="administration/finance_committee.html">Finance Committee</a>
+              <a href="administration/work_committee.html">Building and Works Committee</a>
+              <a href="administration/hod.html">Heads of Departments </a>
+              <a href="static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+              <a href="administration/reports.html">Reports</a>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">Administration</button>
-              <div class="dropdown-content">
-                <a href="administration/Board_of_Governors.html">Board Of Governors</a>
-                <a href="administration/director_message.html">Director</a>
-                <a href="administration/registrar.html">Registrar</a>
-                <a href="administration/senate.html">Senate</a>
-                <a href="administration/dean.html">Deans</a>
-                <a href="administration/Committees.html">Committees</a>
-                <a href="administration/finance_committee.html">Finance Committee</a>
-                <a href="administration/work_committee.html">Building and Works Committee</a>
-                <a href="administration/hod.html">Heads of Departments </a>
-                <a
-                  href="static/Org_Chart.pdf"
-                  target="_blank"
-                  >Organizing Structure</a
-                >
-                <a href="administration/reports.html">Reports</a>
-              </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Academics</button>
+            <div class="dropdown-content">
+              <a href="academics/academic_calendar.html">Calendar</a>
+              <a href="academics/rules_and_regulations.html">Regulations and Curriculum</a>
+              <a href="academics/DissertionFormat.html">Dissertion Formats</a>
+              <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+              <a href="academics/departments.html">Departments</a>
+              <a href="academics/library.html">Library</a>
             </div>
-            <div class="dropdown">
-              <button class="dropbtn">Academics</button>
-              <div class="dropdown-content">
-                <a href="academics/academic_calendar.html">Calendar</a>
-                <a href="academics/rules_and_regulations.html"
-                  >Regulations and Curriculum</a
-                >
-               <a href="academics/DissertionFormat.html">Dissertion Formats</a>
-                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
-                <a href="academics/departments.html">Departments</a>
-                <a href="academics/library.html">Library</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Admissions</button>
-              <div class="dropdown-content">
-                <div class="sub-dropdown">
-                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
-                  <!--BTECH Start-->
-                  <div class="sub-dropdown-content">
-                    <a href="admissions/josaa.html">JoSAA/CSAB</a>
-                    <a href="admissions/dasa.html" >DASA</a>
-                    <a href="admissions/facilities.html" >Facilities</a>
-                    <a href="admissions/strengths.html">Strengths of NIT Goa</a>
-                  </div>
-                  <!--End-->
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Admissions</button>
+            <div class="dropdown-content">
+              <div class="sub-dropdown">
+                <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                <!--BTECH Start-->
+                <div class="sub-dropdown-content">
+                  <a href="admissions/josaa.html">JoSAA/CSAB</a>
+                  <a href="admissions/dasa.html">DASA</a>
+                  <a href="admissions/facilities.html">Facilities</a>
+                  <a href="admissions/strengths.html">Strengths of NIT Goa</a>
                 </div>
-                <a href="admissions/mtech.html">M.Tech</a>
-                <a href="admissions/phd.html">Ph.D</a>
-                <a
-                  href="static/fee_structure_23-24_25july2023.pdf"
-                  >Fee Structure</a
-                >
-                <div class="sub-dropdown">
-                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
-                  <!--BTECH Start-->
-                  <div class="sub-dropdown-content">
-                      <a href="./static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
-                        >B.Tech Students</a
-                      >
-                      <a href="./static/Rules_mtech_hostel_20june16.pdf"
-                        >M.Tech Students</a
-                      >
-                  </div>
-                  <!--End-->
+                <!--End-->
+              </div>
+              <a href="admissions/mtech.html">M.Tech</a>
+              <a href="admissions/phd.html">Ph.D</a>
+              <a href="static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+              <div class="sub-dropdown">
+                <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
+                <!--BTECH Start-->
+                <div class="sub-dropdown-content">
+                  <a href="./static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                  <a href="./static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
                 </div>
+                <!--End-->
               </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="dropbtn">Training & Placement</button>
-              <div class="dropdown-content">
-                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
-                <a href="#">Company Login</a>
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">People</button>
-              <div class="dropdown-content">
-                <a href="./People/frontend/people_faculty.html">Faculty</a>
-                <a href="./People/frontend/technical_cse.html">Technical Staff</a>
-                <a href="./People/frontend/administrative.html">Administrative Staff</a>
-                <a
-                  href="static/Directory_03july2023.pdf"
-                  >Faculty & Staff Directory</a
-                >
-              </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn">Research</button>
-              <div class="dropdown-content">
-                <a href="research/R&DProjects.html">R & D Projects</a>
-                <a
-                  href="/static/NIT_Goa_IPR_10Nov2015.pdf"
-                  >IPR Policy</a
-                >
-              </div>
-            </div>
-            <div class="dropdown">
-              <a href="outreach_activities.html">Outreach Activities</a>
-            </div>
-            <div class="dropdown">
-              <a href="nirf.html">NIRF</a>
-            </div>
-            <div class="dropdown">
-              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html"
-                >Alumni</a
-              >
-            </div>
-            <div class="dropdown">
-              <a
-                href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx"
-                >Fee Payment</a
-              >
             </div>
           </div>
 
-          <!--Toggle Menu Hamburger-->
-          <div class="menu-toggle" onclick="togglemenu(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="dropdown">
+            <button class="dropbtn">Training & Placement</button>
+            <div class="dropdown-content">
+              <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+              <a href="#">Company Login</a>
+            </div>
           </div>
-
+          <div class="dropdown">
+            <button class="dropbtn">People</button>
+            <div class="dropdown-content">
+              <a href="./People/frontend/people_faculty.html">Faculty</a>
+              <a href="./People/frontend/technical_cse.html">Technical Staff</a>
+              <a href="./People/frontend/administrative.html">Administrative Staff</a>
+              <a href="static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">Research</button>
+            <div class="dropdown-content">
+              <a href="research/R&DProjects.html">R & D Projects</a>
+              <a href="/static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="outreach_activities.html">Outreach Activities</a>
+          </div>
+          <div class="dropdown">
+            <a href="nirf.html">NIRF</a>
+          </div>
+          <div class="dropdown">
+            <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+          </div>
+          <div class="dropdown">
+            <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+          </div>
         </div>
-      </nav>
+
+        <!--Toggle Menu Hamburger-->
+        <div class="menu-toggle" onclick="togglemenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+    </div>
+    </nav>
     </div>
   </header>
 
@@ -661,44 +703,50 @@ src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit
     <!--Slideshow JavaScript Ends Here-->
   </section>
 
-<!--Announcement -->
-<div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
-  <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
-  <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
-  <span class="border-r-2"></span>
-  <marquee class="bg-gray-800 text-blue-100" onmouseover="stopMarquee()" onmouseout="startMarquee()"> 9th Convocation| Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B. Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8 September 2023. Congratulations to the team! | </marquee>
-</div>
+  <!--Announcement -->
+  <div class="flex  bg-gray-800 text-blue-500 p-4 mt-2">
+    <i class="fas fa-bullhorn w-8 mt-1 ml-5"></i>
+    <h2 class="ml-2 text-xl rounded-l mr-4 ">Announcements </h2>
+    <span class="border-r-2"></span>
+    <marquee class="bg-gray-800 text-blue-100" onmouseover="stopMarquee()" onmouseout="startMarquee()"> 9th Convocation|
+      Congratulations to Shruti Patil(III year B.Tech. CSE), Vaibhav Yadav(III year B.Tech. CSE) and Gunaditya Patil(III
+      year B.Tech. EEE) for winning the second prize in Inspirathon, a 24-hour hackathon organized by Don Bosco College
+      of Engineering, Goa, during 6-7 October, 2023. |Aman Kushwaha, Sumit, and Varun Pandiya, students of final year B.
+      Tech. CSE won the first prize at the National level hackathon (24 hour) organized by MNIT Jaipur, during 7-8
+      September 2023. Congratulations to the team! | </marquee>
+  </div>
 
-<!--Javascript for Marquee Interaction Starts Here-->
-<script>
-  function stopMarquee() {
-    const marquee = document.querySelector('marquee');
-    marquee.stop();
-}
+  <!--Javascript for Marquee Interaction Starts Here-->
+  <script>
+    function stopMarquee() {
+      const marquee = document.querySelector('marquee');
+      marquee.stop();
+    }
 
-function startMarquee() {
-    const marquee = document.querySelector('marquee');
-    marquee.start();
-}
+    function startMarquee() {
+      const marquee = document.querySelector('marquee');
+      marquee.start();
+    }
 
-</script>
-<!--Javascript for Marquee Interaction Ends Here-->
+  </script>
+  <!--Javascript for Marquee Interaction Ends Here-->
 
 
   <section class="">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4  mb-4">
       <!-- News and Events-->
-     
+
       <!-- Card start -->
       <div class="bg-blue-900 rounded-3xl shadow-md overflow-hidden pb-12 pl-5 pt-5 pr-5 m-2">
         <!-- Card title -->
-        
-        <div class="sticky top-0 z-10 p-4 text-lg font-semibold bg-blue-900">       
-         <span class="text-xl font-semibold text-white mb-10 pb-10 font-serif ">News and Events</span>
+
+        <div class="sticky top-0 z-10 p-4 text-lg font-semibold bg-blue-900">
+          <span class="text-xl font-semibold text-white mb-10 pb-10 font-serif ">News and Events</span>
           <span>
             <p class="mt-2 font-bold text-gray-600 border-t-4 w-2/3 border-white"></p>
-          </span></div>
-          
+          </span>
+        </div>
+
         <!-- Scrollable card content -->
         <div class="max-h-96 overflow-y-scroll pt-4 pl-4 pr-4 pb-10 bg-white rounded-2xl">
           <ul class="space-y-8 mb-10">
@@ -710,535 +758,794 @@ function startMarquee() {
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
                 href="https://www.nitgoa.ac.in/DisplayPage.aspx?page=es&ItemID=51"> M.Tech (Non-Gate) and SPOT Round</a>
-  
+
             </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/ECE_workshop_Brochure_20oct2023.pdf">   Five Day Workshop on Deep-Learning Approaches for Inverse Problems in Imaging (Online) November 20-24, 2023(Under SSR Activities, SERB, DST, Govt. of India)</a>
-            
+                href="static/ECE_workshop_Brochure_20oct2023.pdf"> Five Day Workshop on Deep-Learning Approaches for
+                Inverse Problems in Imaging (Online) November 20-24, 2023(Under SSR Activities, SERB, DST, Govt. of
+                India)</a>
+
             </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-              href="static/Advertisment__JRF_19oct2023.pdf"> Advertisement for the Position of Junior Research Fellow (JRF) under the R&D Project  of C2S scheme, MeiTY, Govt. of India EE-9/2/2021-R&D-E dated 22.05.2023
-            </a></li>
+                href="static/Advertisment__JRF_19oct2023.pdf"> Advertisement for the Position of Junior Research Fellow
+                (JRF) under the R&D Project of C2S scheme, MeiTY, Govt. of India EE-9/2/2021-R&D-E dated 22.05.2023
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/Advt_for_Medical_Officer_19oct2023.pdf"> Advertisement for the Post of Medical Officer On Temporary Basis 
-            </a></li>
+                href="static/Advt_for_Medical_Officer_19oct2023.pdf"> Advertisement for the Post of Medical Officer On
+                Temporary Basis
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/JRF_Advt_DST_SERB_EEE_04oct2023.pdf"> Applications are invited for JRF position at Dept. of EEE, NIT Goa under SERB, DST, GOI sponsored R&D project DST/SERB/EEQ/2021/000294 (Interview - Hybrid Mode)
-            </a></li>
+                href="static/JRF_Advt_DST_SERB_EEE_04oct2023.pdf"> Applications are invited for JRF position at Dept. of
+                EEE, NIT Goa under SERB, DST, GOI sponsored R&D project DST/SERB/EEQ/2021/000294 (Interview - Hybrid
+                Mode)
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
                 href="https://isroquiz.mygov.in/"> Chandrayaan-3 Maha Quiz
-            </a></li>
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="https://www.nitgoa.ac.in/ninth_convocation/index.html"> 9th Convocation 
-            </a></li>
+                href="https://www.nitgoa.ac.in/ninth_convocation/index.html"> 9th Convocation
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/First_Year_Mater_Time_Table_22august2023.pdf"> First Year Master Time Table 
-            </a></li>
+                href="static/First_Year_Mater_Time_Table_22august2023.pdf"> First Year Master Time Table
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/Covid_E_Book_21march2022.pdf"> E-Booklet containing the COVID-related Research & Development Works done by Centrally Funded Technical Institutions (CFTIs)
-            </a></li>
+                href="static/Covid_E_Book_21march2022.pdf"> E-Booklet containing the COVID-related Research &
+                Development Works done by Centrally Funded Technical Institutions (CFTIs)
+              </a>
+            </li>
             <li> <i class="fas fa-link"></i>
               <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                href="static/Vidya_Lakshmi_Portal29dec15.pdf"> Vidya Lakshmi Portal for Education Loan 
-            </a></li>
-  
+                href="static/Vidya_Lakshmi_Portal29dec15.pdf"> Vidya Lakshmi Portal for Education Loan
+              </a>
+            </li>
+
           </ul>
-          </div>
+        </div>
       </div>
       <!-- Card end -->
-     
-            <!-- Card start -->
-            <div class="bg-blue-900 rounded-3xl shadow-md overflow-hidden pb-12 pl-5 pt-5 pr-5 m-2">
-              <!-- Card title -->
-              <div class="sticky top-0 bg-blue-900 z-10 p-4 text-lg font-semibold">   
-                 <span class="text-xl font-semibold text-white font-serif ">Notice Board </span>
-                <span>
-                  <p class="mt-2 font-bold text-gray-600 border-t-4 w-2/3 border-white"></p>
-                </span>
-              </div>
-              <!-- Scrollable card content -->
-              <div class="max-h-96 overflow-y-scroll p-4 bg-white rounded-2xl">
-                <ul class="">
-                  <div class=""><i class="fas fa-link"></i>
-                    <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/Biannual_Newsletter_31oct2023.pdf"> A Biannual Newsletter - Volume-1 
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="https://nitgoa.ac.in/ninth_convocation/index.html"> 9th Convocation  
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/bus_timings_22august2023.pdf"> First Year Roll Number and Section Details 
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/First_Year_Mater_Time_Table_22august2023.pdf"> First Year Master Time Table
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/circular_15may2023.pdf"> Office Order: Duty Hours for Non-Teaching Staff 
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="outreach_activities.html"> Outreach Activities 
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/Circular_on_awards.pdf"> Circular on Awards/ Prizes/ Fellowships 
-                  </a>
-                  </div>
-                  <div class="mt-8"><i class="fas fa-link"></i>
-                      <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
-                    href="static/GST.pdf"> GST Certificate   
-                  </a>
-                  </div>
-                </ul>              
-              </div>
+
+      <!-- Card start -->
+      <div class="bg-blue-900 rounded-3xl shadow-md overflow-hidden pb-12 pl-5 pt-5 pr-5 m-2">
+        <!-- Card title -->
+        <div class="sticky top-0 bg-blue-900 z-10 p-4 text-lg font-semibold">
+          <span class="text-xl font-semibold text-white font-serif ">Notice Board </span>
+          <span>
+            <p class="mt-2 font-bold text-gray-600 border-t-4 w-2/3 border-white"></p>
+          </span>
+        </div>
+        <!-- Scrollable card content -->
+        <div class="max-h-96 overflow-y-scroll p-4 bg-white rounded-2xl">
+          <ul class="">
+            <div class=""><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="static/Biannual_Newsletter_31oct2023.pdf"> A Biannual Newsletter - Volume-1
+              </a>
             </div>
-            <!-- Card end -->
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="https://nitgoa.ac.in/ninth_convocation/index.html"> 9th Convocation
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="static/bus_timings_22august2023.pdf"> First Year Roll Number and Section Details
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="static/First_Year_Mater_Time_Table_22august2023.pdf"> First Year Master Time Table
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="static/circular_15may2023.pdf"> Office Order: Duty Hours for Non-Teaching Staff
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="outreach_activities.html"> Outreach Activities
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold"
+                href="static/Circular_on_awards.pdf"> Circular on Awards/ Prizes/ Fellowships
+              </a>
+            </div>
+            <div class="mt-8"><i class="fas fa-link"></i>
+              <a class="text-blue-600 hover:text-blue-800 hover:underline font-semibold" href="static/GST.pdf"> GST
+                Certificate
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <!-- Card end -->
 
 
       <!-- Card start -->
       <div class="bg-blue-900 rounded-3xl shadow-md overflow-hidden pb-12 pl-5 pt-5 pr-5 m-2">
         <!-- Card title -->
-        <div class="sticky top-0 bg-blue-900 z-10 p-4 text-lg font-semibold">       
-           <span class="text-xl font-semibold text-white mb-10 pb-10 pr-8 font-serif">Tenders</span>
+        <div class="sticky top-0 bg-blue-900 z-10 p-4 text-lg font-semibold">
+          <span class="text-xl font-semibold text-white mb-10 pb-10 pr-8 font-serif">Tenders</span>
           <span>
             <p class="mt-2 font-bold text-gray-600 border-t-4 w-2/3 border-white"></p>
-          </span></div>
+          </span>
+        </div>
         <!-- Scrollable card content -->
         <div class="max-h-96 overflow-y-scroll p-4 bg-white rounded-2xl">
 
           <ul style="line-height:30px">
-                            
-                            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl00_HyperLink_QuickLink" title="Cancellation of Tender - Repair and maintenance work of GEC Hostel - III left wing (G+1) 28 rooms&quot; NITGOA/PUR/HOSTEL/OW/444 dated 04.10.2023" href="static/Cancellation_of_Tender_4oct2023.pdf" target="_new">Cancellation of Tender - Repair and maintenance work of GEC Hostel - III left wing (G+1) 28 rooms" NITGOA/PUR/HOSTEL/OW/444 dated 04.10.2023</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl00_HyperLink_QuickLink"
+                title="Cancellation of Tender - Repair and maintenance work of GEC Hostel - III left wing (G+1) 28 rooms&quot; NITGOA/PUR/HOSTEL/OW/444 dated 04.10.2023"
+                href="static/Cancellation_of_Tender_4oct2023.pdf" target="_new">Cancellation of Tender - Repair and
+                maintenance work of GEC Hostel - III left wing (G+1) 28 rooms" NITGOA/PUR/HOSTEL/OW/444 dated
+                04.10.2023</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl01_HyperLink_QuickLink" title="Corrigendum - Catering service for 9th Convocation at NIT Goa  campus, Cuncolim - Goa (NITGOA/PUR/CORRIGENDUM/2023-24/OW/424 Date: 29/09/2023)" href="static/CORRIGENDIUM_CATERING_SERVICE_29sept2023.pdf" target="_new">Corrigendum - Catering service for 9th Convocation at NIT Goa  campus, Cuncolim - Goa (NITGOA/PUR/CORRIGENDUM/2023-24/OW/424 Date: 29/09/2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl01_HyperLink_QuickLink"
+                title="Corrigendum - Catering service for 9th Convocation at NIT Goa  campus, Cuncolim - Goa (NITGOA/PUR/CORRIGENDUM/2023-24/OW/424 Date: 29/09/2023)"
+                href="static/CORRIGENDIUM_CATERING_SERVICE_29sept2023.pdf" target="_new">Corrigendum - Catering service
+                for 9th Convocation at NIT Goa campus, Cuncolim - Goa (NITGOA/PUR/CORRIGENDUM/2023-24/OW/424 Date:
+                29/09/2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl02_HyperLink_QuickLink" title="Renewal of ANSYS Software License(Ref No.NITGOA/OT/MECH/2023-24/OW/403 Dated 21.09.2023)" href="static/Renewal_of_Ansys_software_21sept2023.pdf" target="_new">Renewal of ANSYS Software License(Ref No.NITGOA/OT/MECH/2023-24/OW/403 Dated 21.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl02_HyperLink_QuickLink"
+                title="Renewal of ANSYS Software License(Ref No.NITGOA/OT/MECH/2023-24/OW/403 Dated 21.09.2023)"
+                href="static/Renewal_of_Ansys_software_21sept2023.pdf" target="_new">Renewal of ANSYS Software
+                License(Ref No.NITGOA/OT/MECH/2023-24/OW/403 Dated 21.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl03_HyperLink_QuickLink" title="Corrigendum - Convocation Degree Folder(Ref No.NITGOA/CONV PUR/OW/358 Dated 13.09.2023)" href="static/Corrigendum_18sept2023.pdf" target="_new">Corrigendum - Convocation Degree Folder(Ref No.NITGOA/CONV PUR/OW/358 Dated 13.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl03_HyperLink_QuickLink"
+                title="Corrigendum - Convocation Degree Folder(Ref No.NITGOA/CONV PUR/OW/358 Dated 13.09.2023)"
+                href="static/Corrigendum_18sept2023.pdf" target="_new">Corrigendum - Convocation Degree Folder(Ref
+                No.NITGOA/CONV PUR/OW/358 Dated 13.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl04_HyperLink_QuickLink" title="Catering Service for the 9th convocation at NIT Goa Campus, Cuncolim- Goa(Ref No.NITGOA/CONV 2023/PUR/OW/387 dated 15.09.2023)" href="static/Tender_for_food_service_for_convocation_15sept2023.pdf" target="_new">Catering Service for the 9th convocation at NIT Goa Campus, Cuncolim- Goa(Ref No.NITGOA/CONV 2023/PUR/OW/387 dated 15.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl04_HyperLink_QuickLink"
+                title="Catering Service for the 9th convocation at NIT Goa Campus, Cuncolim- Goa(Ref No.NITGOA/CONV 2023/PUR/OW/387 dated 15.09.2023)"
+                href="static/Tender_for_food_service_for_convocation_15sept2023.pdf" target="_new">Catering Service for
+                the 9th convocation at NIT Goa Campus, Cuncolim- Goa(Ref No.NITGOA/CONV 2023/PUR/OW/387 dated
+                15.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl05_HyperLink_QuickLink" title="Corrigendum - Convocation Venue Preparation(Ref No.NITGOA/PUR/CORRIGENDUM/2023-24/OW/386 dated 15.09.2023)" href="static/Corrigendum_15sept2023.pdf" target="_new">Corrigendum - Convocation Venue Preparation(Ref No.NITGOA/PUR/CORRIGENDUM/2023-24/OW/386 dated 15.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl05_HyperLink_QuickLink"
+                title="Corrigendum - Convocation Venue Preparation(Ref No.NITGOA/PUR/CORRIGENDUM/2023-24/OW/386 dated 15.09.2023)"
+                href="static/Corrigendum_15sept2023.pdf" target="_new">Corrigendum - Convocation Venue Preparation(Ref
+                No.NITGOA/PUR/CORRIGENDUM/2023-24/OW/386 dated 15.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl06_HyperLink_QuickLink" title="&quot;Corrigendum for the Annual Maintenance Contract for DG Set&quot;  Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/364 dated 13.09.2023." href="static/Extension_DG_Set_13sept2023.pdf" target="_new">"Corrigendum for the Annual Maintenance Contract for DG Set"  Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/364 dated 13.09.2023.</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl06_HyperLink_QuickLink"
+                title="&quot;Corrigendum for the Annual Maintenance Contract for DG Set&quot;  Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/364 dated 13.09.2023."
+                href="static/Extension_DG_Set_13sept2023.pdf" target="_new">"Corrigendum for the Annual Maintenance
+                Contract for DG Set" Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/364 dated 13.09.2023.</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl07_HyperLink_QuickLink" title="Convocation Venue Preparation(Ref No.NITGOA/CONV 2023/PUR/OW/362 dated 13.09.2023)" href="static/Convocation_Venue_Preparation_13sept2023.pdf" target="_new">Convocation Venue Preparation(Ref No.NITGOA/CONV 2023/PUR/OW/362 dated 13.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl07_HyperLink_QuickLink"
+                title="Convocation Venue Preparation(Ref No.NITGOA/CONV 2023/PUR/OW/362 dated 13.09.2023)"
+                href="static/Convocation_Venue_Preparation_13sept2023.pdf" target="_new">Convocation Venue
+                Preparation(Ref No.NITGOA/CONV 2023/PUR/OW/362 dated 13.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl08_HyperLink_QuickLink" title="Convocation Degree Folder(Ref No.NITGOA/CONV 2023/PUR/OW/358 dated 13.09.2023)" href="static/TenderDegree_Folder_13sept2023.pdf" target="_new">Convocation Degree Folder(Ref No.NITGOA/CONV 2023/PUR/OW/358 dated 13.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl08_HyperLink_QuickLink"
+                title="Convocation Degree Folder(Ref No.NITGOA/CONV 2023/PUR/OW/358 dated 13.09.2023)"
+                href="static/TenderDegree_Folder_13sept2023.pdf" target="_new">Convocation Degree Folder(Ref
+                No.NITGOA/CONV 2023/PUR/OW/358 dated 13.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl09_HyperLink_QuickLink" title="Convocation Dress(Ref No.NITGOA/CONV 2023/PUR/OW/361 dated 13.09.2023)" href="static/Convocation_Dress_13sept2023.pdf" target="_new">Convocation Dress(Ref No.NITGOA/CONV 2023/PUR/OW/361 dated 13.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl09_HyperLink_QuickLink"
+                title="Convocation Dress(Ref No.NITGOA/CONV 2023/PUR/OW/361 dated 13.09.2023)"
+                href="static/Convocation_Dress_13sept2023.pdf" target="_new">Convocation Dress(Ref No.NITGOA/CONV
+                2023/PUR/OW/361 dated 13.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl10_HyperLink_QuickLink" title="Transportation Service for 9th Convocation 2023(Ref.No. NITGOA/Conv 2023/PUR/OW/351 dated 08.09.2023)" href="static/Transportation_Service_for_Convocation_8september2023.pdf" target="_new">Transportation Service for 9th Convocation 2023(Ref.No. NITGOA/Conv 2023/PUR/OW/351 dated 08.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl10_HyperLink_QuickLink"
+                title="Transportation Service for 9th Convocation 2023(Ref.No. NITGOA/Conv 2023/PUR/OW/351 dated 08.09.2023)"
+                href="static/Transportation_Service_for_Convocation_8september2023.pdf" target="_new">Transportation
+                Service for 9th Convocation 2023(Ref.No. NITGOA/Conv 2023/PUR/OW/351 dated 08.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl11_HyperLink_QuickLink" title="Audio/Photography for 9th Convocation(Ref. No. NITGOA/Conv 2023/PUR/OW/350 dated 08.09.2023)" href="static/Audio_and__Photography_8sept2023.pdf" target="_new">Audio/Photography for 9th Convocation(Ref. No. NITGOA/Conv 2023/PUR/OW/350 dated 08.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl11_HyperLink_QuickLink"
+                title="Audio/Photography for 9th Convocation(Ref. No. NITGOA/Conv 2023/PUR/OW/350 dated 08.09.2023)"
+                href="static/Audio_and__Photography_8sept2023.pdf" target="_new">Audio/Photography for 9th
+                Convocation(Ref. No. NITGOA/Conv 2023/PUR/OW/350 dated 08.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl12_HyperLink_QuickLink" title="Convocation Brochure for 9th Convocation 2023(Ref. No. NITGOA/Conv 2023/PUR/OW/349 dated 08.09.2023)" href="static/Convocation_Brochure_8sept2023.pdf" target="_new">Convocation Brochure for 9th Convocation 2023(Ref. No. NITGOA/Conv 2023/PUR/OW/349 dated 08.09.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl12_HyperLink_QuickLink"
+                title="Convocation Brochure for 9th Convocation 2023(Ref. No. NITGOA/Conv 2023/PUR/OW/349 dated 08.09.2023)"
+                href="static/Convocation_Brochure_8sept2023.pdf" target="_new">Convocation Brochure for 9th Convocation
+                2023(Ref. No. NITGOA/Conv 2023/PUR/OW/349 dated 08.09.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl13_HyperLink_QuickLink" title="Corrigendum for the Annual Maintenance Contract for DG Set(Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/326dated 22.08.2023)" href="static/Extension_of_AMC_22august2023.pdf" target="_new">Corrigendum for the Annual Maintenance Contract for DG Set(Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/326dated 22.08.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl13_HyperLink_QuickLink"
+                title="Corrigendum for the Annual Maintenance Contract for DG Set(Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/326dated 22.08.2023)"
+                href="static/Extension_of_AMC_22august2023.pdf" target="_new">Corrigendum for the Annual Maintenance
+                Contract for DG Set(Ref. No. NITGOA/PUR/Corrigendum/2023-24/OW/326dated 22.08.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl14_HyperLink_QuickLink" title="Corrigendum for the  Repair and maintenance work at GEC Hostel-3 - 28 rooms(Ref. No. NITGOA/HOSTEL/Corrigendum/2023-24/OW/319 dated 16.08.2023)" href="static/Corrigendum_-_Repair_and_Maintenance_work_at_GEC_Hostel_16august2023.pdf" target="_new">Corrigendum for the  Repair and maintenance work at GEC Hostel-3 - 28 rooms(Ref. No. NITGOA/HOSTEL/Corrigendum/2023-24/OW/319 dated 16.08.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl14_HyperLink_QuickLink"
+                title="Corrigendum for the  Repair and maintenance work at GEC Hostel-3 - 28 rooms(Ref. No. NITGOA/HOSTEL/Corrigendum/2023-24/OW/319 dated 16.08.2023)"
+                href="static/Corrigendum_-_Repair_and_Maintenance_work_at_GEC_Hostel_16august2023.pdf"
+                target="_new">Corrigendum for the Repair and maintenance work at GEC Hostel-3 - 28 rooms(Ref. No.
+                NITGOA/HOSTEL/Corrigendum/2023-24/OW/319 dated 16.08.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl15_HyperLink_QuickLink" title="Corrigendum for the Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref.No.NITGOA/HOSTEL/Corrigendum/2023-24/OW/317 dated 16.08.2023)" href="static/Corrigendum_-_Repair_of_quarters_in_Transit_Campus_16august2023.pdf" target="_new">Corrigendum for the Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref.No.NITGOA/HOSTEL/Corrigendum/2023-24/OW/317 dated 16.08.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl15_HyperLink_QuickLink"
+                title="Corrigendum for the Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref.No.NITGOA/HOSTEL/Corrigendum/2023-24/OW/317 dated 16.08.2023)"
+                href="static/Corrigendum_-_Repair_of_quarters_in_Transit_Campus_16august2023.pdf"
+                target="_new">Corrigendum for the Repair work at D1, D3, D4 and D6 at Transit Campus of NIT
+                GOA(Ref.No.NITGOA/HOSTEL/Corrigendum/2023-24/OW/317 dated 16.08.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl16_HyperLink_QuickLink" title="1. Stationary and computer consumables 2. Consumables (Ref No. NITGOA/MECH/PUR/2023-24/OW/304 dated 08.08.2023)" href="static/Consumables_8august2023.pdf" target="_new">1. Stationary and computer consumables 2. Consumables (Ref No. NITGOA/MECH/PUR/2023-24/OW/304 dated 08.08.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl16_HyperLink_QuickLink"
+                title="1. Stationary and computer consumables 2. Consumables (Ref No. NITGOA/MECH/PUR/2023-24/OW/304 dated 08.08.2023)"
+                href="static/Consumables_8august2023.pdf" target="_new">1. Stationary and computer consumables 2.
+                Consumables (Ref No. NITGOA/MECH/PUR/2023-24/OW/304 dated 08.08.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl17_HyperLink_QuickLink" title="Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/298 dated 03.08.2023)" href="static/Repair_Hostels_5august2023.pdf" target="_new">Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/298 dated 03.08.2023)</a>
-                <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl17_Image_NewNews" src="images\system\new_blink.gif" style="border-width:0px;" />
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl17_HyperLink_QuickLink"
+                title="Repair work at D1, D3, D4 and D6 at Transit Campus of NIT GOA(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/298 dated 03.08.2023)"
+                href="static/Repair_Hostels_5august2023.pdf" target="_new">Repair work at D1, D3, D4 and D6 at Transit
+                Campus of NIT GOA(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/298 dated 03.08.2023)</a>
+              <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl17_Image_NewNews"
+                src="images\system\new_blink.gif" style="border-width:0px;" />
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl18_HyperLink_QuickLink" title="Repair and maintenance work at Hostel-3(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/299 dated 03.08.2023)" href="static/Repair_works_GEC_Hostel_4august2023.pdf" target="_new">Repair and maintenance work at Hostel-3(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/299 dated 03.08.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl18_HyperLink_QuickLink"
+                title="Repair and maintenance work at Hostel-3(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/299 dated 03.08.2023)"
+                href="static/Repair_works_GEC_Hostel_4august2023.pdf" target="_new">Repair and maintenance work at
+                Hostel-3(Ref. No. NITGOA/OT/HOSTEL/WORKS/2023-24/OW/299 dated 03.08.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl19_HyperLink_QuickLink" title="Annual Maintenance Contract for DG Set&quot; Ref. No. NITGOA/EEE/PUR/2023-24/OW/294 dated 28.07.2023" href="static/AMC_Tender_28july2023.pdf" target="_new">Annual Maintenance Contract for DG Set(Ref. No.NITGOA/EEE/PUR/2023-24/OW/294 dated 28.07.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl19_HyperLink_QuickLink"
+                title="Annual Maintenance Contract for DG Set&quot; Ref. No. NITGOA/EEE/PUR/2023-24/OW/294 dated 28.07.2023"
+                href="static/AMC_Tender_28july2023.pdf" target="_new">Annual Maintenance Contract for DG Set(Ref.
+                No.NITGOA/EEE/PUR/2023-24/OW/294 dated 28.07.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl20_HyperLink_QuickLink" title="Renewal of Subscription of Turnitun (Ref. No. NITGOA/PUR/LIBRARY/2023-24/OW/292 dated 28.07.2023)" href="static/Subscription_of_Turnitin_28july2023.pdf" target="_new">Renewal of Subscription of Turnitun (Ref. No. NITGOA/PUR/LIBRARY/2023-24/OW/292 dated 28.07.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl20_HyperLink_QuickLink"
+                title="Renewal of Subscription of Turnitun (Ref. No. NITGOA/PUR/LIBRARY/2023-24/OW/292 dated 28.07.2023)"
+                href="static/Subscription_of_Turnitin_28july2023.pdf" target="_new">Renewal of Subscription of Turnitun
+                (Ref. No. NITGOA/PUR/LIBRARY/2023-24/OW/292 dated 28.07.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl21_HyperLink_QuickLink" title="Subscription of CMIE Prowess IQ Database(Ref. No.NITGOA/PUR/LIBRARY/2023-24/OW/293 dated 28.07.2023)" href="static/CMIE_Prowess_IQ_Database_28july2023.pdf" target="_new">Subscription of CMIE Prowess IQ Database(Ref. No.NITGOA/PUR/LIBRARY/2023-24/OW/293 dated 28.07.2023)</a>
-                <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl21_Image_NewNews" src="images\system\new_blink.gif" style="border-width:0px;" />
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl21_HyperLink_QuickLink"
+                title="Subscription of CMIE Prowess IQ Database(Ref. No.NITGOA/PUR/LIBRARY/2023-24/OW/293 dated 28.07.2023)"
+                href="static/CMIE_Prowess_IQ_Database_28july2023.pdf" target="_new">Subscription of CMIE Prowess IQ
+                Database(Ref. No.NITGOA/PUR/LIBRARY/2023-24/OW/293 dated 28.07.2023)</a>
+              <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl21_Image_NewNews"
+                src="images\system\new_blink.gif" style="border-width:0px;" />
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl22_HyperLink_QuickLink" title="Repair work for blockage of sewer and waste lines including soak pit for D1,D3,D4 hostels Ref.No.NITGOA/OT/HOSTEL/WORKS/2023-24/OW/281 dated 21.07.2023" href="static/Soakpit_tender_21july2023.pdf" target="_new">Repair work for blockage of sewer and waste lines including soak pit for D1,D3,D4 hostels Ref.No.NITGOA/OT/HOSTEL/WORKS/2023-24/OW/281 dated 21.07.2023</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl22_HyperLink_QuickLink"
+                title="Repair work for blockage of sewer and waste lines including soak pit for D1,D3,D4 hostels Ref.No.NITGOA/OT/HOSTEL/WORKS/2023-24/OW/281 dated 21.07.2023"
+                href="static/Soakpit_tender_21july2023.pdf" target="_new">Repair work for blockage of sewer and waste
+                lines including soak pit for D1,D3,D4 hostels Ref.No.NITGOA/OT/HOSTEL/WORKS/2023-24/OW/281 dated
+                21.07.2023</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl23_HyperLink_QuickLink" title="Tender For Providing Canteen Service at NIT GOA" href="static/Canteen_Tender_7july2023.pdf" target="_new">Tender For Providing Canteen Service at NIT GOA</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl23_HyperLink_QuickLink"
+                title="Tender For Providing Canteen Service at NIT GOA" href="static/Canteen_Tender_7july2023.pdf"
+                target="_new">Tender For Providing Canteen Service at NIT GOA</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl24_HyperLink_QuickLink" href="static/TenderBiometric_30june2023.pdf" target="_new">Procurement of Face Recognition Biometric Attendance System(Ref No.NITGOA/INST/PUR/2023-24/OW/249 Dt.30.06.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl24_HyperLink_QuickLink"
+                href="static/TenderBiometric_30june2023.pdf" target="_new">Procurement of Face Recognition Biometric
+                Attendance System(Ref No.NITGOA/INST/PUR/2023-24/OW/249 Dt.30.06.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl25_HyperLink_QuickLink" title="Procurement of Monitor (Ref No.NITGOA/CSE/PUR/2023-24/OW/198 Dt.22.05.2023)" href="static/Tender_for_Monitor_22may2023.pdf" target="_new">Procurement of Monitor (Ref No.NITGOA/CSE/PUR/2023-24/OW/198 Dt.22.05.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl25_HyperLink_QuickLink"
+                title="Procurement of Monitor (Ref No.NITGOA/CSE/PUR/2023-24/OW/198 Dt.22.05.2023)"
+                href="static/Tender_for_Monitor_22may2023.pdf" target="_new">Procurement of Monitor (Ref
+                No.NITGOA/CSE/PUR/2023-24/OW/198 Dt.22.05.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl26_HyperLink_QuickLink" title="Procurement of Server Rack(Ref No.NITGOA/CSE/PUR/2023-24/OW/197 Dt.22.05.2023)" href="static/Tender_for_Server_Rack_22may2023.pdf" target="_new">Procurement of Server Rack(Ref No.NITGOA/CSE/PUR/2023-24/OW/197 Dt.22.05.2023)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl26_HyperLink_QuickLink"
+                title="Procurement of Server Rack(Ref No.NITGOA/CSE/PUR/2023-24/OW/197 Dt.22.05.2023)"
+                href="static/Tender_for_Server_Rack_22may2023.pdf" target="_new">Procurement of Server Rack(Ref
+                No.NITGOA/CSE/PUR/2023-24/OW/197 Dt.22.05.2023)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl27_HyperLink_QuickLink" title="Various repairs to toilets and other affected areas of E/E and E/C quarters of NIT GOA" href="static/tender_22dec2022.pdf" target="_new">Various repairs to toilets and other affected areas of E/E and E/C quarters of NIT GOA</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl27_HyperLink_QuickLink"
+                title="Various repairs to toilets and other affected areas of E/E and E/C quarters of NIT GOA"
+                href="static/tender_22dec2022.pdf" target="_new">Various repairs to toilets and other affected areas of
+                E/E and E/C quarters of NIT GOA</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl28_HyperLink_QuickLink" title="Repair of UPS and Replacement of Battery with buy back of old batteries" href="static/tender_16dec2022_.pdf" target="_new">Repair of UPS and Replacement of Battery with buy back of old batteries</a>            </li>
-            <div class="mt-8">
-            </div>
-        
-            
-            <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl29_HyperLink_QuickLink" title="Supply of Library Books at NIT GOA Campus,Farmagudi(NITGOA/OT/LIBRARY/2022-23/OW/414 dated Dated:12.12.2022)" href="static/Library_Books_Tender_12dec2022.pdf" target="_new">Supply of Library Books at NIT GOA Campus,Farmagudi(NITGOA/OT/LIBRARY/2022-23/OW/414 dated Dated:12.12.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl28_HyperLink_QuickLink"
+                title="Repair of UPS and Replacement of Battery with buy back of old batteries"
+                href="static/tender_16dec2022_.pdf" target="_new">Repair of UPS and Replacement of Battery with buy back
+                of old batteries</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl30_HyperLink_QuickLink" title="Answer Booklets of 24 pages-4000 nos.(NITGOA/EXAM CELL/PUR/2022-23/OW/386 dated Dated:11.11.2022)" href="static/Notice_Answer_Booklet_11nov2022.pdf" target="_new">Answer Booklets of 24 pages-4000 nos.(NITGOA/EXAM CELL/PUR/2022-23/OW/386 dated Dated:11.11.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl29_HyperLink_QuickLink"
+                title="Supply of Library Books at NIT GOA Campus,Farmagudi(NITGOA/OT/LIBRARY/2022-23/OW/414 dated Dated:12.12.2022)"
+                href="static/Library_Books_Tender_12dec2022.pdf" target="_new">Supply of Library Books at NIT GOA
+                Campus,Farmagudi(NITGOA/OT/LIBRARY/2022-23/OW/414 dated Dated:12.12.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl31_HyperLink_QuickLink" title="Licensing and Subscription of LabView Software for 3 years-Full Software Bundle(NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/382 Dated:04.11.2022)" href="static/Licensing_and_Subscription_of_Lab_View_Software_for_3_yrs_4nov2022.pdf" target="_new">Licensing and Subscription of LabView Software for 3 years-Full Software Bundle(NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/382 Dated:04.11.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl30_HyperLink_QuickLink"
+                title="Answer Booklets of 24 pages-4000 nos.(NITGOA/EXAM CELL/PUR/2022-23/OW/386 dated Dated:11.11.2022)"
+                href="static/Notice_Answer_Booklet_11nov2022.pdf" target="_new">Answer Booklets of 24 pages-4000
+                nos.(NITGOA/EXAM CELL/PUR/2022-23/OW/386 dated Dated:11.11.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl32_HyperLink_QuickLink" title="Corrigendum for extension for Institute Magazine (NITGOA/CORRIGENDUM/2022-23/OW/371 Dated: 20.10.2022)" href="static/Institute_Magazine_20oct2022.pdf" target="_new">Corrigendum for extension for Institute Magazine (NITGOA/CORRIGENDUM/2022-23/OW/371 Dated: 20.10.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl31_HyperLink_QuickLink"
+                title="Licensing and Subscription of LabView Software for 3 years-Full Software Bundle(NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/382 Dated:04.11.2022)"
+                href="static/Licensing_and_Subscription_of_Lab_View_Software_for_3_yrs_4nov2022.pdf"
+                target="_new">Licensing and Subscription of LabView Software for 3 years-Full Software
+                Bundle(NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/382 Dated:04.11.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl33_HyperLink_QuickLink" title="Corrigendum for Extension of Notice Inviting Quotation for Procurement of Institute Magazine" href="static/Corrigendum_Extension_Institute_Magazine_7oct2022.pdf" target="_new">Corrigendum for Extension of Notice Inviting Quotation for Procurement of Institute Magazine</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl32_HyperLink_QuickLink"
+                title="Corrigendum for extension for Institute Magazine (NITGOA/CORRIGENDUM/2022-23/OW/371 Dated: 20.10.2022)"
+                href="static/Institute_Magazine_20oct2022.pdf" target="_new">Corrigendum for extension for Institute
+                Magazine (NITGOA/CORRIGENDUM/2022-23/OW/371 Dated: 20.10.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl34_HyperLink_QuickLink" title="Corrigendum for Extension of Tender for Procurement of Projector Qty 04 Nos" href="static/Extension_of_projector_6oct2022.pdf" target="_new">Corrigendum for Extension of Tender for Procurement of Projector Qty 04 Nos</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl33_HyperLink_QuickLink"
+                title="Corrigendum for Extension of Notice Inviting Quotation for Procurement of Institute Magazine"
+                href="static/Corrigendum_Extension_Institute_Magazine_7oct2022.pdf" target="_new">Corrigendum for
+                Extension of Notice Inviting Quotation for Procurement of Institute Magazine</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl35_HyperLink_QuickLink" title="Second Extension of Tender for Empanelment of Pharmacy" href="static/Second_Extension_of_Empanellemnt_of_Pharmacy_04oct2022.pdf" target="_new">Second Extension of Tender for Empanelment of Pharmacy</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl34_HyperLink_QuickLink"
+                title="Corrigendum for Extension of Tender for Procurement of Projector Qty 04 Nos"
+                href="static/Extension_of_projector_6oct2022.pdf" target="_new">Corrigendum for Extension of Tender for
+                Procurement of Projector Qty 04 Nos</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl36_HyperLink_QuickLink" title="Corrigendum for Extension of Geology Lab Equipments(NITGOA/CORRIGENDUM/2022-23/OW/321 Dated:27.09.2022)" href="static/geology_lab_equipment_extension_27sept2022.pdf" target="_new">Corrigendum for Extension of Geology Lab Equipments(NITGOA/CORRIGENDUM/2022-23/OW/321 Dated:27.09.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl35_HyperLink_QuickLink"
+                title="Second Extension of Tender for Empanelment of Pharmacy"
+                href="static/Second_Extension_of_Empanellemnt_of_Pharmacy_04oct2022.pdf" target="_new">Second Extension
+                of Tender for Empanelment of Pharmacy</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl37_HyperLink_QuickLink" title="Procurement of Institute Magazine(NITGOA/INST/PUR/2022/OW/320 Dated: 27.09.2022)" href="static/institute_magazine_27sept2022.pdf" target="_new">Procurement of Institute Magazine(NITGOA/INST/PUR/2022/OW/320 Dated: 27.09.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl36_HyperLink_QuickLink"
+                title="Corrigendum for Extension of Geology Lab Equipments(NITGOA/CORRIGENDUM/2022-23/OW/321 Dated:27.09.2022)"
+                href="static/geology_lab_equipment_extension_27sept2022.pdf" target="_new">Corrigendum for Extension of
+                Geology Lab Equipments(NITGOA/CORRIGENDUM/2022-23/OW/321 Dated:27.09.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl38_HyperLink_QuickLink" title="Tansportation Service for 8th Convocation 2022 held at Raj Bhavan Dona Paula (NITGOA/CONV2022/PUR/OW/312 Dated: 16.09.2022)" href="static/TRANSPORT_SERVICE_FOR_CONVOCATION_16sept2022.pdf" target="_new">Tansportation Service for 8th Convocation 2022 held at Raj Bhavan Dona Paula (NITGOA/CONV2022/PUR/OW/312 Dated: 16.09.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl37_HyperLink_QuickLink"
+                title="Procurement of Institute Magazine(NITGOA/INST/PUR/2022/OW/320 Dated: 27.09.2022)"
+                href="static/institute_magazine_27sept2022.pdf" target="_new">Procurement of Institute
+                Magazine(NITGOA/INST/PUR/2022/OW/320 Dated: 27.09.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl39_HyperLink_QuickLink" title="Procurement of Projector (NITGOA/PUR/DEAN ACAD/2-22-23/OW/310 Dtd: 15.09.2022)" href="static/Tender_Projector_15sept2022.pdf" target="_new">Procurement of Projector (NITGOA/PUR/DEAN ACAD/2-22-23/OW/310 Dtd: 15.09.2022)</a>
-                <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl39_Image_NewNews" src="images\system\new_blink.gif" style="border-width:0px;" />
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl38_HyperLink_QuickLink"
+                title="Tansportation Service for 8th Convocation 2022 held at Raj Bhavan Dona Paula (NITGOA/CONV2022/PUR/OW/312 Dated: 16.09.2022)"
+                href="static/TRANSPORT_SERVICE_FOR_CONVOCATION_16sept2022.pdf" target="_new">Tansportation Service for
+                8th Convocation 2022 held at Raj Bhavan Dona Paula (NITGOA/CONV2022/PUR/OW/312 Dated: 16.09.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl40_HyperLink_QuickLink" title="Corrigendum for  Extension of Tender for Empanelment of Pharmacy at NIT Goa" href="static/Tender_Empanellement_of_Pharmacy_15sept2022.pdf" target="_new">Corrigendum for  Extension of Tender for Empanelment of Pharmacy at NIT Goa</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl39_HyperLink_QuickLink"
+                title="Procurement of Projector (NITGOA/PUR/DEAN ACAD/2-22-23/OW/310 Dtd: 15.09.2022)"
+                href="static/Tender_Projector_15sept2022.pdf" target="_new">Procurement of Projector (NITGOA/PUR/DEAN
+                ACAD/2-22-23/OW/310 Dtd: 15.09.2022)</a>
+              <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl39_Image_NewNews"
+                src="images\system\new_blink.gif" style="border-width:0px;" />
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl41_HyperLink_QuickLink" title="Convocation Stoles  (NITGOA/CONV2022/PUR/OW/299 Dated: 09.09.2022)" href="static/Convocation_Stole_9sept2022.pdf" target="_new">Convocation Stoles  (NITGOA/CONV2022/PUR/OW/299 Dated: 09.09.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl40_HyperLink_QuickLink"
+                title="Corrigendum for  Extension of Tender for Empanelment of Pharmacy at NIT Goa"
+                href="static/Tender_Empanellement_of_Pharmacy_15sept2022.pdf" target="_new">Corrigendum for Extension of
+                Tender for Empanelment of Pharmacy at NIT Goa</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl42_HyperLink_QuickLink" title="Geology Lab Equipment (NITGOA/CIVIL/PUR/2022-23/OW/298 Dated: 09.09.2022)." href="static/Geology_Lab_Equipment_9sept2022.pdf" target="_new">Geology Lab Equipment (NITGOA/CIVIL/PUR/2022-23/OW/298 Dated: 09.09.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl41_HyperLink_QuickLink"
+                title="Convocation Stoles  (NITGOA/CONV2022/PUR/OW/299 Dated: 09.09.2022)"
+                href="static/Convocation_Stole_9sept2022.pdf" target="_new">Convocation Stoles
+                (NITGOA/CONV2022/PUR/OW/299 Dated: 09.09.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl43_HyperLink_QuickLink" title="VMware vSphere Essential Kit with a support of 03 Years (Ref No: NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/297 DATED: 09.09.2022" href="static/VMware_vSphere_Essentials_kit_9sept2022.pdf" target="_new">VMware vSphere Essential Kit with a support of 03 Years (Ref No: NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/297 DATED: 09.09.2022</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl42_HyperLink_QuickLink"
+                title="Geology Lab Equipment (NITGOA/CIVIL/PUR/2022-23/OW/298 Dated: 09.09.2022)."
+                href="static/Geology_Lab_Equipment_9sept2022.pdf" target="_new">Geology Lab Equipment
+                (NITGOA/CIVIL/PUR/2022-23/OW/298 Dated: 09.09.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl44_HyperLink_QuickLink" title="Convocation Brochures Design and Printing (NITGOA/CONV2022/PUR/2022/OW/270 Dated:29.08.2022" href="static/convocation_brouchers_29aug2022.pdf" target="_new">Convocation Brochures Design and Printing (NITGOA/CONV2022/PUR/2022/OW/270 Dated:29.08.2022</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl43_HyperLink_QuickLink"
+                title="VMware vSphere Essential Kit with a support of 03 Years (Ref No: NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/297 DATED: 09.09.2022"
+                href="static/VMware_vSphere_Essentials_kit_9sept2022.pdf" target="_new">VMware vSphere Essential Kit
+                with a support of 03 Years (Ref No: NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/297 DATED: 09.09.2022</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl45_HyperLink_QuickLink" title="Licensing and Subscription of Lab View Software for 03 Years- Full Software Bundle&quot; NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/276 DATED: 07/09/2022" href="static/Lab_View_Software_7sept2022.pdf" target="_new">Licensing and Subscription of Lab View Software for 03 Years- Full Software Bundle" NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/276 DATED: 07/09/2022</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl44_HyperLink_QuickLink"
+                title="Convocation Brochures Design and Printing (NITGOA/CONV2022/PUR/2022/OW/270 Dated:29.08.2022"
+                href="static/convocation_brouchers_29aug2022.pdf" target="_new">Convocation Brochures Design and
+                Printing (NITGOA/CONV2022/PUR/2022/OW/270 Dated:29.08.2022</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl46_HyperLink_QuickLink" title="Quotation Notice for Procurement of Convocation-2022 folders" href="static/tender_26aug2022.pdf" target="_new">Quotation Notice for Procurement of Convocation-2022 folders</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl45_HyperLink_QuickLink"
+                title="Licensing and Subscription of Lab View Software for 03 Years- Full Software Bundle&quot; NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/276 DATED: 07/09/2022"
+                href="static/Lab_View_Software_7sept2022.pdf" target="_new">Licensing and Subscription of Lab View
+                Software for 03 Years- Full Software Bundle" NITGOA/CSE/SERB-IMPRINT/PUR/2022-23/OW/276 DATED:
+                07/09/2022</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl47_HyperLink_QuickLink" title="Tender for Empanelment of Pharmacy at NIT Goa" href="static/Tender_for_Empanellement_of_Pharmacy_17aug2022.pdf" target="_new">Tender for Empanelment of Pharmacy at NIT Goa</a>
-                <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl47_Image_NewNews" src="images\system\new_blink.gif" style="border-width:0px;" />
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl46_HyperLink_QuickLink"
+                title="Quotation Notice for Procurement of Convocation-2022 folders" href="static/tender_26aug2022.pdf"
+                target="_new">Quotation Notice for Procurement of Convocation-2022 folders</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl48_HyperLink_QuickLink" title="Repair renovation and strengthening of building D1 for NITGoa Hostel at farmagudi(Ref No:NITGOA/OT/HOSTEL/WORKS/22-23/OW/233 Dated:26.07.2022)" href="static/D1_Hostel_Repair_26july2022.pdf" target="_new">Repair renovation and strengthening of building D1 for NITGoa Hostel at farmagudi(Ref No:NITGOA/OT/HOSTEL/WORKS/22-23/OW/233 Dated:26.07.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl47_HyperLink_QuickLink"
+                title="Tender for Empanelment of Pharmacy at NIT Goa"
+                href="static/Tender_for_Empanellement_of_Pharmacy_17aug2022.pdf" target="_new">Tender for Empanelment of
+                Pharmacy at NIT Goa</a>
+              <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl47_Image_NewNews"
+                src="images\system\new_blink.gif" style="border-width:0px;" />
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl49_HyperLink_QuickLink" title="Notice Inviting Quotation - Physics Lab Consumables ( NITGOA/PUR/APS/2022-23/OW/211 Dated: 20.06.2022)" href="static/quotation_for_PhysicsLab_20june2022.pdf" target="_new">Notice Inviting Quotation - Physics Lab Consumables ( NITGOA/PUR/APS/2022-23/OW/211 Dated: 20.06.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl48_HyperLink_QuickLink"
+                title="Repair renovation and strengthening of building D1 for NITGoa Hostel at farmagudi(Ref No:NITGOA/OT/HOSTEL/WORKS/22-23/OW/233 Dated:26.07.2022)"
+                href="static/D1_Hostel_Repair_26july2022.pdf" target="_new">Repair renovation and strengthening of
+                building D1 for NITGoa Hostel at farmagudi(Ref No:NITGOA/OT/HOSTEL/WORKS/22-23/OW/233
+                Dated:26.07.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl50_HyperLink_QuickLink" title="CORRIGENDUM-MANUAL HYDRAULIC PELLITIZER OR PELLET PRESS AND DESKTOP FILAMENT EXTRUDER" href="static/CORRIGENDUM-MANUAL_HYDRAULIC_PELLITIZER_3june2022.pdf" target="_new">CORRIGENDUM-MANUAL HYDRAULIC PELLITIZER OR PELLET PRESS AND DESKTOP FILAMENT EXTRUDER</a>
-                <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl50_Image_NewNews" src="images\system\new_blink.gif" style="border-width:0px;" />
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl49_HyperLink_QuickLink"
+                title="Notice Inviting Quotation - Physics Lab Consumables ( NITGOA/PUR/APS/2022-23/OW/211 Dated: 20.06.2022)"
+                href="static/quotation_for_PhysicsLab_20june2022.pdf" target="_new">Notice Inviting Quotation - Physics
+                Lab Consumables ( NITGOA/PUR/APS/2022-23/OW/211 Dated: 20.06.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl51_HyperLink_QuickLink" title="Tender for Water Supply to NITGOA AS ON CALL BASIS(NITGOA/PUR/HOSTEL/2022-23/OW/175 DTD:27.05.2022)" href="static/Water_Tender_27may2022.pdf" target="_new">Tender for Water Supply to NITGOA AS ON CALL BASIS(NITGOA/PUR/HOSTEL/2022-23/OW/175 DTD:27.05.2022)</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl50_HyperLink_QuickLink"
+                title="CORRIGENDUM-MANUAL HYDRAULIC PELLITIZER OR PELLET PRESS AND DESKTOP FILAMENT EXTRUDER"
+                href="static/CORRIGENDUM-MANUAL_HYDRAULIC_PELLITIZER_3june2022.pdf" target="_new">CORRIGENDUM-MANUAL
+                HYDRAULIC PELLITIZER OR PELLET PRESS AND DESKTOP FILAMENT EXTRUDER</a>
+              <img id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl50_Image_NewNews"
+                src="images\system\new_blink.gif" style="border-width:0px;" />
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl52_HyperLink_QuickLink" title="Corrigendum-Extension of Tender Submission dated for MATLAB Procurement-NITGOA/INST/2022-23/OW/143" href="static/Corrigendum-Extension_of_Matlab_Tender_20may2022.pdf" target="_new">Corrigendum-Extension of Tender Submission dated for MATLAB Procurement-NITGOA/INST/2022-23/OW/143</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl51_HyperLink_QuickLink"
+                title="Tender for Water Supply to NITGOA AS ON CALL BASIS(NITGOA/PUR/HOSTEL/2022-23/OW/175 DTD:27.05.2022)"
+                href="static/Water_Tender_27may2022.pdf" target="_new">Tender for Water Supply to NITGOA AS ON CALL
+                BASIS(NITGOA/PUR/HOSTEL/2022-23/OW/175 DTD:27.05.2022)</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl53_HyperLink_QuickLink" title="Corrigendum-Extension of Due date for submission of bid for Repair of CNC Milling Machine" href="static/Corrigendum-Repair_of_CNC_Milling_Machine_13may2022.pdf" target="_new">Corrigendum-Extension of Due date for submission of bid for Repair of CNC Milling Machine</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl52_HyperLink_QuickLink"
+                title="Corrigendum-Extension of Tender Submission dated for MATLAB Procurement-NITGOA/INST/2022-23/OW/143"
+                href="static/Corrigendum-Extension_of_Matlab_Tender_20may2022.pdf" target="_new">Corrigendum-Extension
+                of Tender Submission dated for MATLAB Procurement-NITGOA/INST/2022-23/OW/143</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl54_HyperLink_QuickLink" title="Tender for Procurement of Manual Hydraulic Pelletizer or Pellet Press and Desktop Filament Extruder" href="static/Procurement_of_Manual_Hydraulic_Pelletizer_and_Desktop_Filament_Extruder_11may2022.pdf" target="_new">Tender for Procurement of Manual Hydraulic Pelletizer or Pellet Press and Desktop Filament Extruder</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl53_HyperLink_QuickLink"
+                title="Corrigendum-Extension of Due date for submission of bid for Repair of CNC Milling Machine"
+                href="static/Corrigendum-Repair_of_CNC_Milling_Machine_13may2022.pdf"
+                target="_new">Corrigendum-Extension of Due date for submission of bid for Repair of CNC Milling
+                Machine</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl55_HyperLink_QuickLink" title="CORRIGENDUM-EXTENSION for submission of bids for Repair of CNC Milling Machine" href="static/Corrigendum-Extension_of_Repair_of_CNC_Milling_Machine_02may2022.pdf" target="_new">CORRIGENDUM-EXTENSION for submission of bids for Repair of CNC Milling Machine</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl54_HyperLink_QuickLink"
+                title="Tender for Procurement of Manual Hydraulic Pelletizer or Pellet Press and Desktop Filament Extruder"
+                href="static/Procurement_of_Manual_Hydraulic_Pelletizer_and_Desktop_Filament_Extruder_11may2022.pdf"
+                target="_new">Tender for Procurement of Manual Hydraulic Pelletizer or Pellet Press and Desktop Filament
+                Extruder</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            
+
+
             <li class="">
-                <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline" id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl56_HyperLink_QuickLink" title="Corrigendum-Licesning and Subscription of Lab View Software for 03 years-Full Software Bundle" href="static/Corrigendum-Licensing_and_Subscription_of_lab_view_software_27april2022.pdf" target="_new">Corrigendum-Licesning and Subscription of Lab View Software for 03 years-Full Software Bundle</a>
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl55_HyperLink_QuickLink"
+                title="CORRIGENDUM-EXTENSION for submission of bids for Repair of CNC Milling Machine"
+                href="static/Corrigendum-Extension_of_Repair_of_CNC_Milling_Machine_02may2022.pdf"
+                target="_new">CORRIGENDUM-EXTENSION for submission of bids for Repair of CNC Milling Machine</a>
             </li>
             <div class="mt-8">
             </div>
-        
-            </ul>
-               </div>
+
+
+            <li class="">
+              <i class="fas fa-link"></i><a class="text-blue-600 hover:text-blue-900 font-semibold hover:underline"
+                id="ctl00_ContentPlaceHolder_Main_Repeater_QuickLink_ctl56_HyperLink_QuickLink"
+                title="Corrigendum-Licesning and Subscription of Lab View Software for 03 years-Full Software Bundle"
+                href="static/Corrigendum-Licensing_and_Subscription_of_lab_view_software_27april2022.pdf"
+                target="_new">Corrigendum-Licesning and Subscription of Lab View Software for 03 years-Full Software
+                Bundle</a>
+            </li>
+            <div class="mt-8">
+            </div>
+
+          </ul>
+        </div>
       </div>
       <!-- Card end -->
     </div>
-    
+
     <div class="bg-white p-4 pt-2">
       <span class="text-3xl font-semibold font-serif text-blue-900">Placement and Higher Studies</span>
- <p class="font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
-</div>
+      <p class="font-bold text-gray-600 border-t-4 w-1/6 border-blue-600 "></p>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mb-10 bg-white">
 
       <div class="pr-92 ">
@@ -1246,26 +1553,25 @@ function startMarquee() {
         <!--Statistics-->
 
         <span>
-          <div id="chart_div" style="width: 50vh; margin: auto;"></div>
-         
+          <div id="chart_div" style=" width: 550px;"></div>
+
         </span>
-       
+
         <!--Statistics Chart-->
-        
-       
-        </div>
-        <div id="bar-chart" class="justify-center items-center p-10">
-          <canvas id="myChart" style="width:45vh; height:45vh; margin: auto;"></canvas>
+
+
+      </div>
+      <div id="bar-chart" class="justify-center items-center">
+        <canvas id="myChart" style="width:100%; height:350px"></canvas>
       </div>
 
       <!--JavaScript Chart-->
-      <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
       </script>
-<!--JavaScript Chart Data-->
+      <!--JavaScript Chart Data-->
       <script>
-        var xValues = ["CSE", "ECE", "EEE", "ME", "CVE","Others"];
-        var yValues = [16,6, 3, 7, 5, 4];
+        var xValues = ["CSE", "ECE", "EEE", "ME", "CVE", "Others"];
+        var yValues = [16, 6, 3, 7, 5, 4];
         var barColors = [
           "#b91d47",
           "#00aba9",
@@ -1274,8 +1580,8 @@ function startMarquee() {
           "#1e7145",
           "#007D7D"
         ];
-        
-        var textColor= "#1f398a";
+
+        var textColor = "#1f398a";
         new Chart("myChart", {
           type: "pie",
           data: {
@@ -1289,183 +1595,188 @@ function startMarquee() {
             title: {
               display: true,
               text: "NIT Goa Placements Sector-Wise (2023)",
-              fontColor : textColor
+              fontColor: textColor
             }
           }
         });
-        </script>
-       
-        <!--Tweets-->
-        <div class="items-center justify-content m-auto">
-        <div class="tweet-section p-5 rounded-2xl">
-        <h2 class="text-3xl font-semibold font-serif text-white justify-center  text-blue-900 mt-5 ">Tweets</h2>
-      <div>
-
-          <blockquote class="twitter-tweet">
-
-            <p lang="en" dir="ltr">Phase 3 of <a
-                href="https://twitter.com/hashtag/YuvaSangam?src=hash&amp;ref_src=twsrc%5Etfw">#YuvaSangam</a> invites
-              you to embark on a life-changing journey! 🌟 <br>Hurry! registrations are open until October 28th.📆
-              <br><br> Apply today!✅ <a href="https://t.co/WeNhwSWIfw">https://t.co/WeNhwSWIfw</a><a
-                href="https://twitter.com/hashtag/EkBharatShreshthaBharat?src=hash&amp;ref_src=twsrc%5Etfw">#EkBharatShreshthaBharat</a>
-              <a
-                href="https://twitter.com/hashtag/EkBharatShreshtaBharat?src=hash&amp;ref_src=twsrc%5Etfw">#EkBharatShreshtaBharat</a>
-              <a href="https://twitter.com/hashtag/YuvaSangam?src=hash&amp;ref_src=twsrc%5Etfw">#YuvaSangam</a> <a
-                href="https://twitter.com/hashtag/India?src=hash&amp;ref_src=twsrc%5Etfw">#India</a> <a
-                href="https://twitter.com/hashtag/Education?src=hash&amp;ref_src=twsrc%5Etfw">#Education</a> <a
-                href="https://twitter.com/hashtag/YouthExchange?src=hash&amp;ref_src=twsrc%5Etfw">#YouthExchange</a> <a
-                href="https://t.co/RzDrvzKlXg">https://t.co/RzDrvzKlXg</a></p>&mdash; National Institute of Technology
-            Goa (@NITGoa_Official) <a
-              href="https://twitter.com/NITGoa_Official/status/1717524592246587623?ref_src=twsrc%5Etfw">October 26,
-              2023</a>
-          </blockquote>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-     
-      </div>
-      </div>
-    </div>
-
-
-    </div>
-
-
-
-      
-      <script>
-
-        document.getElementById("vision1").addEventListener("click", myfunction1);
-
-        function myfunction1() {
-          document.getElementById("demo").innerHTML = " National Institute of Technology Goa shall emerge as one of the nation's pre-eminent institutions. Through its excellence, it shall serve the Goan society, India and humanity at large with all the challenges and opportunities.";
-        }
-        document.getElementById("vision2").addEventListener("click", myfunction2);
-
-        function myfunction2() {
-          document.getElementById("demo").innerHTML = "NIT Goa strives for quality faculty, good students and excellent infrastructure Strives for excellence, through dissemination, generation and application of knowledge by laying stress on interdisciplinary approach in all the branches of Science, Engineering, Technology, Humanities and Management with emphasis on human values and ethics";
-        }
-        document.getElementById("vision3").addEventListener("click", myfunction3);
-
-        function myfunction3() {
-          document.getElementById("demo").innerHTML = "The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate programs.";
-
-        }
       </script>
 
-<!--Vision and Mission Card Starts here-->
-<div class="container1 shadow-lg bg-white ml-10 mr-10 border border-gray-100 mb-10  ">
-  <div class="image p-10 rounded-2xl my-auto">
-    <img src="./static/insitute.jpeg">
-  </div>
-  <div class="btn-group mt-8 ">
-    <div class="text text-al flex flex-row gap-2 items-center justify-center">
-      <button id="vision1">Vision</button>
-      <button id="vision2">Mission</button>
-      <button id="vision3">About</button>
+      <!--Tweets-->
+      <div class="items-center justify-content">
+        <div class="tweet-section  p-5 rounded-2xl">
+          <h2 class="text-3xl font-semibold font-serif text-white justify-center  text-blue-900 mt-5 ">Tweets</h2>
+          <div>
+
+            <blockquote class="twitter-tweet">
+
+              <p lang="en" dir="ltr">Phase 3 of <a
+                  href="https://twitter.com/hashtag/YuvaSangam?src=hash&amp;ref_src=twsrc%5Etfw">#YuvaSangam</a> invites
+                you to embark on a life-changing journey! 🌟 <br>Hurry! registrations are open until October 28th.📆
+                <br><br> Apply today!✅ <a href="https://t.co/WeNhwSWIfw">https://t.co/WeNhwSWIfw</a><a
+                  href="https://twitter.com/hashtag/EkBharatShreshthaBharat?src=hash&amp;ref_src=twsrc%5Etfw">#EkBharatShreshthaBharat</a>
+                <a
+                  href="https://twitter.com/hashtag/EkBharatShreshtaBharat?src=hash&amp;ref_src=twsrc%5Etfw">#EkBharatShreshtaBharat</a>
+                <a href="https://twitter.com/hashtag/YuvaSangam?src=hash&amp;ref_src=twsrc%5Etfw">#YuvaSangam</a> <a
+                  href="https://twitter.com/hashtag/India?src=hash&amp;ref_src=twsrc%5Etfw">#India</a> <a
+                  href="https://twitter.com/hashtag/Education?src=hash&amp;ref_src=twsrc%5Etfw">#Education</a> <a
+                  href="https://twitter.com/hashtag/YouthExchange?src=hash&amp;ref_src=twsrc%5Etfw">#YouthExchange</a>
+                <a href="https://t.co/RzDrvzKlXg">https://t.co/RzDrvzKlXg</a>
+              </p>&mdash; National Institute of Technology
+              Goa (@NITGoa_Official) <a
+                href="https://twitter.com/NITGoa_Official/status/1717524592246587623?ref_src=twsrc%5Etfw">October 26,
+                2023</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
-    <div class="para">
-      <div class="p-4 pb-12" id="demo"><p>National Institute of Technology Goa shall emerge as one of the nation's pre-eminent
-        institutions. Through its excellence, it shall serve the Goan society, India, and humanity at large with all
-        the challenges and opportunities.</p></div>
+
+
+
+
+    <script>
+
+      document.getElementById("vision1").addEventListener("click", myfunction1);
+
+      function myfunction1() {
+        document.getElementById("demo").innerHTML = " National Institute of Technology Goa shall emerge as one of the nation's pre-eminent institutions. Through its excellence, it shall serve the Goan society, India and humanity at large with all the challenges and opportunities.";
+      }
+      document.getElementById("vision2").addEventListener("click", myfunction2);
+
+      function myfunction2() {
+        document.getElementById("demo").innerHTML = "NIT Goa strives for quality faculty, good students and excellent infrastructure Strives for excellence, through dissemination, generation and application of knowledge by laying stress on interdisciplinary approach in all the branches of Science, Engineering, Technology, Humanities and Management with emphasis on human values and ethics";
+      }
+      document.getElementById("vision3").addEventListener("click", myfunction3);
+
+      function myfunction3() {
+        document.getElementById("demo").innerHTML = "The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate programs.";
+
+      }
+    </script>
+
+    <!--Vision and Mission Card Starts here-->
+    <div class="container1 shadow-lg bg-white ml-10 mr-10 border border-gray-100 mb-10  ">
+      <div class="image p-16 rounded-2xl">
+        <img src="./static/insitute.jpeg">
+      </div>
+      <div class="btn-group mt-8 ">
+        <div class="text text-al">
+          <button id="vision1">Vision</button>
+          <button id="vision2">Mission</button>
+          <button id="vision3">About</button>
+        </div>
+        <div class="para">
+          <div class="p-4 pb-12" id="demo">
+            <p>National Institute of Technology Goa shall emerge as one of the nation's pre-eminent
+              institutions. Through its excellence, it shall serve the Goan society, India, and humanity at large with
+              all
+              the challenges and opportunities.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-<!--Vision and Mission Card Ends Here -->
+    <!--Vision and Mission Card Ends Here -->
 
-<!--JavaScript for Vision and Mission Starts Here-->
-  <script>
+    <!--JavaScript for Vision and Mission Starts Here-->
+    <script>
 
-    document.getElementById("vision1").addEventListener("click", myfunction1);
+      document.getElementById("vision1").addEventListener("click", myfunction1);
 
-    function myfunction1() {
-      document.getElementById("demo").innerHTML = " National Institute of Technology Goa shall emerge as one of the nation's pre-eminent institutions. Through its excellence, it shall serve the Goan society, India and humanity at large with all the challenges and opportunities.";
-    }
-    document.getElementById("vision2").addEventListener("click", myfunction2);
+      function myfunction1() {
+        document.getElementById("demo").innerHTML = " National Institute of Technology Goa shall emerge as one of the nation's pre-eminent institutions. Through its excellence, it shall serve the Goan society, India and humanity at large with all the challenges and opportunities.";
+      }
+      document.getElementById("vision2").addEventListener("click", myfunction2);
 
-    function myfunction2() {
-      document.getElementById("demo").innerHTML = "NIT Goa strives for quality faculty, good students and excellent infrastructure Strives for excellence, through dissemination, generation and application of knowledge by laying stress on interdisciplinary approach in all the branches of Science, Engineering, Technology, Humanities and Management with emphasis on human values and ethics";
-    }
-    document.getElementById("vision3").addEventListener("click", myfunction3);
+      function myfunction2() {
+        document.getElementById("demo").innerHTML = "NIT Goa strives for quality faculty, good students and excellent infrastructure Strives for excellence, through dissemination, generation and application of knowledge by laying stress on interdisciplinary approach in all the branches of Science, Engineering, Technology, Humanities and Management with emphasis on human values and ethics";
+      }
+      document.getElementById("vision3").addEventListener("click", myfunction3);
 
-    function myfunction3() {
-      document.getElementById("demo").innerHTML = "The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate programs.";
+      function myfunction3() {
+        document.getElementById("demo").innerHTML = "The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate programs.";
 
-    }
-  </script>
-  <!--JavaScript for Vision and Mission Ends Here-->
+      }
+    </script>
+    <!--JavaScript for Vision and Mission Ends Here-->
 
-     <!--scipt// -->
-            
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-     crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-     crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-     crossorigin="anonymous"></script>
-  
- <!-- javascript link file name  -->
-         <script src="js/bootstrap-4-navbar.js"></script>
+    <!--scipt// -->
 
-</section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
 
-<section>
-<div class="holder pb-6 w-screen">
+    <!-- javascript link file name  -->
+    <script src="js/bootstrap-4-navbar.js"></script>
 
-  <div class="title mt-8 pt-6">Statistical Data</div>
-  <div class="px-8" id="stat-holder">
-    <div class="stat">
-      <div class="stat-title">College Students</div>
-      <div class="stat-value">216</div>
+  </section>
+
+  <section>
+    <div class="holder pb-6 ">
+
+      <div class="title mt-8 pt-6">Statistical Data</div>
+      <div class="stats-holder px-8">
+        <div class="stat">
+          <div class="stat-title">College Students</div>
+          <div class="stat-value">216</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Departments</div>
+          <div class="stat-value">5</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Faculties</div>
+          <div class="stat-value">92</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Patents</div>
+          <div class="stat-value">10</div>
+        </div>
+      </div>
+  </section>
+
+  <footer class="bg-gray-800 text-white py-8">
+    <div class="container ml-auto mr-2 flex">
+      <div class="w-1/3 pr-16"></div>
+      <div class="w-2/3 mb-5">
+        <span class="text-xl font-semibold text-white font-serif ">National Portals</span>
+        <span>
+          <p class="mt-2 font-bold text-gray-600 border-t-4 w-1/5  border-white"></p>
+        </span>
+      </div>
     </div>
-    <div class="stat">
-      <div class="stat-title">Departments</div>
-      <div class="stat-value">5</div>
-    </div>
-    <div class="stat">
-      <div class="stat-title">Faculties</div>
-      <div class="stat-value">92</div>
-    </div>
-    <div class="stat">
-      <div class="stat-title">Patents</div>
-      <div class="stat-value">10</div>
-    </div>
-  </div>
-</section>
-
-<footer class="bg-gray-800 text-white py-8" >
-  <div class="container mr-auto ml-16 flex">
-    <div class="w-2/3 mb-5">                
-      <span class="text-xl font-semibold text-white font-serif ">National Portals</span>
-      <span>
-        <p class="mt-2 font-bold text-gray-600 border-t-4 sm:w-2/5 w-1/5  border-white"></p>
-      </span>
-    </div>
-    <div class="w-1/3 pr-16 ml-5 ">
-      <span class="text-2xl sm:text-xl font-semibold text-white">आज का शब्द</span>
-      <span>
-        <p class="mt-2 w-3/5  sm:w-4/5 font-bold text-gray-600 border-t-4  border-white"></p>
-      </span>
-     </div>
-  </div>
-  <!-- eoifaioef -->
-  <div class="container mr-auto ml-16 flex">
+    <div class="container ml-auto mr-2 flex">
+      <div class="w-1/3 pr-16">
+      </div>
       <div class="w-2/3 flex">
-          <div class="w-1/3 pr-4">
-              <a href="https://www.education.gov.in/" target="_blank"><img src="./static/moe.png" alt="Image 1" class="mb-4"></a>
-              <a href="https://www.makeinindia.com/" target="_blank"><img src="./static/mii.png" alt="Image 2"></a>
-          </div>
-          <div class="w-1/3 pr-4">
-              <a href="https://digitalindia.gov.in/" target="_blank"><img src="./static/dii.png" alt="Image 3" class="mb-4"></a>
-              <a href="https://nad.digilocker.gov.in/students" target="_blank"><img src="./static/digilocker_nad.png" alt="Image 4"></a>
-          </div>
-          <div class="w-1/3 pr-4">
-            <a href="https://fitindia.gov.in/" target="_blank"><img src="./static/fit_india.png" alt="Image 3" class="mb-4"></a>
-            <a href="https://swachhbharat.mygov.in/" target="_blank"><img src="./static/swach_bharath.png" alt="Image 4"></a>
-    </div>
-  </div>
-    <div class="w-1/3 pr-16 sm:ml-10">
-<p class="text-2xl">"सहिष्णुता (sahishnuta) - Tolerance"</p>
-  </div>
-</footer>
+        <div class="w-1/3 pr-4">
+          <a href="https://www.education.gov.in/" target="_blank"><img src="./static/moe.png" alt="Image 1"
+              class="mb-4"></a>
+          <a href="https://www.makeinindia.com/" target="_blank"><img src="./static/mii.png" alt="Image 2"></a>
+        </div>
+        <div class="w-1/3 pr-4">
+          <a href="https://digitalindia.gov.in/" target="_blank"><img src="./static/dii.png" alt="Image 3"
+              class="mb-4"></a>
+          <a href="https://nad.digilocker.gov.in/students" target="_blank"><img src="./static/digilocker_nad.png"
+              alt="Image 4"></a>
+        </div>
+        <div class="w-1/3 pr-4">
+          <a href="https://fitindia.gov.in/" target="_blank"><img src="./static/fit_india.png" alt="Image 3"
+              class="mb-4"></a>
+          <a href="https://swachhbharat.mygov.in/" target="_blank"><img src="./static/swach_bharath.png"
+              alt="Image 4"></a>
+        </div>
+      </div>
+  </footer>
 
 
   <!--Footer Starts Here -->
@@ -1473,13 +1784,12 @@ function startMarquee() {
     <div class="container">
       <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <div>
-          <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+          <h6 class=" text-lg font-semibold mb-2" style="color: rgb(33, 150, 243);">Quick Links</h6>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
 
             <ul class="footer-links">
               <li><a href="index.html"><span class="">Home</span></a></li>
-              <li><a href="../public/syllabus.html"><span
-                    class="">Syllabus</span></a></li>
+              <li><a href="../public/syllabus.html"><span class="">Syllabus</span></a></li>
               <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
               <li><a href="../public/RTI.html"><span class="">RTI</span></a></li>
               <li><a href="#"><span class="">Login</span></a></li>
@@ -1491,9 +1801,9 @@ function startMarquee() {
               <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
               <li><a href="academics/academic_calendar.html"><span class="">Academic
                     Calendar</span></a></li>
-              <li><a href="academics/rules_and_regulations.html"><span >Regulations and
+              <li><a href="academics/rules_and_regulations.html"><span>Regulations and
                     Curriculum</span></a></li>
-              <li><a href="academics/DissertionFormat.html"><span >Dissertation
+              <li><a href="academics/DissertionFormat.html"><span>Dissertation
                     Formats</span></a></li>
 
             </ul>
@@ -1503,25 +1813,33 @@ function startMarquee() {
         <div>
           <h6 class="text-lg font-semibold mb-2">Informations</h6>
           <ul class="footer-links">
-            <li><a href="People/frontend/people_faculty.html"><span >Faculty</span></a>
+            <li><a href="People/frontend/people_faculty.html"><span>Faculty</span></a>
             </li>
             <li><a href="People/frontend/technical_cse.html"><span>Staff</span></a></li>
             <li><a href="admissions/josaa.html"><span>JEE</span></a></li>
             <li><a href="admissions/facilities.html"><span>Facilities</span></a></li>
             <li><a href="./static/fee_structure_23-24_25july2023.pdf"><span>Fee
                   Structure</span></a></li>
-            <li><a href="nirf.html"><span >NIRF</span></a></li>
+            <li><a href="nirf.html"><span>NIRF</span></a></li>
           </ul>
         </div>
 
         <div>
           <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
           <ul class="footer-links">
-            <div className="border-b-2 border-white mt-2"><a href="index.html"><span">National Institute of Technology Goa
-                  Farmagudi, Ponda , Goa - 403401</span></a></div>
-            <div className="border-b-2 border-white mt-2"><a href="index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
-            <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
-            <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+            <div className="border-b-2 border-white mt-2"><a href="index.html">
+                <span">National Institute of Technology Goa
+                  Farmagudi, Ponda , Goa - 403401</span>
+              </a></div>
+            <div className="border-b-2 border-white mt-2"><a href="index.html">
+                <span">Website: www.nitgoa.ac.in</span>
+              </a></div>
+            <div className="border-b-2 border-white mt-2"><a href="#">
+                <span">Phone: [0832] 2404200 (PA to Director)</span>
+              </a></div>
+            <div className="border-b-2 border-white mt-2"><a href="#">
+                <span">Fax: [0832] 2404202</span>
+              </a></div>
           </ul>
         </div>
       </div>
@@ -1544,7 +1862,10 @@ function startMarquee() {
       <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
       <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
     </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2c09be97528a201547cb0eb91232cc80fd95fe93
 
 
   </footer>
