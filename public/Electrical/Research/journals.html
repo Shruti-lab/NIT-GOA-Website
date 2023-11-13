@@ -1,208 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head></head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Department of Electrical Engineering</title>
+        <script src="../../script.js"></script>
+        <link rel="stylesheet" href="../.././styles.css" />
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    </head>
     <title>Welcome to NIT goa</title>
     <body>
-        <div class="about-us">
-            <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
-                <div class="flex justify-center">
-                    <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
-        
+        <!-- Header Starts here -->
+    <div
+    class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center"
+  >
+    <div class="flex items-center text-gray-300">
+      <div class="mr-4 ml-6">
+        <i class="fas fa-envelope"></i> your@email.com
+      </div>
+      <div><i class="fas fa-phone"></i> +1234567890</div>
+    </div>
+    <div class="flex items-center">
+      <a
+        href="../../index.html"
+        class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+        >Home</a
+      >
+      <a
+        href="../../tenders.html"
+        class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500"
+        >Tenders</a
+      >
+      <a
+        href="https://www.nitgoa.ac.in/gian/"
+        class="sm:text-sm mr-4 text-gray-300 hover:text-blue-500"
+        >G.I.A.N</a
+      >
+      <a
+        href="https://www.nitgoa.ac.in/login.aspx"
+        class="sm:text-sm text-gray-300 hover:text-blue-500"
+        >Login</a
+      >
+    </div>
+  </div>
+  <!--Header Ends Here-->
+  
+  <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
+    <div class="flex justify-center">
+        <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
+
+    </div>
+
+    <div class="text-center border">
+        <nav class="mt-2 justify-center items-center">
+            <div class="container_B font-semibold text-gray-900 justify-center flex">
+
+                <!--Home-->
+                <div class="dropdown">
+                    <a href="../../index.html">Home</a>
                 </div>
-        
-                <div class="text-center border mb-10">
-                    <nav class="mt-2 justify-center items-center">
-                        <div class="container_B font-semibold text-gray-900 flex justify-center mx-16">
-        
-                            <!--Home-->
-                            <div class="dropdown">
-                                <a href="../Electrical/index.html">Home</a>
-                            </div>
-        
-                            <!--Academic Handbook-->
-                            <div class="dropdown">
-                                <button class="dropbtn">Academics</button>
-                                <div class="dropdown-content">
-                                    <a href="#">academic handbook</a>
-                                    <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">calendar</a>
-                                    <a href="../academics/rules_and_regulations.html">regulation and Curriculum</a>
-                                </div>
-        
-                            </div>
-    
-                            <!--Students-->
-                            <div class="dropdown">
-                                <button class="dropbtn">Students</button>
-                                <div class="dropdown-content">
-                                    <a href="../Electrical/Students/btech.html">B.Tech</a>
-                                    <a href="../Electrical/Students/mtech.html">M.Tech</a>
-                                    <a href="../Electrical/Students/phd.html">Ph.D.</a>
-                                </div>
-    
-                            </div>
-                           <!--Faculty-->
-                           <div class="dropdown">
-                            <a href="../Electrical/faculty.html">Faculty</a>
-                            
+
+                <!--Academic Handbook-->
+                <div class="dropdown">
+                    <button class="dropbtn">Academics</button>
+                    <div class="dropdown-content">
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">Academic Handbook <span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/UG EEE_FINAL_ACADEMIC_HANDBOOK_NIT_GOA_Revised-1.pdf"
+                              >UG Handbook</a
+                            >
+                            <a href="../../static/PG M.Tech (PEPS)_EEE_Syllabus.pdf"
+                              >PG Handbook</a
+                            >
                         </div>
-                        <!--staff-->
-                        <div class="dropdown">
-                            <a href="../Electrical/staff.html">Staff</a>
-                            
-                        </div>
-                        <!--reseach-->
-                        <div class="dropdown">
-                            <button class="dropbtn">Research</button>
-                            <div class="dropdown-content">
-                                <a href="#">journals</a>
-                                <a href="../Electrical/Research/Proceedings.html">proceedings</a>
-                                <a href="../Electrical/Research/Book_Book_chapters.html">book / book chapters</a>
-                                <a href="../Electrical/Research/Research_projects.html">Research projects</a>
-                            </div>
-    
-                        </div>
-                        <!--Events-->
-                        <div class="dropdown">
-                            <a href="../Electrical/Events/event.html">Events</a>
-                            
-                        </div>
-                           <!--Gallery-->
-                           <div class="dropdown">
-                            <a href="../Electrical/Gallery/Photo.html">Gallery</a>
-                            
-                        </div>
-    
-                        <!--E-Downloads-->
-                        <div class="dropdown">
-                            <button class="dropbtn">E-Downloads</button>
-                            <div class="dropdown-content">
-                                <a href="#">Facualty and staff</a>
-                                <a href="#">Student</a>
-                                <a href="#">Dissertion Format</a>
-                            </div>
-    
-                        </div>
-     
-                            <!--Contact Us-->
-                            <div class="dropdown">
-                                <a href="../Electrical/contact_us.html">Contact Us</a>
-                                
-                            </div>
-        
-                        </div>
+                        <!--End-->
+                      </div>
+                        <a href="../../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">Calendar</a>
+                        <a href="../../academics/rules_and_regulations.html">Regulation and Curriculum</a>
+                    </div>
+
                 </div>
-                </nav>
+
+                <!--Students-->
+                <div class="dropdown">
+                    <button class="dropbtn">Students</button>
+                    <div class="dropdown-content">
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/B.tech_4year_EEE-2022.pdf"
+                              >Batch 2018-22</a
+                            >
+                        </div>
+                        <!--End-->
+                      </div>
+                      <div class="sub-dropdown">
+                        <button class="sub-dropbtn">M.Tech<span class="font-bold text-xl">&rsaquo;</span></button>
+                        <!--BTECH Start-->
+                        <div class="sub-dropdown-content">
+                            <a href="../../static/MTech-II_Batch_2020-22.png"
+                              >Batch 2020-22</a
+                            >
+                            <a href="../../static/MTech-I_Batch_2021-23.png"
+                              >Batch 2021-23</a
+                            >
+                        </div>
+                        <!--End-->
+                      </div>
+                        <a href="../../static/Ph D Regular 2022.png">Ph.D.</a>
+                    </div>
+
                 </div>
-            </header>
-            <h1
+               <!--Faculty-->
+               <div class="dropdown">
+                <a href="../../Electrical/faculty.html">Faculty</a>
+                
+            </div>
+            <!--staff-->
+            <div class="dropdown">
+                <a href="../../Electrical/staff.html">Staff</a>
+                
+            </div>
+            <!--reseach-->
+            <div class="dropdown">
+                <button class="dropbtn">Research</button>
+                <div class="dropdown-content">
+                    <a href="../../Electrical/Research/journals.html">Journals</a>
+                    <a href="../../Electrical/Research/Proceedings.html">Proceedings</a>
+                    <a href="../../Electrical/Research/Book_Book_chapters.html">Book / Book Chapters</a>
+                    <a href="../../Electrical/Research/Research_projects.html">Research Projects</a>
+                </div>
+
+            </div>
+            <!--Events-->
+            <div class="dropdown">
+                <a href="../../Electrical/Events/event.html">Events</a>
+                
+            </div>
+               <!--Gallery-->
+               <div class="dropdown">
+                <a href="../../Electrical/Gallery/Photo.html">Gallery</a>
+                
+            </div>
+<!--Alumni-->
+<div class="dropdown">
+<button class="dropbtn">Alumni</button>
+<div class="dropdown-content">
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content text-sm">
+        <a href="../../static/Btech_EEE_2010_14.pdf"
+          >Graduate-2014</a
+        >
+        <a href="../../static/Btech_EEE_2011_15.pdf"
+          >Graduate-2015</a
+        >
+        <a href="../../static/Btech_EEE_2012_16.pdf"
+          >Graduate-2016</a
+        >
+        <a href="../../static/Btech_EEE_2013_17.pdf"
+          >Graduate-2017</a
+        >
+        <a href="../../static/Btech_EEE_2014_18.pdf"
+          >Graduate-2018</a
+        >
+        <a href="../../static/eee_btech_2015batch_23sept2016 (1).pdf"
+          >Graduate-2019</a
+        >
+        <a href="../../static/Btech_2016-2020.pdf"
+          >Graduate-2020</a
+        >
+        <a href="../../static/Graduate_(B.Tech)-2021.pdf"
+          >Graduate-2021</a
+        >
+
+    </div>
+    <!--End-->
+  </div>
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">M.Tech<span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content">
+      <a href="../../static/MTech_EEE_students_list_10oct14.pdf"
+      >Graduate-2016</a
+    >
+    <a href="../../static/EEE_mtech_std_details_22sept2016 (1).pdf"
+      >Graduate-2017</a
+    >
+    <a href="../../static/M_TECH_STUDENT_DETAILS_2016-2018.pdf""
+      >Graduate-2018</a
+    >
+    <a href="../../static/M_TECH_STUDENT_LIST_2017-2019.pdf"
+      >Graduate-2019</a
+    >
+    <a href="../../static/M_TECH_STUDENT_LIST_2018-2020.pdf"
+      >Graduate-2020</a
+    >
+    <a href="../../static/Graduate_(M.Tech.)_-_2021.png"
+      >Graduate-2021</a
+    >
+    </div>
+    <!--End-->
+  </div>
+  <div class="sub-dropdown">
+    <button class="sub-dropbtn">PhD<span class="font-bold text-xl">&rsaquo;</span></button>
+    <!--BTECH Start-->
+    <div class="sub-dropdown-content">
+
+    <a href="#"
+      >Graduate-2018</a
+    >
+
+    <a href="../../static/Graduate_(Ph._D.)_-_2021.png"
+      >Graduate-2021</a
+    >
+    </div>
+    <!--End-->
+  </div>
+</div>
+
+</div>
+            <!--E-Downloads-->
+            <div class="dropdown">
+                <button class="dropbtn">E-Downloads</button>
+                <div class="dropdown-content">
+                    <a href="../../Electrical/edownloads/facualty_staff.html">Faculty and staff</a>
+                    <a href="../../Electrical/edownloads/student.html">Student</a>
+                    <a href="../../academics/DissertionFormat.html">Dissertion Format</a>
+                </div>
+
+            </div>
+
+                <!--Contact Us-->
+                <div class="dropdown">
+                    <a href="../../Electrical/contact_us.html">Contact Us</a>
+                    
+                </div>
+
+            </div>
+    </div>
+    </nav>
+    </div>
+</header>
+<div class="p-4">            <h1
             class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4">
            Journals:</h1>
 <ul style="list-style-type: square;">
-<li>Ratnakar Babu B., Suresh Mikkili, Praveen Kumar B., &ldquo;Application of Radial Basis Neural Network in MPPT Technique for stand-alone PV system under partial shading conditions&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp; &nbsp;&nbsp;</li>
-<li>Chavan Vinaya Chandrakant and Suresh Mikkili, &ldquo;Repositioning of Series-Parallel, Total-Cross-Tide, Bridge-Link and Honey-Comb PV array configurations for maximum power extraction&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Kanjune Akshay B, Suresh Mikkili and Praveen Kumar B, "A Review on Static Reconfiguration Techniques of Solar PV to Mitigate Mismatch Loss and Minimize Partial shading effect&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp;&nbsp;</li>
-<li>Venkata R Reddy and ES Sreeraj, "A Hybrid Islanding Detection Method for One Cycle Controlled PV Inverter System," IEEE Journal of Emerging and Selected Topics in Industrial Electronics, Early Access &nbsp;&nbsp; JULY&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Aditi Atul Desai and Suresh Mikkili, &ldquo;Novel Hybrid PV configurations to enhance the output power and efficiency by minimizing number of peaks and mismatching loss&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Chavan Vinaya Chandrakant and Suresh Mikkili, &ldquo;Effect of PV array positioning on mismatch and wiring losses in Static Array Reconfiguration&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Aswini K. Samantaray, Pranose J Edavoor and Amol D. Rahulkar, "A New Approach to the Design and Implementation of a Family of Multiplier Free Orthogonal Wavelet Filter Banks", Accepted for Publication in IEEE Transactions on Circuits and Systems for Video Technology. &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Madhu G M, C. Vyjayanthi, Chirag N Modi, &ldquo;Investigation on Effect of Irradiance Change in Maximum Power Extraction from PV Array Interconnection Schemes during Partial Shading Conditions&rdquo;, IEEE Access, June 2021, IMPRINT 2C.1 Grant No: IMP/2019/000251. &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
-<li>Aswini K Samantaray, Amol D. Rahulkar, Pranose J Edavoor, "A Novel Design of Dyadic db3 Orthogonal Wavelet Filter Bank for Feature Extraction", Circuits, Systems, and Signal Processing, Springer, 2021 [Published Online] &nbsp;&nbsp; APRIL&nbsp;&nbsp;2021&nbsp; &nbsp; &nbsp;</li>
-<li>Ajit Muzumdar, Chirag N Modi, Madhu G M and C. Vyjayanthi, &ldquo;Designing a Robust and Accurate Model for Consumer Centric Short Term Load Forecasting in Microgrid Environment&rdquo;, IEEE Systems Journal, April 2021. &nbsp;&nbsp; APRIL&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
-<li>&nbsp;Ajit Muzumdar, Chirag N Modi, Madhu G M and C. Vyjayanthi, &ldquo;A Trustworthy and Incentivized Smart Grid Energy Trading Framework using Distributed Ledger and Smart Contracts&rdquo;, Journal of Network and Computer Applications, March 2021. &nbsp;&nbsp; MAR&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
-<li>&nbsp;Madhu G M, C. Vyjayanthi, Chirag N Modi, &ldquo;Adaptive Step-Size based Drift-Free P&amp;O Algorithm with Power Optimizer and Load Protection for Maximum Power Extraction from PV Panels in Standalone Applications&rdquo;, IET Renewable Power Generation, January 2021, Under Grant No. 24/29/2016-SWES (R&amp;D), MNRE, India. &nbsp;&nbsp; JAN&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
-<li>VR Reddy, ES Sreeraj, "Grid Voltage Sensor-less Protection scheme for One Cycle-Controlled Single-Phase Photovoltaic Inverter Systems," Accepted for publication in CSEE Journal of Power and Energy Systems &nbsp;&nbsp; &nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
-<li>Samuel, Anudevi and Shet, Vinayak N. &ldquo;Adaptive relay settings for distribution network with distributed generation (DG) using Sugeno fuzzy inference&rdquo; International Journal of Emerging Electric Power Systems, vol. 22, no. 1, 2021, pp. 43-59. https://doi.org/10.1515/ijeeps-2020-0152 &nbsp;&nbsp; JAN&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
-<li>Shravan R, Vyjayanthi C, &ldquo;Coordinated power control without AC voltage sensing and active power filtering using interlinking converter with reduced interlinking power flow in a droop controlled islanded hybrid AC-DC microgrid&rdquo;, International Transactions on Electrical Energy Systems, WILEY, December 2020. https://doi.org/10. 1002/2050-7038.12786 &nbsp;&nbsp; DEC&nbsp;&nbsp;2020.</li>
-<li>Pranose J. Edavoor, Sithara Raveendran and Amol Rahulkar, "Novel 4:2 Approximate Compressor Designs for Multimedia and Neural Network Applications", Journals of Circuits, Systems and Computers, doi 10.1142/S0218126621501383, 2020 [Available Online] &nbsp;&nbsp; NOV&nbsp;&nbsp;2020.</li>
-<li>Praveen Kumar B and Suresh Mikkili, "Performance Investigation of Various PV Array Configurations for Grid-Connected/Standalone PV Systems", IEEE CSEE Journal of Power and Energy Systems-Accepted -(SCI-E Journal)&ndash;Sept.2020</li>
-<li>Aditi Atul Desai and Suresh Mikkili, "Modelling and Analysis of PV configurations (Alternate TCT-BL, Total Cross Tied, Series, Series Parallel, Bridge Linked and Honey Comb) to extract Maximum Power under Partial Shading Conditions", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) JUN 2020</li>
-<li>&nbsp;Suneel Raju Pendem and Suresh Mikkili, "Assessment of Cross-coupling Effects in PV String-Integrated-Converters with P&amp;O MPPT Algorithm under various Partial Shading Patterns", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) JUN 2020</li>
-<li>Praveen Kumar B and Suresh Mikkili, "Performance Analysis of PV Array Configurations (SP, BL, HC and TT) to Enhance Maximum Power under Non-Uniform Shading conditions", Accepted - Engineering Reports - Wiley MAY 2020</li>
-<li>Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, "Hybrid, Optimization, Intelligent and Classical PV MPPT Techniques : Review", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) MAY 2020</li>
-<li>Amita A. Shinde, Amol D. Rahulkar, Chetankumar Y. Patil, "A New Flexible Directional Filter Bank by Tuning Hermite Transform Parameters for Content Based Medical Image Retrieval", Accepted for Publication in IET Image Processing. MAY 2020</li>
-<li>Praveen Kumar B and Suresh Mikkili, "A Novel Fixed PV Array Configuration for Harvesting Maximum Power from Shaded Modules by Reducing the Number of Cross-Ties", IEEE- Journal of Emerging and Selected Topics in Power Electronics- Accepted - (SCI-E Journal) MAR 2020</li>
-<li>Anudevi Samuel., V.N.Shet, &ldquo;A Hybrid Methodology for Relay Settings in Distributed Generation Penetrated Networks&rdquo;, International Journal of Information Technology and Electrical Engineering, Vol 9,Issue-1,February 2020,ISSN:2306-708X &nbsp;&nbsp; FEB&nbsp;&nbsp;2020.</li>
-<li>Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, " Critical Review on PV MPPT Techniques: Classical, Intelligent and Optimization", IET Renewable Power Generation - Accepted - (SCI-E Journal) FEB 2020</li>
-<li>&nbsp;Praveen Kumar B and Suresh Mikkili, "Optimal PV Array Configuration for Extracting Maximum Power by Mitigating Mismatching Power Losses under Nine Shading Conditions ", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) FEB 2020</li>
-<li>Pranose J. Edavoor, Sithara Raveendran, Amol D. Rahulkar, "Approximate Multiplier Design Using Novel Dual-stage 4:2 Compressors", IEEE Access (Accepted for Publication) FEB 2020</li>
-<li>Shravan R, Vyjayanthi C, &ldquo;Active power filtering using interlinking converter in droop controlled islanded hybrid AC-DC microgrid&rdquo;, International Transactions on Electrical Energy Systems, WILEY, 2020.&nbsp;<a href="https://doi.org/10.%201002/2050-7038.12333">https://doi.org/10. 1002/2050-7038.12333</a>&nbsp;(SCI- ECR, SERB)</li>
-<li>Vinay Kumar Kolakaluri, C. Vyjayanthi and Suresh Mikkili, &ldquo;PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads&rdquo;, International Journal of Emerging Electric Power Systems, DE GRUYTER, 2019; 2019001 (ECR, SERB)</li>
-<li>Gomathi Ramalingam, Ajay Kumar Choudhary, Suresh Mikkili, "Modelling and Analysis of PV-Based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality", International Journal of Emerging Electric Power Systems, Volume 20, Issue 6, 2019 DEC 2019</li>
-<li>Anudevi Samuel., V.N.Shet, &ldquo;Fuzzy Adaptive Relay Settings for Distribution Network with DG&rdquo; - Proceedings of the National Power Electronics Conference (NPEC)-2019, December 13-15, NIT Tiruchirappalli, India, IEEE Digital Xplore, 978-1-7281-4428-3/19, https://doi.org/10.1109/NPEC47332.2019.9034762 &nbsp;&nbsp; DEC&nbsp;&nbsp;2019.</li>
-<li>Aswini Kumar Samantaray and Amol D. Rahulkar, "A New Design of Adaptive Gabor Wavelet Filter Bank for Medical Image Retrieval", Accepted for Publication in IET Image Processing, 2019 NOV 2019</li>
-<li>Vinay Kumar Kolakaluri, Suresh Mikkili, "Integration of Battery Energy Storage Systems to Solar PV to Reduce the AH Capacity by Extracting Maximum Power from PV Array under Varying Irradiance and Load Conditions for Rural/Remote Area Applications", International Journal of Emerging Electric Power Systems, Volume 20, Issue 5, 2019 OCT 2019</li>
-<li>Jayanand Gawande, Amol Rahulkar and Raghunath Holambe, "Efficient Rationalization of Triplet Halfband Filter Banks and Its Application to Image Compression", Accepted for Publication in IEEE Transactions on Circuits and Systems for Video Technology OCT 2019</li>
-<li>V.R. Reddy and Sreeraj E.S.,"A Feedback based Passive Islanding Detection Technique for One Cycle Controlled Single Phase Inverter used in Photovoltaic Systems," IEEE Trans. Ind. Electron., 67 (8), 6541-6549, 2019 &nbsp;&nbsp; AUG&nbsp;&nbsp;2019.&nbsp;&nbsp;</li>
-<li>Vinay Kumar Kolakaluri, C Vyjayanthi, Suresh Mikkili, "PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads", International Journal of Emerging Electric Power Systems, Volume 20, Issue 4, 2019 AUG 2019</li>
-<li>Santosh Nagnath Randive, Ranjan K Senapati, Amol D Rahulkar,"A review on computer-aided recent developments for automatic detection of diabetic retinopathy",Journal of Medical Engineering &amp; Technology, Taylor &amp; Francis, pp 1-13,2019 2019</li>
-<li>&nbsp;Vinay Kumar Kolakaluri, C. Vyjayanthi and Suresh Mikkili, &ldquo;PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads&rdquo;, International Journal of Emerging Electric Power Systems, DE GRUYTER, July 2019; 2019001 JULY 2019</li>
-<li>Manjunath Matam, Venugopal Reddy Barry and Brad Lehman, &ldquo;Performance improvement of dynamic PV array under partial shade conditions using M2 algorithm&rdquo;, IET Renewable Power Generation, Vol.13, no. 8, pp 1239-1249, June 2019</li>
-<li>&nbsp;Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, &ldquo;PV Distributed-MPP Tracking: Total-Cross-Tied configuration of String-Integrated-Converters to extract the maximum Power under various PSCs with P&amp;O MPPT Technique&rdquo;, IEEE Systems Journal- Accepted - (SCI-E Journal) MAY 2019</li>
-<li>Amita Shinde, Amol Rahulkar, Chetankumar Patil,"Content based medical image retrieval based on new efficient local neighborhood wavelet feature descriptor",Biomedical Engineering Letters, pp 1-8, 2019 2019</li>
-<li>Pranose J. Edavoor and Amol D. Rahulkar, "Design and Implementation of A Novel Low Complexity Symmetric Orthogonal Wavelet Filter-Bank", IET Image Processing, Vol.13, Issue 5,pp 785-793, April 2019 2019</li>
-<li>Amita Shinde, Amol D. Rahulkar and C. Y. Patil, &ldquo;Biomedical Image Indexing and Retrieval based on New Efficient Hybrid Approach using Directional Decomposition and a Novel Local Directional Frequency Encoded Pattern: A Post Feature Descriptor&rdquo;, (Accepted for publication), Multimedia Tools and Applications, Springer, April 2019.</li>
-<li>Suneel Raju Pendem and Suresh Mikkili, &ldquo;Modelling, Simulation and Performance Analysis of Solar PV Array Configurations (Series, Series-Parallel and Honey-Comb) to Extract Maximum Power under Partial Shading Conditions&rdquo;, Energy Reports - Elsevier, Volume 04, Pages 274-287, 2018 (SCI-E Journal) NOV 2018</li>
-<li>Suneel Raju Pendem and Suresh Mikkili, &ldquo;Modeling, simulation, and performance analysis of PV array configurations (Series, Series-Parallel, Bridge-Linked, and Honey-Comb) to harvest maximum power under various PSCs&rdquo; International Journal of Green Energy - Taylor and Francis, Volume 15, No. 13, pp.795-812, 2018. -(SCI - Journal) OCT 2018</li>
-<li>Santosh Nagnath Randive, Amol D Rahulkar, Ranjan K Senapati,"LVP extraction and triplet-based segmentation for diabetic retinopathy recognition",Evolutionary Intelligence, Springer, vol.11,pp 117-129, 2018 OCT 2018</li>
-<li>M. Manjunath, Venugopal Reddy Barry, and Avinash Reddy G, &ldquo;Optimized reconfigurable pv array based photovoltaic water-pumping system&rdquo;, Solar Energy , Elsevier Journal, Vol. 170, pp. 1063 - 1073. 2018</li>
-<li>Manjunath Matam, Venugopal Reddy Barry, &ldquo;Improved performance of dynamic photovoltaic array under repeating shade conditions&rdquo;, Energy Conversion and Management, Elsevier Journal, Vol. 168, 15 July 2018, pp. 639-650. 2018</li>
-<li>Manjunath Matam, Venugopal Reddy Barry, &ldquo;Variable size Dynamic PV array for small and various DC loads&rdquo;, Solar Energy, Elsevier Journal, Vol.163, pp. 581-590. 2018</li>
-<li>Suresh Mikkili and Besta Umamaheswaraiah, &ldquo;A Zig-zag Transformer based Hybrid Power Filter with Cascaded Three level Multilevel Inverter to Enhance Power Quality in Three-Phase Four-wire Distribution Power System&rdquo;, Journal of Electrical Engineering, Vol. 18, No.1, pp. 264-275, 2018. APRIL 2018</li>
-<li>Suneel Raju Pendem, Suresh Mikkili "Modelling and performance assessment of PV array topologies under partial shading conditions to mitigate the mismatching power losses" Solar Energy - Elsevier, Volume 160, pp. 303&ndash;321, 2018 (SCI-E Journal) JAN 2018</li>
-<li>Amita Shinde, Amol Rahulkar and C. Y. Patil, "Fast discrete curvelet transform-based anisotropic feature extraction for biomedical image indexing and retrieval", International Journal of Multimedia Information Retrieval,6(4),2017 DEC 2017</li>
-<li>Suresh Mikkili, Adinarayana, &ldquo;PHC, Id-Iq and pq Control Strategies for Mitigation of Current Harmonics in Three-Phase Three-Wire Shunt Active Filter with PI Controller&rdquo;, International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 18, Issue 2, April 2017. APRIL 2017</li>
-<li>Anudevi. S.,Dr.V.N.Shet,"Distribution Network with Optimal DG Placement and Protection Impacts:Review Analysis",International Journal of Electrical and Electronics Engineering,Vol 4,Issue 2-February 2017 FEB 2017</li>
-<li>Ch LS Srinivas, and E S Sreeraj, "A Maximum Power Point Tracking Technique Based on Ripple Correlation Control for Single Phase Photovoltaic System with Fuzzy Logic Controller," Energy Procedia, vol. 90, pp. 69-77. DEC 2016</li>
-<li>Pravin B Chopade, Amol D Rahulkar, Pradeep M Patil,"Hybrid-Thresholding based Image Super-Resolution Technique by the use of Triplet Half-Band Wavelets", vol.97, issue 4,pp.517-523, 2016 DEC 2016</li>
-<li>Elavala Satish, Suresh Mikkili, Lav Kumar Gupta, &ldquo;Synchronous Reference Frame method for Mitigation of Current Harmonics with PI and FLC based Shunt Active Filter under Load Variation&rdquo;, International Journal of Innovations in Engineering and Technology, Vol. 7, Issue 3, pp. 433-450, 2016. OCT 2016</li>
-<li>Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, &ldquo;A New Approach to Design Triplet Half-band Filter-banks Based on Balanced-uncertainty Optimization&rdquo;, Elsevier, Digital Signal Processing, Vol. 56, pp.123-131, 2016</li>
-<li>Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, &ldquo; An SVPWM scheme for the Suppression of Zero-Sequence Current in a Four-level Open-End Winding Induction Motor Drive with Nested Rectifier-Inverter&rdquo;, IEEE Transaction on Industrial Electronics,vol.63, no.5,pp.2803-2812,May 2016</li>
-<li>Suresh Mikkili, and A. K. Panda, &ldquo;Power Quality Issues and Solutions &ndash; Review," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 16, Issue 4, Pages 357&ndash;384, Aug 2015. AUG 2015</li>
-<li>Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, "Design of New Class of Regular Biorthogonal Wavelet Filter Banks Using Generalized and Hybrid Lifting Structures", Springer, Signal, Image and Video Processing, Vol. 9, Issue 1, pp.265-273 , 2015</li>
-<li>Suresh Mikkili, Anup Kumar Panda and Jayanthi Prattipati &ldquo;Review of RT-LAB and steps involved for implementation of a Simulink Model from MATLAB to REAL-TIME&rdquo; Journal of the Institution of Engineers (India): Series B _ (Springer), Volume 96, Issue 2, pp 179-196, June 2015. JUN 2015</li>
-<li>Soumitra Das, Binoj Kumar A. C. and G. Narayanan, &ldquo;Analytical evaluation of harmonic distortion factor corresponding to generalised advanced bus-clamping pulse width modulation,&rdquo; IET Power Electron., vol. 7, no. 12, pp. 3072-3082. DEC 2014</li>
-<li>Soumitra Das and G. Narayanan, &ldquo;Analytical Closed-Form Expressions for Harmonic Distortion Corresponding to Novel Switching Sequences for Neutral-Point-Clamped Inverters,&rdquo; IEEE Trans. Ind. Electron., vol. 61, no. 9, pp. 4485-4497. SEPT 2014</li>
-<li>&nbsp;Soumitra Das, G. Narayanan and M. Pandey, &ldquo;Space-Vector-Based Hybrid Pulsewidth Modulation Techniques for a Three-Level Inverter&rdquo; IEEE Trans. Power Electron., vol. 29, no. 9, pp. 4580-4591. SEPT 2014</li>
-<li>V.T. Somasekhar, B. Venugopal Reddy, and K. Sivakumar, &ldquo;A Four-level Inversion Scheme for a 6-n Pole Open-end Winding Induction Motor Drive for an Improved DC-link Utilization&rdquo;, IEEE Transaction on Industrial Electronics, vol..61,no.9,pp.4565-4572. SEPT 2014</li>
-<li>Suresh Mikkili, and A. K. Panda, &ldquo;Review and Analysis of Type-1 and Type-2 Fuzzy Logic Controllers", Journal of Automation &amp; Systems Engineering, Volume 8, Issue 3, Pages 151-174, Sept. 2014. SEPT 2014</li>
-<li>Sreeraj, E.S., Prejith, E.K., K. Chatterjee, and S. Bandyopadhyay, "An Active Harmonic Filter Based on One-Cycle Control," IEEE Trans. Ind. Electron., vol.61, no.8, pp.3799-3809. AUG 2014</li>
-<li>Suresh Mikkili, and A. K. Panda, &ldquo;Real-Time Implementation of Type-2 FLC&ndash;Based Shunt Active Filter Control Strategies (p&ndash;q and Id&ndash;Iq) with Different Fuzzy MFs for Power Quality Improvement,&rdquo; International Journal of Emerging Electric Power Systems : be press (Berkeley Electronics press), Vol. 15, Issue 3, Pages 217&ndash;236, June 2014. JUN 2014</li>
-<li>Muhammad Muhsin,Abhishek Mishra,Shreyansh Vishwakarma,K.Dasaratha Babu,Anudevi Samuel,"Performance Evaluation of Intelligent Controllers for AGC in Thermal systems".WASET,International Journal of Electrical,Robotics,Electronics and Communication Engineering,Vol-8 no:4,2014 APRIL 2014</li>
-<li>Suresh Mikkili, and A. K. Panda, &ldquo;Performance analysis and real-time implementation of shunt active filter current control strategy with type-1 and type-2 FLC triangular M.F,&rdquo; International Transactions on Electrical Energy Systems - John Wiley &amp; Sons Volume 24, Issue 3, pages 347&ndash;362, March 2014-(SCI-E Journal) MAR 2014</li>
-<li>Amol D. Rahulkar, Laxman M. Waghmare, and Raghunath S. Holambe, &ldquo;A New Approach to the Design of Hybrid Finer Directional Wavelet Filter Bank for Iris Feature Extraction and Classification using k-out-of-n:A post-classifier&rdquo;, Springer, Pattern Analysis and Application, vol.17,no.3,pp.517-528, 2014</li>
-<li>Amol D. Rahulkar, Bhushan D. Patil and Raghunath S. Holambe,&ldquo;A New Approach to the Design of Biorthogonal Triplet Halfband Filter Banks Using Generalized Halfband Polynomials&rdquo;, Springer, Signal Image and Video Processing, Vol.8, Issue 8, pp 1451-1457, 2014</li>
-<li>Suresh Mikkili, A.K. Panda, &ldquo;FLC based shunt active filter (p&ndash;q and Id&ndash;Iq) control strategies for mitigation of harmonics with different fuzzy MFs using MATLAB and real-time digital simulator,&rdquo; International Journal of Electrical Power and Energy Systems &ndash; Elsevier, vol. 47, pp. 313-336, May, 2013. -(SCI - Journal) MAY 2013</li>
-<li>Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, &ldquo; A Dual Inverter fed Four-level Open-end Winding Induction Motor Drive with a Nested Rectifier-Inverter&rdquo;, IEEE Transaction on Industrial Informatics, Vol.9,No.2,pp.938-946. MAY 2013</li>
-<li>Suresh Mikkili and A. K. Panda , &ldquo;Types-1 and -2 fuzzy logic controllers-based shunt active filter Id&ndash;Iq control strategy with different fuzzy membership functions for power quality improvement using RTDS hardware,&rdquo; IET Power Electronics, Vol. 6, Issue 4, pp. 818-833, April 2013. -(SCI - Journal) APRIL 2013</li>
-<li>Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;One cycle controlled single-stage, single phase voltage sensor-less grid connected PV system,&rdquo; IEEE Trans. Ind. Electron., vol.60, no.3, pp.1216-1224. MAR 2013</li>
-<li>Suresh Mikkili, A.K. Panda, &ldquo;Real-time implementation of PI and fuzzy logic controllers based shunt active filter control strategies for power quality improvement,&rdquo; International Journal of Electrical Power and Energy Systems &ndash; Elsevier, vol. 43, pp. 1114-1126, Dec. 2012. -(SCI - Journal) DEC 2012</li>
-<li>Suresh Mikkili and A. K. Panda, &ldquo;RTDS hardware implementation and simulation of SHAF for mitigation of harmonics using p-q control strategy with PI and fuzzy logic controllers,&rdquo; Frontiers of Electrical and Electronic Engineering&ndash; Springer, Vol. 7, No.4, pp. 427&ndash;437, Dec. 2012. -(SCI - Journal) DEC 2012</li>
-<li>&nbsp;Suresh Mikkili and A. K. Panda, &ldquo;Simulation and real-time implementation of shunt active filter id-iq control strategy for mitigation of harmonics with different fuzzy membership functions,&rdquo; IET Power Electronics, Vol. 5, No. 9, pp.1856 &ndash; 1872, Nov. 2012. -(SCI - Journal) NOV 2012</li>
-<li>A. K. Panda and Suresh Mikkili "Fuzzy logic controller based Shunt Active Filter control strategies for Power quality improvement Using Different Fuzzy M.F.s," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 13: Iss. 5, Article 2.DOI: 10.1515/1553-779X.2942, Nov. 2012. NOV 2012</li>
-<li>Suresh Mikkili and Anup Kumar Panda, &ldquo;Real-Time Implementation of Shunt Active Filter P-Q Control Strategy for Mitigation of Harmonics with Different Fuzzy M.F.s,&rdquo; Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 12, No. 5, , pp.821-829, Sept. 2012. -(SCI - Journal) SEPT 2012</li>
-<li>Suresh. Y, A.K. Panda, M Suresh, &ldquo;Real-time implementation of adaptive fuzzy hysteresis-band current control technique for shunt active power filter,&rdquo; IET Power Electronics, 2012, Vol. 5, No. 7, pp. 1188&ndash;1195, August 2012. -(SCI - Journal) AUG 2012</li>
-<li>Soumitra Das and G. Narayanan, &ldquo;Novel Switching Sequences for a Space-Vector-Modulated Three-Level Inverter,&rdquo; IEEE Trans. Ind. Electron, vol. 59, no. 3, pp. 1477-1487. MAR 2012</li>
-<li>Suresh Mikkili and Prof.A.K. Panda &ldquo;RTDS Hardware implementation and Simulation of 3ph 4wire SHAF for mitigation of Current harmonics with p-q Control strategy using PI controller,&rdquo; Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 76-86, Jan. 2012. JAN 2012</li>
-<li>Suresh Mikkili and A.K. Panda &ldquo;Simulation and RTDS Hardware implementation of 3ph 4wire SHAF for mitigation of Current harmonics Using id-iq Control strategy with PI Controller,&rdquo; Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 128-137, Jan. 2012. JAN 2012</li>
-<li>Suresh Mikkili and Anup Kumar Panda, &ldquo;PI and Fuzzy Logic Controller Based 3-Phase 4-Wire Shunt Active Filters for the Mitigation of Current Harmonics with the Id-Iq Control Strategy,&rdquo; Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 11, No. 6, pp. 914-921, Nov. 2011. -(SCI-E Journal) NOV 2011</li>
-<li>Suresh Mikkili and Anup Kumar Panda, &ldquo;Id-Iq Control Strategy for Mitigation of Current Harmonics with Fuzzy Logic Controller Using Matlab/Simulation and RTDS Hardware&rdquo;, Intelligent Control and Automation, Vol. 2, No.4, pp.371-382, Nov. 2011. NOV 2011</li>
-<li>Amol D. Rahulkar and Raghunath S. Holambe, &ldquo;Half-Iris Feature Extraction and Recognition Using A New Class of Triplet Half Band Filter Bank and flexible k-out-of-n: A post-classifier,&rdquo; IEEE Transactions on Information Forensic and Security, vol. 7. no.1, pp.230-240, 2012</li>
-<li>Amol D. Rahulkar and Raghunath S. Holambe, &ldquo;Partial Iris Feature Extraction and Recognition Based on A New combined Directional and Rotated Directional Wavelet Filter Banks,&rdquo; Elsevier, Neurocomputing, vol. 81, pp. 12-23, 2012</li>
-<li>Amol D. Rahulkar, Dattatraya V. Jadhav and Raghunath S. Holambe,&rdquo;Fast Discrete Curvelet Transform Based Anisotropic Iris Coding and Recognition Using k-out-of-n:A fused post-classifier,&rdquo; Springer, Machine Vision and Application, Vol.23, issue 6, 1115-1127, 2012</li>
-<li>&nbsp;Suresh Mikkili and Anup Kumar Panda, "Fuzzy and PI Controller Based SHAF for Mitigation of Current Harmonics with P-Q Method Using Matlab and RTDS Hardware," Energy and Power Engineering (EPE), Vol. 3 No. 4, pp. 407-421, Sept. 2011. SEPT 2011</li>
-<li>Suresh Mikkili and A.K. Panda, "RTDS Hardware implementation and Simulation of 3-ph 4-wire SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using Fuzzy Logic Controller," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 12: No. 5, Article 5, Aug. 2011. AUG 2011</li>
-<li>Suresh. Mikkili, A.K. Panda, &ldquo;SHAF for Mitigation of Current harmonics using p-q method with PI and Fuzzy Controllers&rdquo;, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 4, pp. 98-104, Aug. 2011. AUG 2011</li>
-<li>Suresh Mikkili and Anup Kumar Panda, &ldquo;Instantaneous Active and Reactive Power and Current Strategies for Current Harmonics Cancellation in 3-ph 4-Wire SHAF with Both PI and Fuzzy Controllers&rdquo;, Energy and Power Engineering (EPE), Vol. 3 No. 3, pp. 285-298, July 2011. JULY 2011</li>
-<li>Suresh Mikkili and Anup Kumar Panda, &ldquo;Simulation and RTDS Hardware implementation of SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using PI controller&rdquo;, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 3, pp. 54-62, May. 2011. MAY 2011</li>
-<li>C. Vyjayanthi and D. Thukaram, Evaluation and Improvement of Generators Reactive Power Margins in Interconnected Power Systems, IET Gener., Trans., and Distb., UK, April 2011, Vol.5, Issue 4, pp. 504-518. APRIL 2011</li>
-<li>Suresh Mikkili, Anup Kumar Panda and Y. Suresh, &ldquo;Fuzzy Controller Based 3Phase 4Wire Shunt Active Filter for Mitigation of Current Harmonics with Combined pq and Id-Iq Control Strategies&rdquo;, Energy and Power Engineering (EPE), Vol. 3, No.1, p43-52, Feb. 2011. FEB 2011</li>
-<li>D. Thukaram and C. Vyjayanthi, Estimation of a Least Loss Power Contract in a Deregulated Environment, International Journal of Emerging Electric Power Systems, Berkeley Electronic Press, USA, August 2010, Vol. 11, Issue 4, Article 1, pp. 1-31. AUG 2010</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Total Transfer Capability in an Interconnected Power System, International Journal of Emerging Electric Power Systems, Vol. 11, Issue 3, Article 3, pp. 1-28 , July 2010. JULY 2010</li>
-<li>Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;Design of isolated renewable hybrid power systems,&rsquo;&rsquo; Solar Energy, vol. 84, no. 7, pp. 1124-1136. JULY 2010</li>
-<li>D. Thukaram and C. Vyjayanthi, Relative Electrical Distance Concept for Evaluation of Network Reactive Power and Loss Contributions in a Deregulated System, IET Gener., Trans., and Distb., UK, November 2009, Vol.3, Issue 11, pp. 1000-1019. NOV 2009</li>
-<li>D. Thukaram and C. Vyjayanthi, Identification of Generation and Network Expansion Locations to Meet Growing Loads using Relative Electrical Distance Approach, International Journal of Emerging Electric Power Systems, Volume 10, Issue 5, Article 3, pp. 1-29, October 2009. OCT 2009</li>
-<li>D.V. Ghodke, Sreeraj E.S., K. Chatterjee, and B.G. Fernandes, &ldquo;One cycle controlled bi-directional AC to DC Converter having constant power factor operation,&rdquo; IEEE Trans. Ind. Electron., vol. 56, no. 5, pp. 1499-1510. MAY 2009</li>
-<li>D. Thukaram and C. Vyjayanthi, Evaluation of Suitable Locations for Generation Expansion in Restructured Power Systems: A Novel Concept of T-index, International Journal of Emerging Electric Power Systems, March 2009, Vol.10, Issue 1, Article 4, March 2009. MAR 2009</li>
+<li class="mx-2 my-4">Ratnakar Babu B., Suresh Mikkili, Praveen Kumar B., &ldquo;Application of Radial Basis Neural Network in MPPT Technique for stand-alone PV system under partial shading conditions&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Chavan Vinaya Chandrakant and Suresh Mikkili, &ldquo;Repositioning of Series-Parallel, Total-Cross-Tide, Bridge-Link and Honey-Comb PV array configurations for maximum power extraction&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Kanjune Akshay B, Suresh Mikkili and Praveen Kumar B, "A Review on Static Reconfiguration Techniques of Solar PV to Mitigate Mismatch Loss and Minimize Partial shading effect&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; SEPT&nbsp;&nbsp;2021.&nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Venkata R Reddy and ES Sreeraj, "A Hybrid Islanding Detection Method for One Cycle Controlled PV Inverter System," IEEE Journal of Emerging and Selected Topics in Industrial Electronics, Early Access &nbsp;&nbsp; JULY&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Aditi Atul Desai and Suresh Mikkili, &ldquo;Novel Hybrid PV configurations to enhance the output power and efficiency by minimizing number of peaks and mismatching loss&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Chavan Vinaya Chandrakant and Suresh Mikkili, &ldquo;Effect of PV array positioning on mismatch and wiring losses in Static Array Reconfiguration&rdquo;, IETE Journal of Research - Taylor &amp; Francis - Accepted - (SCI-E Journal) &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Aswini K. Samantaray, Pranose J Edavoor and Amol D. Rahulkar, "A New Approach to the Design and Implementation of a Family of Multiplier Free Orthogonal Wavelet Filter Banks", Accepted for Publication in IEEE Transactions on Circuits and Systems for Video Technology. &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Madhu G M, C. Vyjayanthi, Chirag N Modi, &ldquo;Investigation on Effect of Irradiance Change in Maximum Power Extraction from PV Array Interconnection Schemes during Partial Shading Conditions&rdquo;, IEEE Access, June 2021, IMPRINT 2C.1 Grant No: IMP/2019/000251. &nbsp;&nbsp; JUN&nbsp;&nbsp;2021.&nbsp;&nbsp; &nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Aswini K Samantaray, Amol D. Rahulkar, Pranose J Edavoor, "A Novel Design of Dyadic db3 Orthogonal Wavelet Filter Bank for Feature Extraction", Circuits, Systems, and Signal Processing, Springer, 2021 [Published Online] &nbsp;&nbsp; APRIL&nbsp;&nbsp;2021&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">Ajit Muzumdar, Chirag N Modi, Madhu G M and C. Vyjayanthi, &ldquo;Designing a Robust and Accurate Model for Consumer Centric Short Term Load Forecasting in Microgrid Environment&rdquo;, IEEE Systems Journal, April 2021. &nbsp;&nbsp; APRIL&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">&nbsp;Ajit Muzumdar, Chirag N Modi, Madhu G M and C. Vyjayanthi, &ldquo;A Trustworthy and Incentivized Smart Grid Energy Trading Framework using Distributed Ledger and Smart Contracts&rdquo;, Journal of Network and Computer Applications, March 2021. &nbsp;&nbsp; MAR&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">&nbsp;Madhu G M, C. Vyjayanthi, Chirag N Modi, &ldquo;Adaptive Step-Size based Drift-Free P&amp;O Algorithm with Power Optimizer and Load Protection for Maximum Power Extraction from PV Panels in Standalone Applications&rdquo;, IET Renewable Power Generation, January 2021, Under Grant No. 24/29/2016-SWES (R&amp;D), MNRE, India. &nbsp;&nbsp; JAN&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">VR Reddy, ES Sreeraj, "Grid Voltage Sensor-less Protection scheme for One Cycle-Controlled Single-Phase Photovoltaic Inverter Systems," Accepted for publication in CSEE Journal of Power and Energy Systems &nbsp;&nbsp; &nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">Samuel, Anudevi and Shet, Vinayak N. &ldquo;Adaptive relay settings for distribution network with distributed generation (DG) using Sugeno fuzzy inference&rdquo; International Journal of Emerging Electric Power Systems, vol. 22, no. 1, 2021, pp. 43-59. https://doi.org/10.1515/ijeeps-2020-0152 &nbsp;&nbsp; JAN&nbsp;&nbsp;2021.&nbsp; &nbsp; &nbsp;</li>
+<li class="mx-2 my-4">Shravan R, Vyjayanthi C, &ldquo;Coordinated power control without AC voltage sensing and active power filtering using interlinking converter with reduced interlinking power flow in a droop controlled islanded hybrid AC-DC microgrid&rdquo;, International Transactions on Electrical Energy Systems, WILEY, December 2020. https://doi.org/10. 1002/2050-7038.12786 &nbsp;&nbsp; DEC&nbsp;&nbsp;2020.</li>
+<li class="mx-2 my-4">Pranose J. Edavoor, Sithara Raveendran and Amol Rahulkar, "Novel 4:2 Approximate Compressor Designs for Multimedia and Neural Network Applications", Journals of Circuits, Systems and Computers, doi 10.1142/S0218126621501383, 2020 [Available Online] &nbsp;&nbsp; NOV&nbsp;&nbsp;2020.</li>
+<li class="mx-2 my-4">Praveen Kumar B and Suresh Mikkili, "Performance Investigation of Various PV Array Configurations for Grid-Connected/Standalone PV Systems", IEEE CSEE Journal of Power and Energy Systems-Accepted -(SCI-E Journal)&ndash;Sept.2020</li>
+<li class="mx-2 my-4">Aditi Atul Desai and Suresh Mikkili, "Modelling and Analysis of PV configurations (Alternate TCT-BL, Total Cross Tied, Series, Series Parallel, Bridge Linked and Honey Comb) to extract Maximum Power under Partial Shading Conditions", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) JUN 2020</li>
+<li class="mx-2 my-4">&nbsp;Suneel Raju Pendem and Suresh Mikkili, "Assessment of Cross-coupling Effects in PV String-Integrated-Converters with P&amp;O MPPT Algorithm under various Partial Shading Patterns", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) JUN 2020</li>
+<li class="mx-2 my-4">Praveen Kumar B and Suresh Mikkili, "Performance Analysis of PV Array Configurations (SP, BL, HC and TT) to Enhance Maximum Power under Non-Uniform Shading conditions", Accepted - Engineering Reports - Wiley MAY 2020</li>
+<li class="mx-2 my-4">Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, "Hybrid, Optimization, Intelligent and Classical PV MPPT Techniques : Review", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) MAY 2020</li>
+<li class="mx-2 my-4">Amita A. Shinde, Amol D. Rahulkar, Chetankumar Y. Patil, "A New Flexible Directional Filter Bank by Tuning Hermite Transform Parameters for Content Based Medical Image Retrieval", Accepted for Publication in IET Image Processing. MAY 2020</li>
+<li class="mx-2 my-4">Praveen Kumar B and Suresh Mikkili, "A Novel Fixed PV Array Configuration for Harvesting Maximum Power from Shaded Modules by Reducing the Number of Cross-Ties", IEEE- Journal of Emerging and Selected Topics in Power Electronics- Accepted - (SCI-E Journal) MAR 2020</li>
+<li class="mx-2 my-4">Anudevi Samuel., V.N.Shet, &ldquo;A Hybrid Methodology for Relay Settings in Distributed Generation Penetrated Networks&rdquo;, International Journal of Information Technology and Electrical Engineering, Vol 9,Issue-1,February 2020,ISSN:2306-708X &nbsp;&nbsp; FEB&nbsp;&nbsp;2020.</li>
+<li class="mx-2 my-4">Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, " Critical Review on PV MPPT Techniques: Classical, Intelligent and Optimization", IET Renewable Power Generation - Accepted - (SCI-E Journal) FEB 2020</li>
+<li class="mx-2 my-4">&nbsp;Praveen Kumar B and Suresh Mikkili, "Optimal PV Array Configuration for Extracting Maximum Power by Mitigating Mismatching Power Losses under Nine Shading Conditions ", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal) FEB 2020</li>
+<li class="mx-2 my-4">Pranose J. Edavoor, Sithara Raveendran, Amol D. Rahulkar, "Approximate Multiplier Design Using Novel Dual-stage 4:2 Compressors", IEEE Access (Accepted for Publication) FEB 2020</li>
+<li class="mx-2 my-4">Shravan R, Vyjayanthi C, &ldquo;Active power filtering using interlinking converter in droop controlled islanded hybrid AC-DC microgrid&rdquo;, International Transactions on Electrical Energy Systems, WILEY, 2020.&nbsp;<a href="https://doi.org/10.%201002/2050-7038.12333">https://doi.org/10. 1002/2050-7038.12333</a>&nbsp;(SCI- ECR, SERB)</li>
+<li class="mx-2 my-4">Vinay Kumar Kolakaluri, C. Vyjayanthi and Suresh Mikkili, &ldquo;PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads&rdquo;, International Journal of Emerging Electric Power Systems, DE GRUYTER, 2019; 2019001 (ECR, SERB)</li>
+<li class="mx-2 my-4">Gomathi Ramalingam, Ajay Kumar Choudhary, Suresh Mikkili, "Modelling and Analysis of PV-Based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality", International Journal of Emerging Electric Power Systems, Volume 20, Issue 6, 2019 DEC 2019</li>
+<li class="mx-2 my-4">Anudevi Samuel., V.N.Shet, &ldquo;Fuzzy Adaptive Relay Settings for Distribution Network with DG&rdquo; - Proceedings of the National Power Electronics Conference (NPEC)-2019, December 13-15, NIT Tiruchirappalli, India, IEEE Digital Xplore, 978-1-7281-4428-3/19, https://doi.org/10.1109/NPEC47332.2019.9034762 &nbsp;&nbsp; DEC&nbsp;&nbsp;2019.</li>
+<li class="mx-2 my-4">Aswini Kumar Samantaray and Amol D. Rahulkar, "A New Design of Adaptive Gabor Wavelet Filter Bank for Medical Image Retrieval", Accepted for Publication in IET Image Processing, 2019 NOV 2019</li>
+<li class="mx-2 my-4">Vinay Kumar Kolakaluri, Suresh Mikkili, "Integration of Battery Energy Storage Systems to Solar PV to Reduce the AH Capacity by Extracting Maximum Power from PV Array under Varying Irradiance and Load Conditions for Rural/Remote Area Applications", International Journal of Emerging Electric Power Systems, Volume 20, Issue 5, 2019 OCT 2019</li>
+<li class="mx-2 my-4">Jayanand Gawande, Amol Rahulkar and Raghunath Holambe, "Efficient Rationalization of Triplet Halfband Filter Banks and Its Application to Image Compression", Accepted for Publication in IEEE Transactions on Circuits and Systems for Video Technology OCT 2019</li>
+<li class="mx-2 my-4">V.R. Reddy and Sreeraj E.S.,"A Feedback based Passive Islanding Detection Technique for One Cycle Controlled Single Phase Inverter used in Photovoltaic Systems," IEEE Trans. Ind. Electron., 67 (8), 6541-6549, 2019 &nbsp;&nbsp; AUG&nbsp;&nbsp;2019.&nbsp;&nbsp;</li>
+<li class="mx-2 my-4">Vinay Kumar Kolakaluri, C Vyjayanthi, Suresh Mikkili, "PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads", International Journal of Emerging Electric Power Systems, Volume 20, Issue 4, 2019 AUG 2019</li>
+<li class="mx-2 my-4">Santosh Nagnath Randive, Ranjan K Senapati, Amol D Rahulkar,"A review on computer-aided recent developments for automatic detection of diabetic retinopathy",Journal of Medical Engineering &amp; Technology, Taylor &amp; Francis, pp 1-13,2019 2019</li>
+<li class="mx-2 my-4">&nbsp;Vinay Kumar Kolakaluri, C. Vyjayanthi and Suresh Mikkili, &ldquo;PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads&rdquo;, International Journal of Emerging Electric Power Systems, DE GRUYTER, July 2019; 2019001 JULY 2019</li>
+<li class="mx-2 my-4">Manjunath Matam, Venugopal Reddy Barry and Brad Lehman, &ldquo;Performance improvement of dynamic PV array under partial shade conditions using M2 algorithm&rdquo;, IET Renewable Power Generation, Vol.13, no. 8, pp 1239-1249, June 2019</li>
+<li class="mx-2 my-4">&nbsp;Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, &ldquo;PV Distributed-MPP Tracking: Total-Cross-Tied configuration of String-Integrated-Converters to extract the maximum Power under various PSCs with P&amp;O MPPT Technique&rdquo;, IEEE Systems Journal- Accepted - (SCI-E Journal) MAY 2019</li>
+<li class="mx-2 my-4">Amita Shinde, Amol Rahulkar, Chetankumar Patil,"Content based medical image retrieval based on new efficient local neighborhood wavelet feature descriptor",Biomedical Engineering Letters, pp 1-8, 2019 2019</li>
+<li class="mx-2 my-4">Pranose J. Edavoor and Amol D. Rahulkar, "Design and Implementation of A Novel Low Complexity Symmetric Orthogonal Wavelet Filter-Bank", IET Image Processing, Vol.13, Issue 5,pp 785-793, April 2019 2019</li>
+<li class="mx-2 my-4">Amita Shinde, Amol D. Rahulkar and C. Y. Patil, &ldquo;Biomedical Image Indexing and Retrieval based on New Efficient Hybrid Approach using Directional Decomposition and a Novel Local Directional Frequency Encoded Pattern: A Post Feature Descriptor&rdquo;, (Accepted for publication), Multimedia Tools and Applications, Springer, April 2019.</li>
+<li class="mx-2 my-4">Suneel Raju Pendem and Suresh Mikkili, &ldquo;Modelling, Simulation and Performance Analysis of Solar PV Array Configurations (Series, Series-Parallel and Honey-Comb) to Extract Maximum Power under Partial Shading Conditions&rdquo;, Energy Reports - Elsevier, Volume 04, Pages 274-287, 2018 (SCI-E Journal) NOV 2018</li>
+<li class="mx-2 my-4">Suneel Raju Pendem and Suresh Mikkili, &ldquo;Modeling, simulation, and performance analysis of PV array configurations (Series, Series-Parallel, Bridge-Linked, and Honey-Comb) to harvest maximum power under various PSCs&rdquo; International Journal of Green Energy - Taylor and Francis, Volume 15, No. 13, pp.795-812, 2018. -(SCI - Journal) OCT 2018</li>
+<li class="mx-2 my-4">Santosh Nagnath Randive, Amol D Rahulkar, Ranjan K Senapati,"LVP extraction and triplet-based segmentation for diabetic retinopathy recognition",Evolutionary Intelligence, Springer, vol.11,pp 117-129, 2018 OCT 2018</li>
+<li class="mx-2 my-4">M. Manjunath, Venugopal Reddy Barry, and Avinash Reddy G, &ldquo;Optimized reconfigurable pv array based photovoltaic water-pumping system&rdquo;, Solar Energy , Elsevier Journal, Vol. 170, pp. 1063 - 1073. 2018</li>
+<li class="mx-2 my-4">Manjunath Matam, Venugopal Reddy Barry, &ldquo;Improved performance of dynamic photovoltaic array under repeating shade conditions&rdquo;, Energy Conversion and Management, Elsevier Journal, Vol. 168, 15 July 2018, pp. 639-650. 2018</li>
+<li class="mx-2 my-4">Manjunath Matam, Venugopal Reddy Barry, &ldquo;Variable size Dynamic PV array for small and various DC loads&rdquo;, Solar Energy, Elsevier Journal, Vol.163, pp. 581-590. 2018</li>
+<li class="mx-2 my-4">Suresh Mikkili and Besta Umamaheswaraiah, &ldquo;A Zig-zag Transformer based Hybrid Power Filter with Cascaded Three level Multilevel Inverter to Enhance Power Quality in Three-Phase Four-wire Distribution Power System&rdquo;, Journal of Electrical Engineering, Vol. 18, No.1, pp. 264-275, 2018. APRIL 2018</li>
+<li class="mx-2 my-4">Suneel Raju Pendem, Suresh Mikkili "Modelling and performance assessment of PV array topologies under partial shading conditions to mitigate the mismatching power losses" Solar Energy - Elsevier, Volume 160, pp. 303&ndash;321, 2018 (SCI-E Journal) JAN 2018</li>
+<li class="mx-2 my-4">Amita Shinde, Amol Rahulkar and C. Y. Patil, "Fast discrete curvelet transform-based anisotropic feature extraction for biomedical image indexing and retrieval", International Journal of Multimedia Information Retrieval,6(4),2017 DEC 2017</li>
+<li class="mx-2 my-4">Suresh Mikkili, Adinarayana, &ldquo;PHC, Id-Iq and pq Control Strategies for Mitigation of Current Harmonics in Three-Phase Three-Wire Shunt Active Filter with PI Controller&rdquo;, International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 18, Issue 2, April 2017. APRIL 2017</li>
+<li class="mx-2 my-4">Anudevi. S.,Dr.V.N.Shet,"Distribution Network with Optimal DG Placement and Protection Impacts:Review Analysis",International Journal of Electrical and Electronics Engineering,Vol 4,Issue 2-February 2017 FEB 2017</li>
+<li class="mx-2 my-4">Ch LS Srinivas, and E S Sreeraj, "A Maximum Power Point Tracking Technique Based on Ripple Correlation Control for Single Phase Photovoltaic System with Fuzzy Logic Controller," Energy Procedia, vol. 90, pp. 69-77. DEC 2016</li>
+<li class="mx-2 my-4">Pravin B Chopade, Amol D Rahulkar, Pradeep M Patil,"Hybrid-Thresholding based Image Super-Resolution Technique by the use of Triplet Half-Band Wavelets", vol.97, issue 4,pp.517-523, 2016 DEC 2016</li>
+<li class="mx-2 my-4">Elavala Satish, Suresh Mikkili, Lav Kumar Gupta, &ldquo;Synchronous Reference Frame method for Mitigation of Current Harmonics with PI and FLC based Shunt Active Filter under Load Variation&rdquo;, International Journal of Innovations in Engineering and Technology, Vol. 7, Issue 3, pp. 433-450, 2016. OCT 2016</li>
+<li class="mx-2 my-4">Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, &ldquo;A New Approach to Design Triplet Half-band Filter-banks Based on Balanced-uncertainty Optimization&rdquo;, Elsevier, Digital Signal Processing, Vol. 56, pp.123-131, 2016</li>
+<li class="mx-2 my-4">Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, &ldquo; An SVPWM scheme for the Suppression of Zero-Sequence Current in a Four-level Open-End Winding Induction Motor Drive with Nested Rectifier-Inverter&rdquo;, IEEE Transaction on Industrial Electronics,vol.63, no.5,pp.2803-2812,May 2016</li>
+<li class="mx-2 my-4">Suresh Mikkili, and A. K. Panda, &ldquo;Power Quality Issues and Solutions &ndash; Review," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 16, Issue 4, Pages 357&ndash;384, Aug 2015. AUG 2015</li>
+<li class="mx-2 my-4">Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, "Design of New Class of Regular Biorthogonal Wavelet Filter Banks Using Generalized and Hybrid Lifting Structures", Springer, Signal, Image and Video Processing, Vol. 9, Issue 1, pp.265-273 , 2015</li>
+<li class="mx-2 my-4">Suresh Mikkili, Anup Kumar Panda and Jayanthi Prattipati &ldquo;Review of RT-LAB and steps involved for implementation of a Simulink Model from MATLAB to REAL-TIME&rdquo; Journal of the Institution of Engineers (India): Series B _ (Springer), Volume 96, Issue 2, pp 179-196, June 2015. JUN 2015</li>
+<li class="mx-2 my-4">Soumitra Das, Binoj Kumar A. C. and G. Narayanan, &ldquo;Analytical evaluation of harmonic distortion factor corresponding to generalised advanced bus-clamping pulse width modulation,&rdquo; IET Power Electron., vol. 7, no. 12, pp. 3072-3082. DEC 2014</li>
+<li class="mx-2 my-4">Soumitra Das and G. Narayanan, &ldquo;Analytical Closed-Form Expressions for Harmonic Distortion Corresponding to Novel Switching Sequences for Neutral-Point-Clamped Inverters,&rdquo; IEEE Trans. Ind. Electron., vol. 61, no. 9, pp. 4485-4497. SEPT 2014</li>
+<li class="mx-2 my-4">&nbsp;Soumitra Das, G. Narayanan and M. Pandey, &ldquo;Space-Vector-Based Hybrid Pulsewidth Modulation Techniques for a Three-Level Inverter&rdquo; IEEE Trans. Power Electron., vol. 29, no. 9, pp. 4580-4591. SEPT 2014</li>
+<li class="mx-2 my-4">V.T. Somasekhar, B. Venugopal Reddy, and K. Sivakumar, &ldquo;A Four-level Inversion Scheme for a 6-n Pole Open-end Winding Induction Motor Drive for an Improved DC-link Utilization&rdquo;, IEEE Transaction on Industrial Electronics, vol..61,no.9,pp.4565-4572. SEPT 2014</li>
+<li class="mx-2 my-4">Suresh Mikkili, and A. K. Panda, &ldquo;Review and Analysis of Type-1 and Type-2 Fuzzy Logic Controllers", Journal of Automation &amp; Systems Engineering, Volume 8, Issue 3, Pages 151-174, Sept. 2014. SEPT 2014</li>
+<li class="mx-2 my-4">Sreeraj, E.S., Prejith, E.K., K. Chatterjee, and S. Bandyopadhyay, "An Active Harmonic Filter Based on One-Cycle Control," IEEE Trans. Ind. Electron., vol.61, no.8, pp.3799-3809. AUG 2014</li>
+<li class="mx-2 my-4">Suresh Mikkili, and A. K. Panda, &ldquo;Real-Time Implementation of Type-2 FLC&ndash;Based Shunt Active Filter Control Strategies (p&ndash;q and Id&ndash;Iq) with Different Fuzzy MFs for Power Quality Improvement,&rdquo; International Journal of Emerging Electric Power Systems : be press (Berkeley Electronics press), Vol. 15, Issue 3, Pages 217&ndash;236, June 2014. JUN 2014</li>
+<li class="mx-2 my-4">Muhammad Muhsin,Abhishek Mishra,Shreyansh Vishwakarma,K.Dasaratha Babu,Anudevi Samuel,"Performance Evaluation of Intelligent Controllers for AGC in Thermal systems".WASET,International Journal of Electrical,Robotics,Electronics and Communication Engineering,Vol-8 no:4,2014 APRIL 2014</li>
+<li class="mx-2 my-4">Suresh Mikkili, and A. K. Panda, &ldquo;Performance analysis and real-time implementation of shunt active filter current control strategy with type-1 and type-2 FLC triangular M.F,&rdquo; International Transactions on Electrical Energy Systems - John Wiley &amp; Sons Volume 24, Issue 3, pages 347&ndash;362, March 2014-(SCI-E Journal) MAR 2014</li>
+<li class="mx-2 my-4">Amol D. Rahulkar, Laxman M. Waghmare, and Raghunath S. Holambe, &ldquo;A New Approach to the Design of Hybrid Finer Directional Wavelet Filter Bank for Iris Feature Extraction and Classification using k-out-of-n:A post-classifier&rdquo;, Springer, Pattern Analysis and Application, vol.17,no.3,pp.517-528, 2014</li>
+<li class="mx-2 my-4">Amol D. Rahulkar, Bhushan D. Patil and Raghunath S. Holambe,&ldquo;A New Approach to the Design of Biorthogonal Triplet Halfband Filter Banks Using Generalized Halfband Polynomials&rdquo;, Springer, Signal Image and Video Processing, Vol.8, Issue 8, pp 1451-1457, 2014</li>
+<li class="mx-2 my-4">Suresh Mikkili, A.K. Panda, &ldquo;FLC based shunt active filter (p&ndash;q and Id&ndash;Iq) control strategies for mitigation of harmonics with different fuzzy MFs using MATLAB and real-time digital simulator,&rdquo; International Journal of Electrical Power and Energy Systems &ndash; Elsevier, vol. 47, pp. 313-336, May, 2013. -(SCI - Journal) MAY 2013</li>
+<li class="mx-2 my-4">Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, &ldquo; A Dual Inverter fed Four-level Open-end Winding Induction Motor Drive with a Nested Rectifier-Inverter&rdquo;, IEEE Transaction on Industrial Informatics, Vol.9,No.2,pp.938-946. MAY 2013</li>
+<li class="mx-2 my-4">Suresh Mikkili and A. K. Panda , &ldquo;Types-1 and -2 fuzzy logic controllers-based shunt active filter Id&ndash;Iq control strategy with different fuzzy membership functions for power quality improvement using RTDS hardware,&rdquo; IET Power Electronics, Vol. 6, Issue 4, pp. 818-833, April 2013. -(SCI - Journal) APRIL 2013</li>
+<li class="mx-2 my-4">Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;One cycle controlled single-stage, single phase voltage sensor-less grid connected PV system,&rdquo; IEEE Trans. Ind. Electron., vol.60, no.3, pp.1216-1224. MAR 2013</li>
+<li class="mx-2 my-4">Suresh Mikkili, A.K. Panda, &ldquo;Real-time implementation of PI and fuzzy logic controllers based shunt active filter control strategies for power quality improvement,&rdquo; International Journal of Electrical Power and Energy Systems &ndash; Elsevier, vol. 43, pp. 1114-1126, Dec. 2012. -(SCI - Journal) DEC 2012</li>
+<li class="mx-2 my-4">Suresh Mikkili and A. K. Panda, &ldquo;RTDS hardware implementation and simulation of SHAF for mitigation of harmonics using p-q control strategy with PI and fuzzy logic controllers,&rdquo; Frontiers of Electrical and Electronic Engineering&ndash; Springer, Vol. 7, No.4, pp. 427&ndash;437, Dec. 2012. -(SCI - Journal) DEC 2012</li>
+<li class="mx-2 my-4">&nbsp;Suresh Mikkili and A. K. Panda, &ldquo;Simulation and real-time implementation of shunt active filter id-iq control strategy for mitigation of harmonics with different fuzzy membership functions,&rdquo; IET Power Electronics, Vol. 5, No. 9, pp.1856 &ndash; 1872, Nov. 2012. -(SCI - Journal) NOV 2012</li>
+<li class="mx-2 my-4">A. K. Panda and Suresh Mikkili "Fuzzy logic controller based Shunt Active Filter control strategies for Power quality improvement Using Different Fuzzy M.F.s," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 13: Iss. 5, Article 2.DOI: 10.1515/1553-779X.2942, Nov. 2012. NOV 2012</li>
+<li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, &ldquo;Real-Time Implementation of Shunt Active Filter P-Q Control Strategy for Mitigation of Harmonics with Different Fuzzy M.F.s,&rdquo; Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 12, No. 5, , pp.821-829, Sept. 2012. -(SCI - Journal) SEPT 2012</li>
+<li class="mx-2 my-4">Suresh. Y, A.K. Panda, M Suresh, &ldquo;Real-time implementation of adaptive fuzzy hysteresis-band current control technique for shunt active power filter,&rdquo; IET Power Electronics, 2012, Vol. 5, No. 7, pp. 1188&ndash;1195, August 2012. -(SCI - Journal) AUG 2012</li>
+<li class="mx-2 my-4">Soumitra Das and G. Narayanan, &ldquo;Novel Switching Sequences for a Space-Vector-Modulated Three-Level Inverter,&rdquo; IEEE Trans. Ind. Electron, vol. 59, no. 3, pp. 1477-1487. MAR 2012</li>
+<li class="mx-2 my-4">Suresh Mikkili and Prof.A.K. Panda &ldquo;RTDS Hardware implementation and Simulation of 3ph 4wire SHAF for mitigation of Current harmonics with p-q Control strategy using PI controller,&rdquo; Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 76-86, Jan. 2012. JAN 2012</li>
+<li class="mx-2 my-4">Suresh Mikkili and A.K. Panda &ldquo;Simulation and RTDS Hardware implementation of 3ph 4wire SHAF for mitigation of Current harmonics Using id-iq Control strategy with PI Controller,&rdquo; Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 128-137, Jan. 2012. JAN 2012</li>
+<li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, &ldquo;PI and Fuzzy Logic Controller Based 3-Phase 4-Wire Shunt Active Filters for the Mitigation of Current Harmonics with the Id-Iq Control Strategy,&rdquo; Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 11, No. 6, pp. 914-921, Nov. 2011. -(SCI-E Journal) NOV 2011</li>
+<li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, &ldquo;Id-Iq Control Strategy for Mitigation of Current Harmonics with Fuzzy Logic Controller Using Matlab/Simulation and RTDS Hardware&rdquo;, Intelligent Control and Automation, Vol. 2, No.4, pp.371-382, Nov. 2011. NOV 2011</li>
+<li class="mx-2 my-4">Amol D. Rahulkar and Raghunath S. Holambe, &ldquo;Half-Iris Feature Extraction and Recognition Using A New Class of Triplet Half Band Filter Bank and flexible k-out-of-n: A post-classifier,&rdquo; IEEE Transactions on Information Forensic and Security, vol. 7. no.1, pp.230-240, 2012</li>
+<li class="mx-2 my-4">Amol D. Rahulkar and Raghunath S. Holambe, &ldquo;Partial Iris Feature Extraction and Recognition Based on A New combined Directional and Rotated Directional Wavelet Filter Banks,&rdquo; Elsevier, Neurocomputing, vol. 81, pp. 12-23, 2012</li>
+<li class="mx-2 my-4">Amol D. Rahulkar, Dattatraya V. Jadhav and Raghunath S. Holambe,&rdquo;Fast Discrete Curvelet Transform Based Anisotropic Iris Coding and Recognition Using k-out-of-n:A fused post-classifier,&rdquo; Springer, Machine Vision and Application, Vol.23, issue 6, 1115-1127, 2012</li>
+<li class="mx-2 my-4">&nbsp;Suresh Mikkili and Anup Kumar Panda, "Fuzzy and PI Controller Based SHAF for Mitigation of Current Harmonics with P-Q Method Using Matlab and RTDS Hardware," Energy and Power Engineering (EPE), Vol. 3 No. 4, pp. 407-421, Sept. 2011. SEPT 2011</li>
+<li class="mx-2 my-4">Suresh Mikkili and A.K. Panda, "RTDS Hardware implementation and Simulation of 3-ph 4-wire SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using Fuzzy Logic Controller," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 12: No. 5, Article 5, Aug. 2011. AUG 2011</li>
+<li class="mx-2 my-4">Suresh. Mikkili, A.K. Panda, &ldquo;SHAF for Mitigation of Current harmonics using p-q method with PI and Fuzzy Controllers&rdquo;, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 4, pp. 98-104, Aug. 2011. AUG 2011</li>
+<li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, &ldquo;Instantaneous Active and Reactive Power and Current Strategies for Current Harmonics Cancellation in 3-ph 4-Wire SHAF with Both PI and Fuzzy Controllers&rdquo;, Energy and Power Engineering (EPE), Vol. 3 No. 3, pp. 285-298, July 2011. JULY 2011</li>
+<li class="mx-2 my-4">Suresh Mikkili and Anup Kumar Panda, &ldquo;Simulation and RTDS Hardware implementation of SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using PI controller&rdquo;, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 3, pp. 54-62, May. 2011. MAY 2011</li>
+<li class="mx-2 my-4">C. Vyjayanthi and D. Thukaram, Evaluation and Improvement of Generators Reactive Power Margins in Interconnected Power Systems, IET Gener., Trans., and Distb., UK, April 2011, Vol.5, Issue 4, pp. 504-518. APRIL 2011</li>
+<li class="mx-2 my-4">Suresh Mikkili, Anup Kumar Panda and Y. Suresh, &ldquo;Fuzzy Controller Based 3Phase 4Wire Shunt Active Filter for Mitigation of Current Harmonics with Combined pq and Id-Iq Control Strategies&rdquo;, Energy and Power Engineering (EPE), Vol. 3, No.1, p43-52, Feb. 2011. FEB 2011</li>
+<li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Estimation of a Least Loss Power Contract in a Deregulated Environment, International Journal of Emerging Electric Power Systems, Berkeley Electronic Press, USA, August 2010, Vol. 11, Issue 4, Article 1, pp. 1-31. AUG 2010</li>
+<li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation and Improvement of Total Transfer Capability in an Interconnected Power System, International Journal of Emerging Electric Power Systems, Vol. 11, Issue 3, Article 3, pp. 1-28 , July 2010. JULY 2010</li>
+<li class="mx-2 my-4">Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, &ldquo;Design of isolated renewable hybrid power systems,&rsquo;&rsquo; Solar Energy, vol. 84, no. 7, pp. 1124-1136. JULY 2010</li>
+<li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Relative Electrical Distance Concept for Evaluation of Network Reactive Power and Loss Contributions in a Deregulated System, IET Gener., Trans., and Distb., UK, November 2009, Vol.3, Issue 11, pp. 1000-1019. NOV 2009</li>
+<li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Identification of Generation and Network Expansion Locations to Meet Growing Loads using Relative Electrical Distance Approach, International Journal of Emerging Electric Power Systems, Volume 10, Issue 5, Article 3, pp. 1-29, October 2009. OCT 2009</li>
+<li class="mx-2 my-4">D.V. Ghodke, Sreeraj E.S., K. Chatterjee, and B.G. Fernandes, &ldquo;One cycle controlled bi-directional AC to DC Converter having constant power factor operation,&rdquo; IEEE Trans. Ind. Electron., vol. 56, no. 5, pp. 1499-1510. MAY 2009</li>
+<li class="mx-2 my-4">D. Thukaram and C. Vyjayanthi, Evaluation of Suitable Locations for Generation Expansion in Restructured Power Systems: A Novel Concept of T-index, International Journal of Emerging Electric Power Systems, March 2009, Vol.10, Issue 1, Article 4, March 2009. MAR 2009</li>
 </ul>
 <p><!--[if gte mso 9]><xml> <w:WordDocument> <w:View>Normal</w:View> <w:Zoom>0</w:Zoom> <w:TrackMoves /> <w:TrackFormatting /> <w:PunctuationKerning /> <w:ValidateAgainstSchemas /> <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid> <w:IgnoreMixedContent>false</w:IgnoreMixedContent> <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText> <w:DoNotPromoteQF /> <w:LidThemeOther>EN-US</w:LidThemeOther> <w:LidThemeAsian>X-NONE</w:LidThemeAsian> <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript> <w:Compatibility> <w:BreakWrappedTables /> <w:SnapToGridInCell /> <w:WrapTextWithPunct /> <w:UseAsianBreakRules /> <w:DontGrowAutofit /> <w:SplitPgBreakAndParaMark /> <w:DontVertAlignCellWithSp /> <w:DontBreakConstrainedForcedTables /> <w:DontVertAlignInTxbx /> <w:Word11KerningPairs /> <w:CachedColBalance /> </w:Compatibility> <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel> <m:mathPr> <m:mathFont m:val="Cambria Math" /> <m:brkBin m:val="before" /> <m:brkBinSub m:val=" " /> <m:smallFrac m:val="off" /> <m:dispDef /> <m:lMargin m:val="0" /> <m:rMargin m:val="0" /> <m:defJc m:val="centerGroup" /> <m:wrapIndent m:val="1440" /> <m:intLim m:val="subSup" /> <m:naryLim m:val="undOvr" /> </m:mathPr></w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml> <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"   DefSemiHidden="true" DefQFormat="false" DefPriority="99"   LatentStyleCount="267"> <w:LsdException Locked="false" Priority="0" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Normal" /> <w:LsdException Locked="false" Priority="9" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="heading 1" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8" /> <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9" /> <w:LsdException Locked="false" Priority="39" Name="toc 1" /> <w:LsdException Locked="false" Priority="39" Name="toc 2" /> <w:LsdException Locked="false" Priority="39" Name="toc 3" /> <w:LsdException Locked="false" Priority="39" Name="toc 4" /> <w:LsdException Locked="false" Priority="39" Name="toc 5" /> <w:LsdException Locked="false" Priority="39" Name="toc 6" /> <w:LsdException Locked="false" Priority="39" Name="toc 7" /> <w:LsdException Locked="false" Priority="39" Name="toc 8" /> <w:LsdException Locked="false" Priority="39" Name="toc 9" /> <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption" /> <w:LsdException Locked="false" Priority="10" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Title" /> <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font" /> <w:LsdException Locked="false" Priority="11" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtitle" /> <w:LsdException Locked="false" Priority="22" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Strong" /> <w:LsdException Locked="false" Priority="20" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Emphasis" /> <w:LsdException Locked="false" Priority="59" SemiHidden="false"    UnhideWhenUsed="false" Name="Table Grid" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text" /> <w:LsdException Locked="false" Priority="1" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="No Spacing" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 1" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 1" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 1" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 1" /> <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision" /> <w:LsdException Locked="false" Priority="34" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="List Paragraph" /> <w:LsdException Locked="false" Priority="29" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Quote" /> <w:LsdException Locked="false" Priority="30" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Quote" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 1" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 1" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 1" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 1" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 1" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 2" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 2" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 2" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 2" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 2" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 2" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 2" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 2" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 2" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 3" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 3" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 3" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 3" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 3" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 3" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 3" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 3" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 3" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 4" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 4" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 4" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 4" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 4" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 4" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 4" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 4" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 4" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 5" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 5" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 5" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 5" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 5" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 5" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 5" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 5" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 5" /> <w:LsdException Locked="false" Priority="60" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Shading Accent 6" /> <w:LsdException Locked="false" Priority="61" SemiHidden="false"    UnhideWhenUsed="false" Name="Light List Accent 6" /> <w:LsdException Locked="false" Priority="62" SemiHidden="false"    UnhideWhenUsed="false" Name="Light Grid Accent 6" /> <w:LsdException Locked="false" Priority="63" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6" /> <w:LsdException Locked="false" Priority="64" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6" /> <w:LsdException Locked="false" Priority="65" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 1 Accent 6" /> <w:LsdException Locked="false" Priority="66" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium List 2 Accent 6" /> <w:LsdException Locked="false" Priority="67" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6" /> <w:LsdException Locked="false" Priority="68" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6" /> <w:LsdException Locked="false" Priority="69" SemiHidden="false"    UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6" /> <w:LsdException Locked="false" Priority="70" SemiHidden="false"    UnhideWhenUsed="false" Name="Dark List Accent 6" /> <w:LsdException Locked="false" Priority="71" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Shading Accent 6" /> <w:LsdException Locked="false" Priority="72" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful List Accent 6" /> <w:LsdException Locked="false" Priority="73" SemiHidden="false"    UnhideWhenUsed="false" Name="Colorful Grid Accent 6" /> <w:LsdException Locked="false" Priority="19" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis" /> <w:LsdException Locked="false" Priority="21" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis" /> <w:LsdException Locked="false" Priority="31" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference" /> <w:LsdException Locked="false" Priority="32" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Intense Reference" /> <w:LsdException Locked="false" Priority="33" SemiHidden="false"    UnhideWhenUsed="false" QFormat="true" Name="Book Title" /> <w:LsdException Locked="false" Priority="37" Name="Bibliography" /> <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading" /> </w:LatentStyles> </xml><![endif]--><!--[if gte mso 10]> <mce:style><!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-priority:99; 	mso-style-qformat:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin-top:0in; 	mso-para-margin-right:0in; 	mso-para-margin-bottom:10.0pt; 	mso-para-margin-left:0in; 	line-height:115%; 	mso-pagination:widow-orphan; 	font-size:11.0pt; 	font-family:"Calibri","sans-serif"; 	mso-ascii-font-family:Calibri; 	mso-ascii-theme-font:minor-latin; 	mso-hansi-font-family:Calibri; 	mso-hansi-theme-font:minor-latin; 	mso-bidi-font-family:"Times New Roman"; 	mso-bidi-theme-font:minor-bidi;} --></p>
 <ol type="1"> </ol>

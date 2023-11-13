@@ -65,3 +65,12 @@ $(document).ready(function () {
   
 const elements = document.querySelectorAll('a');
 elements.forEach(cleaner);
+
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    includedLanguages: 'en,hi,te,ta,mr,ur,bn,gu,kn,ml,pa,or,as', // Include English, Hindi, and other commonly spoken Indian languages
+    layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+  }, 'google_translate_element');
+}

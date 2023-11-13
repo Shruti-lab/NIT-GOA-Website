@@ -4,40 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Department of Mechanical Engineering</title>
-   <script src="../script.js"></script>
- <link rel="stylesheet" href=".././styles.css" />
+    <script src="../script.js"></script>
+    <link rel="stylesheet" href=".././styles.css" />
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    <style>
-        table, th, td {
-          border: 1px solid black;
-          border-collapse: collapse;
-        }
-        </style>
+</head>
 <body>
+    <!-- Header Starts here -->
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center">
+        <div class="flex items-center text-gray-300">
+            <div class="mr-4 ml-6">
+                <i class="fas fa-envelope"></i> your@email.com
+            </div>
+            <div><i class="fas fa-phone"></i> +1234567890</div>
+        </div>
+        <div class="flex items-center">
+            <a href="../index.html" class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500">Home</a>
+            <a href="../tenders.html" class="mr-4 sm:text-sm text-gray-300 hover:text-blue-500">Tenders</a>
+            <a href="https://www.nitgoa.ac.in/gian/"
+                class="sm:text-sm mr-4 text-gray-300 hover:text-blue-500">G.I.A.N</a>
+            <a href="https://www.nitgoa.ac.in/login.aspx" class="sm:text-sm text-gray-300 hover:text-blue-500">Login</a>
+        </div>
+    </div>
+    <!--Header Ends Here-->
+
     <header id="main-header" class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl">
         <div class="flex justify-center">
             <img class="w-33 h-22" src="../static/logo_color.png" alt="" />
 
         </div>
 
-        <div class="text-center border mb-10">
+        <div class="text-center border">
             <nav class="mt-2 justify-center items-center">
-                <div class="container_B font-semibold text-gray-900 flex justify-center mx-16">
+                <div class="container_B font-semibold text-gray-900 justify-center flex">
 
                     <!--Home-->
                     <div class="dropdown">
-                        <a href="../Electrical/index.html">Home</a>
+                        <a href="../../index.html">Home</a>
                     </div>
 
                     <!--Academic Handbook-->
                     <div class="dropdown">
                         <button class="dropbtn">Academics</button>
                         <div class="dropdown-content">
-                            <a href="#">academic handbook</a>
-                            <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">calendar</a>
-                            <a href="../academics/rules_and_regulations.html">regulation and Curriculum</a>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">Academic Handbook <span
+                                        class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../static/UG EEE_FINAL_ACADEMIC_HANDBOOK_NIT_GOA_Revised-1.pdf">UG
+                                        Handbook</a>
+                                    <a href="../static/PG M.Tech (PEPS)_EEE_Syllabus.pdf">PG Handbook</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <a href="../static/Academic_Calendar_AY_2023-24ODD_Revised_7oct2023.pdf">Calendar</a>
+                            <a href="../academics/rules_and_regulations.html">Regulation and Curriculum</a>
                         </div>
 
                     </div>
@@ -46,59 +69,126 @@
                     <div class="dropdown">
                         <button class="dropbtn">Students</button>
                         <div class="dropdown-content">
-                            <a href="../Electrical/Students/btech.html">B.Tech</a>
-                            <a href="../Electrical/Students/mtech.html">M.Tech</a>
-                            <a href="../Electrical/Students/phd.html">Ph.D.</a>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">B.Tech <span
+                                        class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../static/B.tech_4year_EEE-2022.pdf">Batch 2018-22</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">M.Tech<span
+                                        class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../static/MTech-II_Batch_2020-22.png">Batch 2020-22</a>
+                                    <a href="../static/MTech-I_Batch_2021-23.png">Batch 2021-23</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <a href="../static/Ph D Regular 2022.png">Ph.D.</a>
                         </div>
 
                     </div>
-                   <!--Faculty-->
-                   <div class="dropdown">
-                    <a href="../Electrical/faculty.html">Faculty</a>
-                    
-                </div>
-                <!--staff-->
-                <div class="dropdown">
-                    <a href="../Electrical/staff.html">Staff</a>
-                    
-                </div>
-                <!--reseach-->
-                <div class="dropdown">
-                    <button class="dropbtn">Research</button>
-                    <div class="dropdown-content">
-                        <a href="#">journals</a>
-                        <a href="../Electrical/Research/Proceedings.html">proceedings</a>
-                        <a href="../Electrical/Research/Book_Book_chapters.html">book / book chapters</a>
-                        <a href="../Electrical/Research/Research_projects.html">Research projects</a>
+                    <!--Faculty-->
+                    <div class="dropdown">
+                        <a href="../Electrical/faculty.html">Faculty</a>
+
                     </div>
+                    <!--staff-->
+                    <div class="dropdown">
+                        <a href="../Electrical/staff.html">Staff</a>
 
-                </div>
-                <!--Events-->
-                <div class="dropdown">
-                    <a href="../Electrical/Events/event.html">Events</a>
-                    
-                </div>
-                   <!--Gallery-->
-                   <div class="dropdown">
-                    <a href="../Electrical/Gallery/Photo.html">Gallery</a>
-                    
-                </div>
-
-                <!--E-Downloads-->
-                <div class="dropdown">
-                    <button class="dropbtn">E-Downloads</button>
-                    <div class="dropdown-content">
-                      <a href="../Electrical/edownloads/facualty_staff.html">Faculty and staff</a>
-                      <a href="../Electrical/edownloads/student.html">Student</a>
-                      <a href="../academics/DissertionFormat.html">Dissertion Format</a>
                     </div>
+                    <!--reseach-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="#">Journals</a>
+                            <a href="../Electrical/Research/Proceedings.html">Proceedings</a>
+                            <a href="../Electrical/Research/Book_Book_chapters.html">Book / Book Chapters</a>
+                            <a href="../Electrical/Research/Research_projects.html">Research Projects</a>
+                        </div>
 
-                </div>
+                    </div>
+                    <!--Events-->
+                    <div class="dropdown">
+                        <a href="../Electrical/Events/event.html">Events</a>
+
+                    </div>
+                    <!--Gallery-->
+                    <div class="dropdown">
+                        <a href="../Electrical/Gallery/Photo.html">Gallery</a>
+
+                    </div>
+                    <!--Alumni-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Alumni</button>
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">B.Tech <span
+                                        class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content text-sm">
+                                    <a href="../static/Btech_EEE_2010_14.pdf">Graduate-2014</a>
+                                    <a href="../static/Btech_EEE_2011_15.pdf">Graduate-2015</a>
+                                    <a href="../static/Btech_EEE_2012_16.pdf">Graduate-2016</a>
+                                    <a href="../static/Btech_EEE_2013_17.pdf">Graduate-2017</a>
+                                    <a href="../static/Btech_EEE_2014_18.pdf">Graduate-2018</a>
+                                    <a href="../static/eee_btech_2015batch_23sept2016 (1).pdf">Graduate-2019</a>
+                                    <a href="../static/Btech_2016-2020.pdf">Graduate-2020</a>
+                                    <a href="../static/Graduate_(B.Tech)-2021.pdf">Graduate-2021</a>
+
+                                </div>
+                                <!--End-->
+                            </div>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">M.Tech<span
+                                        class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../static/MTech_EEE_students_list_10oct14.pdf">Graduate-2016</a>
+                                    <a href="../static/EEE_mtech_std_details_22sept2016 (1).pdf">Graduate-2017</a>
+                                    <a href="../static/M_TECH_STUDENT_DETAILS_2016-2018.pdf""
+         >Graduate-2018</a
+       >
+       <a href=" ../static/M_TECH_STUDENT_LIST_2017-2019.pdf">Graduate-2019</a>
+                                    <a href="../static/M_TECH_STUDENT_LIST_2018-2020.pdf">Graduate-2020</a>
+                                    <a href="../static/Graduate_(M.Tech.)_-_2021.png">Graduate-2021</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">PhD<span class="font-bold text-xl">&rsaquo;</span></button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+
+                                    <a href="#">Graduate-2018</a>
+
+                                    <a href="../static/Graduate_(Ph._D.)_-_2021.png">Graduate-2021</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--E-Downloads-->
+                    <div class="dropdown">
+                        <button class="dropbtn">E-Downloads</button>
+                        <div class="dropdown-content">
+                            <a href="../Electrical/edownloads/facualty_staff.html">Faculty and staff</a>
+                            <a href="../Electrical/edownloads/student.html">Student</a>
+                            <a href="../academics/DissertionFormat.html">Dissertion Format</a>
+                        </div>
+
+                    </div>
 
                     <!--Contact Us-->
                     <div class="dropdown">
                         <a href="../Electrical/contact_us.html">Contact Us</a>
-                        
+
                     </div>
 
                 </div>
@@ -106,114 +196,134 @@
         </nav>
         </div>
     </header>
-    <div id="ctl00_ContentPlaceHolder_Main_Panel_Faculty">
-		
-        <h1
-        class="text-2xl font-serif font-semibold text-gray-800 border-gray-200 border-b-4 mb-4">
-       Staff</h1>
-        <hr />
+    <div class="">
+        <div class="p-10 mx-16 justify-center">
 
-        <div id="div-emp-list" class="table-responsive">
-                                    
-                                            <table class="table-bordered table">
-                                                <thead>
-                                                    <tr>
-                                                        <th style="width: 40%">
-                                                            Name
-                                                        </th>
-                                                        <th style="width: 25%">
-                                                            Designation
-                                                        </th>
-                                                        <th style="width: 35%">
-                                                            Contact
-                                                        </th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                        
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl01_LinkButton_Faculty" title="View faculty biodata" ImageUrl="~/images/system/view.jpg" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl01$LinkButton_Faculty&#39;,&#39;&#39;)">Mrs. Suvida Naik</a>
-                                                </td>
-                                                <td style="width: 25%">
-                                                    Technical Assistant
-                                                </td>
-                                                <td style="width: 35%">
-                                                    suvidanaik@nitgoa.ac.in
-                                                    <br />
-                                                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl01_Label_PhoneNumbers"></span>
-                                                </td>
-                                                
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl02_LinkButton_Faculty" title="View faculty biodata" ImageUrl="~/images/system/view.jpg" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl02$LinkButton_Faculty&#39;,&#39;&#39;)">Mr. Pinaki Chatterjee</a>
-                                                </td>
-                                                <td style="width: 25%">
-                                                    Technical Assistant
-                                                </td>
-                                                <td style="width: 35%">
-                                                    pinaki@nitgoa.ac.in
-                                                    <br />
-                                                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl02_Label_PhoneNumbers"></span>
-                                                </td>
-                                                
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl03_LinkButton_Faculty" title="View faculty biodata" ImageUrl="~/images/system/view.jpg" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl03$LinkButton_Faculty&#39;,&#39;&#39;)">Mr. Digambar R. D.</a>
-                                                </td>
-                                                <td style="width: 25%">
-                                                    Technician
-                                                </td>
-                                                <td style="width: 35%">
-                                                    digambar@nitgoa.ac.in
-                                                    <br />
-                                                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl03_Label_PhoneNumbers"></span>
-                                                </td>
-                                                
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl04_LinkButton_Faculty" title="View faculty biodata" ImageUrl="~/images/system/view.jpg" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl04$LinkButton_Faculty&#39;,&#39;&#39;)">Mr. Rohit Madhu Gawas</a>
-                                                </td>
-                                                <td style="width: 25%">
-                                                    Technician
-                                                </td>
-                                                <td style="width: 35%">
-                                                    rohit@nitgoa.ac.in
-                                                    <br />
-                                                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl04_Label_PhoneNumbers"></span>
-                                                </td>
-                                                
-                                            </tr>
-                                        
-                                            <tr>
-                                                <td style="width: 40%">
-                                                    <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl05_LinkButton_Faculty" title="View faculty biodata" ImageUrl="~/images/system/view.jpg" href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl05$LinkButton_Faculty&#39;,&#39;&#39;)">Mr. Koushik</a>
-                                                </td>
-                                                <td style="width: 25%">
-                                                    Technician
-                                                </td>
-                                                <td style="width: 35%">
-                                                    koushik@nitgoa.ac.in
-                                                    <br />
-                                                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl05_Label_PhoneNumbers"></span>
-                                                </td>
-                                                
-                                            </tr>
-                                        
-                                            </tbody></table>
-                                        
-                                </div>
-         
+            <table class="">
+                
+                <thead>
+                    <h1 class="text-2xl font-serif font-semibold text-gray-800 mb-4">
+                        Staff</h1>
+                    <tr>
+                        <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                            Name
+                        </th>
+                        <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                            Designation
+                        </th>
+                        <th class="bg-blue-400 border m-6 text-center p-6 text-l">
+                            Contact
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
 
-         
-</div>
+                    <tr>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl01_LinkButton_Faculty"
+                                title="View faculty biodata" ImageUrl="~/images/system/view.jpg"
+                                href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl01$LinkButton_Faculty&#39;,&#39;&#39;)">Mrs.
+                                Suvida Naik</a>
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            Technical Assistant
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            suvidanaik@nitgoa.ac.in
 
-</div>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl01_Label_PhoneNumbers"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl02_LinkButton_Faculty"
+                                title="View faculty biodata" ImageUrl="~/images/system/view.jpg"
+                                href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl02$LinkButton_Faculty&#39;,&#39;&#39;)">Mr.
+                                Pinaki Chatterjee</a>
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            Technical Assistant
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            pinaki@nitgoa.ac.in
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl02_Label_PhoneNumbers"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl03_LinkButton_Faculty"
+                                title="View faculty biodata" ImageUrl="~/images/system/view.jpg"
+                                href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl03$LinkButton_Faculty&#39;,&#39;&#39;)">Mr.
+                                Digambar R. D.</a>
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            Technician
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            digambar@nitgoa.ac.in
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl03_Label_PhoneNumbers"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl04_LinkButton_Faculty"
+                                title="View faculty biodata" ImageUrl="~/images/system/view.jpg"
+                                href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl04$LinkButton_Faculty&#39;,&#39;&#39;)">Mr.
+                                Rohit Madhu Gawas</a>
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            Technician
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            rohit@nitgoa.ac.in
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl04_Label_PhoneNumbers"></span>
+                        </td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            <a id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl05_LinkButton_Faculty"
+                                title="View faculty biodata" ImageUrl="~/images/system/view.jpg"
+                                href="javascript:__doPostBack(&#39;ctl00$ContentPlaceHolder_Main$Repeater_EmployeeList$ctl05$LinkButton_Faculty&#39;,&#39;&#39;)">Mr.
+                                Koushik</a>
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            Technician
+                        </td>
+                        <td class="border border-b-4 border-gray-200 m-6 p-5 text-center">
+                            koushik@nitgoa.ac.in
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_EmployeeList_ctl05_Label_PhoneNumbers"></span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+    </div>
+
+    </div>
 </body>
-</head></html>
+</head>
+
+</html>
