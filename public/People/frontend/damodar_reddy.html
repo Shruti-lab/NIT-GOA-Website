@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Faculty Details</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+
+.card-toggle {
+  width:100%; /* Adjust as needed */
+  height: 40px; /* Adjust as needed */
+  background-color: #fff; /* Toggle button color */
+
+}
+
+/* Show content when checkbox is checked */
+#toggle:checked ~ .card-content {
+  display: block;
+}
+  </style>
+</head>
+<body class="bg-gray-200 p-4">
+
+  <div class="w-full mx-auto bg-white rounded-md overflow-hidden shadow-md p-6">
+    <img src="Dr. Damodar Reddy Edla.png" alt="Faculty Image" class="w-40 h-40 object-cover mb-4 rounded-2xl">
+    <h2 class="text-xl font-bold mb-2">Dr. Damodar Reddy Edla</h2>
+    <p class="text-gray-600 mb-4">Associate Professor, Department of Computer Science and Engineering
+
+
+    </p>
+    <p class="text-gray-700">Research Area: Artificial Intelligence; Cognitive Neuroscience; Brain Computer Interface; Medical Imaging; Wireless Sensor Networks; Machine Learning/Deep Learning; Internet of Medical Things (IoMT);</p>
+    <div class="mt-4">
+      <a href="#" class="text-blue-500">Email:  dr.reddy@nitgoa.ac.in</a>
+    </div>
+  </div>
+  <button onclick="toggleData()">Toggle Data</button>
+  
+  <div id="data" class="hidden bg-">
+    <!-- Your data goes here -->
+    This is the hidden data.
+  </div>
+
+  <div class="card p-4 bg-gray-800 rounded">
+    <input type="checkbox" id="toggle" class="hidden bg-blue-900">
+    <label for="toggle" class="cursor-pointer">
+      <div class="card-toggle bg-red-400 font-serif font-semibold flex justify-center rounded-3xl">Research Area</div>
+    </label>
+    <div class="card-content hidden border-b-4 rounded-2xl text-white p-6 ">
+      <p>Artificial Intelligence;</p>
+      <p>Cognitive Neuroscience;</p>
+      <p>Brain Computer Interface;</p>
+     <p>Medical Imaging;</p>
+     <p>Wireless Sensor Networks;</p>
+      <p>Machine Learning/Deep Learning;</p>
+      <p>Internet of Medical Things (IoMT);</p>
+    </div>
+  </div>
+  
+
+  <script>
+    function toggleData() {
+      var dataElement = document.getElementById('data');
+      dataElement.style.display = (dataElement.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+  
+
+</body>
+</html>
