@@ -1,73 +1,2064 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <title>Faculty Details</title>
-  <style>
-    .hidden {
-      display: none;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
 
-.card-toggle {
-  width:100%; /* Adjust as needed */
-  height: 40px; /* Adjust as needed */
-  background-color: #fff; /* Toggle button color */
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
 
-}
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
 
-/* Show content when checkbox is checked */
-#toggle:checked ~ .card-content {
-  display: block;
-}
-  </style>
-</head>
-<body class="bg-gray-200 p-4">
-
-  <div class="w-full mx-auto bg-white rounded-md overflow-hidden shadow-md p-6">
-    <img src="Dr. Damodar Reddy Edla.png" alt="Faculty Image" class="w-40 h-40 object-cover mb-4 rounded-2xl">
-    <h2 class="text-xl font-bold mb-2">Dr. Damodar Reddy Edla</h2>
-    <p class="text-gray-600 mb-4">Associate Professor, Department of Computer Science and Engineering
-
-
-    </p>
-    <p class="text-gray-700">Research Area: Artificial Intelligence; Cognitive Neuroscience; Brain Computer Interface; Medical Imaging; Wireless Sensor Networks; Machine Learning/Deep Learning; Internet of Medical Things (IoMT);</p>
-    <div class="mt-4">
-      <a href="#" class="text-blue-500">Email:  dr.reddy@nitgoa.ac.in</a>
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
     </div>
   </div>
-  <button onclick="toggleData()">Toggle Data</button>
-  
-  <div id="data" class="hidden bg-">
-    <!-- Your data goes here -->
-    This is the hidden data.
-  </div>
-
-  <div class="card p-4 bg-gray-800 rounded">
-    <input type="checkbox" id="toggle" class="hidden bg-blue-900">
-    <label for="toggle" class="cursor-pointer">
-      <div class="card-toggle bg-red-400 font-serif font-semibold flex justify-center rounded-3xl">Research Area</div>
-    </label>
-    <div class="card-content hidden border-b-4 rounded-2xl text-white p-6 ">
-      <p>Artificial Intelligence;</p>
-      <p>Cognitive Neuroscience;</p>
-      <p>Brain Computer Interface;</p>
-     <p>Medical Imaging;</p>
-     <p>Wireless Sensor Networks;</p>
-      <p>Machine Learning/Deep Learning;</p>
-      <p>Internet of Medical Things (IoMT);</p>
     </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href=../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href=../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href=../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Damodar Reddy Edla.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Damodar Reddy Edla</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Artificial Intelligence; Cognitive Neuroscience; Brain
+        Computer Interface; Medical Imaging; Wireless Sensor Networks; Machine
+        Learning/Deep Learning; Internet of Medical Things (IoMT);
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> dr.reddy@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. Damodar Reddy Edla</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date-:</p>
+          <p class="p-2">Designation: Associate Professor</p>
+
+          <p class="p-2">
+            Department: Department of Computer Science and Engineering
+          </p>
+          <p class="p-2">URL</p>
+          <p class="p-2">Date of Joining: 07/01/2013</p>
+          <p class="p-2">
+            Research/Teaching Experience: 9 years of Teaching and Research
+            Experience at NIT Goa
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address: Department of Computer Science & Engineering, National
+            Institute of Technology Goa Farmagudi, Ponda, Goa - 403 401.
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: dr.reddy@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]-</p>
+          <p class="p-2">Phone [Mobile]: 9373151004</p>
+          <p class="p-2">Office Extension: 0832-2404216</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Artificial Intelligence;</p>
+          <p class="p-2">Cognitive Neuroscience;</p>
+          <p class="p-2">Brain Computer Interface;</p>
+          <p class="p-2">Medical Imaging;</p>
+          <p class="p-2">Wireless Sensor Networks;</p>
+          <p class="p-2">Machine Learning/Deep Learning;</p>
+          <p class="p-2">Internet of Medical Things (IoMT);</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Data Warehousing & Mining</p>
+          <p class="p-2">Distributed Computing Systems</p>
+          <p class="p-2">Data Structures</p>
+          <p class="p-2">Software Engineering</p>
+          <p class="p-2">Operating Systems</p>
+          <p class="p-2">Object Oriented Programming</p>
+          <p class="p-2">Applied Algorithms</p>
+          <p class="p-2">Design and Analysis of Algorithms</p>
+          <p class="p-2">Soft Computing</p>
+          <p class="p-2">Web Engineering</p>
+          <p class="p-2">Advanced Operating Systems</p>
+          <p class="p-2">Advanced Data Structures</p>
+          <p class="p-2">Discrete Mathematics</p>
+          <p class="p-2">Computer Programming and Problem Solving</p>
+          <p class="p-2">Introduction to Machine Learning</p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Mathematical Foundations for Computer Science</p>
+          <p class="p-2">Advanced Algorithms and Analysis</p>
+          <p class="p-2">Object Oriented Software Engineering</p>
+          <p class="p-2">Soft Computing</p>
+          <p class="p-2">Number Theory</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="">
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Tech. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Indian School of Mines, Dhanbad (Presently IIT Dhanbad)
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Computer Science & Engineering</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Ph.D. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Indian School of Mines, Dhanbad (Presently IIT Dhanbad)
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Computer Science & Engineering</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+        <li><p class="p-2"><b>Publication Type: Journal</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Mixed step size normalized least mean fourth adaptive algorithm for artifact elimination from raw EEG signals, Biomedical Signal Processing and Control, Elsevier (SCI Indexed), Volume 65, March 2021, 102392 (2020).    DEC  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Energy-Efficient Load Balancing Strategy for Wireless Sensor Networks using Quasi-Oppositional based Jaya Optimization, Wireless Personal Communications, Springer (SCI Indexed), 2020.    DEC  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       BB-tree based secure and dynamic public auditing convergence for cloud storage, The Journal of Supercomputing, Springer (SCI Indexed), 2020.    OCT  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Dynamic large branching hash tree based secure and efficient dynamic auditing protocol for cloud environment, Cluster Computing, Springer (SCI Indexed), October 2020.    OCT  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Evolutionary Extreme Learning Machine with novel activation function for credit scoring, Engineering Applications of Artificial Intelligence, Elsevier (SCI Indexed), Volume 96, November 2020, 103980.    SEPT  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification Using Combination of CNN, Second and Higher Order Texture Features, Journal of Intelligent and Fuzzy Systems, IOS press ( SCI Indexed), 2020.    SEPT  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Binary BAT algorithm and RBFN based hybrid credit scoring model, Multimedia Tools and Applications, Springer (SCI Indexed), volume 79, pages31889–31912(2020).    AUG  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification on Computed Tomography Images Using Deep Learning, Wireless Personal Communications, Springer (SCI Indexed), 116, pages655–690(2021)    JULY  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       LSTM based Prediction of Malaria Abundances using Big Data, Computers in Biology and Medicine, Elsevier, (SCI Indexed), June 2020.    JUN  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       An Efficient Localization Approach in Wireless Sensor Networks using Krill Herd Optimization Algorithm, IEEE Systems Journal, IEEE (SCI Indexed), June 2020.    JUN  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       EEG Data Classifcation for Mental State Analysis Using Wavelet Packet Transform and Gaussian Process Classifier, Wireless Personal Communications, Springer (SCI Indexed), volume 115, pages2149–2169(2020).    JUN  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Hybrid Approach for Extracting EMG signals by Filtering EEG Data for IoT applications for Immobile Persons", has been accepted for publication in Wireless Personal Communications, Wireless Personal Communications, Springer (SCI Indexed), 2020.    MAY  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Hybrid Approach for Extracting EMG signals by Filtering EEG Data for IoT Applications for Immobile Persons, Wireless Personal Communications, Springer (SCI Indexed), volume 114, pages 3081–3101(2020).    MAY  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A new hybrid stability measure for feature selection", Applied Intelligence, Springer (SCI Indexed), 2020.    APRIL  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Parameter-free Fuzzy Histogram Equalisation with Illumination Preserving Characteristics Dedicated for Contrast Enhancement of Magnetic Resonance Images, Applied Soft Computing, Elsevier (SCI Indexed), 2020.    APRIL  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Analysis of high dimensional brain data using prototype based fuzzy clustering, Clinical Epidemiology and Global Health, Elsevier (ESCI indexed) 2020.    MAR  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Spark and Rule-KNN based Scalable Machine Learning Framework for EEG Deceit identification, Biomedical Signal Processing and Control, Elsevier, (SCI Indexed) 2020.    FEB  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Intelligent-ANFIS Model for Predicting Measurement of Surface Roughness and Geometric Tolerances in 3-axis CNC Milling, IEEE Transactions on Instrumentation &amp; Measurement, 2020.    FEB  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Multi-Stage Concealed Information Test using k-Means and Feed Forward Neural Network, Clinical Epidemiology and Global Health, Elsevier, 2020.    JAN  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Routing Structure to Avoid Energy Hole Problem in Multi-layer Network Model, Wireless Personal Communications, Springer (SCI Indexed), 2020.    JAN  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Multilevel Automated Security System for Prevention of Accidents at Unmanned Railway Level Crossings, Wireless Personal Communications, Springer (SCI Indexed), 2019.    NOV  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Lie Detection using Extreme Learning Machine: A Concealed Information Test based on Short-Time Fourier Transform and Binary Bat Optimization using a Novel Fitness Function, Computational Intelligence, Wiley (SCI Indexed) 2019.    OCT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface for Measuring the Impact of Yoga on Concentration Levels in Engineering Students, Journal of Intelligent and Fuzzy Systems, IOS press, (SCI Indexed), 2019.    OCT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "Credit Score Classification using Spiking Extreme Learning Machine“ Computational Intelligence, Wiley (SCI Indexed) 2019.    SEPT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Cancer Data Classification using Binary Bat Optimization and Extreme Learning Machine with a Novel Fitness Function, Medical &amp; Biological Eng &amp; Computing (MBEC), Springer (SCI Indexed), 2019.    AUG  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Load Balancing Approach for Avoiding Energy Hole Problem in WSN using Grey Wolf Optimizer with Novel Fitness Function, Applied Soft Computing, Elsevier (SCI Indexed), 2019.    AUG  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Efficient Feature Selection using One Pass Generalized Classifier Neural Network and Binary Bat Algorithm with a Novel Fitness Function, Soft Computing, Springer (SCI Indexed), 2019.    JULY  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Analysis of Controversies in the Formulation and Evaluation of Restoration Algorithms for MR Images, Expert Systems with Applications, Elsevier (SCI Indexed), 2019.    JUN  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       M-Curves Path Planning Model for Mobile Anchor Node and Localization of Sensor Nodes using Dolphin Swarm Algorithm, Wireless Networks, Springer (SCI Indexed), 2019.    MAY  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Synergistic Concealed Information Test With Novel Approach for EEG Channel Selection and SVM Parameter Optimization, IEEE Transactions on Information Forensics and Security, 2019.    APRIL  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Texture Image Classification using Deep Neural Network and Binary Dragon Fly Optimization with a Novel Fitness Function, Wireless Personal Communications, Springer (SCI Indexed), 2019.    APRIL  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       EIQ: EEG based IQ test using wavelet packet transform and hierarchical extreme learning machine, Journal of Neuroscience Methods, Elsevier (SCI Indexed), 2019.    APRIL  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       MapReduce based integration of health hubs: A healthcare design approach, Health and Technology, Springer, 2019.    MAR  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Cascading of RBFN, PNN and SVM for Improved Type-2 Diabetes Prediction Accuracy, Australian Journal of Wireless Technologies, Mobility and Security, 2019.    FEB  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       The present and future of deep learning in radiology, European Journal of Radiology, Elsevier (SCI Indexed), 2019.    FEB  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       An efficient EEG based deceit identification test using wavelet packet transform and linear discriminant analysis, Journal of Neuroscience Methods, Elsevier (SCI Indexed), 2019.    JAN  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Survey on Brain Computer Interface: An Emerging Computational Intelligence Paradigm, ACM Computing Surveys, ACM, 2018.    NOV  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       An efficient Concealed Information Test: EEG feature extraction and ensemble classification for lie identification, Machine Vision and Applications, Springer (SCI Indexed)    JUN  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Selector: PSO as Model Selector for Dual-Stage Diabetes Network, Journal of Intelligent Systems, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       ALDL: A Novel Method for Label Distribution Learning, Sadhana, Springer (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Brain-Computer Interface for wheelchair control operations: An approach based on Fast Fourier Transform and On-Line Sequential Extreme Learning Machine, Clinical Epidemiology and Global Health, Elsevier, 2018.      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Type 2 Diabetes Data Classification using Stacked Autoencoders in Deep Neural Networks, Clinical Epidemiology and Global Health, Elsevier, 2018.      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Adaptive Shrinkage on Dual-Tree Complex Wavelet Transform for Denoising Real-time MR Images, Biocybernetics and Biomedical Engineering, Elsevier (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface: A Comprehensive Survey, Biologically Inspired Cognitive Architectures, Elsevier (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Fuzzy Sharpness Metric for Magnetic Resonance Images, Journal of Computational Science, Elsevier (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Deep Learning Fully Convolution Network for Lumen Characterization in Diabetic Patients using Carotid Ultrasound: A tool for Stroke Risk, Medical &amp; Biological Engineering &amp; Computing, Springer (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Mechanics-based Similarity Measure for Text Classification in Machine Learning Paradigm, IEEE Transactions on Emerging Topics in Computational Intelligence, IEEE (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Deep learning strategy for accurate carotid intima-media thickness measurement: An ultrasound study on Japanese diabetic cohort, Computers in Biology and Medicine, Elsevier, (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-4"><b>Publication Category: </b>International       Shuffled Complex Evolution Approach for Load Balancing of Gateways in Wireless Sensor Networks, Wireless Personal Communications, Springer (SCI Indexed)      2018</p>
+          </li>
+          </ol>
+          <ol >
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Symtosis: Liver Ultrasound Tissue Characterization and Risk Stratification in Optimized Deep Learning Paradigm. Computer Methods and Programs in Biomedicine, Elsevier (SCI Indexed)      2018     </p>
+          </li>
+          </ol>
+          <ol>
+          <li >
+          <p class="p-4"><b>Publication Category: </b>International       An Efficient Ensemble Framework with BPSOGA-based Fearure Selection: A Casestudy on Credit Scoring Datasets, Arabian Journal of Science and Engineering, Springer (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Hybrid Credit Scoring Model using Neighborhood Rough Set and Multi-layer Ensemble Classification, Journal of Intelligent and Fuzzy Systems, IOS press ( SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       PLDL: A Novel Method for Label Distribution Learning, The International Arab Journal of Information Technology (SCI Indexed)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Secure Data Storage in Cloud: An e-stream cipher based secure and dynamic updation policy, Arabian Journal for Science and Engineering, Springer (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       An Efficient Load Balancing of Gateways using Improved Shuffled Frog Leaping Algorithm and Novel Fitness Function for WSNs, IEEE Sensors Journal, IEEE (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Prediction of cardiac arrest recurrence using ensemble classifiers”, Sadhana, Springer (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Automatic disease diagnosis using optimised weightless neural networks for low-power wearable devices." IET - Healthcare Technology Letters, IET (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       SM-RuleMiner: Spider monkey based rule miner using novel fitness function for diabetes classification, Computers in Biology and Medicine, Elsevier (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Diabetes Classification using Radial Basis Function Network by Combining Cluster Validity Index and BAT Optimization with Novel Fitness Function, International Journal of Computational Intelligence Systems, Taylor &amp; Francis (SCI Indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Extreme Learning Machine Framework for Risk Stratification of Fatty Liver Disease Using Ultrasound Tissue Characterization, Journal of Medical Systems, Springer (SCI indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       RST-BatMiner: A Fuzzy Rule Miner Integrating Rough Set Feature Selection and Bat Optimization for Detection of Diabetes Disease, Applied Soft Computing Journal, Elsevier (SCI indexed)      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       HK-Means: A Heuristic Approach to Initialize and Estimate the Number of Clusters in Biological Data, ACTA PHYSICA POLONICA, 2016.    JUN  2016     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       New Algebraic Activation Function for Multi-Layered Feed Forward Neural Networks. IETE Journal of Research ,Taylor &amp; Francis (SCI Indexed)      2016     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Enhanced K-Means Clustering Algorithm using A Heuristic Approach, Journal of Information and Computing Science, 2014.    DEC  2014     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       State-of-the-Art Review on Deep Learning in Medical Imaging, Frontiers in Bioscience, (SCI Indexed)           </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Novel Hybrid Credit Scoring Model based on Ensemble Feature Selection and Multi-layer Ensemble Classification, Computational Intelligence, Wiley (SCI Indexed)           </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       An Optimized and Efficient Radial Basis Neural Network using Cluster Validity Index for Diabetes Classification, The International Arab Journal of Information Technology, The International Arab Journal of Information Technology (SCI Indexed)           </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Survey on Monitoring and Quality Controlling of the Mobile Biosignal Delivery, Interdisciplinary Sciences Computational Life Sciences, Springer (SCI Indexed)           </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       SCE-PSO based clustering approach for load balancing of gateways in wireless sensor networks, Wireless Networks, Springer (SCI Indexed)           </p>
+          </li>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       A PSO Based Routing with Novel Fitness Function for Improving Lifetime of WSNs, Wireless Personal Communications, Springer (SCI Indexed)           </p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: Proceedings</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification Using Combination of CNN, Second and Higher Order Texture Features, Sixth International Symposium on Intelligent Systems Technologies and Applications (ISTA'20), 14-17 October 2020. VIT, Chennai, INDIA.    SEPT  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Amrita Naik, Damodar Reddy Edla, Lung tumor classification using CNN and GLCM based features International Conference on ICT For Sustainable Development (ICT4SD-2020), 23 - 24 July, 2020, PANAJI, GOA, INDIA, ICT Systems and Sustainability: Advances in Intelligent Systems and Computing, Springer, Springer, vol 1270, 157-163 2020    JULY  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A combination of FractalNet and CNN for Lung Nodule Classification, IEEE Xplore, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, 1-3 July 2020.    JULY  2020     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Cluster Head Selection and Cluster Construction Using Fuzzy Logic in WSNs”, IEEE Xplore, 16th IEEE India Council International Conference (INDICON 2019), December 2019.    DEC  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       GVFF-RLS Adaptive Algorithm for Elimination of Ocular Artifacts from EEG Signals, 16th IEEE India Council International Conference (INDICON-2019), IEEE Xplore, 13-15 December 2019.    DEC  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface for Measuring the Impact of Yoga on Concentration Levels in Engineering Students, 5th International Symposium on Intelligent Systems Technologies and Applications (ISTA-2019), IIIT M Kerala, December 2019.    DEC  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Shuffled Particle Swarm Optimization for Energy Efficiency using Novel Fitness Function in WSN, Springer Series, Lecture Notes in Computer Science (LNCS), 8th International Conference on Pattern Recognition and Machine Intelligence (Premi-2019), December 2019.    DEC  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Prediction of Performance Indexes in CNC Milling using Regression Trees, Springer Series, Lecture Notes in Computer Science (LNCS), 8th International Conference on Pattern Recognition and Machine Intelligence (Premi-2019), December 2019.    DEC  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Binary Binomial Tree based Secure and Efficient Electronic Healthcare Record Storage in Cloud Environment, 20th International Conference on Innovations for Community Services (I4CS 2020), Communications in Computer and Information Science (CCIS) Springer, Bhubaneswar, India, January 2020.    OCT  2019  </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Binary Dragonfly Algorithm and Fisher Score based Hybrid Feature Selection adopting a Novel Fitness Function Applied to Microarray Data, IEEE Xplore, 1st International conference on Applied Machine Learning(ICAML2019), October 2019 Bhubaneswar, Odisha, India.    OCT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Dynamic Cluster Formation Mechanism in Wireless Sensor Networks using Fuzzy Logic, IEEE Xplore, 1st International conference on Applied Machine Learning(ICAML2019), October 2019 Bhubaneswar, Odisha, India.    OCT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Prospect of Stein’s Unbiased Risk Estimate as Objective Function for Parameter Optimization in Image Denoising Algoritms-A Case Study on Gaussian Smoothing Kernel, IEEE Xplore, 5th IEEE International Conference on Data Science and Engineering (ICDSE-2019), IIT Patna, September 2019.    SEPT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Generalized Compensative Intuitionistic Fuzzy Information with Choquet Integrals, IEEE Xplorer, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT-2019), IIT Kanpur, July 2019.    JULY  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Dependency of Optimum Value of Regularization Parameter in Total Variation Filter on Noise Statistics - A MR Phantom Study, IEEE Xplorer, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT-2019), IIT Kanpur, July 2019.    JULY  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Two-stage Credit Scoring Model based on Evolutionary Feature Selection and Ensemble Neural Networks, IETE Springer series, 1st International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND-2019) March, 2019, NIT Kurukshetra, INDIA.    MAR  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       t-SNE Manifold Learning Based Visualization: A Human Activity Recognition Approach, Springer Series, Advances in Data Science and Management - Proceedings of International Conference on Data Science and Management (ICDSM-2019), February 2019.    FEB  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       GWO-GA based Load Balanced and Energy Efficient Clustering Approach for WSN, Springer Series -Smart Innovation, Systems and Technologies (SIST), Third International Conference on Smart Trends for Computing and Communications (Smartcom-2019), January, 2019, Bangkok, Thailand.    JAN  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Cryptocurrency : A Comprehensive Analysis, Springer Series -Smart Innovation, Systems and Technologies (SIST), Third International Conference on Smart Trends for Computing and Communications (Smartcom-2019), January, 2019, Bangkok, Thailand.    JAN  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Design and Development of Efficient Soft Computing Algorithms for Identification of Type-2 Diabetes Mellitus, 4th International Symposium on Intelligent Systems Technologies and Applications (ISTA-2017), Manipal University, September 2017.    OCT  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Novel Fitness Function for SCE Algorithm based Energy Efficiency in WSN, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Deceit Identification Test on EEG Data using Deep Belief Network, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Performance Evaluation of Nonlinear Spatial Filters on MR Images, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Novel Fitness Function for 3D Image reconstruction using Bat Algorithm based Autoencoder, ACM Digital Library, 23rd International ACM Conference on 3D Web Technology, Poland, 20-22 June 2018.    JUN  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Subject based Deceit Identification using Empirical Mode Decomposition, Procedia Computer Sience, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Credit Scoring Model based on Weighted Voting and Cluster based Feature Selection, Procedia Computer Sience, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       P-FHM+: Parallel high utility itemset mining algorithm for big data processing, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Classi?cation of Facial Expressions from EEG signals using Wavelet Packet Transform and SVM for Wheelchair Control Operations, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Classification of EEG data for human mental state analysis using Random Forest Classifier, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Classification of EEG Data using k-Nearest Neighbor approach for Concealed Information Test, 8th International Conference On Advances In Computing &amp; Communications, Procedia Computer Science, Elsevier, 2018.      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Design of Wireless Sensor Network: Clustering, "International Conference on Recent Trends in Engineering &amp; Sciences, Scopus, Vishakhapatnam, 2018.      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Optimized Deep Learning based Liver Ultrasound Tissue Characterization and Risk Stratification”. Status: Accepted. 2018 AIUM Convention. (Abstract)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Risk Stratification of Fatty Liver Disease using Extreme Learning Machine based Ultrasound Tissue Characterization”. Status: Accepted. 2018 AIUM Convenion. (Abstract)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Deep Learning based accurate lumen diameter measurement in curved vessels in carotid ultrasound”. Status: Accepted. 2018 AIUM Convention. (Abstract)      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Survey on Clustering Approaches, 2nd International Conference on Inventive Communication and Computational Technologies (ICICCT 2018), IEEE Xplore, Coimbatore, 20-21 April 2018.      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "Intelli-DRM: An Intelligent Computational Model for Forecasting Severity of Diabetes Mellitus" in 8th International Conference on Computing Communication and Networking Technologies (ICCCNT), IEEE, IIT Delhi, 2017      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "PSO-RBFNN: A PSO-based Clustering Approach for RBFNN Design to Classify Disease Data", in 26th International Conference on Artificial Neural Networks (ICANN), LNCS, Italy, 2017.      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "Diabetes-Finder: A Bat Optimized Classification System for Type-2 Diabetes" in 6th International Conference on Advances in Computing &amp; Communications (ICACC-2017), Elsevier procedia computer science, India, 2017      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "A Novel Green Stable Evolutionary Routing Algorithm for Energy Efficiency in WSNs" in 7th International Conference on Advances in Computing, Communications and Informatics (ICACCI), IEEE, MIT Manipal, India, 2017      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Hierarchical approach for outlier insensitive seed selection in Kmeans clustering using kd-tree”, World Conference on Information Technology (WCIT-2012), Barcelona, Spain, Procedia Computer Science and Information Technology, Vol 04 (2013) 294-299.      2017     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Load balancing in Wireless Sensor Networks by Optimal Placement of Base Stations using kd-Tree”, 2016 Annual International Conference on Innovative Technologies and Advanced Computing (ICIAC-16), London, 2016.      2016     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       SB-PSO: Score Based Particle Swarm Optimization Scheduling Algorithm for Cloud Computing, International Conference on Swarm, Evolutionary, and Memetic Computing SEMCCO-2015, Hyderabad. (Abstract)      2015     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “HK-Means: A Heuristic Approach to Initialize and Estimate the Number of Clusters in K-Means”, International Conference on Computational and Experimental Science and Engineering (ICCESEN-2015), Antalya-Turkey. (Abstract)      2015     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       “Improved K-means clustering algorithm using Voronoi diagram.”, International Conference on Computational and Experimental Science and Engineering (ICCESEN-2015), Antalya-Turkey. (Abstract)      2015     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A Prototype-based Modified DBSCAN for Gene Clustering”, International Conference on Communication, Computing &amp; Security (ICCCS-2012), Rourkela, Procedia Technology (Elsevier), vol. 6, pp. 485-492, October 2012.    OCT  2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A novel clustering algorithm using Voronoi diagram”, International Conference on Digital Information Management (ICDIM-2012), Macau, Hong Kong, IEEE Xplore, pp. 35-40, August 2012.    AUG  2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy Edla, Seshaiah Machavarapu and Prasanta K. Jana, “An Improved MST-based Clustering for Biological Data”, International Conference on Data Science &amp; Engineering (ICDSE-2012), Cochin, Kerala, IEEE Xplore, pp. 42-47, July, 2012.    JULY  2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Initialization for K-means clustering using Voronoi diagram”, International Conference on Computer, Communication, Control and Information Technology (C3IT-2012), Kolkata, Procedia Technology(Elsevier), vol. 4, pp. 395-400, February 2012.    FEB  2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A Grid Clustering Algorithm Using Cluster Boundaries”, World Congress on Information and Communication Technologies (WICT-2012),Trivandrum, IEEE Xplore, pp. 254-259, October-November, 2012.      2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Hierarchical approach for outlier insensitive seed selection in K-means clustering using kd-tree”, World Conference on Information Technology (WCIT-2012), Barcelona, Spain, Procedia Computer Science and Information Technology, November 2012.      2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy Edla and Prasanta K. Jana. “Minimum spanning tree based clustering using partitional approach”, International Conference on Frontiers of Intelligent Computing: Theory and applications (FICTA-2012), Bhuvaneswar, Advances in Intelligent and Soft Computing (Springer), vol.199, pp. 237-244, 2012.      2012     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Clustering Biological Data Using Voronoi Diagram”, International Conference on Advanced Computing, Networking and Security (ADCONS-2011), Karnataka, Lecture Notes in Computer Science (Springer), vol. 7135/2012, pp. 188-197, December 2011.    DEC  2011     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Azad Naik, Damodar Reddy and Prasanta K. Jana, “A Novel Clustering Algorithm for Biological Data”, International Conference on Emerging Applications of Information Technology(EAIT-2011), Kolkata, IEEE Xplore, pp. 249-252, February 2011.    FEB  2011     </p>
+          </li>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy, Devender Mishra and Prasanta K. Jana, “MST-based Cluster Initialization for K-means”, International conf. on Computer Science and Information Technology (COSIT-2011), Communications in Computer and Information Science (Springer), Bangalore, vol. 131(2), pp. 329-338, January 2011.    JAN  2011  </p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: Book Chapter</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Secure Identity based proxy signature with Computational Diffie-Hellman for cloud data management, IGI Global publishers.    SEPT  2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Credit Scoring Using Birds Swarm Optimization, CRC Press      2018     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Application of Neural Network for Routing in Mobile Wireless Sensor Network: A Case Study, McGraw-Hill India.      2016     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       A Survey on Neural Network Classifiers for Diabetes Classification, McGraw-Hill India.      2016     </p>
+          </li>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       A kd-tree based Clustering Algorithm for Gene Expression Data; Encyclopedia of Business Analytics and Optimization (EBAO), IGI Global publishers.    MAR  2013     </p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: </b>Books Authored</p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Soft Computing Techniques for Type-2 Diabetes Data Classification, CRC-Press, Taylor &amp; Francis, (In Press)      2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Wireless Sensor Networks: Evolutionary Algorithms for Optimizing Performance, CRC-Press, Taylor &amp; Francis, (In Press)      2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       "Fraud Detection using Data Mining Techniques", Lambert Academic Publishers, Germany.      2019     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Edited Volume: Advances in Machine Learning and Data Science, Springer – AISC Series, Proceedings of LAMDA-2017.      2017     </p>
+          </li>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       "Clustering Biological Data", Lambert Academic Publishers, Germany.    SEPT  2013    </p>
+          </li>
+          </ol>>
+        <p class="p-2"><b>Publication Category: </b>International       Energy-Efficient Load Balancing Strategy for Wireless Sensor Networks using Quasi-Oppositional based Jaya Optimization, Wireless Personal Communications, Springer (SCI Indexed), 2020.    DEC  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       BB-tree based secure and dynamic public auditing convergence for cloud storage, The Journal of Supercomputing, Springer (SCI Indexed), 2020.    OCT  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Dynamic large branching hash tree based secure and efficient dynamic auditing protocol for cloud environment, Cluster Computing, Springer (SCI Indexed), October 2020.    OCT  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Evolutionary Extreme Learning Machine with novel activation function for credit scoring, Engineering Applications of Artificial Intelligence, Elsevier (SCI Indexed), Volume 96, November 2020, 103980.    SEPT  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification Using Combination of CNN, Second and Higher Order Texture Features, Journal of Intelligent and Fuzzy Systems, IOS press ( SCI Indexed), 2020.    SEPT  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Binary BAT algorithm and RBFN based hybrid credit scoring model, Multimedia Tools and Applications, Springer (SCI Indexed), volume 79, pages31889–31912(2020).    AUG  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification on Computed Tomography Images Using Deep Learning, Wireless Personal Communications, Springer (SCI Indexed), 116, pages655–690(2021)    JULY  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       LSTM based Prediction of Malaria Abundances using Big Data, Computers in Biology and Medicine, Elsevier, (SCI Indexed), June 2020.    JUN  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       An Efficient Localization Approach in Wireless Sensor Networks using Krill Herd Optimization Algorithm, IEEE Systems Journal, IEEE (SCI Indexed), June 2020.    JUN  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       EEG Data Classifcation for Mental State Analysis Using Wavelet Packet Transform and Gaussian Process Classifier, Wireless Personal Communications, Springer (SCI Indexed), volume 115, pages2149–2169(2020).    JUN  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Hybrid Approach for Extracting EMG signals by Filtering EEG Data for IoT applications for Immobile Persons", has been accepted for publication in Wireless Personal Communications, Wireless Personal Communications, Springer (SCI Indexed), 2020.    MAY  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Hybrid Approach for Extracting EMG signals by Filtering EEG Data for IoT Applications for Immobile Persons, Wireless Personal Communications, Springer (SCI Indexed), volume 114, pages 3081–3101(2020).    MAY  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A new hybrid stability measure for feature selection", Applied Intelligence, Springer (SCI Indexed), 2020.    APRIL  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Parameter-free Fuzzy Histogram Equalisation with Illumination Preserving Characteristics Dedicated for Contrast Enhancement of Magnetic Resonance Images, Applied Soft Computing, Elsevier (SCI Indexed), 2020.    APRIL  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Analysis of high dimensional brain data using prototype based fuzzy clustering, Clinical Epidemiology and Global Health, Elsevier (ESCI indexed) 2020.    MAR  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Spark and Rule-KNN based Scalable Machine Learning Framework for EEG Deceit identification, Biomedical Signal Processing and Control, Elsevier, (SCI Indexed) 2020.    FEB  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Intelligent-ANFIS Model for Predicting Measurement of Surface Roughness and Geometric Tolerances in 3-axis CNC Milling, IEEE Transactions on Instrumentation &amp; Measurement, 2020.    FEB  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Multi-Stage Concealed Information Test using k-Means and Feed Forward Neural Network, Clinical Epidemiology and Global Health, Elsevier, 2020.    JAN  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Routing Structure to Avoid Energy Hole Problem in Multi-layer Network Model, Wireless Personal Communications, Springer (SCI Indexed), 2020.    JAN  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Multilevel Automated Security System for Prevention of Accidents at Unmanned Railway Level Crossings, Wireless Personal Communications, Springer (SCI Indexed), 2019.    NOV  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Lie Detection using Extreme Learning Machine: A Concealed Information Test based on Short-Time Fourier Transform and Binary Bat Optimization using a Novel Fitness Function, Computational Intelligence, Wiley (SCI Indexed) 2019.    OCT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface for Measuring the Impact of Yoga on Concentration Levels in Engineering Students, Journal of Intelligent and Fuzzy Systems, IOS press, (SCI Indexed), 2019.    OCT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "Credit Score Classification using Spiking Extreme Learning Machine“ Computational Intelligence, Wiley (SCI Indexed) 2019.    SEPT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Cancer Data Classification using Binary Bat Optimization and Extreme Learning Machine with a Novel Fitness Function, Medical &amp; Biological Eng &amp; Computing (MBEC), Springer (SCI Indexed), 2019.    AUG  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Load Balancing Approach for Avoiding Energy Hole Problem in WSN using Grey Wolf Optimizer with Novel Fitness Function, Applied Soft Computing, Elsevier (SCI Indexed), 2019.    AUG  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Efficient Feature Selection using One Pass Generalized Classifier Neural Network and Binary Bat Algorithm with a Novel Fitness Function, Soft Computing, Springer (SCI Indexed), 2019.    JULY  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Analysis of Controversies in the Formulation and Evaluation of Restoration Algorithms for MR Images, Expert Systems with Applications, Elsevier (SCI Indexed), 2019.    JUN  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       M-Curves Path Planning Model for Mobile Anchor Node and Localization of Sensor Nodes using Dolphin Swarm Algorithm, Wireless Networks, Springer (SCI Indexed), 2019.    MAY  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Synergistic Concealed Information Test With Novel Approach for EEG Channel Selection and SVM Parameter Optimization, IEEE Transactions on Information Forensics and Security, 2019.    APRIL  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Texture Image Classification using Deep Neural Network and Binary Dragon Fly Optimization with a Novel Fitness Function, Wireless Personal Communications, Springer (SCI Indexed), 2019.    APRIL  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       EIQ: EEG based IQ test using wavelet packet transform and hierarchical extreme learning machine, Journal of Neuroscience Methods, Elsevier (SCI Indexed), 2019.    APRIL  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       MapReduce based integration of health hubs: A healthcare design approach, Health and Technology, Springer, 2019.    MAR  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Cascading of RBFN, PNN and SVM for Improved Type-2 Diabetes Prediction Accuracy, Australian Journal of Wireless Technologies, Mobility and Security, 2019.    FEB  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       The present and future of deep learning in radiology, European Journal of Radiology, Elsevier (SCI Indexed), 2019.    FEB  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       An efficient EEG based deceit identification test using wavelet packet transform and linear discriminant analysis, Journal of Neuroscience Methods, Elsevier (SCI Indexed), 2019.    JAN  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Survey on Brain Computer Interface: An Emerging Computational Intelligence Paradigm, ACM Computing Surveys, ACM, 2018.    NOV  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       An efficient Concealed Information Test: EEG feature extraction and ensemble classification for lie identification, Machine Vision and Applications, Springer (SCI Indexed)    JUN  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Selector: PSO as Model Selector for Dual-Stage Diabetes Network, Journal of Intelligent Systems, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       ALDL: A Novel Method for Label Distribution Learning, Sadhana, Springer (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Brain-Computer Interface for wheelchair control operations: An approach based on Fast Fourier Transform and On-Line Sequential Extreme Learning Machine, Clinical Epidemiology and Global Health, Elsevier, 2018.      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Type 2 Diabetes Data Classification using Stacked Autoencoders in Deep Neural Networks, Clinical Epidemiology and Global Health, Elsevier, 2018.      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Adaptive Shrinkage on Dual-Tree Complex Wavelet Transform for Denoising Real-time MR Images, Biocybernetics and Biomedical Engineering, Elsevier (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface: A Comprehensive Survey, Biologically Inspired Cognitive Architectures, Elsevier (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Fuzzy Sharpness Metric for Magnetic Resonance Images, Journal of Computational Science, Elsevier (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Deep Learning Fully Convolution Network for Lumen Characterization in Diabetic Patients using Carotid Ultrasound: A tool for Stroke Risk, Medical &amp; Biological Engineering &amp; Computing, Springer (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Mechanics-based Similarity Measure for Text Classification in Machine Learning Paradigm, IEEE Transactions on Emerging Topics in Computational Intelligence, IEEE (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Deep learning strategy for accurate carotid intima-media thickness measurement: An ultrasound study on Japanese diabetic cohort, Computers in Biology and Medicine, Elsevier, (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-4"><b>Publication Category: </b>International       Shuffled Complex Evolution Approach for Load Balancing of Gateways in Wireless Sensor Networks, Wireless Personal Communications, Springer (SCI Indexed)      2018</p>
+        </li>
+        </ol>
+        <ol >
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Symtosis: Liver Ultrasound Tissue Characterization and Risk Stratification in Optimized Deep Learning Paradigm. Computer Methods and Programs in Biomedicine, Elsevier (SCI Indexed)      2018     </p>
+        </li>
+        </ol>
+        <ol>
+        <li >
+        <p class="p-4"><b>Publication Category: </b>International       An Efficient Ensemble Framework with BPSOGA-based Fearure Selection: A Casestudy on Credit Scoring Datasets, Arabian Journal of Science and Engineering, Springer (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Hybrid Credit Scoring Model using Neighborhood Rough Set and Multi-layer Ensemble Classification, Journal of Intelligent and Fuzzy Systems, IOS press ( SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       PLDL: A Novel Method for Label Distribution Learning, The International Arab Journal of Information Technology (SCI Indexed)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Secure Data Storage in Cloud: An e-stream cipher based secure and dynamic updation policy, Arabian Journal for Science and Engineering, Springer (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       An Efficient Load Balancing of Gateways using Improved Shuffled Frog Leaping Algorithm and Novel Fitness Function for WSNs, IEEE Sensors Journal, IEEE (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Prediction of cardiac arrest recurrence using ensemble classifiers”, Sadhana, Springer (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Automatic disease diagnosis using optimised weightless neural networks for low-power wearable devices." IET - Healthcare Technology Letters, IET (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       SM-RuleMiner: Spider monkey based rule miner using novel fitness function for diabetes classification, Computers in Biology and Medicine, Elsevier (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Diabetes Classification using Radial Basis Function Network by Combining Cluster Validity Index and BAT Optimization with Novel Fitness Function, International Journal of Computational Intelligence Systems, Taylor &amp; Francis (SCI Indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Extreme Learning Machine Framework for Risk Stratification of Fatty Liver Disease Using Ultrasound Tissue Characterization, Journal of Medical Systems, Springer (SCI indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       RST-BatMiner: A Fuzzy Rule Miner Integrating Rough Set Feature Selection and Bat Optimization for Detection of Diabetes Disease, Applied Soft Computing Journal, Elsevier (SCI indexed)      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       HK-Means: A Heuristic Approach to Initialize and Estimate the Number of Clusters in Biological Data, ACTA PHYSICA POLONICA, 2016.    JUN  2016     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       New Algebraic Activation Function for Multi-Layered Feed Forward Neural Networks. IETE Journal of Research ,Taylor &amp; Francis (SCI Indexed)      2016     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Enhanced K-Means Clustering Algorithm using A Heuristic Approach, Journal of Information and Computing Science, 2014.    DEC  2014     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       State-of-the-Art Review on Deep Learning in Medical Imaging, Frontiers in Bioscience, (SCI Indexed)           </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Novel Hybrid Credit Scoring Model based on Ensemble Feature Selection and Multi-layer Ensemble Classification, Computational Intelligence, Wiley (SCI Indexed)           </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       An Optimized and Efficient Radial Basis Neural Network using Cluster Validity Index for Diabetes Classification, The International Arab Journal of Information Technology, The International Arab Journal of Information Technology (SCI Indexed)           </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Survey on Monitoring and Quality Controlling of the Mobile Biosignal Delivery, Interdisciplinary Sciences Computational Life Sciences, Springer (SCI Indexed)           </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       SCE-PSO based clustering approach for load balancing of gateways in wireless sensor networks, Wireless Networks, Springer (SCI Indexed)           </p>
+        </li>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       A PSO Based Routing with Novel Fitness Function for Improving Lifetime of WSNs, Wireless Personal Communications, Springer (SCI Indexed)           </p>
+        </li>
+        </ol>
+        <p class="p-2"><b>Publication Type: Proceedings</b></p>
+        <ol>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       Lung Nodule Classification Using Combination of CNN, Second and Higher Order Texture Features, Sixth International Symposium on Intelligent Systems Technologies and Applications (ISTA'20), 14-17 October 2020. VIT, Chennai, INDIA.    SEPT  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Amrita Naik, Damodar Reddy Edla, Lung tumor classification using CNN and GLCM based features International Conference on ICT For Sustainable Development (ICT4SD-2020), 23 - 24 July, 2020, PANAJI, GOA, INDIA, ICT Systems and Sustainability: Advances in Intelligent Systems and Computing, Springer, Springer, vol 1270, 157-163 2020    JULY  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A combination of FractalNet and CNN for Lung Nodule Classification, IEEE Xplore, 11th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kharagpur, 1-3 July 2020.    JULY  2020     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Cluster Head Selection and Cluster Construction Using Fuzzy Logic in WSNs”, IEEE Xplore, 16th IEEE India Council International Conference (INDICON 2019), December 2019.    DEC  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       GVFF-RLS Adaptive Algorithm for Elimination of Ocular Artifacts from EEG Signals, 16th IEEE India Council International Conference (INDICON-2019), IEEE Xplore, 13-15 December 2019.    DEC  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Brain Computer Interface for Measuring the Impact of Yoga on Concentration Levels in Engineering Students, 5th International Symposium on Intelligent Systems Technologies and Applications (ISTA-2019), IIIT M Kerala, December 2019.    DEC  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Shuffled Particle Swarm Optimization for Energy Efficiency using Novel Fitness Function in WSN, Springer Series, Lecture Notes in Computer Science (LNCS), 8th International Conference on Pattern Recognition and Machine Intelligence (Premi-2019), December 2019.    DEC  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Prediction of Performance Indexes in CNC Milling using Regression Trees, Springer Series, Lecture Notes in Computer Science (LNCS), 8th International Conference on Pattern Recognition and Machine Intelligence (Premi-2019), December 2019.    DEC  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Binary Binomial Tree based Secure and Efficient Electronic Healthcare Record Storage in Cloud Environment, 20th International Conference on Innovations for Community Services (I4CS 2020), Communications in Computer and Information Science (CCIS) Springer, Bhubaneswar, India, January 2020.    OCT  2019  </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Binary Dragonfly Algorithm and Fisher Score based Hybrid Feature Selection adopting a Novel Fitness Function Applied to Microarray Data, IEEE Xplore, 1st International conference on Applied Machine Learning(ICAML2019), October 2019 Bhubaneswar, Odisha, India.    OCT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Dynamic Cluster Formation Mechanism in Wireless Sensor Networks using Fuzzy Logic, IEEE Xplore, 1st International conference on Applied Machine Learning(ICAML2019), October 2019 Bhubaneswar, Odisha, India.    OCT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Prospect of Stein’s Unbiased Risk Estimate as Objective Function for Parameter Optimization in Image Denoising Algoritms-A Case Study on Gaussian Smoothing Kernel, IEEE Xplore, 5th IEEE International Conference on Data Science and Engineering (ICDSE-2019), IIT Patna, September 2019.    SEPT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Generalized Compensative Intuitionistic Fuzzy Information with Choquet Integrals, IEEE Xplorer, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT-2019), IIT Kanpur, July 2019.    JULY  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Dependency of Optimum Value of Regularization Parameter in Total Variation Filter on Noise Statistics - A MR Phantom Study, IEEE Xplorer, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT-2019), IIT Kanpur, July 2019.    JULY  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Two-stage Credit Scoring Model based on Evolutionary Feature Selection and Ensemble Neural Networks, IETE Springer series, 1st International Conference on Machine Learning, Image Processing, Network Security and Data Sciences (MIND-2019) March, 2019, NIT Kurukshetra, INDIA.    MAR  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       t-SNE Manifold Learning Based Visualization: A Human Activity Recognition Approach, Springer Series, Advances in Data Science and Management - Proceedings of International Conference on Data Science and Management (ICDSM-2019), February 2019.    FEB  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       GWO-GA based Load Balanced and Energy Efficient Clustering Approach for WSN, Springer Series -Smart Innovation, Systems and Technologies (SIST), Third International Conference on Smart Trends for Computing and Communications (Smartcom-2019), January, 2019, Bangkok, Thailand.    JAN  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Cryptocurrency : A Comprehensive Analysis, Springer Series -Smart Innovation, Systems and Technologies (SIST), Third International Conference on Smart Trends for Computing and Communications (Smartcom-2019), January, 2019, Bangkok, Thailand.    JAN  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Design and Development of Efficient Soft Computing Algorithms for Identification of Type-2 Diabetes Mellitus, 4th International Symposium on Intelligent Systems Technologies and Applications (ISTA-2017), Manipal University, September 2017.    OCT  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Novel Fitness Function for SCE Algorithm based Energy Efficiency in WSN, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Deceit Identification Test on EEG Data using Deep Belief Network, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Performance Evaluation of Nonlinear Spatial Filters on MR Images, 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IISC Bangalore, IEEE Xplore, 2018.    SEPT  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Novel Fitness Function for 3D Image reconstruction using Bat Algorithm based Autoencoder, ACM Digital Library, 23rd International ACM Conference on 3D Web Technology, Poland, 20-22 June 2018.    JUN  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Subject based Deceit Identification using Empirical Mode Decomposition, Procedia Computer Sience, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Credit Scoring Model based on Weighted Voting and Cluster based Feature Selection, Procedia Computer Sience, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       P-FHM+: Parallel high utility itemset mining algorithm for big data processing, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Classi?cation of Facial Expressions from EEG signals using Wavelet Packet Transform and SVM for Wheelchair Control Operations, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Classification of EEG data for human mental state analysis using Random Forest Classifier, Procedia Computer Science, Elsevier, International Conference on Computational Intelligence and Data Science (ICCIDS 2018) 7-8th April, 2018.    APRIL  2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Classification of EEG Data using k-Nearest Neighbor approach for Concealed Information Test, 8th International Conference On Advances In Computing &amp; Communications, Procedia Computer Science, Elsevier, 2018.      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Energy Efficient Design of Wireless Sensor Network: Clustering, "International Conference on Recent Trends in Engineering &amp; Sciences, Scopus, Vishakhapatnam, 2018.      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Optimized Deep Learning based Liver Ultrasound Tissue Characterization and Risk Stratification”. Status: Accepted. 2018 AIUM Convention. (Abstract)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Risk Stratification of Fatty Liver Disease using Extreme Learning Machine based Ultrasound Tissue Characterization”. Status: Accepted. 2018 AIUM Convenion. (Abstract)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Deep Learning based accurate lumen diameter measurement in curved vessels in carotid ultrasound”. Status: Accepted. 2018 AIUM Convention. (Abstract)      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Survey on Clustering Approaches, 2nd International Conference on Inventive Communication and Computational Technologies (ICICCT 2018), IEEE Xplore, Coimbatore, 20-21 April 2018.      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "Intelli-DRM: An Intelligent Computational Model for Forecasting Severity of Diabetes Mellitus" in 8th International Conference on Computing Communication and Networking Technologies (ICCCNT), IEEE, IIT Delhi, 2017      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "PSO-RBFNN: A PSO-based Clustering Approach for RBFNN Design to Classify Disease Data", in 26th International Conference on Artificial Neural Networks (ICANN), LNCS, Italy, 2017.      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "Diabetes-Finder: A Bat Optimized Classification System for Type-2 Diabetes" in 6th International Conference on Advances in Computing &amp; Communications (ICACC-2017), Elsevier procedia computer science, India, 2017      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "A Novel Green Stable Evolutionary Routing Algorithm for Energy Efficiency in WSNs" in 7th International Conference on Advances in Computing, Communications and Informatics (ICACCI), IEEE, MIT Manipal, India, 2017      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Hierarchical approach for outlier insensitive seed selection in Kmeans clustering using kd-tree”, World Conference on Information Technology (WCIT-2012), Barcelona, Spain, Procedia Computer Science and Information Technology, Vol 04 (2013) 294-299.      2017     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Load balancing in Wireless Sensor Networks by Optimal Placement of Base Stations using kd-Tree”, 2016 Annual International Conference on Innovative Technologies and Advanced Computing (ICIAC-16), London, 2016.      2016     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       SB-PSO: Score Based Particle Swarm Optimization Scheduling Algorithm for Cloud Computing, International Conference on Swarm, Evolutionary, and Memetic Computing SEMCCO-2015, Hyderabad. (Abstract)      2015     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “HK-Means: A Heuristic Approach to Initialize and Estimate the Number of Clusters in K-Means”, International Conference on Computational and Experimental Science and Engineering (ICCESEN-2015), Antalya-Turkey. (Abstract)      2015     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       “Improved K-means clustering algorithm using Voronoi diagram.”, International Conference on Computational and Experimental Science and Engineering (ICCESEN-2015), Antalya-Turkey. (Abstract)      2015     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A Prototype-based Modified DBSCAN for Gene Clustering”, International Conference on Communication, Computing &amp; Security (ICCCS-2012), Rourkela, Procedia Technology (Elsevier), vol. 6, pp. 485-492, October 2012.    OCT  2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A novel clustering algorithm using Voronoi diagram”, International Conference on Digital Information Management (ICDIM-2012), Macau, Hong Kong, IEEE Xplore, pp. 35-40, August 2012.    AUG  2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy Edla, Seshaiah Machavarapu and Prasanta K. Jana, “An Improved MST-based Clustering for Biological Data”, International Conference on Data Science &amp; Engineering (ICDSE-2012), Cochin, Kerala, IEEE Xplore, pp. 42-47, July, 2012.    JULY  2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Initialization for K-means clustering using Voronoi diagram”, International Conference on Computer, Communication, Control and Information Technology (C3IT-2012), Kolkata, Procedia Technology(Elsevier), vol. 4, pp. 395-400, February 2012.    FEB  2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “A Grid Clustering Algorithm Using Cluster Boundaries”, World Congress on Information and Communication Technologies (WICT-2012),Trivandrum, IEEE Xplore, pp. 254-259, October-November, 2012.      2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Hierarchical approach for outlier insensitive seed selection in K-means clustering using kd-tree”, World Conference on Information Technology (WCIT-2012), Barcelona, Spain, Procedia Computer Science and Information Technology, November 2012.      2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy Edla and Prasanta K. Jana. “Minimum spanning tree based clustering using partitional approach”, International Conference on Frontiers of Intelligent Computing: Theory and applications (FICTA-2012), Bhuvaneswar, Advances in Intelligent and Soft Computing (Springer), vol.199, pp. 237-244, 2012.      2012     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy and Prasanta K. Jana, “Clustering Biological Data Using Voronoi Diagram”, International Conference on Advanced Computing, Networking and Security (ADCONS-2011), Karnataka, Lecture Notes in Computer Science (Springer), vol. 7135/2012, pp. 188-197, December 2011.    DEC  2011     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Azad Naik, Damodar Reddy and Prasanta K. Jana, “A Novel Clustering Algorithm for Biological Data”, International Conference on Emerging Applications of Information Technology(EAIT-2011), Kolkata, IEEE Xplore, pp. 249-252, February 2011.    FEB  2011     </p>
+        </li>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       Damodar Reddy, Devender Mishra and Prasanta K. Jana, “MST-based Cluster Initialization for K-means”, International conf. on Computer Science and Information Technology (COSIT-2011), Communications in Computer and Information Science (Springer), Bangalore, vol. 131(2), pp. 329-338, January 2011.    JAN  2011  </p>
+        </li>
+        </ol>
+        <p class="p-2"><b>Publication Type: Book Chapter</b></p>
+        <ol>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       Secure Identity based proxy signature with Computational Diffie-Hellman for cloud data management, IGI Global publishers.    SEPT  2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Credit Scoring Using Birds Swarm Optimization, CRC Press      2018     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Application of Neural Network for Routing in Mobile Wireless Sensor Network: A Case Study, McGraw-Hill India.      2016     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       A Survey on Neural Network Classifiers for Diabetes Classification, McGraw-Hill India.      2016     </p>
+        </li>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       A kd-tree based Clustering Algorithm for Gene Expression Data; Encyclopedia of Business Analytics and Optimization (EBAO), IGI Global publishers.    MAR  2013     </p>
+        </li>
+        </ol>
+        <p class="p-2"><b>Publication Type: </b>Books Authored</p>
+        <ol>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       Soft Computing Techniques for Type-2 Diabetes Data Classification, CRC-Press, Taylor &amp; Francis, (In Press)      2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Wireless Sensor Networks: Evolutionary Algorithms for Optimizing Performance, CRC-Press, Taylor &amp; Francis, (In Press)      2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       "Fraud Detection using Data Mining Techniques", Lambert Academic Publishers, Germany.      2019     </p>
+        </li>
+        <li >
+        <p class="p-2"><b>Publication Category: </b>International       Edited Volume: Advances in Machine Learning and Data Science, Springer – AISC Series, Proceedings of LAMDA-2017.      2017     </p>
+        </li>
+        <li>
+        <p class="p-2"><b>Publication Category: </b>International       "Clustering Biological Data", Lambert Academic Publishers, Germany.    SEPT  2013    </p>
+        </li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <p class="p-2"><b>Research Guidance :</b></p>
+        <p class="p-2">1. Dr. RAMALINGASWAMY CHERUKU (Ph. D AWARDED); </p>
+          <p class="p-2">2. Dr. DIWAKAR P THRIPATHI (Ph. D AWARDED);</p>
+          <p class="p-2">3. Dr. ANNUSHREE BABLANI (Ph. D AWARDED);</p>
+          <p class="p-2">4. Dr. AMRUTHA LIPARE (Ph. D AWARDED); </p>
+          <p class="p-2">5. Dr. SIMI VR (Ph. D AWARDED); </p>
+          <p class="p-2">6. Dr. AMRITA NAIK (Ph. D AWARDED); </p>
+          <p class="p-2">7. Mr. RAHUL MISHRA (THESIS SUBMITTED); </p>
+          <p class="p-2">8. Mr. SRINIVASA RAO S (THESIS SUBMITTED).</p>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-4">Title: "Indo-Norwegian Collaboration in Intelligent Offshore Mechatronics Systems (INMOST)", Funding Agency: The Research Council of Norway under INTPART, Budget: 4 Crores (Approx.), Role: Co-Principal Investigator, (Grant No: 309582/KZG)</p>
+          </li>
+          <li >
+          <p class="p-4">Title: "Designing Efficient Algebraic Activation Functions in Deep Learning for Classification of Electroencephalography (EEG) Data", Funding Agency: DST-SERB, Budget: 6.6 Lakhs, Role: Principal Investigator, (Grant No: MTR/2019/000425)</p>
+          </li>
+          <li >
+          <p class="p-4">Title: "Secure and dynamic privacy-preserving public auditing schemes for IOT enabled data in clouds", Funding Agency: The PMU Cybersecurity Center, Budget: USD 6000, Role: Co-Principal Investigator, (PCC-Grant-202113).</p>
+          </li>
+          <li >
+          <p class="p-4">Title: “Modelling and Simulation of Brain-Computer Interface for Implanted Neural Prosthetic Devices using Spiking Neural Networks and Bio-Inspired Optimization Algorithms” Funding Agency: ARTPARK (IISc Bangalore), Budget: 3.6 Lakhs, Role: Principal Investigator, (Grant No: PG-01)</p>
+          </li>
+          <li>
+          <p class="p-4">Title: "Energy Efficiency Optimization using Machine Learning in Intelligent Reflecting Surface (IRS) aided Unmanned Arial Vehicle (UAV) for 6G Wireless Communication Networks", Funding Agency: DST-SERB, Budget: Rs. 18.3 Lakhs, Role: Project Mentor, (Grant No: TAR/2022/000383).</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+      <label for="toggle9" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">CSIR-Senior Research Fellow</p>
+          </li>
+          <li>
+          <p class="p-2">Young Faculty Award-2015</p>
+          </li>
+          <li>
+          <p class="p-2">DR APJ Abdul Kalam Life Time Achievement National Award-2018</p>
+          </li>
+          <li>
+          <p class="p-2">Best Researcher Award - 2018</p>
+          </li>
+          <li>
+          <p class="p-2">Distinguished Faculty-Asia Arab Award- 2018</p>
+          </li>
+          <li>
+          <p class="p-2">MHRD - GATE (2006 AND 2007)</p>
+          </li>
+          <li>
+          <p class="p-2">Visiting Researcher at Saint Mary's University, Canada</p>
+          </li>
+          <li>
+          <p class="p-2">Chartered Engineer - The Institution of Engineers (India)</p>
+          </li>
+          <li>
+          <p class="p-2">Elsevier - Outstanding Reviewer</p>
+          </li>
+          <li>
+          <p class="p-2">IEEE Senior Member</p>
+          </li>
+          <li>
+          <p class="p-2">2020 IEEE TIM Outstanding Reviewer</p>
+          </li>
+          <li>
+          <p class="p-2">ACM Senior Member</p>
+          </li>
+          <li>
+          <p class="p-2">ARTPARK Student Innovation Grant from IISc Bangalore</p>
+          </li>
+          <li>
+          <p class="p-2">IEEE TIM Outstanding Editor Award - 2022</p>
+          </li>
+          <li>
+          <p class="p-2">INSA Visiting Scientist - 2022</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">Senior Member - IEEE</p>
+          </li>
+          <li >
+          <p class="p-2">Senior Member of the International Association of Computer Science and Information Technology (IACSIT)</p>
+          </li>
+          <li >
+          <p class="p-2">Member - The Institution of Engineers (India)</p>
+          </li>
+          <li >
+          <p class="p-2">Member of the ‘Editorial Board’ for International Journal of Engineering and Advanced Technology (IJEAT); Member of the ‘Editorial Board’ for International Journal of Soft Computing and Engineering (IJSCE); Member of the ‘Editorial Board’ for Intl. Journal of Emerging Technology and Advanced Engineering (IJETAE); Board Member of the International Journal of Computer &amp; Organization Trends (IJCOT);</p>
+          </li>
+          <li>
+          <p class="p-2">Senior Member - ACM</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Professional Services
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">Head of the CSE Department (October 2015 - May 2018)</p>
+          </li>
+          <li>
+          <p class="p-2">Nodal Officer/GIAN</p>
+          </li>
+          <li>
+          <p class="p-2">Training &amp; Placement Officer (March 2015 - July 2017)</p>
+          </li>
+          <li>
+          <p class="p-2">First Appellate Authority</p>
+          </li>
+          <li>
+          <p class="p-2">Nodal Officer-NIRF</p>
+          </li>
+          <li>
+          <p class="p-2">Nodal Officer for MHRD-V Lab</p>
+          </li>
+          <li>
+          <p class="p-2">Member, AAC</p>
+          </li>
+          <li>
+          <p class="p-2">Member, Senate</p>
+          </li>
+          <li>
+          <p class="p-2">Member, Convocation Core Committee</p>
+          </li>
+          <li>
+          <p class="p-2">CCMT-2017 Centre In-charge</p>
+          </li>
+          <li>
+          <p class="p-2">Member and Chairman of various purchase committees</p>
+          </li>
+          <li>
+          <p class="p-2">Member of non-teaching applications scrutiny committee</p>
+          </li>
+          <li>
+          <p class="p-2">DRDO CBST-2014 (Coordinator at NIT Goa)</p>
+          </li>
+          <li>
+          <p class="p-2">Nodal Officer (For recruitment of VC, GU, Maharashtra)</p>
+          </li>
+          <li>
+          <p class="p-2">CBT Observer for UGC-NET</p>
+          </li>
+          <li>
+          <p class="p-2">Observer for NEET (UG) - 2019</p>
+          </li>
+          <li>
+          <p class="p-2">Presiding Officer (General Elections-2019) - 38 - Sanvordem</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table >
+          <tbody>
+          <tr>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Sr.No</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Month</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Year</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Training attended Information</b></p>
+          </th>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >1</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >DEC</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Frontiers of Intelligent Computing: Theory and applications (FICTA-2012), Bhuvaneswar.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >NOV</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >World Conference on Information Technology (WCIT-2012), Barcelona, Spain.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >3</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >NOV</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >World Congress on Information and Communication Technologies (WICT-2012), Trivandrum.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >4</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >OCT</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Communication, Computing &amp; Security (ICCCS-2012), Rourkela.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >5</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >AUG</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Digital Information Management (ICDIM-2012), Macau, Hong Kong.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >6</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Data Science &amp; Engineering (ICDSE-2012), Cochin, Kerala.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >7</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >FEB</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Computer, Communication, Control and Information Technology (C3IT-2012), Kolkata.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >8</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >DEC</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2011</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Advanced Computing, Networking and Security (ADCONS-2011), Karnataka.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >9</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >FEB</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2011</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International Conference on Emerging Applications of Information Technology(EAIT-2011), Kolkata.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >10</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JAN</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2011</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >International conf. on Computer Science and Information Technology (COSIT-2011), Bangalore.</p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+          <tbody>
+          <tr>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Sr.No</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Month</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Year</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Trainings Conducted Information</b></p>
+          </th>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >1</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JUN</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2020</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Webinar on "Skill Development using Virtual Labs" (5 June 2020) under MHRD Virtual Labs project</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JAN</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2020</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >National Workshop on “Virtual Labs” (23 January, 2020) under MHRD Virtual Labs project</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >3</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >OCT</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2017</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >First International Conference on "Latest Advances in Machine learning and DAta Science" [LAMDA - 2017] 25 - 27 October, 2017</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >4</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2017</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Short-term Course on "The field theory of Quantum and Classical free electron theory" 3-13 July 2017</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >5</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >MAR</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2017</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Distinguished Lecture on "Contours of India's foreign policy" March 17, 2017</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >6</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >DEC</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2016</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Workshop on "Practical Applications of Data Mining and IBM Bluemix and Watson" 5-9 December 2016.</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >7</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >DEC</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2016</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Short-term Course on "Cloud Security &amp; Privacy" 12-18 December, 2016.</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >8</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >APRIL</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2016</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Faculty Development Programme on "Software Engineering" (Sponsored by E&amp;ICT Academy) 1-6 April, 2016.</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >9</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >MAR</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2016</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Two-day National Workshop on "Patents and Intellectual Property Rights" 4 - 5 March 2016</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >10</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2015</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Short Term Training Programme on "Data Mining: Research Challenges &amp; Innovations" 6-10 July, 2015.</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >11</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2015</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >National Workshop on "How To Write Research Projects" 8th July, 2015</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >12</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JAN</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2015</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Workshop on Cyber Security 19 Jan. 2015</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >13</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2014</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Short-Term Certificate Course on "Pattern Analysis and Information Security" 30 June - 4 July, 2014</p>
+          </td>
+          </tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr></tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >14</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >MAY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2014</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Workshop on MATLAB and Simulink 5 May 2014</p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
   </div>
-  
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
 
-  <script>
-    function toggleData() {
-      var dataElement = document.getElementById('data');
-      dataElement.style.display = (dataElement.style.display === 'none') ? 'block' : 'none';
-    }
-  </script>
-  
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
 
-</body>
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
 </html>
