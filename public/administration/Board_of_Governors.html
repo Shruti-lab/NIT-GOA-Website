@@ -134,6 +134,14 @@
     }
 
 
+    @media screen and (max-width: 500px) {
+      #table {
+        font-size: xx-small;
+        margin: auto;
+        width: 60%;
+      }
+    }
+
     /*FOOTER STYLE ENDS HERE*/
 
     </style>
@@ -302,7 +310,7 @@
             </div>
           </div>
 
-          <div class="menu-toggle" style="left:1vh;" onclick="togglemenu(this)">
+          <div class="menu-toggle" onclick="togglemenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -319,7 +327,7 @@
     >
       Board of Governors
     </h1>
-    <div class="items-center justify-center p-4 flex mt-4">
+    <div class="items-center justify-center p-4 flex mt-4" id="table">
       <table class="shadow-lg items-center ml-20 mr-20 mb-40">
         <tr>
           <th class="bg-blue-400 border text-center">Sr.No.</th>
