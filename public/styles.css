@@ -2050,6 +2050,22 @@ body {
   margin: auto;
 }
 
+.table {
+  display: flex;
+  margin: auto !important;
+  width: 80vw;
+}
+
+@media screen and (max-width: 500px) {
+  .table {
+    font-size: xx-small;
+    margin: auto;
+    width: 40%;
+    margin-bottom: 30px;
+  }
+}
+
+
 /* a[href=""] {
   display: none !important;
 } */
