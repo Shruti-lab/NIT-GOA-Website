@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. T. Veerakumar.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. T. Veerakumar</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Electronics and Communication Engineering
+      </p>
+      <p class="text-gray-700">
+        Image Compression, Image Denoising, Object detection and tracking,and Medical Image Analysis
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500">tveerakumar@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. T. Veerakumar</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date: </p>
+          <p class="p-2">Designation: Associate Professor</p>
+
+          <p class="p-2">
+            Department: Department of Electronics and Communication Engineering
+          </p>
+          <p class="p-2">URL: 
+            <a href="https://sites.google.com/view/tveerakumar/home">
+                https://sites.google.com/view/tveerakumar/home
+            </a>
+          </p>
+          <p class="p-2">Date of Joining: 05/12/2013</p>
+          <p class="p-2">
+            Research/Teaching Experience: 15 Years Teaching Experience as on 01/11/2021
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address:  Department of ECE, National Institute of Technology, Farmagudi
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: tveerakumar@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]: </p>
+          <p class="p-2">Phone [Mobile]: </p>
+          <p class="p-2">Office Extension: </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Image Compression;</p>
+          <p class="p-2">Image Denoising;</p>
+          <p class="p-2">Object detection and tracking;</p>
+          <p class="p-2">Medical Image Analysis;</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Digital Electronics</p>
+          <p class="p-2">Signals and Systems</p>
+          <p class="p-2">Linear Integrated Circuits</p>
+          <p class="p-2">Digital Signal Processing</p>
+          <p class="p-2">Digital Image Processing</p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Advanced DSP</p>
+          <p class="p-2">Wavelets and Subband Coding</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <table>
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.E. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    RVS College of Engineering and Technology, Dindigul, Tamil Nadu, Madurai Kamaraj University. 
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2004</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">ECE</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.E. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    PSG College of Technology, Coimbatore. 
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2006</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Applied Electronics</td>
+                </tr>
+
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">P.Hd. &nbsp;</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                      Anna University, Chennai
+                    </td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Information and Communication Engineering</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+          >
+            Paper Published
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <ol>
+          <li><p class="p-2"><b>Publication Type: Journal</b></p>
+            <ol>
+            <li >
+            <p class="p-4"><b>Publication Category: </b>International <br/>       M. K. Panda, A. Sharma, V. Bajpai, B. N. Subudhi, T. Veerakumar, and V. Jakhetiya,"Encoder and Decoder Network with ResNet-50 and Global Average Feature Pooling for Local Change Detection", Computer Vision and Image Understanding (accepted), 2022 (IF: 4.886)  -  JUN, 2022</p>
+            </li>
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International <br/>    D. K. Rout, B. N Subudhi, T. Veerakumar, S. Chaudhury, and J. Soraghan, "Multiresolution Visual Enhancement of Hazy Underwater Scene", Multimedia Tools and Applications, (accepted), 2022. (IF: 2.757)  -  JAN, 2022</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Rasal, T. Veerakumar, B. N. Subudhi, and S. Esakkirajan, "Fluorescence Microscopy Image Noise Reduction using IEMD based Adaptive Thresholding Approach", Signal, Image and Video Processing (accepted), 2022. (IF: 2.380)  -  JAN, 2022</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Rasal, T. Veerakumar, B. N. Subudhi, and S. Esakkirajan, "A New Approach for Reduction of the Noise from Microscopy Images using Fourier Decomposition", Biocybernetics and Biomedical Engineering (accepted), 2022 (IF: 4.314)  -  JAN, 2022</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      A. Hatua, B. N Subudhi, T. Veerakumar, and A. Ghosh, "Early Detection of Diabetic Retinopathy from Big Data in Hadoop Framework”, Displays, Elsevier, Vol.70, 2021. (IF: 2.167)  -  DEC, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      B. N. Subudhi, M. K. Panda, T. Veerakumar, V. Jakhetiya, and S. Esakkirajan, "Kernel Induced Possibilistic Fuzzy Associative Background Subtraction for Video Scene", IEEE Transactions on Computational Social Systems, (accepted), 2021. (IF: 5.357)  -  DEC, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      P. Bhat, B. N Subudhi, T. Veerakumar, and S. Esakkirajan, "A fully Automatic Feature-based Real-Time Traffic Surveillance System using Data Association in the Probabilistic Framework”, IEEE Transactions on Intelligent Transportation Systems, (accepted), 2021. (IF: 6.492)  -  AUG, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       N. Naimahmed, S. Patidar, and T. Veerakumar, "A correlation matrix-based tensor decomposition method for early prediction of sepsis from clinical data", Biocybernetics and Biomedical Engineering, Elsevier, (accepted), 2021. (IF: 4.314)  -  JULY, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      P. G. Bhat, B. N. Subudhi, T. Veerakumar, G. D. Caterina, and J. J. Soraghan, "Target Tracking using a Mean-Shift Occlusion Aware Particle Filter”, IEEE Sensors, (accepted). (IF: 3.073)  -  JAN, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       N. Deepa, S. Esakkirajan, B. Keerthiveena, and T. Veerakumar, "Automated segmentation algorithm with deep learning framework for early detection of glaucoma", Concurrency and Computation: Practice and Experience, John Wiley, (Accepted), 2021. (IF:1.447)  -  JAN, 2021</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Rasal, T. Veerakumar, B. N. Subudhi, and S. Esakkirajan,"'Mixed Poisson Gaussian Noise Reduction in Fluorescence Microscopy Images using Modified Structure of Wavelet Transform”, IET Image Processing, (accepted). (IF: 2.004)  -  SEPT, 2020</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      B. Keerthiveena, S. Esakkirajan, B. N. Subudhi, T .Veerakumar, "Classification of Ocular health using hybrid BPSO-SVM for feature selection and parameter optimization”, IET Image Processing, (accepted). (IF: 2.004)  -  AUG, 2020</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       B. N Subudhi, T. Veerakumar, S. Esakkirajan and S. Chaudhury, “Automatic Lecture Video Skimming using Shot Categorization and Contrast based Features,” Expert Systems with Applications, accepted, 2020. (IF: 4.292)  -  FEB, 2020</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      P. Bhat, B. N Subudhi, T. Veerakumar, V. Laxmi, and M. S. Gaur , "Multi-Feature Fusion in Particle Filter Framework for Visual Tracking,” IEEE Sensors, vol. 20, no. 5, PP. 2405-2415, 2020. (IF: 3.076)  -  NOV, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      B. N. Subudhi, T. Veerakumar, S. Esakkirajan and A. Ghosh, "Kernelized Fuzzy Modal Variation for Local Change Detection from Video Scenes”, IEEE Transactions on Multimedia, accepted, 2019. (IF: 5.452)  -  AUG, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      D. K. Rout, B. N Subudhi, T. Veerakumar, and S. Chaudhury, "Walsh-Hadamard Kernel based Features in Particle Filter Framework for Underwater Object Tracking”, IEEE Transactions on Industrial Informatics, accepted, 2019. (IF: 7.377)   -  AUG, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, B. N Subudhi, S. Esakkirajan and P. K. Pradhan, “Iterative Adaptive Unsymmetric Trimmed Shock Filter for High-Density Salt-and-Pepper Noise Removal” Circuits, Systems & Signal Processing, vol. 38, no. 6, pp. pp 2630–2652, 2019. (IF: 1.998)  -  JUN, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       T. Veerakumar, B. N Subudhi, and S. Esakkirajan, “Empirical mode decomposition and adaptive bilateral filter approach for impulse noise removal,” Expert Systems with Applications, vol. 121, pp. 18-27, 2019. (IF: 3.928)  -  MAY, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      B. N. Subudhi, T. Veerakumar, S. Esakkirajan and A. Ghosh, "Context Dependent Fuzzy Associated Statistical Model for Intensity Inhomogeneity Correction from Magnetic Resonance Images”, IEEE Journal of Translational Engineering in Health and Medicine, vol. 7, pp. 1-9, 2019. (IF: 1.754)  -  APRIL, 2019</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      C. Vimalraj, S. Esakkirajan, T. Veerakumar, P. Sreevidya, “Despeckling of Ultrasound Images using Directionally Decimated Wavelet Packets with Adaptive Clustering”, IET Image Processing, Vol. 13, pp. 206-215, 2018. (IF:2.004)  -  NOV, 2018</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      Deepak Kumar Rout, BN Subudhi, T.Veerakumar, and Santanu Chaudhury, "Spatio-contextual Gaussian mixture model for local change detection in underwater video", Expert Systems with Applications, Vol. 97, pp.117-136, 2018. SCI:3.928  -  MAY, 2018</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       T.Veerakumar, BN Subudhi, S. Esakkirajan, and PK Pradhan, "Context Model based Edge Preservation Filter for Impulse Noise Removal", Expert Systems with Applications, Vol. 88, pp. 29-44, 2017. SCI:3.928  -  DEC, 2017</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, Ravi Prasad KJ, BN Subudhi, S. Esakkirajan, "Impulse Noise Removal Using Adaptive Radial Basis Function Interpolation", Circuits, Systems, and Signal Processing, Vol.36, No.3, pp.1192-1223, 2017. SCI:1.694  -  MAR, 2017</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      BN Subudhi, T. Veerakumar, S. Esakkirajan, and Ashish Ghosh, "Tumor or abnormality identification from magnetic resonance images using statistical region fusion based segmentation" Magnetic Resonance Imaging, Vol. 34, N0.9, pp. 1292-1304, 2016. (IF: 2.669)  -  NOV, 2016</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       C. Vimalraj, S. Esakkirajan, T. Veerakumar, and P. Sreevidya, "Direction Sensitive Wavelet Packet for Despeckling of Ultrasound Images", IET Computer Vision, Vol. 10, No. 7, pp. 746-757, 2016. SCI: 1.173  -  APRIL, 2016</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       T. Veerakumar, S. Esakkirajan, and Ila Vennila, “Edge Preserving Adaptive Anisotropic Diffusion Filter Approach for the Suppression of Impulse Noise in Images”, AEU - International Journal of Electronics and Communications (Elsevier), Vol.68, No.5, pp.442-452, 2014, (IF: 1.147)  -  MAY, 2014</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       T. Veerakumar, S. Esakkirajan, and Ila Vennila, “Recursive Cubic Spline Interpolation Filter Approach for the Removal of High Density Salt and Pepper Noise”, Signal, Image and Video Processing (Springer), Vol. 7, No. 4, 2014. (IF: 1.430)  -  JAN, 2014</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, S. Esakkirajan, and Ila Vennila, “Salt and Pepper Noise Removal Using Adaptive Decision based Improved Bilateral Filter”, National Journal of Technology, PSG College of Technology, Coimbatore. 2013.  -  JULY, 2013</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, S. Esakkirajan, and Ila Vennila, “High Density Impulse Noise Removal Using Modified Switching Bilateral Filter”, International Journal of Circuits, Systems and Signal Processing, Vol. 6, No. 3, pp.189-196, 2012.  -  JUN, 2012 </p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, S. Esakkirajan, and Ila Vennila, “Combined fuzzy logic and unsymmetric trimmed median filter approach for the removal of high density impulse noise”, WSEAS Transactions on Signal Processing, Vol. 8, No. 1, pp. 32-42, 2012. SNIP : 0.15  -  MAR, 2012</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, A. N. Subramanyam, and C. H. PremChand, “Removal of high density salt and pepper noise through modified decision based unsymmetric trimmed median filter”, IEEE Signal Processing Letters, Vol. 18, No. 5, pp. 287-290, 2011. (IF: 1.388)  -  MAY, 2011</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and P. Navaneethan, “Video compression using multiwavelet and multistage vector quantization”, The International Arab Journal of Information Technology, Vol. 6, No. 4, pp.385-393. 2009. (IF: 0.127)  -  SEPT, 2009</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and P. Navaneethan, “Image Compression Using Hybrid Vector Quantization”, International Journal of Signal Processing, Vol. 4, No. 1, pp. 59-66, 2008.  -  AUG, 2008</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and P. Navaneethan, “Image compression using multiwavelet and multi-stage vector quantization”, WASET International Journal of Signal Processing, Vol. 4, No. 4, pp. 524-531, 2008.  -  APRIL, 2008</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, P. Navaneethan, and V. Senthil Murugan, “Medical Image Compression using Residual Vector Quantization”, National Journal of Technology, PSG College of Technology, Coimbatore, Vol. 4, No. 1, pp. 52-60, 2008.  -  APRIL, 2008</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      T. Veerakumar, S. Esakkirajan, R. Sudhakar, and V. Senthil Murugan, “Fingerprint compression using contourlet transform and self organizing feature map” Iranian Journal of Electrical and Computer Engineering, Vol. 6, No. 2, pp. 133-140, 2007. SNIP:0.105  -  OCT, 2007</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>       S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and P. Navaneethan, “Fingerprint Compression Using Non-linear Approximation of Multiwavelet Coefficients”, Iranian Journal of Electrical and Computer Engineering, Vol. 7, No. 2, pp. 127- 133, 2007. SNIP:0.105  -  JUN, 2007</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and R. Sudhakar, “Fingerprint compression using contourlet transform and multistage vector quantization”, International Journal of Biological and Medical Sciences, Vol.1, No. 2, pp. 140-147, 2006.  -  NOV, 2006</p>
+            </li>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>      S. Esakkirajan, T. Veerakumar, V. Senthil Murugan, and R. Sudhakar, “Image Compression Using Contourlet Transform and Multistage Vector Quantization”, International Journal of Graphics Vision and Image Processing, Vol.6, No.1, pp. 19-28, 2006.  -  MAY, 2006</p>
+            </li>
+            </ol>
+            <p class="p-2"><b>Publication Type: Proceedings</b></p>
+            <ol>
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International  <br/>     M. K. Panda, B. N Subudhi, T. Veerakumar, and M. S. Gaur, "Pixel-level Visual and Thermal Images Fusion Using Maximum and Minimum Value Selection Strategy”, IEEE International Symposium on Sustainable Energy, Signal Processing & Cyber Security, accepted, Gunupur, India, 2020.  -  DEC, 2020</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International <br/>   A. Mahindrakar, M. P. Chodankar, R. Kumar, T. Veerakumar, B. N. Subudhi, "Gaussian Mixture Model and Color Separation Models for the Arc-Flashover Detection”, IEEE International Symposium on Sustainable Energy, Signal Processing & Cyber Security, accepted, Gunupur, India, 2020.    DEC  2020</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>  M. K. Panda, B. N Subudhi, T. Veerakumar, and M. S. Gaur, "Edge Preserving Image Fusion using Intensity Variation Approach”, 16th IEEE TENCON, accepted, Osaka, Japan, 2020.  -  NOV, 2020</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>    D. K. Rout, B. N Subudhi, T. Veerakumar, and S. Chaudhury, "Prominent Object Detection in Underwater Environment using a Dual-feature Framework”, 31st IEEE OCEANS, accepted, Singapore, 2020.  -  OCT, 2020</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>     B. Keerthiveena, T. Veerakumar, S. Esakkirajan and B. N. Subudhi, "Computer-aided diagnosis for Diabetic Retinopathy based on Firefly algorithm," in Proceedings of 11th International Conference on Advanced Computing (ICoAC), Chennai, India, 2019, pp. 310-315.  -  OCT, 2019</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>    Pranab G Bhat, Deepak Kumar Rout, Badri Narayan Subudhi, T Veerakumar, "Vision sensory substitution to aid the blind in reading and object recognition", Fourth International Conference on Image Information Processing (ICIIP), 2017, JUIT, Shimla, india. (IEEE Xplore)  -  DEC, 2017</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>   Deepak Kumar Rout, Pranab G B, T Veerakumar, Badri Narayan Subudhi, Santanu Chaudhury, "A novel five-frame difference scheme for local change detection in underwater video", Fourth International Conference on Image Information Processing (ICIIP), 2017, JUIT, Shimla, india. (IEEE Xplore)  -  DEC, 2017</p>
+            </li>  
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>   Badri Narayan Subudhi, T Veerakumar, Deepak Yadav, Amol P Suryavanshi, SN Disha, "Video Skimming for Lecture Video Sequences Using Histogram Based Low Level Features", IEEE 7th International Advance Computing Conference (IACC), VNR Vignana Jyothi Institute of Engineering and Technology Hyderabad, Telangana, India, 2017.  -  JAN, 2017</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>   Damodar Reddy Edla, V.S. Samy, B.N. Subudhi, and T. Veerakumar, “Antarctica Glacier/Sea Ice Motion Tracking using Soft Computing Techniques”, National Workshop on Evaluation of Research Projects for Planning XXXVI Indian Scientific Expedition to Antarctica, NCAOR Goa, June 9-10, 2016.  -  JUN, 2016</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>   T. Veerakumar, “Impulse Noise Removal using Fuzzy Logic with Variant Median Filter”, National Conference on VLSI, Communication and Wireless Technologies (NCVCW’13), PSG College of Technology, Coimbatore.  -  MAR, 2013</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>    T. Veerakumar, “Fingerprint based Attendance System”, National Conference on VLSI, Communication and Wireless Technologies (NCVCW’13), PSG College of Technology, Coimbatore.  -  MAR, 2013</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>    T. Veerakumar, “Adaptive Wavelet Packet Thresholding Function for Image Denoising”, National Conference on VLSI, Communication and Wireless Technologies (NCVCW’13), PSG College of Technology, Coimbatore.  -  MAR, 2013</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>     T. Veerakumar, “Video Denoising Based on a Spatio-temporal Gaussian Scale Mixture Model”, Second National Conference on Research Challenges in Communication Systems and VLSI Design (NCRCV’12), PSG College of Technology, Coimbatore.  -  APRIL, 2012</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>      T. Veerakumar, S. Esakkirajan, and Ila Vennila, “An efficient approach to remove random valued impulse noise in images”, International Conference on Recent Trends In Information Technology (ICRTIT), MIT, Chennai, pp. 49-53, 2012. (Paper published in IEEE Explore)</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>      T. Veerakumar, S. Esakkirajan, and Ila Vennila, “Salt and pepper noise removal in video using adaptive decision based median filter”, International Conference on Multimedia, Signal Processing and Communication Technologies (IMPACT’11), Aligarh Muslim University, Aligarh, pp. 87-90, 2011. (Paper published in IEEE Explore)</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>      S. Esakkirajan, T. Veerakumar, and P Navaneethan, “Adaptive vector quantization based video compression scheme”, International Conference on Multimedia, Signal Processing and Communication Technologies (IMPACT’09), Aligarh Muslim University, Aligarh, pp. 40-43, 2009. (Paper published in IEEE Explore)</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>     S. Esakkirajan, T. Veerakumar, and P Navaneethan, “Best basis selection using singular value decomposition”, Seventh International Conference on Advances in Pattern Recognition (ICAPR'09), 2009, ISI Kolkata, pp. 65-68, 2009. (Paper published in IEEE Explore) </p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>     S Esakkirajan, T. Veerakumar, N. Malmurugan, and P. Navaneethan, “Image Compression using Adaptive Wavelet Packet and Multistage Vector Quantization”, IEEE Region 10 and the Third international Conference on Industrial and Information Systems(ICIIS 2008), IIT Kharagpur, pp.1-4, 2008. (Paper published in IEEE Explore)</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>International  <br/>       S. Esakkirajan, T. Veerakumar, and P. Navaneethan, “Adaptive vector quantization technique for retinal image compression”, International Conference on Computing, Communication and Networking (ICCCn2008), Chettinad College of Engineering and Technology, Karur, pp.1-4, 2008. (Paper published in IEEE Explore)</p>
+            </li>
+
+            <li>
+              <p class="p-4"><b>Publication Category: </b>National  <br/>      T. Veerakumar, and S. Esakkirajan, “Image Compression Using Wavelet Packet Transform and Vector Quantization”, Second National Conference on Signals, Systems and Security (NCSSS’06), Bannari Amman Institute of Technology, Sathyamangalam, Tamilnadu, 2006. (Received Best Paper Award).  -  JAN, 2006</p>
+            </li>
+
+            </ol>
+            <p class="p-2"><b>Publication Type: Book Chapter</b></p>
+            <ol>
+
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>    T. Veerakumar, B. N. Subudhi, Sandeep Kumar K., Nikhil O. F. Da Rocha, S. Esakkirajan, "Shot Boundary Detection from Lecture Video Sequences using Histogram of Oriented Gradients and Radiometric Correlation", Smart Computer Vision: Mimicking Human Intelligence, Springer (Accepted).  -  DEC, 2021</p>
+            </li>
+
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>    B. N. Subudhi, T. Veerakumar, Sai Rakshit Harathas, Rohan Prabhudesai, Venkatanareshbabu Kuppili, Vinit Jaketiya, "Deep Learning in Auto Encoder Framework and Shape Prior for Hand Gesture Recognition", Smart Computer Vision: Mimicking Human Intelligence, Springer (Accepted).  -  DEC, 2021</p>
+            </li>
+
+            </ol>
+            
+            <p class="p-2"><b>Publication Type: Books Authored</b></p>
+            <ol>
+
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>    S. Esakkirajan, T. Veerakumar, and B. N. Subudhi, "Digital Signal Processing", 1st Edition, Published by Tata McGraw Hill, New Delhi, 2021.  -  JUN, 2021</p>
+            </li>
+
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>     S. Jayaraman, S. Esakkirajan, and T. Veerakumar, “Digital Image Processing”, 2nd Edition, Published by Tata McGraw Hill, New Delhi, 2020.  -  MAY, 2020 </p>
+            </li>
+
+            <li>
+            <p class="p-4"><b>Publication Category: </b>International <br/>     S. Jayaraman, S. Esakkirajan and T. Veerakumar, "Digital Image Processing", Published by Tata McGraw Hill Education PVT. Ltd., New Delhi   -   MAY, 2009</p>
+            </li>
+
+            </ol>
+          </li>
+        </div>
+      </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <p class="p-2"><b>Research Guidance :</b></p>
+        <p class="p-2">1. Dr. Deepak Kumar Rout: On Design of a Visual Surveillance System for Complex Underwater Scenarios (Awarded 2020); </p>
+          <p class="p-2">2. Dr. Pranab G. Bhat: Moving Object Tracking in Complex Video Scenes using Probabilistic Framework (Awarded 2021);</p>
+          <p class="p-2">3. Dr. Naimahmed Nesaragi: Modeling and Mining Schemes for Early Prediction of Sepsis using Higher-order and Multi-aspect Representations from Structured EHR Data (Awarded 2021)-Co-Supervisor;</p>
+          <p class="p-2">4. Mr. Tushar T Rasal: Fluorescence Microscopic Image Analysis using Machine Learning Techniques (Thesis Defended 2023);</p>
+          <p class="p-2">5. Mr. Nagaraj Neela: (Hyper Spectral Image Analysis) (Ongoing);</p>
+          <p class="p-2">6. Mrs. Veena Vithal Gaonkar: (Biomedical signal processing) (Ongoing);</p>
+
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-4">1. Smart City Surveillance using Decentralized Multi-camera Networks, DST-SERB EMR, (Co-PI) (~42 Lakh) Status: Completed</p>
+          </li>
+          <li >
+          <p class="p-4">2. Design and development of acoustic methods for early detection of stem and root borer Plocaederus spp infestation in cashew, DST-SERB, (Co-PI) (~41 Lakh), Status: Completed</p>
+          </li>
+          <li >
+          <p class="p-4">3.Design and Development of FPGA Accelerator IP for Deep Neural Network (FAipDNet), Meity, (Co-PI), (86 Lakh), Status: Ongoing</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">ISSS Life Member</p>
+          </li>
+          <li >
+          <p class="p-2">IAENG Life Member</p>
+          </li>
+          <li>
+            <p class="p-2">ACM Membership</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Awards and Honour
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">1. The Conference paper titled " Vision Sensory Substitution to Aid the Blind in Reading and Object Recognition " Received (Best Thematic Paper Award) during ICIIP 2017 @ JUIT Solan, India.</p>
+          </li>
+          <li>
+          <p class="p-2">2. The Conference paper titled "A Novel Five-Frame Difference Scheme for Local Change Detection in Underwater Video" Received Best Algorithmica Award during ICIIP 2017 @ JUIT Solan, India.</p>
+          </li>
+          <li>
+          <p class="p-2">3. The International Symposium paper titled "Gaussian Mixture Model and Color Separation Models for the Arc-Flashover Detection”, Received (Best Paper Award) during IEEE International Symposium on Sustainable Energy, Signal Processing & Cyber Security (IEEE-iSSSC 2020), Gunupur, India, 2020.</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+          <tbody>
+          <tr>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Sr.No</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Month</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Year</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p ><b>Trainings Conducted Information</b></p>
+          </th>
+          </tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >1</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >MAY</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2016</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >DST Sponsored One Week STTP on "Video and Image Analysis: Fundamentals and Advances" during May 30th – June 4th 2016, Number of participants is 32.</p>
+          </td>
+          </tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >OCT</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2013</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >TEQIP – II Sponsored One Week Faculty Development Programme on Emerging Research Avenues in Signal and Image Processing during Oct. 22-28, 2013, Number of participants is 40. </p>
+          </td>
+          </tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >3</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >APR</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2013</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >National Conference organized (National Conference on Communication, VLSI and Wireless Technologies-2013). Number of participants is 150.</p>
+          </td>
+          </tr>
+          <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >4</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >NOV</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2012</p>
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Two day Workshop on Implementation of DSP Algorithms in DSP Processors, Number of participants is 35. </p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
