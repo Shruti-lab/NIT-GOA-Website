@@ -1,0 +1,1368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Saidi Reddy Parne.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Saidi Reddy Parne</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor of Physics, Department of Applied Sciences
+      </p>
+      <p class="text-gray-700">
+        Photonics • Fiber Bragg Grating Sensors • Fiber Optic Sensors • Superconducting Motor • Material Characterization • Nanoscale Matter • Radar Absorption Materials
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> psreddy@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. Saidi Reddy Parne</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date: 03/01/1981</p>
+          <p class="p-2">Designation: Associate Professor of Physics</p>
+
+          <p class="p-2">
+            Department:  Department of Applied Sciences
+          </p>
+          <p class="p-2">URL: 
+            <a class="text-blue-500" href="https://orcid.org/0000-0003-2817-4240">
+                [Orcid - Dr. Saidi Reddy Parne]
+            </a>
+          </p>
+          <p class="p-2">Date of Joining: 06/01/2012</p>
+          <p class="p-2">
+            Research/Teaching Experience: Total Teaching and Research Experience at NIT Goa: 11 years 11 Months
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address:  Department of Applied Sciences, NIT Goa
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: psreddy@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]: </p>
+          <p class="p-2">Phone [Mobile]: 9049108036</p>
+          <p class="p-2">Office Extension: 0832-2404201</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Photonics</p>
+          <p class="p-2">Fiber Bragg Grating Sensors</p>
+          <p class="p-2">Fiber Optic Sensors</p>
+          <p class="p-2">Superconducting Motor</p>
+          <p class="p-2">Material Characterization</p>
+          <p class="p-2">Radar Absorption Materials</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Engineering Physics</p>
+          <p class="p-2">Wave Mechanics</p>
+          <p class="p-2">Fiber Optic Communication</p>
+          <p class="p-2">Materials Science </p>
+          <p class="p-2">Optoelectronics</p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Introduction to Photonics</p>
+          <p class="p-2">Fiber Optic Sensors</p>
+          <p class="p-2">Advanced Photonics</p>
+          <p class="p-2">Quantum Mechanics</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <table>
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.Sc. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Osmania University, Hyderabad, Telangana 
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2002</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Sc. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Kakatiya University Warangal 
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2005</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Engineering Physics and Instrumentation</td>
+                </tr>
+
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">P.Hd. &nbsp;</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                      National Institute of Technology, Warangal
+                    </td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Physics</td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+          >
+            Paper Published
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <ol>
+          <li><p class="p-2"><b>Publication Type: Journal</b></p>
+            <ol>
+                <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Exploring the synthesis, structure, and optoelectronic properties of lead-free halide perovskite Cs3Bi2I9 in single crystal and polycrystalline forms” P Sujith, Saidi Reddy Parne, T Abhinav, - Semiconductor Science and Technology, 2023, <a href="https://iopscience.iop.org/article/10.1088/1361-6641/ad08dd/meta">https://iopscience.iop.org/article/10.1088/1361-6641/ad08dd/meta</a> NOV 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Facile hydrothermal synthesis of bio-inspired ZnO/Fe2O3/ZnFe2O4 heterostructure: Effect of microwave absorption properties” SSS Panda, S Gandi, Saidi Reddy Parne, T Panigrahi, Vijeesh V.P., Surfaces and Interfaces, Volume 42, Part B, November 2023, 103490, <a href="https://doi.org/10.1016/j.surfin.2023.103490">https://doi.org/10.1016/j.surfin.2023.103490</a> NOV 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>”An optical study of heterojunction n ZnO/p CuO nanosheets and detection of n butanol vapour at room temperature” Kurugundla Gopi Krishna, Saidi Reddy Parne, and P. Nagaraju, Journal of Materials Science, 2023, <a href="https://doi.org/10.1007/s10853-023-08997-0">https://doi.org/10.1007/s10853-023-08997-0</a> NOV 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>An Energy-Efficient Routing Algorithm for WSNs Using Fuzzy Logic, Preetha R Rao, Amruta Lipare, Damodar Reddy Edla, and Saidi Reddy Parne. 2023. Sensors 23, no. 19: 8074. <a href="https://doi.org/10.3390/s23198074">https://doi.org/10.3390/s23198074</a> SEPT 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Perovskite White Light Emitting Diodes: A Review, Praveen Chenna, Suman Gandi, Sujith Pookatt, Saidi Reddy Parne, Materials Today Electronics (2023), doi: <a href="https://doi.org/10.1016/j.mtelec.2023.100057">https://doi.org/10.1016/j.mtelec.2023.100057</a> AUG 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Flake-Like WO3-Based Thin Films for Enhanced Ethanol Sensing Applications” SR Sriram, N Pothukanuri, Saidi Reddy Parne, DR Edla, ECS Journal of Solid State Science and Technology, 2023, DOI 10.1149/2162-8777/ace5d8 JULY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Structural, Optical, and Electromagnetic Microwave Absorption Properties of Bael Leaves: A Simple Approach to Investigate Microwave Absorption Properties with 3D Printed PLA Tubes”, SSS Panda, S Gandi, T Panigrahi, Saidi Reddy Parne, - Journal of Electronic Materials, 2023, <a href="https://doi.org/10.1007/s11664-023-10575-8">https://doi.org/10.1007/s11664-023-10575-8</a> JULY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Facile synthesis and enhanced acetone sensing properties of ZnO/TiO2 nanocomposite at room temperature, KG Krishna, SR Parne, P Nagaraju - Materials Science and Engineering: B, 2023, <a href="https://doi.org/10.1016/j.mseb.2023.116734">https://doi.org/10.1016/j.mseb.2023.116734</a> JULY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Distributed source scheme for Poisson equation using finite element method, Nithin Kumar Goona, Saidi Reddy Parne, Journal of Computational Science, Volume 72, 2023, 102103, <a href="https://doi.org/10.1016/j.jocs.2023.102103">https://doi.org/10.1016/j.jocs.2023.102103</a> JULY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>The second-order nonlinear optical properties of novel triazolo[3,4-b] [1, 3, 4] thiadiazole derivative chromophores using DFT calculations. Waddar, B., Saidi Reddy Parne, Gandi, S.G. R. Prasanth, M Yaseen & Mahadevappa Y. K., Struct Chem (2023). <a href="https://doi.org/10.1007/s11224-023-02178-0">https://doi.org/10.1007/s11224-023-02178-0</a> MAY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Investigations on ZnO Thin Films Modified with Urea: An Approach as Ammonia Sensor, V V S Swamy, Saidi Reddy Parne, Nagaraju P, Srinivasa Rao Sriram, and Vijayakumar Y, Journal of ACS MOEGA, 2023, <a href="https://doi.org/10.1021/acsomega.3c00268?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as">https://doi.org/10.1021/acsomega.3c00268?urlappend=%3Fref%3DPDF&jav=VoR&rel=cite-as</a> MAY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Synthesis and characterization of pure and Cu-doped WO3 thin films for high performance of toxic gas sensing applications, Srinivasa Rao Sriram , Saidi Reddy Parne, Nagaraju, Damodar Reddy Edla, Applied Surface Science Advances, Volume 15, June 2023, 100411, <a href="https://doi.org/10.1016/j.apsadv.2023.100411">https://doi.org/10.1016/j.apsadv.2023.100411</a> MAY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Investigation of electromagnetic wave absorption properties of Ramphal leaves”, Saran Srihari Sripada Panda, Suman Gandi, Trilochan Panigrahi, Saidi Reddy Parne, Journal of Materials Science: Materials in Electronics (2023) 34:1207, <a href="https://doi.org/10.1007/s10854-023-10610-8">https://doi.org/10.1007/s10854-023-10610-8</a> MAY 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Iodine doping of CsPbBr3: toward highly stable and clean perovskite single crystals for optoelectronic applications” Sujith.P, Saidi Reddy Parne and P.Predeep, Journal of Philosophical Magazine, <a href="https://doi.org/10.1080/14786435.2023.2195703">https://doi.org/10.1080/14786435.2023.2195703</a>, 2023 APRIL</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Renovation and recycling of used lubricating oil by using extraction, adsorption and distillation techniques”, Nageswara Rao Lakkimsetty, Aya Said Hamed Al-Abdali, S Karunya, Motilal Lakavat, Suman Gandi, P Saidi Reddy, G Kavitha, Journal: AIP Conference Proceedings, Vol.2690, Issue-1, Pages. 020021, 2023, <a href="https://doi.org/10.1063/5.0119472">https://doi.org/10.1063/5.0119472</a> MAR 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Zinc Oxide based gas sensors and their derivatives: A critical review”, Kurugundla Gopi Krishna, Umadevi, Saidi Reddy Parne, Nagaraju Pothukanuri, Journal Materials Chemistry C (Royal Society of Chemistry) Accepted, <a href="https://doi.org/10.1039/D2TC04690C">https://doi.org/10.1039/D2TC04690C</a> FEB 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“DssPyLib: An open-source python FEM software to solve Poisson equation in 2-D using distributed source scheme”, Nithin Kumar Goona, Shraddha M. Naik, Saidi Reddy Parne, Anand Paul, SoftwareX, Elsevier, Vol. 21 (2023), 101308, <a href="https://doi.org/10.1016/j.softx.2023.101308">https://doi.org/10.1016/j.softx.2023.101308</a> JAN 2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Load balanced cluster formation to avoid energy hole problem in WSN using fuzzy rule-based system, Damodar Reddy Edla, Amruta Lipare, Saidi Reddy Parne, Wireless Netw (2022). <a href="https://doi.org/10.1007/s11276-022-03200-9">https://doi.org/10.1007/s11276-022-03200-9</a> DEC 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Facile Synthesis of Pure and Cr-Doped WO3 Thin Films for the Detection of Xylene at Room Temperature, Srinivasa Rao Sriram, Saidi Reddy Parne, P Nagaraju, Dhananjay Joshi, Damodar Reddy Edla, ACS OMEGA, Dec 2022, <a href="https://doi.org/10.1021/acsomega.2c05589">https://doi.org/10.1021/acsomega.2c05589</a> DEC 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Effect of Solution and Dry Processing Techniques on the Optical and Transport Properties of Inorganic CsPbBr3Perovskite Films” Sujith. P, Pratheek. M, Aiswarya.M, Saranya Babu, Saidi Reddy Parne and P. Predeep, J. Phys.: Conf. Ser. 2357 012019 (IOP Journal), (2022), <a href="doi:10.1088/1742-6596/2357/1/012019">doi:10.1088/1742-6596/2357/1/012019</a> NOV 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Synthesis and characterization of spray deposited nanostructured WO3 thin films for ammonia sensing applications, Sriram Srinivasa Rao, Saidi Reddy Parne, et. Al., Inorganic Chemistry Communications, Volume 144, October 2022, 109892, <a href="https://doi.org/10.1016/j.inoche.2022.109892" target="_blank">https://doi.org/10.1016/j.inoche.2022.109892</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Design and Fabrication of Liquid Pressure Sensor using FBG Sensor through Seesaw Hinge Mechanism, V. V. S. Swamy, Saidi Reddy Parne, et al., in IEEE Photonics Journal, Volume.14(5), 2022, <a href="https://doi.org/10.1109/JPHOT.2022.3210146" target="_blank">https://doi.org/10.1109/JPHOT.2022.3210146</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Design of Fiber Bragg Grating (FBG) Sensor for Eccentricity Measurements in Ball Bearings” V. V. S. Swamy, Saidi Reddy Parne, V. V. P., S. Gandi, S. S. S. Panda, IEEE Transactions on Instrumentation & Measurement, 2022, <a href="https://doi.org/10.1109/TIM.2022.3220298" target="_blank">https://doi.org/10.1109/TIM.2022.3220298</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Growth and Characterization of high-quality orthorhombic phase cspbbr3 perovskite single crystals for optoelectronic applications” Sujith.P, Pratheek M, Saidi Reddy Parne and P.Predeep, Journal of Electronic Materials, 2022, <a href="https://doi.org/10.1007/s11664-022-10042-w" target="_blank">https://doi.org/10.1007/s11664-022-10042-w</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A Survey on Convolutional Neural Networks for MRI Analysis, Shreya Hardaha, Damodar Reddy Edla, Saidi Reddy Parne, Journal of Wireless Personal Communications, (Spinger Nature), September 2022, <a href="https://doi.org/10.1007/s11277-022-09989-0" target="_blank">https://doi.org/10.1007/s11277-022-09989-0</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Bio-Inspired C/N/TiO2 Hybrid Composite Heterostructure: Enhanced Photocatalytic Activity under Visible Light” Journal of Nanotechnology, Volume 2022, Article ID: 5816063, 9 pages, <a href="https://doi.org/10.1155/2022/5816063" target="_blank">https://doi.org/10.1155/2022/5816063</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> National<br>Understanding the Surface Morphology of High Strength Cryorolled Aluminum Alloy 5754 by Atomic Force Microscopy, P Kumar, Saidi Reddy Parne, Damodar Reddy Edla , IUP Journal of Mechanical Engineering, Volume.15 (3), 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Nanostructured metal oxide semiconductor-based gas sensors: A comprehensive review”, Kurugundla Gopi Krishna, Saidireddy Parne, Nagaraju Pothukanuri, Velavan Kathirvelu, Suman Gandi, , Journal of Sensors and Actuators: A. Physical (Elsvier), Volume 341, 1 July 2022, 113578, <a href="https://doi.org/10.1016/j.sna.2022.113578" target="_blank">https://doi.org/10.1016/j.sna.2022.113578</a>, Impact factor: 3.407</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Electroless Ni-P-B Coatings on Magnesium Alloy AZ91D: Influence of Nano Al2O3 on Corrosion, Wear, and Hardness Behaviour”, Motilal Lakavat, Amiya Bhaumik, Saidi Reddy Parne, Suman Gandhi, Journal of Surface Topography: Metrology and Properties (IOP), April 2022, (Accepted), Impact factor: 2.038</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Synthesis, characterization and application of polymer composite materials in wastewater treatment” Nageswara RaoLakkimsetty, Feroz S, Motilal L, Saidi Reddy P, Suman G, Journal of Materials Today: Proceedings, Elsevier, April 2022, DoI:  Impact factor: 1.24</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Prospects of spray pyrolysis technique for gas sensor applications - A comprehensive review”, Srinivasa Rao Sriram, Saidi Reddy Parne, Damodar Reddy Edla, Nagaraju P, Journal of Analytical and Applied Pyrolysis, (Elsvier), April 2022, Impact factor: 5.541</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Recent progress in the development of glass and glass-ceramic cathode/solid electrolyte materials for next-generation high capacity all-solid-state sodium-ion batteries: A review”, Suman Gandi, Venkata Satya Chidambara Swamy Vaddadi, Saran Srihari Sripada Panda, Nithin Kumar Goona, Saidi Reddy Parne, Motilal Lakavat, Amiya Bhaumik, Journal of Power Sources, Volume 521, 2022, 230930, <a href="https://doi.org/10.1016/j.jpowsour.2021.230930" target="_blank">https://doi.org/10.1016/j.jpowsour.2021.230930</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Design and Implementation of Density Sensor for Liquids using Fiber Bragg Grating Sensor, Venkata satya chidambara swamy Vaddadi, Saidi Reddy Parne, Vijeesh V. P., Suman Gandi, Linga Reddy Cenkeramaddi, IEEE Photonics Journal, Volume 14(1), pp:1-6, 2021, DOI: </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Amorphous SnO-Sb2O3-SiO2 glassy anode: High-performance electrode materials for Na-ion batteries, Suman Gandi, Saran Srihari Sripada Panda, Saidi Reddy Parne, Motilal Lakavat, Nageswara Rao Lakkim Setty and Shyam Sundar Gandi, Journal of Materials Science: Materials in Electronics(2021), 32:26709–26715, </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Nanostructured WO3 Based Gas Sensors: A Short Review, Sriram Srinivasrao, Saidi Reddy Parne, ParneVaddadi Swamy, Damodar Reddy Edla, P.Nagaraju, Avala.Rajireddy,Y.Vijayakumar, S.Udayabhaskar, Sensor-Review, <a href="http://dx.doi.org/10.1108/SR-05-2021-0153" target="_blank">http://dx.doi.org/10.1108/SR-05-2021-0153</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Distributed Source Scheme to solve the classical form of Poisson equation using 3-D Finite-difference Method for improved accuracy and unrestricted source position”, Nithin Kumar Goona, Saidi Reddy Parne, S. Sashidar, Mathematics and Computers in Simulation, Elsevier, Volume.190, pp. 965-975 , June 2021: </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Extraction and Characterization of Cellulose from Agricultural Waste Materials”, Lakkimsetty Nageswara Rao, Sana Mohammed Ali Al kamzari, Motilal Lakavat, Suman Gandi, Saidi Reddy P, G.Kavitha Sri, Journal of Materials Today: Proceedings, Elsevier, July 2021.</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Evaluating the Solar Photo-Fenton as Photocatalyst Process by Response Surface Methodology to Treat the Saline Water”, Lakkimsetty Nageswara Rao, Majan Al-Balushi, Varghese MJ, Motilal Lakavat, Saidi Reddy P, Suman Gandi, Journal of Materials Today: Proceedings, Elsevier, July 2021. </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Synthesis and characterization of ZnS based quantum dots to trace low concentration of ammonia”, Uma Devi Godavarti, P. Nagaraju, Vijayakumar Yelsani, Yamuna Pushukuri, P. S. Reddy, and Madhavaprasad Dasari, Journal of Semiconductors, (IOP science), Volume-42, July -2021.</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Recent Advances and Future Directions of Microwave Photonic Radars: A Review, Saran Srihari Sripada Panda, Trilochan Panigrahi, Saidi Reddy Parne, Linga Reddy C., Samrat L. Sabat, IEEE Sensors Journal, July 2021 (Accepted). <a href="https://doi.org/10.1109/JSEN.2021.3099533" target="_blank">https://doi.org/10.1109/JSEN.2021.3099533</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Effect of Precursor volume on chemically sprayed V2O5 thin films for Acetaldehyde detection, Y Vijayakumar, P. Nagaraju, T Sreekanth, Uppula Rushidhar, P. S. Reddy, Superlattices and Microstructures, Volume 153, May 2021, 106870, <a href="https://doi.org/10.1016/j.spmi.2021.106870" target="_blank">https://doi.org/10.1016/j.spmi.2021.106870</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>"Fuzzy rule-based system for energy efficiency in wireless sensor networks” Amruta Lipare, Damodar Reddy Edla, Saidi Reddy Parne, The Journal of Supercomputing, Springer, Year 2021, <a href="https://doi.org/10.1007/s11227-021-03668-w" target="_blank">https://doi.org/10.1007/s11227-021-03668-w</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>An Efficient Localization Approach in Wireless Sensor Networks using Krill Herd Optimization Algorithm, Veerraghava Reddy S, Damodar Reddy Edla, Amruta Lipare, Saidi Reddy P, IEEE Systems Journal, Volume: 15, Issue: 2, <a href="https://doi.org/10.1109/JSYST.2020.3004527" target="_blank">https://doi.org/10.1109/JSYST.2020.3004527</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Design and development of pressure sensor based on Fiber Bragg Grating (FBG) for ocean applications, V V S Ch Swamy, Saidi Reddy Parne, Sanjeev Afzulpurkar, Shivanand Prabhudesai and Vijeesh V P, Eur. Phys. J. Appl. Phys., May 2020, DOI: <a href="https://doi.org/10.1051/epjap/2020200036" target="_blank">https://doi.org/10.1051/epjap/2020200036</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Low-cost ultra-sensitive SnO2-based ammonia sensor synthesized by hydrothermal method, Dasari Sunil Gavaskar , P. Nagaraju , Yelsani Vijayakumar , P. S. Reddy & M. V. Ramana Reddy, Journal of Asian Ceramic Societies, May 2020, <a href="https://doi.org/10.1080/21870764.2020.1769820" target="_blank">https://doi.org/10.1080/21870764.2020.1769820</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Nanostructured Al and Fe co-doped ZnO thin films for enhanced ammonia detection, Vijay Kumar, Nagaraju P, Veeraswamy Yaragani, Saidi Reddy Parne, Naseer S. Awwad and M V Ramana Reddy, Physica B: Physics of Condensed Matter 581 (2020) 411976. Doi: <a href="https://doi.org/10.1016/j.physb.2019.411976" target="_blank">https://doi.org/10.1016/j.physb.2019.411976</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> National<br>Measurement of High and Low currents using single Bragg grating for industrial applications. I.V.Anudeep Kumar Reddy, P Saidi Reddy, G R C Reddy, R.L.N.Sai Prasad, U. Tiwari., Asian Journal of Physics, Vol.24, No. 10, pp. 1499-1504      2015</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Sensing of hydrostatic pressure using FBG sensor for liquid level measurement”, D. Sengupta, M. Sai Shankar, P. Saidi Reddy, R.L. N. Sai Prasad, K. Srimannarayana, Microwave and Optical Technology Letters, Vol. 54, Issue 7, Pages 1679-1683, 2012, <a href="https://doi.org/10.1002/mop.26890" target="_blank">https://doi.org/10.1002/mop.26890</a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A diaphragm based low-cost fiber optic pressure sensor,. 13. P.Vengal Rao, K. Srimannarayana, P. Kishore, D.Sengupta, M. Sai Shankar, P. Saidi Reddy, Microwave and Optical Technology Letters, Vol. 54, No. 10      2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Fiber Optic Vibration Sensor Using PMMA Fiber for Real Time Monitoring,. 1. P.Kishore, D. Dinakar , D. Sen Gupta, P. Saidi Reddy, M. Sai Shankar, K.Srimannarayana, Sensors & Transducers journal, Vol.136, Issue 1, pp.50-58      2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Method for enhancing and controlling temperature sensitivity of fiber Bragg grating sensor based on bimetallic strips, P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar, K S Narayana, U.K Tiwari IEEE Photonics Journal, Vol.4, No.3, pp. 1035-1041      2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Encapsulated fiber Bragg grating sensor for high temperature measurements,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana, Optical Engineering, Vol. 50, No. 11, pp.114401-1144006      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A simple FBG sensor for strain-temperature discrimination,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar, K S Narayana and U.K Tiwari Microwave and optical technology letters(Wiley Inter Science) Vol.53 (5), pp. 1021-1024      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Polymer coated FBG sensor for cryogenic temperatures,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana,. Microwave and optical technology letters(Wiley Inter Science), Vol.53 (5), pp. 1154-1157      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Effect Of Offset Between Transmitting And Receiving Fiber Tips On Dual-Fiber Displacement Sensing,. P. Kishore, D Dinakar, D Sengupta, P Saidi Reddy, and K S Narayana, Optoelectronics and Advanced Materials-Rapid Communicatio, Vol. 5(7), pp. 771-781      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Strain-Temperature discrimination using a single FBG at cryogenic region,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Sensors & Transducers Journal, Vol.131 (8), pp.36-42      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Micro-change in liquid level sensing by extrinsic fiber Optic sensor,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Optoelectronics and Advanced Materials-Rapid Communication, Vol. 5(5), pp. 491-494      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Liquid level measurement using Bragg Grating sensor,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana , Optoelectronics and Advanced Materials-Rapid Communication, Vol. 5(7), pp. 742-744      2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Teflon-coated fiber Bragg grating sensor for wide range of temperature measurements,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana ,. Journal of Optoelectronics and Advanced Materials, Vol.12(10),pp.2039-2043      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A novel method for high temperature measurements using fiber Bragg gratings,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana ,. Optical Applicata, Vol.40(3), pp.685-692, <a href="https://opticaapplicata.pwr.edu.pl/article.php?id=2010300685" target="_blank">https://opticaapplicata.pwr.edu.pl/article.php?id=2010300685</a>      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A low cost fiber optic refractive index sensor,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana,. Optoelectronics and Advanced Materials-Rapid Communication, Vol.4(1),pp 128-131      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Liquid level switch using Bragg grating,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Optoelectronics and Advanced Materials-Rapid Communication, Vol.4(1), p. 939 – 9421      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Performance of the reflected concentration sensor using plastic fibers,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Optoelectronics and Advanced Materials-Rapid Communication, Vol.4(8), p. 1066 – 1069      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Axial strain based Bragg grating level sensor,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Optoelectronics and Advanced Materials-Rapid Communication, Vol.4(12), pp. 1933-1936      2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Thermal stability of fiber Bragg gratings in different fibers,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana,. Optoelectronics and Advanced Materials-Rapid Communication,. Vol.3(12),pp 1280-1284      2009</p>
+                  </li>
+            
+            </ol>
+            <p class="p-2"><b>Publication Type: Proceedings</b></p>
+            <ol>
+                <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Impact of SiO2 and Al2O3 Nanoparticles on Electroless Ni–P–B Corrosion Resistance Enhancement on AZ91D Magnesium Alloy: A Preliminary Study” Motilal Lakavat, Amiya Bhaumik, Suman Gandi, Sadi Reddy Parne, Mohammed Ismail Iqbal, Energy Storage and Conservation. MESC 2022. Springer Proceedings in Energy. Springer, 2023, pp 209–218, <a href="https://doi.org/10.1007/978-981-99-2870-5_24" target="_blank">https://doi.org/10.1007/978-981-99-2870-5_24</a>    SEPT  2023</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A proposal for Switched Magnetization Superconductor Motor, Nithin Kumar Goona, Saidi Reddy Parne, S. Sashidhar, IEEE 14th Workshop on Low Temperature Electronics(WOLTE), 2021. DOI: <a href="https://doi.org/10.1109/WOLTE49037.2021.9555440" target="_blank">https://doi.org/10.1109/WOLTE49037.2021.9555440</a>    OCT  2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Synthesis, Characterization of Biodiesel Production from Restaurant Waste Cooking Oil, Ahoud AL Mukhaini, Motilal Lakavat, Nageswara Rao L, Saidi Reddy Parne, and Suman Gandi, International Virtual Conference Recent Innovations in Science & Technology (RIST 2021), ERANAD Knowledge City Technical Campus, Kerala.    JUN  2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Experimental Investigation on Solar Photo-Fenton as Photocatalyst to Treat the Saline Water by Response Surface Methodology’, Majan Al-Balushi, Varghese Manappallil Joy, Nageswara Rao Lakkim Setty, Motilal Lakavat, Saidi Reddy Parne and Suman Gandi, International Virtual Conference Recent Innovations in Science & Technology (RIST 2021), ERANAD Knowledge City Technical Campus, Kerala.    JUN  2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Green synthesis of carbon quantum dots embedded onto titanium dioxide nanorods for enhancing photocatalytic activity, Suman Gandi, Saran Srihari Panda, Saidi Reddy Parne, Motilal Lakavat and Shyam Sundar Gandi, International Virtual Conference Recent Innovations in Science & Technology (RIST 2021), ERANAD Knowledge City Technical Campus, Kerala.    JUN  2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“High-performance MPPT Controller Based on Adaptive Sliding Mode Control”, Rohit K. Jain, Harish K. V. Gadiraju, B. V. Reddy and P. Saidi Reddy, 21st National Power Systems Conference (NPSC), 1-6, 2020    DEC  2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“A diaphragm type fiber Bragg grating (FBG) based pressure sensor for ocean applications” V. V. S. Ch. Swamy, P. S. Reddy, Sanjeev Afzulpurkar, Shivanand Prabhudesai, V. P. Vijeesh, Proc. Of SPIE, Vol. 11088, pp. 110880W, <a href="https://doi.org/10.1117/12.2530065" target="_blank">https://doi.org/10.1117/12.2530065</a>    SEPT  2019</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>“Fiber Bragg Grating based combined temperature and pressure sensor for ocean applications design and development”, V. V. S. Ch. Swamy, P. S. Reddy, Sanjeev Afzulpurkar, Shivanand Prabhudesai, V. P. Vijeesh, Proc. Of OSA, PHOTONICS 2018    DEC  2018</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Design and implementation of Optical NAND and NOR gates, Saidi Reddy Parne , Vishnu, Shaik Basharath , Proc. Of OSA, PHOTONICS 2018    DEC  2018</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>The generation, propagation, and absorption of photons, Nithin Kumar Goona, Priya Singh, Saidi Reddy P, Vasantha M H and Venugopal Reddy B, Proc. Of SPIE, PP. 10367-5      2017</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Photon-material interaction based on single silt diffraction., G Nithin Kumar, P S Reddy, G R C Reddy, Priya Singh., Proc. of SPIE Vol. 9961, pp. 99610B-9    SEPT  2016</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Tunable laser source based on Storage Device using Bragg Grating., Chinmayee V Prabhu Dessai, I V Anudeep Kumar Reddy, Saidi Reddy Parne, G R C Reddy. Proc. Of SPIE, Vol. 9632, 963218    NOV  2015</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> National<br>Calculation of Static Torque & Steady State Characteristics of Magnetic Motor Comprising Superconductors, G Nithin Kumar1, P S Reddy, G R C Reddy, R Singh, NSC-25, Dec 2014    DEC  2014</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> National<br>Measurement of High and Low currents using single Bragg grating for industrial applications., I.V.Anudeep, P Saidi Reddy, G R C Reddy, R.L.N.Sai Prasad, U. Tiwari., International Conference on Optics and Optoelectronics (ICOL 2014), Dehradun      2014</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A novel method for design and development of a magnetic motor based on thermal energy, G Nithin Kumar, P.Saidi Reddy, G R C Reddy, Proc. Of SPIE, Proceedings Volume 8561, Advanced Sensor Systems and Applications V; 85610E (2012) <a href="https://doi.org/10.1117/12.978979" target="_blank">https://doi.org/10.1117/12.978979</a>    DEC  2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Enhancing the temperature sensitivity of fiber Bragg grating sensor using bimetallic strip”, P. Saidi Reddy, K. Srimannarayana, R. L. N. S. Sai Prasad, D. Sen Gupta, M. Sai Shankar, P. Kishore, Proc. SPIE 8351, Third Asia Pacific Optical Sensors Conference, 83511B (30 January 2012); <a href="https://doi.org/10.1117/12.914056" target="_blank">https://doi.org/10.1117/12.914056</a>    JAN  2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A real time fiber optic micro displacement level sensor, D. Sengupta; M. Sai Shankar; P. Saidi Reddy; R.L.N SaiPrasad; K.S. Narayana; P. Kishore, Fifth International Conference on Sensing Technology, IEEE, INSPEC Accession Number: 12494758 , <a href="https://doi.org/10.1109/ICSensT.2011.6136998" target="_blank">https://doi.org/10.1109/ICSensT.2011.6136998</a>    JAN  2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Simultaneous Measurement of temperature and pressure using fiber Bragg grating sensor for Oceanography, I V Anudeep, Sandeep, P.Saidi Reddy, G R C Reddy and Sanjeev Afzulfurkar, SPIE Defence, Security and Sensing, USA, May 2013</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Erasure dynamics of Bragg gratings in hydrogen loaded and non hydrogen loaded fibers, P Saidi Reddy, G R C Reddy and R L N Sai Prasad, Proc. of SPIE.M212-MIOMD-XI, USA, 2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Enhancement of low temperature sensitivity using bimetallic strip, P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana,. APOS 2012, Proc. of SPIE, Australia Vol.8031,pp.1-6, 2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Fiber Bragg Grating Array as a Quasi Distributed Temperature Sensor for Furnace Boiler Applications,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana, AIP Conf. Proceedings Vol.1391, pp.440-442,2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>strain-temperature discrimination using single Bragg grating,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana, Photonics-2010 December-2010</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Enhancing the Temperature sensitivity of Bragg gratings using different sensor heads,. P Saidi Reddy, G R C Reddy and R L N Sai Prasad, Proc. of SPIE October 2012</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A Novel Method for High temperature Measurement International conference on trends in optics and photonics,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana, (ICONTOP) Vol.1, march1-4,PP.625-632, 2009</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>Teflon coated fiber Bragg grating sensor response at cryogenic temperatures,. P Saidi Reddy, R L N Sai Prasad, D Sengupta, M Sai Shankar and K S Narayana, International conference on Optics and Photonics(ICOP-2009), Vol.1,sep31-2nd October,2009</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>An encapsulated fiber optic fuel level sensor, D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Proc. of SPIE Vol. 8001, pp.78-81, 2011</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication category:</b> International<br>A simple underground liquid level sensor using FBG,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana , AIP Conf. Proc. Vol.1391, pp.431-433,2011</p>
+                  </li>
+                  <li><p class="p-4"><b>Publication Category:</b> International<br>Real-time monitoring of low-frequency vibration using plastic optical fiber, P. Kishore, D Dinakar, D Sengupta, P Saidi Reddy, and K S Narayana, PHOTONICS-2010 December-2010</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Simultaneous measurement of Relative Humidity and Temperature using Fiber Bragg Grating,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana International Conference on Trends in Optics and Photonics (IConTOP) Vol.1, March 1-4, pp.582-587, 2009</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Fast Detection of Humidity with an Etched Fiber Sensor,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, ICOP-2009, CSIO, Chandigarh Vol.1, pp108, Oct 30 – Nov 1, 2009</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Liquid level monitoring using Bragg grating embedded on a cantilever,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, International Conference on Fiber Optics and Photonics, IITG December-2010</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Multimode fused coupler fiber optic pressure sensor,. P Vengal Rao, K S Narayana, D Sengupta, P Saidi Reddy and R L N Sai Prasad, AIP Conf. Proceedings Vol.1391, pp.450-452, 2011</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Development of high sensitivity pressure sensor using reduced clad FBG,. P Vengal Rao, K S Narayana, D Sengupta, P Saidi Reddy and R L N Sai Prasad, Proc. of SPIE Vol.8439, PP.90, 2012</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Improved low-temperature sensing using PMMA coated FBG,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana Proc. of SPIE Vol.8311, pp.831103-1-5, 2011</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>An FBG based hydrostatic pressure sensor for liquid level measurements,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana , Proc. of SPIE Vol.8426, Paper no. 11, 2012</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>An FBG sensor for strain and temperature discrimination at cryogenic regime,. D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Proc. of SPIE Vol.8311, pp.831106-1-5, 2011</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Temperature compensated liquid level sensor using FBGs and a bourdon tube, D Sengupta, M Sai Shankar, P Saidi Reddy, R L N Sai Prasad and K S Narayana, Proc. of SPIE Vol.8311, pp.83110-1-6, 2011</p></li>
+
+                    <li><p class="p-4"><b>Publication Category:</b> International<br>Non-Contact vibration sensor using bifurcated bundle glass fiber for real-time monitoring,. P. Kishore, D Dinakar, D Sengupta, P Saidi Reddy, M Sai Shankar and K S Narayana , Proc. of SPIE Vol.8311, pp.83110p1-p8, 2011</p></li>
+            </ol>
+            <p class="p-2"><b>Publication Type: Book Chapter</b></p>
+            <ol>
+                <li><p class="p-4"><b>Publication Category:</b> International<br>“Functionalized nanofibers for fuel cell applications” Suman Gandi, Saidi Reddy Parne, Shyam Sundar Gandi and Nagaraju Pothukanuri, Handbook of Functionalized Nanofibers: Synthesis and Industrial Applications, Elsevier, April 2022, (Accepted)    APRIL  2022</p></li>
+            
+                <li><p class="p-4"><b>Publication Category:</b> International<br>Tribological Studies of Bulk Metallic Glasses: Structure, Preparation, Surface Treatment, and Coating, Suman Gandi, Venkata Satya Chidambara Swamy Vaddadi, Saran Srihari Sripada Panda, Saidi Reddy Parne, Motilal Lakavat, Amiya Bhaumik, Handbook of Research on Tribology in Coatings and Surface Treatment, Pages: 330-358, IGI Global, 2022    MAR  2022</p></li>
+            
+                <li><p class="p-4"><b>Publication Category:</b> International<br>Nonlinear Optical Responsive Molecular Switches, Nonlinear Optics - From Solitons to Similaritons, Mahadevappa Y. Kariduraganavar, Radha V. Doddamani, Balachandar Waddar and Saidi Reddy Parne, ISBN 978-1-83962-652-4. Intechopen Publishers, DOI: http://dx.doi.org/10.5772/intechopen.92675    JAN  2021</p></li>
+            </ol>
+            <p class="p-2"><b>Publication Tpye: Books Authored</b></p>
+            <ol>
+                <li><p class="p-4"><b>Publication Category: </b> National <br> BOOK TITLE: Electrochemical Energy Storage Systems and Devices ISBN : 978-81-951729-8-6. Multi Spectrum Publications Authors: Suman Gandi, Saidi Reddy Parne and Damodar Reddy Edla    JUN  2021</p></li>
+            </ol>      
+          </li>
+        </div>
+      </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <p class="p-2"><b>P.Hd.'s Completed</b></p>
+        <ol>
+            <li><p class="p-4">1. Mr. Vaddadi V S Chidambara Swamy (Reg. No: 16HS3004) "Development of Fiber Bragg Grating (FBG) Sensors for Water Column Applications" (February 2022)</p></li>
+        
+            <li><p class="p-4">2. Mr. Nithin Kumar Goona (Reg. No. 17HS3003) "Distributed Source Scheme for Poisson Equation for Improved Numerical Accuracy Around Sources" (March 2023)</p></li>
+        
+            <li><p class="p-4">3. Sriram Srinivasa Rao (Reg. No. 19HS3007) "Investigations on WO3-based Nanostructured Thin Films Deposited by Spray Pyrolysis Technique for Toxic Gas Sensors Applications" (March 2023)</p></li>
+        </ol>
+
+        <p class="p-2"><b>P.Hd.'s Ongoing</b></p>
+        <ol>
+            <li><p class="p-4">4. Mr. Balachandar Waddar (Part-Time Scholar from the Directorate of Forensic Sciences Laboratory, Bangalore (Government of Karnataka). January-2018)</p></li>
+        
+            <li><p class="p-4">5. Mr. Saran Srihari Sripada Panda (Full-Time DST-INSPIRE Scholar July-2018)</p></li>
+        
+            <li><p class="p-4">6. Mrs. Preetha R Rao (Part-Time Scholar from Polytechnic College, Govt. of Goa, January 2020)</p></li>
+        
+            <li><p class="p-4">7. Mr. Kurugundla Gopi Krishna (Part-Time Scholar from CMR Technical Campus, Hyderabad January 2022)</p></li>
+        
+            <li><p class="p-4">8. Mr. Praveen Kumar Chenna (Part-Time Scholar from INTEL Organization, Hyderabad, January- 2022)</p></li>
+        
+            <li><p class="p-4">9. Mr. Sujith P (Part-Time Scholar from Kerala Education Board, Kerala January 2022)</p></li>
+        
+            <li><p class="p-4">10. Mr. Bharath D (Full-Time Scholar, January 2023)</p></li>
+        
+            <li><p class="p-4">11. Mr. Sahil Sharma (Full-Time DST-INSPIRE Scholar January-2023)</p></li>
+        
+            <li><p class="p-4">12. Ms. Ruchika Thayil (Self-Sponsored, January 2023)</p></li>
+        
+            <li><p class="p-4">13. Mr. Jagadeeshwar Reddy (Part-Time Scholar from Hind High Vacuum Technology, January 2023)</p></li>
+        
+            <li><p class="p-4">14. Ms. Richa Sharma (Full-Time Scholar, August 2023)</p></li>
+        </ol>
+        
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-4">1. SERB-DST, "Design and Development of a Dynamic Photovoltaic Array fed Signal-stage PV pumping system using an Open-End winding induction motor", (As Co-PI), Ongoing Project, 3 years Duration, Sanctioned Amount: Rs. 30,56,000/-</p>
+          </li>
+          <li >
+          <p class="p-4">2. "Indo-Norwegian collaboration in Intelligent Offshore Mechatronic Systems (INMOST)" Approved by Norwegian research organizations, December 2020 to December 2025, 5 years Duration, (PI from NIT Goa), Sanctioned Amount: 56,20,000 NOK , (Around 3.5 crores) . International collaborative Research Project. Other collaborative Research organisations are 1. National Institute of Technology, Goa (NIT) 2. University of Agder, Campus Grimstad, Norway 3.Norwegian University of Science and Technology (NTNU) and Norwegian Research Center (NORCE) 4. Indian Institute of Technology, Indore (IITI), Indore, 5. Indian Institute of Technology, Tirupati (IITTP), 6. Indian Institute of Technology, Palakkad (IITPKD) </p>
+          </li>
+          <li >
+          <p class="p-4">3. DST (Nano Mission), "Atomically thin Photonic Devices as Hosts of Single-Photons and Entangled Photon Pair Emitters and Single Spins for Quantum Sciences and Technologies" (As a PI from NIT Goa), Ongoing Project, 5 Years Duration, Sanctioned Amount: Rs. 214.5 Lakhs, IIT Goa is the Grantee organisation (Dr. Santosh Kumar is PI from IIT Goa)</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+        <label for="toggle10" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+           Awards and Honours
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol>
+                <li><p class="p-4">1. International Patent (Australian Patent No.: 2021101790 May 2021) Granted: Title: A Process for Manufacturing Metal Oxide-based Formaldehyde Gas Sensor Inventors: Dr. P. NAGARAJU, Mr. T. Sreekanth, Dr. Y. Vijayakumar, Dr. P.S. Reddy, Prof. M.V. Ramanareddy, Mr. D. Sunil Gavaskar</p></li>
+            
+                <li><p class="p-4">2. International Patent (Australian Patent No.: 2021106713 Dec 2021) Granted: A Method and System for Fabricating a Novel Pressure Sensor Using FBG Sensor: Chidambara Swamy, Parne Saidi Reddy; V. P., Vijeesh; Gandi Suman, Damodar Reddy Edla and Cenkeramaddi Linga Reddy</p></li>
+            
+                <li><p class="p-4">3.International Patent (Australian Patent No.: 2021103220 March 2022) Granted: A Process for Producing Biodiesel from Waste Cooking Oil by using Transesterification: Mukhaini Ahoud AL, Lakavat Motilal, Gandi Suman, Parne Saidi Reddy, Edla Damodar Reddy and Lakkimsetty Nageswara Rao</p></li>
+            
+                <li><p class="p-4">4. International Patent (Australian Patent No.: 2021103221 March 2022) Granted: A Reduced Scale Impact Test Device and it’s Method, Saidi Reddy Parne, Pankaj Kumar, Damodar Reddy Edla, and Manvendra Tiwari</p></li>
+            
+                <li><p class="p-4">5.International Patent (Australian Patent No.: 2021103222 March 2022) Granted: An Apparatus for Multidirectional Power Transmission Mechanism and it’s Working Process, Damodar Reddy Edla, Saidi Reddy Parne, Pankaj Kumar, and Manvendra Tiwari</p></li>
+            
+                <li><p class="p-4">6. International Patent (Australian Patent No.: 2021102773 March 2022) Granted: A System and Method for Determining Truthful and Deceptive State of a Person, Annushree Bablani, Damodar Reddy Edla, Saidi Reddy Parne, Ch., Ramalingaswamy and Pankaj Kumar</p></li>
+            
+                <li><p class="p-4">7. International Patent (Australian Patent No.: 2021102774 March 2022) Granted: A System and a Method for assessing mental ability of a user using an Electroencephalogram, Annushree Bablani, Damodar Reddy Edla, Saidi Reddy Parne, Dharavath Ramesh, and Tripathi Diwakar</p></li>
+            
+                <li><p class="p-4">8. IEEE Senior Member (ID-95448393)</p></li>
+            
+                <li><p class="p-4">9. One of the Editors of Frontiers in Sensors Journal</p></li>
+            
+                <li><p class="p-4">10. Best Paper Award: Experimental investigation on solar photo-fenton as photocatalyst to treat the saline water by response surface methodology, presented by Saidi Reddy Parne, has been selected as best paper in the International Virtual Conference on “Recent Innovations in Science & Technology (RIST 2021)” conducted on 19th & 20th June 2021, organized by ERANAD Knowledge City Technical Campus, Malappuram, Kerala, India in association with ISET Research & HEXAIND Technologies and Services</p></li>
+            
+                <li><p class="p-4">11. My research students Mr. I V Anudeep kumar Reddy and Ms. Chinmayee Won the First prize at SAVISKAR-IFAST, National level project expo, NIT Bhopal, Project Title: Design and Development of Photonic Devices</p></li>
+            
+                <li><p class="p-4">12. My research student Mr. Nithin Kumar Goona, won the First prize at Technical Fest, Institute level project expo at NIT Goa, Project title: Design and Development of Superconductor Motor</p></li>
+            
+                <li><p class="p-4">13. SPIE (International Society for Optics and Photonics) Senior Member ( ID#: 3510007)</p></li>
+            
+                <li><p class="p-4">14. Indian Patent Granted (No.: 4583/MUM/2023, 10th November 2023), Superconducting Permanent Magnetic Motor, Nithin Kumar Goona, Saidi Reddy Parne, G. R. C. Reddy, R Singh</p></li>
+            </ol>
+            
+        </div>
+      </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">Member, SPIE, The International Society for Optics and Photonics SPIE ID#: 3510007</p>
+          </li>
+          <li >
+          <p class="p-2">IEEE- Member, Member #95448393</p>
+          </li>
+          <li>
+          <p class="p-2">IEEE Photonics Society</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Professional Services
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">Reviewer of Journals: Currently serve as a reviewer for the following journals: • Optics and Lasers in Engineering (Elsevier) • Optical Engineering • Optoelectronics and Advanced Materials-Rapid Communication • Sadhana - Academy Proceedings in Engineering Science • IEEE-Photonics Journal</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table >
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4">Sr.No.</th>
+                    <th class="bg-blue-400 text-white p-4">Month</th>
+                    <th class="bg-blue-400 text-white p-4">Year</th>
+                    <th class="bg-blue-400 text-white p-4">Training Attended Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Workshop on “Technical Education in National Context: Challenges and Strategies” organised by NIT Tiruchirappalli during 5-7 October 2017</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Training Program on “Swachh Bharat Abhiyan” Organised by Institute of Secretariat Training and Management (ISTM), New Delhi, 7th August 2017</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Training Program on “Right to Information Public Information Officers” Organised by Institute of Secretariat Training and Management (ISTM), New Delhi, during 8-9 May 2017</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two days National workshop on “Orientation of Nodal officers on Rastriya Avishkar Abhiyan ” Organised by MHRD, New Delhi, India, November 2017</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SEPT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SPIE International Conference, LASER Damage-2015, Organised by SPIE, Boulder, Colorado, USA, During 27-30 September 2015</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Symposium on Cryogenics, NSC-2015, Organised by University of Hyderabad, January 2015</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">7</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2014</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on “Learn how to publish a Technical paper with IEEE” Organised by University of Hyderabad, Aug-2014</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">8</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on "The Leadership Clinic", IIM Kozhikode</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">9</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on Microprocessor challenges and Applications, NIT Warangal</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">10</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on Teaching learning methodology, IIT Madras</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">11</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Indo-French workshop on Research & Development, CII New Delhi</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">12</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on OPTICS-11, NIT Calicut</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">13</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Three weeks SERC School on Guided wave Optics and Devices, CGCRI Kolkata</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">14</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on PHOTONICS-2010, IIT Guwahati</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">15</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on ANSYS Simulation, NIT Warangal</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">16</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Photonics for Engineering Applications, NIT Warangal</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">17</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Conference on Current Trends in Physics, Kakatiya University</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">18</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on Optics and Photonics (ICOP-2009), CSIO Chandigarh</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">19</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Conference on Trends in Physics, Kakatiya University</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">20</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Nuclear Energy & its Applications , NIT Warangal</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">21</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on Trends in Optics and Photonics (IConTOP-2009), University of Calcutta</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">22</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on PHOTONICS-2008, IIT Delhi</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">23</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Conference on Sixth Structural Engineering Convention, SEC-2008, IIT Madras</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">24</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks Workshop on Digital signal processor applications, NIT Warangal</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">25</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks Workshop on Current trends in nano-technology, NIT Warangal</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">26</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">APRIL</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks Workshop on Fundamentals of DSP, NIT Warangal</td>
+                </tr>
+          </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4">Sr.No.</th>
+                    <th class="bg-blue-400 text-white p-4">Month</th>
+                    <th class="bg-blue-400 text-white p-4">Year</th>
+                    <th class="bg-blue-400 text-white p-4">Training Conducted Information</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2nd Version of Five-Days Faculty Development Programme on “Productivity Enhancement” during 20th -24th July 2021. Organized in collaboration with Art of Living under AICTE Training And Learning (ATAL) Academy, New Delhi</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days Faculty Development Programme on “Productivity Enhancement” during 15th -19th March 2021. Organized in collaboration with Art of Living under AICTE Training And Learning (ATAL) Academy, New Delhi</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International Conference on "Artificial Intelligence and Sustainable Engineering" (AISE-2020) During 18-20 January 2021. Organized in collaboration with G L Bajaj Institute of Technology and Management, Gr. Noida, India. I am One of the Convener and Organizing Secretary.</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2019</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: "High School Teachers Training & E-Inauguration of IC1T Labs" during 23rd -27th July 2019 for Secondary School Teachers and Principals of the State of Goa. This Programme was inaugurated by Hon'ble Governor of Goa Smt. Mridula Sinha Ji. Organized in collaboration with UNISED, MHRD, Govt. of India and Goa Samagra Shiksha, Govt. of Goa under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: "Training in Basie Sciences" during 26th February-02 March 2018 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: “Advanced Training in Mathematics (ATM)” during 5th -9th February 2018 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">7</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: "Training in Basie Sciences" during 19th -23d February 2018 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">8</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks GIAN Programme: Principle and Applications of Electron Paramagnetic Resonance Spectroscopy, 29-01-2018 to 09-02-2018</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">9</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: "Training in Basie Sciences" during 15th -19h January 2018 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">10</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: “Advanced Training in Mathematics (ATM)” during 11th -15th December 2017 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">11</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five-Days workshop entitled: “Advanced Training in Mathematics (ATM)” during 18th -23rd December 2017 for Secondary School Teachers of the State of Goa. Organized in collaboration with The State Council of Education and Training (S.C.E.R.T.) under Rashtriya Aviskar Abhiyan (RAA)</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">12</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two week GIAN Programme: The Field Theory of Classical and Quantum Phase Transitions, 3-13th July, 2017</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">13</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Asia Students Photonics Conference 2016 in collaboration with Manipal University, 12-14 December 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">14</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks GIAN Programme: Applied Continuum Mechanics, 15-25th December 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">15</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two week GIAN Programme: Computational Nonlinear Optics, 7-18th November, 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">16</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two weeks GIAN Programme: Computational mathematics and Finite element method, 01-11 July 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">17</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">APRIL</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Understanding Science through Experiments , 15-16 April 2016</td>
+                </tr>
+
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">18</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Patents and Intellectual Property Right, 4-5 March 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">19</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Young Sparks-2016, 26 January 2016</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">20</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">International conference on “Current Trends in Non-Classical Continuum Mechanics” As a local organizer, 14-15 December 2015</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">21</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SEPT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Celebration of International Year of Light-2015 Technical events, 5-6th September 2015</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">22</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">BARC Outreach Programme on "Atomic Energy: Architect of Future" 9th February 2015</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">23</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on "Micro Nano Photonics", 28th January 2015</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">24</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2014</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two days SPIE Technical Fest, 9-10th August 2014</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">25</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">National Workshop on "Optics and Photonics for Engineering Application", 16-17th March 2013</td>
+                </tr>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">26</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SPIE Guest lecture Series</td>
+                </tr>
+                
+                </tbody>
+          </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
