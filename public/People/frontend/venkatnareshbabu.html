@@ -1,0 +1,2237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Faculty Details</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .card-toggle {
+            width: 100%;
+            /* Adjust as needed */
+            height: 40px;
+            /* Adjust as needed */
+            background-color: #fff;
+            /* Toggle button color */
+        }
+
+        /* Show content when checkbox is checked */
+        #toggle1:checked~.card-content {
+            display: block;
+        }
+
+        #toggle2:checked~.card-content {
+            display: block;
+        }
+
+        #toggle3:checked~.card-content {
+            display: block;
+        }
+
+        #toggle4:checked~.card-content {
+            display: block;
+        }
+
+        #toggle5:checked~.card-content {
+            display: block;
+        }
+
+        #toggle6:checked~.card-content {
+            display: block;
+        }
+
+        #toggle7:checked~.card-content {
+            display: block;
+        }
+
+        #toggle8:checked~.card-content {
+            display: block;
+        }
+
+        #toggle9:checked~.card-content {
+            display: block;
+        }
+
+        #toggle10:checked~.card-content {
+            display: block;
+        }
+
+        #toggle11:checked~.card-content {
+            display: block;
+        }
+
+        #toggle12:checked~.card-content {
+            display: block;
+        }
+
+        #toggle13:checked~.card-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+        <div class="flex items-center text-gray-300 mr-8">
+            <div class="flex items-center gap-4" id="header-favicon">
+                <div>
+                    <i class="md:hidden fas fa-envelope"></i>
+                    your@email.com
+                </div>
+                <div>
+                    <i class="md:hidden fas fa-phone "></i>
+                    +1234567890
+                </div>
+            </div>
+        </div>
+        <div class="flex ml-8">
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+                <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+
+            </div>
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="https://www.nitgoa.ac.in/gian/"
+                    class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+                <a href="https://www.nitgoa.ac.in/login.aspx"
+                    class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header id="main-header"
+        class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+        <div class="flex justify-center">
+            <div class="headerBar ">
+                <div class="logo-container flex flex-col justify-center items-center">
+                    <img src="../../static/logo_color.png" class="logo" id="logo_img">
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="text-center">
+            <nav class=" justify-center items-center bg-white">
+                <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10"
+                    id="Nav">
+                    <div class="dropdown ">
+                        <a href="../../index.html">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Administration</button>
+                        <div class="dropdown-content">
+                            <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                            <a href="../../administration/director_message.html">Director</a>
+                            <a href="../../administration/registrar.html">Registrar</a>
+                            <a href="../../administration/senate.html">Senate</a>
+                            <a href="../../administration/dean.html">Deans</a>
+                            <a href="../../administration/Committees.html">Committees</a>
+                            <a href="../../administration/finance_committee.html">Finance Committee</a>
+                            <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                            <a href="../../administration/hod.html">Heads of Departments </a>
+                            <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                            <a href="../../administration/reports.html">Reports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Academics</button>
+                        <div class="dropdown-content">
+                            <a href="../../academics/academic_calendar.html">Calendar</a>
+                            <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                            <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                            <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                            <a href="../../academics/departments.html">Departments</a>
+                            <a href="../../academics/library.html">Library</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Admissions</button>
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                                    <a href="../../admissions/dasa.html">DASA</a>
+                                    <a href="../../admissions/facilities.html">Facilities</a>
+                                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <a href="../../admissions/mtech.html">M.Tech</a>
+                            <a href="../../admissions/phd.html">Ph.D</a>
+                            <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Training & Placement</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                            <a href="#">Company Login</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">People</button>
+                        <div class="dropdown-content">
+                            <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                            <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                            <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                            <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="../../research/R&DProjects.html">R & D Projects</a>
+                            <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../outreach_activities.html">Outreach Activities</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../nirf.html">NIRF</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee
+                            Payment</a>
+                    </div>
+                </div>
+
+                <!--Toggle Menu Hamburger-->
+                <div class="menu-toggle" onclick="togglemenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+        </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <div class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6">
+        <img src="Dr. Venkatanareshbabu Kuppili.png" alt="Faculty Image"
+            class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800" />
+        <h2 class="text-xl font-bold mb-2">Dr. Venkatanareshbabu Kuppili</h2>
+        <p class="text-gray-600 mb-4">
+            Associate Professor, Department of Computer Science and Engineering
+        </p>
+        <p class="text-gray-700">
+            Research Area : Big Data Analytics, Artificial Intelligence, Deep Learning, Soft Computing
+        </p>
+        <div class="mt-4">
+            <p> Email:<a href="#" class="text-blue-500"> venkatanaresh@nitgoa.ac.in</a></p>
+        </div>
+    </div>
+
+    <div class="flex-col justify-center">
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+            <label for="toggle1" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Personal Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+                <p class="p-2">Name: Dr. Venkatanareshbabu Kuppili</p>
+                <p class="p-2">Gender: Male</p>
+                <p class="p-2">Birth Date -</p>
+                <p class="p-2">Designation: Assistant Professor</p>
+                <p class="p-2">
+                    Department: Department of Computer Science and Engineering
+                </p>
+                <p class="p-2">URL: <a class="text-blue-400"
+                        href="https://scholar.google.com/citations?user=aIm3CMUAAAAJ&hl=en"> [Google Scholar -
+                        Dr.Venkatanareshbabu k] </a></p>
+                <p class="p-2">Date of Joining -</p>
+                <p class="p-2">
+                    Research/Teaching Experience: [Information not available in the search results]
+                </p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+            <label for="toggle2" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Contact Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">Address: Mandala street, OPP: Community Hall, Door no - 11-9-1/1, Srikakulam-532001</p>
+                <p class="p-2">City: -</p>
+                <p class="p-2">State: ANDHRA PRADESH</p>
+                <p class="p-2">Country: INDIA</p>
+                <p class="p-2">Email Address: venkatanaresh@nitgoa.ac.in</p>
+                <p class="p-2">Phone [Residence]: -</p>
+                <p class="p-2">Phone [Mobile]: 09049436708</p>
+                <p class="p-2">Office Extension: 0832-2404212</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+            <label for="toggle3" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Research Area
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">Big Data Analytics</p>
+                <p class="p-2">Artificial Intelligence</p>
+                <p class="p-2">Deep Learning</p>
+                <p class="p-2">Soft Computing</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+            <label for="toggle4" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Courses Taught
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    UG Courses
+                </h3>
+                <p class="p-2">CS100: Computer programming and Problem Solving</p>
+                <p class="p-2">CS522: Artificial Intelligence</p>
+                <p class="p-2">CS350: Compiler Design</p>
+                <p class="p-2">CS301: Database Systems</p>
+                <p class="p-2">CS305: Database Systems Laboratory</p>
+                <p class="p-2">CS512: Soft Computing</p>
+                <p class="p-2">CS534: Big Data Analysis</p>
+                <p class="p-2">CS352: Software Engineering</p>
+                <p class="p-2">CS201: Data Structures</p>
+
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    PG Courses
+                </h3>
+                <p class="p-2">CS810: Big Data Analytics</p>
+                <p class="p-2">CS812: Artificial Neural Networks</p>
+                <p class="p-2">CS602: Mathematical Foundation of Computer Science</p>
+                <p class="p-2">CS808: Soft Computing</p>
+                <p class="p-2">CS823: Linear Algebra</p>
+                <p class="p-2">CS600: Advanced Algorithms and Analysis</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+            <label for="toggle5" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Academic Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <div class="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                                <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">Institute / University
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">year
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">subject
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    1
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    M.Tech.
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Indian Institute of Technology Delhi
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2008
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Digital Image Processing
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Ph.D.
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Indian Institute of Technology Delhi
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2014
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Machine Learning
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+            <div class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl ">
+                Paper Published
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <div class="panel-body">
+                <h3 class="font-semibold text-xl">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: 
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal
+                </h3>
+
+                <div class="table-responsive">
+
+                    <ol style="margin-left:15px;">
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International
+                           <br/>
+                            2. Naik, Akshata K., and Venkatanareshbabu Kuppili. "Dynamic relevance and interdependent
+                            feature selection for continuous data." Expert Systems with Applications 191 (2022): 116302.
+                            (Impact Factor 8.665)
+                            <br/>
+
+                            <br/>2022<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International
+                           <br/>
+                            "Lung Nodule Classification on Computed Tomography Images Using Fractalnet". Wireless
+                            Personal Communications, pp.1-21.
+                            <br/>
+
+                            <br/>2021<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International
+                           <br/>
+                            "Enhanced Clustering and Intelligent Mobile Sink Path Construction for an Efficient Data
+                            Gathering in Wireless Sensor Networks". Arabian Journal for Science and Engineering,
+                            pp.1-16.
+                            <br/>
+
+                            <br/>2021<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International
+                           <br/>
+                            "Energy-Efficient Load Balancing Strategy for Wireless Sensor Networks using
+                            Quasi-oppositional based Jaya Optimization". Wireless Personal Communications, 118(4),
+                            pp.2319-2343.
+                            <br/>
+
+                            <br/>2021<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International
+                           <br/>
+                            "An Efficient Deep Learning Paradigm for Deceit Identification Test on EEG Signals". ACM
+                            Transactions on Management Information Systems (TMIS), 12(3), pp.1-20.
+                            <br/>
+
+                            <br/>2021<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International
+                           <br/>
+                            "Lie detection using fuzzy ensemble approach with novel defuzzification method for
+                            classification of EEG signals". IEEE Transactions on Instrumentation and Measurement.
+                            <br/>
+
+                            <br/>2021<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International
+                           <br/>
+                            Effects of meteorological factors on the prediction of malaria incidences: AI-based
+                            approaches. Frontiers in Bioscience (Landmark Edition), 25, 1202-1229.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International
+                           <br/>
+                            Multilevel Automated Security System for Prevention of Accidents at Unmanned Railway Level
+                            Crossings. Wireless Personal Communications, 111(3), 1707-1721.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International
+                           <br/>
+                            "An automatic estimation of the ridge parameter for extreme learning machine." Chaos: An
+                            Interdisciplinary Journal of Nonlinear Science 30, no. 1 (2020): 013106.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International
+                           <br/>
+                            "Fractional Tikhonov regularization to improve the performance of extreme learning
+                            machines." Physica A: Statistical Mechanics and its Applications 551: 124034.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International
+                           <br/>
+                            "A new hybrid stability measure for feature selection." Applied Intelligence 50, no. 10 :
+                            3471-3486.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International
+                           <br/>
+                            "Parameter-free fuzzy histogram equalisation with illumination preserving characteristics
+                            dedicated for contrast enhancement of magnetic resonance images". Applied Soft Computing,
+                            93, p.106364.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary">International
+                           <br/>
+                            "Analysis of high dimensional brain data using prototype based fuzzy clustering". Clinical
+                            Epidemiology and Global Health, 8(4), pp.1110-1118.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International
+                           <br/>
+                            "Evolutionary extreme learning machine with novel activation function for credit scoring".
+                            Engineering Applications of Artificial Intelligence, 96, p.103980.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International
+                           <br/>
+                            "A Hybrid Approach for Extracting EMG signals by Filtering EEG Data for IoT Applications for
+                            Immobile Persons". Wireless Personal Communications, 114(4), pp.3081-3101.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International
+                           <br/>
+                            "Binary BAT algorithm and RBFN based hybrid credit scoring model". Multimedia Tools and
+                            Applications, 79(43), pp.31889-31912.
+                            <br/>
+
+                            <br/>2020<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_PubCategary">International
+                           <br/>
+                            The present and future of deep learning in radiology. European journal of
+                            radiology.Elsevier.
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_PubCategary">International
+                           <br/>
+                            EIQ: EEG based IQ test using Wavelet Packet Transform and Hierarchical Extreme Learning
+                            Machine, Journal of Neuroscience Methods, Elsevier
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_PubCategary">International
+                           <br/>
+                            Texture Image Classification using Deep Neural Network and Binary Dragon Fly Optimization
+                            with a Novel Fitness Function, Wireless Personal Communications, Springer
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_PubCategary">International
+                           <br/>
+                            M-Curves path planning model for mobile anchor node and localization of sensor nodes using
+                            Dolphin Swarm Algorithm. Wireless Networks, pp.1-15, Springer
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_PubCategary">International
+                           <br/>
+                            Efficient feature selection using one-pass generalised classifier neural network and binary
+                            bat algorithm with a novel fitness function, Soft Computing
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_PubCategary">International
+                           <br/>
+                            "A New Backpropagation Neural Network Classification Model for Prediction of Incidence of
+                            Malaria"Frontiers in Bioscience
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_PubCategary">International
+                           <br/>
+                            "Analysis of Controversies in the Formulation and Evaluation of Restoration Algorithms for
+                            MR Images"Expert Systems with Applications
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_PubCategary">International
+                           <br/>
+                            "Energy efficient load balancing approach for avoiding energy hole problem in WSN using Grey
+                            Wolf Optimizer with novel fitness function" Applied Soft Computing
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_PubCategary">International
+                           <br/>
+                            "Bat algorithm-based weighted Laplacian probabilistic neural network". Neural Computing and
+                            Applications
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_PubCategary">International
+                           <br/>
+                            “Credit Score Classification using Spiking Extreme Learning Machine” Computational
+                            Intelligence, Wiley
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_PubCategary">International
+                           <br/>
+                            Estimation of the Smoothing Parameter in Probabilistic Neural Network Using Evolutionary
+                            Algorithms. Arabian Journal for Science and Engineering
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl28_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl28_Label_PubCategary">International
+                           <br/>
+                            "Lesion Analysis towards Melanoma Detection using Soft Computing Techniques" Clinical
+                            Epidemiology and Global Health, Elsevier
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl29_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl29_Label_PubCategary">International
+                           <br/>
+                            "Cancer Data Classification using Binary Bat Optimization and Extreme Learning Machine with
+                            a Novel Fitness Function"Medical & Biological Engineering & Computing, Springer
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl30_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl30_Label_PubCategary">National
+                           <br/>
+                            ALDL: a novel method for label distribution learning. Sadhana, 44(3), p.53. Springer
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl31_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl31_Label_PubCategary">International
+                           <br/>
+                            An efficient EEG based deceit identification test using wavelet packet transform and linear
+                            discriminant analysis. 314, pp.31-40. Journal of neuroscience methods, Elsevier
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl32_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl32_Label_PubCategary">International
+                           <br/>
+                            Iterative Minimal Residual Method Provides Optimal Regularization Parameter for Extreme
+                            Learning Machines, Results in Physics.Elsevier
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl33_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl33_Label_PubCategary">International
+                           <br/>
+                            “A Novel Hybrid Credit Scoring Model based on Ensemble Feature Selection and Multi-layer
+                            Ensemble Classification” Computational Intelligence, Wiley(Accepted)
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl34_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl34_Label_PubCategary">International
+                           <br/>
+                            Brain-Computer Interface for wheelchair control operations: An approach based on Fast
+                            Fourier Transform and On-Line Sequential Extreme Learning Machine. Clinical Epidemiology and
+                            Global Health, 7(3), pp.274-278.
+                            <br/>
+
+                            <br/>2019<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl35_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl35_Label_PubCategary">International
+                           <br/>
+                            Type 2 diabetes data classification using stacked autoencoders in deep neural
+                            networks.Clinical Epidemiology and Global Health, Elsevier
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl36_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl36_Label_PubCategary">International
+                           <br/>
+                            "An efficient Concealed Information Test: EEG feature extraction and ensemble classification
+                            for lie identification." Machine Vision and Applications, Springer, pp. 1-20
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl37_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl37_Label_PubCategary">International
+                           <br/>
+                            "A Mechanics-Based Similarity Measure for Text Classification in Machine Learning Paradigm".
+                            IEEE Transactions on Emerging Topics in Computational Intelligence, Vol. 99, pp.1-21, 2018
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl38_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl38_Label_PubCategary">International
+                           <br/>
+                            . "Novel elegant fuzzy genetic algorithms in classification problems." Soft Computing :
+                            1-21.
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl39_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl39_Label_PubCategary">International
+                           <br/>
+                            "State-of-the-Art Review on Deep Learning in Medical Imaging", Frontiers in Bioscience
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl40_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl40_Label_PubCategary">International
+                           <br/>
+                            PLDL: A Novel Method for Label Distribution Learning. Status: Accepted. The International
+                            Arab Journal of Information Technology
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl41_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl41_Label_PubCategary">International
+                           <br/>
+                            “Symtosis: Liver Ultrasound Tissue Characterization and Risk Stratification in Optimized
+                            Deep Learning Paradigm”. Elsevier, Computer Methods and Programs in Biomedicine: 155:
+                            165-177
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl42_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl42_Label_PubCategary">International
+                           <br/>
+                            Deep learning strategy for accurate carotid intima-media thickness measurement: an
+                            ultrasound study on Japanese diabetic cohort. Computers in biology and medicine, 98,
+                            pp.100-117.
+                            <br/>
+
+                            <br/>2018<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl43_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl43_Label_PubCategary">International
+                           <br/>
+                            "Prediction of cardiac arrest recurrence using ensemble classifiers", Springer, Sadhana
+                            <br/>
+
+                            JAN<br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl44_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl44_Label_PubCategary">International
+                           <br/>
+                            “SM-RuleMiner: Spider monkey based rule miner using novel fitness function for diabetes
+                            classification”. Computers in Biology and Medicine, 81, pp.79-92.
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl45_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl45_Label_PubCategary">International
+                           <br/>
+                            “Extreme Learning Machine Framework for Risk Stratification of Fatty Liver Disease using
+                            Ultrasound Tissue Characterization”, Journal of Medical Systems, Springer.
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl46_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl46_Label_PubCategary">International
+                           <br/>
+                            "RST-BatMiner: A Fuzzy Rule Miner Integrating Rough Set Feature Selection and Bat
+                            Optimization for Detection of Diabetes Disease", Applied Soft Computing Journal, Elsevier.
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl47_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl47_Label_PubCategary">International
+                           <br/>
+                            "Automatic disease diagnosis using optimised weightless neural networks for low-power
+                            wearable devices." IET - Healthcare Technology Letters.
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl48_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl48_Label_PubCategary">International
+                           <br/>
+                            "An Efficient Load Balancing of Gateways using Improved Shuffled Frog Leaping Algorithm and
+                            Novel Fitness Function for WSNs", IEEE Sensors Journal
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl49_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl49_Label_PubCategary">International
+                           <br/>
+                            " An Efficient Ensemble Framework with BPSOGA-based Fearure Selection: A Casestudy on Credit
+                            Scoring Datasets ", Arabian Journal of Science and Engineering, Springer
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl50_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl50_Label_PubCategary">International
+                           <br/>
+                            "Dissipative analysis for network-based singular systems with non-fragile controller and
+                            event-triggered sampling scheme." no. 12 (2017): 4739-4761.Journal of The Franklin
+                            Institute, Elsevier
+                            <br/>
+
+                            <br/>2017<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl51_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl51_Label_PubCategary">International
+                           <br/>
+                            "Diabetes Classification using Radial Basis Function Network by Combining Cluster Validity
+                            Index and BAT Optimization with Novel Fitness Function”, Taylor &Francis, IJCIS, Volume 10,
+                            Issue 1, Pages 247-265
+                            <br/>
+
+                            <br/>2016<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl52_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl52_Label_PubCategary">International
+                           <br/>
+                            Synchronization and anti-synchronization of chaotic systems with application to DC-DC boost
+                            converter, IEEE, IET Generation, Transmission & Distribution
+                            <br/>
+
+                            <br/>2016<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl53_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl53_Label_PubCategary">International
+                           <br/>
+                            New Algebraic Activation Function for Multilayered Feed forward Neural Networks, Taylor
+                            &Francis, IETE Journal of Research, Pages 1-8
+
+
+                            <br/>
+
+                            <br/>2016<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl54_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl54_Label_PubCategary">International
+                           <br/>
+                            "Classification of gene expression data using Spiking Wavelet Radial Basis Neural Network."
+                            Elsevier, Expert Systems with Applications, Volume 41, Issue 4, Pages 1326–1330
+                            <br/>
+
+                            <br/>2014<br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl55_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl55_Label_PubCategary">International
+                           <br/>
+                            "An Optimized and Efficient Radial Basis Neural Network using Cluster Validity Index for
+                            Diabetes Classification", The International Arab Journal of Information Technology, IAJIT,
+                            19(5).
+                            <br/>
+
+                            <br/><br/> <br/>
+                        </li>
+
+
+                    </ol>
+
+                </div>
+
+                <h3 class="font-semibold text-xl">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: 
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings
+                </h3>
+
+                <ol style="margin-left:15px;">
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International
+                       <br/>
+                        "Prospect of Stein's Unbiased Risk Estimate as Objective Function for Parameter Optimization in
+                        Image Denoising Algorithms–A Case Study on Gaussian Smoothing Kernel". In 2019 International
+                        Conference on Data Science and Engineering (ICDSE) (pp. 149-153). IEEE.
+                        <br/>
+
+                        SEPT<br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International
+                       <br/>
+                        "Dependency of Optimum Value of Regularization Parameter in Total Variation Filter on Noise
+                        Statistics-A MR Phantom Study". In 2019 10th International Conference on Computing,
+                        Communication and Networking Technologies (ICCCNT) (pp. 1-4). IEEE.
+                        <br/>
+
+                        JULY<br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International
+                       <br/>
+                        "Dynamic Cluster Formation Mechanism in Wireless Sensor Networks Using Fuzzy Logic". In 2019
+                        International Conference on Applied Machine Learning (ICAML) (pp. 291-295). IEEE.
+                        <br/>
+
+                        MAY<br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International
+                       <br/>
+                        "Binary dragonfly algorithm and Fisher score based hybrid feature selection adopting a novel
+                        fitness function applied to microarray data". In 2019 International Conference on Applied
+                        Machine Learning (ICAML) (pp. 40-43). IEEE.
+                        <br/>
+
+                        MAY<br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International
+                       <br/>
+                        "Generalized Compensative Intuitionistic Fuzzy Information with Choquet Integrals". In 2019 10th
+                        International Conference on Computing, Communication and Networking Technologies (ICCCNT) (pp.
+                        1-7). IEEE.
+                        <br/>
+
+                        <br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International
+                       <br/>
+                        "Data-oriented neural time series with long short-term memories (LSTM) for malaria incidence
+                        prediction in Goa, India". In 2019 10th International Conference on Computing, Communication and
+                        Networking Technologies (ICCCNT) (pp. 1-6). IEEE.
+                        <br/>
+
+                        <br/>2019<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International
+                       <br/>
+                        Survey on Clustering Approaches” has been accepted at ICICCT – 2018, Ranganathan Engineering
+                        College, Coimbatore
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International
+                       <br/>
+                        Feature Selection using Binary PSOGSA and Radial Basis Neural Network with a Novel Fitness
+                        function” (Accepted), 9th ICCCNT, IISC Bangalore
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International
+                       <br/>
+                        Optimized Laplacian Generalized Classifier Neural Network” (Accepted), ICCCNT, IISC Bangalore
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International
+                       <br/>
+                        Deceit Identification Test on EEG Data using Deep Belief Network” (Accepted), ICCCNT, IISC
+                        Bangalore
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International
+                       <br/>
+                        "Novel fitness function for 3D image reconstruction using bat algorithm based autoencoder" In
+                        Proceedings of the 23rd International ACM Conference on 3D Web Technology (p. 28). ACM.Poznan,
+                        Poland — June 20 - 22, 2018
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_PubCategary1">International
+                       <br/>
+                        Subject based Deceit Identification using Empirical Mode Decomposition. Procedia Computer
+                        Science, 132, pp.32-39. Part of special issue, International Conference on Computational
+                        Intelligence and Data Science
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_PubCategary1">International
+                       <br/>
+                        "Credit Scoring Model based on Weighted Voting and Cluster based Feature Selection." Procedia
+                        Computer Science 132 (2018): 22-31.
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_PubCategary1">International
+                       <br/>
+                        “Energy Efficient Design of Wireless Sensor Network: Clustering” ICRTES-2018 (Accepted)
+                        <br/>
+
+                        <br/>2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_PubCategary1">International
+                       <br/>
+                        "Intelli-DRM: An Intelligent Computational Model for Forecasting Severity of Diabetes Mellitus"
+                        in 8th International Conference on Computing Communication and Networking Technologies (ICCCNT),
+                        IEEE, IIT Delhi, 2017
+                        <br/>
+
+                        <br/>2017<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_PubCategary1">International
+                       <br/>
+                        "PSO-RBFNN: A PSO-based Clustering Approach for RBFNN Design to Classify Disease Data", in 26th
+                        International Conference on Artificial Neural Networks (ICANN), LNCS, Italy
+                        <br/>
+
+                        <br/>2017<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_PubCategary1">International
+                       <br/>
+                        Load balancing in Wireless Sensor Networks by Optimal Placement of Base Stations using kd-Tree”,
+                        2016 Annual International Conference on Innovative Technologies and Advanced Computing
+                        (ICIAC-16), London
+                        <br/>
+
+                        <br/>2016<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_PubCategary1">International
+                       <br/>
+                        "Variance based product recommendation using clustering and sentiment analysis." In 2015 IEEE
+                        Workshop on Computational Intelligence: Theories, Applications and Future Directions (WCI), IIT
+                        Kanpur, pp. 1-5. IEEE, 2015.
+                        <br/>
+
+                        DEC<br/>2015<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_PubCategary1">International
+                       <br/>
+                        "Online Signature Verification Using Single Spiking Neuron Model." Emerging Research in
+                        Computing, Information, Communication and Applications. Springer India, 2016. 227-236.
+                        <br/>
+
+                        MAY<br/>2015<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_PubCategary1">International
+                       <br/>
+                        “New Spiking Neuron Model”, IEEE
+                        proceedings of International Joint Conference on Neural Networks, Dallas, U.S.A.
+
+                        <br/>
+
+                        <br/>2013<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_PubCategary1">International
+                       <br/>
+                        “A Single Neuron model for pattern
+                        classification” Neural Information Processing, Lecture Notes in Computer Science,
+                        Volume 7666, pp- 619-625.
+                        <br/>
+
+                        <br/>2012<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_PubCategary1">International
+                       <br/>
+                        ”An Improved architecture for probabilistic
+                        neural network” IEEE proceedings of International Joint Conference on Neural
+                        Networks, .California, USA, pp-919-924
+                        <br/>
+
+                        <br/>2011<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_PubCategary1">International
+                       <br/>
+                        “Heterogeneous Node Split Measure for
+                        Decision Tree Construction” IEEE proceedings of International Conference on Systems,
+                        Man, and Cybernetics, Anchorage, UK, pp-872-877.
+
+                        <br/>
+
+                        <br/>2011<br/> <br/>
+                    </li>
+
+
+                </ol>
+                <br />
+
+                <h3 class="font-semibold text-xl">
+
+
+                </h3>
+
+                <p class="rightsm">
+
+
+                </p>
+
+                <p class="rightsm">
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+        <label for="toggle7" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl ">
+                Research Guidance
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl01_Label_Research">Supervisor for Mr. Mainak Biswas (PhD Awarded) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl02_Label_Research">Co-Supervisor for Ms. Shraddha Naik(PhD Awarded) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl03_Label_Research">Supervisor for Mr. Mahesh Chowdary (PhD Awarded ) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl04_Label_Research">Supervisor for Ms. Akshata Naik (PhD Awarded) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl05_Label_Research">Co-Supervisor for Mr. Jagat Chaitanya P(PhD Ongoing)</p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl06_Label_Research">Supervisor for Ms. Silika Kole (PhD Ongoing) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl07_Label_Research">Supervisor for Ms. Manjusha (PhD Ongoing) </p>
+            
+               <p class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Research_ctl08_Label_Research">Supervisor for Ms. Manisha Dessai (PhD Ongoing)</p>
+            
+                </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+        <label for="toggle8" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Funded Research Project
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+                <li class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Funded_ctl01_Label_Funded">"Development of Efficient Algorithms for Predicting the Incidence of Malaria Cases in India using Spiking Neuron Models" DST SERB Project. Role: Principle investigator.(2017 to 2020)</span>
+                </li>
+            
+                <li class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Funded_ctl02_Label_Funded">"Enhancing Information Technology Education" MHRD under PMMMNMTT Role: Principle investigator(2015 to 2018)</span>
+                </li>
+            
+                <li class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Funded_ctl03_Label_Funded">"Indo-Norwegian Collaboration in "Intelligent Offshore Mechatronics Systems (INMOST)" funded by Research Council's INTPART program(Budget 3.5 Crores) Role: Co-Principle investigator(2020-2023)</span>
+                </li>
+            
+                <li class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Funded_ctl04_Label_Funded">"Deep-Learning Assisted Tomographic Ground Penetrating Radar for the Detection of Electrical and Morphological features of Buried Objects" (SERB, CRG) Role: Co-Principle investigator(2021-2024)</span>
+                </li>
+            
+                </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+        <label for="toggle9" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Award and Honor
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+            <li class="p-2">All India GATE Rank 64</li>
+            <li class="p-2">Early Career Research Award, DST</li>
+            <li class="p-2">Visiting Scientist at Global Medical Technologies, California</li>
+            <li class="p-2">Elected as IEEE Senior Member (ID-94855746) in March 2019</li>
+            <li class="p-2">Outstanding reviewer for Journal of Renewable Energy, Elsevier</li>
+            <li class="p-2">Outstanding reviewer for Journal of Computer Networks, Elsevier</li>
+            <li class="p-2">All India ISI Kolkata M.Tech(Computer Science) Entrance Rank 140</li>
+            <li class="p-2">Andhra University Post Graduation Rank 6</li>
+            <li class="p-2">Qualified All India National Board of Higher Mathematics</li>
+        </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+        <label for="toggle10" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Membership and Professional Society
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+                <li class="p-2">
+                    <span >IEEE Member
+                </li>
+            
+                <li class="p-2">
+                    <span >Editorial Board Member for Systems and Soft Computing Journal, Elsevier
+                </li>
+            
+                </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+        <label for="toggle11" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Professional Services
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+                <li class="p-2">
+                    Associate Dean (Planning and Development)
+                </li>
+            
+                <li class="p-2">
+                    Warden(Boys Hostel)
+                </li>
+            
+                <li class="p-2">
+                    Verification officer at MTech Admission (CCMT 2022)
+                </li>
+            
+                <li class="p-2">
+                    Nodal officer for Vidyanjali Higher Education
+                </li>
+            
+                <li class="p-2">
+                    Nodal officer for Spoken Tutorial by IIT Bombay
+                </li>
+            
+                <li class="p-2">
+                    Nodal officer for PMMMNMTT
+                </li>
+            
+                <li class="p-2">
+                    In-charge for M. Tech Laboratory
+                </li>
+            
+                <li class="p-2">
+                    Member in Unnat Bharat Abhiyan.
+                </li>
+            
+                <li class="p-2">
+                    GIAN representative from Computer Science and Engineering Department.
+                </li>
+            
+                <li class="p-2">
+                    Remedial classes coordinator
+                </li>
+            
+                <li class="p-2">
+                    Member in Savyas, 2020
+                </li>
+            
+                <li class="p-2">
+                    Member in Savyas 2019
+                </li>
+            
+                <li class="p-2">
+                    Member in 5th convocation.
+                </li>
+            
+                <li class="p-2">
+                    Convener for 8th Convocation Dress committee
+                </li>
+            
+                </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+        <label for="toggle12" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Training/Conferences/Short Term Courses Attended
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+            <table class="table-bordered table">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4"></th>
+                        <th class="bg-blue-400 text-white p-4">Month
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Training attended Information
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    MAY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Attended a ISTE STTP ON INTRODUCTION TO DESIGN OF ALGORITHMS,
+National Mission on Education through ICT (MHRD, Govt. of India)(initiative from IIT Kgp) at Goa Engineering College.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    APRIL
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Keynote speaker and Session Chair for "The Third National Conference on Modern Trends-2015" Department of computer science and engineering, Goa college of Engineering, Goa.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    APRIL
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Delivered a keynote speech on  "Big data analytics" at The Third National Conference on Modern Trends-2015,  Department of computer science and engineering, Goa college of Engineering, Goa.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    4
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FEB
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    SIGCSE-Special Interest Group on Computer Science Education at Bits Pilani Goa Campus
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    5
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FEB
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Attended a workshop on “ATOMIC ENERGY: ARCHITEC FUTURE” conducted by NIT Goa in association with Bhabha Atomic Research Centre (BARC), Mumbai 
+
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    6
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JAN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FICCI India Innovation Growth Programme
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    7
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Attended a workshop on Big Data Analytics at IIT Kharagpur from  30th June to 11th July.
+                </td>
+            </tr>
+            
+        
+            </tbody></table>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+        <label for="toggle13" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Training/Conferences/Short Term Courses Conducted
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <table class="table-bordered table">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4"></th>
+                        <th class="bg-blue-400 text-white p-4">Month
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Training Conducted Information
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    DEC
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2017
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Third workshop on "Enhancing Information Technology Education"
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2016
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Second workshop on "Enhancing Information Technology Education"
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JAN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2016
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    First Conference cum workshop on "Enhancing Information Technology Education"
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    4
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    AUG
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    STTP on "Recent Trends in Artificial Intelligence for Big Data"
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    5
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JAN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    workshop on Cyber Security with initiation from Asian School of Cyber Laws 
+                </td>
+            </tr>
+        
+            </tbody>
+</table>
+        </div>
+    </div>
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+                        <ul class="footer-links" style="list-style-type: disc;">
+                            <li class="p-2"><a href="../../index.html"><span class="">Home</a></li>
+                            <li class="p-2"><a href="../../syllabus.html"><span class="">Syllabus</a></li>
+                            <li class="p-2"><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</a></li>
+                            <li class="p-2"><a href="../../RTI.html"><span class="">RTI</a></li>
+                            <li class="p-2"><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</a></li>
+                            <li class="p-2"><a href="../../contact us.html"><span class="">Contact Us</a></li>
+                            <li class="p-2"><a href="#"><span class="">Feedback</a></li>
+                        </ul>
+
+                        <ul class="footer-links">
+                            <li class="p-2"><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</a></li>
+                            <li class="p-2"><a href="http://scanfcode.com/contact/"><span class="">Students</a></li>
+                            <li class="p-2"><a href="../../academics/academic_calendar.html"><span class="">Academic
+                                        Calendar</a></li>
+                            <li class="p-2"><a href="../../academics/rules_and_regulations.html">Regulations and
+                                        Curriculum</a></li>
+                            <li class="p-2"><a href="../academics/DissertionFormat.html">Dissertation
+                                        Formats</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Informations</h6>
+                    <ul class="footer-links">
+                        <li class="p-2"><a href="../../People/frontend/people_faculty.html">Faculty</a>
+                        </li>
+                        <li class="p-2"><a href="../../People/frontend/technical_cse.html">Staff</a></li>
+                        <li class="p-2"><a href="../../admissions/josaa.html">JEE</a></li>
+                        <li class="p-2"><a href="../../admissions/facilities.html">Facilities</a></li>
+                        <li class="p-2"><a href="../../static/fee_structure_23-24_25july2023.pdf">Fee
+                                    Structure</a></li>
+                        <li class="p-2"><a href="../../nirf.html">NIRF</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+                    <ul class="footer-links">
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html">National
+                                    Institute of Technology Goa
+                                    Farmagudi, Ponda , Goa - 403401</a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html">
+                                <span">Website: www.nitgoa.ac.in
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Phone: [0832] 2404200 (PA to Director)
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Fax: [0832] 2404202
+                            </a></div>
+                    </ul>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+            <!-- hitwebcounter Code START -->
+            <p>Visitor counter</p>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+                    title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+            </a>
+        </div>
+
+        <div class="fa-hover" style="text-align: right;">
+            <!-- Add font awesome icons -->
+            <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+            <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT"
+                class="fa fa-youtube-play"></a>
+            <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+        </div>
+
+
+
+    </footer>
+    <!--Footer Ends Here -->
+    <div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+    <!--javascript for Google Translator Starts Here-->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--javascript for Google Translator Ends Here-->
+
+
+</body>
+
+</html>

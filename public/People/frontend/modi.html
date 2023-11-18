@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Modi Chirag Navinchandra.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Modi Chirag Navinchandra</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area : Blockchain, Cryptography and Network Security, Information Security and Privacy, Cloud Computing, Visual Computing
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500">  cnmodi@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name:&nbsp; Dr. Modi Chirag Navinchandra</p>
+            <p class="p-2">Gender:&nbsp Male</p>
+            <p class="p-2">Birth Date:&nbsp 03/02/1987</p>
+            <p class="p-2">Designation:&nbsp Associate Professor</p>
+            <p class="p-2">Department:&nbsp Department of Computer Science and Engineering</p>
+            <p class="p-2">URL:&nbsp <a href="https://sites.google.com/site/drcnmodi/">Google Sites - Dr. Chirag N. Modi</a></p>
+            <p class="p-2">Date of Joining:&nbsp  [Information not available]</p>
+            <p class="p-2">Research/Teaching Experience:&nbsp  8 Years and 01 Month of Teaching and Research Experience at NIT Goa</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Address: Associate Professor, Department of Computer Science and Engineering, NIT Goa, Farmagudi</p>
+            <p class="p-2">City: PONDA</p>
+            <p class="p-2">State: GOA</p>
+            <p class="p-2">Country: INDIA</p>
+            <p class="p-2">Email Address: cnmodi@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: -</p>
+            <p class="p-2">Phone [Mobile]: -</p>
+            <p class="p-2">Office Extension: -</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Blockchain</p>
+            <p class="p-2">Cryptography and Network Security</p>
+            <p class="p-2">Information Security and Privacy</p>
+            <p class="p-2">Cloud Computing</p>
+            <p class="p-2">Visual Computing</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Network Security</p>
+          <p class="p-2">Foundations of Cryptography</p>
+          <p class="p-2">Number Theory and Cryptography</p>
+          <p class="p-2">Fundamental of Programming Language</p>
+          <p class="p-2">Object Oriented Programming</p>
+          <p class="p-2">Software Engineering</p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Security and Privacy</p>
+          <p class="p-2">Biometric and Cyber Security</p>
+          <p class="p-2">Data Warehousing and Data Mining</p>
+          <p class="p-2">Object Oriented Software Engineering</p>
+          <p class="p-2">Advance Database Systems (Lab)</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                        <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Institute / University
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">subject
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    B.E.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    BVM Engg. College, V.V.Nagar, Gujarat
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2008
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Computer Engineering
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    M.Tech.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    NIT Surat
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2010
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Computer Engineering
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Ph.D.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    NIT Surat
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Computer Engineering
+                </td>
+            </tr>
+        
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="panel-body">
+            <h3 class="font-semibold text-xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+            </h3>
+
+            <div class="table-responsive">
+                
+                        <ol style="margin-left:15px;">
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International</span>
+                            <br/>
+                                        A. Muzumdar, C. Modi, C. Vyajayanthi, "Designing a Blockchain Enabled Privacy Preserving Energy Theft Detection System for Smart Grid Neighborhood Area Network," Electric Power systems Research, Elsevier, vol. 207, pp. 107884-107896, 2022.
+                                        <br/>
+                                        
+                            JUN<br/>2022<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International</span>
+                            <br/>
+                                        A. Muzumdar, C. Modi, C. Vyajayanthi, "A Permissioned Blockchain Enabled Trustworthy and Incentivized Emission Trading System," Journal of Cleaner Production, Elsevier, vol. 349, pp. 131274, 2022.
+                                        <br/>
+                                        
+                            MAY<br/>2022<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International</span>
+                            <br/>
+                                        Gopahanal Manjunath, Madhu, Chintamani, Vyjayanthi and Modi, Chirag, "A real-time hybrid battery state of charge and state of health estimation technique in renewable energy integrated microgrid applications," International Journal of Emerging Electric Power Systems, vol. , no. , 2022. https://doi.org/10.1515/ijeeps-2021-0434.
+                                        <br/>
+                                        
+                            MAY<br/>2022<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International</span>
+                            <br/>
+                                        A trustworthy and incentivized smart grid energy trading framework using distributed ledger and smart contracts, JNCA, Elsevier
+                                        <br/>
+                                        
+                            <br/>2021<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International</span>
+                            <br/>
+                                        Investigation on Effect of Irradiance Change in Maximum Power Extraction from PV Array Interconnection Schemes during Partial Shading Conditions, IEEE Access
+                                        <br/>
+                                        
+                            <br/>2021<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International</span>
+                            <br/>
+                                        Designing a Robust and Accurate Model for Consumer Centric Short Term Load Forecasting in Microgrid Environment, IEEE Systems Journal
+                                        <br/>
+                                        
+                            <br/>2021<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International</span>
+                            <br/>
+                                        Adaptive step size based drift-free P&O algorithm with power optimiser and load protection for maximum power extraction from PV panels in stand-alone applications, IET Renewable Power Generation
+                                        <br/>
+                                        
+                            <br/>2021<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International</span>
+                            <br/>
+                                        Designing in-VM-assisted lightweight agent-based malware detection framework for securing virtual machines in cloud computing, Journal of Information Security, Springer
+                                        <br/>
+                                        
+                            <br/>2020<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International</span>
+                            <br/>
+                                        Designing an efficient security framework for detecting intrusions in virtual network of cloud computing, Computers & Security, Elsevier
+                                        <br/>
+                                        
+                            <br/>2019<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International</span>
+                            <br/>
+                                        Designing an efficient framework for vulnerability assessment and patching (VAP) in virtual environment of cloud computing, Journal of Supercomputing, Springer
+                                        <br/>
+                                        
+                            <br/>2019<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International</span>
+                            <br/>
+                                        An Exhaustive Survey on Security Concerns and Solutions at Different Components of Virtualization, ACM Computing Surveys
+                                        <br/>
+                                        
+                            <br/>2019<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International</span>
+                            <br/>
+                                        A feasible approach to intrusion detection in virtual network layer of Cloud computing, Sadhana, Springer
+                                        <br/>
+                                        
+                            JULY<br/>2018<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary">International</span>
+                            <br/>
+                                        Privacy-preserving distributed mining of association rules using Elliptic-curve cryptosystem and Shamir’s secret sharing scheme, Sadhana, Springer
+                                        <br/>
+                                        
+                            DEC<br/>2017<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International</span>
+                            <br/>
+                                        Virtualization layer security challenges and intrusion detection/prevention systems in cloud computing: a comprehensive review, The Journal of Supercomputing, Springer
+                                        <br/>
+                                        
+                            JULY<br/>2016<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International</span>
+                            <br/>
+                                        Collaborative IDS Framework for Cloud, International Journal of Network Security
+                                        <br/>
+                                        
+                            <br/>2015<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International</span>
+                            <br/>
+                                        A Survey of Intrusion Detection Techniques in Cloud, A Journal of Network and Computer Applications, Elsevier
+                                        <br/>
+                                        
+                            <br/>2013<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_PubCategary">International</span>
+                            <br/>
+                                        A Survey on Security Issues and Solutions at Different Layers of Cloud Computing, The Journal of Super Computing, Springer
+                                        <br/>
+                                        
+                            <br/>2013<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_PubCategary">International</span>
+                            <br/>
+                                        A Novel Approach for e-Payment Using Virtual Password System, International Journal on Cryptography and Information Security (IJCIS)
+                                        <br/>
+                                        
+                            <br/>2011<br/> <br/>
+                        </li>
+
+                    
+                       <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_PubCategary">International</span>
+                            <br/>
+                                        An Efficient Solution for Privacy Preserving Association Rule Mining, International Journal of Computer and Network Security (IJCNS)
+                                        <br/>
+                                        
+                            <br/>2010<br/> <br/>
+                        </li>
+
+                    
+                        </ol>
+                    
+            </div>
+
+            <h3 class="font-semibold text-xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International</span>
+                        <br/>
+                                        A. B. Uday, N. Naik, M. G. M, C. Vyjayanthi and C. Modi, "Implementation and Validation of NSGA-II Algorithm for Constrained and Unconstrained Multi-Objective Optimization Problem," 2022 IEEE IAS Global Conference on Emerging Technologies (GlobConET), 2022, pp. 539-544, doi: 10.1109/GlobConET53749.2022.9872465.
+                                        <br/>
+                                        
+                        MAY<br/>2022<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International</span>
+                        <br/>
+                                        M. B. Janjanam, C. Modi and C. Vyjayanthi, "Secured Monitoring of Smart Grid Assets using Attribute based Encryption and Blockchain," 2022 IEEE IAS Global Conference on Emerging Technologies (GlobConET), 2022, pp. 912-917, doi: 10.1109/GlobConET53749.2022.9872368.
+                                        <br/>
+                                        
+                        MAY<br/>2022<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International</span>
+                        <br/>
+                                        M. G M, C. Vyjayanthi and C. Modi, "Change in Power based P&O Algorithm for Maximum Power Extraction in Solar Energy Conversion System," 2021 9th IEEE International Conference on Power Systems (ICPS), 2021, pp. 1-6, doi: 10.1109/ICPS52420.2021.9670210.
+                                        <br/>
+                                        
+                        DEC<br/>2021<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International</span>
+                        <br/>
+                                        Dudeja, H., Modi, C. (2021). Runtime Program Semantics Based Malware Detection in Virtual Machines of Cloud Computing. In: Venugopal, K.R., Shenoy, P.D., Buyya, R., Patnaik, L.M., Iyengar, S.S. (eds) Data Science and Computational Intelligence. ICInPro 2021. Communications in Computer and Information Science, vol 1483. Springer, Cham.
+                                        <br/>
+                                        
+                        OCT<br/>2021<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International</span>
+                        <br/>
+                                        Jaiswal, A., Chandel, S., Muzumdar, A., Modi, C., G. M., M., Vyjayanthi, C. (2022). NITG Chain: A Scalable, Private and Permissioned Blockchain with Proof of Reputation Consensus Method. In: Rao, U.P., Patel, S.J., Raj, P., Visconti, A. (eds) Security, Privacy and Data Analytics. Lecture Notes in Electrical Engineering, vol 848. Springer, Singapore.
+                                        <br/>
+                                        
+                        APRIL<br/>2021<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Efficient Regional Short-Term Load Forecasting Model for Smart Grid Energy Management, IECON 2020 The 46th Annual Conference of the IEEE Industrial Electronics Society, Singapore
+                                        <br/>
+                                        
+                        <br/>2020<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International</span>
+                        <br/>
+                                        Multi-step Short-term Electric Load Forecasting using 2D Convolutional Neural Networks, 2020 IEEE-HYDCON, IEEE, Hydrabad
+                                        <br/>
+                                        
+                        <br/>2020<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Conceptual Framework for Trustworthy and Incentivized Trading of Food Grains using Distributed Ledger and Smart Contracts, 2019 IEEE 16th India Council International Conference (INDICON), IEEE, Gujarat
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International</span>
+                        <br/>
+                                        Optimizing e-KYC Process Using Distributed Ledger Technology and Smart Contracts, ICCISIoT 2019, NIT Agartala
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Open-Hardware Approach for IoT Enabled Smart Meter Monitoring and Controlling System Using MQTT Protocol, ICCISIoT 2019, NIT Agartala
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International</span>
+                        <br/>
+                                        Design and Development of a Novel IoT based Smart Meter for Power Quality Monitoring in Smart Grid Infrastructure, TENCON 2019, IEEE, Kerala
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_PubCategary1">International</span>
+                        <br/>
+                                        Preventing Sybil Attack in Blockchain using Distributed Behavior Monitoring of Miners, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE, IIT Kanpur
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Novel Framework for Monitoring Solar PV based Electric Vehicle Community Charging Station and Grid Frequency Regulation using Blockchain, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE, IIT Kanpur
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_PubCategary1">International</span>
+                        <br/>
+                                        Designing an Efficient Fingerprint Recognition System for Infants and Toddlers, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE, IIT Kanpur
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_PubCategary1">International</span>
+                        <br/>
+                                        Analyzing the Feasibility of Different Machine Learning Techniques for Energy Imbalance Classification in Smart Grid, 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IIT Kanpur
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Novel Framework for Pharmaceutical Supply Chain Management using Distributed Ledger and Smart Contracts, 10th International Conference on Computing, Communication and Networking Technologies, IEEE, IIT Kanpur
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Enhanced Approach for Detecting Helmet on Motorcyclists Using Image Processing and Machine Learning Techniques, Advanced Computing and Communication Technologies. Advances in Intelligent Systems and Computing, Springer, Haryana
+                                        <br/>
+                                        
+                        <br/>2019<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_PubCategary1">International</span>
+                        <br/>
+                                        Protocol Specific Multi-Threaded Network Intrusion Detection System (PM-NIDS) for DoS/DDoS Attack Detection in Cloud, 2018 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), IEEE
+                                        <br/>
+                                        
+                        OCT<br/>2018<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Enhanced Approach for Detecting Helmet on Motorcyclists Using Image Processing and Machine Learning Techniques, Advanced Computing and Communication Technologies, pp 109-119, Springer
+                                        <br/>
+                                        
+                        JULY<br/>2018<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Enhanced Approach for Intrusion Detection in Virtual Network of Cloud Computing, 10th International Conference on Advanced Computing (ICoAC), Springer, MIT Chennai
+                                        <br/>
+                                        
+                        <br/>2018<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_PubCategary1">International</span>
+                        <br/>
+                                        Designing an Efficient Framework for Violence Detection in Sensitive Areas using Computer Vision and Machine Learning Techniques, 10th International Conference on Advanced Computing (ICoAC), Springer, MIT Chennai
+                                        <br/>
+                                        
+                        <br/>2018<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Enhanced Intrusion Detection Framework for Securing Network Layer of Cloud Computing, ISEA IEEE Asia Security and Privacy Conference 2017
+                                        <br/>
+                                        
+                        JAN<br/>2017<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Efficient Security Framework to Detect Intrusions At Virtual Network Layer of Cloud Computing, 19th ICIN, Paris
+                                        <br/>
+                                        
+                        <br/>2016<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl24_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl24_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Novel Approach to Detect Extraneous Network  Traffic from the Compromised Router, International Conference on Recent Advances in Information Technology (RAIT-2016), IEEE, ISM Dhanbad 
+                                        <br/>
+                                        
+                        <br/>2016<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl25_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl25_Label_PubCategary1">International</span>
+                        <br/>
+                                        Privacy Preserving Association Rule Mining in Horizontally Partitioned Databases without involving Trusted Third Party (TTP),  ICACNI: Springer
+                                        <br/>
+                                        
+                        JULY<br/>2015<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl26_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl26_Label_PubCategary1">International</span>
+                        <br/>
+                                        Network Intrusion Detection in Cloud Computing, ERCICA: Springer
+                                        <br/>
+                                        
+                        JULY<br/>2015<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl27_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl27_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Efficient Approach for Privacy Preserving Distributed Mining of Association Rules in Unsecured Environment, ICACCI: IEEE
+                                        <br/>
+                                        
+                        <br/>2015<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl28_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl28_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Novel Hybrid-Network Intrusion Detection System (H-NIDS) in Cloud Computing, IEEE Symposium on Computational Intelligence for Communication Systems and Networks, Singapore
+                                        <br/>
+                                        
+                        <br/>2013<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl29_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl29_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Novel Framework for Intrusion Detection in Cloud, Fifth ACM International Conference on Security of Information and Networks, Jaipur
+                                        <br/>
+                                        
+                        <br/>2012<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl30_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl30_Label_PubCategary1">International</span>
+                        <br/>
+                                        Integrating Signature Apriori based Network Intrusion Detection System (NIDS) in Cloud Computing, International Conference on Communication, Computing and Security, Elsevier Procedia Technology, NIT Rourkela
+                                        <br/>
+                                        
+                        <br/>2012<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl31_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl31_Label_PubCategary1">International</span>
+                        <br/>
+                                        Bayesian Classifier and Snort based Network Intrusion Detection System in Cloud Computing, International Conference on Computing, Communication and Networking Technologies, IEEE, Coimbatore 
+                                        <br/>
+                                        
+                        <br/>2012<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl32_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl32_Label_PubCategary1">National</span>
+                        <br/>
+                                        Signature Apriori based Network Intrusion Detection System in Cloud, CSI - 46th Annual National Convention @ Ahmedabad Dec -2011 - Ph. D Colloquium
+                                        <br/>
+                                        
+                        DEC<br/>2011<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl33_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl33_Label_PubCategary1">International</span>
+                        <br/>
+                                        Maintaining Privacy and Data Quality in Privacy Preserving Association Rule Mining, International Conference on Computing, Communication and Networking Technologies, IEEE, Tamilnadu 
+                                        <br/>
+                                        
+                        <br/>2010<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl34_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl34_Label_PubCategary1">International</span>
+                        <br/>
+                                        A Survey on Preserving Privacy for Sensitive Association Rules in Databases, International Conference on Recent Trebds in Business Administration and Information Processing, Springer, Kerala 
+                                        <br/>
+                                        
+                        <br/>2010<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl35_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl35_Label_PubCategary1">International</span>
+                        <br/>
+                                        An Efficient Approach for Preventing Disclosure of Sensitive Association Rules in Databases, International Conference on Information and Knowledge Engineering, USA
+                                        <br/>
+                                        
+                        <br/>2010<br/> <br/>
+                    </li>
+
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl36_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl36_Label_PubCategary1">International</span>
+                        <br/>
+                                        Elliptic Curve Cryptography based Mining of Privacy Preserving Association Rules in Unsecured Environment, International Conference on Advances in Communication, Networking and Computing, IEEE, Calicut
+                                        <br/>
+                                        
+                        <br/>2010<br/> <br/>
+                    </li>
+
+                
+                    </ol>
+<br />
+                
+            <h3 class="font-semibold text-xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_bookchapter">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType_bookchapter">Book Chapter</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl01_Label_PubCategary_Book">International</span>
+                        <br/>
+                                        Vulnerability Assessment for Virtual Machines in Virtual Environment of Cloud Computing, Recent Findings in Intelligent Computing Techniques, Springer
+                                        <br/>
+                                        
+                        NOV<br/>2018<br/> <br/>
+                    </li>
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl02_Label_PubCategary_Book">International</span>
+                        <br/>
+                                        An Efficient Approach for Privacy Preserving Distributed K-Means Clustering in Unsecured Environment, Recent Findings in Intelligent Computing Techniques, Springer
+                                        <br/>
+                                        
+                        NOV<br/>2018<br/> <br/>
+                    </li>
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl03_Label_PubCategary_Book">International</span>
+                        <br/>
+                                        Designing a Virtual Environment Monitoring System to Prevent Intrusions in Future Internet of Things, Recent Findings in Intelligent Computing Techniques, Springer
+                                        <br/>
+                                        
+                        NOV<br/>2018<br/> <br/>
+                    </li>
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl04_Label_PubCategary_Book">International</span>
+                        <br/>
+                                        An Enhanced Approach for Detecting Helmet on Motorcyclists Using Image Processing and Machine Learning Techniques, Advanced Computing and Communication Technologies, Springer
+                                        <br/>
+                                        
+                        NOV<br/>2018<br/> <br/>
+                    </li>
+                
+                   <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl05_Label_PubCategary_Book">International</span>
+                        <br/>
+                                        Designing a Virtual Environment Monitoring System to Prevent Intrusions in Future Internet of Things, Recent Findings in Intelligent Computing Techniques, Springer
+                                        <br/>
+                                        
+                        NOV<br/>2018<br/> <br/>
+                    </li>
+                
+                    </ol>
+                
+            <p class="rightsm">
+                
+                
+            </p>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+        </div>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                                
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Designing out-of-VM Monitoring based Virtual Machine Introspection Framework for Securing Virtual Environment of Cloud computing- ECR/2017/001221, ECR, SERB, DST, JUNE 2017-JUNE 2020. Total cost: RS. 24.02 Lakhs. (Completed)</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Developing Smart Controller for Optimum Utilization of Energy and Trustworthy Management in a Micro Grid Environment- IMP/2019/000251, IMPRINT2C.1, SERB, DST, DEC 2019-DEC-2022. Total cost: RS. 93.92 lakhs. (On-going)</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+      <label for="toggle9" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                                
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Young Scientist Award: in the specialization of Cloud Computing, by Venus International Foundation, Chennai, India. 2015</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Best Review Paper Award: Title: "A survey of intrusion detection techniques in Cloud”, Journal of Network and Computer Application (Elsevier), 2015, San Diego, USA. </span>
+            </li>
+        
+            <li class="p-2">
+                <span>First Position in the “National level workshop and competition on Ethical Hacking”, conducted by Wegillent Inc. in association with IIT Roorkee, at NIT Surat, 2013.</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Best Paper Award: Title: "Runtime Program Semantics based Malware Detection in Virtual Machines of Cloud Computing" by ICINPro 2021</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table">
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4"></th>
+                    <th class="bg-blue-400 text-white p-4">Month
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Year
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Training attended Information
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                1
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2022
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Security, Privacy and Data Analytics (ISPDA-2022)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                NOV
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2022
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                INDICON 2022, IEEE 19th India Council International Conference
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                3
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2022
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2022 IEEE IAS Global Conference on Emerging Technologies (GlobConET)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                4
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Security, Privacy and Data Analytics (ISPDA-2021)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                5
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Information Processing
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                6
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2020
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IECON 2020- 46th Annual Conference of the IEEE IES, Singapore
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                7
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JAN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2020
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Workshop on virtual labs, NIT Goa
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                8
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                3rd International Conference on Computational Intelligence, Security and Internet of Things, NIT Agartala
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                9
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10th International Conference on Computing, Communication and Networking Technologies, IIT Kanpur
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Workshop on Blockchain for Global Good, VJTI Mumbai
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                11
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10th International Conference on Advanced Computing (ICoAC), MIT Chennai
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                12
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                9th International Conference on Computing, Communication and Networking Technologies, IISc Bangalore
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                13
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JAN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                ISEA IEEE Asia Security and Privacy Conference 2017,  29 Jan-1 Feb 2017, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                14
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Five days STTP on Big Data Analytics, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                15
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                19th Innovations in Clouds, Internet and Networks (ICIN), Paris
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                16
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                AUG
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                4th International Conference on Advances in Computing, Communications & Informatics, Kochi, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                17
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                National Workshop on How to Write Research Project Proposal, NIT Goa
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                18
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Privacy Preserving Data Mining, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                19
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                ACM India Annual Event-2015
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                20
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JAN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FICCI India Innovation Growth Programme
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                21
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2014
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Cloud Computing, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                22
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2013
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Indocrypt-2013, HBNI, Mumbai
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                23
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                NOV
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2013
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE Sponsored National Workshop on Cyber Security, DAIICT, Gandhinagar
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                24
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2013
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Wireless Sensor Networks: Secure Data Aggregation and Related Issues, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                25
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2013
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Machine Learning, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                26
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2013
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Hardening Cyber Security, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                27
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                ACM International Conference on Security of Information and Networks, MNIT Jaipur
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                28
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Communication, Computing and Security, NIT Rourkela
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                29
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Computing, Communication and Networking Technologies, Coimbatore
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                30
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                6th International Conference on Trust Management, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                31
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                National Level Workshop and Competition on Ethical Hacking, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                32
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Winter School on Trust Management in ICT, NIT Surat
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                33
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Garuda Boot Camp, PRL, Ahmedabad
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                34
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2011
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                46th Annual National Convention of CSI, Ahmedabad
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                35
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Advances in Communication, Network and Computing, Calicut
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                36
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Computing, Communication and Networking Technologies, Tamilnadu
+            </td>
+        </tr>
+        
+    
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table class="table-bordered table">
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4"></th>
+                    <th class="bg-blue-400 text-white p-4">Month
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Year
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Training Conducted Information
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                1
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IETE sponsored International Conference on Blockchain Technology (IC-BCT) 2019, Mumbai, Springer, as an organizing committee member and editor of the proceedings
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                5th International Conference on Advanced Computing, Networking and Informaics (ICACNI 2017), 1-3 June 2017
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                3
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One week Course on Cyber Crime Investigation and Digital Forensics, under MHRD GIAN Initiative. 30 Nov - 6 Dec, 2016
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                4
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10 Days Course on Advancements in Privacy Preserving Data Mining, under MHRD GIAN Initiative. 19 - 29 Dec, 2016
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                5
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                NOV
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10 Days Course on Public Key Infrastructure (PKI) and Trust Management, under MHRD GIAN Initiative. 5-14 Nov 2016
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                6
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                AUG
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One Day Workshop on High Performance Computing, 12 August, 2016. Sponsored by Wipro/Intel.
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                7
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                First National Workshop on Security and Privacy: Theory and Practice (SAP:TAP 2016)
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                8
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Recent Advancements in Privacy Preserving Mining (RAPPM), 23-28 May, 2016
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                9
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                STTP on Data Mining: Research Challenges and Innovations
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JAN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Workshop on Cyber Security
+            </td>
+        </tr>
+    
+        </tbody>
+</table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li class="p-2"><a href="../../index.html"><span class="">Home</span></a></li>
+            <li class="p-2"><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li class="p-2"><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li class="p-2"><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li class="p-2"><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li class="p-2"><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li class="p-2"><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li class="p-2"><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li class="p-2"><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li class="p-2"><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li class="p-2"><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li class="p-2"><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li class="p-2"><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li class="p-2"><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li class="p-2"><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li class="p-2"><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li class="p-2"><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li class="p-2"><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
