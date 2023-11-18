@@ -1,0 +1,1986 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Faculty Details</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .card-toggle {
+            width: 100%;
+            /* Adjust as needed */
+            height: 40px;
+            /* Adjust as needed */
+            background-color: #fff;
+            /* Toggle button color */
+        }
+
+        /* Show content when checkbox is checked */
+        #toggle1:checked~.card-content {
+            display: block;
+        }
+
+        #toggle2:checked~.card-content {
+            display: block;
+        }
+
+        #toggle3:checked~.card-content {
+            display: block;
+        }
+
+        #toggle4:checked~.card-content {
+            display: block;
+        }
+
+        #toggle5:checked~.card-content {
+            display: block;
+        }
+
+        #toggle6:checked~.card-content {
+            display: block;
+        }
+
+        #toggle7:checked~.card-content {
+            display: block;
+        }
+
+        #toggle8:checked~.card-content {
+            display: block;
+        }
+
+        #toggle9:checked~.card-content {
+            display: block;
+        }
+
+        #toggle10:checked~.card-content {
+            display: block;
+        }
+
+        #toggle11:checked~.card-content {
+            display: block;
+        }
+
+        #toggle12:checked~.card-content {
+            display: block;
+        }
+
+        #toggle13:checked~.card-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+        <div class="flex items-center text-gray-300 mr-8">
+            <div class="flex items-center gap-4" id="header-favicon">
+                <div>
+                    <i class="md:hidden fas fa-envelope"></i>
+                    <span>your@email.com
+                </div>
+                <div>
+                    <i class="md:hidden fas fa-phone "></i>
+                    <span>+1234567890
+                </div>
+            </div>
+        </div>
+        <div class="flex ml-8">
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+                <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+
+            </div>
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="https://www.nitgoa.ac.in/gian/"
+                    class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+                <a href="https://www.nitgoa.ac.in/login.aspx"
+                    class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header id="main-header"
+        class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+        <div class="flex justify-center">
+            <div class="headerBar ">
+                <div class="logo-container flex flex-col justify-center items-center">
+                    <img src="../../static/logo_color.png" class="logo" id="logo_img">
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="text-center">
+            <nav class=" justify-center items-center bg-white">
+                <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10"
+                    id="Nav">
+                    <div class="dropdown ">
+                        <a href="../../index.html">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Administration</button>
+                        <div class="dropdown-content">
+                            <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                            <a href="../../administration/director_message.html">Director</a>
+                            <a href="../../administration/registrar.html">Registrar</a>
+                            <a href="../../administration/senate.html">Senate</a>
+                            <a href="../../administration/dean.html">Deans</a>
+                            <a href="../../administration/Committees.html">Committees</a>
+                            <a href="../../administration/finance_committee.html">Finance Committee</a>
+                            <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                            <a href="../../administration/hod.html">Heads of Departments </a>
+                            <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                            <a href="../../administration/reports.html">Reports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Academics</button>
+                        <div class="dropdown-content">
+                            <a href="../../academics/academic_calendar.html">Calendar</a>
+                            <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                            <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                            <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                            <a href="../../academics/departments.html">Departments</a>
+                            <a href="../../academics/library.html">Library</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Admissions</button>
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                                    <a href="../../admissions/dasa.html">DASA</a>
+                                    <a href="../../admissions/facilities.html">Facilities</a>
+                                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <a href="../../admissions/mtech.html">M.Tech</a>
+                            <a href="../../admissions/phd.html">Ph.D</a>
+                            <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Training & Placement</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                            <a href="#">Company Login</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">People</button>
+                        <div class="dropdown-content">
+                            <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                            <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                            <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                            <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="../../research/R&DProjects.html">R & D Projects</a>
+                            <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../outreach_activities.html">Outreach Activities</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../nirf.html">NIRF</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee
+                            Payment</a>
+                    </div>
+                </div>
+
+                <!--Toggle Menu Hamburger-->
+                <div class="menu-toggle" onclick="togglemenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+        </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <div class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6">
+        <img src="Dr. Suresh Mikkili.png" alt="Faculty Image"
+            class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800" />
+        <h2 class="text-xl font-bold mb-2">Dr. Suresh Mikkili</h2>
+        <p class="text-gray-600 mb-4">
+            Associate Professor, Department of Electronics and Communication Engineering
+        </p>
+        <p class="text-gray-700">
+            Research Area: Smart Electric Grid, Electric vehicles, Grid connected/Stand-Alone PV Systems, Wireless Power Transfer,Renewable Energy Systems, Power Quality Issues and Applications of Soft Computing Techniques.
+        </p>
+        <div class="mt-4">
+            <p> Email:<a href="#" class="text-blue-500"> mikkili.suresh@nitgoa.ac.in</a></p>
+        </div>
+    </div>
+
+    <div class="flex-col justify-center">
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+            <label for="toggle1" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Personal Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+                <p class="p-2">Name: Dr. Suresh Mikkili</p>
+                <p class="p-2">Gender: Male</p>
+                <p class="p-2">Birth Date- 05/08/1985</p>
+                <p class="p-2">Designation: Associate Professor</p>
+                <p class="p-2">
+                    Department: Department of Electrical and Electronics Engineering
+                </p>
+                <p class="p-2">URL: <a  class="text-blue-500" href="https://scholar.google.co.in/citations?hl=en&user=keXUBFkAAAAJ&view_op=list_works&authuser=2&sortby=pubdate">[Google
+                        Scholar - Dr. Suresh Mikkili]</a></p>
+                <p class="p-2">Date of Joining: 15/01/2013</p>
+                <p class="p-2">
+                    Research/Teaching Experience: 12 Years 09 Months - as on dt. 12-10-2023
+                </p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+            <label for="toggle2" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Contact Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">
+                    Address: Associate Professor, Dept. of Electrical and Electronics Engineering, National Institute of Technology Goa Farmagudi, Ponda, Goa-403401
+                </p>
+                <p class="p-2">City: PONDA</p>
+                <p class="p-2">State: GOA</p>
+                <p class="p-2">Country: INDIA</p>
+                <p class="p-2">Email Address: mikkili.suresh@nitgoa.ac.in</p>
+                <p class="p-2">Phone [Residence]: -</p>
+                <p class="p-2">Phone [Mobile]: 7588133009</p>
+                <p class="p-2">Office Extension: 0832-2404214</p>
+
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+            <label for="toggle3" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Research Area
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">Smart Electric Grid, Electric vehicles, Grid connected/Stand-Alone PV Systems, Wireless Power Transfer,
+                </p>
+                <p class="p-2">
+                    Renewable Energy Systems, Power Quality Issues and Applications of Soft Computing Techniques.</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+            <label for="toggle4" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Courses Taught
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    UG Courses
+                </h3>
+                <p class="p-2">Power Systems Transmission and distribution, Switch Gear and Protection, Linear System Analysis, LDIC Applications, Control Systems, Linear and Non-linear Systems, Soft Computing,
+                </p>
+                <p class="p-2">Neural Networks and Fuzzy Logic,Basic Electrical Sciences, Circuit Theory, Power Electronics Applications to power systems, HVDC Transmission, Flexible AC Transmission, Power System Analysis</p>
+
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    PG Courses
+                </h3>
+                <p class="p-2">HVDC and FACTS, Advanced Power System Analysis,
+                </p>
+                <p class="p-2">Smart Electric Grid, Power Quality, and Soft Computing.</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+            <label for="toggle5" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Academic Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <div class="">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                                <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">Institute / University
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">year
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">subject
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    1
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    B.Tech.  
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    S.I.T.E / JNTU Hyderabad (2002 - 2006)
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2006
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Electrical & Electronics Engineering
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    M.Tech.  
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    National Institute of Technology, Rourkela. (2006 - 2008)	
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2008
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Electrical Engineering
+                            </tr>
+
+                        </tbody>
+                        <tbody>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    3
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Ph.D.   
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    National Institute of Technology, Rourkela. (2010-2013)
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2013
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Electrical Engineering
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+            <div class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl ">
+                Paper Published
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <div class="panel-body">
+                <h3 class="text-2xl font-semibold">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+                </h3>
+
+                <div class="table-responsive">
+
+                    <ol style="margin-left:15px;">
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Srinivasan V, Sridhar R., Suresh Mikkili, et al. "Hybrid Social Grouping Algorithm-Perturb and Observe Power Tracking Scheme for Partially Shaded Photovoltaic Array", International Journal of Energy Research - WILEY, vol. 2023, Article ID 9905979, 18 pages, Sept. 2023.   
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Gaurav Kumar and Suresh Mikkili, “Critical Review of Vehicle-to-Everything (V2X) Topologies: Communication, Power Flow Characteristics, Challenges, and Opportunities”, IEEE CPSS Transactions on Power Electronics and Applications, Accepted, Sept. 2023    SEPT  2023     
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya C and Suresh Mikkili, “Hardware Implementation of Sensor-less Matrix Shifting Reconfiguration Method to Extract Maximum Power Under Various Shading Conditions”, IEEE CPSS Transactions on Power Electronics and Applications, Accepted, June 2023    JUN  2023    
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, “Hardware Implementation of a Novel Hybrid Slime Mould MPPT Technique for BL-HC configured Solar PV System under PSCs”, Circuit World, Accepted – April 2023. 
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya C and Suresh Mikkili, “Hardware Implementation of Proposed and Conventional PV Array Reconfiguration Techniques (SK, OSK, MS, ZZ, SS, NSD, and MMS) to Extract Maximum Power under Various Shading
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, “A Novel Hybrid Slime Mould MPPT Technique for BL-HC Configured Solar PV System under PSCs”, Journal of Control, Automation and Electrical Systems –Springer, Accepted – March 2023    MAR  2023                                 &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Raghu Vamsi Krishna C., Suresh Mikkili, and Praveen Kumar B, “A Critical Review on Hybrid-Topologies, Modulation Techniques, and Controlling Approaches of Modular Multilevel Converter for Grid Integration”, IETE Journal of Research - Taylor & Francis, Accepted – Dec 2022, https://doi.org/10.1080/03772063.2022.2143438    DEC  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya C., Suresh Mikkili, and Tomonobu Senjyu, “Experimental Validation of Novel Shade Dispersion PV Reconfiguration Technique to Enhance Maximum Power under PSCs”, IEEE CPSS Transactions on Power Electronics and Applications, Accepted, Sept. 2022    SEPT  2022    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Raghu Vamsi Krishna C, Suresh Mikkili, and Praveen Kumar B, “Modelling, Controlling Approaches, Modulation Schemes, and Applications of Modular Multilevel Converter: Review”, Journal of Control, Automation and Electrical Systems –Springer, Accepted – Aug 2022    AUG  2022  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya Chandrakant, Suresh Mikkili, and Tomonobu Senjyu. " Hardware Implementation of Novel Shade Dispersion PV Reconfiguration Technique to Enhance Maximum Power under Partial Shading Conditions " Energies - MDPI Journal, MAY 2022 , 15, no. 10: 3515. https://doi.org/10.3390/en15103515 (SCI-E Journal)    MAY  2022  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Aditi Atual Desai, Suresh Mikkili, and Tomonobu Senjyu, “Novel H6 Transformerless Inverter for Grid Connected Photovoltaic System to reduce the Conduction Loss and Enhance Efficiency”, Energies - MDPI Journal, MAY 2022 , 15(10), 3789; https://doi.org/10.3390/en15103789 (SCI-E Journal)    MAY  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, Akshay Kanjune and Praveen Kumar B, “Sudoku and Optimal Sudoku Reconfiguration Techniques for Power Enhancement of Partial Shaded Solar PV system”, Journal of The Institution of Engineers (India): Series B (IEIB)- Springer, MAY 2022 , Accepted (SCI-E Journal)    MAY  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, Akshay Kanjune, Praveen K. Bonthagorla, and Tomonobu Senjyu. "Non-Symmetrical (NS) Reconfiguration Techniques to Enhance Power Generation Capability of Solar PV System" Energies 15, no. 6: 2124, 2022. https://doi.org/10.3390/en15062124    MAR  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Gul Ahmad Ludin, Akito Nakadomari, Atsushi Yona, Suresh Mikkili, Shriram S. Rangarajan, E. Randolph Collins, Tomonobu Senjyu, “Technical and Economic Analysis of an HVDC Transmission System for Renewable Energy Connection in Afghanistan”, Sustainability Journal -MDPI, Jan 2022. Accepted - (SCI-E Journal)    JAN  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, Raghu Vamsi Krishna, Praveen Kumar Bonthagorla, and Tomonobu Senjyu, “Performance Analysis of Modular Multilevel Converter with NPC Sub-Modules in Photovoltaic Grid-Integration”, Applied Sciences Journal-MDPI, 2022; 12(3): 1219. Jan 2022. https://doi.org/10.3390/app12031219 - (SCI-E Journal)    JAN  2022     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Dharani Kolantla, Suresh Mikkili, and Suneel Raju Pendem, “Mitigation of Cross-coupling Effects in PV String-Integrated-Converters with SEPIC Converter using P&O MPPT Technique”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal) Jan 2022    JAN  2022  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       S R Pendem, Suresh Mikkili, Shriram S. Rangarajan, Sudhakar Avv, Randolph E. Collins, and Tomonobu Senjyu, “Optimal Hybrid PV Array Topologies to Maximize the Power Output by Reducing the Effect of Non-Uniform Operating Conditions”, Electronics Journal -MDPI, 10(23), 3014; http://dx.doi.org/https://doi.org/10.3390/electronics10233014 Accepted - (SCI-E Journal) Dec 2021    DEC  2021   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       7. Aditi Atual Desai and Suresh Mikkili, "Comprehensive Analysis of Conventional and Hybrid PV Configurations Under Partial Shading Conditions to Mitigate Mismatching Loss and Optimize the Output Power", Journal of Control, Automation and Electrical Systems Vol. 33, pp.483–504, Sept. 2022. https://doi.org/10.1007/s40313-021-00800-2    SEPT  2021     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Ratnakar Babu B., Suresh Mikkili, Praveen Kumar B., “Application of Radial Basis Neural Network in MPPT Technique for stand-alone PV system under partial shading conditions”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal)    SEPT  2021  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya Chandrakant and Suresh Mikkili, “Repositioning of Series-Parallel, Total-Cross-Tide, Bridge-Link and Honey-Comb PV array configurations for maximum power extraction”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal)    SEPT  2021     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Kanjune Akshay B, Suresh Mikkili and Praveen Kumar B, "A Review on Static Reconfiguration Techniques of Solar PV to Mitigate Mismatch Loss and Minimize Partial shading effect”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal)    SEPT  2021   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Aditi Atul Desai and Suresh Mikkili, “Novel Hybrid PV configurations to enhance the output power and efficiency by minimizing number of peaks and mismatching loss”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal)    JUN  2021     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya Chandrakant and Suresh Mikkili, “Effect of PV array positioning on mismatch and wiring losses in Static Array Reconfiguration”, IETE Journal of Research - Taylor & Francis - Accepted - (SCI-E Journal)    JUN  2021    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Chavan Vinaya Chandrakant and Suresh Mikkili, "A Typical Review on Static Reconfiguration Strategies in Photovoltaic Array Under Non-uniform shading Conditions," IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    OCT  2020     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar Bonthagorla, Suresh Mikkili, "Performance Investigation of Hybrid and Conventional PV Array Configurations for Grid-Connected/Standalone PV Systems," IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    SEPT  2020  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Aditi Atul Desai and Suresh Mikkili, "Modelling and Analysis of PV configurations (Alternate TCT-BL, Total Cross Tied, Series, Series Parallel, Bridge Linked and Honey Comb) to extract Maximum Power under Partial Shading Conditions", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    JUN  2020    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suneel Raju Pendem and Suresh Mikkili, "Assessment of Cross-coupling Effects in PV String-Integrated-Converters with P&O MPPT Algorithm under various Partial Shading Patterns", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    JUN  2020    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, "Performance Analysis of PV Array Configurations (SP, BL, HC and TT) to Enhance Maximum Power under Non-Uniform Shading conditions", Accepted - Engineering Reports - Wiley    MAY  2020  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, "Hybrid, Optimization, Intelligent and Classical PV MPPT Techniques : Review", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    MAY  2020     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Dharani Kolantla, Suresh Mikkili, Suneel Raju Pendem, and Aditi Atul Desai, "A Critical Review on various Inverter Topologies for PV system Architectures," IET Renewable Power Generation, - Provisionally Accepted - (SCI-E Journal) April. 2020.    APRIL  2020    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, "A Novel Fixed PV Array Configuration for Harvesting Maximum Power from Shaded Modules by Reducing the Number of Cross-Ties", IEEE- Journal of Emerging and Selected Topics in Power Electronics- Accepted - (SCI-E Journal)    MAR  2020   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Ratnakar Babu Bollipo, Suresh Mikkili, Praveen Kumar Bonthagorla, " Critical Review on PV MPPT Techniques: Classical, Intelligent and Optimization", IET Renewable Power Generation - Accepted - (SCI-E Journal)    FEB  2020  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, "Optimal PV Array Configuration for Extracting Maximum Power by Mitigating Mismatching Power Losses under Nine Shading Conditions ", IEEE CSEE Journal of Power and Energy Systems - Accepted - (SCI-E Journal)    FEB  2020  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Gomathi Ramalingam, Ajay Kumar Choudhary, Suresh Mikkili, "Modelling and Analysis of PV-Based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality", International Journal of Emerging Electric Power Systems, Volume 20, Issue 6, 2019    DEC  2019   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Vinay Kumar Kolakaluri, Suresh Mikkili, "Integration of Battery Energy Storage Systems to Solar PV to Reduce the AH Capacity by Extracting Maximum Power from PV Array under Varying Irradiance and Load Conditions for Rural/Remote Area Applications", International Journal of Emerging Electric Power Systems, Volume 20, Issue 5, 2019    OCT  2019    
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Vinay Kumar Kolakaluri, C Vyjayanthi, Suresh Mikkili, "PV-Battery Hybrid System with Less AH Capacity for Standalone DC Loads", International Journal of Emerging Electric Power Systems, Volume 20, Issue 4, 2019    AUG  2019
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, “PV Distributed-MPP Tracking: Total-Cross-Tied configuration of String-Integrated-Converters to extract the maximum Power under various PSCs with P&O MPPT Technique”, IEEE Systems Journal- Accepted - (SCI-E Journal)    MAY  2019     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suneel Raju Pendem and Suresh Mikkili, “Modelling, Simulation and Performance Analysis of Solar PV Array Configurations (Series, Series-Parallel and Honey-Comb) to Extract Maximum Power under Partial Shading Conditions”, Energy Reports - Elsevier, Volume 04, Pages 274-287, 2018 (SCI-E Journal)    NOV  2018 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suneel Raju Pendem and Suresh Mikkili, “Modeling, simulation, and performance analysis of PV array configurations (Series, Series-Parallel, Bridge-Linked, and Honey-Comb) to harvest maximum power under various PSCs” International Journal of Green Energy - Taylor and Francis, Volume 15, No. 13, pp.795-812, 2018. -(SCI - Journal)    OCT  2018 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Besta Umamaheswaraiah, “A Zig-zag Transformer based Hybrid Power Filter with Cascaded Three level Multilevel Inverter to Enhance Power Quality in Three-Phase Four-wire Distribution Power System”, Journal of Electrical Engineering, Vol. 18, No.1, pp. 264-275, 2018.    APRIL  2018   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suneel Raju Pendem, Suresh Mikkili "Modelling and performance assessment of PV array topologies under partial shading conditions to mitigate the mismatching power losses" Solar Energy - Elsevier, Volume 160, pp. 303–321, 2018 (SCI-E Journal)    JAN  2018     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, Adinarayana, “PHC, Id-Iq and pq Control Strategies for Mitigation of Current Harmonics in Three-Phase Three-Wire Shunt Active Filter with PI Controller”, International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 18, Issue 2, April 2017.    APRIL  2017     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Elavala Satish, Suresh Mikkili, Lav Kumar Gupta, “Synchronous Reference Frame method for Mitigation of Current Harmonics with PI and FLC based Shunt Active Filter under Load Variation”, International Journal of Innovations in Engineering and Technology, Vol. 7, Issue 3, pp. 433-450, 2016.    OCT  2016     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, and A. K. Panda, “Power Quality Issues and Solutions – Review," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 16, Issue 4, Pages 357–384, Aug 2015.    AUG  2015     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, Anup Kumar Panda and Jayanthi Prattipati “Review of RT-LAB and steps involved for implementation of a Simulink Model from MATLAB to REAL-TIME” Journal of the Institution of Engineers (India): Series B _ (Springer), Volume 96, Issue 2, pp 179-196, June 2015.    JUN  2015 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar B and Suresh Mikkili, “A Novel Hybrid Slime Mould MPPT Technique for BL-HC Configured Solar PV System under PSCs”, Journal of Control, Automation and Electrical Systems –Springer, Accepted – March 2023    MAR  2023                                 &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, and A. K. Panda, “Review and Analysis of Type-1 and Type-2 Fuzzy Logic Controllers", Journal of Automation & Systems Engineering, Volume 8, Issue 3, Pages 151-174, Sept. 2014.    SEPT  2014  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, and A. K. Panda, “Real-Time Implementation of Type-2 FLC–Based Shunt Active Filter Control Strategies (p–q and Id–Iq) with Different Fuzzy MFs for Power Quality Improvement,” International Journal of Emerging Electric Power Systems : be press (Berkeley Electronics press), Vol. 15, Issue 3, Pages 217–236, June 2014.    JUN  2014     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, and A. K. Panda, “Performance analysis and real-time implementation of shunt active filter current control strategy with type-1 and type-2 FLC triangular M.F,” International Transactions on Electrical Energy Systems - John Wiley & Sons Volume 24, Issue 3, pages 347–362, March 2014-(SCI-E Journal)    MAR  2014     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, A.K. Panda, “FLC based shunt active filter (p–q and Id–Iq) control strategies for mitigation of harmonics with different fuzzy MFs using MATLAB and real-time digital simulator,” International Journal of Electrical Power and Energy Systems – Elsevier, vol. 47, pp. 313-336, May, 2013. -(SCI - Journal)    MAY  2013 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and A. K. Panda , “Types-1 and -2 fuzzy logic controllers-based shunt active filter Id–Iq control strategy with different fuzzy membership functions for power quality improvement using RTDS hardware,” IET Power Electronics, Vol. 6, Issue 4, pp. 818-833, April 2013. -(SCI - Journal)    APRIL  2013  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili, A.K. Panda, “Real-time implementation of PI and fuzzy logic controllers based shunt active filter control strategies for power quality improvement,” International Journal of Electrical Power and Energy Systems – Elsevier, vol. 43, pp. 1114-1126, Dec. 2012. -(SCI - Journal)    DEC  2012  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and A. K. Panda, “RTDS hardware implementation and simulation of SHAF for mitigation of harmonics using p-q control strategy with PI and fuzzy logic controllers,” Frontiers of Electrical and Electronic Engineering– Springer, Vol. 7, No.4, pp. 427–437, Dec. 2012. -(SCI - Journal)    DEC  2012     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and A. K. Panda, “Simulation and real-time implementation of shunt active filter id-iq control strategy for mitigation of harmonics with different fuzzy membership functions,” IET Power Electronics, Vol. 5, No. 9, pp.1856 – 1872, Nov. 2012. -(SCI - Journal)    NOV  2012   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       A. K. Panda and Suresh Mikkili "Fuzzy logic controller based Shunt Active Filter control strategies for Power quality improvement Using Different Fuzzy M.F.s," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 13: Iss. 5, Article 2.DOI: 10.1515/1553-779X.2942, Nov. 2012.    NOV  2012     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, “Real-Time Implementation of Shunt Active Filter P-Q Control Strategy for Mitigation of Harmonics with Different Fuzzy M.F.s,” Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 12, No. 5, , pp.821-829, Sept. 2012. -(SCI - Journal)    SEPT  2012 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh. Y, A.K. Panda, M Suresh, “Real-time implementation of adaptive fuzzy hysteresis-band current control technique for shunt active power filter,” IET Power Electronics, 2012, Vol. 5, No. 7, pp. 1188–1195, August 2012. -(SCI - Journal)    AUG  2012   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Prof.A.K. Panda “RTDS Hardware implementation and Simulation of 3ph 4wire SHAF for mitigation of Current harmonics with p-q Control strategy using PI controller,” Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 76-86, Jan. 2012.    JAN  2012     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and A.K. Panda “Simulation and RTDS Hardware implementation of 3ph 4wire SHAF for mitigation of Current harmonics Using id-iq Control strategy with PI Controller,” Journal of Electrical Engineering (JEE), Vol. 12, No.1, pp. 128-137, Jan. 2012.    JAN  2012   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, “PI and Fuzzy Logic Controller Based 3-Phase 4-Wire Shunt Active Filters for the Mitigation of Current Harmonics with the Id-Iq Control Strategy,” Journal of power Electronics (JPE) (KIPE- South Korea), Vol. 11, No. 6, pp. 914-921, Nov. 2011. -(SCI-E Journal)    NOV  2011  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, “Id-Iq Control Strategy for Mitigation of Current Harmonics with Fuzzy Logic Controller Using Matlab/Simulation and RTDS Hardware”, Intelligent Control and Automation, Vol. 2, No.4, pp.371-382, Nov. 2011.    NOV  2011  
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, "Fuzzy and PI Controller Based SHAF for Mitigation of Current Harmonics with P-Q Method Using Matlab and RTDS Hardware," Energy and Power Engineering (EPE), Vol. 3 No. 4, pp. 407-421, Sept. 2011.    SEPT  2011 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and A.K. Panda, "RTDS Hardware implementation and Simulation of 3-ph 4-wire SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using Fuzzy Logic Controller," International Journal of Emerging Electric Power Systems: be press (Berkeley Electronics press), Vol. 12: No. 5, Article 5, Aug. 2011.    AUG  2011   
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh. Mikkili, A.K. Panda, “SHAF for Mitigation of Current harmonics using p-q method with PI and Fuzzy Controllers”, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 4, pp. 98-104, Aug. 2011.    AUG  2011 
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, “Instantaneous Active and Reactive Power and Current Strategies for Current Harmonics Cancellation in 3-ph 4-Wire SHAF with Both PI and Fuzzy Controllers”, Energy and Power Engineering (EPE), Vol. 3 No. 3, pp. 285-298, July 2011.    JULY  2011     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+   <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Suresh Mikkili and Anup Kumar Panda, “Simulation and RTDS Hardware implementation of SHAF for Mitigation of Current Harmonics with p-q and Id-Iq Control strategies using PI controller”, Eng. Technol. Appl. Sci. Res., ISSN: 1792-8036, Vol. 1, No. 3, pp. 54-62, May. 2011.    MAY  2011     
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+
+
+
+
+
+                    </ol>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</span>
+                </h3>
+
+                <ol style="margin-left:15px;">
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        Guru Prakash, Siddharth R. K, Nithin Kumar Y.B, Vasantha.M.H., and Edoardo Bonizzoni, “A 1-V,
+                        5-bit, 180-uW, Differential Pulse Position Modulation ADC in 65-nm CMOS Process” accepted at
+                        IEEE International Symposium on Circuits and Systems, Daegu, Korea from May 22-28, 2021.
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Vinaya C. Chavan and Suresh Mikkili, “Optimal Sudoku, skyscraper, and Proposed Reconfiguration Techniques for Extraction of Maximum Power under Partial Shading Conditions”, in proceedings of IEEE 19th Annual India Council International Conference (INDICON), 24th to 26th November 2022, Kochi, India.    NOV  2022    
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       V C Chavan, Suresh Mikkili, and Praveen Kumar B, 'Novel Shade Dispersion Method to Extract Maximum Power under partial shading condition', in proceedings of 47th Annual Conference of the IEEE Industrial Electronics Society IEEE IECON 2021, 13th to 16th October 2021, Toronto, Canada    OCT  2021     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Aditi Desai, Suresh Mikkili “Novel Hybrid PV Array Configurations for extracting maximum Power by reducing number of peaks and mitigating mismatching power loss under partial shading conditions,” IECON 2020 (paper accepted), October 18-21, 2020, Singapore    AUG  2020     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Configurations for Reducing the Multiple-Peak Power Points in I-V and P-V characteristics under Partial Shading Conditions", in Proceedings of 39th Annual International IEEE Region- 10 conference (TENCON-2019), 17th to 20th October 2019, Kochi, Kerala    OCT  2019     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem, Vikash Varma Katru, and Suresh Mikkili, "Hybrid PV Array Con?gurations for Mitigating the Mismatching Power loss and Number of Peaks in the Output Characteristics under various PSCs", in proceedings of 45th Annual Conference of the IEEE Industrial Electronics Society (IECON - 2019), 14th to 17th October 2019, Lisbon, Portugal.    OCT  2019  
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem and Suresh Mikkili, “Mitigation of Cross-coupling effects in PV D-MPPT systems with T-C-T configuration of String-Integrated-Converters using INC Algorithm”, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019.    JULY  2019  
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Praveen Kumar B and Suresh Mikkili, “Performance analysis of Closed loop controlled Single-Phase Unipolar Inverter with Fixed Switching Frequency Sliding Mode Control”, in Proceedings of IEEE International Conference on Energy, Systems and Information Processing (IEEE ICESIP 2019), 4th to 6th July 2019    JULY  2019 
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem, Suresh Mikkili, and Praveen Kumar B, “ PV Distributed-MPP Tracking: Total-Cross-Tied configuration of MICs to extract the Maximum Power under Partial Shading conditions”, 8th biennial IEEE International Conference on Power Electronics, Drives and Energy Systems, 18th – 21st Dec. 2018 (PEDES-2018).    DEC  2018     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem, Suresh Mikkili, and Vikash Varma K, “ Total-Cross-Tied Configuration of MICs for Enhancing the Performance of PV D-MPPT systems under various PSCs using P&O Algorithm”, 15th Annual IEEE India Council International Conference, 16th – 18th Dec. 2018 (INDICON-2018).    DEC  2018   
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Gomathi Ramalingam, Ajay K Choudhary and Suresh Mikkili, “Modeling and Analysis of PV-based Shunt Active Filter with BESS and Conservative Power Theory for Enhancing Power Quality”, 15th Annual IEEE India Council International Conference (INDICON-2018), 16th to 18th December, 2018.    DEC  2018   
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       G. Krishna Reddy and Suresh Mikkili, “Grid Integration of Solar Photovoltaic system with Storage under Partial Shading Conditions using Distributed MPPT Technique”, in proc. of International Conference on Computing of Power, Energy, Information & Communication, 28th to 29th Feb, 2018.    FEB  2018     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem and Suresh Mikkili, “Performance Evaluation of Series, Series-Parallel and Honey Comb PV Array Configurations under Partial Shading Conditions”, in Proceedings of 7th Biennial International Conference on Power Systems (ICPS), 21st- 23rd Dec. 2017.    DEC  2017   
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suneel Raju Pendem and Suresh Mikkili, “Analysis of Series, Series-Parallel and Total-Cross-Tied PV Array Configurations to Grid-connected and Stand-alone PV systems under Illumination Transition Conditions”, in Proceedings of 6th Biennial International Conference on Advances in Energy Research (ICAER), 12th – 14th Dec. 2017, IIT-Bombay.    DEC  2017  
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       E Satish, L K Gupta and Suresh Mikkili, “PI and FLC (Triangular and Gaussian MF) based SHAF under Load Variation Using SRF Method”, in proc. of EEE 7th Bi-Annual India International Conference on Power Electronics – (IICPE), Nov. 17-19, 2016, Thapar University, Patiala (Punjab).    NOV  2016  
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       B. Ravi Teja, Suresh Mikkili, “Deployment of Fuzzy based MRAS and IRFOC strategy with fast tracking for the sensorless speed control of SPIM”, in proc. of 6th IEEE Annual International Conference on Power Systems (ICPS), March 2016, IIT Delhi.    MAR  2016 
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       R. Patel, A.K.Panda and Suresh. Mikkili “PI and fuzzy logic controller based 3-phase 4-wire interleaved buck active power filter for mitigation of harmonics with the Id-Iq control strategy” IECON 2013 - 39th Annual Conference on IEEE Industrial Electronics Society , pp. 2145 – 2150, 10-13 Nov. 2013, Vienna, Austria.    NOV  2013  
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili and A.K.Panda, “Type-1 and Type-2 FLC based Shunt active filter Id-Iq control strategy for mitigation of harmonics with Triangular MF," IEEE PEDES Dec. 16-19, 2012, CPRI/IISC-Bangalore.    DEC  2012    
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh Mikkili and Anup Kumar Panda, "Real-time implementation of power theory using FLC based shunt active filter with different fuzzy M.F.s ,” IECON 2012 - 38th Annual Conference on IEEE Industrial Electronics Society , pp. 702 – 707, DOI : 10.1109/IECON.2012.6388666., 25-28 Oct. 2012, Montreal, QC, Canada.    OCT  2012     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, “Mitigation of Harmonics using Fuzzy Logic Controlled Shunt Active Power Filter with Different Membership Functions By Instantaneous Power Theory,” IEEE SCES, DOI: 10.1109/SCES.2012.619910316-18 March 2012, MNNIT-ALLAHABAD.    MAR  2012   
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, “Simulation and RTDS Hardware implementation of SHAF for current harmonics cancellation using Id-Iq control strategy with PI and fuzzy controllers,” IEEE ICPS, pp. 1-6, DOI: 10.1109/ICPES.2011.6156669, 22-24, Dec. 2011, IIT MADRAS.    DEC  2011 
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, “Id-Iq control strategy for mitigation of current harmonics with PI and fuzzy controllers,” IEEE ICPS, pp. 1-6, DOI:10.1109/ICPES. 2011.6156668, 22-24, Dec. 2011, IIT MADRAS.    DEC  2011     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, PI controller based shunt active filter for mitigation of current harmonics with p-q control strategy using simulation and RTDS hardware,” IEEE INDICON, pp. 1-6, DOI: 10.1109/INDCON.2011.6139547, 16-18, Dec. 2011, BITS-PILANI HYD .    DEC  2011     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda,, Fuzzy logic controller based SHAF for current harmonics compensation with p-q control strategy using simulation and RTDS hardware," IEEE INDICON- 2011, pp. 1-6, DOI: 10.1109/INDCON.2011.6139546, 16-18, Dec. 2011, BITS-PILANI HYD .    DEC  2011
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili and A.K.Panda, “Fuzzy logic controller based 3-ph 4-wire SHAF for current harmonics compensation with id-iq control strategy using simulation and RTDS hardware," IEEE PEDS, pp. 430-435, DOI: 10.1109/PEDS.2011.6147284, Dec 2011, Singapore.    DEC  2011     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, “PI and fuzzy controller based 3-ph 4-wire SHAF for current harmonics compensation using p-q control strategy,” IET-SEISCON 2011, pp. 299 – 303, DOI : 10.1049/cp.2011.0378, 20-22 July 2011, MADRAS.    JULY  2011     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh. Mikkili, A.K. Panda, “SHAF for mitigation of Current harmonics with p-q and Id-Iq control strategies using both PI and Fuzzy Controllers,” IET-SEISCON 2011, pp. 358-362, DOI:10.1049/cp.2011.0389, 22 July 2011, MADRAS.    JULY  2011     
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+ <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Mikkili Suresh, A. K. Panda, S. S. Patnaik, S. Yellasiri, “ Comparison of two compensation control strategies for shunt active power filter in three-phase four-wire system,” IEEE PES Innovative Smart Grid Technologies (ISGT), pp.1-6, DOI:10.1109/ISGT.2011.5759126., Jan. 2011, Hilton Anaheim, CA, USA.    JAN  2011
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+
+                </ol>
+                <br />
+
+                <h3 class="text-2xl font-semibold">
+
+
+                </h3>
+
+                <p class="rightsm">
+
+
+                </p>
+
+                <p class="rightsm">
+
+
+                </p>
+
+            </div>
+            <div class="panel-body">
+                <h3 class="text-2xl font-semibold">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType"> Book Chapter</span>
+                </h3>
+
+                <div class="table-responsive">
+
+                    <ol style="margin-left:15px;">
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar Bonthagorla and Suresh Mikkili, “Power Enhancement of Total-Cross-Tied (TCT) configured PV Array during Dynamic Irradiance change using Meta-heuristic Algorithm based MPPT controllers,” Springer Book Series “Lecture Notes in Networks and Systems” -Accepted.    FEB  2022   
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Praveen Kumar Bonthagorla, Suresh Mikkili and A. K. Bapurao “Optimal Sudoku Static Reconfiguration Technique for Power Enhancement of PV Array under Partial shading Conditions,” Springer Book Series “Lecture Notes in Networks and Systems” -Accepted.    FEB  2022 
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: </span>
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary"></span>
+                            &nbsp; &nbsp; &nbsp;
+                            International       Vinaya C Chavan, and Suresh Mikkili, “Matrix Magic Shifting to Extract Maximum Power under Partial shading Conditions”, Springer Book Series “Lecture Notes in Networks and Systems” -Accepted.    FEB  2022    
+                            &nbsp;&nbsp;
+
+                            &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                        </li>
+
+
+                        
+
+
+                    </ol>
+
+                </div>
+
+                <h3 class="text-2xl font-semibold">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Books Authored</span>
+                </h3>
+
+                <ol style="margin-left:15px;">
+
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: </span>
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"></span>
+                        &nbsp; &nbsp; &nbsp;
+                        International       Suresh Mikkili and Anup kumar Panda, “Power Quality Issues : Current Harmonics”, CRC Press, Taylor & Francis Group, August , 2015, ISBN 9781498729628.    AUG  2015   
+                        &nbsp;&nbsp;
+
+                        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                    </li>
+
+
+                 
+
+                </ol>
+                <br />
+
+                <h3 class="text-2xl font-semibold">
+
+
+                </h3>
+
+                <p class="rightsm">
+
+
+                </p>
+
+                <p class="rightsm">
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+        <label for="toggle7" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+          >
+            Research Guidance
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            Dr. Suneel Raju Pendem : 16EEE3003 (January 2017 - May 2021) : Full Time Ph.D. Scholar - (Ph.D. Awarded)<br>
+            Dr. Praveen Kumar Bonthagorla : 17EEE3001 (Jan. 2018 - May 2022) : Full Time Ph.D. Scholar - (Ph.D. Awarded)<br>
+            Dr. Aditi Atul Desai : 18EEE3002 (August 2018 - June 2023) : Part Time Ph.D. Scholar - (Ph.D. Awarded)<br>
+            Mrs. Chavan Vinaya Chandrakant : 19EEE3001 (Joined in January 2020 - ) : Part Time Ph.D. Scholar – Synopsis Submitted<br>
+            Mr. Santhosh Yedla : 21EEE3005 (Joined in Nov 2021) : Part Time Ph.D. Scholar - Ongoing<br>
+            Mrs. Emily Grace Gummadi : 21EEE3006 (Joined in Nov 2021) : Part Time Ph.D. Scholar - Ongoing<br>
+            Mr. Abhilash Sakhare : 22EEE3001 (Joined in August 2022) : Full Time Ph.D. Scholar - Ongoing<br>
+            Mr. Gaurav Kumar : 22EEE3003 (Joined in January 2023) : Full Time Ph.D. Scholar - Ongoing<br>
+            Mr. Kurella Pavan Kumar : 22EEE3005 (Joined in January 2023) : Part-Time Ph.D. Scholar - Ongoing<br>
+            Mr. Bhattacharjee Abhinav Joydeep : (23EEE3001 Joined in August 2023) : Full-Time Ph.D. Scholar – Sponsored (DTE, Govt. of Goa)<br>
+            Mr. Metha Pritesh Anil : 23EEE3003 (Joined in August 2023) : Part-Time Ph.D. Scholar – Ongoing<br>
+            Mr. Pukale Rahul Sukhadeo : 23EEE3005 (Joined in August 2023) : Part-Time Ph.D. Scholar – Ongoing<br>
+        </div>
+    </div>
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+        <label for="toggle8" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Funded Research Project 
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+           1. SERB - DST, "Design and Development of an Efficient Grid-Integrated Distributed Maximum Power Point Tracking to Photovoltaic system for Enhancing Power Quality under Partial Shading Conditions", July 2017 - June 2020. Scheme : Early Career Research Award (ECRA); Sanctioned Amount : 39,99,600 INR<br>
+           2. SERB-DST, "Development of Metaheuristic Algorithms based Maximum Power Point Tracking Controllers for various Grid-Connected/Stand-Alone PV System to Enhance the Maximum Power Generation Capability", Feb 2022 - Jan 2025, Scheme: Empowerment And Equity Opportunities For Excellence In Science; Sanctioned Amount : 36,21,332 INR.<br>
+        </div>
+      </div>
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+        <label for="toggle10" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+           Award and Honor
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <ol>
+              <li>
+                <p class="p-2">Senior Member - IEEE</p>
+              </li>
+          </ol>
+        </div>
+      </div>
+       <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+            <li>
+              <p class="p-2">IEEE - Senior Member</p>
+            </li>
+            <li>
+              <p class="p-2">ISTE - Life Member</p>
+            </li>
+            <li>
+              <p class="p-2">IET - Member
+            </p>
+            </li>
+          </ol>
+          
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+        <label for="toggle12" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+          Training/Conferences/Short Term Courses Conducted
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+          <table class="table-bordered table" style="width: 100%; height: 202.5px;">
+              <tbody>
+              <tr>
+              <th class="bg-blue-400 text-white p-4"><strong>Sr.No.</strong></th>
+              <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+              <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+              <th class="bg-blue-400 text-white p-4"><strong>Training attended Information </strong></th>
+              </tr>
+              <tr>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Five Days Online AICTE Sponsored ATAL FDP on “Challenges and Opportunities in Integration of Electric Vehicles with Smart Electric Grids”, 16th to 20th August 2021- Coordinator</td>
+              </tr>
+              <tr >
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">MHRD-GIAN Course (one week : 1 credit) on “Advance Adjustable Speed AC Motor Drive Systems: Application Problems & Solutions”, under the Aegis of MHRD-GIAN, 15-19 May, 2017 – (Convener)</td>
+              </tr>
+              <tr >
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Short-term Course on “Application of Power Electronics to Energy Systems”, under NaMPET Phase-II (National Mission on Power Electronics Technology, CDAC Trivandrum (12 - 14 May 2016) – (Convener)</td>
+              </tr>
+              <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on "Industrial Automation - PLC and SCADA" @ NIT GOA</td>
+                </tr>
+                <tr >
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Workshop on “Mobile controlled Home Automation” organized by Dr. Suresh Mikkili in association with I3 Indya and TESLA at NIT GOA in 13-14 APRIL 2013.</td>
+                    </tr>
+                    <tr >
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">MHRD-GIAN Course (two weeks : 2 credits) on “Power Electronics for Renewable Energy Systems,” under the Aegis of MHRD-GIAN, 8-17 December, 2016 – (Convener)</td>
+                        </tr>
+              </tbody>
+              </table>
+        </div>
+      </div>
+  
+
+
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+                        <ul class="footer-links" style="list-style-type: disc;">
+                            <li><a href="../../index.html"><span class="">Home</span></a></li>
+                            <li><a href="../../syllabus.html"><span class="">Syllabus</span></a></li>
+                            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+                            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+                            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+                            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+                            <li><a href="#"><span class="">Feedback</span></a></li>
+                        </ul>
+
+                        <ul class="footer-links">
+                            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+                            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+                            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                                        Calendar</span></a></li>
+                            <li><a href="../../academics/rules_and_regulations.html"><span>Regulations and
+                                        Curriculum</span></a></li>
+                            <li><a href="../academics/DissertionFormat.html"><span>Dissertation
+                                        Formats</span></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Informations</h6>
+                    <ul class="footer-links">
+                        <li><a href="../../People/frontend/people_faculty.html"><span>Faculty</span></a>
+                        </li>
+                        <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+                        <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+                        <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+                        <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                                    Structure</span></a></li>
+                        <li><a href="../../nirf.html"><span>NIRF</span></a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+                    <ul class="footer-links">
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National
+                                    Institute of Technology Goa
+                                    Farmagudi, Ponda , Goa - 403401</span></a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html">
+                                <span">Website: www.nitgoa.ac.in</span>
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Phone: [0832] 2404200 (PA to Director)</span>
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Fax: [0832] 2404202</span>
+                            </a></div>
+                    </ul>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+            <!-- hitwebcounter Code START -->
+            <p>Visitor counter</p>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+                    title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+            </a>
+        </div>
+
+        <div class="fa-hover" style="text-align: right;">
+            <!-- Add font awesome icons -->
+            <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+            <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT"
+                class="fa fa-youtube-play"></a>
+            <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+        </div>
+
+
+
+    </footer>
+    <!--Footer Ends Here -->
+    <div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+    <!--javascript for Google Translator Starts Here-->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--javascript for Google Translator Ends Here-->
+
+
+</body>
+
+</html>
