@@ -74,3 +74,4 @@ function googleTranslateElementInit() {
     layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
   }, 'google_translate_element');
 }
+

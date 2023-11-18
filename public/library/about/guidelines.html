@@ -18,33 +18,125 @@
       rel="stylesheet"
     />
     <script src="../../script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+
+      /*ALL FOOTER STYLE */
+
+    /*Visitor Counter*/
+    /* Container styling */
+    .counter-container {
+      background-color: rgb(71, 71, 94);
+      display: inline-block;
+      /* Inline-block to size the container to the content */
+      padding: 10px;
+      /* Add some padding for spacing */
+      border-radius: 5px;
+      /* Rounded corners */
+
+    }
+
+    /* Text color inside the container */
+    .counter-container p {
+      color: white;
+    }
+
+    /* Background color for footer*/
+    .site-footer {
+      background-color: rgb(7, 60, 104);
+      /* Add any other styles you want for the footer here */
+    }
+
+    /*Social handle style*/
+
+    .fa {
+      padding: 10px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      margin: 5px 2px;
+      border-radius: 50%;
+      margin-right: 40px;
+    }
+
+    .fa-contact {
+      padding: 10px;
+      font-size: 30px;
+      width: 30px;
+      text-align: center;
+      margin: 5px 2px;
+      border-radius: 50%;
+      margin-right: 40px;
+    }
+
+
+    .fa-hover {
+      opacity: 0.7;
+      color: #E06900;
+    }
+
+    .fa-facebook {
+      background: #073c68;
+      color: #3B5998;
+    }
+
+    .fa-twitter {
+      background: #073c68;
+      color: #55ACEE;
+    }
+
+    .fa-linkedin {
+      background: #073c68;
+      color: #007bb5;
+    }
+
+    .fa-youtube-play {
+      background: #073c68;
+      color: red;
+    }
+
+    .fa-instagram {
+      background: #073c68;
+      color: #125688;
+    }
+
+    /*Social handle style ends*/
+
+
+    /* Bullet Style*/
+    .li-bullet {
+      list-style: none;
+      position: relative;
+      padding: 0 0 0 20px;
+
+    }
+
+    li::before {
+      content: "\25C8";
+      color: #E06900;
+    }
+
+
+
+    /* CSS for footer links */
+    .footer-links a {
+      color: white;
+      /* Default text color */
+
+    }
+
+    .footer-links a:hover {
+      color: #E06900;
+      /* Text color on hover */
+    }
+
+
+    /*FOOTER STYLE ENDS HERE*/
+
+    </style>
   </head>
   <body>
-    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
-      <div class="flex items-center text-gray-300 mr-8">
-        <div class="flex items-center gap-4" id="header-favicon">
-          <div>
-            <i class="md:hidden fas fa-envelope"></i> 
-            <span>your@email.com</span>
-          </div>
-          <div>
-            <i class="md:hidden fas fa-phone "></i> 
-            <span>+1234567890</span>
-          </div>
-      </div>
-      </div>
-      <div class="flex ml-8">
-      <div class="flex items-center justify-center" id="header-items">
-        <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
-        <a href="tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
-       
-      </div>
-      <div class="flex items-center justify-center" id="header-items">
-      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
-      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
-    </div>
-  </div>
-    </div>
        <!-- Header Starts here -->
        <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
         <div class="flex items-center text-gray-300 mr-8">
@@ -73,79 +165,59 @@
       </div>
        <header
        id="main-header"
-       class="bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky"
+       class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
      >
        <div class="flex justify-center">
-         <div class="headerBar">
-           <div class="logo-container flex flex-col justify-center items-center">
-             <img src="../../static/logo_color.png" class="logo" id="logo_img" />
-           </div>
-         </div>
-       </div>
+         <img class="w-33 h-22" src="../../static/logo_color.png" alt="" />
    
-       <div class="text-center bg-white">
+       </div>
+ 
+       <div class="text-center border mb-10">
          <nav class="mt-2 justify-center items-center">
-           <div
-             class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav"
-           >
+           <div class="container_B font-semibold text-gray-900 flex justify-center mx-16">
+ 
              <!--Home-->
              <div class="dropdown">
                <a href="../../index.html">Home</a>
              </div>
-   
+ 
              <!--About-->
              <div class="dropdown">
                <button class="dropbtn">About</button>
                <div class="dropdown-content">
                  <a href="../../library/about/guidelines.html">Guidelines</a>
                  <a href="../../library/about/membership.html">Membership</a>
-                 <a href="../../library/about/eresource.html"
-                   >E-Resource Uses Policy</a
-                 >
-                 <a
-                   href="https://drive.google.com/drive/folders/17-3asXzksIkuyJvc5OWxUwFuvlcOiBp8auAFze7aTx0"
-                   >Library Events</a
-                 >
+                 <a href="../../library/about/eresource.html">E-Resource Uses Policy</a>
+                 <a href="https://drive.google.com/drive/folders/17-3asXzksIkuyJvc5OWxUwFuvlcOiBp8auAFze7aTx0">Library Events</a>
                </div>
              </div>
-   
+ 
              <!--Collection-->
              <div class="dropdown">
                <button class="dropbtn">Collection</button>
                <div class="dropdown-content">
-                 <a href="../collection/books.html">Books</a>
-                 <a href="../collection/periodicals.html">Periodicals</a>
-                 <a href="../collection/thesis.html"
+                 <a href="../../library/collection/books.html">Books</a>
+                 <a href="../../library/collection/periodicals.html">Periodicals</a>
+                 <a href="../../library/collection/thesis.html"
                    >Thesis and Dissertations</a
                  >
                </div>
              </div>
-   
+ 
              <!--E-Collection-->
              <div class="dropdown">
                <button class="dropbtn">E-Collection</button>
                <div class="dropdown-content">
-                 <a href="https://dl.acm.org/" target="_blank"
-                   >ACM Digital Library</a
-                 >
-                 <a href="../ecollection/ieee.html">IEEE SWEBOK</a>
-                 <a href="https://ieeexplore.ieee.org/Xplore/home.jsp"
-                   >IEEE Explore</a
-                 >
-                 <a href="../ecollection/science_e_books.html"
-                   >ScienceDirect E-books</a
-                 >
-                 <a
-                   href="https://www.sciencedirect.com/browse/journals-and-books"
-                   >ScienceDirect e-Journals</a
-                 >
-                 <a href="../ecollection/elseiver.html"
-                   >Back File e-Collection</a
-                 >
+                 <a href="https://dl.acm.org/" target="_blank">ACM Digital Library</a>
+                 <a href="../../library/ecollection/ieee.html">IEEE SWEBOK</a>
+                 <a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Explore</a>
+                 <a href="../../library/ecollection/science_e_books.html">ScienceDirect E-books</a>
+                 <a href="https://www.sciencedirect.com/browse/journals-and-books">ScienceDirect e-Journals</a>
+                 <a href="../../library/ecollection/elseiver.html">Back File e-Collection</a>
                  <a href="https://link.springer.com/">SpringerLink e-Journals</a>
                </div>
              </div>
-   
+ 
              <!--ESS Resources-->
              <div class="dropdown">
                <button class="dropbtn">ESS Resources</button>
@@ -153,35 +225,30 @@
                  <a href="http://community.worldlibrary.in/"
                    >World e-Book Library</a
                  >
-                 <a href="http://community.worldlibrary.in/"
-                   >World Heritage Encyclopedia</a
-                 >
+                 <a href="http://community.worldlibrary.in/">World Heritage Encyclopedia</a>
                </div>
              </div>
-   
+ 
              <!--MHRD Digital Initiatives-->
-   
+ 
              <div class="dropdown">
-               <a href="../mhrd.html">MHRD Digital Initiatives</a>
+               <a href="../../library/mhrd.html">MHRD Digital Initiatives</a>
              </div>
-   
+ 
              <!--Learning and Research Support-->
              <div class="dropdown">
                <button class="dropbtn">Learning and Research Support</button>
                <div class="dropdown-content">
-                 <a href="../learning/plagiarism.html"
-                   >Plagiarism Check</a
+                 <a href="../../library/learning/plagiarism.html">Plagiarism Check</a>
+                 <a href="../../library/learning/learning.html">Learning and Research Tools</a>
+                 <a href="../../library/learning/open.html">Open Knowledge Portal</a>
+                 <a
+                   href="https://www.nitgoa.ac.in/uploaded_files/Directory_03july2023.pdf"
+                   >ShodhGantori</a
                  >
-                 <a href="../learning/learning.html"
-                   >Learning and Research Tools</a
-                 >
-                 <a href="../learning/open.html"
-                   >Open Knowledge Portal</a
-                 >
-                 <a href="../learning/shodh.html"> ShodhGantori </a>
                </div>
              </div>
-   
+ 
              <!--Services-->
              <div class="dropdown">
                <button class="dropbtn">Services</button>
@@ -199,36 +266,31 @@
                  <a href="#">Ask a Librarian</a>
                </div>
              </div>
-   
+ 
              <div class="dropdown">
-               <a
-                 href="https://libcloud.mastersofterp.in/OPAC_V3/?library=National%20Institute%20of%20Technology%20Goa"
-                 >Library Catalogue</a
-               >
+               <a href="https://libcloud.mastersofterp.in/OPAC_V3/?library=National%20Institute%20of%20Technology%20Goa">Library Catalogue</a>
              </div>
-   
+ 
              <!--Contact Us-->
              <div class="dropdown">
-               <!-- <a href="../library/contact_us/contact.html"></a> -->
-   
-               <button class="dropbtn"> Contact Us</button>
+               <button class="dropbtn"><a href="../../library/contact_us/contact.html"
+                 >Contact Us</a
+               > </button>
                <div class="dropdown-content">
-                 <a href="../../library/contact_us/team.html">Committee</a>
+                 <a href="../../library/contact_us/team.html">Library Committee</a>
                  <a href="../../library/contact_us/staff.html">Staff</a>
                </div>
              </div>
-   
+ 
              <!--NIT GOA IRINS-->
              <div class="dropdown">
-               <a href="https://nitgoa.irins.org/">NIT GOA IRINS</a>
+               <a href="https://nitgoa.irins.org/"
+                 >NIT GOA IRINS</a
+               >
              </div>
+ 
            </div>
          </nav>
-         <div class="menu-toggle" onclick="togglemenu(this)">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-          </div>
        </div>
      </header>
  
@@ -275,70 +337,91 @@
  <!-- Main Section Ends Here -->
     
  <!--Footer Starts Here -->
- <footer class="site-footer mt-4" style="background-color: rgb(7, 60, 104);;">
+ <footer class="site-footer">
   <div class="container">
     <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div>
         <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ">
-        
-        <ul class="footer-links">
-          <li><a href="index.html"><span class="hover:text-white">Home</span></a></li>
-          <li><a  href="http://scanfcode.com/contribute-at-scanfcode/"><span class="hover:text-white">Syllabus</span></a></li>
-          <li><a href="http://scanfcode.com/privacy-policy/"><span class="hover:text-white">Results</span></a></li>
-          <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">RTI</span></a></li>
-          <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Login</span></a></li>
-          <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Contact Us</span></a></li>
-          <li><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Feedback</span></a></li>
-        </ul>
-        <ul class="footer-links">
-          <li><a href="http://scanfcode.com/about/"><span class="hover:text-white">e-Downloads</span></a></li>
-          <li><a href="http://scanfcode.com/contact/"><span class="hover:text-white">Students</span></a></li>
-          <li><a href="academics/academic_calendar.html/"><span class="hover:text-white">Academic Calendar</span></a></li>
-          <li><a href="academics/rules_and_regulations.html"><span class="hover:text-white">Regulations and Curriculum</span></a></li>
-          <li><a href="academics/DissertionFormat.html"><span class="hover:text-white">Dissertation Formats</span></a></li>
-         
-        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
       </div>
-    </div>
 
       <div>
         <h6 class="text-lg font-semibold mb-2">Informations</h6>
         <ul class="footer-links">
-          <li><a href="http://scanfcode.com/category/c-language/"><span class="hover:text-white">Faculty</span></a></li>
-          <li><a href="http://scanfcode.com/category/front-end-development/"><span class="hover:text-white">Staff</span></a></li>
-          <li><a href="http://scanfcode.com/category/back-end-development/"><span class="hover:text-white">JEE</span></a></li>
-          <li><a href="http://scanfcode.com/category/java-programming-language/"><span class="hover:text-white">Facilities</span></a></li>
-          <li><a href="./static/fee_structure_23-24_25july2023.pdf"><span class="hover:text-white">Fee Structure</span></a></li>
-          <li><a href="http://scanfcode.com/category/templates/"><span class="hover:text-white">NIRF</span></a></li>
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
         </ul>
       </div>
 
       <div>
         <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
         <ul class="footer-links">
-          <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/contact/"><span class="hover:text-white">National Institute of Technology Goa
-            Farmagudi, Ponda , Goa - 403401</span></a></div>
-          <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/contribute-at-scanfcode/"><span class="hover:text-white">Website: www.nitgoa.ac.in</span></a></div>
-          <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/privacy-podivcy/"><span class="hover:text-white">span>  Phone: [0832] 2404200 (PA to Director)</span></a></div>
-          <div className="border-b-2 border-white mt-2"><a href="http://scanfcode.com/sitemap/"><span class="hover:text-white">Fax: [0832] 2404202</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
         </ul>
-      </div> 
+      </div>
     </div>
-    <br/>
+    <br />
   </div>
   <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
     <!-- hitwebcounter Code START -->
     <p>Visitor counter</p>
     <a href="https://www.hitwebcounter.com" target="_blank">
-      <img src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0" title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
     </a>
   </div>
 
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
 
-  
+
+
 </footer>
 <!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
 
 </body>
 

@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Keshavamurthy B.N..png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Keshavamurthy B.N</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> bnkehsav.cse@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. Keshavamurthy B.N.</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date-</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">Department: Department of Computer Science and Engineering</p>
+            <p class="p-2">URL</p>
+            <p class="p-2">Date of Joining-</p>
+            <p class="p-2">Research/Teaching Experience: Nineteen Years Teaching Experience [[1](https://nitgoa.ac.in/emp_profile.aspx?nDeptID=104)]</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: NIT Goa, Near GEC, Behind ITI Building, Farmagudi-403401
+            </p>
+            <p class="p-2">City: PONDA</p>
+            <p class="p-2">State: GOA</p>
+            <p class="p-2">Country: INDIA</p>
+            <p class="p-2">Email Address: bnkeshav.fcse@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: -</p>
+            <p class="p-2">Phone [Mobile]: 8975014032</p>
+            <p class="p-2">Office Extension: 0832-2404212</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Data Mining;</p>
+            <p class="p-2">Privacy Preserving Data Mining;</p>
+            <p class="p-2">Stream Data Mining;</p>
+            <p class="p-2">Social Media Mining;</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <h3 class="text-2xl font-semibold font-serif text-center">
+                UG Courses
+              </h3>
+              <p class="p-2">Database Systems</p>
+              <p class="p-2">Soft Computing</p>
+              <p class="p-2">Data Warehousing & Data Mining</p>
+              <p class="p-2">Compiler Design</p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                PG Courses
+              </h3>
+              <p class="p-2">Advanced Database Systems</p>
+              <p class="p-2">Advanced Computer Networks</p>
+              <p class="p-2">Data Warehousing and Data Mining</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table>
+                <tbody>
+                <tr >
+                <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                <th class="bg-blue-400 text-white p-4">year</th>
+                <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.E</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">P.E.S College of Engg. Mandya, Mysore University</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">-</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Computer Science &amp; Engineering</td>
+                </tr>
+                <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Tech</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.M.S College of Engg. Bangalore, Visvesvaraya Technological University Belgaum</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">-</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Computer Science &amp; Engineering</td>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Ph.D.  </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Indian Institute of Technology, Roorkee</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Privacy Preserving Data Mining Techniques for Data Streams</td>
+                </tr>
+                </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="margin-left: 15px;">
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International       AR Naik, Bettahally N. Keshavamurthy "Next level peer-to-peer overlay networks under high churns: a survey," Peer-to-Peer Networking and Applications 13 (3), 905-931      2020     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International       S Wazarkar, Bettahally N. Keshavamurthy, "Social image mining for fashion analysis and forecasting," Applied Soft Computing, 95, 106517      2020     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International       Ahsan Hussain, Bettahally N Keshavamurthy, "A multi-dimensional routing based approach for efficient communication inside partitioned social networks", Peer-to-Peer Networking and Applications, Published by Springer, 12 (4), 830-849. (SCIE Indexed)      2019     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International       Ahsan Hussain, Bettahally N Keshavamurthy, Ramalingaswamy Cheruku, "Dynamic Multi-layer Ensemble Classification Framework for Social Venues Using Binary Particle Swarm Optimization", Wireless Personal Communications, Published by Springer,105 (4), 1491-1511. (SCIE Indexed)      2019     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International       Ahsan Hussain, Bettahally N Keshavamurthy, Seema Wazarkar, "A Novel Multi-Layer Classification Ensemble Approach for Location Prediction of Social Users", International Journal of Web Services Research (IJWSR), Published by IGI Global, 16 (2), 47-64 (SCIE Indexed)      2019     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International       Seema Wazarkar, Bettahally N Keshavamurthy, "A soft clustering technique with layered feature extraction for social image mining", Multimedia Tools and Applications, Published by Springer, 1-28. (SCIE Indexed)      2019     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International       Seema Wazarkar, Bettahally N. Keshavamurthy, ”Fashion Image Classification using Matching Points with Linear Convolution,” Multimedia Tools and Applications, Published by Springer, PP. 1-18. (SCIE Indexed)      2018     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International       Seema Wazarkar, Bettahally N. Keshavamurthy, “A Survey on Image Data Handling through Clustering Techniques,” Journal of Visual Communication and Image Representation, Published by Elsevier, 55, PP. 596-626. (SCIE Indexed)      2018     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International       Ahsan Hussain, Bettahally N. Keshavamurthy, “An Enhanced Communication Mechanism for Partitioned Social Overlay Networks using Modified Multi-Dimensional Routing ,” Cluster Computing, Published by Springer, pp. 1-12, (SCI Indexed).      2018     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International       Seema Wazarkar, Bettahally N. Keshavamurthy, Ahsan Hussain. “Probabilistic Classifier for Fashion Image Grouping using Multi-layer Feature Extraction Model,” International Journal of Web Services Research, Published by IGI Global, 5 (2), pp. 1-14. (SCIE Indexed)      2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">National       Harendra Chahar, Keshavamurthy B.N., Chirag Modi, “Privacy Preserving Distributed Mining of Association Rules Using Elliptic-Curve Cryptosystem and Shamir’s Secret Sharing Scheme,” Sadhana Academy Processing in Engineering Sciences, Published by Springer, vol. 42, Issue 12, pp. 1997–2007. ( SCI Indexed)      2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International       Ahsan Hussain, Bettahally N. Keshavamurthy, Ravi Prasad K. Jagannath. “Accurate Location Prediction of Social-users using mHMM,” Intelligent Automation and Soft Computing, Published by Taylor and Francis, vol. 25, no. 3, PP. 473–48. (SCI Indexed)      2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary">International       Bettahally N. Keshavamurthy, Asad Mohammed Khan, Durga Toshniwal, “Privacy Preserving Association Rule Mining over Distributed Databases Using Genetic Algorithm,” Neural Computing and Applications, Published by Springer, vol. 22, Issue 1, pp 351-364. (SCI Indexed)      2013     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International       Bettahally N. Keshavamurthy, Durga Toshniwal, Bhavani Kumar Eshwar, “Hiding Co-Occurring Prioritized Sensitive Patterns over Distributed Progressive Sequential Data Streams,” Journal of Network and Computer Applications (JNCA), Published by Elsevier, vol. 35, pp. 1116–1129. (SCIE Indexed)      2012     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International       Keshavamurthy B. N., Asad Mohammed Khan and Durga Toshniwal, “Improved Genetic Algorithm Based Classification,” Int. J. Computer Science and Informatics, Published by Interscience, vol.1, no. 3, ISSN (Print) 2231-529, pp. 1-7.      2012     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International       Keshavamurthy B. N., Mitesh Sharma and Durga Toshniwal, “Efficient Support Coupled Frequent Pattern Mining over Progressive Databases,” Int. J. Database Management Systems (IJDBMS), vol.2, no. 2, Published by Academy and Industry Research Collaboration Center, India, pp.73-82.      2010 </li>
+            </ol>
+            <h3><span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type:  <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</h3>
+            <ol style="margin-left: 15px;">
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International       Richa, Bettahally N. Keshavamurthy, "Improved PSO for task scheduling in cloud computing," In:8th International Conference on Frontiers in Intelligent Computing: Theory and Applications (FICTA), pp 467–477    JAN  2020     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International       Bettahally N. Keshavamurthy, Shashank Prakash Srivastava, Jaseel Haris, Ankush Kumar, and Seema Wazarkar, "Sentiment Analysis of Sub-Events extracted out of an Event using Word2vec,” 18th IEEE International Conference on Advanced Learning Technologies (ICALT), at IIT Bombay, India    JULY  2018     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International       Seema Wazarkar, Bettahally N. Keshavamurthy, Amrita Manjrekar, “A Review of Hierarchical Fuzzy Text Clustering,” 9th IEEE International Conference on Advanced Computing at Chennai,India, pp. 516-519.    DEC  2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International       Ahsan Hussain, Bettahally N. Keshavamurthy, Seema Wazarkar. “An Efficient Approach for Classifying Social Network Events using Convolution Neural Networks,” 1st International Conference on Data And Information Sciences, pp. 177-184, IGNTU, MP, India.    NOV  2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International       Wazarkar Seema, Bettahally N. Keshavamurthy, and Shitala Prasad, “Semi-supervised Model for Feature Extraction and Classification of Fashion Images," 26th International Conference on Artificial Neural Networks (ICANN), Alghero, Sardinia, Italy, LNCS, Springer, vol. 10614, pp. 786-787.    SEPT  2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International       Amit Shewale, Keshavamurthy B. N. and Chirag N. Modi, “An Efficient Approach for Privacy Preserving Distributed K-Means Clustering in Unsecured Environment,” 5th International Conference on Advanced Computing, Networking, and Informatics, Proc. of AISC Series Springer, Goa, India.    JUN  2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International       Ahsan Hussain and Bettahally N. Keshavamurthy, “Analyzing Online Location Based Social Networks for Malicious User Detection,” 5th International Conference on Advanced Computing, Networking, and Informatics, Proc. of AISC Series Springer, Goa, India, pp 425-431.    JUN  2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International       Seema Wazarkar, Bettahally N. Keshavamurthy, Ahsan Hussain. “Region-based Segmentation of Social Images Using Soft KNN Algorithm,” Procedia Computer Science, 125 (1), pp. 93-98. (Elsevier, Scopus Indexed).      2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International       ChennaKesava Reddy Kamireddy, Bingi Sateesh, Keshavamurthy B.N. “Efficient Routing of 108 Ambulances using Clustering Techniques, ”Proc. of 6th IEEE International Conference on Computational Intelligence and Computing Research (ICCIC), Chennai, India, pp. 1-6.    DEC  2016     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International       Shitala Prasad and Keshavamurthy B.N., “An efficient artistic image-video Transfer Approach,” Proc. of 23rd IEEE International Conference on Mechatronics and Machine Vision in Practice (M2VIP), Nanjing, China, pp. 1-4.    NOV  2016     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International       Keshavamurthy B. N., Asad Mohammed Khan and Durga Toshniwal, “Improved Genetic Algorithm Based Classification,” Int. Conf. on Computer Science and Information Technology (CSIT-2011), Proc. of Computer Science and Information Technology, Bangalore, Karnataka, India, pp. 489-495.    JULY  2011     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_PubCategary1">International       Durga Toshnoiwal, Amrutha Mhatre and Keshavamurthy B. N., “Privacy Preserving Scheme for Sequential Pattern Mining over Fragmented Progressive Databases,” Proc. of 3rd Annual American Business Research Conference, New York, USA.    JUN  2011     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_PubCategary1">International       Keshavamurthy B. N. and Durga Toshniwal, “Privacy Preservation in Naïve Bayes Classification using Trusted Third Party Computation over Distributed Progressive Database,” 1st Int. Conf. on Computer Science and Information Technology (COSIT-2011), Proc. of LNCS Springer, Bangalore, Karnataka, India, pp. 24-32    JAN  2011     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_PubCategary1">International       Keshavamurthy B. N. and Durga Toshniwal, “Privacy Preservation of Stream Data Patterns using Offset and Trusted Third Party Computation in Retail-Shop Market Basket Analysis,” 2nd Int. Workshop on Ad Hoc &amp; Ubiquitous Computing (AUC-2011), Proc. of LNCS Springer, Bangalore, Karnataka, India, pp.358-366.    JAN  2011     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_PubCategary1">International       Keshavamurthy B. N., Mitesh Sharma and Durga Toshniwal, “Privacy Preservation Naïve Bayes Classification for a Vertically Distribution Scenario using Trusted Third Party,” 2nd Int. Conf. on Advances in Recent Technologies in Communication and Computing (ARTCom-2010), Proc. of IEEE xplore, Kottayam, Kerala, India, pp.404-407.    OCT  2010     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_PubCategary1">International       Keshavamurthy B. N., Mitesh Sharma and Durga Toshniwal “Privacy-Preservation Naïve Bayes Classification using Trusted Third Party and Different Offset Computation over Distributed Databases,” Int. Conf. on Parallel, Distributed and Grid Computing (PDGC-2010), Proc. of IEEE and IEEE xplore, Solani, H.P., India, pp. 362-365    OCT  2010     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_PubCategary1">International       Keshavamurthy B. N., Mitesh Sharma and Durga Toshniwal, “Efficient Mining of Frequent Items Coupled with Weight and /or Support over Progressive Databases,” 2nd Int. Conf. on Data Engineering and Management (ICDEM-2010), Proc. of LNCS Springer, Tiruchirapalli, Tamil Nadu, India, pp. 309-316.    JULY  2010     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_PubCategary1">International       Keshavamurthy B. N., Mitesh Sharma and Durga Toshniwal, “Privacy Preservation Using Naïve Bayes Classification and Secure Third Party Computation,” Proc. of 4th Int. Conf. on Computer Applications in Electrical Engineering Recent Advance (CERA-09), Indian Institute of Technology Roorkee, India.    FEB  2009     </li>
+            </ol>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        Dr. Ahsan Hussain (Awarded) 2 Dr. Seema Wazarkar (Awarded) 3 Mr. Shaba Vikram Gauns Dessai (Ongoing) 4. Mr. Sunil Kumar (Ongoing)
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        Title of the Project : SECURE AND EFFICIENT COMMUNICATIONS INSIDE PARTITIONED SOCIAL OVERLAY NETWORKS” Funding Agency: DST, SERB; Duration: 3 Years (Strat: 2017- End 2020), Amount Sanctioned (In Rupees): 19.64 Lakhs. Role-PI
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+            <li>
+              <p class="p-2">Senior Member - IEEE</p>
+            </li>
+            <li>
+              <p class="p-2">Senior Member of the International Association of Computer Science and Information Technology (IACSIT) [[1](http://www.iacsit.org/)]</p>
+            </li>
+            <li>
+              <p class="p-2">Member - The Institution of Engineers (India)</p>
+            </li>
+            <li>
+              <p class="p-2">Member of the ‘Editorial Board’ for International Journal of Engineering and Advanced Technology (IJEAT); Member of the ‘Editorial Board’ for International Journal of Soft Computing and Engineering (IJSCE); Member of the ‘Editorial Board’ for Intl. Journal of Emerging Technology and Advanced Engineering (IJETAE); Board Member of the International Journal of Computer &amp; Organization Trends (IJCOT) [[1](http://www.iacsit.org/)]</p>
+            </li>
+            <li>
+              <p class="p-2">Senior Member - ACM [[6](https://nmamit.nitte.edu.in/department-information-science.php)]</p>
+            </li>
+          </ol>
+          
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table" style="width: 100%; height: 202.5px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No.</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training attended Information </strong></th>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">One-Day National Workshop on “How to Write Research Projects” Organized by NITG, Goa</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">TEQIP - II Sponsored Five-Days STTP on Privacy Preserving Data Mining (PPDM), held at Department of Computer Engineering, SVNIT, Surat</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">FEB</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">One Day National Workshop on "ATOMIC ENERGY: ARCHITEC FUTURE” conducted by NIT Goa in association with Bhabha Atomic Research Centre (BARC), Mumbai</td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table class="table-bordered table" style="width: 92.9782%; height: 112px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training Conducted Information </strong></th>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Short Term Training Program on “Data Mining: Research Challenges &amp; Innovations”</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Five Days National Workshop on Cryptography, Applications and Foundations of Data Science</td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</a></li>
+            <li><a href="#"><span class="">Feedback</a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</a></li>
+          <li><a href="../../nirf.html"><span >NIRF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

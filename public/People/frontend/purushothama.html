@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Purushothama B.R"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Purushothama B.R</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area : Information Security, Cryptography, Cloud Security, Key Management, Security Analytics
+      </p>
+      <div class="mt-4">
+       <p class="p-2"> Email:<a href="#" class="text-blue-500">puru@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2"> Name: Dr. Purushothama B.R</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date-:</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">
+              Department: Department of Computer Science and Engineering
+            </p>
+            <p class="p-2">URL</p>
+            <p class="p-2">Date of Joining: 01/07/2013</p>
+            <p class="p-2">
+              Research/Teaching Experience: 14 years of Teaching Experience/8 years of
+              Research Experience
+            </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: Dr. Purushothama B R, Associate Professor, Department of Computer
+                Science and Engineering, National Institute of Technology Goa, Farmagudi,
+                Ponda, Goa - 403 401.
+              </p>
+              <p class="p-2">City: PONDA</p>
+              <p class="p-2">State: GOA</p>
+              <p class="p-2">Country: INDIA</p>
+              <p class="p-2">Email Address: puru@nitgoa.ac.in</p>
+              <p class="p-2">Phone [Residence]-</p>
+              <p class="p-2">Phone [Mobile]-</p>
+              <p class="p-2">Office Extension: 0832-2404216</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Information Security</p>
+            <p class="p-2">Cryptography</p>
+            <p class="p-2">Cloud Security</p>
+            <p class="p-2">Key Management</p>
+            <p class="p-2">Security Analytics</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+         <p class="p-2"> Design and Analysis of Algorithms</p>
+         <p class="p-2"> Applied Algorithms</p>
+         <p class="p-2"> Theory of Computation</p>
+         <p class="p-2"> Number Theory and Cryptography</p>
+         <p class="p-2"> Discrete Mathematics</p>
+         <p class="p-2"> Data Structures</p>
+         <p class="p-2"> Advanced Data Structures</p>
+         <p class="p-2"> Computational Complexity</p>
+         <p class="p-2"> UNIX System Programming</p>
+         <p class="p-2"> Distributed Computing and Operating Systems</p>
+         <p class="p-2"> Cloud Computing</p>
+         <p class="p-2"> Advanced Operating Systems</p>
+         <p class="p-2"> Web Development Using LAMP</p>
+         <p class="p-2"> Object Oriented Programming (C++ and Java)       </p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Advanced Algorithms and Analysis</p>
+          <p class="p-2">Foundations of Cryptography</p>
+          <p class="p-2">Design of Secure Protocols</p>
+
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table width="882" cellspacing="1" cellpadding="1">
+                <tbody>
+                <tr>
+                <th class="bg-blue-400 text-white p-4">
+                <p ><b>Degree/Diploma</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p  ><b>Institute / University</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p  ><b>Year</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p class="p-2"><b>Subject</b></p>
+                </th>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">M.Tech</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >National Institute of Technology Karnataka Surathkal</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >2009</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >Computer Science and Engineering</p>
+                </td>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">Ph.D.</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >National Institute of Technology Warangal</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >2014</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p >Computer Science and Engineering</p>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <p ><b>Publication Type: Journal</b></p>
+        <ol>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>Internationa Payal Sharma and Purushothama B R, "Cryptanalysis of a secure and efficient Diffie–Hellman based key agreement scheme.", International Journal of Information Technology. [Available online,Scopus indexed]    JAN  2023     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Payal Sharma, B. R. Purushothama: BP-MGKM: An efficient multi-group key management scheme based on bivariate polynomial. Comput. Networks 216: 109244 (2022)[SCIE indexed]    SEPT  2022     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Payal Sharma and Purushothama B R, "Securing polynomial based group key management scheme against strong active adversary model.", International Journal of Information Technology. Vol 14, pp.2329–2334 , Springer. [Scopus indexed]    JUN  2022     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani Mahesh Patil, Purushothama B R, "QC-PRE: Quorum Controlled Proxy Re-encryption Scheme for Access Control Enforcement Delegation of Outsourced Data", International Journal of Information and Computer Security, Vol.18 No.1/2, pp.165 - 192    MAY  2022     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purushothama B R, “TP-PRE: Threshold Progressive Proxy Re-Encryption, Its Definitions, Construction and Applications”, Journal of Ambient Intelligence and Humanized Computing, Vol. 12, No. 4, 2021, pp. 1943-1965, Springer, DOI: 10.1007/s12652-020-02285-4. [SCIE indexed, IF = 7.104]    JULY  2021     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shilpee Prasad and Purushothama B R, “CCA Secure and Efficient Proxy Re-Encryption Scheme Without Bilinear Pairing”, Journal of Information Security and Applications, Vol. 58, 2021, pp. 102703, Elsevier, DOI: 10.1016/j.jisa.2020.102703. [SCIE indexed, IF = 3.872]    MAY  2021     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purushothama B R, “Secure and Efficient Revocable Key-Aggregate Cryptosystem for Multiple Non-Predefined Non-Disjoint Aggregate Sets”, Journal of Information Security and Applications, Vol. 58, 2021, pp. 102799, Elsevier, DOI: 10.1016/j.jisa.2021.102799. [SCIE indexed, IF = 3.872]    MAY  2021     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Payal Sharma, Purushothama B R. Security Analysis of Group Key Management Schemes in Wireless Sensor Networks Against IND-SAOA Game. SN Computer Science, Vol. 2, No, 4, pp. 261, 2021.[Scopus indexed]    MAY  2021     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani Mahesh Patil, Purushothama B R, “Pixel Co-Ordinate-Based Secret Image Sharing Scheme with Constant Size Shadow Images”, Computers and Electrical Engineering, Vol. 89, pp. 106937, 2021, Elsevier, DOI: 10.1016/j.compeleceng.2020.106937. [SCIE indexed, IF = 4.152]    JAN  2021     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purushothama B R. "Proxy re-encryption for fine-grained access control: Its applicability, security under stronger notions and performance". Journal of Information Security and Applications, Elsevier. Vol. 54 pp. 102543 [SCIE indexed]    JUN  2020     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani Mahesh Patil, Purushothama BR. DR-PRE: dual receiver proxy re-encryption scheme. Information Security Journal: A Global Perspective, Volume 29 Issue 2 Pages 62-72 Taylor &amp; Francis.    MAR  2020     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani Mahesh Patil, BR Purushothama. Non-transitive and collusion resistant quorum controlled proxy re-encryption scheme for resource constrained networks. Journal of Information Security and Applications, Elsevier, Volume 50.    FEB  2020     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purushothama B R. "Extended hierarchical key assignment scheme (E-HKAS): how to efficiently enforce explicit policy exceptions in dynamic hierarchies". Sadhana - Academy Proceedings in Engineering Sciences, Springer. Vol. 44 Issue 12. pp. 235:1-235:17    DEC  2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purushothama B R. “Blockchain-Based Decentralized Access Control Scheme for Dynamic Hierarchies”. International Journal of Information and Computer Security. (Accepted for publication, in Press).    JAN  2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani M. Patil and B. R. Purushothama, On the Security of Combinatorial Design Based Group Key Management Scheme, Journal of Information System Security. Vol. 15 Issue 2, pp. 101-116. [Scopus indexed]      2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and B R Purushothama. Proxy Re-encryption based Provably Secure Group Key Management Scheme with Constant Public Bulletin Size and Key Derivation Time. Sadhana, Springer. Vol 43, Issue 9, 2018. pp. 137-149.    JULY  2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek, Purushothama B R, "Provably secure group key management scheme based on proxy re-encryption with constant public bulletin size and key derivation time", Sadhana – Academy Proceedings in Engineering Sciences, Vol 43, No. 9, 2018, pp. 137:1-137:13, Springer, DOI: 10.1007/s12046-018-0917-8. [SCIE indexed, IF = 1.188]    JULY  2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       B R Purushothama and B B Amberker. Access Control Mechanisms for Outsourced Data in Public Cloud Using Polynomial Interpolation and Multilinear Map. International Journal of Cloud Computing. Vol 6, Issue 1, 2017. pp. 1-31      2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Nishat Koti and B R Purushothama. Group Oriented Encryption with Constant Rekeying Cost. Security and Communication Networks, Vol 9. Issue 17, 2016, pp. 4120-4137.      2016     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama, B. R., and B. B. Amberker. "Provably secure public key cryptosystem with limited number of encryptions for authorised sharing of outsourced data." International Journal of Cloud Computing (IJCC), Vol. 4, No. 4, 2015: 317-334.    JUN  2015     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Secure group and multi-layer group communication schemes based on polynomial interpolation, Security and Communication Networks, Vol. 6, No. 6, pp. 735-756, June 2013.[SCIE indexed]    JUN  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R,Shrinath B, B B Amberker, Secure cloud storage service and limited proxy re-encryption for enforcing access control in public cloud, International Journal of Information and Communication Technology vol.5, No.2, pp. 167-186, 2013 [Scopus indexed]    JUN  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker Secure group key management scheme for simultaneous multiple groups with overlapped memberships using binomial key tree with new approach to key distribution and key computation, International Journal of Trust Management in Computing and Communications Vol.1, No.2, pp. 175-198,2013    JUN  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Duplication with Trapdoor Sensitive Attribute Values: A New Approach for Privacy Preserving Data Publishing, Elsevier Procedia Technology, Vol.6 NIT Rourkela, pp. 970-977, 2012    OCT  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shilpee Prasad and Purushothama B R, “Secure and Verifiable Outsourcing of Euclidean Distance and Closest Pair of Points with Single Untrusted Cloud Server”, International Journal of Internet Protocol Technology. Accepted for publication, currently in press, Inderscience Publishers. [Scopus indexed, Accepted]           </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Payal Sharma and Purushothama B R, "User Driven General Framework to Cap the Joins in Secure Group Communication.", International Journal of Information and Computer Security. (Accepted for publication, in Press). [Scopus indexed]       </p>
+        </li>
+        </ol>
+        <p ><b>Publication Type: Proceedings</b></p>
+        <ol>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Payal Sharma, BR Purushothama. Analysis of Traditional Secure Group Key Management Schemes in Secure Multi-group Communication. 2020 International Conference on Communication and Signal Processing (ICCSP) Pages 195-199 IEEE    JULY  2020     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purshothama B R. "Flexible cryptographic access control through proxy re-encryption between groups." In Proceedings of the 20th International Conference on Distributed Computing and Networking (ICDCN’19), pp. 507-507. ACM, 2019.    JAN  2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Shravani Mahesh Patil and Purshothama B R. "RSA-Based Collusion Resistant Quorum Controlled Proxy Re-encryption Scheme for Distributed Secure Communication." In Proceedings of the 15th International Conference on Distributed Computing and Internet Technology (ICDCIT’19), pp. 349-363. Springer LNCS, 2019.    JAN  2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek, and Purushothama B R. "Proxy Re-Encryption Scheme for Access Control Enforcement Delegation on Outsourced Data in Public Cloud." In Proceedings of the 14th International Conference on Information Systems Security (ICISS’18), pp. 251-271. Springer (LNCS), 2018.    JAN  2019     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek, and Purushothama B R. "A Provably Secure Re-encryption-Based Access Control in Hierarchy." In Proceedings of the 5th International Conference on Advanced Computing, Networking, and Informatics (ICACNI’17), pp. 97-104. 2018.    JUN  2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Sagar, P. R., Chakra, J. P. S., and Purushothama, B. R. "Pixel Position Based Efficient Image Secret Sharing Scheme." In Proceedings of the 5th International Conference on Advanced Computing, Networking, and Informatics (ICACNI’17), pp. 527-533. 2018.    JUN  2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and Purshothama B R. "Efficient Strong Key Indistinguishable Access Control in Dynamic Hierarchies with Constant Decryption Cost." In Proceedings of the 11th International Conference on Security of Information and Networks (SIN’18), pp. 10:1-10:7. ACM, 2018.      2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Sarvesh Sawant, Gaurav Pareek and B R Purushothama, Group Key Management Schemes under Strong Active Adversary Model: A Security Analysis, In Proceedings of 6th International Symposium on Security in Computing and Communication (SSCC’18) 19-22 September, 2018. (Accepted for publication)      2018     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and B R Purushothama, A Proxy Visible Re-encryption Scheme with Application to Email Forwarding, In Proceedings of 10th International Conference on Security of Information and Networks, 2017 (SIN 2017), Manipal University Jaipur and MNIT Jaipur, October 13-15, 2017, pp. 212-217. [Adjudged BEST PAPER of the conference]    OCT  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       B R Purushothama, Arun Prakash Verma, and Abhilash Kumar. Security Analysis of Key Management Schemes Based on Chinese Remainder Theorem under Strong Active Outsider Adversary Model. In Proceedings of 5th International Symposium on Security in Computing and Communication (SSCC’17), Manipal, Karnataka, India, September 13-16, 2017, pp. 215-225.    SEPT  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Sarvesh Sawant, Gaurav Pareek and B R Purushothama. A Ringer-based Throttling Approach to Mitigate DDoS Attacks. In Proceedings of 5th International Symposium on Security in Computing and Communication (SSCC’17), Manipal, Karnataka, India, September 13-16, 2017, pp. 95-108.    SEPT  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Ashwini Choudhari, Gaurav Pareek and B R Purushothama, Security Analysis of Centralized Group Key Management Schemes for Wireless Sensor Networks under Strong Active Outsider Adversary Model. In Proceedings of 7th International Conference on Advances in Computing, Communications and Informatics (ICACCI), 2017, Manipal Karnataka, India, September 13-16, 2017, pp. 1576-1581    SEPT  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       B R Purushothama and Arun Prakash Verma, Security Analysis of Group Key Management Schemes of Wireless Sensor Network under Active Outsider Adversary Model. In Proceedings of 7th International Conference on Advances in Computing, Communications and Informatics (ICACCI), 2017, Manipal Karnataka, India, September 13-16, 2017, pp. 988 - 994.    SEPT  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Gaurav Pareek and B R Purushothama, On Efficient Access Control Mechanisms in Hierarchy using Unidirectional and Transitive Proxy Re-encryption Schemes, In Proceedings of 14th International conference on Security and Cryptography (SECRYPT’17), Madrid, Spain, July 24-26, 2017, pp. 519-524    JULY  2017     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Chandrasekhar Kuruba, Kethzi Gilbert, Prabhav Sidhaye, Gaurav Pareek, B R Purushothama, Outsource-Secured Calculation of Closest Pair of Points, In Proceedings of 4th International Symposium on Security in Computing and Communications, Springer, September 21-24, 2016, pp. 377-389.    SEPT  2016     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Nishat Koti and B R Purushothama, Dynamic Access control in a hierarchy with constant key derivation cost, In Proceedings of Advanced Computing, Networking, and Informatics (ICACNI - 2016 ), Springer, NIT Rourkela, September 21-24, 2016, pp. 161-169.    SEPT  2016     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R and B B Amberker, Polynomial Construction and Non-Tree Based Efficient Secure Group Key Management Scheme, Third International Symposium on Security in Computing and Communications (SSCC), Springer, pp 122-133, 2015.    AUG  2015     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Ronak Vyas, Alok Singh, Jolly Singh, Gunjan Soni, B. R. Purushothama, Design of an Efficient Verification Scheme for Correctness of Outsourced Computations in Cloud Computing, Third International Symposium on Security in Computing and Communications (SSCC-2015) - SSCC'15 Special Session on Cloud Security and Cryptography, 2015.    AUG  2015     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Nishat Koti, Esha Keni, Krithika, Purushothama B R,Non-tree Based Group Key Management Scheme With Constant Rekeying and Storage Cost, ACM Third International Symposium on Women in Computing and Informatics (WCI-2015), pp. 564-572, 2015.    AUG  2015     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, Nishat Koti, Security Analysis of Tree and Non-tree Based Group Key Management Schemes Under Strong Active Outsider Attack Model, Fourth International Conference on Advances in Computing, Communications and Informatics (ICACCI) , pp 1825-1829, 1025.    AUG  2015     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, On the Security of Group-based Proxy Re-encryption Scheme Cryptology ePrint Archive Report 2013/456, 2013    NOV  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Efficient Hierarchical Key Management Scheme Based on Polynomial Construction, International Symposium on Security in Computing and Communications (SSCC-13), pp 191-202, August 22-24, 2013. Mysore, August 2013    AUG  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Provable Data Possession Scheme with Constant Proof Size for Outsourced Data in Public Cloud, Second International Workshop on Cloud Computing &amp; Identity Management (CloudID 2013), Mysore, 1662 - 1667,August 2013,    AUG  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Secure Group Key Management Scheme Based on Dual Receiver Encryption System, 2013 ACM Asia Public-Key Cryptography in conjunction with 8th ACM Symposium on Information, Computer and Communications Security (ASIACCS 2013), pp. 45-50, Hangzhou, China, May 2013    MAY  2013     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Efficient Query Processing on Outsourced Encrypted Data in Cloud with Privacy Preservation, International Symposium on Cloud and Services Computing (ISCOS), NIT, Surathkal,pp.88-95, Dec 2012 [Best Paper Award]    DEC  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Publicly Auditable Provable Data Possession Scheme for Outsourced Data in the Public Cloud Using Polynomial Interpolation, International Conference on Security in Computer Networks and Distributed Systems (SNDS-2012), CCIS- Springer, Vol. 335, IIITM-Kerala, pp. 11-22, 2012    OCT  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, Kusuma Shirisha ,B B Amberker, Secure Group Key Management Scheme for Simultaneous Multiple Groups with Overlapped Memberships Using Binomial Key Tree, International Conference on Security in Computer Networks and Distributed Systems (SNDS-2012), CCIS- Springer, Vol. 335, IIITM-Kerala, pp. 135-146, 2012    OCT  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Group key management scheme for simultaneous multiple groups with overlapped membership, International Conference on Security in Computer Networks and Distributed Systems (SNDS-2012), CCIS- Springer, Vol. 335, IIITM-Kerala, pp. 11-22, 2012    OCT  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Access control mechanisms for outsourced data in cloud, Fourth International Conference on Communication Systems and Networks (COMSNETS 2012), Bangalore, pp. 1-10, 2012    JAN  2012     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, B B Amberker, Group key management scheme for simultaneous multiple groups with overlapped membership, Third International Conference on Communication Systems and Networks (COMSNETS 2011), Bangalore, pp. 1-10, 2011    JAN  2011     </p>
+        </li>
+        <li class="p-2">
+        <p ><b>Publication Category: </b>International       Purushothama B R, Alwyn Roshan Pais, Design and implementation of secure internet based voting system with user anonymity using identity based encryption system, 6th IEEE International conference on services computing, Bangalore, pp. 474-481, 2009    AUG  2009     </p>
+        </li>
+        <li class="p-2">
+        <p style="line-height: 100%; margin-bottom: 0.49cm; background: #ffffff; text-align: justify;"><b>Publication Category: </b>National       Purushothama B R, Alwyn Roshan Pais, Secure Internet Based Voting System, eINDIA 2009 , Hyderabad, 2009 (Poster Presentation)    AUG  2009     </p>
+        </li>
+        </ol>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+            <li class="p-2">
+            <p class="p-2">Ph. D scholar: Gaurav Pareek (awarded) Thesis title: Cryptographic Solutions for Secure Sharing of Outsourced Data</p>
+            </li>
+            <li class="p-2">
+            <p class="p-2">Ph.D Scholar: Payal Sharma (Joined:July-2018)</p>
+            </li>
+            <li class="p-2">
+            <p class="p-2">Ph.D Scholar: Ankit Chouhan (Joined:July-2021)</p>
+            </li>
+            <li class="p-2">
+            <p class="p-2">Gurunath (Joined: July 2021)</p>
+            </li>
+            <li class="p-2">
+            <p class="p-2">Pooja Dalvi (Co-Guide: Joined July 2021<b>)</b></p>
+            </li>
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+<p class="p-2">SERB sponsored project (Project No: ECR/2015/000428) titled “Development of Secure Key Management Protocols for Group Communication Under Active Outsider Attack Model”. Grant: Rs. 15,00,000. Role: Principle investigator.  </p>
+      </div>
+    </div>
+
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+
+        <p class="p-2">IEEE - Member</p>
+        
+        <p class="p-2">ACM- member</p>
+        
+        <p class="p-2">Cryptology Research Society of India (CRSI)-Life Member</p>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table>
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Sr.No.</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Month</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Year</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Training attended Information</b></p>
+            </th>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >1</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >JAN</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2019</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >15th International Conference on Distributed Computing and Internet Technology (ICDCIT), KIIT, Bhubaneshwar</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >SEPT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2017</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >5th International Symposium on Security in Computing and Communication (SSCC’17), Manipal, Karnataka, India, September 13-16, 2017.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >3</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >JUN</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2017</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >5th International Conference on Advanced Computing, Networking, and Informatics (ICACNI-2017), NIT Goa, India, June 1-3, 2017.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >4</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >DEC</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2016</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >A seven days Global Initiative of Academic Networks (GIAN) course on “Cyber Crime Investigation and Digital Forensics”, organized at NIT Goa, India, 30th Nov to 6th Dec, 2016.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >5</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >DEC</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2016</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >A ten days Global Initiative of Academic Networks (GIAN) course on “Privacy Preserving Data Mining”, organized at NIT Goa, India, 19-29 Dec, 2016.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >6</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >NOV</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2016</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >A ten days Global Initiative of Academic Networks (GIAN) course on “Public Key Infrastructure and Trust Management (PKI&amp;TM)”, organized at NIT Goa, India, 5-14 Nov, 2016.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >7</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >SEPT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2016</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Advanced Computing, Networking, and Informatics (ICACNI - 2016), NIT Rourkela, September 21-24, 2016.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >8</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2015</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Symposium on Security in Computing and Communications Kochi, Kerala.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >9</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2015</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Fourth International conference Advances in Computing, Communications and Informatics , Kochi, Kerala.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >10</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2015</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Third ACM International symposium on Women in Computing and Informatics, Kochi, Kerala.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >11</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >SEPT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2014</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Information Security and Cryptography Workshop, National Institute of Technology Karnataka Surathkal, 15-16 September 2014.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >12</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2014</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >IEEE Authorhip workshop, Indian Institute of Science Bangalore, 12 August 2014.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >13</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2013</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Workshop on Cloud Computing &amp; Identity Management (CloudID 2013)</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >14</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2013</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Symposium on Security in Computing and Communications (SSCC-13), Mysore.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >15</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >MAY</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2013</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2013 ACM Asia Public-Key Cryptography in conjunction with 8th ACM Symposium on Information, Computer and Communications Security (ASIACCS 2013), Hangzou, China.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >16</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >DEC</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2012</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Symposium on Cloud and Services Computing (ISCOS), NIT Surathkal.</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >17</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2012</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Conference on Security in Computer Networks and Distributed Systems , IIITM Kerala</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >18</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2012</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >International Conference on Communication, Computing &amp; Security (ICCCS), NIT Rourkela</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >19</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >JUN</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2012</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Two week workshop on Introduction to Research Methodologies conducted by IIT Bombay from 25th June to 4th July 2012</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >20</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >MAR</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2012</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Five day database security workshop at NIT Warangal from 5th March to 9th March 2012</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >21</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >NOV</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2011</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Ethical Hacking event during Technozion 2011 at NIT Warangal</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >22</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2009</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >e-INDIA</p>
+            </td>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >23</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2005</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Network Management and Network Simulation Using NS2 from 16th aug to 20th Aug 2005 at NMAMIT Karnataka</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Sr.No</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Month</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Year</b></p>
+            </th>
+            <th class="bg-blue-400 text-white p-4">
+            <p ><b>Training Conducted Information</b></p>
+            </th>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >1</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2015</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Five Days National Workshop on Cryptography, Applications and Foundations of Data Science</p>
+            </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >AUG</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2015</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Two Days National Workshop on LaTeX for Technical Documentation</p>
+            </td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >3</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >OCT</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >2013</p>
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+            <p >Robotics Workshop at NIT Goa</p>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li class="p-2"><a href="../../index.html"><span class="">Home</span></a></li>
+            <li class="p-2"><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li class="p-2"><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li class="p-2"><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li class="p-2"><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li class="p-2"><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li class="p-2"><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li class="p-2"><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li class="p-2"><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li class="p-2"><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li class="p-2"><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li class="p-2"><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li class="p-2"><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li class="p-2"><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li class="p-2"><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li class="p-2"><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li class="p-2"><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li class="p-2"><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p class="p-2">Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" "100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

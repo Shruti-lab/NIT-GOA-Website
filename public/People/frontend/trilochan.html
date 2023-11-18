@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Trilochan Panigrahi.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Trilochan Panigrahi</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Electronics and Communication Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Distributed Signal Processing, Array Signal
+        Processing, IoT and Nano WSN.
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> tpanigrahi@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. Trilochan Panigrahi</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date-</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">
+                Department: Department of Electronics and Communication Engineering
+              </p>
+              <p class="p-2">URL: <a class="text-blue-500" href="https://scholar.google.com/citations?user=lcfH8W4AAAAJ&hl=en">[Google Scholar -  Trilochan Panigraphi]</a></p>
+              <p class="p-2">Date of Joining-</p>
+              <p class="p-2">
+                Research/Teaching Experience: [Information not available]
+              </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: Department of ECE, NIT Goa, Farmagudi, Ponda, Goa - 403 401.
+              </p>
+              <p class="p-2">City: PONDA</p>
+              <p class="p-2">State: GOA</p>
+              <p class="p-2">Country: INDIA</p>
+              <p class="p-2">Email Address: tpanigrahi@nitgoa.ac.in</p>
+              <p class="p-2">Phone [Residence]: -</p>
+              <p class="p-2">Phone [Mobile]: -</p>
+              <p class="p-2">Office Extension: 204</p>
+              
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Distributed Signal Processing</p>
+            <p class="p-2">Array Signal Processing</p>
+            <p class="p-2">IoT and Nano WSN</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Information Theory and Coding</p>
+          <p class="p-2">Soft Computing</p>
+          <p class="p-2">Network Theory and Synthesis</p>
+          <p class="p-2">Digital Communication</p>
+          <p class="p-2">Digital Signal Processing</p>
+          <p class="p-2">Wireless Communication</p>
+          <p class="p-2">Satellite Communication</p>
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+          <p class="p-2">Digital Signal Processing</p>
+          <p class="p-2">Estimation and Detection Theory</p>
+          <p class="p-2">Advanced Radar System</p>
+          <p class="p-2">Random Process</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                        <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Institute / University
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">subject
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    M.Tech.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Institute of Science and Technology, Berhampur
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2005
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Electronics and Communication Engineering
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Ph.D.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Institute of Technology Rourkela
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    
+                </td>
+            </tr>
+        
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="panel-body">
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+            </h3>
+
+            <div class="table-responsive">
+                
+                        <ol style="margin-left:15px;">
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International</span>
+                           <br>
+                                        Bhabani Sankar Guda, Meenakhi Panda, T. Panigrahi, S. Das, B. Appasani, O. Acharya, Hossam M. Zawbaa and Salah Kamel, “Distributed Intermittent Fault Diagnosis in Wireless Sensor Network using Likelihood Ratio Test,” IEEE Access, Dec 2022, accepted.
+                                        <br>
+                                        
+                            DEC<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International</span>
+                           <br>
+                                        Bishnu Prasad Mishra, T. Panigrahi, Annet M. Wilson and Samrat L. Sabat, “Nonlinear channel estimation based on robust distributed Hammerstein spline adaptive technique in wireless sensor network,” in Digital Signal Processing, Elsevier, Vol. 132,  Dec. 2022.
+                                        <br>
+                                        
+                            DEC<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International</span>
+                           <br>
+                                        Harikrishna Gantayat, T. Panigrahi, and P. Patra, “An efficient direction-of-arrival estimation of multipath signals with impulsive noise using satin bowerbird optimization-based deep learning neural network,” in Expert Systems, Wiley, July 2022. 
+                                        <br>
+                                        
+                            JULY<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International</span>
+                           <br>
+                                        Harikrishna Gantayat, T. Panigrahi, and P. Patra, “An Efficient RBF-DCNN Based DOA Estimation in Multipath and Impulse Noise Wireless Environment,” in Transactions on Emerging Telecommunications Technologies, Wiley, Accepted, June 2022.
+                                        <br>
+                                        
+                            JUN<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International</span>
+                           <br>
+                                        Bishnu Prasad Mishra, Annet M. Wilson and T. Panigrahi, “Estimation of Nonlinear Wireless Channel based on Incremental Spline Adaptive Filtering,” in Wireless Personal Communication, Springer, April 2022.
+                                        <br>
+                                        
+                            APRIL<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International</span>
+                           <br>
+                                        Bishnu Prasad Mishra, T. Panigrahi, Annet M. Wilson and Samrat L Sabat, “A Robust Diffusion Algorithm using Logarithmic Hyperbolic Cosine Cost Function for Channel Estimation in Wireless Sensor Network under Impulsive Noise Environment,” in Digital Signal Processing, Elsevier, Vol. 123, April 2022
+                                        <br>
+                                        
+                            APRIL<br>2022<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International</span>
+                           <br>
+                                        Saran Shrihari Sripad Panda, Trilochan Panigrahi, Saidi Reddy Parne, Samrat L. Sabat and Linga Reddy Cenkeramaddi, "Recent Advances and Future Directions of Microwave Photonic Radars: A Review," in IEEE Sensors, vol. 21, no. 19, pp. 21144-21158, 1 Oct.1, 2021.
+                                        <br>
+                                        
+                            OCT<br>2021<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International</span>
+                           <br>
+                                        Bandaru Bhavana, Shwetha Namburu, Trilochan Panigrahi, and Samrat L Sabat, “Robust Methods for Wideband Compressive Spectrum Sensing under Non-Gaussian Noise,” in IEEE Communications Letters, vol. 25, no. 10, pp. 3398-3402, Oct. 2021.
+                                        <br>
+                                        
+                            OCT<br>2021<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International</span>
+                           <br>
+                                        Annet M. Wilson, T. Panigrahi, Bishnu Prasad Mishra, and Samrat L Sabat, “Adaptive Geman-McClure Estimator for Robust Distributed Channel Estimation,” in IEEE Access, vol. 9, pp. 93691-93702, 2021, doi: 10.1109/ACCESS.2021.3093001.
+                                        <br>
+                                        
+                            JULY<br>2021<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International</span>
+                           <br>
+                                        Y. S. Reddy, A. Dubey, A. Kumar, and T. Panigrahi, " A Probabilistic Approach to Model SIC based RACH mechanism for Machine Type Communications in Cellular Networks," in IEEE Transactions on Vehicular Technology, vol. 70, no. 2, pp. 1878-1893, Feb. 2021, doi: 10.1109/TVT.2021.3055286. 
+                                        <br>
+                                        
+                            FEB<br>2021<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International</span>
+                           <br>
+                                        Y. S. Reddy, A. Dubey, A. Kumar, and T. Panigrahi, "A Successive Interference Cancellation based Random Access Channel Mechanism for Machine-to-Machine Communications in Cellular Internet-of-Things," in IEEE ACCESS, IEEE Access, vol. 9, pp. 8367-8380, 2021, doi: 10.1109/ACCESS.2021.3049439.
+                                        <br>
+                                        
+                            JAN<br>2021<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International</span>
+                           <br>
+                                        Shree Prasad M, T. Panigrahi, and Ravi Prasad JK, “Distributed Version of Hybrid Swarm Intelligence-Nelder Mead Algorithm for DOA estimation in WSN,” in Expert Systems With Applications, Elsevier, Vol. 144, April 2020.
+                                        <br>
+                                        
+                            APRIL<br>2020<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary">International</span>
+                           <br>
+                                        Shree Prasad M, and T. Panigrahi, “Robust Mixed Source Localization in WSN using Swarm Intelligence Algorithms,” in Digital Signal Processing, Vol. 98, March 2020, Elsevier.
+                                        <br>
+                                        
+                            MAR<br>2020<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International</span>
+                           <br>
+                                        Annet Mary Wilson, T. Panigrahi, and Ankit Dubey, “Robust Distributed Lorentzian Adaptive Filter with Di?usion Strategy in Impulsive Noise Environment,” in Digital Signal Processing, Elsevier, Vol. 96, Jan 2020.
+                                        <br>
+                                        
+                            <br>2020<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International</span>
+                           <br>
+                                        Y. S. Reddy, Meenakshi Panda, Ankit Dubey, Abhinav Kumar, T. Panigrahi and K. M. Rabie, “Optimization of Indoor Hybrid PLC/VLC/RF Communication Systems,” IET Communication, Oct 2019, Accepted
+                                        <br>
+                                        
+                            OCT<br>2019<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International</span>
+                           <br>
+                                        Meera Dash, T. Panigrahi, R. Sharma, “Robust Estimation of IIR System's Parameter using Modified Particle Swarm Optimization Algorithm,” International Journal of Computational Intelligence Studies, Inderscience, Vol. 8, Nos. 1/2, 2019.
+                                        <br>
+                                        
+                            <br>2019<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_PubCategary">International</span>
+                           <br>
+                                        Shree Prasad M, and T. Panigrahi, “Distributed Maximum Likelihood DOA Estimation Algorithm for Correlated Signals in Wireless Sensor Network,” in Wireless Personal Communications, Springer, April 2019, Volume 105, Issue 4, pp 1527–1544, https://doi.org/10.1007/s11277-019-06158-8.
+                                        <br>
+                                        
+                            <br>2019<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_PubCategary">International</span>
+                           <br>
+                                        S. Patidar and T. Panigrahi, Detection of epileptic seizure using Kraskov entropy applied on tunable-Q wavelet transform of EEG signals, Biomedical Signal Processing and Control, vol. 34, pg. 74-80, 2017. 
+                                        <br>
+                                        
+                            <br>2017<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_PubCategary">International</span>
+                           <br>
+                                        Meera Dash, T. Panigrahi, R. Sharma, “Distributed Parameter Estimation of IIR System using Diffusion Particle Swarm Optimization Algorithm,” Journal of King Saud university - Engineering Sciences (2017), Elsevier, In Press.
+                                        <br>
+                                        
+                            <br>2017<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, M. Panda and G. Panda, `` Fault Tolerant Distributed Estimation in Wireless Sensor Networks,'' Journal of Network and Computer applications, Elsevier, Vol. 69, pp. 27-39, July, 2016.
+                                        <br>
+                                        
+                            JULY<br>2016<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, S. Roula, and H. Gantayat, “Application of Comprehensive Learning Particle Swarm Optimization Algorithm for Maximum Likelihood DOA Estimation in Wireless Sensor Networks,” International Journal of Swarm Intelligence, 2016 Vol.2, No.2/3/4, pp.208 - 228. 
+                                        <br>
+                                        
+                            <br>2016<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, G. Panda and B Mulgrew, "Error Saturation Nonlinearities for Robust Incremental LMS over Wireless Sensor Networks,'' ACM Transation on Sensor Network, Accepted, 2014.
+                                        <br>
+                                        
+                            MAY<br>2014<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, G. Panda, B Mulgrew and B. Majhi, "Distributed DOA estimation using clustering of sensor nodes and diffusion PSO algorithm,'' Swarm and Evolutionary Computation, Elsevier, vol. 9 , pp-47–57, 2013.
+                                        <br>
+                                        
+                            SEPT<br>2013<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, G. Panda, and B. Majhi, “Maximum Likelihood Source Localization in Wireless Sensor Network Using Particle Swarm Optimization,” International Journal of Signal and Imaging Systems Engineering, Indersciecne, Vol. 6, No. 2, 2013, pp. 83-90.
+                                        <br>
+                                        
+                            JUN<br>2013<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, G. Panda and B Mulgrew, "Distributed bearing estimation techniques using diffusion particle swarm optimization algorithm,'' IET Wireless Sensor Systems, Volume 2, issue 4, December 2012, pp. 385 – 393.
+                                        <br>
+                                        
+                            DEC<br>2012<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_PubCategary">International</span>
+                           <br>
+                                        T. Panigrahi, G. Panda, P M Pradhan, and B. Majhi, ``Block least-mean square algorithm over distributed wireless sensor network,'' Journal of Computer Networks and Communication, vol. 2012, Article ID 601287, 13 pages, 2012. 
+                                        <br>
+                                        
+                            NOV<br>2012<br> <br>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_PubCategary">International</span>
+                           <br>
+                                        S. K. Tripathy, M. Hota and T. Panigrahi, “A Model for Optical Bistability in a Hybrid Semiconductor Photonic Crystal Structure”, Photonics Technology Letters, IEEE, Vol.21,  No.12, pp. 772-774, June 2009.
+                                        <br>
+                                        
+                            JUN<br>2009<br> <br>
+                        </li>
+
+                    
+                        </ol>
+                    
+            </div>
+
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International</span>
+                       <br>
+                                        Harikrushna Gantayat, Shree Prasad M, T. Panigrahi and Pradyumna Patra, “Estimation of direction-of-arrival with limited snapshots in wireless sensor network,” in IEEE International Conference on Smart Generation Computing, Communication and Networking (SMART GENCON), Dec 2022.
+                                        <br>
+                                        
+                        DEC<br>2022<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International</span>
+                       <br>
+                                        Harikrushna Gantayat, T. Panigrahi, Pradyumna Patra” UDM-RBM-based DOA Estimation in Alpha Unstable Impulse Noise and Multipath Signals”, in IEEE 6th International Conference on Electronics, Communication and Aerospace Technology [ICECA 2022], Nov., 2022
+                                        <br>
+                                        
+                        NOV<br>2022<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International</span>
+                       <br>
+                                        Bandaru Bhavana, Samrat L. Sabat, Swetha Namburu and T. Panigrahi, “Wavelet based non-reconstructive Compressed Spectrum Sensing against non-Gaussian noise,” in 14th IEEE International Conference on COMmunication Systems & NETworkS (COMSNET 2022), January 3 – 9, 2022, Bengaluru, India.
+                                        <br>
+                                        
+                        JAN<br>2022<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International</span>
+                       <br>
+                                        Yeduri Sreenivasa Reddy, Garima Chopra, Ankit Dubey, Abhinav Kumar, T. Panigrahi and Linga Reddy Cenkeramaddi, “Splitting Random Access Mechanism for Massive Machine Type Communications in 5G Cellular Internet-Of-Things," in IEEE 32nd Annual International Symposium on Personal, Indoor and Mobile Radio Communications (PIMRC): IEEE PIMRC 2021, 13-16 September 2021, Virtual Conference.
+                                        <br>
+                                        
+                        SEPT<br>2021<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International</span>
+                       <br>
+                                        Kaksha Posnaik, T. Panigrahi, Samrat L Sabat and Meera Dash, “A Simplified Deep Learning model for Acoustic Feedback Cancellation in Digital Hearing Aid," in IEEE International Symposium of Asian Control Association on Intelligent Robotics and Industrial Automation (IRIA), 20-22nd September 2021, Virtual Conference, IIT Goa, India.
+                                        <br>
+                                        
+                        SEPT<br>2021<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International</span>
+                       <br>
+                                        Bishnu P Mishra, Annet Merry Wilson, T. Panigrahi, and Samrat L Sabat, “A Robust Adaptive Algorithm using Inverse Square Root Cost Function for Underwater Channel Estimation," Accepted in IEEE ANTS 2021, India.
+                                        <br>
+                                        
+                        SEPT<br>2021<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M, T. Panigrahi, and M Hassan, “Improving the Reliability of Pulse-based Terahertz Communication using Intelligent Reflective Surface,” in IEEE ICC 2020 Workshop on Terahertz Communications which was the virtual conference held from 7-11 June 2020.
+                                        <br>
+                                        
+                        JUN<br>2020<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International</span>
+                       <br>
+                                        Rashmi Rai, M. Gaglani, Soumitra Das and T. Panigrahi, "Multi-Level Constant Current Based Fast Li-Ion Battery Charging Scheme With LMS Based Online State of Charge Estimation," 2020 IEEE Kansas Power and Energy Conference (KPEC), Manhattan, KS, USA, 2020, pp. 1-6, doi: 10.1109/KPEC47870.2020.9167541.
+                                        <br>
+                                        
+                        APRIL<br>2020<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International</span>
+                       <br>
+                                        Bishnu Prasad Mishra, Annet Mary Wilson and T. Panigrahi, “Robust and Distributed Estimation of Wireless Channel Using Maximum Correntropy Criteria,” in IEEE International Conference on Information Technology (ICIT 2019), held on 19 - 21 December 2019 at IIIT Bhubaneswar, Odisha, India.
+                                        <br>
+                                        
+                        DEC<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International</span>
+                       <br>
+                                        Bishnu Prasad Mishra, Annet Mary Wilson and T. Panigrahi, “Robust Incremental Nonlinear Channel Estimation based on Spline Adaptive Filtering,” in TENCON 2019, held on 17 - 20 October 2019 at Hotel Grand Hyatt, Bolgatty, Kochi, Kerala, India.
+                                        <br>
+                                        
+                        OCT<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International</span>
+                       <br>
+                                        Bishnu Prasad Mishra, Annet Mary Wilson and T. Panigrahi, “Robust Incremental Nonlinear Channel Estimation based on Spline Adaptive Filtering,” in TENCON 2019, held on 17 - 20 October 2019 at Hotel Grand Hyatt, Bolgatty, Kochi, Kerala, India.
+                                        <br>
+                                        
+                        OCT<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_PubCategary1">International</span>
+                       <br>
+                                        Jagdish Pujara, Sithara Raveendran, Trilochan Panigrahi, Vasantha M.H., Nithin Kumar Y.B., “Design and Analysis of Energy Efficient Reversible Logic based Full Adder,” in 62nd IEEE International Midwest Symposium on Circuits and Systems, Dallas, TX, USA | Aug. 4-7, 2019
+                                        <br>
+                                        
+                        AUG<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M, T. Panigrahi, M Hassan, and Ming Ding, “Sampling Free TDOA Localization in Millimeter Wave Networks,” in the Track 1 – Phy & Fundamentals of the IEEE Wireless Communications and Networking Conference (WCNC 2019) conference held in Marrakech, Morocco, from 15-18 April 2019.
+                                        <br>
+                                        
+                        APRIL<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_PubCategary1">International</span>
+                       <br>
+                                        Dharma Rane, Puskar Shirodkar, T. Panigrahi and S Mini, “Detection of Ambulance Siren in Traffic,” presented in International Conference on Wireless Communications Signal Processing and Networking (WiSPNET2019), at Kalavakkam, Tamilinadu, India, March 21-23, 2019.
+                                        <br>
+                                        
+                        MAR<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_PubCategary1">International</span>
+                       <br>
+                                        Annet Mary Wilson, Bishnu Prasad Mishra, and T. Panigrahi, “Robust Distributed Geman-McClure Based Channel Estimation,” in International Conference on Wireless Communications Signal Processing and Networking (WiSPNET2019), at Kalavakkam, Tamilinadu, India, March 21-23, 2019.
+                                        <br>
+                                        
+                        MAR<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_PubCategary1">International</span>
+                       <br>
+                                        Sumesh KP, Ankit Dubey, and T. Panigrahi, “Hardware Implementation of Filtered OFDM for BB-PLC Using Software Defined Radio,” in the 25th IEEE National Conference on Communication 2019 NCC-2019, at IISc. Bangalore, India from 23-25 Feb 2019.
+                                        <br>
+                                        
+                        FEB<br>2019<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M., T. Panigrahi, and M. Hassan, “Classifying the Order of Higher Derivative Gaussian Pulses in Terahertz Wireless Communications” in the IEEE GLOBECOM 2018 Workshops: Emerging Technologies for 5G and Beyond Wireless and Mobile Networks, December 5–7, 2018, at Abu Dhabi, UAE.
+                                        <br>
+                                        
+                        DEC<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M., T. Panigrahi, and M. Hassan, “Energy Efficient Event Localization and Classification for Nano IoT”  in the IEEE Globecom2018 SAC IoT and for publication in its proceedings, December 5–7, 2018, at Abu Dhabi, UAE.
+                                        <br>
+                                        
+                        DEC<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl19_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M., T. Panigrahi and M. Hassan, “Direction of Arrival and Center Frequency Estimation for Impulse  Radio Millimeter Wave Communications,” In 2nd ACM Workshop on Millimeter Wave Networks and Sensing Systems (mmNets ’18), October 29, 2018, New Delhi, India. ACM, NewYork, NY, USA, https://doi.org/10.1145/3264492.3264503
+                                        <br>
+                                        
+                        OCT<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl20_Label_PubCategary1">International</span>
+                       <br>
+                                        Asha Anil, Manjunath M, T. Panigrahi, and Ankit Dubey, “Determining ``OFF'' Time Duration of FPGA based GPS Tracking System”, has been presented at the IEEE technically co-sponsored Conference on Information and Communication Technology 2018 (CICT 2018), which will be held from October 26-28, 2018 at PDPM-Indian Institute of Information Technology, Design and Manufacturing, Jabalpur, Madhya Pradesh, India.
+                                        <br>
+                                        
+                        OCT<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl21_Label_PubCategary1">International</span>
+                       <br>
+                                        Sampada Barve, Sithara Raveendran, Charudatta Korde, T. Panigrahi, Nithin Kumar Y. B. and Vasantha M. H., “FPGA Implementation of Optimized Algorithm for Square and Cube Architecture using Vedic Mathematics”, in the IEEE International Symposium on Smart Electronic Systems (iSES), December 17-19 2018, Hyderabad, India.
+                                        <br>
+                                        
+                        OCT<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl22_Label_PubCategary1">International</span>
+                       <br>
+                                        Bishnu Prasad Mishra, T. Panigrahi and Ankit Dubey, “Robust Distributed Estimation of Wireless Channel,” in the IEEE 2018 International Conference on Applied Electromagnetics, Signal Processing and Communication (AESPC), held at KIIT, Bhubaneswar, Odisha, India from 22-24 Oct 2018.
+                                        <br>
+                                        
+                        OCT<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl23_Label_PubCategary1">International</span>
+                       <br>
+                                        Sneha Kamble, S Mini and T. Panigrahi, “Monitoring Air Pollution: An IoT Application” in International Conference on Wireless Communications Signal Processing and Networking (WiSPNET2018), at Kalavakkam, Tamilinadu, India, March 22-24, 2018
+                                        <br>
+                                        
+                        MAR<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl24_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl24_Label_PubCategary1">International</span>
+                       <br>
+                                        Rajprakash Bale, Sai Seetharamaiah, Yeduri Sreenivasa Reddy, Ankit Dubey and Trilochan Panigrahi, “OFDM vs FBMC: A Comparative Analysis for Broadband-PLC,” in 2018 10th IEEE International Conference on Communication Systems & Networks (COMSNETS) at Bangalore, India, Jan 2018.
+                                        <br>
+                                        
+                        JAN<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl25_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl25_Label_PubCategary1">International</span>
+                       <br>
+                                        Mandeep Kumar, Ketan Sabale, S Mini, and T Panigrahi, “Priority Based Deployment of IoT Devices”, 32nd IEEE International Conference on Information Networking (ICOIN) 2018, held on January 10-12, 2018, Chiang Mai, Thailand. 
+                                        <br>
+                                        
+                        JAN<br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl26_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl26_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M., Trilochan Panigrahi, and Mahbub Hassan. 2018. Direction of Arrival Estimation for Nanoscale Sensor Networks. In NANOCOM ’18: ACM The Fifth Annual International Conference on Nanoscale Computing and Communication, September 5–7, 2018, Reykjavik, Iceland. ACM, New York, NY, USA, 6 pages. https://doi.org/10.1145/3233188.3233210
+                                        <br>
+                                        
+                        <br>2018<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl27_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl27_Label_PubCategary1">International</span>
+                       <br>
+                                        A Patnaik, M. Panda, M. Dash, T. Panigrahi, and R Sharma, “Robust Estimation of IIR System’s Parameter using Craziness Based Particle Swarm Optimization,” presented in 2nd IEEE International Conference on Man and Machine Interfacing (MAMI2017) held during 21-23 December 2017 at C V Raman Engineering College Bhubaneswar.
+                                        <br>
+                                        
+                        DEC<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl28_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl28_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M, T. Panigrahi and A. Dubey, “Computationally Efficient Near-Field Source
+Localization Using Single Snapshot” IEEE India Council International Conference INDICON-2017 held during 15 – 17 December, 2017 at the IIT Roorkee.
+
+                                        <br>
+                                        
+                        DEC<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl29_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl29_Label_PubCategary1">International</span>
+                       <br>
+                                        Meera Dash, T. Panigrahi and R Sharma, “Robust Estimation of IIR System’s Parameter using Adaptive Particle Swarm Optimization Algorithm”  in the ICCDIM 2017 at VSSUT, Burla held on November 18-20, 2017.
+                                        <br>
+                                        
+                        NOV<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl30_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl30_Label_PubCategary1">National</span>
+                       <br>
+                                        Jagadeesh Pujara, Vasantha M.H., and T. Panigrahi, “Design of Reversible Multiplier Using Vedic Algorithm,” in 10th Annual National Symposium on VLSI and Embedded Systems, GEC, Farmagudi, Goa, 27-28 April 2017. 
+                                        <br>
+                                        
+                        APRIL<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl31_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl31_Label_PubCategary1">International</span>
+                       <br>
+                                        R. R. Panda, P. Shukla, T. Panigrahi and B. S. Gouda, “Statistical Based Fault Node Detection Algorithms For Wireless Sensor Networks,” in IEEE ICTPACT 2017, at Chennai, TN, India, April 6-8, 2017.
+                                        <br>
+                                        
+                        APRIL<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl32_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl32_Label_PubCategary1">International</span>
+                       <br>
+                                        Shree Prasad M, T. Panigrahi, “'DOA Estimation of Coherent Sources Using QPSO in WSN,” in  International Conference on Optical & Wireless Technologies (OWT2017) at MNIT Jaipur, 18-19th March 2017. 
+                                        <br>
+                                        
+                        MAR<br>2017<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl33_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl33_Label_PubCategary1">International</span>
+                       <br>
+                                        Meera Nayak, T. Panigrahi and R Sharma, “Distributed Estimation using Multi-hop Adaptive Diffusion in Sparse Wireless Sensor Networks” in the ICMOCE 2015 at IIT Bhubaneswar, December 18-20, 2015
+                                        <br>
+                                        
+                        DEC<br>2015<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl34_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl34_Label_PubCategary1">International</span>
+                       <br>
+                                        R. R. Panda, B. S. Gouda, D Patro, and T. Panigrahi, “Optimal path finding algorithm using neighbor position in a Wireless Ad Hoc Network,” in IEEE International Conference on Computer, Communication and Control (IC4), at Indore, MP, India, September 10-12, 2015.
+                                        <br>
+                                        
+                        SEPT<br>2015<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl35_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl35_Label_PubCategary1">International</span>
+                       <br>
+                                        S. Roula and T. Panigrahi, “Direction of Arrival Estimation Using Robust MUSIC Algorithm in Wireless Sensor Networks,” in International Conference on Advances in Applied Engineering and Technology - 2015 (ICAAET'15),  held at Syed Ammal Engineering College during May 14-16, 2015 in Ramanathapuram, Tamilnadu, India
+                                        <br>
+                                        
+                        MAY<br>2015<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl36_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl36_Label_PubCategary1">International</span>
+                       <br>
+                                        S. Roula, H. Gantayat, T. Panigrahi and G. Panda, “Maximum Likelihood DOA Estimation in Wireless Sensor Networks  Using Comprehensive Learning Particle Swarm Optimization Algorithm,” in 2014 International Conference on Computational Intelligence in Data Mining (ICCIDM-2014) on December 20-21, 2014 Veer Surendra Sai University of Technology (VSSUT), Burla, India.
+                                        <br>
+                                        
+                        DEC<br>2014<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl37_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl37_Label_PubCategary1">International</span>
+                       <br>
+                                        R. R. Panda, B. S. Gouda and T. Panigrahi, “Efficient Fault Node Detection Algorithm for  Wireless Sensor Networks,”  2014 International Conference on High Prformance Computing and Applications (ICHPCA) held on December 22-24, 2014 at C.V. Raman College of Engineering, Bhubaneswar, India.
+                                        <br>
+                                        
+                        DEC<br>2014<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl38_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl38_Label_PubCategary1">International</span>
+                       <br>
+                                        A. Panda, M. Hota, T. Panigrahi, S. Dash and S. Tripathy, “Realization of a Photonic Switch in a Photonic Crystal Fiber using Kerr Nonlinearity,” in International Conference on Advances in Science and Technology (ICAST 2014) will be held in Saraswati College of Engineering, Navi Mumbai during November 11-12 ,2014.
+                                        <br>
+                                        
+                        NOV<br>2014<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl39_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl39_Label_PubCategary1">National</span>
+                       <br>
+                                        T. Panigrahi, “Maximum Likelihood Bearing Estimation in Wireless Sensor Networks Using Particle Swarm Optimization Algorithm,” in 4th  National Conference on "Future Trends in Communication and Computing[FTCC-2013]"  at NMIET, Bhubaneswar on 4th March 2013.
+                                        <br>
+                                        
+                        MAR<br>2013<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl40_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl40_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi and G. Panda, “Robust Distributed Learning in Wireless Sensor Network using Efficient Step Size,” in 2nd International Conference on Communication, Computing and Security at NIT Rourkela, India, 06-08 October 2012.
+                                        <br>
+                                        
+                        OCT<br>2012<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl41_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl41_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, G. Panda, and B. Mulgrew, “Robust distributed Block LMS over Wireless Sensor Network in Impulsive Noise”, in  8th International Conference on Distributed Computing and Internet Technology ICDCIT – 2012, LNCS Springer,  KIIT University, Bhubaneswar.
+                                        <br>
+                                        
+                        FEB<br>2012<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl42_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl42_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, G. Panda, B. Mulgrew and B. Majhi, “Robust Distributed Linear Parameter Estimation in Wireless Sensor Network”, in the  IEEE International Conference on Energy, Automation and Signal - ICEAS – 2011 at SOA University, ITER Bhubaneswar.
+                                        <br>
+                                        
+                        DEC<br>2011<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl43_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl43_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, G. Panda, B. Mulgrew and B. Majhi, ``Robust Diffusion LMS over Wireless Sensor Network in Impulsive Noise'', in International Conference on Emerging Technologies (ICET 2011), at NIT Durgapur.
+                                        <br>
+                                        
+                        MAR<br>2011<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl44_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl44_Label_PubCategary1">National</span>
+                       <br>
+                                        T. Panigrahi and G. Panda, “Integration of RFID with Wireless Sensor Network for Tracking and Monitoring'', in National Seminar On Next Generation Communication and Computing NGCC - 2010, NMIT, Bhubaneswar, Orissa, INDIA.
+                                        <br>
+                                        
+                        DEC<br>2010<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl45_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl45_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, G. Panda, B. Mulgrew and B. Majhi, ``Robust Incremental LMS over Wireless Sensor Network in Impulsive Noise'', in IEEE International Conference on Computational Intelligence and Communication Network, CICN2010, at Bhopal.
+                                        <br>
+                                        
+                        NOV<br>2010<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl46_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl46_Label_PubCategary1">International</span>
+                       <br>
+                                        Meenakshi Panda, T. Panigrahi, P. M. Khilar, and G. Panda, ``Learning With Distributed Data in Wireless Sensor Network'', in IEEE 1st International Conference on Parallel, Distributed and Grid Computing (PDGC-2010), at Jaypee University of Information Technology, Solan.
+                                        <br>
+                                        
+                        OCT<br>2010<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl47_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl47_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, P. M. Pradhan, and G. Panda, ``An energy efficient query processing protocol in wireless sensor network'', in the proceedings of International Conference on Information Technology, ICIT 2009, Bhubaneswar,Orissa, INDIA, Best Paper Award Winning Paper.
+                                        <br>
+                                        
+                        DEC<br>2009<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl48_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl48_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, P. M. Pradhan, G. Panda, B. Majhi, and B. Mulgrew, ``Robust distributed optimization in wireless sensor network'', in IEEE International Conference on Advances in Recent Technologies in Communication and Computing, ARTCom 2009, The Windsor Castle, Kottayam, INDIA.
+                                        <br>
+                                        
+                        OCT<br>2009<br> <br>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl49_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl49_Label_PubCategary1">International</span>
+                       <br>
+                                        T. Panigrahi, A. Patnaik, S. N. Sinha, C. G. Christodoulou "Amplitude Only Compensation for Failed Antenna Array Using Particle Swarm Optimization, in the Proc. 2008 IEEE AP-S International Symposium on Antennas and Propagation and 2008 USNC/URSI National Radio Science Meeting at San Diego, California, USA.
+                                        <br>
+                                        
+                        JULY<br>2008<br> <br>
+                    </li>
+
+                
+                    </ol>
+<br />
+                
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_bookchapter">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType_bookchapter">Book Chapter</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl01_Label_PubCategary_Book">International</span>
+                       <br>
+                                        Utkarsh Umarye, Vishal Rathod, T. Panigrahi and Samrat L. Sabat, “Designing Low-Cost and Easy-to-Access Skin Cancer Detector Using Neural Network Followed by Deep Learning,” in book entitled “Deep Learning, Machine Learning and IoT in Biomedical and Health Informatics – Techniques and Applications” Edited by Sujata Dash, Subhendu Kumar Pani, Joel J. P. C. Rodrigues, Babita Majhi in the book series CRC Press, 2022.
+
+                                        <br>
+                                        
+                        APRIL<br>2022<br> <br>
+                    </li>
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl02_Label_PubCategary_Book">International</span>
+                       <br>
+                                        Dharma Rane, Puskar Singh, T. Panigrahi and S. Mini, “Environmental Sound Classification using Neural Network and Deep Learning,” in book entitled “Nature-inspired Computing for Smart Application Design” in the book series Springer Tracts in Nature-Inspired Computing
+                                        <br>
+                                        
+                        SEPT<br>2020<br> <br>
+                    </li>
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl03_Label_PubCategary_Book">International</span>
+                       <br>
+                                        3.	Meenakshi Panda, Bhabani Gouda and T. Panigrahi, “Fault Diagnosis in Wireless Sensor Networks Using a Neural Network Constructed by Deep Learning Technique,” in book titled: De D., Mukherjee A., Kumar Das S., Dey N. (eds)  Nature Inspired Computing for Wireless Sensor Networks published in Springer Tracts in Nature-Inspired Computing, pp. 77-101,10.1007/978-981-15-2125-6_5.   
+                                        <br>
+                                        
+                        APRIL<br>2020<br> <br>
+                    </li>
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl04_Label_PubCategary_Book">International</span>
+                       <br>
+                                        Harikrishna Gantayat and T. Panigrahi, “On the Development of Energy-Efficient Distributed Source Localization Algorithm in Wireless Sensor Networks Using Modified Swarm Intelligence,” in book titled: De D., Mukherjee A., Kumar Das S., Dey N. (eds) Nature Inspired Computing for Wireless Sensor Networks, published in Springer Tracts in Nature-Inspired Computing, pp. 143-143, https://doi.org/10.1007/978-981-15-2125-6_8 
+                                        <br>
+                                        
+                        APRIL<br>2020<br> <br>
+                    </li>
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationBook_ctl05_Label_PubCategary_Book">International</span>
+                       <br>
+                                        Meenakshi Panda, Bhabani Gouda and T. Panigrahi, “Distributed Online Fault Diagnosis in Wireless Sensor Networks,” in book titled: "Design Frameworks for Wireless Networks" published in Lecture Notes in Networks and Systems Series, Springer Nature, pg. 197-221, 2020.   
+                                        <br>
+                                        
+                        <br>2019<br> <br>
+                    </li>
+                
+                    </ol>
+                
+            <p class="rightsm">
+                
+                
+            </p>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>PhD Guidance:
+Shree Prasad M., "Development of Efficient Source Localization Algorithms for Wireless Sensor Networks," awarded on 14-12-2020
+</span></li>
+        
+            <li class="p-2">
+                <span>PhD Guidance: 
+Performance Analysis of SIC-based Slotted ALOHA Mechanism for Internet-of-Things by Yedury Sreenivasa Reddy. Awarded on 28-06-2021.</span></li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                                
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Design and Development of Robust Distributed Nonlinear Channel Equalization, and Identification, SERB, DST, GOI (25.63 lac), 2017-20, PI</span>
+            </li>
+        
+            <li class="p-2">
+                <span>MonitNoise: An IoT Based Noise Level Assessment System in Urban Cities of India, SERB, DST, GOI (21.78  lac) 2017-19, PI</span>
+            </li>
+        
+            <li class="p-2">
+                <span>MonitAir: An IoT based Air Pollution Monitoring System, SERB, DST, GOI (22.19 lac), 2016-18, Co-PI</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Energy Efficient Lighting with Visible Light based Communication and Power Line Communication (59.5 lac), 2016-19 (Collaboration with IIT Hyderabad), DST, GoI, PI</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Design of Compact Shaped Beam Antenna Array for Dedicated Short Range Communication Service, SERB, DST, GOI (42.7 lac) 2017-20, Co-PI</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+      <label for="toggle9" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                                
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Best paper award at ICIT Conference, Dec. 2009.</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Project Associate in UKIERI Project (2008 to 2012)</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Visiting Research Scholar, University of Edinburgh, UK (3 months in summer for 3 year (2008-2010))</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Institute fellowship during PhD program at NIT Rourkela (June 2008- Feb. 2012)</span>
+            </li>
+        
+            <li class="p-2">
+                <span>MHRD Scholarship during M.Tech. (2003-2005)</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Senior Member IEEE, 
+IEEE Signal Processing Society, IEEE Communication Society</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Institute of Engineer (India), Associate Member</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Indian Society for Technical Education (ISTE), Life Member</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Professional Services
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>IEEE student councilor of IEEE student chapter in the year of 2007-2008 at NIST, Berhampur, Odisha</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Course Coordinator, MTech from July 2013 to Nov 2014, at NIST, Berhampur, Odisha</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Member of Rasthriya Bharat Abhiyan (RAA) at NIT Goa</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Members of Unnat Bharat Abhiyan (UBA) at NIT Goa</span>
+            </li>
+        
+            <li class="p-2">
+                <span>BTech Project coordinator, Department of ECE, NIT Goa from January 2015 to June 2019</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Faculty Advisor, Department of ECE, NIT Goa since July 2015 to June 2018</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Time Table coordinator, Department of ECE, NIT Goa since July 2019</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Chief Warden, NIT Goa Hostels, May 2019 to Jan 2021</span>
+            </li>
+        
+            <li class="p-2">
+                <span>Dear Institutional Relation and Alumni Affairs (IRAA) From Feb 2021 April 2023</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table">
+            <thead>
+                <tr style="height: 22px;">
+                    <th class="bg-blue-400 text-white p-4"></th>
+                    <th class="bg-blue-400 text-white p-4">Month
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Year
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Training attended Information
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                1
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                SEPT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Symposium of Asian Control Association on Intelligent Robotics and Industrial Automation (IRIA)  at IIT Goa
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE International Conference on Information Technology (ICIT 2019), held on 19 - 21 December 2019 at IIIT Bhubaneswar, Odisha, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                3
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                25th IEEE National Conference on Communication 2019 NCC-2019, at IISc. Bangalore, India from 23-25 Feb 2019.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                4
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE technically co-sponsored Conference on Information and Communication Technology 2018 (CICT 2018), which will be held from October 26-28, 2018 at PDPM-Indian Institute of Information Technology, Design and Manufacturing, Jabalpur, Madhya Pradesh, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                5
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2nd ACM Workshop on Millimeter Wave Networks and Sensing Systems (mmNets ’18), and MOBICOM 2018, October 29, 2018, New Delhi, India. 
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                6
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                APRIL
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One day workshop on the “Curriculum Development” on 21st April, 2018 at the Department of ECE, NIT Karnataka, Surthkal.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                7
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One week Global Initiative of Academic Networks (GIAN) Course on “Redox based Resistive Non-volatile Memory Technology,” organized by the Department of ECE, NIT Goa, Goa, during 4-9, December, 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                8
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Attended and presented a paper in ” IEEE India Council International Conference INDICON-2017 held during 15 – 17 December, 2017 at the IIT Roorkee.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                9
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                SEPT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                EU-India Air Quality Initiative – Training on Development of Local Air Quality Action Plans held in Goa on 16th September 2017. Two days seminar from 14-15th September 2017 on the same topic.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Global Initiative of Academic Networks (GIAN) Course on “The Field Theory of Classical and Quantum Phase Transition,” at NIT Goa, Goa, during 3rd July– 13th July, 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                11
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                APRIL
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Two days awareness workshop on “Internet of Things (IoT)” during 8-9, April 2017 organized by Pralhad P. Chhabria Research Center (PPCRC), Pune at Shree Rayeshwar Institute of Engineering and Information Technology, Shiroda, Goa.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                12
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                APRIL
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Two days workshop on “Internet of Things (IoT)” during 22-23, April 2017 organized by Elementz R & D at Shree Rayeshwar Institute of Engineering and Information Technology, Shiroda, Goa.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                13
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One week Global Initiative of Academic Networks (GIAN) Course on “Advanced Digital Signal Processing,” organized by the Department of ECE, NIT Rourkela, Odisha, during 6th March– 10th March, 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                14
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One week Global Initiative of Academic Networks (GIAN) Course on “Nonlinear Adaptive Signal Processing,” organized by the Department of ECE, NIT Goa, Goa, during 13th March– 17th March, 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                15
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Attended and presented a paper in International Conference on Optical and Wireless Technologies (OWT 2017) at MNIT Jaipur, Rajastan, from 18-19 March 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                16
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE ComSoc Training Course on “Wireless for the Internet of Thing (IoT)”, on 14th Feb 2017.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                17
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DST and MNRE, Govt. of India sponsored one week short term course on “Recent Advances in Alternative Energy Sources (RAAEST 2016)” organized by Department of ECE, NIT Goa, India from 5-10th December 2016.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                18
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Second national conference cum workshop on “Enhancing Information Technology in Education” under Pandit Madan Mohan Malaviya National Mission on Teachers and Teaching at NIT Goa from July 25-30 2016.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                19
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Nine Days  Global Initiative of Academic Networks (GIAN) Couse on “Advanced in Wireless Communication and Antennas,” Course No. 151036D02, organized by the Department of ECE, NIT Warangal, Telengana State, during 6th June – 14th June, 2016.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                20
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE Circuits and Systems Society Outreach: Workshop on “High Performance Digital Signal Processing System Design and Implementation”  at IIT Bhubaneswar, 16-17 Dec 2015.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                21
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                National Workshop on “How to Write Research Projects,” at National Institute of Technology Goa, 8th July 2015.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                22
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Workshop on “Atomic Energy: Architect of future,” at National Institute of Technology Goa, 9th Feb 2015.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                23
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2nd International Conference on Communication, Computing and Security at NIT Rourkela, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                24
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Short term course on “Modern Communication- from Analog to 4G Beyond,” at Department of ECE, NIT Rourkela, Rourkela, Odisha.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                25
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                National Workshop on “Swarm Intelligence: Theory and Application,” at IIT Bhubaneswar, Bhubaneswar.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                26
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                AICTE sponsored staff development programme on “Recent and Future Trends in Industrial Mathematics for Engineers”  National Institute of Science and Technology, Berhampur, Odisha.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                27
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2012
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                8th International Conference on Distributed Computing and Internet Technology ICDCIT – 2012, KIIT University, Bhubaneswar.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                28
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2011
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Short term course on “VLSI Design and CAD Tools” 20th June 2011 to 9th July 2011 at Department of ECE, NIT Rourkela.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                29
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2011
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Emerging Technologies (ICET 2011), at NIT Durgapur.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                30
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                NOV
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE International Conference on Computational Intelligence and Communication Network, CICN2010, Bhopal.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                31
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                IEEE 1st International Conference on Parallel, Distributed and Grid Computing (PDGC-2010), Jaypee University of Information Technology, Solan, HP.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                32
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Two days National Workshop on “Swarm Intelligence: Theory and Application,” ITER, SOA University, Bhubaneswar, 20-21st March, 2010.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                33
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2009
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Information Technology, ICIT 2009, Bhubaneswar, Orissa, INDIA.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                34
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2009
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Silver Jubilee Conference on Communication Technology and VLSI Design, CommV 2009, VIT University, Tamil Nadu, INDIA.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                35
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JULY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2008
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Symposium on Antennas and Propagation and 2008 USNC/URSI National Radio Science Meeting at San Diego, California, USA
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                36
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2007
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                A ten days DST sponsored National Workshop on “Sensors for mining and Mineral Industry”, at National Institute of Science and Technology, Berhampur, Orissa 
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                37
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2007
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                A short Term course on “DSP Tools and Practice” Conducted by G. S. Sanyal School of Telecommunication, IIT, Kharagpur 
+            </td>
+        </tr>
+        
+    
+        </tbody></table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table class="table-bordered table">
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4"></th>
+                    <th class="bg-blue-400 text-white p-4">Month
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Year
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Training Conducted Information
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                1
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                One week Global Initiative of Academic Networks (GIAN) Couse on “Nanoscale Wireless Networking: Opportunities, Challenges and Recent Advances” Course No. 161038002, at the Department of ECE, NIT Goa, during 19-24, December 2016.
+            </td>
+        </tr>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DST sponsored workshop on “Recent Advances in Mobile Communications” May 2-7, 2016 at NIT Goa, Farmagudi, Ponda, Goa.
+            </td>
+        </tr>
+    
+        </tbody>
+</table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

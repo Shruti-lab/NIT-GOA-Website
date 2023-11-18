@@ -114,7 +114,7 @@
 
     }
 
-    li::before {
+    footer li::before {
       content: "\25C8";
       color: #E06900;
     }
@@ -134,12 +134,21 @@
     }
 
 
+    @media screen and (max-width: 500px) {
+      #table {
+        font-size: xx-small;
+        margin: auto;
+        width: 60%;
+      }
+    }
+
     /*FOOTER STYLE ENDS HERE*/
 
     </style>
   </head>
   <body>
     <!-- Header Starts here -->
+<<<<<<< HEAD
     <body class="bg-gray-100 max-width">
 
       <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
@@ -164,7 +173,32 @@
         <div class="flex items-center justify-center" id="header-items">
         <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
         <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+=======
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com</span>
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890</span>
+          </div>
       </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+>>>>>>> 7f0b876461f86be5456cdc18d0342e10b2887630
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
     </div>
       </div>
     <!--Header Ends Here-->
@@ -304,7 +338,7 @@
             </div>
           </div>
 
-          <div class="menu-toggle" style="left:1vh;" onclick="togglemenu(this)">
+          <div class="menu-toggle" onclick="togglemenu(this)">
             <div class="bar1"></div>
             <div class="bar2"></div>
             <div class="bar3"></div>
@@ -321,7 +355,7 @@
     >
       Board of Governors
     </h1>
-    <div class="items-center justify-center p-4 flex mt-4">
+    <div class="items-center justify-center p-4 flex mt-4" id="table">
       <table class="shadow-lg items-center ml-20 mr-20 mb-40">
         <tr>
           <th class="bg-blue-400 border text-center">Sr.No.</th>

@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. S. Mini.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr .S. Mini</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area : Wireless Sensor Networks, Swarm Intelligence, Combinatorial Optimization, Internet of Things      </p>
+      <div class="mt-4">
+       <p class="p-2"> Email:<a href="#" class="text-blue-500">mini@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. S. Mini</p>
+            <p class="p-2">Gender: Female</p>
+            <p class="p-2">Birth Date-</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">Department: Department of Computer Science and Engineering</p>
+            <p class="p-2">URL</p>
+            <p class="p-2">Date of Joining-</p>
+            <p class="p-2">Research/Teaching Experience: 9 years</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Address: </p>
+            <p class="p-2">City: -</p>
+            <p class="p-2">State: -</p>
+            <p class="p-2">Country: -</p>
+            <p class="p-2">Email Address: mini@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: -</p>
+            <p class="p-2">Phone [Mobile]: -</p>
+            <p class="p-2">Office Extension: -</p>
+            
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Wireless Sensor Networks;</p>
+            <p class="p-2">Swarm Intelligence;</p>
+            <p class="p-2">Combinatorial Optimization;</p>
+            <p class="p-2">Internet of Things;</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <h3 class="text-2xl font-semibold font-serif text-center">
+                UG Courses
+              </h3>
+              <p class="p-2">Data Structures</p>
+              <p class="p-2">Object Oriented Programming</p>
+              <p class="p-2">Data Structures and Algorithms</p>
+              <p class="p-2">Graph Theory</p>
+              <p class="p-2">Principles of Data Communication</p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                PG Courses
+              </h3>
+              <p class="p-2">Advanced Computer Networks</p>
+              <p class="p-2">Advanced Computer Architecture</p>
+              <p class="p-2">Graph Theory</p>
+              
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table >
+                <tbody>
+                <tr>
+                <th class="bg-blue-400 text-white p-4">
+                <p class="p-2"><b>Degree/Diploma</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p class="p-2"><b>Institute / University</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p class="p-2"><b>year</b></p>
+                </th>
+                <th class="bg-blue-400 text-white p-4">
+                <p class="p-2"><b>subject</b></p>
+                </th>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">M.E.</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">PSNA CET (Anna University)</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">2007</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">Computer and Communication</p>
+                </td>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">Ph.D.</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">University of Hyderabad</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">2012</p>
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                <p class="p-2">Computer Science</p>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+      
+        <p class="p-2"><b>Publication Category: </b>International       Sireejaa Uppal, Bindiya Kansekar, S. Mini, Deepak Tosh: HealthDote: A blockchain-based model for continuous health monitoring using interplanetary file system, Healthcare Analytics (Elsevier).      2023     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Mini, S.: Path Planning Mechanism for Mobile Anchor-Assisted Localization in Wireless Sensor Networks, Journal of Parallel and Distributed Computing (Elsevier), vol. 165, pp. 52-65.      2022     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       PR Desai, S Mini, DK Tosh: Edge-based Optimal Routing in SDN-enabled Industrial Internet of Things, IEEE Internet of Things Journal.      2022     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Sapre, S., Mini, S.: Obstacle Handling Mechanism for Mobile Anchor Assisted Localization in Wireless Sensor Networks, IEEE Sensors Journal.      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Mini, S.: Localization in Wireless Sensor Networks with Mobile Anchor Node Path Planning Mechanism, Information Sciences (Elsevier).      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Mini, S.: Transmission Power Control for Anchor-Assisted Localization in Wireless Sensor Networks, IEEE Sensors Journal, 21 (8), pp. 10102-10111.      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Emulous mechanism based multi-objective moth–flame optimization algorithm, Journal of Parallel and Distributed Computing (Elsevier), 150, pp. 15-33.      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: A differential moth flame optimization algorithm for mobile sink trajectory, Peer-to-Peer Networking and Applications (Springer), 14 (1), pp. 44-57.      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Moth flame optimization algorithm based on decomposition for placement of relay nodes in WSNs. Wireless Networks (Springer).      2020     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Opposition-based moth flame optimization with Cauchy mutation and evolutionary boundary constraint handling for global optimization. Soft Computing (Springer).      2019     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Optimized relay nodes positioning to achieve full connectivity in wireless sensor networks. Wireless Personal Communications (Springer).      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Mini, S.: Anchor Node Path Planning for Localization in Wireless Sensor Networks. Wireless Networks (Springer).      2017     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: Sensor Deployment and Scheduling for Target Coverage Problem in Wireless Sensor Networks. IEEE Sensors Journal, vol. 14, number 3, pp. 636-644.      2014     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Pujari, A.K.: Phase Transition Analysis of Target Coverage Problem in Wireless Sensor Networks. IEEE Sensors Journal, vol. 13, number 7, pp. 2742-2749.      2013     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: M-Connected Coverage Problem in Wireless Sensor Networks. ISRN Sensor Networks, vol. 2012, article id 858021.      2012     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: A Heuristic to Maximize Network Lifetime for Target Coverage Problem in Wireless Sensor Networks. Ad hoc &amp; Sensor Wireless Networks, vol. 13, number 3-4, pp. 251-269.      2011     </p>
+      
+      </ol>
+      <p class="p-2"><b>Publication Type: Proceedings</b></p>
+      <ol>
+      
+      <p class="p-2"><b>Publication Category: </b>International       Jose, Basil and Mini, S.: Efficient Device Management for Enhanced Energy Utilization and Operational Performance in Internet of Things, 8th International Conference for Convergence in Technology (I2CT), IEEE, pp. 1-5.      2023     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Paul, Haritha and Mini, S.: Swarm Intelligence Algorithms for Profit Maximization and Delay Minimization in Internet Data Centers, 10th International Conference on Signal Processing and Integrated Networks (SPIN), IEEE, pp. 317-322.      2023     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       V.G. Bhat, H.P. Pranaav, S. Mini, D.K. Tosh: Blockchain-centric Resource Management System for Disaster Response and Relief. 11th International Conference on Cloud Computing, Data Science &amp; Engineering (Confluence), pp. 540-545.      2021     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       V. Dhaimodker, R. Desai, S. Mini, D.K. Tosh: Quality-driven Energy Optimization in Internet of Things. 29th International Conference on Computer Communications and Networks (ICCCN), IEEE, USA, pp.1-8.      2020     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Perkin, T.M., S. Mini: Assignment of IoT Nodes to Edge Computing Devices in Internet of Things. In: 2019 European Conference on Networks and Communications (EuCNC), Valencia, Spain.      2019     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sabale, K., Mini, S.: An Analysis of Path Planning Mechanisms in Wireless Sensor Networks. 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Bangalore.      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Moth Flame based Optimized Placement of Relay Nodes for Fault Tolerant Wireless Sensor Networks. 9th International Conference on Computing, Communication and Networking Technologies (ICCCNT), Bangalore.      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Optimized positioning of relay nodes using bat algorithm in heterogeneous wireless sensor networks. IEEE International Conference on Communication and Signal Processing (ICCSP).      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Kamble, S., Mini, S., Panigrahi, T.: Monitoring Air Pollution: An IoT Application. International Conference on Wireless Communications, Signal Processing and Networking (WiSPNET), 22-24 March, Chennai.      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Optimized path for traversal of mobile sink in heterogeneous wireless sensor networks: International Conference on Wireless Communications, Signal Processing and Networking (WiSPNET), 22-24 March, Chennai.      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Kumar, M., Sabale, K., Mini, S., Panigrahi, T.: Priority based deployment of IoT devices. 32nd International Conference on Information Networking (ICOIN 2018), IEEE, Chiang Mai, Thailand.      2018     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mayur, S., Mini, S.: Path Planning of Mobile Sink in Wireless Sensor Networks. 9th International Conference on Advanced Computing (ICoAC-2017), IEEE, Chennai.      2017     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mohan, A., Johar, S., Mini, S.: An IoT System for Waste Collection. 14th IEEE India Council International Conference (INDICON 2017), IEEE, Roorkee.      2017     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Khade, G., Mini, S.: Identification of data aggregators in Wireless Sensor Network. International Conference on Wireless Communications, Signal Processing and Networking (WiSPNET), Chennai.      2017     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Sapre, S., Mini, S.: Relay node placement to establish full connectivity in Directional Sensor Networks, Fourteenth International Conference on Wireless and Optical Communications Networks (WOCN2017), Mumbai.      2017     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Singh, P., Mini, S.: A heuristic to deploy directional sensor nodes in wireless sensor networks. 8th International Conference on Computational Intelligence and Communication Networks, Dehradun.      2016     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Pujari, A.K.: On the Phase Transition Analysis of k/Q-coverage Problem in Wireless Sensor Networks. International Conference on Information Technology (ICIT), Bhubaneswar, IEEE, pp. 54-59.      2015     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Singh, P., Mini, S., Sabale, K.: Particle Swarm Optimization for the Deployment of Directional Sensors. 6th International Conference on Swarm, Evolutionary and Memetic Computing, LNCS, Springer, Hyderabad.      2015     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Pujari, A.K., Mini, S., T. Padhi, P. Sahoo: Polyhedral Approach for Lifetime Maximization of Target Coverage Problem. International Conference on Distributed Computing and Networking ICDCN' 2015, ACM, pp. 14:1 -14:8.      2015     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: Artificial Bee Colony Algorithm for Probabilistic Target Q-Coverage Problem in Wireless Sensor Networks In: International Conference on Swarm, Evolutionary and Memetic Computing 2013. LNCS, vol. 8297, pp. 446-456      2013     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: Sensor Deployment for Probabilistic Target k-Coverage using Artificial Bee Colony Algorithm. In: International Conference on Swarm, Evolutionary and Memetic Computing 2011. LNCS, vol. 7076, pp. 654-661.      2011     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: Artificial Bee Colony based Sensor Deployment Algorithm for Target Coverage Problem in 3-D Terrain. In: International Conference on Distributed Computing and Internet Technology 2011. LNCS, vol. 6536, pp. 313-324.      2011     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Mini, S., Udgata, S.K., Sabat, S.L.: Sensor Deployment in 3-D Terrain using Artificial Bee Colony Algorithm. In: International Conference on Swarm, Evolutionary and Memetic Computing 2010. LNCS, vol. 6466, pp. 424-431.      2010     </p>
+      
+      
+      <p class="p-2"><b>Publication Category: </b>International       Udgata, S.K., Sabat, S.L., Mini, S.: Sensor Deployment in Irregular Terrain using Artificial Bee Colony Algorithm. In: Proc. of IEEE BICA’09, pp. 296-300.      2009     </p>
+      
+      </ol>
+
+      
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          
+          <p class="p-2">Saunhita Sapre (Ph.D. Degree Awarded)</p>
+          
+          
+          <p class="p-2">Ketan Sabale (Ph.D. Degree Awarded)</p>
+          
+          
+          <p class="p-2">Basil Jose Romi (Ongoing)</p>
+          
+          
+          <p class="p-2">Vijaykumar Naik Pawar(Ongoing)</p>
+          
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          
+          <p class="p-4">MonitAir: An IoT based Air Pollution Monitoring System (under Early Career Research Award Scheme of SERB, DST). Role: Principal Investigator. (Status: Completed)</p>
+          </ol>
+      </div>
+    </div>
+
+   
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table">
+          <thead>
+              <tr style="height: 22px;">
+                  <th class="bg-blue-400 text-white p-4"></th>
+                  <th class="bg-blue-400 text-white p-4">Month
+                  </th>
+                  <th class="bg-blue-400 text-white p-4">Year
+                  </th>
+                  <th class="bg-blue-400 text-white p-4">Training attended Information
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              1
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              MAY
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2017
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              10 day Faculty Development Programme on “Fundamentals of Computer Networks and Security”, MNIT Jaipur
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              JUN
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2016
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              10 day GIAN course on “Wireless Sensor Networks: Network Architectures, Protocols and Applications”, NIT Warangal
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              3
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              MAR
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2016
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Two Day National Workshop on Patents and Intellectual Property Rights
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              4
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              JAN
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2016
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Faculty Development Programme on “Promoting Quality in Higher Technical Education” ABV-IIITM, Gwalior
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              5
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              DEC
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2015
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              International Conference on Computing and Network Communications, IIITM-K
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              6
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              OCT
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2015
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              National Workshop on "Cryptography, Applications and Foundations of Data Science"
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              7
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              MAR
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2015
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              National Workshop on Application of Wireless Sensor Networks and Robotics in Agriculture and Rural Development, Trivandrum
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              8
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              FEB
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2015
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              SIGCSE, ACM, BITS Pilani Goa Campus
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              9
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              MAR
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2014
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Second International Conference on Security in Computer Networks and Distributed Systems (SNDS-2014), Trivandrum
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              10
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              OCT
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2013
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              One Day workshop on Best Practices in Teaching, Rajasthan
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              11
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              APRIL
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2013
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Indo-Italian Training Workshop on EEG & MEG Data Processing, Hyderabad
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              12
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              DEC
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2011
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Multi-Disciplinary International Workshop on Artificial Intelligence (MIWAI), Hyderabad
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              13
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              FEB
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2011
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Research Symposium held in conjunction with ICDCIT 2011, Bhubaneswar
+          </td>
+      </tr>
+      
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              14
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              DEC
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2010
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              International Workshop on Differential Evolution and its Engineering Applications, Chennai
+          </td>
+      </tr>
+      
+  
+      </tbody></table>
+  
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+          <thead>
+              <tr>
+                  <th class="bg-blue-400 text-white p-4"></th>
+                  <th class="bg-blue-400 text-white p-4">Month
+                  </th>
+                  <th class="bg-blue-400 text-white p-4">Year
+                  </th>
+                  <th class="bg-blue-400 text-white p-4">Training Conducted Information
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              1
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              JUN
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2020
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Webinar on "Skill Development using Virtual Labs" (5 June 2020) 
+          </td>
+      </tr>
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              JAN
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2020
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              National Workshop on “Virtual Labs” (23 January, 2020) 
+
+          </td>
+      </tr>
+  
+      <tr>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              3
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              MAY
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              2016
+          </td>
+          <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+              Recent Advancements in Privacy Preserving Mining (RAPPM), 23-28 May, 2016
+          </td>
+      </tr>
+  
+      </tbody>
+</table>
+      </div>
+    </div>
+
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <a href="../../index.html"><span class="">Home</span></a>
+            <a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a>
+            <a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a>
+            <a href="../../RTI.html"><span class="">RTI</span></a>
+            <a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a>
+            <a href="../../contact us.html"><span class="">Contact Us</span></a>
+            <a href="#"><span class="">Feedback</span></a>
+          </ul>
+          
+          <ul class="footer-links">
+            <a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a>
+            <a href="http://scanfcode.com/contact/"><span class="">Students</span></a>
+            <a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a>
+            <a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a>
+            <a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          
+          <a href="../../People/frontend/technical_cse.html"><span>Staff</span></a>
+          <a href="../../admissions/josaa.html"><span>JEE</span></a>
+          <a href="../../admissions/facilities.html"><span>Facilities</span></a>
+          <a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a>
+          <a href="../../nirf.html"><span >NIRF</span></a>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p class="p-2">Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
