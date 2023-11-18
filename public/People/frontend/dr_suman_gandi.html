@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Suman Gandi.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Suman Gandi</h2>
+      <p class="text-gray-600 mb-4">
+        Faculty on contract, Department of Applied Sciences
+      </p>
+      <p class="text-gray-700">
+        Research Area: Sodium/Lithium-Ion batteries, glass and glass-ceramic materials for energy storage systems, mass transport in ceramics (particularly at grain boundaries), high-temperature corrosion, sol-gel processing of ceramics,
+        self-cleaning/antibacterial coatings of glasses, bulk metallic glasses, high entropy alloys, catalysts and adsorbents for environmental pollution abatement, and the mechanical properties of glasses
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500">gandisuman@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. Suman Gandi</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date: 10/11/1988</p>
+          <p class="p-2">Designation: Faculty on Contract</p>
+
+          <p class="p-2">
+            Department:  Department of Applied Sciences
+          </p>
+          <p class="p-2">URL: N/A</p>
+          <p class="p-2">Date of Joining: </p>
+          <p class="p-2">
+            Research/Teaching Experience: 5 years
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address: Department of Applied Sciences, National Institute of Technology Goa, Farmagudi
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: gandisuman@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]: </p>
+          <p class="p-2">Phone [Mobile]: 9704216900</p>
+          <p class="p-2">Office Extension: </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Sodium/Lithium-Ion batteries</p>
+            <p class="p-2">Glass and glass-ceramic materials for energy storage systems</p>
+            <p class="p-2">Mass transport in ceramics (particularly at grain boundaries)</p>
+            <p class="p-2">High-temperature corrosion</p>
+            <p class="p-2">Sol-gel processing of ceramics</p>
+            <p class="p-2">Self-cleaning/antibacterial coatings of glasses</p>
+            <p class="p-2">Bulk metallic glasses</p>
+            <p class="p-2">High entropy alloys</p>
+            <p class="p-2">Catalysts and adsorbents for environmental pollution abatement</p>
+            <p class="p-2">Mechanical properties of glasses.</p>
+            
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">Material Science</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="">
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Sc. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Institute of Technology, Warangal
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Engineering Physics</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">P.Hd. &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">GITAM (Deemed to be) University
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2019</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Physics</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+        <li><p class="p-2"><b>Publication Type: Journal</b></p>
+            <ol>
+                <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Vaddadi, Venkata Satya Chidambara Swamy, Saidi Reddy Parne, Vijeesh Vadakke Parambil, Saran Srihari Sripada Panda, and Suman Gandi. "Design of Fiber Bragg Grating (FBG) Sensor for Eccentricity Measurements in Ball Bearings." IEEE Transactions on Instrumentation and Measurement (2022). NOV 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Vaddadi, Venkata Satya Chidambara Swamy, Saidi Reddy Parne, V. P. Vijeesh, Suman Gandi, Saran Srihari Sripada Panda, and Linga Reddy Cenkeramaddi. "Design and Fabrication of Liquid Pressure Sensor Using FBG Sensor Through Seesaw Hinge Mechanism." IEEE Photonics Journal 14, no. 5 (2022): 1-7. https://doi.org/10.1109/JPHOT.2022.3210146. SEPT 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, Shyam Sundar, Suman Gandi, Saidi Reddy Parne, Motilal Lakavat, Nageswara Rao Lakkimsetty, and Gangaraju Gedda. "Bio-Inspired C/N/TiO 2 Hybrid Composite Heterostructure: Enhanced Photocatalytic Activity under Visible Light." Journal of Nanotechnology 2022 (2022). https://doi.org/10.1155/2022/5816063 SEPT 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Krishna, Kurugundla Gopi, Saidireddy Parne, Nagaraju Pothukanuri, Velavan Kathirvelu, Suman Gandi, and Dhananjay Joshi. "Nanostructured metal oxide semiconductor-based gas sensors: A comprehensive review." Sensors and Actuators A: Physical (2022): 113578. https://doi.org/10.1016/j.sna.2022.113578 JULY 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Lakkimsetty, Nageswara Rao, S. Feroz, S. Karunya, L. Motilal, P. Saidireddy, and G. Suman. "Synthesis, characterization and application of polymer composite materials in wastewater treatment." Materials Today: Proceedings (2022). https://doi.org/10.1016/j.matpr.2022.04.050 MAY 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Lakavat, Motilal, Amiya Bhaumik, Suman Gandi, and Sadi Reddy Parne. "Electroless Ni–P–B coatings on magnesium alloy AZ91D: influence of nano Al2O3 on corrosion, wear, and hardness behaviour." Surface Topography: Metrology and Properties 10, no. 2 (2022): 025021. https://doi.org/10.1088/2051-672X/ac68fd MAY 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Lakkimsetty, Nageswara Rao, Motilal Lakavat, Santosh Walke, Suman Gandi, G. Kavitha, and Feroz Shaik. "Comprehensive process design of biodiesel from waste cooking oil (WCO) using magnetic nano-catalyst." In AIP Conference Proceedings, vol. 2463, no. 1, p. 030007. AIP Publishing LLC, 2022. https://doi.org/10.1063/5.0080210 MAY 2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, Suman, Saran Srihari Sripada Panda, Saidi Reddy Parne, Motilal Lakavat, Nageswara Rao Lakkimsetty, and Shyam Sundar Gandi. "Amorphous SnO–Sb2O3–SiO2 glassy anode: high-performance electrode materials for Na-ion batteries." Journal of Materials Science: Materials in Electronics (2021): 1-7. https://doi.org/10.1007/s10854-021-07048-1 SEPT 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Lakkimsetty NR, Lakavat M, Varghese MJ, Gandi Suman. Solar photo catalytic treatment of oil produced water using zinc oxide. AIP Conference Proceedings, 2021, Sep 28 (Vol. 2396, No. 1, p. 020010). https://doi.org/10.1063/5.0066309 SEPT 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Sana Mohammed Ali Al kamzari, Lakkimsetty Nageswara Rao, Motilal Lakavat, Suman Gandi, Saidi Reddy P, G. Kavitha Sri. "Extraction and characterization of cellulose from agricultural waste materials." Materials Today: Proceedings (2021). https://doi.org/10.1016/j.matpr.2021.07.030. JULY 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Al-Balushi, Majan, Nageswara Rao Lakkimsetty, M. J. Varghese, Motilal Lakavat, Parne Saidi Reddy, and Suman Gandi. "Evaluating the solar Photo-Fenton as photocatalyst process by Response surface methodology to treat the saline water." Materials Today: Proceedings (2021). https://doi.org/10.1016/j.matpr.2021.07.024. JULY 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Guddla, G. T., V. K. Katta, S. Gandi, S. Ambadipudi, and B. R. Ravuri. "The role of titanium content in (Ni75Cr15Si10) 100- x Ti x bulk metallic glass systems to elevate mechanical and corrosion properties." Phase Transitions (2021): 1-12. https://doi.org/10.1080/01411594.2021.1957103. JULY 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Guddla GT, Katta VK, Gandi Suman, Ambadipudi S, Ravuri BR. The role of titanium content in (Ni75Cr15Si10) 100- x Ti x bulk metallic glass systems to elevate mechanical and corrosion properties. Phase Transitions. 2021, 94(10):679-90. https://doi.org/10.1080/01411594.2021.1957103. JULY 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>V. S. C. S. Vaddadi, S. R. Parne, V. V. P., S. Gandi and L. R. Cenkeramaddi, "Design and Implementation of Density Sensor for Liquids Using Fiber Bragg Grating Sensor," in IEEE Photonics Journal, vol. 14, no. 1, pp. 1-6, Feb. 2022, Art no. 6804106, doi: 10.1109/JPHOT.2021.3129587. FEB 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Suman Gandi, Venkata Satya Chidambara Swamy Vaddadi, Saran Srihari Sripada Panda, Nithin Kumar Goona, Saidi Reddy Parne, Motilal Lakavat, Amiya Bhaumik, Recent progress in the development of glass and glass-ceramic cathode/solid electrolyte materials for next-generation high capacity all-solid-state sodium-ion batteries: A review, Journal of Power Sources,Volume 521, 2022, 230930, ISSN 0378-7753, https://doi.org/10.1016/j.jpowsour.2021.230930. FEB 2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Katta, V. K., Gandi, S., Katari, N. K., Mekprasart, W., Pecharapa, W., Dutta, D. P., & Ravuri, B. R. (2020). Mixed Polyanion Na-Mn-V-P Glass-Ceramic Cathode Network: Improved Electrochemical Performance and Stability. Energy Technology. https://doi.org/10.1002/ente.202000845. NOV 2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Guddla, G. T., Gandi, S., Ambadipudi, S., & Ravuri, B. R. (2020). Design of Ni-based Bulk Metallic Glasses with Improved Mechanical and Corrosion Properties. Current Applied Science and Technology, 112-128. https://li01.tci-thaijo.org/index.php/cast/article/view/246372. AUG 2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S. S., Gandi, Suman., Katari, N. K., Mekprasart, W., Pecharapa, W., Dutta, D. P., & Ravuri, B. R. (2020). Improvement in fast Na-ion conduction in Na3+ xCrxTi2-x (PO4)(3) glass-ceramic electrolyte material for Na-ion batteries. Journal of the Iranian Chemical Society, 17(10), 2637-2649. https://doi.org/10.1007/s13738-020-01960-9. JUN 2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S., Mekprasart, W., Pecharapa, W., Dutta, D. P., Jayasankar, C. K., & Ravuri, B. R. (2020). Na–Ge glass anode network mixed with bismuth oxide nanocrystallites: A high capacity anode material for use in advanced sodium-ion battery design. Materials Chemistry and Physics, 242, 122568. https://doi.org/10.1016/j.matchemphys.2019.122568. FEB 2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S., Katta, V. K., Dutta, D. P., & Ravuri, B. R. (2020). A mixed polyanion NaFe 1- x (VO) x PO 4 glass-ceramic cathode system for safe and large-scale economic Na-ion battery applications. New Journal of Chemistry, 44(7), 2897-2906. https://doi.org/10.1039/C9NJ05684J. JAN 2020</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S. S., Gandi, S., Madduluri, V. R., Katari, N. K., Dutta, D. P., & Ravuri, B. R. (2019). Na 3+ x [Cr x Ti 2-x (PO 4) 3] glass-ceramic electrolyte: ionic conductivity and structural correlations for different heat treating temperatures and time schedules. Ionics, 25(9), 4179-4188. https://doi.org/10.1007/s11581-019-02979-6. APRIL 2019</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Sundar, G. S., Suman, G., Kumar, K. N., Dutta, D. P., & Rao, R. B. (2019). Investigation on the applicability of high Na-ion conducting Na3+ x [ZrxSc2-x (PO4) 3] glass-ceramic electrolyte for use in safer Na-ion batteries. Journal of Physics and Chemistry of Solids, 126, 209-218. https://doi.org/10.1016/j.jpcs.2018.11.016. MAR 2019</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S., Chinta, S. R., Ghoshal, P., & Ravuri, B. R. (2019). SnO-GeO2-Sb2O3 glass anode network mixed with different Ba2+ fractions: Investigations on Na-ion storage capacity and stability. Journal of Non-Crystalline Solids, 506, 80-87. <a href="https://doi.org/10.1016/j.jnoncrysol.2018.11.028" target="_blank">https://doi.org/10.1016/j.jnoncrysol.2018.11.028</a>. <span class="badge bg-primary">FEB 2019</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S.S., Gandi, Suman., Katari, N.K. et al. Electrical properties and scaling studies of Na3+x ZrxSc2-x(PO4)3 glass ceramic electrolyte for use in Na-ion batteries. Appl. Phys. A 125, 92 (2019). <a href="https://doi.org/10.1007/s00339-019-2392-4" target="_blank">https://doi.org/10.1007/s00339-019-2392-4</a>. <span class="badge bg-primary">JAN 2019</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S. S., Gandi, Suman., Katari, N. K., Babu, M. S., & Ravuri, B. R. (2018). Electrical conductivity of lithium phosphate glass-ceramics precipitated with nanocrystalline BaTiO3. Physics and Chemistry of Glasses-European Journal of Glass Science and Technology Part B, 59(3), 135-139. <a href="https://doi.org/10.13036/17533562.59.3.003" target="_blank">https://doi.org/10.13036/17533562.59.3.003</a>. <span class="badge bg-primary">NOV 2018</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, Suman., Chinta, S. R., Ojha, P. K., & Ravuri, B. R. (2018). Electrical conductivity and charge/discharge profiles of mixed polyanion glass-ceramic cathodes for use in Na-ion batteries. Journal of Non-Crystalline Solids, 493, 41-47. <a href="https://doi.org/10.1016/j.jnoncrysol.2018.04.034" target="_blank">https://doi.org/10.1016/j.jnoncrysol.2018.04.034</a>. <span class="badge bg-primary">AUG 2018</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, S., Chinta, S. R., Katari, N. K., & Ravuri, B. R. (2018). Electrochemical performance of SnO–V 2 O 5–SiO 2 glass anode for Na-ion batteries. Materials for Renewable and Sustainable Energy, 7(4), 22. <a href="https://doi.org/10.1007/s40243-018-0129-5" target="_blank">https://doi.org/10.1007/s40243-018-0129-5</a>. <span class="badge bg-primary">AUG 2018</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Gandi, Suman., Chinta, S. R., Ojha, P. K., Surendra Babu, M. S., & Ravuri, B. R. (2018). High Na-ion conducting Na1+ x [SnxGe2- x (PO 4) 3] glass-ceramic electrolytes: Structural and electrochemical impedance studies. Journal of the American Ceramic Society, 101(1), 167-177. <a href="https://doi.org/10.1111/jace.15103" target="_blank">https://doi.org/10.1111/jace.15103</a>. <span class="badge bg-primary">JULY 2018</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Ravuri, B. R., Gandi, S., & Chinta, S. R. (2018). Zn–Ge–Sb glass composite mixed with Ba 2+ ions: a high capacity anode material for Na-ion batteries. Applied Nanoscience, 8(6), 1569-1577. <a href="https://doi.org/10.1007/s13204-018-0822-9" target="_blank">https://doi.org/10.1007/s13204-018-0822-9</a>. <span class="badge bg-primary">MAY 2018</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Suman, Gandi., Rao, C. S., Ojha, P. K., Babu, M. S., & Rao, R. B. (2017). Mixed polyanion NaCo1- x (VO) x PO 4 glass–ceramic cathode: role of ‘Co’on structural behaviour and electrochemical performance. Journal of Materials Science, 52(9), 5038-5047. <a href="https://doi.org/10.1007/s10853-016-0741-7" target="_blank">https://doi.org/10.1007/s10853-016-0741-7</a>. <span class="badge bg-primary">JAN 2017</span></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>Publication Category:</b> International<br>Reddy, C. K. K., Suman, Gandi., Rao, R. B., Katari, N. K., & Reddy, M. R. P. (2016). Lithium–germanium–phosphate glassceramic electrolytes: correlation between the nanocrystallization and electrical studies. Applied Nanoscience, 6(7), 1043-1052. <a href="https://doi.org/10.1007/s13204-016-0519-x" target="_blank">https://doi.org/10.1007/s13204-016-0519-x</a>. <span class="badge bg-primary">JAN 2016</span></p>
+                  </li>
+            </ol>
+        </li>
+        <li>
+            <p class="p-2"><b>Publication Type: Proceedings</b></p>
+            <ol>
+                <li>
+                  <p class="p-4"><b>Publication Category:</b> International<br>Suman Gandi, Saran Srihari Sripada Panda, Saidi Reddy Parne, Nagaraju Pothukanuri, Gangaraju Gedda. "Advanced Electrochemical Bionanomaterials for Energy Conversion and Storage", in Sustainable Nanomaterials for Biosystems Engineering Trends in Renewable Energy, Environment, and Agriculture, CRC Press. <span class="badge bg-primary">OCT 2022</span></p>
+                </li>
+                <li>
+                  <p class="p-4"><b>Publication Category:</b> International<br>Gandi, Suman, Venkata Satya Chidambara Swamy Vaddadi, Saran Srihari Sripada Panda, Saidi Reddy Parne, Motilal Lakavat, and Amiya Bhaumik. "Tribological Studies of Bulk Metallic Glasses: Structure, Preparation, Surface Treatment, and Coating." In Handbook of Research on Tribology in Coatings and Surface Treatment, pp. 330-358. IGI Global, 2022. DOI: <a href="https://doi.org/10.4018/978-1-7998-9683-8.ch014" target="_blank">10.4018/978-1-7998-9683-8.ch014</a>. <span class="badge bg-primary">MAR 2022</span></p>
+                </li>
+              </ol>              
+        </li>
+        <li>
+            <p class="p-2"><b>Publication Type: Book Authored</b></p>
+            <ol>
+                <li>
+                <p class="p-4"><b>Publication Category:</b> International<br>Electrochemical energy storage systems and devices, Gandi Suman, Parne Saidi Reddy, Edla Damodar Reddy, First Edition (2021), Pages:1-137. https://www.google.co.in/books/edition/Electrochemical_energy_storage_systems_a/duBBEAAAQBAJ?hl=en&gbpv=0.    JUN  2021</p>
+                </li>
+            </ol>
+        </li>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+        <label for="toggle11" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+          Awards and Honours
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol>
+                <li><p class="p-2"><b>Research Excellence Award 2021</b></p></li>
+                
+                <li><p class="p-2"><b>Reviewer for the LE STUDIUM Loire Valley Institute for Advanced Studies' Visiting Researcher programme 2022, France.</b></p></li>
+                
+                <li><p class="p-2"><b>Australian patent:</b> A Deep Transportation Model to Predict the Human Mobility for Autonomous Vehicle, Publication date: 2021/3/3, Patent office, AU, Patent number, 2021100003; Saad Bin Abul Kashem, S. Arularasu, M. Gurusamy, Gandi Suman, Sita Rani, S.Mohamed Abbas, Tulika Chakrabarti, Ananda Shankar Hati, Reddappa H.N, S. Nagarajan, S. Selvakanmani, Prasun Chakrabarti</p></li>
+                
+                <li><p class="p-2"><b>Australian patent:</b> Self-Tuning Controller and Tracking Method for Autonomous Aerial Drone, Publication date: 2021/5/19, Patent office: AU, Patent number: 2021101989, Application number: 2021101989; S. Arularasu, Tulika Chakrabarti, Ananda Shankar Hati, Pradeep Chhawchharia, Sasanko Sekhar Gantayat, Suman Gandi, Saidi Reddy Parne, Motilal Lakavat, Shyamsundar Gandi, Ajay Kumar Singh, Prasun Chakrabarti, Sudharsan Jayabalan</p></li>
+                
+                <li><p class="p-2"><b>Australian patent:</b> A method and system for fabricating a novel pressure sensor using fbg sensor; Australian patent number: 2021106713, Chidambara Swamy Vaddadi Venkata Satya; Parne, Saidi Reddy; V. P Vijeesh; Gandi Suman; Edla Damodar Reddy; Cenkeramaddi, Linga Reddy</p></li>
+                
+                <li><p class="p-2"><b>Australian patent:</b> A process for producing biodiesel from waste cooking oil by using transesterification; Australian patent number: 2021103220, Mukhaini, Ahoud AL ; Lakavat, Motilal ; Gandi Suman ; Parne Saidi Reddy ; Edla Damodar Reddy ; Lakkimsetty, Nageswara Rao</p></li>
+                
+                <li><p class="p-2"><b>Invited Speaker:</b> Delivered Keynote talk on “Micro structural characterization of Nanomaterials for electrochemical energy Conversion and storage technologies” in Five-day International Faculty Development Programme (Online) on “Emerging Trends in Nano Technology” 9th-13th November, 2021, Organized by Department Of Basic Science (Chemistry & Physics), Vishnu Institute Of Technology, Bhimavaram</p></li>
+                
+                <li><p class="p-2"><b>Best Paper Award:</b> Experimental investigation on solar photo-fenton as photocatalyst to treat the saline water by response surface methodology, presented by Saidi Reddy Parne, has been selected as best paper in the International Virtual Conference on “Recent Innovations in Science & Technology (RIST 2021)” conducted on 19th & 20th June 2021, organized by ERANAD Knowledge City Technical Campus, Malappuram, Kerala, India in association with ISET Research & HEXAIND Technologies and Services</p></li>
+                
+                <li><p class="p-2"><b>Best Oral presentation:</b> “Role of Polyanion insertion on structural behaviour and electrochemical performance: Mixed Polyanion NaM1-x(VO)xPO4 glass-ceramic cathode” ICRACM-2017 (5th International Conference on Recent Advances in Composite Materials), KL University, 6-8, Feb 2017, Vijayawada, Andhra Pradesh, India.</p></li>
+                
+                <li><p class="p-2"><b>Best Oral presentation:</b> Mixed polyanion NaMn1-x(VO)xPO4 glass-ceramic cathodes: structural and electrochemical correlations” International Conference on Nano Science & Engineering Applications- ICONSEA-2018. 4th to 6th October 2018 held at JNTU Hyderabad, India</p></li>
+                
+                <li><p class="p-2"><b>Best Oral presentation:</b> “A comparative study on fast Na-ion conduction in Na3+x[(Zr/Cr)x(Sc/Ti)2-x(PO4)3] glass and glass-ceramic electrolyte materials for Na-ion batteries”. National Seminar on Emerging Trends in Nanomaterials and Engineering Applications (NSENMEA-2019), GVP College of Engineering (Autonomous), Sep 18-19, 2019, Visakhapatnam, Andhra Pradesh, India.</p></li>
+                
+                <li><p class="p-2"><b>Best poster presentation:</b> “High Na-ion Conducting Na3.5[M'0.5M"1.5(PO4)3] (M'= Zr/Cr and M"=Sc/Ti) Glass-Ceramic Electrolyte for Use in Na-ion Batteries” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) Feburary 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India</p></li>
+              </ol>              
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+        <label for="toggle12" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+          Training/Conferences/Short Term Courses Attended
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table>
+            <thead>
+                <tr style="height: 22px;">
+                    <th class="bg-blue-400 text-white p-4">Sr.No.</th>
+                    <th class="bg-blue-400 text-white p-4">Month
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Year
+                    </th>
+                    <th class="bg-blue-400 text-white p-4">Training attended Information
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                1
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2022
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                International Conference on Current Trends in Advanced Materials and their Applications for Societal Development” (ICTAMASD-2022) March 8th-10th, 2022 (Online) organized by the Department of Physics, Dr. Harisingh Gour Vishwavidyalaya Sagar [MP]
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Experimental investigation on solar photo-fenton as photocatalyst to treat the saline water by response surface methodology” International Virtual Conference “Recent Innovations in Science &amp; Technology (RIST 2021)” conducted on 19th &amp; 20th June 2021, organized by ERANAD Knowledge City Technical Campus, Malappuram, Kerala, India in association with ISET Research &amp; HEXAIND Technologies and Services. (Best Paper Award)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                3
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Green synthesis of carbon quantum dots embedded onto titanium dioxide nanorods for enhancing photocatalytic activity" (PAPER-ID: RIST-CH-111) in the International Virtual Conference, Recent Innovations in Science &amp; Technology (RIST 2021) conducted on 19th &amp; 20th June 2021.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                4
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                "Synthesis, characterization of biodiesel production from restaurant waste cooking oil" (PAPER-ID: RIST-CH-110) in the International Virtual Conference, Recent Innovations in Science &amp; Technology (RIST 2021) conducted on 19th &amp; 20th June 2021.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                5
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                APRIL
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Comparative Analysis on Production of Biodiesel from Waste Cooking Oil by using Transesterification and Microwave Methods”  International Conference on Environment and Environment (ICEE 2021), April 09-10, Jyothi Engineering College, Cheruthuruthy, Thrissur, Kerala 679531, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                6
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                APRIL
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2021
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Solar Photocatalytic Treatment of Oil Produced Water Using Zinc Oxide Photocatalyst” International Conference on Environment and Environment (ICEE 2021), April 09-10, Jyothi Engineering College, Cheruthuruthy, Thrissur, Kerala 679531, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                7
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                SEPT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “A comparative study on fast Na-ion conduction in Na3+x[(Zr/Cr)x(Sc/Ti)2-x(PO4)3] glass and glass-ceramic electrolyte materials for Na-ion batteries”. National Seminar on Emerging Trends in Nanomaterials and Engineering Applications (NSENMEA-2019), GVP College of Engineering (Autonomous), Sep 18-19, 2019, Visakhapatnam, Andhra Pradesh, India. (Best Oral presentation)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                8
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                SEPT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                 “A comparative study on fast Na-ion conduction in Na3+x[(Zr/Cr)x(Sc/Ti)2-x(PO4)3] glass and glass-ceramic electrolyte materials for Na-ion batteries”. National Seminar on Emerging Trends in Nanomaterials and Engineering Applications (NSENMEA-2019), GVP College of Engineering (Autonomous), Sep 18-19, 2019, Visakhapatnam, Andhra Pradesh, India. (Best Oral presentation).
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                9
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Structural and electrical properties of high conducting Na1+x[SnxTi2-x(PO4)3] glass and glass-ceramic electrolyte for use in Na-ion secondary batteries” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India. 
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                10
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “High Na-ion Conducting Na3.5[M'0.5M"1.5(PO4)3] (M'= Zr/Cr and M"=Sc/Ti) Glass-Ceramic Electrolyte for Use in Na-ion Batteries” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India. (Best poster presentation).
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                11
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Structural and Electrochemical Properties of Vanadium Doped Sodium Nickel Phosphate Glass and Glass-ceramic Cathodes for Use in Na-ion Secondary Batteries” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                12
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Improved Photocatalytic Activity and Performance of Novel h-BN-TiO2” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                13
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Crystallization behaviour of Na9V3(P2O7)3(PO4)2 glass cathode for use in Na-ion batteries”  National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                14
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2019
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Mixed polyanion NaMn1-x(VO)xPO4 glass-ceramic cathodes: structural and electrochemical correlations” National Conference on Physics and Chemistry of Functional Materials 2019 (PCFM 2019) February 21-22, 2019, Department of Physics, GITAM deemed to be University, Hyderabad, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                15
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Mixed polyanion NaMn1-x(VO)xPO4 glass-ceramic cathodes: structural and electrochemical correlations” International Conference on Nano Science &amp; Engineering Applications- ICONSEA-2018. 4th to 6th October 2018 held at JNTU Hyderabad, India (Best Oral presentation).
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                16
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                SEPT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2018
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Tin-Vanadium oxide nanoparticles as a Na-ion battery anode: Correlations between metastable amorphous nature and rate capability” International Conference on Advanced nano materials for Suitable Development (ACeND-2018), Sep, 19-21,2018 held at CHIRST University, Banglore, India.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                17
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Tin-Vanadium oxide nanoparticles as a Na-ion battery anode: Correlations between metastable amorphous nature and rate capability” PCNCM-2017 (National Seminar on Physics and Chemistry of Non-Crystalline Materials) 1-2, Dec 2017 held at Kakani Venkata Ratnam College, Nandigama, Andhra Pradesh
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                18
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                NOV
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in the NCPRE Familiarization workshop on “Photovoltaics”, on November 30, 2017, at IIT Bombay, Mumbai, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                19
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                FEB
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2017
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Role of Polyanion insertion on structural behaviour and electrochemical performance: Mixed Polyanion NaM1-x(VO)xPO4 glass-ceramic cathode” ICRACM-2017 (5th International Conference on Recent Advances in Composite Materials), KL University, 6-8, Feb 2017, Vijayawada, Andhra Pradesh, India (Best Oral presentation)
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                20
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Structural studies of mixed polyanion (NaMnBO4+NaFeVO4) glass ceramic systems” National Seminar on Innovations and developments in emerging research trends chemical science and technology, 29-30, Dec 2016 Tara Degree College Sangareddy, Telangana
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                21
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in one day workshop on “Advanced Ceramic processing and fabrication” on 12th December 2016 at ARCI, Hyderabad, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                22
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Na-ion batteries for Greener and Sustainable Future” National Seminar on Energy and Ecology, 4-5, Oct 2016, Sir. C. R. Reddy Autonomous College, Eluru, Andhra Pradesh, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                23
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “High Voltage amorphous cathode materials: Design and characterization” TSCST-NICE 2016 (International Conference on Trend Setting Innovation in Chemicals Science &amp; Technology Nature Inspired Chemistry &amp; Engineering) 4-6, Oct 2016, JNTU Hyderabad
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                24
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2016
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in the TEQIP workshop on “Energy Conversion and Storage (ECS-2016)” on 9-14 May 2016 at IIT Hyderabad, Hyderabad, Telangana, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                25
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Structural Properties of NaMnBO3+NaMnVO4 mixed polyanion cathodes for Na ion batteries” ICAMPE 15 (First International Conference on Advanced Materials for Power Engineering) 11-13, Dec 2015, Mahatma Gandhi University, Kottayam, Kerala, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                26
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in the Two-Week  ISTE short Term Training Programme on “Engineering Physics” on December 8-18, 2015 at GITAM University Hyderabad, Telangana, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                27
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                OCT
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in one day FDP on “Light-Harvesting Materials” on 10th Oct 2015 at GRIET, Hyderabad, Telangana, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                28
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAY
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in Two days National level workshop on “Recent Trends in X-Ray Diffraction Techniques (NWRTXRD-2015) on 29-30 May-2015 at Osmania University Hyderabad, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                29
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2015
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in National level workshop on “Recent Developments in Nano Materials and applications (RDNA-2015)” 0n 30, March 2015 at NIT Warangal, Telangana, India
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                30
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2014
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Microstructural and electrical studies on sulfide based glassceramic electrolytes for high energy density batteries” ICEE- 2014 (International Conference on Environment and energy) 15-17, Dec 2014 IST, JNTU Hyderabad
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                31
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                DEC
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2014
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Electrochemical performance of sodium boron oxide glass-coated NaFePO4 cathode materials for large scale energy storage devices” ISGFM 2014 (International Seminar on Glass and Other Functional Materials) Dec 11-13, 2014, Acharya Nagarjuna University, Guntur, A.P
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                32
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                JUN
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2014
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                “Comparison studies to obtain the highly efficient nano-structured glass-ceramic electrolyte” International Conference on Nano Science and Engineering Applications (INONSEA-2014) 26-28, June 2014, JNTU, Hyderabad.
+            </td>
+        </tr>
+        
+    
+        <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                33
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                MAR
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                2010
+            </td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                Participated in Two days National level workshop on “Photonics for engineering applications” on 13-14, March 2010 at NIT Warangal, Telangana, India
+            </td>
+        </tr>
+        
+    
+        </tbody>
+        </table>
+              
+        </div>
+      </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
