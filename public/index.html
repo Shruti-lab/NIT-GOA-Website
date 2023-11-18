@@ -1742,7 +1742,7 @@
 
   </section>
 
-  <section>
+  <section id="stat-section">
     <div class="holder pb-6 w-screen">
 
       <div class="title mt-8 pt-6">Statistical Data</div>
@@ -1779,6 +1779,21 @@
       
   </section>
   <script>
+
+const statSection = document.getElementById('stat-section');
+  const statValues = document.querySelectorAll('.stat-value');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        incrementStat('departments','students','faculties','publications','patents', 5,216,92,10,10); 
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  // Observe the statistical data section
+  observer.observe(statSection);
     // Function to increment a specific stat-value
     function incrementStat(statId1,statId2,statId3,statId4,statId5, targetValue1,targetValue2,targetValue3,targetValue4,targetValue5) {
       let current1 = 0;
@@ -1792,7 +1807,7 @@
       const element3 = document.getElementById(statId3);
       const element4 = document.getElementById(statId4);
       const element5 = document.getElementById(statId5);
-      const interval =10; // Adjust the interval as needed
+      const interval =20; // Adjust the interval as needed
   
       function updateStat() {
         element1.textContent = current1;
@@ -1837,10 +1852,6 @@
       increaseStat();
     }
   
-    // Call the function for each stat
-    incrementStat('departments','students','faculties','publications','patents', 5,216,92,10,10); 
-// Set the target value for each stat
-    // Repeat this line for other stats with respective target values
   </script>
 
   <footer class="bg-gray-800 text-white py-8 nat-por-container">
