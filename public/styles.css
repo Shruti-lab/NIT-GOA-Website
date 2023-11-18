@@ -2016,7 +2016,7 @@ body {
 }
 
 .sub-dropdown .sub-dropbtn {
-  font-size: 12px;   
+  font-size: 10px;   
   text-align: left;
   border: none;
   outline: none;
@@ -2032,6 +2032,7 @@ body {
   top: 6%;
   min-width: 100px;
   z-index: 2;
+  font-size: 10px;
 }
 
 .sub-dropdown:hover .sub-dropdown-content {
