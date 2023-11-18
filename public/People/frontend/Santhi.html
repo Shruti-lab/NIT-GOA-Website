@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <title>Faculty Details</title>
+    <style>
+        .hidden {
+            display: none;
+        }
+
+        .card-toggle {
+            width: 100%;
+            /* Adjust as needed */
+            height: 40px;
+            /* Adjust as needed */
+            background-color: #fff;
+            /* Toggle button color */
+        }
+
+        /* Show content when checkbox is checked */
+        #toggle1:checked~.card-content {
+            display: block;
+        }
+
+        #toggle2:checked~.card-content {
+            display: block;
+        }
+
+        #toggle3:checked~.card-content {
+            display: block;
+        }
+
+        #toggle4:checked~.card-content {
+            display: block;
+        }
+
+        #toggle5:checked~.card-content {
+            display: block;
+        }
+
+        #toggle6:checked~.card-content {
+            display: block;
+        }
+
+        #toggle7:checked~.card-content {
+            display: block;
+        }
+
+        #toggle8:checked~.card-content {
+            display: block;
+        }
+
+        #toggle9:checked~.card-content {
+            display: block;
+        }
+
+        #toggle10:checked~.card-content {
+            display: block;
+        }
+
+        #toggle11:checked~.card-content {
+            display: block;
+        }
+
+        #toggle12:checked~.card-content {
+            display: block;
+        }
+
+        #toggle13:checked~.card-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+        <div class="flex items-center text-gray-300 mr-8">
+            <div class="flex items-center gap-4" id="header-favicon">
+                <div>
+                    <i class="md:hidden fas fa-envelope"></i>
+                    your@email.com
+                </div>
+                <div>
+                    <i class="md:hidden fas fa-phone "></i>
+                    +1234567890
+                </div>
+            </div>
+        </div>
+        <div class="flex ml-8">
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+                <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+
+            </div>
+            <div class="flex items-center justify-center" id="header-items">
+                <a href="https://www.nitgoa.ac.in/gian/"
+                    class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+                <a href="https://www.nitgoa.ac.in/login.aspx"
+                    class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <header id="main-header"
+        class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+        <div class="flex justify-center">
+            <div class="headerBar ">
+                <div class="logo-container flex flex-col justify-center items-center">
+                    <img src="../../static/logo_color.png" class="logo" id="logo_img">
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="text-center">
+            <nav class=" justify-center items-center bg-white">
+                <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10"
+                    id="Nav">
+                    <div class="dropdown ">
+                        <a href="../../index.html">Home</a>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Administration</button>
+                        <div class="dropdown-content">
+                            <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                            <a href="../../administration/director_message.html">Director</a>
+                            <a href="../../administration/registrar.html">Registrar</a>
+                            <a href="../../administration/senate.html">Senate</a>
+                            <a href="../../administration/dean.html">Deans</a>
+                            <a href="../../administration/Committees.html">Committees</a>
+                            <a href="../../administration/finance_committee.html">Finance Committee</a>
+                            <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                            <a href="../../administration/hod.html">Heads of Departments </a>
+                            <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                            <a href="../../administration/reports.html">Reports</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Academics</button>
+                        <div class="dropdown-content">
+                            <a href="../../academics/academic_calendar.html">Calendar</a>
+                            <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                            <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                            <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                            <a href="../../academics/departments.html">Departments</a>
+                            <a href="../../academics/library.html">Library</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Admissions</button>
+                        <div class="dropdown-content">
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                                    <a href="../../admissions/dasa.html">DASA</a>
+                                    <a href="../../admissions/facilities.html">Facilities</a>
+                                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                            <a href="../../admissions/mtech.html">M.Tech</a>
+                            <a href="../../admissions/phd.html">Ph.D</a>
+                            <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                            <div class="sub-dropdown">
+                                <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                                <!--BTECH Start-->
+                                <div class="sub-dropdown-content">
+                                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                                </div>
+                                <!--End-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Training & Placement</button>
+                        <div class="dropdown-content">
+                            <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                            <a href="#">Company Login</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">People</button>
+                        <div class="dropdown-content">
+                            <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                            <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                            <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                            <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">Research</button>
+                        <div class="dropdown-content">
+                            <a href="../../research/R&DProjects.html">R & D Projects</a>
+                            <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../outreach_activities.html">Outreach Activities</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="../../nirf.html">NIRF</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+                    </div>
+                    <div class="dropdown">
+                        <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee
+                            Payment</a>
+                    </div>
+                </div>
+
+                <!--Toggle Menu Hamburger-->
+                <div class="menu-toggle" onclick="togglemenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+        </div>
+        </nav>
+        </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <div class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6">
+        <img src="Dr. B. Santhi.png" alt="Faculty Image"
+            class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800" />
+        <h2 class="text-xl font-bold mb-2">Dr. B. Santhi</h2>
+        <p class="text-gray-600 mb-4">
+            Assistant Professor & Head, Department of Mechanical Engineering
+        </p>
+        <p class="text-gray-700">
+            Research Area :  Design for Assembly,Ergonomics, Virtual Reality, Reverse Engineering, Product Design for Elderly and Kids, Creative Engineering Design
+        </p>
+        <div class="mt-4">
+            <p> Email:<a href="#" class="text-blue-500">  santhi@nitgoa.ac.in</a></p>
+        </div>
+    </div>
+
+    <div class="flex-col justify-center">
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+            <label for="toggle1" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Personal Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+                <p class="p-2">Name: Dr. B. Santhi</p>
+                <p class="p-2">Gender: Female</p>
+                <p class="p-2">Birth Date -</p>
+                <p class="p-2">Designation: Assistant Professor & Head</p>
+                <p class="p-2">
+                    Department: Department of Mechanical Engineering
+                </p>
+                <p class="p-2">URL:</p>
+                <p class="p-2">Date of Joining -</p>
+                <p class="p-2">
+                    Research/Teaching Experience: [Information not available in the search results]
+                </p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+            <label for="toggle2" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Contact Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">Address: Assistant Professor Department of Mechanical Engineering National Institute of Technology 
+                  Behind Government ITI, Farmagudi, PONDA- 403401, Goa</p>
+                <p class="p-2">City: PONDA</p>
+                <p class="p-2">State: GOA</p>
+                <p class="p-2">Country: INDIA</p>
+                <p class="p-2">Email Address: santhi@nitgoa.ac.in</p>
+                <p class="p-2">Phone [Residence]: -</p>
+                <p class="p-2">Phone [Mobile]: -</p>
+                <p class="p-2">Office Extension: -</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+            <label for="toggle3" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Research Area
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <p class="p-2">Design for Assembly</p>
+                <p class="p-2">Ergonomics, Virtual Reality</p>
+                <p class="p-2">Reverse Engineering</p>
+                <p class="p-2">Product Design for Elderly and Kids</p>
+                <p class="p-2">Creative Engineering Design</p>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+            <label for="toggle4" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Courses Taught
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    UG Courses
+                </h3> 
+                <p class="p-2">Engineering mechanics</p>
+                <p class="p-2">Engineering Drawing</p>
+                <p class="p-2">Elements of Mechanical Engineering</p>
+                <p class="p-2">Workshop Practices</p>
+                <p class="p-2">Materials and metallurgical engineering</p>
+                <p class="p-2">Manufacturing Technology I & II</p>
+                <p class="p-2">machine Drawing</p>
+                <p class="p-2">Power Plant Engineering</p>
+                <p class="p-2">Measurements and Metrology</p>
+                <p class="p-2">Computer Integrated Manufacturing</p>
+                <p class="p-2">Industrial Engineering and Operation research</p>
+                <p class="p-2">Production and Operation Management</p>
+            
+                <h3 class="text-2xl font-semibold font-serif text-center">
+                    PG Courses
+                </h3>
+            </div>
+        </div>
+
+        <div class="card p-4 bg-gray-800 rounded m-2">
+            <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+            <label for="toggle5" class="cursor-pointer">
+                <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                    Academic Information
+                </div>
+            </label>
+            <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                <div class="">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                                <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">Institute / University
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">year
+                                </th>
+                                <th class="bg-blue-400 text-white p-4">subject
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                              <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    1
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    B.E.
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Govt College of Engineering,Salem
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2001
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Mechanical Engineering
+                                </td>
+
+                              
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    M.Tech.
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                  The National Institute of Engg.,Mysore
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2005
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                       Production Engg. &amp; Systems Technology
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    3
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Ph.D.
+                                    &nbsp;
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    Indian Institute of Science, Bangalore
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                    2018
+                                </td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                                     Product Design and Manufacturing 
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+            <div class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl ">
+                Paper Published
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <div class="panel-body">
+                <h3 class="font-semibold text-xl">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: 
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal
+                </h3>
+
+                <div class="table-responsive">
+
+                    <ol style="margin-left:15px;">
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International
+                           <br/>
+                              S Bathrinath, J. Devaganesh, B. Santhi and S. Saravanasankar, “The adverse human health effects due to ammonia, hydrogen
+                              sulphide and chlorine in process industry: A Review”, International Journal of Mechanical and Production Engineering 
+                              Research and Development, Vol. 8, Special Issue 8        
+                            <br/>
+
+                            <br/>AUG  2018 <br/> <br/>
+                        </li>
+
+
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category"
+                                style="font-weight:bold;">Publication Category: 
+                            <span
+                                id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International
+                           <br/>
+                                 Santhi, B., Chakrabarti, A., Gurumoorthy, B., and Sen, D, "Automated identification of distinct events in an 
+                              assembly process using tracking of body posture", Int Journal of Concurrent Engineering with Research Application 
+                              (CERA), sage Publication.
+                            <br/>
+
+                            <br/>DEC  2017 <br/> <br/>
+                        </li>
+                     </ol>
+                </div>
+
+                <h3 class="font-semibold text-xl">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: 
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings
+                </h3>
+
+                <ol style="margin-left:15px;">
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International
+                       <br/>
+                          B. Santhi, Amey Tukaram Gaude, Sonu Maruti Harijan, Harsh Kailas Gaikwad and Aachal Laxmikant Naik, "Modelling Analysis and application of Biomimicry of fish", Conference on Future Technologies in Manufacturing, Automation, Design and Energy
+(ICoFT MADE 2022) held at National Institute of Technology Puducherry   
+                        <br/>
+
+                        SEPT<br/>DEC  2022 <br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International
+                       <br/>
+    S. Bathrinath, S. Mohan, K. Koppiahraj, R.K.A. Bhalaji, B. Santhi"Analysis of factors affecting sustainable performance in construction sites using fuzzy AHP-WASPAS methods",Materials Today: Proceedings 
+
+                        <br/>
+
+                        JULY<br/>MAR  2022<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International
+                       <br/>
+                                    S. Bathrinath, M. Dhanasekar, B. Dhanorvignesh,  Z. Kamaldeen, B. Santhi, R.K.A. Bhalaji and K. Koppiahraj,  “Modelling sustainability risks in sugar industry using AHP-BWM”, Materials Today: Proceedings
+                        <br/>
+
+                        MAY<br/>SEPT  2021 <br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International
+                       <br/>
+                 B Santhi, Abhishek Prasad, Yashvendra Kumar Sengar, “Motion capture through Kinect Sensor with its application- A short review”, National conference on Futuristic Trends in Materials, Manufacturing, and Mechanical Engineering, 28-29 February 2020, NIT Raipur.
+
+                        <br/>
+
+                        MAY<br/>FEB  2020<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International
+                       <br/>
+        S. Bathrinath, J. Devaganesh, B. Santhi and S. Saravanasankar, “ The Adverse Human      Health  Effects Due to Ammonia, Hydrogen Sulphide and Chlorine in Process Industries:A Survey” , International Conference on Automobile, Marine and Mechanical Engineering, Chennai
+                
+                        <br/>
+
+                        <br/> MAY  2018<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International
+                       <br/>
+                   Santhi, B., Chakrabarti, A., Gurumoorthy, B., and Sen, D,A Real Time Automatic Method of Assessing Reach Difficulty using Body Tracking Method, ICoRD, Guwahathi
+    
+                        <br/>
+
+                        <br/>JAN  2017 <br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International
+                       <br/>
+                            Santhi, B., Chakrabarti, A., Gurumoorthy, B., and Sen, D., “Identification of distinct events in an assembly by automatically tracking body postures”, 5th Intl. Conf. on Res. into Design (ICoRD’15), Bangalore, India,(Awarded one of the most distinguish paper among 118 papers)
+                           
+                        <br/>
+
+                        <br/>JAN  2015<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International
+                       <br/>
+                          Santhi, B., Chakrabarti, A., Gurumoorthy, B., and Sen, D., “Assessment of cause of difficulty in assembly tasks”, 5th Intl. Conf. on Res. into Design (ICoRD’15), Bangalore, India
+                          
+                        <br/>
+
+                        <br/>JAN  2015 <br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International
+                       <br/>
+                          Santhi, B., Chakrabarti, A., Gurumoorthy, B., and Sen, D., “Towards Automating Ergonomic Assessment of Manual Assembly Processes”, International Ergonomics Conference HWWE, Guwahathi
+                                         
+                        <br/>
+
+                        <br/>DEC  2014<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International
+                       <br/>
+                          Avinash Dawari, Santhi B., Chandana V., Amaresh Chakrabarti, Dibakar Sen, B. Gurumoorthy and Howard Appelman, “Developing a virtual environment for aiding assessment and improvement of assemblability of aerospace structures”, Int. conference on Research into Design
+                        
+                        <br/>
+
+                        <br/>JAN  2011<br/> <br/>
+                    </li>
+
+
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International
+                       <br/>
+                          B. Santhi, Amaresh Chakrabarti and B. Gurumoorthy, “A new approach for assemblability assessment using Time and Postural analysis–A Case Study”, Int. conference on Research into Design
+                                    
+                        <br/>
+
+                        <br/>JAN  2009<br/> <br/>
+                    </li>
+                </ol>
+                 <h3 class="font-semibold text-xl">
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: 
+                    <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Book Chapter
+                </h3>
+                      <ol style="margin-left:15px;">
+                        <li class="p-2" style="list-style-type: decimal;">
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category"
+                            style="font-weight:bold;">Publication Category: 
+                        <span
+                            id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International
+                       <br/>
+                            Vardhini Rajagopal, Dinesh Kumar Rajendran, B Santhi and Arjun R Jagadish, “Selective laser melting based additive manufacturing: Materials, Properties and defects analysis”, Chapter 4, Book Titled Advances in Additive Manufacturing Processes, Bentham Books, Pg71-79.
+                              
+                        <br/>
+
+                        <br/>NOV  2021<br/> <br/>
+                    </li>
+                        
+                      </ol>
+
+                <br />
+
+                <h3 class="font-semibold text-xl">
+
+
+                </h3>
+
+                <p class="rightsm">
+
+
+                </p>
+
+                <p class="rightsm">
+
+
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+        <label for="toggle8" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Funded Research Project
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+                <li class="p-2">
+                    <span id="ctl00_ContentPlaceHolder_Main_Repeater_Funded_ctl01_Label_Funded">The project proposal entitled “Biomimicry of fish to rescue people during disasters” submitted for “Student Innovation Grant Program” of ARTPARK (a joint initiative of IISc and AI foundry, SEED-funded by DST and Government of Karnataka) has got selected for funding . B.Tech students batch 2018-2022 of Mr. Amey Gaude, Mr. Harsh Kailas Gaikwad, Mr. Sonu Maruthi Harijan and Ms. Aachal L Naik are involved in doing the project and each are receiving Innovation Grant 
+                      (Monthly for the period of one year) for the same</span>
+                </li>
+                </ol>
+        </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+        <label for="toggle9" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Award and Honor
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+            <li class="p-2">Won Mahindra All India talent Scholarship during 1995-98 Won Best paper award in ICoRD2015 conference held at IISc, Bangalore</li>
+            <li class="p-2">The project proposal entitled “Biomimicry of fish to rescue people during disasters” submitted by Dr. B Santhi for “Student Innovation Grant Program” of ARTPARK (a joint initiative of IISc and AI foundry, SEED-funded by DST and Government of Karnataka) has got selected for funding .
+B.Tech students 2018-2022 batch of Mr. Amey Gaude, Mr. Harsh Kailas Gaikwad, Mr. Sonu Maruthi Harijan and Ms. Aachal L Naik are involved in doing the project and each are receiving Innovation Grant (Monthly for the period of one year) for the same.The project won runner up prize as the most innovative project.</li>
+          
+        </ol>
+        </div>
+    </div>
+
+  
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+        <label for="toggle11" class="cursor-pointer">
+            <div class="card-toggle font-serif font-semibold flex justify-center rounded-3xl">
+                Professional Services
+            </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol style="list-style-type: decimal;">
+                                    
+                <li class="p-2">
+                    1. Delivered webinar on ' Ergonomics and Virtual Reality' in International Webinar on Benefits and Challenges in Industry 4.0  on 29th May 2020
+2. Organised Two-day National Symposium on Advances in Manufacturing Engineering on 28Feb2020
+3. Reviewer of Journal of Concurrent Engineering - Research and Applications 
+
+                </li>
+                </ol>
+        </div>
+    </div>
+
+    <!--Footer Starts Here -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div>
+                    <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+                        <ul class="footer-links" style="list-style-type: disc;">
+                            <li class="p-2"><a href="../../index.html"><span class="">Home</a></li>
+                            <li class="p-2"><a href="../../syllabus.html"><span class="">Syllabus</a></li>
+                            <li class="p-2"><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</a></li>
+                            <li class="p-2"><a href="../../RTI.html"><span class="">RTI</a></li>
+                            <li class="p-2"><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</a></li>
+                            <li class="p-2"><a href="../../contact us.html"><span class="">Contact Us</a></li>
+                            <li class="p-2"><a href="#"><span class="">Feedback</a></li>
+                        </ul>
+
+                        <ul class="footer-links">
+                            <li class="p-2"><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</a></li>
+                            <li class="p-2"><a href="http://scanfcode.com/contact/"><span class="">Students</a></li>
+                            <li class="p-2"><a href="../../academics/academic_calendar.html"><span class="">Academic
+                                        Calendar</a></li>
+                            <li class="p-2"><a href="../../academics/rules_and_regulations.html">Regulations and
+                                        Curriculum</a></li>
+                            <li class="p-2"><a href="../academics/DissertionFormat.html">Dissertation
+                                        Formats</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Informations</h6>
+                    <ul class="footer-links">
+                        <li class="p-2"><a href="../../People/frontend/people_faculty.html">Faculty</a>
+                        </li>
+                        <li class="p-2"><a href="../../People/frontend/technical_cse.html">Staff</a></li>
+                        <li class="p-2"><a href="../../admissions/josaa.html">JEE</a></li>
+                        <li class="p-2"><a href="../../admissions/facilities.html">Facilities</a></li>
+                        <li class="p-2"><a href="../../static/fee_structure_23-24_25july2023.pdf">Fee
+                                    Structure</a></li>
+                        <li class="p-2"><a href="../../nirf.html">NIRF</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+                    <ul class="footer-links">
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html">National
+                                    Institute of Technology Goa
+                                    Farmagudi, Ponda , Goa - 403401</a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="../../index.html">
+                                <span">Website: www.nitgoa.ac.in
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Phone: [0832] 2404200 (PA to Director)
+                            </a></div>
+                        <div className="border-b-2 border-white mt-2"><a href="#">
+                                <span">Fax: [0832] 2404202
+                            </a></div>
+                    </ul>
+                </div>
+            </div>
+            <br />
+        </div>
+        <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+            <!-- hitwebcounter Code START -->
+            <p>Visitor counter</p>
+            <a href="https://www.hitwebcounter.com" target="_blank">
+                <img src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+                    title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+            </a>
+        </div>
+
+        <div class="fa-hover" style="text-align: right;">
+            <!-- Add font awesome icons -->
+            <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+            <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+            <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT"
+                class="fa fa-youtube-play"></a>
+            <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+        </div>
+
+
+
+    </footer>
+    <!--Footer Ends Here -->
+    <div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+    <!--javascript for Google Translator Starts Here-->
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--javascript for Google Translator Ends Here-->
+
+
+</body>
+
+</html>
