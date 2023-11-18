@@ -75,3 +75,24 @@ function googleTranslateElementInit() {
   }, 'google_translate_element');
 }
 
+
+const startNumber = 0;
+// const endNumber = 100;
+const duration = 2000; // in milliseconds
+const delay = 100; // in milliseconds
+
+
+function animateNumber(endNumber) {
+  const step = (endNumber - startNumber) / (duration / delay);
+  let currentNumber = startNumber;
+  const intervalId = setInterval(() => {
+    console.log(currentNumber); // Replace with your desired action (e.g., updating HTML element)
+    currentNumber += step;
+    if (currentNumber >= endNumber) {
+      clearInterval(intervalId);
+    }
+  }, delay);
+}
+
+// Call the function to start the animation
+animateNumber();
