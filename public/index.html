@@ -1677,7 +1677,7 @@
       document.getElementById("vision3").addEventListener("click", myfunction3);
 
       function myfunction3() {
-        document.getElementById("demo").innerHTML = "The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate programs.";
+        document.getElementById("demo").innerHTML = '<p>The National Institute of Technology Goa (NIT Goa) was established in 2010 as one of ten new NITs during the 11th Five-Year Plan. The institute was founded with the goal of providing high-quality engineering education and research to students from all over India. <p></p> NIT Goa began its academic activities in 2010-11 with an initial batch of 120 students enrolled in four undergraduate programs: Computer Science and Engineering, Electrical and Electronics Engineering, Electronics and Communication Engineering, and Mechanical Engineering. The institute has since expanded to offer eight undergraduate programs and seven postgraduate program. <a href="./about.html" class="text-blue-500 text-sm hover:text-blue-800 hover:text-blue hover:underline">Learn More >></a></p>'
 
       }
     </script>
@@ -1742,39 +1742,117 @@
 
   </section>
 
-  <section>
+  <section id="stat-section">
     <div class="holder pb-6 w-screen">
 
       <div class="title mt-8 pt-6">Statistical Data</div>
       <div class="px-8" id="stat-holder">
         <div class="stat">
-          <div class="stat-value">5</div>
+          <div class="stat-value" id="departments">0</div>
           <div class="stat-title">Departments</div>
 
         </div>
         <div class="stat">
-          <div class="stat-value">216</div>
+          <div class="stat-value" id="students">0</div>
           <div class="stat-title">Students</div>
 
         </div>
 
         <div class="stat">
-          <div class="stat-value">92</div>
+          <div class="stat-value" id="faculties">0</div>
           <div class="stat-title">Faculties</div>
 
         </div>
         <div class="stat">
-          <div class="stat-value">10</div>
+          <div class="stat-value" id="publications">0</div>
           <div class="stat-title">Publications</div>
 
         </div>
         <div class="stat">
-          <div class="stat-value">10</div>
+          <div class="stat-value" id="patents">0</div>
           <div class="stat-title">Patents</div>
 
         </div>
       </div>
+
+
+      
   </section>
+  <script>
+
+const statSection = document.getElementById('stat-section');
+  const statValues = document.querySelectorAll('.stat-value');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        incrementStat('departments','students','faculties','publications','patents', 5,216,92,10,10); 
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  // Observe the statistical data section
+  observer.observe(statSection);
+    // Function to increment a specific stat-value
+    function incrementStat(statId1,statId2,statId3,statId4,statId5, targetValue1,targetValue2,targetValue3,targetValue4,targetValue5) {
+      let current1 = 0;
+      let current2 = 0;
+      let current3 = 0;
+      let current4 = 0;
+      let current5 = 0;
+
+      const element1 = document.getElementById(statId1);
+      const element2 = document.getElementById(statId2);
+      const element3 = document.getElementById(statId3);
+      const element4 = document.getElementById(statId4);
+      const element5 = document.getElementById(statId5);
+      const interval =20; // Adjust the interval as needed
+  
+      function updateStat() {
+        element1.textContent = current1;
+        element2.textContent = current2;
+        element3.textContent = current3;
+        element4.textContent = current4;
+        element5.textContent = current5;
+      }
+  
+      function increaseStat() {
+        if (current1 < targetValue1) {
+          current1++;
+          updateStat();
+          
+          
+        }
+        if (current2 < targetValue2) {
+          current2++;
+          updateStat();
+          
+        }
+        if (current3 < targetValue3) {
+          current3++;
+          updateStat();
+          
+        }
+        if (current4 < targetValue4) {
+          current4++;
+          updateStat();
+          
+        }
+        if (current5 < targetValue5) {
+          current5++;
+          updateStat();
+          
+        }
+       
+        setTimeout(increaseStat, interval);
+  
+     
+      }
+      increaseStat();
+    }
+  
+  </script>
 
   <footer class="bg-gray-800 text-white py-8 nat-por-container">
     <div class="ml-16 flex">

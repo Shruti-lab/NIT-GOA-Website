@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Amol D. Rahulkar.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Amol D. Rahulkar</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Electrical and Electronics Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Data Mining, Privacy Preserving Data Mining, Stream Data Mining, Social Media Mining.
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> amol.rahulkar@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. Amol D. Rahulkar</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date- 10/12/1978</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">Department: Department of Electrical and Electronics Engineering</p>
+            <p class="p-2">URL</p>
+            <p class="p-2">Date of Joining-</p>
+            <p class="p-2">Research/Teaching Experience: 19 Years</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: Dept. of EEE, National Institute of Technology Goa, Farmagudi, Ponda, Goa-403401
+            </p>
+            <p class="p-2">City: PONDA</p>
+            <p class="p-2">State: GOA</p>
+            <p class="p-2">Country: INDIA</p>
+            <p class="p-2">Email Address: amol.rahulkar@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: -</p>
+            <p class="p-2">Phone [Mobile]: 9545986271</p>
+            <p class="p-2">Office Extension: 0832-2404218</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Digital Signal/Image Processing, Design of Wavelets, FPGA based Hardware Accelerators,Design of Neural Networks, Biometrics, Control Systems</p>
+           
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <h3 class="text-2xl font-semibold font-serif text-center">
+                UG Courses
+              </h3>
+              <p class="p-2">Digital Signal Processing
+                Signals and Systems,</p>
+              <p class="p-2">Data Structure and Algorithm
+                Linear and Non-Linear Systems,</p>
+              <p class="p-2">Control Systems
+                Advanced Control Systems,</p>
+              <p class="p-2">Soft Computing Techniques
+                Circuit Theory</p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                PG Courses
+              </h3>
+              <p class="p-2">Systems and Control Theory</p>
+              <p class="p-2">Digital Control Theory</p>
+              <p class="p-2">Soft Computing</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table>
+                <tbody>
+                <tr >
+                <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                <th class="bg-blue-400 text-white p-4">year</th>
+                <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.E</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded, Maharashtra</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4"> 2000</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Instrumentation Engineering</td>
+                </tr>
+                <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Tech</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	IIT Kharagpur</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2002</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Reliability Engineering</td>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Ph.D.  </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Swami Ramanand Teerth Marathwada University, Nanded, Maharashtra, India</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Instrumentation Engineering</td>
+                </tr>
+                </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="margin-left: 15px;">
+            <h3 class="text-2xl font-semibold">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">journals</span>
+            </h3>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary"> International       Aswini K Samantaray, Amol D. Rahulkar, Pranose J Edavoor, "A Novel Design of Dyadic db3 Orthogonal Wavelet Filter Bank for Feature Extraction", Circuits, Systems, and Signal Processing, Springer, 2021 [Published Online]    APRIL  2021     International       AR Naik, Bettahally N. Keshavamurthy "Next level peer-to-peer overlay networks under high churns: a survey," Peer-to-Peer Networking and Applications 13 (3), 905-931      2020     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary"> International       Aswini Kumar Samantaray, Pranose J. Edavoor and Amol D. Rahulkar,"Power-Efficient VLSI Architecture of A New Class of Dyadic Gabor Wavelets for Medical Image Retrieval ", IEEE Transactions on Very Large Scale Integration (VLSI) Systems, 2022,doi: 10.1109/TVLSI.2022.3213186    OCT  2022         </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary"> International       Aswini Kumar Samantaray, Pranose J. Edavoor and Amol D. Rahulkar, "A Novel Design of Symmetric Daub-4 Wavelet Filter Bank for Image Analysis," in IEEE Transactions on Circuits and Systems II: Express Briefs, vol. 69, no. 9, pp. 3949-3953, Sept. 2022, doi: 10.1109/TCSII.2022.3174183.    SEPT  2022        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International       Aswini K. Samantaray, Pranose J Edavoor and Amol D. Rahulkar, "A New Approach to the Design and Implementation of a Family of Multiplier Free Orthogonal Wavelet Filter Banks", in IEEE Transactions on Circuits and Systems for Video Technology, Vol.32, No.4, pp. 1942-1954, April 2022 .    APRIL  2022            </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International       Pranose J. Edavoor, Sithara Raveendran and Amol Rahulkar, "Novel 4:2 Approximate Compressor Designs for Multimedia and Neural Network Applications", Journals of Circuits, Systems and Computers, doi 10.1142/S0218126621501383, 2020 [Available Online]    NOV  2020
+            </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International       Pranose J. Edavoor, Sithara Raveendran, Amol D. Rahulkar, "Approximate Multiplier Design Using Novel Dual-stage 4:2 Compressors", IEEE Access,Vol. 8,pp.48337-48351,2020    FEB  2020      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International       Aswini Kumar Samantaray and Amol D. Rahulkar, "A New Design of Adaptive Gabor Wavelet Filter Bank for Medical Image Retrieval", IET Image Processing, Vol. 14, Issue 4, pp.679-687, 2020    NOV  2019         </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International       Jayanand Gawande, Amol Rahulkar and Raghunath Holambe, "Efficient Rationalization of Triplet Halfband Filter Banks and Its Application to Image Compression", IEEE Transactions on Circuits and Systems for Video Technology, Vol.30, Issue 10,pp. 4020-4033,2020    OCT  2019          </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International       Amita Shinde, Amol Rahulkar, Chetankumar Patil,"Content based medical image retrieval based on new efficient local neighborhood wavelet feature descriptor",Biomedical Engineering Letters, pp 1-8, 2019      2019      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary"> International       Santosh Nagnath Randive, Ranjan K Senapati, Amol D Rahulkar,"A review on computer-aided recent developments for automatic detection of diabetic retinopathy",Journal of Medical Engineering & Technology, Taylor & Francis, pp 1-13,2019      2019       </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International       Pranose J. Edavoor and Amol D. Rahulkar, "Design and Implementation of A Novel Low Complexity Symmetric Orthogonal Wavelet Filter-Bank", IET Image Processing, Vol.13, Issue 5,pp 785-793, April 2019      2019         </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International       Amita Shinde, Amol D. Rahulkar and C. Y. Patil, “Biomedical Image Indexing and Retrieval based on New Efficient Hybrid Approach using Directional Decomposition and a Novel Local Directional Frequency Encoded Pattern: A Post Feature Descriptor”, (Accepted for publication), Multimedia Tools and Applications, Springer, April 2019.      2019        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary"> International       Santosh Nagnath Randive, Amol D Rahulkar, Ranjan K Senapati,"LVP extraction and triplet-based segmentation for diabetic retinopathy recognition",Evolutionary Intelligence, Springer, vol.11,pp 117-129, 2018    OCT  2018        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International      International       Amita Shinde, Amol Rahulkar and C. Y. Patil, "Fast discrete curvelet transform-based anisotropic feature extraction for biomedical image indexing and retrieval", International Journal of Multimedia Information Retrieval,6(4),2017    DEC  2017        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International       Pravin B Chopade, Amol D Rahulkar, Pradeep M Patil,"Hybrid-Thresholding based Image Super-Resolution Technique by the use of Triplet Half-Band Wavelets", vol.97, issue 4,pp.517-523, 2016    DEC  2016       </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary"> International       Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, “A New Approach to Design Triplet Half-band Filter-banks Based on Balanced-uncertainty Optimization”, Elsevier, Digital Signal Processing, Vol. 56, pp.123-131,      2016     </li>
+                <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary"> International       Jayanand P. Gawande, Amol D. Rahulkar, and Raghunath S. Holambe, "Design of New Class of Regular Biorthogonal Wavelet Filter Banks Using Generalized and Hybrid Lifting Structures", Springer, Signal, Image and Video Processing, Vol. 9, Issue 1, pp.265-273 ,      2015 </li>
+                    <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary"> International       Amol D. Rahulkar, Laxman M. Waghmare, and Raghunath S. Holambe, “A New Approach to the Design of Hybrid Finer Directional Wavelet Filter Bank for Iris Feature Extraction and Classification using k-out-of-n:A post-classifier”, Springer, Pattern Analysis and Application, vol.17,no.3,pp.517-528,      2014     </li>
+                        <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary"> International       Amol D. Rahulkar, Bhushan D. Patil and Raghunath S. Holambe,“A New Approach to the Design of Biorthogonal Triplet Halfband Filter Banks Using Generalized Halfband Polynomials”, Springer, Signal Image and Video Processing, Vol.8, Issue 8, pp 1451-1457,      2014   </li>
+                            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary"> International       Amol D. Rahulkar and Raghunath S. Holambe, “Half-Iris Feature Extraction and Recognition Using A New Class of Triplet Half Band Filter Bank and flexible k-out-of-n: A post-classifier,” IEEE Transactions on Information Forensic and Security, vol. 7. no.1, pp.230-240,      2012      </li>
+                                <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International       Amol D. Rahulkar and Raghunath S. Holambe, “Half-Iris Feature Extraction and Recognition Using A New Class of Triplet Half Band Filter Bank and flexible k-out-of-n: A post-classifier,” IEEE Transactions on Information Forensic and Security, vol. 7. no.1, pp.230-240,      2012      </li>
+                                    <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International       Amol D. Rahulkar and Raghunath S. Holambe, “Partial Iris Feature Extraction and Recognition Based on A New combined Directional and Rotated Directional Wavelet Filter Banks,” Elsevier, Neurocomputing, vol. 81, pp. 12-23,      2012  </li>
+                                        <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International       Amol D. Rahulkar, Dattatraya V. Jadhav and Raghunath S. Holambe,”Fast Discrete Curvelet Transform Based Anisotropic Iris Coding and Recognition Using k-out-of-n:A fused post-classifier,” Springer, Machine Vision and Application, Vol.23, issue 6, 1115-1127,      2012   </li>
+            </ol>
+            <h3><span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type:  <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</h3>
+            <ol style="margin-left: 15px;">
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International       Priyanka K. Padiyar and Amol D. Rahulkar, "Design of Adaptive Gabor Filter Bank for Feature Extraction of MRI Images and Classification using Support Vector Machine," 2023 IEEE International Conference on Electronics, Computing and Communication Technologies (CONECCT), Bangalore, India, 2023, pp. 1-5, doi: 10.1109/CONECCT57959.2023.10234741.    SEPT  2023        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International       Ashish K Gupta and Amol D. Rahulkar, "Artificial Neural Network based SoC Estimation for Electric Vehicle", Proc. in IEEE 8th International Conference for Convergence in Technology (I2CT), Lonavla, India, pp. 1-7, Aprial 7-9,2023 doi: 10.1109/I2CT57861.2023.10126329.    MAY  2023        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International       Aswini K. Samantaray and Amol D. Rahulkar, "Lifting Scheme Based Image Retrieval in Medical CT and MRI Databases", 2020 IEEE International Symposium on Sustainable Energy, Signal Processing and Cyber Security (iSSSC), 2020, pp. 1-6, doi: 10.1109/iSSSC50941.2020.9358908.    SEPT  2020   </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International       Ashwini R Patil, Amol D. Rahulkar and Chirag N Modi, "Designing an Efficient Fingerprint Recognition System for Infants and Toddlers," 2019 10th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-7, doi: 10.1109/ICCCNT45670.2019.8944342    DEC  2019    </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International       Aswini K. Samantaray and Amol D. Rahulkar, "Comparison of Similarity Measurement Metrics on Medical Image Data", 0th International Conference on Computing, Communication and Networking Technologies (ICCCNT), 2019, pp. 1-5, doi: 10.1109/ICCCNT45670.2019.8944781.    DEC  2019       </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1"> International       Priyanandini Das, Pranose Edavoor, Sithara R., Sunil Rathore and Amol Rahulkar, "Design and Implementation of PID Controller based on Orthogonal wavelet filter-banks in FPGA", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India    DEC  2017      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">International       Pranose Edavoor, Sithara R. and Amol Rahulkar, "Implementation of adaptive image compression algorithm using varying bit-length Daubechies wavelet coefficient with three-level encryption on Zynq 7000", Proc. of IEEE Seventh International Symposium on Embedded Computing and System Design (ISED), 18-20 Dec, 2017, NIT Durgapur, India    DEC  2017   </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">International       Priyanandini Das, Pranose Edavoor, Sithara Raveendran, Amol Rahulkar, “Design and Implementation of computationally efficient architecture of PID based speed controller for Robotic land navigation system in FPGA”, Accepted in conference on Information and Communication Technology, at Indian Institute of Technology and Management, Gwalior, during Nov 3-5, 2017.    NOV  2017      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">International       Amita Shinde, Amol Rahulkar and C. Y Patil, “Local Neighbouring Binary Pattern: A New Feature Descriptor for Biomedial Image Indexing and Retrievel”, Proc. in 2nd International conference on Signal and Image Processing (ICSIP 2017), pp. 154-159, August 4-6, 2017, Singapore (Received Best Presentation Award)      2017     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1"> International       Pradeep Vejju, Arun George, Amol Rahulkar, "Comparative Study on the Computation of State Transition Matrix Using Lagrange Interpolation Technique and Cayley-Hamilton Theorem", Proc. of 10th International Conference on Intelligent Systems and Control (ISCO-2016), pp.235-239.    JAN  2016         </li>
+            </ol>
+            <h3 class="text-2xl font-semibold">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Book chapter</span>
+            </h3>
+            <ol style="margin-left: 15px;">
+              <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"> International       Aswini K. Samantaray, Amol D. Rahulkar, "Wavelet Transform for Cardiac Image Retrieval" . Book chapter in: Image Processing Methods for Automatic Diagnosis of Cardiac Diseases (chapter-8), Elsevier, December 2020    DEC  2020         </li>
+              <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International       Amita Shinde, Amol Rahulkar, C Y Patil (2020) Directional Multiscale Feature Extraction for Biomedical Image Indexing and Retrieval Using Contourlet Transform. Book chapter in: A. Abraham, A. Cherukuri, P. Melin, N. Gandhi (eds), “ Intelligent Systems Design and Applications”, Advances in Intelligent Systems and Computing, vol 940. Springer, Cham, 2019.      2019             </li>
+            </ol>
+            
+            <h3 class="text-2xl font-semibold">
+              <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+              <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Book Authored</span>
+          </h3>
+          <ol style="margin-left: 15px;">
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1"> International       Jayanand Gawande, Amol Rahulkar and Raghunath Holambe, "Design of Wavelets and Filter Banks:New Methods and Application to Chromosome Image Compression",LAP-Lambert Academic Publisher, ISBN-978-613-8-38779-4, March 22, 2018 .    MAR  2018             </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">National       Amol D. Rahulkar, “Advanced Control System: Analysis and Design ” [Available online] http://idr.nitgoa.ac.in:8080/jspui/handle/123456789/26, 2017.    SEPT  2017           </li>
+              <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1"> International       Amol D. Rahulkar and Raghunath S. Holambe,"Iris Image Recognition: New Wavelet Filter-banks Based Iris Feature Extraction Schemes", Springer, Series- SpringerBriefs in Electrical and Computer Engineering, New York, ISBN 978-3-319-06767-4.      2014                </li>
+          </ol>
+          
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        1. Dr. Pranose J. Edavoor-Defended his PhD Thesis entitled "Approaches to the Design of VLSI Computational Architectures for Wavelets and Neural Networks in Multimedia Applications" on 29/10/2021<br>
+        2. Dr. Aswini Kumar Samantaray-Defended his PhD Thesis entitled "Design of Low-complex Wavelet Filter-banks for Feature Extraction in Medical Image Retrieval" on 22/09/2022 <br>
+        3. Mr. Vallabh Bhatlavande (Ongoing)<br>
+        4. Ms. Priyanka Padiyar (Ongoing)<br>
+        5. Ms. Priyanandini Das (Ongoing)<br>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        1. "Design and Development of Fingerprint and Face Recognition System for Infants and Toddlers", Science and Engineering Research Board (SERB), DST, 2017-2020 (PI)<br>
+        2. "Design and Development of Robust Distributed Nonlinear Channel Equalization and Identification", SERB, DST, 2016-2019. (Co-PI)<br>
+        3. "Design and Development of FPGA Accelerator IP for Deep Neural Network (FAipDNet)", MeiTY, Govt. of India, (PI) : Status: Ongoing <br>     </div>
+    </div>
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+            <li>
+              <p class="p-2">Received "Gunwant Adhyapak Puraskar" from University of Pune in February-2014</p>
+            </li>
+            <li>
+              <p class="p-2">Received Best Presentation Award for the paper entitled, "Local Neighboring Binary Pattern: A New Feature Descriptor for Biomedical Image Indexing and Retrieval", in ICSIP-2017 held during August 4-6, 2017, Singapore.</p>
+            </li>
+            <li>
+              <p class="p-2">IEEE Senior Member</p>
+            </li>
+          </ol>
+          
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+            <li>
+              <p class="p-2">IEEE Senior Member</p>
+            </li>
+            <li>
+              <p class="p-2">LMISTE</p>
+            </li>
+            <li>
+          </ol>
+          
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table" style="width: 100%; height: 202.5px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No.</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training attended Information </strong></th>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Six days GIAN course on , "Current trends in Power electronics and Drives Technology" at VNIT Nagpur during Dec. 11-Dec. 17, 2017.</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">SEP</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2014</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">		One-week workshop on "An Embedded Generation Interface With Real World: A Practical Approach" at Trinity College of Engineering, Pune during Sept16-Sept 20, 2014</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two-week STTP on "Linear Algebra and Its Applications" at Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded during May 21-June 02, 2012.</td>
+            </tr>
+            <tr >
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two-week STTP on "Image and Video Processing Using MATLAB" at SKNCOE, Pune during Dec 30-Jan. 3, 2010</td>
+              </tr>
+              <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	One-week STTP on "Recent Trends in Digital Image Processing" at Army Institute of Technology, Pune during June 28-July 2, 2010.</td>
+                </tr>
+                <tr >
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">	3 Days workshop on "Wavelets and Applications" at Shri Guru Gobind Singhji Institute of Engineering and Technology, Nanded during June 8-10, 2009</td>
+                  </tr>
+                  <tr >
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">7</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">One-week SDP on "Image Processing and Neural Network" at NIT, Bhopal during May 12-16, 2008</td>
+                    </tr>
+                    <tr >
+                      <td class="bg-white border-b-4 border-gray-200 text-black p-4">8</td>
+                      <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                      <td class="bg-white border-b-4 border-gray-200 text-black p-4">2007</td>
+                      <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Two-week STTP on "Advanced Digital Signal Processing" at Sinhgad College of Engineering during Dec. 3-13, 2007</td>
+                      </tr>
+                      <tr >
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">9</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">2007</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">One-week STTP on "Real Time Signal Processing" at Y. C. C. E, Nagpur during Nov. 26-30, 2007</td>
+                        </tr>
+                        <tr >
+                          <td class="bg-white border-b-4 border-gray-200 text-black p-4">10</td>
+                          <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                          <td class="bg-white border-b-4 border-gray-200 text-black p-4">2006</td>
+                          <td class="bg-white border-b-4 border-gray-200 text-black p-4">Two-week STTP on "MATLAB and Its Applications in Electrical and Electronics Engineering"at Anjuman COE, Nagpur during June 4-15, 2006.</td>
+                          </tr>
+                          
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table class="table-bordered table" style="width: 92.9782%; height: 112px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training Conducted Information </strong></th>
+            </tr>
+            <tr >
+              <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">DST Sponsored One Week STTP on "Video and Image Analysis:Fundamental and Advances" at NIT Goa during May 30-June 4, 2016. Number of Participants=32</td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</a></li>
+            <li><a href="#"><span class="">Feedback</a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</a></li>
+          <li><a href="../../nirf.html"><span >NIRF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

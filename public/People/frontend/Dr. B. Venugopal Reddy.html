@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. B. Venugopal Reddy.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. B. Venugopal Reddy</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Multilevel inverters
+
+        Renewable energy systems
+        
+        Open-end Winding Induction Motor Drives.
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> bvenugopal_reddy@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name:Dr. B. Venugopal Reddy</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date-</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">Department: Department of Electrical and Electronics Engineering</p>
+            <p class="p-2">URL</p>
+            <p class="p-2">Date of Joining-</p>
+            <p class="p-2">Research/Teaching Experience: 19 years</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+             Address - Dr. B.Venugopal Reddy EEE Department NIT Goa Farmagudi,Ponda
+            </p>
+            <p class="p-2">City: PONDA</p>
+            <p class="p-2">State: GOA</p>
+            <p class="p-2">Country: INDIA</p>
+            <p class="p-2">Email Address: bvenugopal_reddy@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: 9948632434</p>
+            <p class="p-2">Phone [Mobile]:9404527890</p>
+            <p class="p-2">Office Extension: -</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Multilevel inverters</p>
+            <p class="p-2">Renewable energy systems</p>
+            <p class="p-2">Open-end Winding Induction Motor Drives</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <h3 class="text-2xl font-semibold font-serif text-center">
+                UG Courses
+              </h3>
+              <p class="p-2">Power Electronics, Solid State Drives, Network Theory,Control Systems, Electro Magnetic Fields,</p>
+              <p class="p-2"> Utilisation of Electrical Energy, Advanced Power Electronics,Power System Operation and control,</p>
+              <p class="p-2"> Power System Analysis,Electrical Machines, Modelling and simulation Techniques for Dynamic systems Analysis, Renewable Energy Systems.</p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                PG Courses
+              </h3>
+              <p class="p-2">Advanced Electric Drives, Machine Modeling and Analysis, Renewable Energy Systems</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table>
+                <tbody>
+                <tr >
+                <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                <th class="bg-blue-400 text-white p-4">year</th>
+                <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	B.Tech.  </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">JNTU College of Engineering, Kukatpally, Hyderabad</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2001</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Electrical & Electronics Engineering</td>
+                </tr>
+                <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Tech</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">NIT, Warangal</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2005</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Power Electronics and Drives</td>
+                </tr>
+                <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Ph.D.  </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">NIT, Warangal</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">Four-level Dual Inverter fed Open-end Winding Induction Motor Drive</td>
+                </tr>
+                </tbody>
+                </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="margin-left: 15px;">
+            <h3 class="text-2xl font-semibold">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Journal</span>
+            </h3>            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary"> International       Swetha KT, Barry Venugopal Reddy, “A novel constraint-based improved equilibrium optimization for global peak tracking of photovoltaic system under complex shading conditions,” International Journal of Circuit Theory and Applications, Wiley, January      2023         </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International       G.H.K.Varma, Barry Venugopal Reddy, Jain RK, “A Total-Cross-Tied Based Dynamic Photovoltaic Array Reconfiguration for Water Pumping System,” IEEE Access, January.      2022      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary"> International       G.H.K.Varma, Barry Venugopal Reddy, Jain RK, “ Improved Performance of PV Water Pumping System Using Dynamic Reconfiguration Algorithm under Partial Shading Conditions,” IEEE CPSS Transactions on Power Electronics and Applications, February      2022    </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International       Swetha KT,Barry Venugopal Reddy,Abin Robinson, "An effective maximum power point tracking technique for partially shaded photovoltaic system under rapidly changing atmospheric conditions" International Journal of Circuit Theory and Applications, Wiley, June      2022        </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">National       R. K. Jain, Venugopal Reddy Barry and H. K. V. Gadiraju, "Model-Based Design and Sliding Mode Control Approach for Two-Stage Water Pumping System With Reduced Sensors," IEEE Journal of Emerging and Selected Topics in Power Electronics, vol. 10, no. 4, pp. 3940-3949, Auguest      2022      </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary"> International       G.H.K.Varma, Barry Venugopal Reddy, Jain RK, Kumar D. “An MMTES algorithm for dynamic Photovoltaic array reconfiguration to enhance power output under partial shading conditions,” IET Renewable Power Generation, vol. 15, no. 4, pp. 809-820, March.      2021    </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International     G.H.K.Varma, Barry Venugopal Reddy, Jain RK, “A Novel Magic Square Based Physical Reconfigurationfor Power enhancement in Larger Size Photovoltaic Array,” IETE Journal of Research, June.      2021       </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International       Manjunath Matam, Venugopal Reddy Barry and Brad Lehman, “Performance improvement of dynamic PV array under partial shade conditions using M2 algorithm”, IET Renewable Power Generation, Vol.13, no. 8, pp 1239-1249, June      2019         </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary"> International       M. Manjunath, Venugopal Reddy Barry, and Avinash Reddy G, “Optimized reconfigurable pv array based photovoltaic water-pumping system”, Solar Energy , Elsevier Journal, Vol. 170, pp. 1063 - 1073.      2018     </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International       Manjunath Matam, Venugopal Reddy Barry, “Improved performance of dynamic photovoltaic array under repeating shade conditions”, Energy Conversion and Management, Elsevier Journal, Vol. 168, 15 July 2018, pp. 639-650.      2018 </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International       Manjunath Matam, Venugopal Reddy Barry, “Variable size Dynamic PV array for small and various DC loads”, Solar Energy, Elsevier Journal, Vol.163, pp. 581-590.      2018       </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International       Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, “ An SVPWM scheme for the Suppression of Zero-Sequence Current in a Four-level Open-End Winding Induction Motor Drive with Nested Rectifier-Inverter”, IEEE Transaction on Industrial Electronics,vol.63, no.5,pp.2803-2812,May 2016.      2016    </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary"> International       Barry Venugopal Reddy, VeeramrajuTirumalaSomasekhar, and YenduriKalyan, “Decoupled Space-vector PWM Strategies for a Four-level Asymmetrical Open-end Winding Induction Motor Drive with Waveform Symmetries”, IEEE Transaction on Industrial Electronics,vol. 58, no. 11, pp. 5130-5141,    NOV  2011          </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary"> International       Barry Venugopal Reddy, Veeramraju Tirumala Somasekhar, “ A Dual Inverter fed Four-level Open-end Winding Induction Motor Drive with a Nested Rectifier-Inverter”, IEEE Transaction on Industrial Informatics, Vol.9,No.2,pp.938-946.           </li>
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary"> International       V.T. Somasekhar, B. Venugopal Reddy, and K. Sivakumar, “A Four-level Inversion Scheme for a 6-n Pole Open-end Winding Induction Motor Drive for an Improved DC-link Utilization”, IEEE Transaction on Industrial Electronics, vol..61,no.9,pp.4565-4572.          </li>
+            </ol>
+            <h3><span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type:  <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</h3>
+            <ol style="margin-left: 15px;">
+            <li class="p-2" style="list-style-type: decimal;"><span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight: bold;">Publication Category:  <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">National       Matam Manjunath, B. Venugopal Reddy and G Avinash Reddy, "Optimized reconfigurable solar PV battery charger using relay switch matrix", National Power Electronics Conference(NPEC-2015), IIT Bombay, 21-23 .        </li>
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        Core Research Grant, SERB, DST, “Design and Development of a Dynamic Photovoltaic Array fed Single-Stage PV Pumping System using an Open-End Winding Induction Motor” May 2019.      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table class="table-bordered table" style="width: 100%; height: 202.5px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No.</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training attended Information </strong></th>
+            </tr>
+            <tr>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Matam Manjunath, B. Venugopal Reddy, Ye Zhao, Brad Lehman, “On-line GMPP identification of solar PV plants”, Annual IEEE Applied Power Electronics Conference & Exposition (APEC), Texas, March 4-8, 2018.</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Swetha K.T, B.Venugopal Reddy, “Single phase seven level cascaded multilevel inverter fed induction motor” biennial international conference on power and energy systems at Amrita school of engineering, Bengaluru, Jan. 18-20, 2018.</td>
+            </tr>
+            <tr >
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2017</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Manjunath, B.Venugopal Reddy, Ye Zhao and Brad Lehman, “On-line Monitoring of PV plants”, IEEE international conference on Energy Conversion Congress Expo(ECCE), Cincinnati,USA, pp. 4061-4068 Oct 1-5, 2017.</td>
+            </tr>
+            <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2016</td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">K. Prakash, V. Pradeep, B Venugopal Reddy, " Multiport Switch based MPPT for stand-alone Photovoltaic Power Systems", IEEE International Conference on Power Electronics, Intelligent Control and Energy Systems (ICPEICES), DTU Delhi, 4-6 July 2016.</td>
+                </tr>
+                <tr >
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Matam Manjunath, B. Venugopal Reddy and G Avinash Reddy, "Optimized reconfigurable solar PV battery charger using relay switch matrix", National Power Electronics Conference(NPEC-2015), IIT Bombay, 21-23 December 2015.</td>
+                    </tr>
+
+                    <tr >
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">B. Venugopal Reddy, V.T. Somasekhar, “A SVM based Four-level Open-end Winding-Induction Motor Drive with Voltage Balancing of DC-link Capacitors using SVM based HCC Front-end Converter”,INIDICON-2011, 17 – 18 Dec, 2011</td>
+                        </tr>
+
+                        <tr >
+                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">7</td>
+                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">B. Venugopal Reddy, V.T. Somasekhar, “A Space Vector based PWM Switching Algorithm for a Four-Level Dual Inverter fed Open-end Winding Induction Motor Drive” , Centenary Conference -EE, IISc, Bangalore,14-17 December 2011.</td>
+                            </tr>
+                            <tr >
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">8</td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">V. T. Somasekhar, B. Venugopal Reddy, “A New Four-level Dual Inverter fed Open- end Winding Induction Motor Drive”, PEDS-2011,Singapore, 5-8 December 2011, pp 167-170.</td>
+                                </tr>
+                                <tr >
+                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">9</td>
+                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.Venugopal Reddy, V.T, Somsekhar, “A constant Switching Decoupled Space Vector PWM Scheme for a Four-level Open-end Winding Induction Motor Drive”, IEEE International Conference ICETECT-2011,Nargercoil,India, 23-24 March 2011, pp.280-284.</td>
+                                    </tr>
+                                    <tr >
+                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">10</td>
+                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAR</td>
+                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">B. Venugopal Reddy, V.T. Somasekhar, “Thermal Evaluation of Space Vector PWM Based Four- level Dual Inverter Fed Open –End Winding Induction Motor Drive”, IEEE International Conference ICETECT-2011,Nargercoil,India, 23-24 March 2011, pp.420-424.</td>
+                                        </tr>
+                                        <tr >
+                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">11</td>
+                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">B. Venugopal Reddy, V.T. Somasekhar, “A Decoupled SVPWM Technique for a Dual Inverter Four-level Open-end Winding Induction Motor Drive with Voltage Balancing of DC-link Capacitors”, Power Electronics, Drives and Energy Systems (PEDES) & 2010 Power India, 2010, , 20-23 Dec. 2010, pp.1-6</td>
+                                            </tr>
+                                            <tr >
+                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">12</td>
+                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">P. Srinivasan, B. Venugopal Reddy, V. T. Somasekhar, “PWM Switching Strategy for the Elimination of Common Mode Voltage of a Two-level Inverter Drive with an Open-end Winding Induction Motor Configuration”, Power Electronics, Drives and Energy Systems (PEDES) & 2010 Power India, 2010, 20-23 Dec.2010, pp.1-6.</td>
+                                                </tr>
+                                                <tr >
+                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">13</td>
+                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">B. Venugopal Reddy, V.T. Somasekhar, “A Space Vector based PWM for a Four-level Dual Inverter fed Open-end Winding Induction Motor Drive with Voltage Balancing of DC-link Capacitors”, IEEE International Conference IICPE-2010, Delhi.</td>
+                                                    </tr>
+                                                    <tr >
+                                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">14</td>
+                                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                                                        <td class="bg-white border-b-4 border-gray-200 text-black p-4">Barry Venugopal Reddy, V.T. Somasekhar, “A Four-level Inverter with Open-end Winding Induction Motor Drive with a Decoupled Space Vector PWM Scheme”, National Power Electronics Conference NPEC-2010, IIT Roorkee, 10-13 June 2010</td>
+                                                        </tr>
+                                                        <tr >
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">15</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">MHRD sponsored advanced technology program on “Switched Mode Power Conversion & Advanced Electric Drives”, during July 28th – August 9th, 2008 at NIT, Warangal.</td>
+                                                            </tr>
+                                                            <tr >
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">16</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                                                            <td class="bg-white border-b-4 border-gray-200 text-black p-4">MHRD sponsored refresher course on “Neural Network & Fuzzy Logic Applications to Power System Deregulation”, from 2nd – 14th June, 2008 at NIT, Warangal.</td>
+                                                            </tr>
+                                                            <tr >
+                                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">17</td>
+                                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">JUN</td>
+                                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                                                                <td class="bg-white border-b-4 border-gray-200 text-black p-4">	MHRD sponsored advanced technology program on “Digital Signal Processor Application to Modern Industrial Drives", during 16th - 28th June, 2008 at NIT, Warangal.</td>
+                                                                </tr>
+                                                                <tr >
+                                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">18</td>
+                                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+                                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2005</td>
+                                                                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Three-Day National level workshop on “Vector Control of Induction Motor”, during 20th – 22nd October, 2005 at JNTU College of Engineering.</td>
+                                                                    </tr>
+                    </tbody>
+                </tbody>
+            </tbody>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table class="table-bordered table" style="width: 92.9782%; height: 112px;">
+            <tbody>
+            <tr>
+            <th class="bg-blue-400 text-white p-4"><strong>Sr.No</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Month</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Year</strong></th>
+            <th class="bg-blue-400 text-white p-4"><strong>Training Conducted Information </strong></th>
+            </tr>
+            <tr >
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">NOV</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">2007</td>
+            <td class="bg-white border-b-4 border-gray-200 text-black p-4">Conducted National Level Workshop as a coordinator on “Recent Trends in Power Electronics and Drives”, during 3rd November, 2007 at Vaagdevei College of Engineering, Warangal.</td>
+            </tr>
+            </tbody>
+            </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</a></li>
+            <li><a href="#"><span class="">Feedback</a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</a></li>
+          <li><a href="../../nirf.html"><span >NIRF</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

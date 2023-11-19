@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Sreeraj E S.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Sreeraj E S</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor, Department of Electrical and Electronics Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area : Power electronics, Renewable energy
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> sreeraj@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. Sreeraj E S</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date: 24/07/1978</p>
+            <p class="p-2">Designation: Associate Professor</p>
+            <p class="p-2">
+                Department: Department of Electrical and Electronics Engineering
+              </p>
+              <p class="p-2">URL</p>
+              <p class="p-2">Date of Joining-</p>
+              <p class="p-2">
+                Research/Teaching Experience: 9 years
+              </p>        
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: Assistant Professor, Dept. of EEE, National Institute of Technology Goa, Farmagudi, Ponda, Goa - 403 401.
+              </p>
+              <p class="p-2">City: -</p>
+              <p class="p-2">State: -</p>
+              <p class="p-2">Country: -</p>
+              <p class="p-2">Email Address: sreeraj@nitgoa.ac.in</p>
+              <p class="p-2">Phone [Residence]: -</p>
+              <p class="p-2">Phone [Mobile]: -</p>
+              <p class="p-2">Office Extension: -</p>
+              
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Power electronics</p>
+          <p class="p-2">Renewable energy</p>
+        </div>
+      </div>
+
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+                                    
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                        <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Institute / University
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">subject
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    B.Tech.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    REC Calicut
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2001
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Electrical and Electronics
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    M.Tech.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    IIT Bombay
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2006
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Energy Systems Engineering
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Ph.D.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    IIT Bombay
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2013
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Electrical Engineering
+                </td>
+            </tr>
+        
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="panel-body">
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+            </h3>
+
+            <div class="table-responsive">
+                
+                        <ol style="margin-left:15px;">
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International</span>
+                            <br/>
+                                        Jayesh Priolkar & E. S. Sreeraj (2023): Analysis of Price Based Demand Response Program Using Load Clustering Approach, IETE Journal of Research, DOI:10.1080/03772063.2022.2161956
+                                        <br/>
+                                        
+                            <br/>2023<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International</span>
+                            <br/>
+                                        Jayesh Priolkar & Sreeraj E S (2022) Consumer Baseline Estimation Analysis for Implementation of Demand Response Programs, IETE Journal of Research, DOI: 10.1080/03772063.2022.2130452
+                                        <br/>
+                                        
+                            <br/>2022<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International</span>
+                            <br/>
+                                        VR Reddy, ES Sreeraj, "Grid Voltage Sensor-less Protection scheme for One Cycle-Controlled Single-Phase Photovoltaic Inverter Systems," CSEE Journal of Power and Energy Systems, Early Access
+                                        <br/>
+                                        
+                            DEC<br/>2021<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International</span>
+                            <br/>
+                                        Venkata R Reddy and ES Sreeraj, "A Hybrid Islanding Detection Method for One Cycle Controlled PV Inverter System," IEEE Journal of Emerging and Selected Topics in Industrial Electronics, Early Access
+                                        <br/>
+                                        
+                            JULY<br/>2021<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International</span>
+                            <br/>
+                                        V.R. Reddy and Sreeraj E.S.,"A Feedback based Passive Islanding Detection Technique for One Cycle Controlled Single Phase Inverter used in Photovoltaic Systems,"  IEEE Trans. Ind. Electron., 67 (8), 6541-6549, 2019
+                                        <br/>
+                                        
+                            AUG<br/>2019<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International</span>
+                            <br/>
+                                        Ch LS Srinivas, and E S Sreeraj, "A Maximum Power Point Tracking Technique Based on Ripple Correlation Control for Single Phase Photovoltaic System with Fuzzy Logic Controller," Energy Procedia, vol. 90, pp. 69-77.
+                                        <br/>
+                                        
+                            DEC<br/>2016<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International</span>
+                            <br/>
+                                        Sreeraj, E.S., Prejith, E.K.,  K. Chatterjee, and S. Bandyopadhyay, "An Active Harmonic Filter Based on One-Cycle Control,"  IEEE Trans. Ind. Electron., vol.61, no.8, pp.3799-3809.
+                                        <br/>
+                                        
+                            AUG<br/>2014<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International</span>
+                            <br/>
+                                        Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, “One cycle controlled single-stage, single phase voltage sensor-less grid connected PV system,” IEEE Trans. Ind. Electron., vol.60, no.3, pp.1216-1224.
+                                        <br/>
+                                        
+                            MAR<br/>2013<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International</span>
+                            <br/>
+                                        Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, “Design of isolated renewable hybrid power systems,’’ Solar Energy, vol. 84, no. 7, pp. 1124-1136.
+                                        <br/>
+                                        
+                            JULY<br/>2010<br/> <br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International</span>
+                            <br/>
+                                        D.V. Ghodke, Sreeraj E.S., K. Chatterjee, and B.G. Fernandes, “One cycle controlled bi-directional AC to DC Converter having constant power factor operation,” IEEE Trans. Ind. Electron., vol. 56, no. 5, pp. 1499-1510.
+                                        <br/>
+                                        
+                            MAY<br/>2009<br/> <br/>
+                        </li>
+
+                    
+                        </ol>
+                    
+            </div>
+
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International</span>
+                        <br/>
+                                        L. Sreekumar, A. Shivanand Shirodkar and Sreeraj E.S., "Improved modulation methods for single-phase common-ground type transformerless inverter," 2022 IEEE International Conference on Power Electronics, Drives and Energy Systems (PEDES), Jaipur, India, 2022, pp. 1-6, doi: 10.1109/PEDES56012.2022.10080866.
+                                        <br/>
+                                        
+                        DEC<br/>2022<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">National</span>
+                        <br/>
+                                        J. Priolkar, P. P. A. Gracias and E. S. Sreeraj, "Implementation of Load Scheduling and Demand Response for Residential Consumers," 2021 National Power Electronics Conference (NPEC), 2021, pp. 01-06, doi: 10.1109/NPEC52100.2021.9672467.
+                                        <br/>
+                                        
+                        DEC<br/>2021<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International</span>
+                        <br/>
+                                        J. Priolkar, A. Shirodkar and E. S. Sreeraj, "Forecasting of Load and Solar PV Power to Assess Demand Response Potential," 2021 IEEE 18th India Council International Conference (INDICON), 2021, pp. 1-6, doi: 10.1109/INDICON52576.2021.9691655.
+                                        <br/>
+                                        
+                        DEC<br/>2021<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">National</span>
+                        <br/>
+                                        Jayesh Priolkar, E.S. Sreeraj, and Govind Kunkolienkar "Clustering based Consumer Baseline Estimation for Demand Response Implementation," Proc. of 21st National Power Systems Conference, Gandhinagar,  Dec. 17-19, 2020.
+                                        <br/>
+                                        
+                        DEC<br/>2020<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International</span>
+                        <br/>
+                                        V. R. Reddy and Sreeraj E. S, "Unipolar Modulated Voltage Sensor-less One-Cycle Controlled Inverter for Grid Connected PV System," 2020 IEEE First International Conference on Smart Technologies for Power, Energy and Control (STPEC), Nagpur, 2020, pp. 1-6, doi: 10.1109/STPEC49749.2020.9297742.
+                                        <br/>
+                                        
+                        SEPT<br/>2020<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International</span>
+                        <br/>
+                                        J. Priolkar, E. S. Sreeraj and A. Thakur, "Analysis of Consumer Baseline for Demand Response Implementation: A Case Study," 2020 7th International Conference on Signal Processing and Integrated Networks (SPIN), Noida, India, 2020, pp. 89-94, doi: 10.1109/SPIN48934.2020.9070878.
+                                        <br/>
+                                        
+                        FEB<br/>2020<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl07_Label_PubCategary1">National</span>
+                        <br/>
+                                        B Parate, RS Kumar, K Thakur, Sreeraj ES, R Krishnan, “Design and Modelling of SRC Based Capacitor Charging Power Supply for High Power Klystron Modulator Using MULTISIM”, National Power Electronics Conference (NPEC), 2019 doi: 10.1109/NPEC47332.2019.9034847
+                                        <br/>
+                                        
+                        DEC<br/>2019<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl08_Label_PubCategary1">National</span>
+                        <br/>
+                                        L Sreekumar, Sreeraj ES, “Double Frequency Pulse Width Modulation for Type-1 Common-ground Transformerless Inverter”, National Power Electronics Conference (NPEC), 2019 10.1109/NPEC47332.2019.9034707
+                                        <br/>
+                                        
+                        DEC<br/>2019<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl09_Label_PubCategary1">National</span>
+                        <br/>
+                                        VR Reddy, ES Sreeraj, “A Feedback Based Hybrid Islanding Detection Method and Voltage Ride-Through of One Cycle Controlled PV Inverter’, National Power Electronics Conference (NPEC), 2019. 10.1109/NPEC47332.2019.9034544
+                                        <br/>
+                                        
+                        DEC<br/>2019<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl10_Label_PubCategary1">International</span>
+                        <br/>
+                                        Priolkar J., Sreeraj E.S. Impact of Demand Response Implementation in India with Focus on Analysis of Consumer Baseline Load. In: Bose M., Modi A. (eds) Proceedings of the 7th International Conference on Advances in Energy Research. Springer Proceedings in Energy. Springer, Singapore. https://doi.org/10.1007/978-981-15-5955-6_11
+                                        <br/>
+                                        
+                        DEC<br/>2019<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl11_Label_PubCategary1">International</span>
+                        <br/>
+                                        Priyanka Yussuf, and Sreeraj E. S., "An ZVS DC-DC Synchronous Buck Regulator With Mode Changing Control Strategy For Low Voltage Applications," in Proc. of IEEE Int. Conf. Power Electronics, Drives, Energy Systems,  Chennai, India.
+                                        <br/>
+                                        
+                        DEC<br/>2018<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl12_Label_PubCategary1">International</span>
+                        <br/>
+                                        VR Reddy, ES Sreeraj, "Integration of ripple correlation MPPT technique with one-cycle-controlled transformerless inverter for single-phase single-stage photovoltaic systems," in Proc. 43rd Annu. Conf. IEEE Ind. Electron. Soc., Beijing, China, Oct. 25-28, pp. 2552-2557.
+                                        <br/>
+                                        
+                        OCT<br/>2017<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl13_Label_PubCategary1">National</span>
+                        <br/>
+                                        R Satish, Ch LS Srinivas, and E S Sreeraj, "A maximum power point tracking technique based on ripple correlation control for single-phase single-stage grid connected photovoltaic system,"in Proc. 7th Nat. Power Electron. Conf., Mumbai, India.
+                                        <br/>
+                                        
+                        DEC<br/>2015<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl14_Label_PubCategary1">International</span>
+                        <br/>
+                                        Sreeraj E.S., Prejith E.K., and K. Chatterjee, “One Cycle Controlled Active Harmonic Filter,” in Proc. 38th  Annu. Conf. IEEE Ind. Electron. Soc., Montreal, Canada, pp.621-626.
+                                        <br/>
+                                        
+                        OCT<br/>2012<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl15_Label_PubCategary1">National</span>
+                        <br/>
+                                        Sreeraj E.S. and K. Chatterjee, “One Cycle Controlled Single Stage Inverters for grid connected Photovoltaic systems,” in Proc. 5th Nat. Power Electron. Conf., Howrah, India, pp. 135-140.
+                                        <br/>
+                                        
+                        DEC<br/>2011<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl16_Label_PubCategary1">International</span>
+                        <br/>
+                                        Sreeraj E.S., K. Chatterjee, and S. Bandyopadhyay, “Sizing of Isolated Renewable Hybrid Systems”, in Proc. 2nd Int. Conf. Nuclear Renewable Energy Resources, Ankara, Turkiye, pp. 465-471.
+                                        <br/>
+                                        
+                        <br/>2010<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl17_Label_PubCategary1">International</span>
+                        <br/>
+                                        D.V. Ghodke, Sreeraj E. S., K. Chatterjee, and B. G. Fernandes, “ One cycle controlled bi-directional AC to DC Converter having constant power factor operation,” in Proc. Power Electron. Specialists Conf. pp. 685 – 691.
+                                        <br/>
+                                        
+                        <br/>2008<br/> <br/>
+                    </li>
+
+                
+                    <li class="p-2" style="list-style-type: decimal;">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl18_Label_PubCategary1">International</span>
+                        <br/>
+                                        Sreeraj E.S. and K. Chatterjee, “Power Factor Improvement in One Cycle Controlled Converter”, in Proc. IEEE Int. Symp. Ind. Electron., July 2006, Montreal, Canada, pp. 1454-1460.
+                                        <br/>
+                                        
+                        <br/>2006<br/> <br/>
+                    </li>
+
+                
+                    </ol>
+<br />
+                
+            <h3 class="font-semibold text-2xl">
+                
+                
+            </h3>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+        </div>
+      </div>
+    </div>
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>

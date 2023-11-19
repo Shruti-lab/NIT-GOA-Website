@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="../../static/Prashant.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Prashanth G.R</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor & Head, Department of Computer Science and Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area : Bio-photonics, Bio-Sensors
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> grprashanth@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+            <p class="p-2">Name: Dr. Prashanth G.R</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date-</p>
+            <p class="p-2">Designation: Associate Professor & Head</p>
+            <p class="p-2">
+                Department: Department of Electronics and Communication Engineering
+              </p>
+              <p class="p-2">URL: </p>
+              <p class="p-2">Date of Joining-</p>
+              <p class="p-2">
+                Research/Teaching Experience: [Information not available]
+              </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: Associate Professor, Department of Electronics and Communication, NIT Goa, Ponda, Goa.
+              </p>
+              <p class="p-2">City: PONDA</p>
+              <p class="p-2">State: GOA</p>
+              <p class="p-2">Country: INDIA</p>
+              <p class="p-2">Email Address: grprashanth@nitgoa.ac.in</p>
+              <p class="p-2">Phone [Residence]: -</p>
+              <p class="p-2">Phone [Mobile]: -</p>
+              <p class="p-2">Office Extension: -</p>
+              
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Bio-photonics</p>
+        <p class="p-2">Bio-Sensors</p>
+        </div>
+      </div>
+
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                        <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Institute / University
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">subject
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    B.E.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Bangalore University
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1999
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Instrumentation and Electronics
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    M.Tech.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    VTU, Belgaum
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2004
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Biomedical Instrumentation
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Ph.D.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Indian Institute of Science, Bangalore
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Nano sensors, Bio sensors,Point-of-Care diagnostics
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    4
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Postdoc
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Indian Institute of Science Bangalore
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    protein polymer interactions
+                </td>
+            </tr>
+        
+            </tbody></table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="panel-body">
+            <h3 class="text-2xl font-semibold">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+            </h3>
+
+            <div class="table-responsive">
+                
+                        <ol style="margin-left:15px;">
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International</span>
+                            <br/>
+                                        G. R. Prashanth, V. S. Goudar, S. Suran, A. M. Raichur, M. M. Varma, “Non-covalent functionalization using lithographically
+patterned polyelectrolyte multilayers for high-density microarrays”, Sensors and Actuators B: Chemical,
+171-172, p315-322, 2012
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary"></span>
+                            <br/>
+                                        G. R. Prashanth, V. S. Goudar, A. M. Raichur, M. M. Varma, Enhancing fluorescence signals from aluminium thin films
+
+and foils using polyelectrolyte multilayers, Sensors and Actuators B: Chemical, 183, p 496–503, 2013
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International</span>
+                            <br/>
+                                        Goudar, V.S., Suran, S., G. R. Prashanth, Varma, M.M., "Detection of Hepatitis B DNA Sequences on Polyelectrolyte
+
+Based Non-Covalently Functionalized Flexible Plastic Substrates," Sensors Journal, IEEE , vol.13, no.12, pp.4817,4823,
+
+Dec. 2013
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International</span>
+                            <br/>
+                                        B. N. Shivananju, M. Renilkumar, G. R. Prashanth, S. Asokan, M. M. Varma, "Detection Limit of Etched Fiber Bragg
+
+Grating Sensors", IEEE/OSA Journal of Lightwave Technology, 31, 2441-2447, 2013
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International</span>
+                            <br/>
+                                        M. Renilkumar, B. N. Shivananju, G. R. Prashanth, S. Asokan, M. M. Varma, "Calibration of Etched Fiber Bragg Grating
+
+Sensor Arrays for Measurement of Molecular Surface Adsorption", IEEE/OSA Journal of Lightwave Technology, 31,
+
+2400-2406, 2013
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        <li style="list-style-type: decimal;" class="p-2">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International</span>
+                            <br/>
+                                        B. N. Shivananju, G. R. Prashanth, S. Asokan, M. M. Varma Reversible and irreversible pH induced conformational
+
+changes in self-assembled weak polyelectrolyte multilayers probed using etched fiber Bragg grating sensors. Sensors
+
+and Actuators B: Chemical , May 2014.
+                                        <br/>
+                                        
+                            <br/> <br/>
+                        </li>
+
+                    
+                        </ol>
+                    
+            </div>
+
+            <h3 class="text-2xl font-semibold">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type1">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType1">Proceedings</span>
+            </h3>
+            
+                    <ol style="margin-left:15px;">
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl01_Label_PubCategary1">International</span>
+                        <br/>
+                                        Prashanth G.R, Ashok M Raichur and Manoj M Varma, “Label Free Polymer Microarrays Using Layer-By-Layer Self
+
+Assembly Of Polyelectrolytes”, ICOP 2009-International Conference on Optics and Photonics, Chandigarh, India, Oct
+
+2009.
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl02_Label_PubCategary1">International</span>
+                        <br/>
+                                        Prashanth G.R, Nanjunda, SB, Asokan, S, Varma, MM, “Real-time Bio(Chemical) sensing with Etched Clad Fiber Bragg
+
+Grating Sensors”, Optical Fibers And Sensors For Medical Diagnostics And Treatment Applications XII, Proceedings of
+
+SPIE, 8218, 82180K, 2012
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl03_Label_PubCategary1">International</span>
+                        <br/>
+                                        Kumawat, N, Prashanth G.R, Varma, MM, “Differential Diffractive Reflectance Modulation Sensing”, Frontiers In Bio-
+logical Detection: From Nanosensors To Systems IV Book Series: Proceedings of SPIE, 8212, 82120M, 2012
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl04_Label_PubCategary1">International</span>
+                        <br/>
+                                        Prashanth G.R, P. Murali, M. M. Varma and N. Bhat, "In-Situ Impedance Spectroscopy of Layer-by-Layer Self-Assembly
+
+of Polyelectrolytes", International Conference on Emerging Electronics, IIT Bombay, Dec 15-17, 2012
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl05_Label_PubCategary1">International</span>
+                        <br/>
+                                        Prashanth G.R, A. M. Raichur, M. M. Varma, "Low cost thin film interferometric reflectance
+
+selfassembly of polelectrolytes", Biosensors 2010, Glasgow, Scotland, May 2010.
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    <li style="list-style-type: decimal;" class="p-2">
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                        <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo1_ctl06_Label_PubCategary1">International</span>
+                        <br/>
+                                        Prashanth G.R , S. B. Nanjunda, M. Renilkumar, S. Asokan, M. M. Varma, “Real-time label-free sensing with clad etched
+
+fibers”, Label-Free Technologies: Advances and Applications, Amsterdam, The Netherlands, 1-3 November 2012
+                                        <br/>
+                                        
+                        <br/> <br/>
+                    </li>
+
+                
+                    </ol>
+<br />
+                
+            <h3 class="text-2xl font-semibold">
+                
+                
+            </h3>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+        </div>
+      </div>
+    </div>
+
+
+
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
