@@ -137,48 +137,46 @@
   </head>
   <body>
     <!-- Header Starts here -->
-    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
-      <div class="flex items-center text-gray-300 mr-8">
-        <div class="flex items-center gap-4" id="header-favicon">
-          <div>
-            <i class="md:hidden fas fa-envelope"></i> 
-            <span>your@email.com</span>
-          </div>
-          <div>
-            <i class="md:hidden fas fa-phone "></i> 
-            <span>+1234567890</span>
-          </div>
-      </div>
-      </div>
-      <div class="flex ml-8">
-      <div class="flex items-center justify-center" id="header-items">
-        <a href="../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
-        <a href="../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
-       
-      </div>
-      <div class="flex items-center justify-center" id="header-items">
-      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
-      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
-    </div>
-  </div>
-    </div>
-      </div>
-    <!--Header Ends Here-->
-    <header
-      id="main-header"
-      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
-    >
-      <div class="flex justify-center">
-        <div class="headerBar">
-          <div class="logo-container flex flex-col justify-center items-center">
-            <img src=".././static/logo_color.png" class="logo" id="logo_img" />
-          </div>
+   <!-- Header Starts here -->
+   <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+    <div class="flex items-center text-gray-300 mr-8">
+      <div class="flex items-center gap-4" id="header-favicon">
+        <div>
+          <i class="md:hidden fas fa-envelope"></i> 
+          <span>your@email.com</span>
         </div>
-      </div>
+        <div>
+          <i class="md:hidden fas fa-phone "></i> 
+          <span>+1234567890</span>
+        </div>
+    </div>
+    </div>
+    <div class="flex ml-8">
+    <div class="flex items-center justify-center" id="header-items">
+      <a href="../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+      <a href="../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+     
+    </div>
+    <div class="flex items-center justify-center" id="header-items">
+    <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+    <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+  </div>
+</div>
+  </div>
+  </div>
+  <!--Header Ends Here-->
+  <header id="main-header" class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+    <div class="flex justify-center">
+      <div class="headerBar ">
+        <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../static/logo_color.png" class="logo" id="logo_img">
+        </div>
+        </div>
+    </div>
 
       <div class="text-center">
         <nav class=" justify-center items-center bg-white">
-          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
             <div class="dropdown ">
              <a href="../index.html">Home</a>
             </div>
@@ -222,10 +220,10 @@
                   <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</span></button>
                   <!--BTECH Start-->
                   <div class="sub-dropdown-content">
-                    <a href="../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../admissions/josaa.html" >JoSAA/CSAB</a>
                     <a href="../admissions/dasa.html" >DASA</a>
                     <a href="../admissions/facilities.html" >Facilities</a>
-                    <a href="../admissions/strengths.html">Strengths of NIT Goa</a>
+                    <a href="../admissions/strengths.html" >Strengths of NIT Goa</a>
                   </div>
                   <!--End-->
                 </div>
@@ -235,14 +233,14 @@
                   href="../static/fee_structure_23-24_25july2023.pdf"
                   >Fee Structure</a
                 >
-                                <div class="sub-dropdown">
+                <div class="sub-dropdown">
                   <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
                   <!--BTECH Start-->
                   <div class="sub-dropdown-content">
-                      <a href=".././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
+                      <a href="../static/Rules_of_NIT_Goa_Hostel_18July2022.pdf"
                         >B.Tech Students</a
                       >
-                      <a href=".././static/Rules_mtech_hostel_20june16.pdf"
+                      <a href="../static/Rules_mtech_hostel_20june16.pdf"
                         >M.Tech Students</a
                       >
                   </div>
@@ -261,9 +259,9 @@
             <div class="dropdown">
               <button class="dropbtn">People</button>
               <div class="dropdown-content">
-                <a href=".././People/frontend/people_faculty.html">Faculty</a>
-                <a href=".././People/frontend/technical_cse.html">Technical Staff</a>
-                <a href=".././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../People/frontend/people_faculty.html">Faculty</a>
+                <a href="../People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../People/frontend/administrative.html">Administrative Staff</a>
                 <a
                   href="../static/Directory_03july2023.pdf"
                   >Faculty & Staff Directory</a
@@ -298,10 +296,19 @@
               >
             </div>
           </div>
+
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
         </div>
       </nav>
     </div>
-    </header>
+  </header>
+
+
 
     <!-- Header ends here -->
 
