@@ -2067,6 +2067,73 @@ body {
   }
 }
 
+.webmail {
+  position: relative;
+}
+
+.webmail-dropbtn {
+  text-align: left;
+  border: none;
+  color: #ddd;
+  outline: none;
+  padding: 6px 14px;
+}
+
+.webmail-content {
+  display: none;
+  position: absolute;
+  background-color: #0a0544;
+  color: #000;
+  top: 100%;
+  right: 1%;
+  min-width: 100px;
+  z-index: 99;
+  font-size: 10px;
+}
+
+.webmail-content a {
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #ddd;
+  text-align: left;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.webmail:hover .webmail-dropbtn {
+  background-color: #ddd;
+  color: #000;
+}
+
+.webmail:hover .webmail-content {
+  display: block;
+}
+
+.tooltip-container {
+  position: relative;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  background-color:#06022b;
+  color: #ddd;
+  top: 0;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+  right: 100%;
+  min-width: 100px;
+  z-index: 99;
+  font-size: 10px;
+}
+
+.tooltip-container:hover .tooltip {
+  display: block;
+}
+
 
 /* a[href=""] {
   display: none !important;
