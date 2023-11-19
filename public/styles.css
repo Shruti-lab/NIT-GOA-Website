@@ -1775,7 +1775,7 @@ video {
 
   .sub-dropdown-content {
     top: 100% !important;
-    left: 20% !important;
+    left: 40% !important;
     z-index: 11;
     box-shadow: 0 0 40px rgba(0,0,0,0.2);
   }
