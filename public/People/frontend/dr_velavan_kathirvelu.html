@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. Velavan Kathirvelu.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. Velavan Kathirvelu</h2>
+      <p class="text-gray-600 mb-4">
+        Associate Professor of Chemistry, Department of Applied Sciences
+      </p>
+      <p class="text-gray-700">
+        (i) Electron Paramagnetic Resonance (EPR) of Transition Metal Ions and Organic Free Radicals (ii) Application of EPR towards Biology (ii) Chemistry of Lanthanides and Actinides
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> velavan@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. Velavan Kathirvelu</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date: </p>
+          <p class="p-2">Designation: Associate Professor of Chemistry</p>
+
+          <p class="p-2">
+            Department:  Department of Applied Sciences
+          </p>
+          <p class="p-2">URL: 
+            <a class="text-blue-500" href="https://scholar.google.co.in/citations?user=mc4g3FgAAAAJ&hl=en">
+                https://scholar.google.co.in/citations?user=mc4g3FgAAAAJ&hl=en
+            </a>
+          </p>
+          <p class="p-2">Date of Joining: 20/05/2013</p>
+          <p class="p-2">
+            Research/Teaching Experience: 16.5 Years
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address:  Associate Professor of Chemistry, Department of Applied Sciences, National Institute of Technology Goa, Farmagudi, Ponda, Goa 403 401
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: velavan@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]: </p>
+          <p class="p-2">Phone [Mobile]: </p>
+          <p class="p-2">Office Extension: 0832-2404217</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Electron Paramagnetic Resonance (EPR) of Transition Metal Ions and Organic Free Radicals</p>
+          <p class="p-2">Application of EPR towards Biology</p>
+          <p class="p-2">Chemistry of Lanthanides and Actinides</p>
+        </div>
+      </div>
+
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <table>
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">M.Phil.   &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Pondicherry University
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2001</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">Ph.D.   &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Pondicherry University
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2005</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                </tr>
+
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Postdoc   &nbsp;</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                        University of Denver, CO, USA
+                    </td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2005</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                  </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Postdoc   &nbsp;</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                        Pondicherry University, Puducherry, India
+                    </td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                  </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Postdoc   &nbsp;</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                        CEA Grenoble, France
+                    </td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2012</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4"></td>
+                  </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+        <label for="toggle6" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+          >
+            Paper Published
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <ol>
+          <li><p class="p-2"><b>Publication Type: Journal</b></p>
+            <ol>
+                <li>
+                    <p class="p-4"><b>1.Publication category:</b> International<br> Interpretation of EPR and optical spectra of Ni(II) ions in crystalline lattices at ambient temperature. Amrutha K, Velavan Kathirvelu, Magn. Reson. Chem. 60, 3 (2022) 414-421 DOI: 10.1002/mrc.5237      2022 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>2.Publication category:</b> International<br> Nanostructured metal oxide semiconductor-based gas sensors: A comprehensive review., K. Gopi Krishna, S. Parne, N. Pothukanuri, Velavan Kathirvelu, S. Gandi, D. Joshi, Sens. Actuators A. Phys. 341 (2022) 113578-113595, DOI:10.1016/j.sna.2022.113578      2022</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>3.Publication category:</b> International<br>   Exploring novel functionality for efficient extraction of UO22+ and Th4+in ionic liquid: Mechanism, speciation, selectivity, stability and stripping. A Pandey, G Salunkhe, Velavan Kathirvelu, Keisham S.Singh, A Sengupta, J Mol Liqu, 324 (2021) 114716- DOI: 10.1016/j.molliq.2020.114716      2021 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>4.Publication category:</b> International<br>     EPR spectral studies of manganese(I) based molecular squares. S. Karthikeyan, B. Manimaran, Velavan Kathirvelu, Appl Magn Reson, (2021) DOI:10.1007/s00723-020-01300-3      2021  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>5.Publication category:</b> International<br>   Effect of alkyl chain length on the extraction properties of U and Th using novel CnmimNTf2/isophthalamide systems, A Pandey, S Hashmi, Velavan Kathirvelu, K S.Singh, A Sengupta, J Mol Liqu, 323 (2021) 114944- DOI: 10.1016/j.molliq.2020.114944      2021</p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>6.Publication category:</b> International<br>   Tuning the extraction mechanism of uranyl ion in Bicyclooctanium, Propylpyridinium, Piperidinium and Imidazolium based ionic liquids: First ever evidence of 'Cation exchange', 'Anion exchange' and 'Solvation' mechanism. A Pandey, S. Hashmib, G. Salunkheb , Velavan Kathirvelu, K S Singh , R S Chauhanb , A Sengupta, J Mol Liq, 337 (2021) 116435 DOI: 10.1016/j.molliq.2021.116435      2021   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>7.Publication category:</b> International<br>   EPR and optical studies of Ni (II) ions in Zn (4-chloropyrazole)6(ClO4)2 at 300 K: Probing the structure, bonding, and electron spin relaxation. Amrutha K, Velavan Kathirvelu, J Phys Chem Solids, 157 (2021) 110224. DOI: 10.1016/j.jpcs.2021.110224      2021  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>8.Publication category:</b> International<br>     Electron spin relaxation time of Ni(II) ion in hexapyrazole zinc(II) dinitrate at 300 K. Amrutha K, Velavan Kathirvelu, Magn Reson Chem, 58 (2020) 329–333. DOI: 10.1002/mrc.5007      2020   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>9.Publication category:</b> International<br>    Spectroscopic evidence for cofactor-substrate interaction in the radical-SAM enzyme TYW1. Velavan Kathirvelu, P. P. Letuvée, J-M. Latour, M. Atta, F. Forouhar, S. Gambarelli, R. G. Serres., Dalton Trans., 46 (2017) 13211-13219. DOI:10.1039/C7DT00736A      2017  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>10.Publication category:</b> International<br>    Unanticipated coordination of tris buffer to the Radical SAM cluster of the RimO methylthiotransferase, T. Molle, M. Clémancey, J-M. Latour, Velavan Kathirvelu, G. Sicoli, F. Forouhar, E. Mulliez, S. Gambarelli, M. Atta, J Biol Inorg Chem, 12 (2016) 549-557. DOI 10.1007/s00775-016-1365-8      2016     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>11.Publication category:</b> International<br>      Rapid-Scan EPR of Immobilized Nitroxides. Z. Yu, R. W. Quine, G. A. Rinard, M. Tseitlin, H. Elajaili, Velavan Kathirvelu, L. J. Clouston, P. J. B. A. Rajca, R. Stein, H. Mchaourab, S. S. Eaton, G. R. Eaton. J Magan Reson, 247 (2014) 67-71. DOI:10.1016/j.jmr.2014.08.008      2014 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>12.Publication category:</b> International<br>     4-Demethylwyosine synthase from Pyrococcus abyssi is a Radical-SAM enzyme with an additional [4Fe-4S]+2 cluster which binds pyruvate co-substrate. P. P. Letuvée, Velavan Kathirvelu, G. Berggren, M. Clemancey, J.M. Latour, V. Maurel, T. Douki, J. Armengaud, E. Mulliez, M. Fontecave, R. G. Serres, S. Gambarelli, M. Atta J. Biol. Chem, 287 (2012) 41174-41185. DOI:10.1074/jbc.M112.405019      2012  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>13.Publication category:</b> International<br>     EPR and Optical studies of Nickel (II) at 300 K M. Pandi, R. Somasundaram, Velavan Kathirvelu Spectrochim Acta A, 99 (2012) 361-364. DOI: 10.1016/j.saa.2012.08.062      2012  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>14.Publication category:</b> International<br>    Self-assembly of manganese(I)-based molecular squares: synthesis and spectroscopic and structural characterization S. Karthikeyan, K. Velavan, R. Sathishkumar, B. Varghese, B. Manimaran Organometalics, 31 (2012) 1953-1957. DOI: 10.1021/om201244a      2012 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>15.Publication category:</b> International<br>    Calix[4]arene nitroxide tetraradical and octaradical A.Olankitwanit, Velavan Kathirvelu, S. Rajca, G. R. Eaton, S. S. Eaton, A. Rajca Chem Commun, 47 (2011) 6443-6445. DOI: 10.1039/c1cc11172H      2011  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>16.Publication category:</b> International<br>    Electron transfer flavoprotein domain II orientation monitored using Double Electron- Electron Resonance between an enzymatically reduced, native FAD cofactor and spin labels M. A. Swanson, Velavan Kathirvelu, T. Majtan, F. E. Frerman, G. R. Eaton, S. S. Eaton Protein Science, 20 (2011) 610-620. DOI: 10.1002/pro.595.      2011  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>17.Publication category:</b> International<br>   A signal-to-noise standard for pulsed EPR G. R. Eaton, S. S Eaton, R. W. Quine, D. Mitchell, Velavan Kathirvelu, R. T. Weber, J Magan Reson, 205 (2010) 109-113., DOI: 10.1016/j.jmr.2010.04.006.      2010     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>18.Publication category:</b> International<br>      A spirocyclohexyl nitroxide amino acid spin label for pulsed EPR distance measurements. A. Rajca, Velavan Kathirvelu, S. K. Roy, M. Pink, S. Rajca, S. Sarkar, S. S. Eaton, G. R. Eaton, Chem-Eur J., 16 (2010) 5778-5782., DOI: 10.1002/chem.200903102.      2010  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>19.Publication category:</b> International<br>     Impact of chlorine substitution on spin lattice relaxation of triarylmethyl and 1,4- benzosemiquinone radicals in glass-forming solvents between 25 and 295 K. Velavan Kathirvelu, S. S. Eaton, G. R. Eaton, Appl Magn Reson., 37, (2010) 649-656, DOI: 10.1007/s00723-009-0086-3.      2010    </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>20.Publication category:</b> International<br>     DEER distance measurement between a spin label and native FAD semiquinone in Electron Transfer Flavoprotein. M. A. Swanson, Velavan Kathirvelu, T. Majtan, F. E. Frerman, G. R. Eaton, S. S. Eaton J Am Chem Soc., 131, (2009) 15978-15979, DOI: 10.1021/ja9059816      2009    </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>21.Publication category:</b> International<br>   Interaction of radical pairs through-bond and through-space: scope and limitations of the point-dipole approximation in Electron Paramagnetic Resonance spectroscopy. C. Riplinger, J. P. Y. Kao, G. M. Rosen, Velavan Kathirvelu, G. R. Eaton, S. S. Eaton, A. Kutateladze, F. Neese J Am Chem Soc.,131, (2009) 10092-10106, DOI: 10.1021/ja901150j.      2009  </a></p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>22.Publication category:</b> International<br>    Electron Spin Relaxation Rates for Semiquinones between 25 and 295 K in Glass-Forming Solvents Velavan Kathirvelu, H. Sato, S. S. Eaton, and G. R. Eaton. J Magan Reson., 198, (2009) 111-120, DOI: 10.1016/j.jmr.2009.01.026.      2009   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>23.Publication category:</b> International<br>   Relaxation rates for spirocyclohexyl nitroxyl radicals are suitable for interspin distance measurements at temperatures up to about 125 K Velavan Kathirvelu, C. Smith, C. Parks, M. A. Mannan, Y. Miura, K. Takeshita, S. S. Eaton, and G. R. Eaton. Chem Commun., (2009) 454-456, DOI: 10.1039/b817758a.      2009   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>24.Publication category:</b> International<br>    Impact of electron-electron spin intraction on electron spin relaxation of nitroxyl diradicals and tertaradicals in glassy solvents between 10k and 300k. H. Sato, Velavan Kathirvelu, G. Spagnol, S. Rajca, A. Rajca, S. S. Eaton, and G. R. Eaton. J Phys Chem., B, 112, (2008) 2818-2828, DOI: 10.1021/jp073600u.      2008  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>25.Publication category:</b> International<br>     Impact of molecular size on electron spin relaxation rate of nitroxyl radicals in glassy solvents between100 to 300k. H. Sato, Velavan Kathirvelu, A. J. Fielding, J. P. Blinco, A. S. Micallef, S. E. Bottle, S. S. Eaton, and G. R. Eaton. Mol Phys., 105, (2007) 2137-2151, DOI: 10.1080/00268970701724966.      2007 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>26.Publication category:</b> International<br>     EPR free induction decay coherence observed after a single-pulse for samples with resolved multi-line spectra. V. Kathirvelu, H. Sato, R. W. Quine, G. A. Rinard, S. S. Eaton and G. R. Eaton. Appl Magn Reson., 32, (2007) 269-281, DOI: 10.1007/s00723-007-0026-z.      2007     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>27.Publication category:</b> National<br>    Single crystal EPR studies of perchlorate–bridged dimeric copper(II) complex with 2-[(4- methyl-pyridin-2-ylimino)-methyl]-phenol R. Srinivasan, I. Sougandi, K. Velavan, R. Venkatesan, and P. Sambasiva Rao. Phys Status Solidi B, 244, (2007) 3789–3800, DOI: 10.1002/pssb.200642380.      2007    </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>28.Publication category:</b> International<br>   Single-crystal EPR investigation of Mn(II)-doped biomineral cobalt ammonium phosphate hexahydrate: a case of multiple substitutions. S. Deepa, B. Natarajan, S. Mithira, K. Velavan, and P. Sambasiva Rao. Radiat Eff Defect S., 160, (2005) 357-367, DOI: 10.1080/10420150500432759.      2005     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>29.Publication category:</b> International<br>    Identification of Static JT in Copper(II) doped Hexaimidazole M(II) lattices: M = Co and Ni: An EPR Study. K. Velavan, R. Venkatesan and P. Sambasiva Rao Spectrochim Acta A, 62, (2005) 494-499, DOI: 10.1016/j.saa.2005.02.002.      2005     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>30.Publication category:</b> International<br>    EPR study of vanadyl impurity in zinc ammonium trihydrogen bis(orthophosphate) monohydrate single crystal. K. Velavan, R. Venkatesan and P. Sambasiva Rao. Spectrochim Acta A, 62, (2005) 153-156, DOI: 10.1016/j.saa.2004.12.019.      2005  </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>31.Publication category:</b> International<br>    Single crystal EPR study of VO(II) in Magnesium Potassium Phosphate hexahydrate: A case of two substitutional vanadyl ions. S. Deepa, K. Velavan, I. Sougandi, R. Venkatesan and P. Sambasiva Rao. Spectrochim Acta A, 61, (2005) 2482-2487, DOI: 10.1016/j.saa.2004.09.013.      2005    </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>32.Publication category:</b> International<br>   Single crystal EPR investigation on Mn(II) doped biomineral: Cobalt potassium phosphate hexahydrate. K. Velavan, R.Venkatesan and P. Sambasiva Rao. J Phys Chem Solids., 66, (2005) 876-881, DOI: 10.1016/j.jpcs.2004.10.011.      2005 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>33.Publication category:</b> International<br>    Observation of three sites for Vanadyl in a biomineral, Zinc Sodium Phosphate Hexahydrate: An EPR investigation. K.Velavan, I. Sougandi, R.Venkatesan and P. Sambasiva Rao. J Phys Chem Solids, 66, (2005) 15-21, DOI: 10.1016/j.jpcs.2004.07.007.      2005   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>34.Publication category:</b> International<br>     Interstitial substitution of vanadyl ion doped in single crystal of hexaimidazole cobalt sulfate: an EPR study. I. Sougandi, K. Velavan, R. Venkatesan and P. Sambasiva Rao. Phys status solidi B, 241, (2004) 3014-3021, DOI: 10.1002/pssb.200402066.      2004 </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>35.Publication category:</b> International<br>    Electron Transfer Reaction of Oxo(salen)chromium(V) Ion with Anilines. S. Premsingh, N. S. Venkataramanan, S. Rajagopal, S. P. Mirza, M. Vairamani, P. Sambasiva Rao and K. Velavan. Inorg Chem., 43, (2004) 5744-5753, DOI: 10.1021/ic049482w.      2004     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>36.Publication category:</b> International<br>   Synthesis and characterization of [Cu2(L)2(OCOCH3) (OCH3)]ClO4 {L = 2-[(4-Methyl- pyridin-2-ylimino)-methyl]-phenol}: EPR and X-ray studies. R. Srinivasan, I. Sougandi, K. Velavan, R. Venkatesan, Babu Verghese and P. Sambasiva Rao. Polyhedron, 23, (2004) 1115-1123, DOI: 10.1016/j.poly.2004.01.016.      2004      </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>37.Publication category:</b> International<br>    Single crystal EPR studies of paramagnetic ions doped zinc potassium phosphate hexahydrate - Part III: Mn(II) - A case of rhombic distortion. H. Anandalakshmi, I. Sougandi, K. Velavan, R. Venkatesan and P. Sambasiva Rao. Spectrochim Acta A, 60, (2004) 2661-2668, DOI: 10.1016/j.saa.2004.01.007.      2004     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>38.Publication category:</b> International<br>     Identification of crystal symmetry in Kramers and non-Kramers ions by Optical absorption: Divalent copper and nickel ions doped in diamagnetic lattices. K. Velavan, R.V.S.S.N. Ravikumar, R. Venkatesan and P. Sambasiva Rao. Cryst ResTechnol., 39, (2004) 448-453, DOI: 10.1002/crat.200310209.      2004   </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>39.Publication category:</b> International<br>     Single crystal EPR studies of Mn(II) doped into Zinc Ammonium Phosphate Hexahydrate (ZnNH4PO4.6H2O):A case of interstitial site for bio-mineral analogue. H. Anandalakshmi, K. Velavan, I. Sougandi, R. Venkatesan and P. Sambasiva Rao. Pramana J Phys., 62, (2004) 77-86, PACS Nos 61.72.Hh; 76.30.Fc.      2004     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>40.Publication category:</b> International<br>    Dynamic Jahn-Teller Distortion in Single crystals of Cu(II) doped Magnesium Potassium Phosphate Hexahydrate: An variable temperature EPR study. A. Prabhukantan, K. Velavan, R. Venkatesan and P. Sambasiva Rao. Solid State Commun., 126, (2003) 285-289, DOI: 10.1016/S0038-1098(02)00876-1.      2003     </p>
+                  </li>
+                  <li>
+                    <p class="p-4"><b>41Publication category:</b> International<br>    Single Crystal EPR studies of Ni(II) in hexaimidazole zinc(II)dichloride tetrahydrate: A case of Rhombic distortion K. Velavan, T. M. Rajendiran, R. Venkatesan and P. Sambasiva Rao. Solid State Commun., 122, (2002) 15-19, DOI: 10.1016/S0038-1098(02)00095-9.      2002   </p>
+                  </li>
+                  
+            
+            </ol>     
+          </li>
+        </div>
+      </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-4">1. EPR Studies of some NI(II) complexes in Crystalline Environment: Probing Structure, Bonding and Electron Spin Relaxation Rates, Funding Agency: SERB, Budget: Rs.28,49,600/-, Period: 22 Sep 2015-22 Sep 2018, Status: Completed</p>
+          </li>
+          <li >
+          <p class="p-4">2.Next-generation spirocyclic nitroxide spin labels for distance measurement at higher temperature by Electron Paramagnetic Resonance Spectroscopy, Funding Agency: CEFIPRA, Budget: ~Rs 157,37,002/-, Period: May 2023-2026, Status: Ongoing </p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+        <label for="toggle10" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+           Awards and Honours
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <ol>
+                <li><p class="p-4">1. Startup Research Grant (Young Scientist) by SERB India (2014)</p></li>
+            
+                <li><p class="p-4">2. Senior Research Associateship (Pool Scientist Schem) by CSIR India (2010)</p></li>
+            
+                <li><p class="p-4">3.Young Investigator Award by Asia Pacific EPR/ESR Society and ISEPRSFRR (2004)</li>
+            
+            </ol>
+            
+        </div>
+      </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li >
+          <p class="p-2">International EPR/ESR Society</p>
+          </li>
+          <li>
+          <p class="p-2">Asia Pacific EPR/ESR Society</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table >
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4">Sr.No.</th>
+                    <th class="bg-blue-400 text-white p-4">Month</th>
+                    <th class="bg-blue-400 text-white p-4">Year</th>
+                    <th class="bg-blue-400 text-white p-4">Training Attended Information</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SEPT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Amit Pandey , Gauri Salunkhe, Velavan Kathirvelu, Keisham S Singh, Arijit Sengupta. A, Exploring novel functionality for efficient extraction of UO 2 2+ and Th 4+ in ionic liquid: Mechanism, Speciation, Selectivity, Stability and Stripping, National Conference on Sustainable Environment: Challenges and Opportunities September 8-9, 2021 by Center for Continuing Education and Department of Chemistry, NIT Jalandhar. SECO 2021, PP-2, page 47</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Amrutha. K, Velavan Kathirvelu, Determination of electron spin relaxation and symmetry of ni(ii) in the diamagnetic lattice at ambient temperature, The 22nd International Society of Magnetic Resonance Conference ISMAR-APNMR-NMRSJ-SEST 2021 held from August 22 to 27, 2021</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Amit Pandey, Gauri Salunkhe, Velavan Kathirvelu, Keisham S Singh, Arijit Sengupta , Synthesis of Isophthalamide ligand and its application for efficient extraction of UO 2 2+ and Th 4+ in ionic liquid: Mechanism and Speciation, 2nd International Conference on Chemical, Bio & Environmental Engineering (CHEMBIOEN-2021), August 20-22, 2021 by Department of Chemical Engineering, NIT Jalandhar, CHEMBIOEN-2021 A-149.</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">4</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Amit Pandey, Sabiha Hashmi, Velavan Kathirvelu, Keisham S Singh, Arijit Sengupta, Effect of alkyl chain length on the extraction properties of U and Th using novel CnmimNTf2/isophthalamide systems, Online international conference on Chemistry for sustainable development, 2-4 July 2021 by Central University of Jharkhand, ICCSD-P17.</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">5</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2020</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Amit Pandey, Sabiha Hashmi, Velavan Kathirvelu, Keisham S Singh, Arijit Sengupta, Effect of isophthalamide ligand and imidazolium based ionic liquids on the extraction properties of U and Th, International Web Conference on Emerging Fields in Chemistry: Advances and Applications 10-11 August, 2021 by Govt. Kamla Devi Rathi Girls P. G. College, Rajnandgaon, C.G, INDIA, IWC KDRGPGC CHEM’21, page 25</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">6</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEC</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">CW EPR power saturation studies on Ni(II) ion diluted in Zn(4-Chloropyrazole)6(ClO4)2 lattice. Amrutha K, Velavan Kathirvelu, ICMAGMA-2018 conference, 9-13 December 2018 at NISER, Bhubaneswar, LP17, page-54</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">7</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">SEPT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2011</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Orientation of electron transfer flavoprotein domain II monitored using Q-band double electron-electron resonance P. Aggarwal, M. A. Swanson, V. Kathirvelu, T. Majtan, F. E. Ferman, G. R. Eaton, S. S. Eaton 242nd National Meeting of the American-Chemical-Society (ACS), Aug 28-Sep 01, 2011, Denver, Colorado, USA, 120-BIOL</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">8</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">OCT</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEER distance measurement between a spin label and native FAD semiquinone in Electron Transfer Flavoprotein. M. A. Swanson, V. Kathirvelu, T. Majtan, F. E. Ferman, G. R. Eaton, S. S. Eaton 52th Rocky Mountain Conference on Analytical Chemistry, August 1-5, 2010, Snowmass, Colorado, USA, page-24, A-106</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">9</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">AUG</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2010</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Conformational flexibility of electron transfer flavoprotein probed using DEER measurement of distance between spin labels and a native FAD semiquinone M. A. Swanson, V. Kathirvelu, F. E. Ferman, G. R. Eaton, S. S. Eaton 52th Rocky Mountain Conference on Analytical Chemistry, August 1-5, 2010, Snowmass, Colorado, USA, page-61, A-197</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">10</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Spin echo dephasing rates for organic free radicals in a rigid matrix between 25 and 375K. V. Kathirvelu, S, S, Eaton, G. R. Eaton. 51th Rocky Mountain Conference on Analytical Chemistry, July 19-23, 2009, Snowmass, Colorado, USA, page-58</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">11</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2009</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">DEER distance measurement between a spin label and native FAD semiquinone in electron-transfer flavoprotein. M. A. Swanson, V. Kathirvelu, G. R. Eaton, S, S, Eaton, F. E, Frerman. 51th Rocky Mountain Conference on Analytical Chemistry, July 19-23, 2009, Snowmass, Colorado, USA, page-69</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">12</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">New spin label designed for DEER distance measurements in the liquid nitrogen temperature range. A. Rajca, S. K. Roy, S. Rajca, S. Xiao, V. Kathirvelu, G. R. Eaton, S. S. Eaton, M. Pink. 50th Rocky Mountain Conference on Analytical Chemistry, July 27-31, 2008, Breckenridge, Colorado, USA, page-78</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">13</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Electron spin relaxation of semiquinones between 25 and 295K in glass-forming solvents. V. Kathirvelu, H. Sato, S. S. Eaton and G. R. Eaton 50th Rocky Mountain Conference on Analytical Chemistry, July 27-31, 2008, Breckenridge, Colorado, USA, page-71</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">14</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2008</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Electron spin relaxation rates and the use of relaxation enhancement to measure interspin distance S. S Eaton, H. Sato, A. J. Fielding, V. Kathirvelu, G. R. Eaton. EPR2007, Chicago, IL, April 29-May 3, 2007, Abstract O-3</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">15</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2007</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Electron spin relaxation rates of semiquinone: From glassy solvent to rapid tumbling. V. Kathirvelu, H. Sato, S. S. Eaton and G. R. Eaton 49th Rocky Mountain Conference on Analytical Chemistry, July 23-26, 2007, Breckenridge, Colorado, USA, page-55</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">16</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">MAY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2007</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">Electron spin relaxation rates and their applications. G. R. Eaton, S. S. Eaton, V. Kathirvelu, H. Sato 40th Annual International Meeting of the Electron Spin Resonance group of Royal Society of Chemistry, Oxford, England, March 25-27, 2007, Tuse. 11.55.</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">17</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2006</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">EPR free induction decay coherence observed after a single pulse for samples with resolved multi-line CW spectra V. Kathirvelu, H. Sato, R. W. Quine, G. A. Rinard, S. S. Eaton and G. R. Eaton 48th Rocky Mountain Conference on Analytical Chemistry, July 23-26, 2006, Breckenridge, Colorado, USA, page-54</td>
+                </tr>
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">18</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JULY</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2006</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">EPR free induction decay coherence observed after a single pulse for samples with resolved multi-line CW spectra V. Kathirvelu, H. Sato, R. W. Quine, G. A. Rinard, S. S. Eaton and G. R. Eaton 48th Rocky Mountain Conference on Analytical Chemistry, July 23-26, 2006, Breckenridge, Colorado, USA, page-54</td>
+                </tr>
+                </tbody>
+          </table>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <table>
+            <thead>
+                <tr>
+                    <th class="bg-blue-400 text-white p-4">Sr.No.</th>
+                    <th class="bg-blue-400 text-white p-4">Month</th>
+                    <th class="bg-blue-400 text-white p-4">Year</th>
+                    <th class="bg-blue-400 text-white p-4">Training Conducted Information</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">JAN</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">2018</td>
+                    <td class="bg-white border-b-4 border-gray-200 text-black p-4">A 10 Day GIAN Course on "The Principle and Applications of Electron Paramagnetic Resonance Spectroscopy", (29 Jan 2018 - 9 Feb 2018).</td>
+                </tr>
+                </tbody>
+          </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
