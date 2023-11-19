@@ -17,7 +17,7 @@
   
   </head>
   <body class="bg-gray-100">
-    <!-- Header Starts here -->
+         <!-- Header Starts here -->
     <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
       <div class="flex items-center text-gray-300 mr-8">
         <div class="flex items-center gap-4" id="header-favicon">
@@ -44,20 +44,20 @@
   </div>
     </div>
     <!--Header Ends Here-->
-    <header
-      id="main-header"
-      class="sticky top-0 items-center justify-center justify-items-center bg-white shadow-2xl"
-    >
+    <header id="main-header" class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
       <div class="flex justify-center">
-        <div class="headerBar">
+        <div class="headerBar ">
           <div class="logo-container flex flex-col justify-center items-center">
-            <img src=".././static/logo_color.png" class="logo" id="logo_img" />
+              <img src="../static/logo_color.png" class="logo" id="logo_img">
           </div>
-        </div>
+          </div>
+  
+  
       </div>
+
       <div class="text-center">
         <nav class=" justify-center items-center bg-white">
-          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
             <div class="dropdown ">
              <a href="../index.html">Home</a>
             </div>
@@ -115,7 +115,7 @@
                   href="../static/fee_structure_23-24_25july2023.pdf"
                   >Fee Structure</a
                 >
-                                <div class="sub-dropdown">
+                <div class="sub-dropdown">
                   <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</span></button>
                   <!--BTECH Start-->
                   <div class="sub-dropdown-content">
@@ -155,7 +155,7 @@
               <div class="dropdown-content">
                 <a href="../research/R&DProjects.html">R & D Projects</a>
                 <a
-                  href="../static/NIT_Goa_IPR_10Nov2015.pdf"
+                  href=".././static/NIT_Goa_IPR_10Nov2015.pdf"
                   >IPR Policy</a
                 >
               </div>
@@ -178,13 +178,19 @@
               >
             </div>
           </div>
+
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
         </div>
       </nav>
     </div>
     </header>
 
     <!-- Header ends here -->
-
     <div class="about-us">
         <p><span style="font-size: medium;"><strong>NIRF-2018 </strong></span></p>
 <hr />
