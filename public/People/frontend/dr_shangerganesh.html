@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Faculty Details</title>
+
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com</span>
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890</span>
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+       
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <div class="webmail">
+        <button class="webmail-dropbtn sm:text-sm">Webmail</button>
+        <div class="webmail-content">
+          <a class="tooltip-container">nitgoa.ac.in
+            <div class="tooltip">LINK</div>
+          </a>
+          <a>nitgoa.edu.in</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  
+  
+  
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+  
+  
+  
+      </div>
+  
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+  
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+  
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+  
+      </div>
+      </nav>
+      </div>
+    </header>
+  
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. L. Shangerganesh.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. L. Shangerganesh</h2>
+      <p class="text-gray-600 mb-4">
+        Assistant Professor of Mathematics, Department of Applied Sciences
+      </p>
+      <p class="text-gray-700">
+        Research Area: Mathematical Biology, Finite Element Methods & Partial Differential Equations
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500"> shangerganesh@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">Name: Dr. L. Shangerganesh</p>
+            <p class="p-2">Gender: Male</p>
+            <p class="p-2">Birth Date: 19/05/1985</p>
+            <p class="p-2">Designation: Assistant Professor of Mathematics</p>
+            <p class="p-2">Department: Department of Applied Sciences</p>
+            <p class="p-2">URL: <a href="https://sites.google.com/site/shangerganesh/" class="text-blue-400">[Google Scholar - Dr. L. Shangerganesh]</a></p>
+            <p class="p-2">Date of Joining: -</p>
+            <p class="p-2">Research/Teaching Experience: 7 Years</p>
+        </div>
+        
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <p class="p-2">
+                Address: National Institute of Technology Goa Farmagudi, PIN: 403 401.
+            </p>
+            <p class="p-2">City: PONDA</p>
+            <p class="p-2">State: GOA</p>
+            <p class="p-2">Country: INDIA</p>
+            <p class="p-2">Email Address: shangerganesh@nitgoa.ac.in</p>
+            <p class="p-2">Phone [Residence]: -</p>
+            <p class="p-2">Phone [Mobile]: -</p>
+            <p class="p-2">Office Extension: 0832-2404212</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Mathematical Biology</p> 
+            <p class="p-2">Finite Element Methods & Partial Differential Equations</p> 
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+            <h3 class="text-2xl font-semibold font-serif text-center">
+                UG Courses
+              </h3>
+              <p class="p-2">MA100 - Mathematics I</p>
+              <p class="p-2">MA200 - Mathematics III</p>
+              <p class="p-2">MA250 - Numerical Methods</p>
+              <h3 class="text-2xl font-semibold font-serif text-center">
+                PG Courses
+              </h3>
+              <p class="p-2">EE810 - Optimal Control</p>
+              <p class="p-2">MA700 - Advanced Functional Analysis</p>
+              <p class="p-2">MA701 - Partial Differential Equations</p>
+              <p class="p-2">MA702 - Finite Element Methods</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <div class="table-responsive">
+                                    
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                        <th class="bg-blue-400 text-white p-4">Degree/Diploma
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Institute / University
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">subject
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    M.Sc.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Bharathiar University
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2008
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Mathematics
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Ph.D.
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Bharathiar University
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2013
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Mathematics
+                </td>
+            </tr>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Postdoc
+                        &nbsp;
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Indian Institute of Science
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2016
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Mathematics
+                </td>
+            </tr>
+        
+            </tbody></table>
+        
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="panel-body">
+            <h3 class="font-semibold text-2xl">
+                <span id="ctl00_ContentPlaceHolder_Main_Label_Publication_Type">Publication Type: </span>
+                <span id="ctl00_ContentPlaceHolder_Main_Label_PubType">Journal</span>
+            </h3>
+
+            <div class="table-responsive">
+                
+                        <ol style="margin-left:15px;">
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl01_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh and K. Balachandran, Existence and uniqueness of solutions of predator-prey type model with mixed boundary conditions, Acta Applicandae Mathematicae 116(2011) 71-86.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl02_Label_PubCategary">International</span>
+                           <br/>
+                                        V. Bhuvaneswari,  L. Shangerganesh and K. Balachandran, Weak solutions for p-Laplacian equation, Advances in Nonlinear Analysis 1(2012) 319-334.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl03_Label_PubCategary">International</span>
+                           <br/>
+                                         L. Shangerganesh, N. Baranibalan and K. Balachandran, Weak-renormalized solutions for predator-prey system, Applicable Analysis 92(2013) 441-459.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl04_Label_PubCategary">International</span>
+                           <br/>
+                                         L. Shangerganesh and K. Balachandran, Renormalized and entropy solutions of nonlinear parabolic systems, Electronic Journal of Differential Equations 268(2013) 1-24.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl05_Label_PubCategary">International</span>
+                           <br/>
+                                        V. Bhuvaneswari, L. Shangerganesh, K. Balachandran and J. K. Kim, Weak solutions of nonlinear p-q Laplacian equation, Nonlinear Functional Analysis and Applications 18(2013) 51-66.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl06_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh and K. Balachandran, Solvability of reaction-diffusion model with variable exponents, Mathematical Methods in the Applied Sciences 37(2014) 1436-1448.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl07_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, N. Baranibalan and K. Balachandran, Existence and uniqueness of solutions of degenerate chemotaxis system, Taiwanse Journal of Mathematics 18(2014) 1605-1622.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl08_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, N. Baranibalan and  K. Balachandran, Weak-renormalized solutions for three species competition model in ecology, International Journal of Biomathematis 7(2014) 1450062.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl09_Label_PubCategary">International</span>
+                           <br/>
+                                        V. Bhuvaneswari,  L. Shangerganesh and K. Balachandran, Global existence and blow up of solutions of quasilinear chemotaxis system, Mathematical Methods in the Applied Sciences 38(2015) 3738-3746.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl10_Label_PubCategary">International</span>
+                           <br/>
+                                        A. Gurusamy, L. Shangerganesh and K. Balachandran, Blow-up of solutions of Non-linear parabolic system with variable exponents, Nonlinear Functional Analysis and Applications 21(2016) 449-461.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl11_Label_PubCategary">International</span>
+                           <br/>
+                                        S. Ganesan and L. Shangerganesh, A biophysical model of tumor invasion, Communications in Nonlinear Science and Numerical Simulations 46(2017) 135-152.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl12_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, A. Gurusamy and K. Balachandran, Weak solutions for nonlinear parabolic equations with variable exponents, Communications in Mathematics 25(2017) 55-70.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl13_Label_PubCategary">International</span>
+                           <br/>
+                                        S. Ganesan and L. Shangerganesh, Galerkin finite element method for cancer invasion mathematical model, Computers and Mathematics with Applications 73(2017) 2603-2617.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl14_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, V.N. Deiva Mani and S. Karthikeyan, Existence of global weak
+solutions for cancer invasion parabolic system with nonlinear diffusion, Communications in Applied Analysis 21(2017) 607-629
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl15_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, V.N. Deiva Mani and S. Karthikeyan, Renormalized and entropy
+solutions of tumor growth model with nonlinear acid production, Mathematical Modelling and Analysis 22(2017) 695-716.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl16_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, N. Nyamoradi, V.N. Deiva Mani and S. Karthikeyan, On the
+existence of weak solutions of nonlinear degenerate parabolic system with variable exponents, Computers and Mathematics with Applications, 75(2018) 322-334..
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl17_Label_PubCategary">International</span>
+                           <br/>
+                                        Y. Zhou, L. Shangerganesh, J. Manimaran and A. Debbouche, A class of time
+fractional reaction-diffusion equation with nonlocal boundary condition, Mathematical Methods in the Applied Sciences, 41(2018) 2987-2999.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl18_Label_PubCategary">International</span>
+                           <br/>
+                                        P.T. Sowndarrajan and L. Shangerganesh, Optimal control problem for cancer invasion
+mathematical model with nonlinear diffusion, Optimization, 67(2018) 1819-1836.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl19_Label_PubCategary">International</span>
+                           <br/>
+                                        Y. Zhou, J. Manimaran, L. Shangerganesh and A. Debbouche, Weakness and Mittag-Leffler stability of solutions for time-fractional Keller-Segel models, International Journal of Nonlinear Sciences and Numerical Simulation, 19(2018) 753-761.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl20_Label_PubCategary">International</span>
+                           <br/>
+                                         L. Shangerganesh and P.T. Sowndarrajan, Optimal control problem for cancer invasion
+reaction-diffusion system, Numerical Functional Analysis and Optimization, 39(2018) 1574-1593.
+
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl21_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, G. Sathishkumar and S. Karthikeyan, Lower bounds for the finite-time
+blow-up of solutions of a cancer invasion model, Electronic Journal of Qualitative Theory of
+Differential Equations, 12(2019) 1-13.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl22_Label_PubCategary">International</span>
+                           <br/>
+                                        J Manimaran, L Shangerganesh, A Debbouche and V Antonov, Numerical solutions for
+time-fractional cancer invasion system with nonlocal diffusion, Frontiers in Physics, 7(2019)
+93.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl23_Label_PubCategary">International</span>
+                           <br/>
+                                         J Manimaran and L Shangerganesh, Blow-up solutions of a time-fractional diffusion equa-
+tion with variable exponents, Tbilisi Mathematical Journal, 12(2019) 149-157.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl24_Label_PubCategary">International</span>
+                           <br/>
+                                         L. Shangerganesh, N. Nyamoradi, G. Sathishkumar and S. Karthikeyan, Finite-time blow-
+up of solutions to a cancer invasion mathematical model with haptotaxis effects, Computers
+& Mathematics with Applications, 77(2019) 2242-2254.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl25_Label_PubCategary">International</span>
+                           <br/>
+                                         P.T. Sowndarrajan, J Manimaran, A Debbouche and L Shangerganesh, Distributed optimal
+control of a tumor growth treatment model with cross-diffusion effect, The European Physical
+Journal Plus, 134 (2019) 463.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl26_Label_PubCategary">International</span>
+                           <br/>
+                                        J Manimaran and L Shangerganesh, Solvability and numerical simulations for tumor inva-
+sion model with nonlinear diffusion, Computational and Mathematical Methods, 2 (2020)
+e1068.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl27_Label_PubCategary">International</span>
+                           <br/>
+                                        P.T. Sowndarrajan, N. Nyamoradi, L Shangerganesh and J Manimaran, Mathematical anal-
+ysis of an optimal control problem for the predatorprey model with disease in prey, Optimal
+Control Applications and Methods, 41(2020) 1495-1509.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl28_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl28_Label_PubCategary">International</span>
+                           <br/>
+                                         J. Manimaran, L. Shangerganesh and A. Debbouche, A time-fractional competition ecolog-
+ical model with crossdiffusion, Mathematical Methods in the Applied Sciences, 43(2020), 5197-5211.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl29_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl29_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, V.N. Deiva Mani and S. Karthikeyan, Existence of solutions of cancer invasion parabolic system with integrable data, Afrika Matematika, 31(2020) 1359-1378.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl30_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl30_Label_PubCategary">International</span>
+                           <br/>
+                                        J Manimaran and L Shangerganesh, Mathematical and numerical analysis of acid
+mediated cancer invasion model with nonlinear diffusion, Electronic Transactions on
+Numerical Analysis, 52(2020) 576-598.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl31_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl31_Label_PubCategary">International</span>
+                           <br/>
+                                        P.T. Sowndarrajan and L. Shangerganesh, An optimal control problem of nonlocal
+Pyragas feedback controllers for convective FitzHugh-Nagumo equations with time-
+delay, SIAM Journal on Control and Optimization, 58(2020), 3613-3631.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl32_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl32_Label_PubCategary">National</span>
+                           <br/>
+                                        K Navaneetha Krishnan, S Hemalatha, N Barani Balan and L. Shangerganesh, Ana-
+lyzing lotka-volterra reaction-diffusion model using optimization technique, Indian Society of Industrial and Applied Mathematics 11(2) (2020), 174-192.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl33_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl33_Label_PubCategary">National</span>
+                           <br/>
+                                        J. Manimaran and L. Shangerganesh Existence and uniqueness of time-fractional
+nonlocal diffusion systems modelling an epidemic disease, Indian Society of Industrial
+and Applied Mathematics 11(2) (2020) 193-207.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl34_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl34_Label_PubCategary">International</span>
+                           <br/>
+                                        J. Manimaran, L. Shangerganesh and A. Debbouche, Finite element error analysis
+of a time-fractional nonlocal diffusion equation with the Dirichlet energy, Journal of
+Computational and Applied Mathematics, 382(2021) 113066.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl35_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl35_Label_PubCategary">International</span>
+                           <br/>
+                                        J Manimaran and L Shangerganesh, Error estimates for the Galerkin finite element
+approximations of time-fractional nonlocal diffusion equation, International Journal of
+Computer Mathematics, 98(7) (2021) 1365-1384.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl36_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl36_Label_PubCategary">International</span>
+                           <br/>
+                                        L. Shangerganesh, G. Sathishkumar, N. Nyamoradi and S. Karthikeyan, Blow-up phenomena of a cancer invasion model with nonlinear diffusion and haptotaxis term, Bulletin of the Malaysian Mathematical Sciences Society, 44 (2021) 1215-231.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl37_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl37_Label_PubCategary">International</span>
+                           <br/>
+                                        G. Sathishkumar, L. Shangerganesh and S. Karthikeyan, Lower bounds of finite-time
+blow-up of solutions to a two-species Keller-Segel chemotaxis model, Journal of Applied
+Nonlinear Dynamics 10(1) (2021) 81-93.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl38_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl38_Label_PubCategary">International</span>
+                           <br/>
+                                        J. Manimaran, L. Shangerganesh, A. Debbouche and J.-C. Cortés, A time-fractional
+HIV infection model with nonlinear diffusion, Results in Physics 25 (2021) 104293.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl39_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl39_Label_PubCategary">International</span>
+                           <br/>
+                                        N. Lakshmipriya, S. Gnanavel, L. Shangerganesh and N. Nyamoradi, Existence and
+nonexistence of solutions of thin–film equations with variable exponent spaces, Differential Equations & Applications 14(2022), 579-595.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl40_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl40_Label_PubCategary">International</span>
+                           <br/>
+                                        P.T Sowndarrajan, L. Shangerganesh, A. Debbouche, D.F.M. Torres, Optimal control
+of a heroin epidemic mathematical model, Optimization, 71(2022), 3107-3131.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl41_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl41_Label_PubCategary">International</span>
+                           <br/>
+                                        J. Manimaran, V. Bhuvaneswari, L. Shangerganesh, Weak solution for time-fractional
+strongly coupled three-species cooperating model, Partial Differential Equations in Applied Mathematics, (2023), 100504.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        <li class="p-2" style="list-style-type: decimal;">
+
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl42_Label_Publication_Category" style="font-weight:bold;">Publication Category: </span>
+                            <span id="ctl00_ContentPlaceHolder_Main_Repeater_PublicationInfo_ctl42_Label_PubCategary">International</span>
+                           <br/>
+                                        M.N. Krishnan, NB Balan, L. Shangerganesh, J Manimaran, An optimal control
+problem for acid-mediated cancer invasion model, Journal of Applied Nonlinear Dynamics 12(2023), 339-351.
+                                       <br/>
+                                        
+                           <br/>&nbsp;&nbsp;<br/>
+                        </li>
+
+                    
+                        </ol>
+                    
+            </div>
+
+            <h3 class="font-semibold text-2xl">
+                
+                
+            </h3>
+            
+            <h3 class="font-semibold text-2xl">
+                
+                
+            </h3>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+            <p class="rightsm">
+                
+                
+            </p>
+            
+        </div>
+    </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle7" class="hidden bg-blue-900" />
+      <label for="toggle7" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl "
+        >
+          Research Guidance
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li class="p-2">
+                <span>Dr. P. T. Sowndarrajan (Ph.D Completed on 2021- Presently Assistant Professor at VIT Cheenai) </span></li>
+        
+            <li class="p-2">
+                <span>Dr. J. Manimaran (Ph.D Completed on 2021- Presently Postdoctoral Fellow at IISER, TVM)</span></li>
+        
+            <li class="p-2">
+                <span>Mr. S. Hariharan (Ph.D ongoing since 2021)</span></li>
+        
+            <li class="p-2">
+                <span>Mr. Halet Ismail (Ph.D ongoing since 2021 - ICCR Fellowship)</span></li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle8" class="hidden bg-blue-900" />
+      <label for="toggle8" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Funded Research Project 
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li>
+                <span>Computational and Theoretical Studies on Parabolic Partial Differential
+Equations in Cancer Modelling, DST-SERB, 2016.</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+      <label for="toggle9" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+           <li class="p-2">
+                <span>DST-PURSE - Project Fellow. (From Dec. 2011 to Feb. 2012)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>UGC-BSR-RFSMS - Junior Research Fellow. (From Mar. 2012 to Mar. 2013)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>Reviewer, Mathematical Reviews, USA. (From Sep. 2013)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>NBHM - DAE - Post Doctoral Fellow. (Awarded on Dec. 2013)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>Dr. K. S. Kothari Post Doctoral Fellowship, UGC. (Awarded on Dec. 2013)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>NBHM Travel Grant - ICM -2014, Seoul, South Korea. (Awarded on Apr. 2014)</span>
+            </li>
+        
+           <li class="p-2">
+                <span>NBHM Travel Grant - ICIAM -2015, Beijing, P.R China. (Awarded on Jun. 2015)</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+                                
+        <ol style="list-style-type: decimal;">
+                                    
+            <li>
+                <span>American Mathematical Society (AMS) Member Since 2016</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle11" class="hidden bg-blue-900" />
+      <label for="toggle11" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Professional Services
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol style="list-style-type: decimal;">
+                                    
+            <li>
+                <span>Reviewer for many SCIE Journals. 
+</span>
+            </li>
+        
+            </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <div class="table-responsive">
+                                    
+            <table class="table-bordered table">
+                <thead>
+                    <tr style="height: 22px;">
+                        <th class="bg-blue-400 text-white p-4"></th>
+                        <th class="bg-blue-400 text-white p-4">Month
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Training attended Information
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    MAR
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2018
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Delivered lectures on “An Introduction to Heat Equation” at National Workshop on Partial Differential Equations, Periyar University, Salem, Tamilnadu, March 23-25, 2018.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JUN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2017
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Delivered lecture on “Hyperbolic Partial Differential Equations” at Workshop on Partial Differential Equations and Applications (WPDE 2017), Central University of Tamilnadu, Thirvarur, Tamilnadu, 29, May - 11, June, 2017.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    3
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    MAR
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2017
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    International IFCAM Conference on Nonlinear PDEs, Tata Institute of Fundamental Research, Bangalore.
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    4
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JUN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2016
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Workshop on Advanced Analysis and Differential Equations, Periyar University, Salem
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    5
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    AUG
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    The International Congress on Industrial and Applied Mathematics (ICIAM), Beijing, P. R. China
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    6
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Workshop on Control and Numerics for Fluid-Stucture Interaction Problems, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    7
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JUN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2015
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Advanced Summer School on Control and Numerics for Fluid-Structure Interaction Problems, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    8
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    DEC
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Conference on Computational PDE: Finite Element Meet, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    9
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    SEPT
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Humboldt Kolleg on Interdisciplinary Sciences: Catalyst for Sustainable Progress, Indian Institute of Science, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    10
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    SEPT
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Advanced Workshop on Finite Element Methods for Navier-Stokes Equations, Indian Institute of Science, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    11
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    AUG
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    International Congress of Mathematicians, Seoul, South Korea
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    12
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2014
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Special Lecture Series on Quasi-linear Partial Differential Equations of Fluid Dynamics and Physics, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    13
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FEB
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2013
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Conference on Computational Biology, DRDO Center for Life Sciences, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    14
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Special Lecture Series on Mathematics of Turbulence, Random Waves and Quantum Fields, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    15
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JUN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Program on Differential Equations: Theory, Computation and Applications (NPDE) - Advanced Level, Indian Institute of Technology, Bombay
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    16
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FEB
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Lecture Series on Large Deviations Theory: Connections to Control Theory, Fluid Dynamics, Nonlinear PDE and Statistics, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    17
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    FEB
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Seminar on Partial Differential Equations, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    18
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JAN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2012
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    School and Workshop on Cocompact Imbeddings, Profile Decompositions, and their Applications to PDE, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    19
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    OCT
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2010
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    National Conference on Advances in Differential Equations and Applications, Periyar University, Salem
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    20
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JULY
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2009
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Homi Bhabha Symposium on Hyperbolic Partial Differential Equations and Related Topics, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    21
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    MAR
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2009
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Seminar on Partial Differential Equations, Bharathiar University, Coimbatore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    22
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    JAN
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2009
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Prof. Yadhava Memorial Conferences on Partial Differential Equations, Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    23
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    DEC
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    2008
+                </td>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Advanced Instructional School on Partial Differential Equations (AISPDE 2008), Tata Institute of Fundamental Research, Bangalore
+                </td>
+            </tr>
+            
+        
+            </tbody></table>
+        
+</div>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle13" class="hidden bg-blue-900" />
+      <label for="toggle13" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Conducted
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <div class="table-responsive">
+                                    
+            <table class="table-bordered table">
+                <thead>
+                    <tr>
+                        <th class="bg-blue-400 text-white p-4"></th>
+                        <th class="bg-blue-400 text-white p-4">Month
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Year
+                        </th>
+                        <th class="bg-blue-400 text-white p-4">Training Conducted Information
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+        
+            <tr>
+                <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    1
+                </td>
+                <td style="line-height: 28px">
+                    OCT
+                </td>
+                <td style="line-height: 28px">
+                    2016
+                </td>
+                <td style="line-height: 28px">
+                    NBHM Sponsored “Conference on Computational and Theoretical Partial Differential Equations” held at NIT Goa
+                </td>
+            </tr>
+        
+            </tbody>
+</table>
+        
+</div>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+          
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+    
+  </body>
+</html>
