@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../styles.css" rel="stylesheet" />
+    <script src="../../script.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Faculty Details</title>
+    <style>
+      .hidden {
+        display: none;
+      }
+
+      .card-toggle {
+        width: 100%; /* Adjust as needed */
+        height: 40px; /* Adjust as needed */
+        background-color: #fff; /* Toggle button color */
+      }
+
+      /* Show content when checkbox is checked */
+      #toggle1:checked ~ .card-content {
+        display: block;
+      }
+      #toggle2:checked ~ .card-content {
+        display: block;
+      }
+      #toggle3:checked ~ .card-content {
+        display: block;
+      }
+      #toggle4:checked ~ .card-content {
+        display: block;
+      }
+      #toggle5:checked ~ .card-content {
+        display: block;
+      }
+      #toggle6:checked ~ .card-content {
+        display: block;
+      }
+      #toggle7:checked ~ .card-content {
+        display: block;
+      }
+      #toggle8:checked ~ .card-content {
+        display: block;
+      }
+      #toggle9:checked ~ .card-content {
+        display: block;
+      }
+      #toggle10:checked ~ .card-content {
+        display: block;
+      }
+      #toggle11:checked ~ .card-content {
+        display: block;
+      }
+      #toggle12:checked ~ .card-content {
+        display: block;
+      }
+      #toggle13:checked ~ .card-content {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body class="bg-gray-100 max-width ">
+    <div class="bg-gray-900 text-white py-4 px-5 flex justify-between items-center" id="header">
+      <div class="flex items-center text-gray-300 mr-8">
+        <div class="flex items-center gap-4" id="header-favicon">
+          <div>
+            <i class="md:hidden fas fa-envelope"></i> 
+            <span>your@email.com
+          </div>
+          <div>
+            <i class="md:hidden fas fa-phone "></i> 
+            <span>+1234567890
+          </div>
+      </div>
+      </div>
+      <div class="flex ml-8">
+      <div class="flex items-center justify-center" id="header-items">
+        <a href="../../index.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Home</a>
+        <a href="../../tenders.html" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">Tenders</a>
+
+      </div>
+      <div class="flex items-center justify-center" id="header-items">
+      <a href="https://www.nitgoa.ac.in/gian/" class="mr-4 text-gray-300 hover:text-blue-500 sm:text-sm">G.I.A.N</a>
+      <a href="https://www.nitgoa.ac.in/login.aspx" class="text-gray-300 hover:text-blue-500 sm:text-sm">Login</a>
+    </div>
+  </div>
+    </div>
+
+
+
+    <header id="main-header"
+      class=" bg-white flex flex-col z-30 top-0 items-center justify-center justify-items-center shadow-2xl sticky">
+      <div class="flex justify-center">
+        <div class="headerBar ">
+          <div class="logo-container flex flex-col justify-center items-center">
+            <img src="../../static/logo_color.png" class="logo" id="logo_img">
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <div class="text-center">
+        <nav class=" justify-center items-center bg-white">
+          <div class="container_B font-semibold text-black flex flex-wrap items-center justify-evenly mx-10" id="Nav">
+            <div class="dropdown ">
+              <a href="../../index.html">Home</a>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Administration</button>
+              <div class="dropdown-content">
+                <a href="../../administration/Board_of_Governors.html">Board Of Governors</a>
+                <a href="../../administration/director_message.html">Director</a>
+                <a href="../../administration/registrar.html">Registrar</a>
+                <a href="../../administration/senate.html">Senate</a>
+                <a href="../../administration/dean.html">Deans</a>
+                <a href="../../administration/Committees.html">Committees</a>
+                <a href="../../administration/finance_committee.html">Finance Committee</a>
+                <a href="../../administration/work_committee.html">Building and Works Committee</a>
+                <a href="../../administration/hod.html">Heads of Departments </a>
+                <a href="../../static/Org_Chart.pdf" target="_blank">Organizing Structure</a>
+                <a href="../../administration/reports.html">Reports</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Academics</button>
+              <div class="dropdown-content">
+                <a href="../../academics/academic_calendar.html">Calendar</a>
+                <a href="../../academics/rules_and_regulations.html">Regulations and Curriculum</a>
+                <a href="../../academics/DissertionFormat.html">Dissertion Formats</a>
+                <a href="https://www.mis.nitgoa.ac.in/misnitgoa/result.aspx">Results</a>
+                <a href="../../academics/departments.html">Departments</a>
+                <a href="../../academics/library.html">Library</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Admissions</button>
+              <div class="dropdown-content">
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">B.Tech <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../../admissions/josaa.html">JoSAA/CSAB</a>
+                    <a href="../../admissions/dasa.html">DASA</a>
+                    <a href="../../admissions/facilities.html">Facilities</a>
+                    <a href="../../admissions/strengths.html">Strengths of NIT Goa</a>
+                  </div>
+                  <!--End-->
+                </div>
+                <a href="../../admissions/mtech.html">M.Tech</a>
+                <a href="../../admissions/phd.html">Ph.D</a>
+                <a href="../../static/fee_structure_23-24_25july2023.pdf">Fee Structure</a>
+                <div class="sub-dropdown">
+                  <button class="sub-dropbtn">Hostels <span class="font-bold text-xl">&rsaquo;</button>
+                  <!--BTECH Start-->
+                  <div class="sub-dropdown-content">
+                    <a href="../.././static/Rules_of_NIT_Goa_Hostel_18July2022.pdf">B.Tech Students</a>
+                    <a href="../.././static/Rules_mtech_hostel_20june16.pdf">M.Tech Students</a>
+                  </div>
+                  <!--End-->
+                </div>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="dropbtn">Training & Placement</button>
+              <div class="dropdown-content">
+                <a href="https://www.nitgoa.ac.in/placementcell/">T & P</a>
+                <a href="#">Company Login</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">People</button>
+              <div class="dropdown-content">
+                <a href="../.././People/frontend/people_faculty.html">Faculty</a>
+                <a href="../.././People/frontend/technical_cse.html">Technical Staff</a>
+                <a href="../.././People/frontend/administrative.html">Administrative Staff</a>
+                <a href="../../static/Directory_03july2023.pdf">Faculty & Staff Directory</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">Research</button>
+              <div class="dropdown-content">
+                <a href="../../research/R&DProjects.html">R & D Projects</a>
+                <a href="../../static/NIT_Goa_IPR_10Nov2015.pdf">IPR Policy</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="../../outreach_activities.html">Outreach Activities</a>
+            </div>
+            <div class="dropdown">
+              <a href="../../nirf.html">NIRF</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://www.nitgoa.ac.in/nitgalumni/index.html">Alumni</a>
+            </div>
+            <div class="dropdown">
+              <a href="https://mis.nitgoa.ac.in/misnitgoa/academic/ONLINEFEESCOLLECTION/Payment.aspx">Fee Payment</a>
+            </div>
+          </div>
+
+          <!--Toggle Menu Hamburger-->
+          <div class="menu-toggle" onclick="togglemenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+      </div>
+      </nav>
+      </div>
+    </header>
+
+    <!-- Header ends here -->
+
+    <div
+      class="w-full bg-white rounded-md overflow-hidden shadow-md p-6  mr-6"
+    >
+      <img
+        src="Dr. ANKIT BALVANSHI.png"
+        alt="Faculty Image"
+        class="w-40 h-40 object-cover mb-4 rounded-l border-4 border-gray-800"
+      />
+      <h2 class="text-xl font-bold mb-2">Dr. ANKIT BALVANSHI</h2>
+      <p class="text-gray-600 mb-4">
+        Faculty on contract, Department of Civil Engineering
+      </p>
+      <p class="text-gray-700">
+        Research Area: Hydrology, Water Resources Management, Irrigation & Hydraulic structures, Runoff Modeling, Remote Sensing & GIS, Climate Change Studies
+      </p>
+      <div class="mt-4">
+       <p> Email:<a href="#" class="text-blue-500">abalvanshi@nitgoa.ac.in</a></p>
+      </div>
+    </div>
+
+    <div class="flex-col justify-center">
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle1" class="hidden bg-blue-900" />
+        <label for="toggle1" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Personal Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6 ">
+          <p class="p-2">Name: Dr. ANKIT BALVANSHI</p>
+          <p class="p-2">Gender: Male</p>
+          <p class="p-2">Birth Date-:</p>
+          <p class="p-2">Designation: Faculty on contract</p>
+
+          <p class="p-2">
+            Department:Department of Civil Engineering
+          </p>
+          <p class="p-2">URL</p>
+          <p class="p-2">Date of Joining: -</p>
+          <p class="p-2">
+            Research/Teaching Experience: 5 years
+          </p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle2" class="hidden bg-blue-900" />
+        <label for="toggle2" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Contact Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">
+            Address: Department of Civil Engineering, National Institute of Technology, Goa
+          </p>
+          <p class="p-2">City: PONDA</p>
+          <p class="p-2">State: GOA</p>
+          <p class="p-2">Country: INDIA</p>
+          <p class="p-2">Email Address: abalvanshi@nitgoa.ac.in</p>
+          <p class="p-2">Phone [Residence]-</p>
+          <p class="p-2">Phone [Mobile]:-</p>
+          <p class="p-2">Office Extension:-</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle3" class="hidden bg-blue-900" />
+        <label for="toggle3" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Research Area
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <p class="p-2">Hydrology</p>
+          <p class="p-2">Water Resources Management</p>
+          <p class="p-2">Irrigation & Hydraulic structures</p>
+          <p class="p-2">Runoff Modeling</p>
+          <p class="p-2">Remote Sensing & GIS</p>
+          <p class="p-2">Climate Change Studies</p>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle4" class="hidden bg-blue-900" />
+        <label for="toggle4" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Courses Taught
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            UG Courses
+          </h3>
+          <p class="p-2">MECHANICS OF FLUIDS</p>
+          <p class="p-2">ADVANCED GEO-ENVIRONMENTAL ENGINEERING</p>
+          <p class="p-2">WATER RESOURCES ENGINEERING</p>
+          <p class="p-2">GREEN BUILDING DESIGN</p>
+
+          <h3 class="text-2xl font-semibold font-serif text-center">
+            PG Courses
+          </h3>
+        </div>
+      </div>
+
+      <div class="card p-4 bg-gray-800 rounded m-2">
+        <input type="checkbox" id="toggle5" class="hidden bg-blue-900" />
+        <label for="toggle5" class="cursor-pointer">
+          <div
+            class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+          >
+            Academic Information
+          </div>
+        </label>
+        <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+          <div class="">
+            <table class="">
+              <thead>
+                <tr>
+                  <th class="bg-blue-400 text-white p-4">Sr. No.</th>
+                  <th class="bg-blue-400 text-white p-4">Degree/Diploma</th>
+                  <th class="bg-blue-400 text-white p-4">Institute / University</th>
+                  <th class="bg-blue-400 text-white p-4">year</th>
+                  <th class="bg-blue-400 text-white p-4">subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">1</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">B.E.   &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Rajiv Gandhi Proudyogiki Vishwavidyalaya, Bhopal, India
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2013</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">CIVIL ENGINEERING</td>
+                </tr>
+
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">	M.Tech.   &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Maulana Azad National Institute of Technology, Bhopal, India
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2015</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">WATER RESOURCES ENGINEERING</td>
+                </tr>
+                <tr>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">3</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">	Ph.D.     &nbsp;</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+                    Maulana Azad National Institute of Technology, Bhopal, India
+                  </td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">2021</td>
+                  <td class="bg-white border-b-4 border-gray-200 text-black p-4">WATER RESOURCES AND CLIMATE CHANGE</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle6" class="hidden bg-blue-900" />
+      <label for="toggle6" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif text-center font-semibold flex justify-center rounded-3xl "
+        >
+          Paper Published
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+        <li><p class="p-2"><b>Publication Type: Journal</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (Accepted 2021), “Quantitative Estimation of the Impact of Climate Change on Crop Evapotranspiration and Yield in Central Region of India”, Russian Meteorology and Hydrology, 46(10), 696-700.      2021  </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2019), “Mitigating future climate change effects on wheat and soybean yields in Central region of Madhya Pradesh by shifting sowing dates”, Journal of Agrometeorology, 21(4), 468-473.    DEC  2019 </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2019), “Estimation Of Runoff for Bina River Basin Using Curve Number Model And GIS Techniques”, Journal of Engineering and Applied Sciences, 14(19), 1-5.      2019  </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2018), “Analysis of GCMs for prediction of precipitation for Hoshangabad region of Madhya Pradesh”, Journal of Agrometeorology, 20(4), 302-304.    DEC  2018   </p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: Proceedings</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2021), "Hydrological Simulation of a Basin using MIKE 11 NAM Model", International Conference on Ecosystem Restoration for Resilience and Sustainability: Living with nature” (World Environment Day-Launch of UN decade for Ecosystem Restoration), during 5th – 7th Jun 2021, IIT Indore.    JUN  2021</p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b> International       Balvanshi, A., & Tiwari, H.L. (2021) “Effect of Climate Change on Future Reference Evapotranspiration (ET0) in Vidisha district of Madhya Pradesh”, International Conference on Hydraulics, Water Resources and Coastal Engineering during, 26th – 28th Mar 2021, NIT Rourkela, Orissa    MAR  2021</p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2021), "Runoff Simulation of a Basin using MIKE 11 NAM and AWBM Model", Sustainable Water Resources Development and Management (SWARDAM 2021), during 08th – 09th Mar 2021 organized by GEC Aurangabad      2021</p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2021), "Hydrological Modelling of Barman Catchment using SWAT Model", International Conference on Water and Environment (ICWE 2021), during 22nd – 23rd Mar 2021, MANIT Bhopal.      2021</p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: Book Chapter</b></p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2021), “Study of Evapotranspiration using CROPWAT Model for Barman Catchment”, Lecture Notes on Advances in Civil Engineering, Walnut Publication, pp. 238-244, ISBN:978-93-91522-70-4.      2021     </p>
+          </li>
+          <li >
+          <p class="p-2"><b>Publication Category: </b>International       Balvanshi, A. & Tiwari, H.L. (2021), “Analysis of Rainfall Runoff using the Curve Number Method and GIS Techniques for Bina Catchment”, Lecture Notes on Advances in Civil Engineering, Walnut Publication, pp: 256-263, ISBN:978-93-91522-70-4.      2021 </p>
+          </li>
+          </ol>
+          <p class="p-2"><b>Publication Type: </b>Books Authored</p>
+          <ol>
+          <li>
+          <p class="p-2"><b>Publication Category: </b> International       Balvanshi, A. & Tiwari, H.L. (2021), “RUNOFF MODELING USING SCS CURVE NUMBER AND AWBM MODELS", LAP LAMBERT Academic Publishing, ISBN:978-6203574494.    MAR  2021</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle9" class="hidden bg-blue-900" />
+      <label for="toggle9" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+          Award and Honor
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">GM NAWATHE BEST PAPER AWARD 2019 FROM INDIAN SOCIETY FOR HYDRAULICS FOR BEST PRESENTATION DURING HYDRO 2018 INTERNATIONAL CONFERENCE HELD AT NIT PATNA.</p>
+          </li>
+          <li>
+          <p class="p-2">BEST PAPER AWARD IN INTERNATIONAL CONFERENCE RACESD 2021 ORGANIZED BY DEPARTMENT OF CIVIL ENGINEERING MANIT BHOPAL.</p>
+          </li>
+          <li>
+          <p class="p-2">RECEIVED MHRD SCHOLARSHIP DURING M.TECH programme (2013-15).</p>
+          </li>
+          <li>
+          <p class="p-2">RECEIVED MHRD SCHOLARSHIP DURING Ph.D. programme (2016-20).</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle10" class="hidden bg-blue-900" />
+      <label for="toggle10" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+         Membership and Professional Society
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6">
+        <ol>
+          <li>
+          <p class="p-2">Life Member of Indian Society for Hydraulics LM - 1393</p>
+          </li>
+          <li >
+          <p class="p-2">Life Member of Association for Agrometeorologists LM - 1459</p>
+          </li>
+          </ol>
+      </div>
+    </div>
+
+    <div class="card p-4 bg-gray-800 rounded m-2">
+      <input type="checkbox" id="toggle12" class="hidden bg-blue-900" />
+      <label for="toggle12" class="cursor-pointer">
+        <div
+          class="card-toggle font-serif font-semibold flex justify-center rounded-3xl"
+        >
+        Training/Conferences/Short Term Courses Attended
+        </div>
+      </label>
+      <div class="card-content hidden border-b-4 rounded-l text-white p-6 justify-center">
+        <table >
+          <tbody>
+          <tr>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Sr.No</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Month</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Year</b></p>
+          </th>
+          <th class="bg-blue-400 text-white p-4">
+          <p><b>Training attended Information</b></p>
+          </th>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >1</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JUN</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2021</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Attended three weeks online certificate program on "Hydrometeorological and Extreme Events Disaster Risk Management" jointly organized by Indian Institute of Technology Indore and National Institute of Disaster Management.</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JULY</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2017</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >Attended one week training programme "Monsoon School on Urban Floods" organized by Department of Civil Engineering, Indian Institute of Science, Bangalore, India</p>
+          </td>
+          </tr>
+          <tr>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >3</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >JAN</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >2017</p>
+          </td>
+         <td class="bg-white border-b-4 border-gray-200 text-black p-4">
+          <p >	Attended one week Short Term Training Programme on "Soil Investigation of Materials for Pavements, Buildings and Bridges" organized by Maulana Azad National Institute of Technology, Bhopal, India</p>
+          </td>
+          </tr>
+          </tbody>
+          </table>
+      </div>
+    </div>
+
+<!--Footer Starts Here -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="pl-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <h6 class=" text-lg font-semibold mb-2">Quick Links</h6>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 hover:text-blue-500">
+          <ul class="footer-links" style="list-style-type: disc;">
+            <li><a href="../../index.html"><span class="">Home</span></a></li>
+            <li><a href="../../syllabus.html"><span
+                  class="">Syllabus</span></a></li>
+            <li><a href="https://www.nitgoa.ac.in/results/"><span class="">Results</span></a></li>
+            <li><a href="../../RTI.html"><span class="">RTI</span></a></li>
+            <li><a href="https://nitgoa.ac.in/login.aspx"><span class="">Login</span></a></li>
+            <li><a href="../../contact us.html"><span class="">Contact Us</span></a></li>
+            <li><a href="#"><span class="">Feedback</span></a></li>
+          </ul>
+
+          <ul class="footer-links">
+            <li><a href="http://community.worldlibrary.in/"><span class="">e-Downloads</span></a></li>
+            <li><a href="http://scanfcode.com/contact/"><span class="">Students</span></a></li>
+            <li><a href="../../academics/academic_calendar.html"><span class="">Academic
+                  Calendar</span></a></li>
+            <li><a href="../../academics/rules_and_regulations.html"><span >Regulations and
+                  Curriculum</span></a></li>
+            <li><a href="../academics/DissertionFormat.html"><span >Dissertation
+                  Formats</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Informations</h6>
+        <ul class="footer-links">
+          <li><a href="../../People/frontend/people_faculty.html"><span >Faculty</span></a>
+          </li>
+          <li><a href="../../People/frontend/technical_cse.html"><span>Staff</span></a></li>
+          <li><a href="../../admissions/josaa.html"><span>JEE</span></a></li>
+          <li><a href="../../admissions/facilities.html"><span>Facilities</span></a></li>
+          <li><a href="../../static/fee_structure_23-24_25july2023.pdf"><span>Fee
+                Structure</span></a></li>
+          <li><a href="../../nirf.html"><span >NIRF</span></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h6 class="text-lg font-semibold mb-2">Contact Us</h6>
+        <ul class="footer-links">
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span>National Institute of Technology Goa
+                Farmagudi, Ponda , Goa - 403401</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="../../index.html"><span">Website: www.nitgoa.ac.in</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Phone: [0832] 2404200 (PA to Director)</span></a></div>
+          <div className="border-b-2 border-white mt-2"><a href="#"><span">Fax: [0832] 2404202</span></a></div>
+        </ul>
+      </div>
+    </div>
+    <br />
+  </div>
+  <div class="counter-container ml-16 mr-4"> <!-- Container for the counter -->
+    <!-- hitwebcounter Code START -->
+    <p>Visitor counter</p>
+    <a href="https://www.hitwebcounter.com" target="_blank">
+      <img
+        src="https://hitwebcounter.com/counter/counter.php?page=9346031&style=0006&nbdigits=6&type=page&initCount=0"
+        title="Counter Widget" Alt="Visit counter For Websites" border="0" width="150" height="100" />
+    </a>
+  </div>
+
+  <div class="fa-hover" style="text-align: right;">
+    <!-- Add font awesome icons -->
+    <a href="https://twitter.com/NITGoa_Official?t=l2ndbPFMr4c0YCxK3nf9EQ&s=08" class="fa fa-twitter "></a>
+    <a href="https://www.linkedin.com/school/nitgoa/" class="fa fa-linkedin"></a>
+    <a href="https://youtube.com/@nationalinstituteoftechnol7570?si=DxKq_-i2HDQWprZT" class="fa fa-youtube-play"></a>
+    <a href="https://instagram.com/nitgoa?igshid=dmljN3pidTNlMjVi" class="fa fa-instagram"></a>
+  </div>
+
+
+
+</footer>
+<!--Footer Ends Here -->
+<div class="justify-evenly flex pt-6 bg-yellow-300" id="google_translate_element"></div>
+<!--javascript for Google Translator Starts Here-->
+<script type="text/javascript"
+src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<!--javascript for Google Translator Ends Here-->
+
+
+  </body>
+</html>
